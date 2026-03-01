@@ -59,13 +59,18 @@ def measure_equilibrium_time(k_on, k_off, seed, max_time=MAX_TIME):
 
     while system.time < max_time:
         system.update()
-        times.append(system.time)
-        ab_values.append(system.monitor['AB'][-1])
+        current_time = system.time
+
+        # Count AB complexes by querying the mixture
+        ab_count = system.mixture.count("A(x[1]), B(x[1])")
+
+        times.append(current_time)
+        ab_values.append(ab_count)
 
         # Check for equilibrium once we have enough data
-        if system.time > WINDOW_SIZE:
+        if current_time > WINDOW_SIZE:
             # Find values within the last WINDOW_SIZE time units
-            recent_mask = np.array(times) > (system.time - WINDOW_SIZE)
+            recent_mask = np.array(times) > (current_time - WINDOW_SIZE)
             recent_ab = np.array(ab_values)[recent_mask]
 
             if len(recent_ab) > 1:
@@ -75,7 +80,7 @@ def measure_equilibrium_time(k_on, k_off, seed, max_time=MAX_TIME):
                     relative_change = (np.max(recent_ab) - np.min(recent_ab)) / mean_ab
 
                     if relative_change < EQUILIBRIUM_THRESHOLD:
-                        return system.time
+                        return current_time
 
     return max_time
 
