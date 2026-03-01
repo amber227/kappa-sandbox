@@ -1,6 +1,7 @@
 # Project Context
 
-Use `uv` to install packages and run Python programs.
+
+If there's any ambiguity or a non-trivial unspecified aspect, please engage me in the ideation process before and while you are writing up experiments ()
 
 ## About This Project
 
@@ -9,6 +10,8 @@ This is a repository for exploratory analysis using the PyKappa software package
 ## Standards
 
 - Ensure that experiments are reproducible. Set random seeds in any script, and make sure to include a git commit hash in the filenames of any graphs or figures that are produced.
+- Use `uv` to manage Python dependencies and run Python programs. Install any packages you see fit.
+
 
 ## Common Commands
 ```bash
