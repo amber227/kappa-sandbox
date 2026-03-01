@@ -61,8 +61,8 @@ def measure_equilibrium_time(k_on, k_off, seed, max_time=MAX_TIME):
         system.update()
         current_time = system.time
 
-        # Count AB complexes by querying the mixture
-        ab_count = system.mixture.count("A(x[1]), B(x[1])")
+        # Get current AB count from the observable
+        ab_count = system['AB']
 
         times.append(current_time)
         ab_values.append(ab_count)
