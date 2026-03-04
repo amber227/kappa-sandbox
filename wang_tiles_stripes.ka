@@ -1,0 +1,94 @@
+// Kappa model of Wang tiles producing alternating striped lattices
+// Based on Winfree 2000 - Figure 1 (two-tile system)
+//
+// Binding rules from the paper:
+// - Horizontal (east-west): Tile A binds to Tile B (alternation)
+// - Vertical (north-south): Like binds to like (A-A, B-B)
+// This creates vertical stripes alternating between A and B
+
+// ============================================================
+// AGENT DECLARATIONS
+// ============================================================
+
+// Each tile has 4 binding sites corresponding to Wang tile edges
+%agent: TileA(n, s, e, w)  // north, south, east, west
+%agent: TileB(n, s, e, w)
+
+// ============================================================
+// PARAMETERS
+// ============================================================
+
+// Binding rates (assuming cooperative binding as per paper)
+// Paper mentions binding should be cooperative (requires 2 domains)
+// but for this simple model we'll use single-domain rates
+
+%var: 'k_on_horizontal' 0.001   // A-B binding (horizontal)
+%var: 'k_off_horizontal' 0.1    // A-B unbinding
+
+%var: 'k_on_vertical' 0.001     // A-A and B-B binding (vertical)
+%var: 'k_off_vertical' 0.1      // vertical unbinding
+
+// ============================================================
+// BINDING RULES
+// ============================================================
+
+// Horizontal binding (creates alternation: A-B-A-B...)
+// Tile A's east side binds to Tile B's west side
+'horizontal_bind_AB' TileA(e[.]), TileB(w[.]) <-> TileA(e[1]), TileB(w[1]) @ 'k_on_horizontal', 'k_off_horizontal'
+
+// Tile B's east side binds to Tile A's west side
+'horizontal_bind_BA' TileB(e[.]), TileA(w[.]) <-> TileB(e[1]), TileA(w[1]) @ 'k_on_horizontal', 'k_off_horizontal'
+
+// Vertical binding (maintains stripes: like binds to like)
+// Tile A north binds to Tile A south
+'vertical_bind_AA' TileA(n[.]), TileA(s[.]) <-> TileA(n[1]), TileA(s[1]) @ 'k_on_vertical', 'k_off_vertical'
+
+// Tile B north binds to Tile B south
+'vertical_bind_BB' TileB(n[.]), TileB(s[.]) <-> TileB(n[1]), TileB(s[1]) @ 'k_on_vertical', 'k_off_vertical'
+
+// ============================================================
+// INITIAL CONDITIONS
+// ============================================================
+
+// Start with equal numbers of each tile type
+%init: 100 TileA()
+%init: 100 TileB()
+
+// ============================================================
+// OBSERVABLES
+// ============================================================
+
+// Count free tiles
+%obs: 'free_A' |TileA(n[.], s[.], e[.], w[.])|
+%obs: 'free_B' |TileB(n[.], s[.], e[.], w[.])|
+
+// Count total tiles
+%obs: 'total_A' |TileA()|
+%obs: 'total_B' |TileB()|
+
+// Horizontal bonds (A-B connections)
+%obs: 'AB_horizontal' |TileA(e[1]), TileB(w[1])|
+%obs: 'BA_horizontal' |TileB(e[1]), TileA(w[1])|
+
+// Vertical bonds (same-type connections)
+%obs: 'AA_vertical' |TileA(n[1]), TileA(s[1])| / 2  // divide by 2 for symmetry
+%obs: 'BB_vertical' |TileB(n[1]), TileB(s[1])| / 2  // divide by 2 for symmetry
+
+// Total bonds
+%obs: 'total_horizontal_bonds' 'AB_horizontal' + 'BA_horizontal'
+%obs: 'total_vertical_bonds' 'AA_vertical' + 'BB_vertical'
+%obs: 'total_bonds' 'total_horizontal_bonds' + 'total_vertical_bonds'
+
+// Tiles with at least one bond (participating in assembly)
+%obs: 'A_bound' |TileA(n[_])| + |TileA(s[_])| + |TileA(e[_])| + |TileA(w[_])|
+%obs: 'B_bound' |TileB(n[_])| + |TileB(s[_])| + |TileB(e[_])| + |TileB(w[_])|
+
+// Fully connected tiles (all 4 sites bound - interior lattice positions)
+%obs: 'A_fully_connected' |TileA(n[_], s[_], e[_], w[_])|
+%obs: 'B_fully_connected' |TileB(n[_], s[_], e[_], w[_])|
+
+// Stripe motif: A tile flanked by B tiles horizontally
+%obs: 'stripe_motif_ABA' |TileB(e[1]), TileA(w[1], e[2]), TileB(w[2])|
+
+// Stripe motif: B tile flanked by A tiles horizontally
+%obs: 'stripe_motif_BAB' |TileA(e[1]), TileB(w[1], e[2]), TileA(w[2])|
