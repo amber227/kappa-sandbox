@@ -1,3 +1,8 @@
+---
+name: modeler
+description: "Use this skill for tasks involving PyKappa rule-based modeling: creating Kappa models, writing simulation code, analyzing dynamics, parameter sweeps, or interpreting Kappa syntax. Invoke when user mentions Kappa, agents, rules, mixtures, observables, or stochastic simulation."
+---
+
 # Kappa Modeler Skill
 
 ## Purpose
