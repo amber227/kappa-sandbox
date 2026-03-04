@@ -86,27 +86,30 @@ if rule.n_embeddings(mixture) > 0:
 
 ### Systems and Simulation
 ```python
-from pykappa.system import System, Monitor
+from pykappa.system import System
+import random
 
-# From .ka file
-system = System.read_ka("model.ka", seed=42)
+# Set random seed
+random.seed(42)
 
-# Or from Kappa string
+# From Kappa string (PREFERRED METHOD)
 ka_str = """
-%agent: A(x)
-%agent: B(x)
-'bind' A(x[.]), B(x[.]) -> A(x[1]), B(x[1]) @ 0.001
-%init: 100 A(), B()
+%init: 100 A(x[.])
+%init: 100 B(x[.])
+
+A(x[.]), B(x[.]) <-> A(x[1]), B(x[1]) @ 0.001, 0.1
+
 %obs: 'AB' |A(x[1]), B(x[1])|
 """
 system = System.from_ka(ka_str, seed=42)
 
-# Simulate
-monitor = Monitor(system)
-system.update_until(max_time=100.0)
+# Simulate (use while loop, NOT update_until)
+max_time = 100.0
+while system.time < max_time:
+    system.update()
 
-# Analyze
-monitor.update()
+# Analyze (monitor auto-created by system)
+monitor = system.monitor
 df = monitor.dataframe
 monitor.plot()
 ```
@@ -204,34 +207,38 @@ where `Ω_i` is symmetry correction factor (typically 1 in PyKappa).
 ### 2. Run Simulation
 ```python
 import random
-from pykappa.system import System, Monitor
+from pykappa.system import System
 
 # Reproducibility
 random.seed(42)
-system = System.read_ka("model.ka", seed=42)
-monitor = Monitor(system)
 
-# Simulate
-system.update_until(max_time=100.0, check_interval=10)
+# Build system from Kappa string (preferred over .ka files)
+system = System.from_ka(kappa_model_string, seed=42)
 
-# Or by events
-# system.update_until(max_updates=10000, check_interval=1000)
+# Simulate using while loop
+max_time = 100.0
+while system.time < max_time:
+    system.update()
+
+# Or by number of updates
+# for _ in range(10000):
+#     system.update()
 ```
 
 ### 3. Observe and Analyze
 ```python
+# Access system's built-in monitor
+monitor = system.monitor
+
 # Get data
 df = monitor.dataframe  # Time series of observables
-
-# Check equilibration
-monitor.equilibrated('Product', tail_fraction=0.1, tolerance=0.01)
 
 # Visualize
 monitor.plot()  # Or monitor.plot(combined=True)
 
-# Specific measurements
-final_product = monitor.measure('Product', time=100.0)
-mean_ES = monitor.tail_mean('ES_complex', tail_fraction=0.2)
+# Check if observable has equilibrated
+# (Note: equilibration methods may not be available in all PyKappa versions)
+# is_eq = monitor.equilibrated('Product', tail_fraction=0.1, tolerance=0.01)
 ```
 
 ### 4. Iterate and Refine
@@ -241,10 +248,16 @@ mean_ES = monitor.tail_mean('ES_complex', tail_fraction=0.2)
 ```python
 results = []
 for k_cat in [0.1, 1.0, 10.0]:
-    system = System.from_ka(ka_template.replace('K_CAT', str(k_cat)), seed=42)
-    monitor = Monitor(system)
-    system.update_until(max_time=100.0)
-    results.append(monitor.dataframe)
+    ka_model = ka_template.replace('K_CAT', str(k_cat))
+    system = System.from_ka(ka_model, seed=42)
+
+    # Run simulation
+    max_time = 100.0
+    while system.time < max_time:
+        system.update()
+
+    # Store results
+    results.append(system.monitor.dataframe)
 ```
 
 **Snapshot and restart**:
@@ -324,6 +337,70 @@ emb = mixture.embeddings_in_component(pattern, specific_component)
     - Python simulator: Full features, slower
     - `system.update_via_kasim(time)`: Compiled KaSim, faster but limited features
 
+## PyKappa-Specific Limitations and Gotchas
+
+**CRITICAL: These are implementation-specific issues in PyKappa that differ from the documentation:**
+
+1. **Named rules with quotes cause errors**:
+   ```python
+   # WRONG - causes "algebraic_expression" error
+   'bind' A(x[.]), B(x[.]) -> A(x[1]), B(x[1]) @ 0.001
+
+   # CORRECT - omit rule names in System.from_ka()
+   A(x[.]), B(x[.]) -> A(x[1]), B(x[1]) @ 0.001
+   ```
+
+2. **Algebraic expressions in observables NOT supported**:
+   ```python
+   # WRONG - not supported in System.from_ka()
+   %obs: 'total' 'a' + 'b'
+   %obs: 'half' |A(x[1]), A(x[1])| / 2
+
+   # CORRECT - calculate in Python after simulation
+   df['total'] = df['a'] + df['b']
+   df['half'] = df['aa_bonds'] / 2
+   ```
+
+3. **System.update_until() doesn't exist**:
+   ```python
+   # WRONG - method doesn't exist
+   system.update_until(max_time=100.0)
+
+   # CORRECT - use while loop
+   while system.time < max_time:
+       system.update()
+   ```
+
+4. **Monitor is auto-created, not instantiated separately**:
+   ```python
+   # WRONG - creates separate monitor
+   monitor = Monitor(system)
+   system.update()
+   monitor.update()  # Doesn't track system updates
+
+   # CORRECT - use system's built-in monitor
+   while system.time < max_time:
+       system.update()
+   monitor = system.monitor
+   df = monitor.dataframe
+   ```
+
+5. **Agent signatures are inferred, not declared**:
+   ```python
+   # No %agent declarations needed
+   # Signatures inferred from %init or first use
+   %init: 100 TileA(n[.], s[.], e[.], w[.])
+   ```
+
+6. **Complex observables trigger internal bugs**:
+   - Too many wildcards `[_]` in different observables can cause AssertionError
+   - Symptom: "assert item in self" in pykappa/utils.py
+   - Solution: Simplify observables, calculate derived values in Python
+
+7. **Comments may not work in all contexts**:
+   - Use Kappa comments sparingly in System.from_ka() strings
+   - If errors occur, try removing all comments first
+
 ## Troubleshooting
 
 **Simulation too slow**:
@@ -345,7 +422,7 @@ emb = mixture.embeddings_in_component(pattern, specific_component)
 
 **Symmetry issues in observables**:
 - Patterns with automorphisms are counted multiple times
-- Manually divide by symmetry factor: `|A(x[1]), A(x[1])| / 2`
+- Cannot divide in observable definition - do it in Python postprocessing
 
 ## Resources
 
