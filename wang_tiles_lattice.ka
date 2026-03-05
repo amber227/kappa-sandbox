@@ -1,0 +1,86 @@
+// Kappa model of the Wang tile double-period stripe lattice
+// Based on Winfree 2000, Figure 2 (four-tile system)
+// Experimentally implemented in Winfree et al. 1998a using DAO-type DX molecules.
+//
+// Four tile types (A, B, C, D) self-assemble into horizontal stripes with
+// twice the period of the two-tile system:
+//
+//   ... A B A B A B ...   (alpha row)
+//   ... C D C D C D ...   (beta row)
+//   ... A B A B A B ...   (alpha row)
+//   ... C D C D C D ...   (beta row)
+//
+// Matching rules (Wang tile edge logic):
+//   East-West: A-B and C-D alternation within each row type
+//   North-South: A-C and B-D coupling between row types
+//
+// Note: s = south (tile edge pointing downward), n = north (pointing upward)
+//       TileA(s) binds TileC(n) means A is directly above C in the lattice.
+
+// ============================================================
+// PARAMETERS
+// ============================================================
+
+%var: 'k_on'  0.001
+%var: 'k_off' 0.1
+
+// ============================================================
+// BINDING RULES
+// ============================================================
+
+// East-West bonds (horizontal alternation)
+// Alpha row: A left of B, or B left of A
+TileA(e[.]), TileB(w[.]) <-> TileA(e[1]), TileB(w[1]) @ 'k_on', 'k_off'
+TileB(e[.]), TileA(w[.]) <-> TileB(e[1]), TileA(w[1]) @ 'k_on', 'k_off'
+// Beta row: C left of D, or D left of C
+TileC(e[.]), TileD(w[.]) <-> TileC(e[1]), TileD(w[1]) @ 'k_on', 'k_off'
+TileD(e[.]), TileC(w[.]) <-> TileD(e[1]), TileC(w[1]) @ 'k_on', 'k_off'
+
+// North-South bonds (inter-row coupling)
+// A (above) binds C (below), and C (above) binds A (below)
+TileA(s[.]), TileC(n[.]) <-> TileA(s[1]), TileC(n[1]) @ 'k_on', 'k_off'
+TileC(s[.]), TileA(n[.]) <-> TileC(s[1]), TileA(n[1]) @ 'k_on', 'k_off'
+// B (above) binds D (below), and D (above) binds B (below)
+TileB(s[.]), TileD(n[.]) <-> TileB(s[1]), TileD(n[1]) @ 'k_on', 'k_off'
+TileD(s[.]), TileB(n[.]) <-> TileD(s[1]), TileB(n[1]) @ 'k_on', 'k_off'
+
+// ============================================================
+// INITIAL CONDITIONS
+// ============================================================
+
+%init: 100 TileA(n[.], s[.], e[.], w[.])
+%init: 100 TileB(n[.], s[.], e[.], w[.])
+%init: 100 TileC(n[.], s[.], e[.], w[.])
+%init: 100 TileD(n[.], s[.], e[.], w[.])
+
+// ============================================================
+// OBSERVABLES
+// ============================================================
+
+// Free tiles (no bonds at any site)
+%obs: 'free_A' |TileA(n[.], s[.], e[.], w[.])|
+%obs: 'free_B' |TileB(n[.], s[.], e[.], w[.])|
+%obs: 'free_C' |TileC(n[.], s[.], e[.], w[.])|
+%obs: 'free_D' |TileD(n[.], s[.], e[.], w[.])|
+
+// Horizontal (E-W) bonds
+%obs: 'AB_horiz' |TileA(e[1]), TileB(w[1])|
+%obs: 'BA_horiz' |TileB(e[1]), TileA(w[1])|
+%obs: 'CD_horiz' |TileC(e[1]), TileD(w[1])|
+%obs: 'DC_horiz' |TileD(e[1]), TileC(w[1])|
+
+// Vertical (N-S) bonds
+%obs: 'AC_vert' |TileA(s[1]), TileC(n[1])|
+%obs: 'CA_vert' |TileC(s[1]), TileA(n[1])|
+%obs: 'BD_vert' |TileB(s[1]), TileD(n[1])|
+%obs: 'DB_vert' |TileD(s[1]), TileB(n[1])|
+
+// Core 2x2 double-period motif: A-B pair with C-D pair directly below,
+// all four tiles connected. This is the fundamental repeating unit of the lattice.
+%obs: 'motif_2x2' |TileA(e[1], s[2]), TileB(w[1], s[3]), TileC(n[2], e[4]), TileD(n[3], w[4])|
+
+// Interior tiles (all four sites occupied)
+%obs: 'A_interior' |TileA(n[_], s[_], e[_], w[_])|
+%obs: 'B_interior' |TileB(n[_], s[_], e[_], w[_])|
+%obs: 'C_interior' |TileC(n[_], s[_], e[_], w[_])|
+%obs: 'D_interior' |TileD(n[_], s[_], e[_], w[_])|

@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "uv run /home/amber/projects/claude-wrapper/stop_hook.py"
+            "command": "uv run /home/ec2-user/claude-slack-wrapper/stop_hook.py"
           }
         ]
       }
