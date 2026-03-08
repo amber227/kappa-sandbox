@@ -337,6 +337,36 @@ mixture.track_component(component)
 emb = mixture.embeddings_in_component(pattern, specific_component)
 ```
 
+## Git Workflow (Session Branching)
+
+Follow this branching strategy at the start of every session and when making meta-level changes:
+
+### Session Start
+1. Ensure you are on `main` and it is up to date.
+2. Create a new experiment branch named after the current date and time:
+   ```bash
+   git checkout main
+   git checkout -b "08-Mar-2026-194646"  # format: DD-Mon-YYYY-HHMMSS
+   ```
+3. Do all experiment work (simulation scripts, figures, results) on this branch and commit regularly.
+
+### Meta-Level Changes (skill docs, CLAUDE.md, manifest)
+When the user asks for changes that affect meta-level functionality (e.g., updating SKILL.md, CLAUDE.md, or memory files):
+1. Switch to `main`:
+   ```bash
+   git checkout main
+   ```
+2. Make and commit the meta-level changes on `main`.
+3. Switch back to the experiment branch and rebase on `main`:
+   ```bash
+   git checkout <experiment-branch>
+   git rebase main
+   ```
+
+### Figure Commits
+- Include the git commit hash in all figure filenames for reproducibility.
+- Commit after producing each significant figure or result.
+
 ## Best Practices
 
 1. **Start simple**: Build minimal models, add complexity incrementally
