@@ -28,18 +28,20 @@ uv run ...
 ## Git Workflow
 
 ### Session Start
-At the start of every new session, create an experiment branch off the head of `main`:
+At the start of every new session, create an experiment branch off the head of `main` and push it to remote:
 ```bash
 git checkout main
 git checkout -b "DD-Mon-YYYY-HHMMSS"  # e.g. 08-Mar-2026-194646
+git push -u origin <branch-name>
 ```
-All experiment work (simulation scripts, figures, results) is committed to this branch.
+All experiment work (simulation scripts, figures, results) is committed to this branch and pushed to remote after each commit.
 
 ### Meta-Level Changes
 When the user asks for changes affecting general behavior or skill documents (CLAUDE.md, SKILL.md, memory files):
-1. Switch to `main` and commit the changes there.
-2. Switch back to the experiment branch and rebase on `main`:
+1. Switch to `main` and commit the changes there, then push to remote.
+2. Switch back to the experiment branch and rebase on `main`, then push:
    ```bash
    git checkout <experiment-branch>
    git rebase main
+   git push --force-with-lease origin <experiment-branch>
    ```
