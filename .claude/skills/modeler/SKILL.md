@@ -134,11 +134,13 @@ system.observables['AB'] = |A(x[1]), B(x[1])|  # Count AB complexes
 - **Automorphisms**: Embeddings related by symmetry
 - **Affects observable counting**: Must divide by symmetry factor
   ```python
-  # Homodimer has 2-fold symmetry
-  %obs: 'dimers' |A(x[1]), A(x[1])| / 2
+  # Homodimer has 2-fold symmetry — 2 embeddings for 1 physical complex
+  # PyKappa applies symmetry correction by default, so |A(x[1]), A(x[1])| gives physical count
+  # KaSim (OCaml simulator) does NOT apply any symmetry correction — manual division needed
   ```
 - **Rule activity**: Symmetric embeddings may represent same physical event
-- PyKappa default: No automatic symmetry correction (user responsibility)
+- **PyKappa**: Applies automatic symmetry correction by default
+- **KaSim (OCaml)**: No automatic symmetry correction; user must handle manually
 
 ### Rate Constants and Scaling
 **Stochastic vs deterministic**:
@@ -180,6 +182,17 @@ where `Ω_i` is symmetry correction factor (typically 1 in PyKappa).
 
 ## Modeling Workflow
 
+**CRITICAL: Check in with the user between Step 1 and Step 2.**
+After writing the static model (agents, rules, observables, initial conditions), present it to the user and STOP. Wait for explicit approval before running any simulation. The user needs the opportunity to review and correct:
+- The contact map / agent/site interpretation
+- Which rules were written and what they mean
+- Rate constant choices and initial copy numbers
+- What is being measured (observables)
+
+Only proceed to run the simulation if:
+- The user explicitly says to run it or approves the model, OR
+- The user has explicitly asked for fully autonomous iterative experimentation
+
 ### 1. Define the System
 ```python
 # Declare agents with signatures
@@ -203,6 +216,8 @@ where `Ω_i` is symmetry correction factor (typically 1 in PyKappa).
 %obs: 'Product' |S(x{p})|
 %obs: 'ES_complex' |E(s[1]), S(e[1])|
 ```
+
+**→ Present this model to the user and wait for approval before continuing.**
 
 ### 2. Run Simulation
 ```python
@@ -421,8 +436,8 @@ emb = mixture.embeddings_in_component(pattern, specific_component)
 - Verify detailed balance for reversible reactions
 
 **Symmetry issues in observables**:
-- Patterns with automorphisms are counted multiple times
-- Cannot divide in observable definition - do it in Python postprocessing
+- PyKappa applies symmetry correction by default, so symmetric patterns (e.g. homodimers) should yield physical counts
+- KaSim does not correct for symmetry — if using KaSim backend, divide by the automorphism count in Python postprocessing
 
 ## Resources
 
