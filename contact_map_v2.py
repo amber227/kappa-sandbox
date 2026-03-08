@@ -1,12 +1,12 @@
 """
 A(x, y, z) contact map model.
   Bond B: A(z) -- A(z)   symmetric homodimerization
-  Bond α: A(x) -- A(y)   head-to-tail, enables linear chain polymerization
+  Bond α: A(x) -- A(y)   head-to-tail, linear chains only (rings forbidden)
 
-Chain length distribution (α-bond chains) sampled at discrete time points
-via explicit pattern matching — no continuous component tracking.
+Ring closure is prevented via ambiguous-molecularity syntax {0}, which
+requires component tracking to be enabled on the mixture.
 
-Set DRY_RUN=True for a quick sanity check (10 molecules, short time).
+Chain length distribution sampled at discrete snapshots via bond-graph BFS.
 """
 
 import random
@@ -21,9 +21,9 @@ from pykappa.system import System
 # ── Config ────────────────────────────────────────────────────────────────────
 DRY_RUN = False
 SEED = 42
-N_AGENTS = 1000
-MAX_TIME = 2000.0
-SNAPSHOT_TIMES = [100.0, 500.0, 2000.0]
+N_AGENTS = 500
+MAX_TIME = 200.0
+SNAPSHOT_TIMES = [10.0, 50.0, 200.0]
 
 random.seed(SEED)
 
@@ -38,7 +38,7 @@ kappa_model = f"""
 %init: {N_AGENTS} A(x[.], y[.], z[.])
 
 A(z[.]), A(z[.]) <-> A(z[1]), A(z[1]) @ 0.01, 0.02
-A(x[.]), A(y[.]) <-> A(x[1]), A(y[1]) @ 0.01, 0.02
+A(x[.]), A(y[.]) <-> A(x[1]), A(y[1]) @ 0.01 {{0}}, 0.02
 
 %obs: 'free_monomer' |A(x[.], y[.], z[.])|
 %obs: 'z_bonds'      |A(z[1]), A(z[1])|
@@ -102,6 +102,7 @@ def chain_length_distribution(mixture):
 
 # ── Simulation ────────────────────────────────────────────────────────────────
 system = System.from_ka(kappa_model, seed=SEED)
+system.mixture.enable_component_tracking()
 
 snapshots = {}
 t_idx = 0
