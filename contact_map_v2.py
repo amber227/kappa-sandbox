@@ -22,8 +22,8 @@ from pykappa.system import System
 DRY_RUN = False
 SEED = 42
 N_AGENTS = 1000
-MAX_TIME = 200.0
-SNAPSHOT_TIMES = [10.0, 50.0, 200.0]
+MAX_TIME = 2000.0
+SNAPSHOT_TIMES = [100.0, 500.0, 2000.0]
 
 random.seed(SEED)
 
@@ -37,8 +37,8 @@ git_hash = subprocess.run(
 kappa_model = f"""
 %init: {N_AGENTS} A(x[.], y[.], z[.])
 
-A(z[.]), A(z[.]) <-> A(z[1]), A(z[1]) @ 0.01, 0.1
-A(x[.]), A(y[.]) <-> A(x[1]), A(y[1]) @ 0.01, 0.1
+A(z[.]), A(z[.]) <-> A(z[1]), A(z[1]) @ 0.01, 0.02
+A(x[.]), A(y[.]) <-> A(x[1]), A(y[1]) @ 0.01, 0.02
 
 %obs: 'free_monomer' |A(x[.], y[.], z[.])|
 %obs: 'z_bonds'      |A(z[1]), A(z[1])|
