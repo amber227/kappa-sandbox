@@ -19,3 +19,27 @@ uv add ...
 uv run ...
 ```
 - Remember to snapshot the repo state that produced a given figure using git whenever you produce one. Initialize a repository yourself if it doesn't already exist.
+
+## Document Locations
+
+- **CLAUDE.md** (this file): General functionality, personality, behavior, workflow, and git conventions. When the user asks to update the "manifest", this is the file to edit.
+- **.claude/skills/modeler/SKILL.md**: Kappa-specific and experiment-related knowledge — PyKappa API, modeling patterns, gotchas, simulation workflows.
+
+## Git Workflow
+
+### Session Start
+At the start of every new session, create an experiment branch off the head of `main`:
+```bash
+git checkout main
+git checkout -b "DD-Mon-YYYY-HHMMSS"  # e.g. 08-Mar-2026-194646
+```
+All experiment work (simulation scripts, figures, results) is committed to this branch.
+
+### Meta-Level Changes
+When the user asks for changes affecting general behavior or skill documents (CLAUDE.md, SKILL.md, memory files):
+1. Switch to `main` and commit the changes there.
+2. Switch back to the experiment branch and rebase on `main`:
+   ```bash
+   git checkout <experiment-branch>
+   git rebase main
+   ```
