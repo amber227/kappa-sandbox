@@ -107,7 +107,7 @@ Explicit mapping of:
 
 3. **Kappa-readiness**: Frame your descriptions in terms that map directly to Kappa constructs (agents, sites, states, rules).
 
-4. **Explicit about uncertainty**: Clearly distinguish between what the paper definitively shows versus what it suggests or assumes.
+4. **Explicit about uncertainty**: This point is critically important. Clearly distinguish between what the paper definitively shows versus what it suggests or assumes. If there is any potential ambiguity about the mechanisms or interactions the paper describes, clearly state this in the report, and quote the section which generates the ambiguity.
 
 5. **Quantitative when possible**: Extract all numerical values (rate constants, concentrations, binding affinities) with units.
 
