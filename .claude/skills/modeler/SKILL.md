@@ -343,7 +343,7 @@ emb = mixture.embeddings_in_component(pattern, specific_component)
 2. **Set random seeds**: Ensure reproducibility in stochastic simulations
 3. **Check equilibration**: Use `monitor.equilibrated()` before analyzing steady-state
 4. **Visualize early**: Plot trajectories to catch unexpected behaviors
-5. **Mind symmetry**: Correct observable counts for automorphisms
+5. **Mind symmetry**: Rule automorphisms should be handled by PyKappa, but be aware when interpreting results
 6. **Document mechanisms**: Clear rule names and comments explaining biology
 7. **Parameter units**: Be explicit about time/concentration units and volume assumptions
 8. **Version control**: Commit models with git hashes in figure filenames (per project standards)
@@ -445,4 +445,4 @@ emb = mixture.embeddings_in_component(pattern, specific_component)
 - **Kappa portal**: http://kappalanguage.org
 - **Tutorial**: Start with reversible binding example
 - **Examples**: Study prozone, polymerization, lac operon, chemostat models
-- **Bug reports**: https://github.com/Kappa-Dev/KaSim/issues
+- **Bug reports**: https://github.com/berkalpay/pykappa/issues
