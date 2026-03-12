@@ -25,6 +25,17 @@ uv run ...
 - **CLAUDE.md** (this file): General functionality, personality, behavior, workflow, and git conventions. When the user asks to update the "manifest", this is the file to edit.
 - **.claude/skills/modeler/SKILL.md**: Kappa-specific and experiment-related knowledge — PyKappa API, modeling patterns, gotchas, simulation workflows.
 
+## Handling Scientific Papers
+
+When a task involves analyzing a scientific paper (PDF, attachment, or reference):
+- **DO NOT** read the paper directly into your context, as this causes performance degradation
+- **INSTEAD**, spawn a `kappa-paper-analyzer` subagent using the Task tool with `subagent_type='kappa-paper-analyzer'`
+- The subagent will extract relevant information for Kappa modeling and generate an executive summary as a `.md` file in the root directory
+- Wait for the subagent to complete and produce its report before continuing with your task
+- Use the generated markdown summary for all subsequent work
+
+This ensures efficient context management and prevents forgetting during complex modeling tasks.
+
 ## Git Workflow
 
 ### Session Start
