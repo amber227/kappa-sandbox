@@ -1,0 +1,54 @@
+// Activator-Inhibitor oscillator — Cao et al. 2015
+// V=50, gamma=1e-5
+// Rate values: bimolecular rates = ODE rate / V = rate / 50
+//              fm1/V = fm2/V = sqrt(1e-5)*100/50 = 0.006325
+
+%init: 500 M(r[.], k[.], s{u})
+%init: 50  K(m[.])
+%init: 20  R(m[.])
+
+// --- PdP cycle: forward branch ---
+// R6: M(u) + R_free -> MR
+M(r[.], k[.], s{u}), R(m[.]) -> M(r[1], k[.], s{u}), R(m[1])  @ 2.0
+// R7: MR -> M(u) + R_free  (dissociation)
+M(r[1], k[.], s{u}), R(m[1]) -> M(r[.], k[.], s{u}), R(m[.])  @ 15.0
+// R8: MR -> Mp + R_free  (phosphorylation)
+M(r[1], k[.], s{u}), R(m[1]) -> M(r[.], k[.], s{p}), R(m[.])  @ 15.0
+// R9: Mp + K -> MpK
+M(r[.], k[.], s{p}), K(m[.]) -> M(r[.], k[1], s{p}), K(m[1])  @ 2.0
+// R10: MpK -> Mp + K  (dissociation)
+M(r[.], k[1], s{p}), K(m[1]) -> M(r[.], k[.], s{p}), K(m[.])  @ 15.0
+// R11: MpK -> M(u) + K  (dephosphorylation)
+M(r[.], k[1], s{p}), K(m[1]) -> M(r[.], k[.], s{u}), K(m[.])  @ 15.0
+
+// --- PdP cycle: reverse branch (controlled by gamma=1e-5) ---
+// R12: Mp + R_free -> MR  (reverse of R8)
+M(r[.], k[.], s{p}), R(m[.]) -> M(r[1], k[.], s{u}), R(m[1])  @ 0.006325
+// R13: M(u) + K -> MpK  (reverse of R11)
+M(r[.], k[.], s{u}), K(m[.]) -> M(r[.], k[1], s{p}), K(m[1])  @ 0.006325
+
+// --- R synthesis (zeroth-order constitutive + Mp-driven) ---
+// R1: constitutive (k1*S*V = 1*0.4*50 = 20)
+. -> R(m[.])  @ 20.0
+// R2: Mp-driven (k0 = 1 per free Mp molecule)
+M(r[.], k[.], s{p}), . -> M(r[.], k[.], s{p}), R(m[.])  @ 1.0
+
+// --- R degradation: X-mediated, acts on total R ---
+// R3a: free R
+X(), R(m[.]) -> X(), .  @ 0.02
+// R3b: bound R in MR complex (releases M)
+X(), M(r[1], k[.], s{u}), R(m[1]) -> X(), M(r[.], k[.], s{u}), .  @ 0.02
+
+// --- X synthesis and degradation ---
+// R4: Mp-driven X synthesis (k3 = 1 per free Mp)
+M(r[.], k[.], s{p}), . -> M(r[.], k[.], s{p}), X()  @ 1.0
+// R5: X degradation (k4 = 0.5)
+X() -> .  @ 0.5
+
+
+// --- Observables ---
+%obs: 'R'   |R(m[.])|
+%obs: 'X'   |X()|
+%obs: 'Mp'  |M(r[.], k[.], s{p})|
+%obs: 'MR'  |M(r[1], s{u}), R(m[1])|
+%obs: 'MpK' |M(k[1], s{p}), K(m[1])|
