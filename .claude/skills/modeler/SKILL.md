@@ -407,7 +407,18 @@ emb = mixture.embeddings_in_component(pattern, specific_component)
    %init: 100 TileA(n[.], s[.], e[.], w[.])
    ```
 
-6. **Complex observables trigger internal bugs**:
+6. **Agent creation/deletion (`->` with `.`) parses but is NOT implemented**:
+   - The Kappa syntax for creation (`. -> A()`) and deletion (`A() -> .`) uses `.` as a placeholder to keep agent counts equal on both sides of the rule. This syntax parses without error.
+   - However, `System.from_ka()` raises `NotImplementedError` at line 142 of system.py when it encounters a `"pattern"` tag in the parse tree. Both creation and deletion hit this path.
+   - **Workaround**: Implement the simulation loop directly in Python using the Gillespie SSA (or Euler method for deterministic approximation), tracking molecule counts as integers and computing propensities manually. This is often cleaner for models with significant creation/deletion flux anyway.
+   - Example of what fails silently:
+   ```python
+   # Parses OK but raises NotImplementedError at System.from_ka()
+   . -> R(m[.])  @ 20.0   # zeroth-order synthesis
+   X() -> .      @ 0.5    # degradation
+   ```
+
+7. **Complex observables trigger internal bugs**:
    - Too many wildcards `[_]` in different observables can cause AssertionError
    - Symptom: "assert item in self" in pykappa/utils.py
    - Solution: Simplify observables, calculate derived values in Python
