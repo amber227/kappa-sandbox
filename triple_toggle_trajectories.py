@@ -2,7 +2,7 @@ import random
 import matplotlib.pyplot as plt
 from pykappa.system import System
 
-COMMIT = "7208a3a"
+COMMIT = "334c299"
 N_RUNS = 10
 MAX_TIME = 300.0
 
@@ -27,20 +27,6 @@ D(s{on}), C(s{on}) -> D(s{on}), C(s{of}) @ 'k_inh'
 
 E(s{on}), F(s{on}) -> E(s{on}), F(s{of}) @ 'k_inh'
 F(s{on}), E(s{on}) -> F(s{on}), E(s{of}) @ 'k_inh'
-
-A(s{on}) -> A(s{of}) @ 'k_deact'
-B(s{on}) -> B(s{of}) @ 'k_deact'
-C(s{on}) -> C(s{of}) @ 'k_deact'
-D(s{on}) -> D(s{of}) @ 'k_deact'
-E(s{on}) -> E(s{of}) @ 'k_deact'
-F(s{on}) -> F(s{of}) @ 'k_deact'
-
-A(s{of}) -> A(s{on}) @ 'k_basal'
-B(s{of}) -> B(s{on}) @ 'k_basal'
-C(s{of}) -> C(s{on}) @ 'k_basal'
-D(s{of}) -> D(s{on}) @ 'k_basal'
-E(s{of}) -> E(s{on}) @ 'k_basal'
-F(s{of}) -> F(s{on}) @ 'k_basal'
 
 %init: 100 A(s{on})
 %init: 100 A(s{of})
@@ -80,6 +66,8 @@ for i in range(N_RUNS):
     system = System.from_ka(ka_template, seed=seed)
     while system.time < MAX_TIME:
         system.update()
+        if system.reactivity == 0:
+            break
 
     df = system.monitor.dataframe
     ax = axes[i]
@@ -104,9 +92,9 @@ handles = [plt.Line2D([0], [0], color=c, lw=1.5, label=l)
 fig.legend(handles=handles, loc="upper right", fontsize=9,
            title="Agent", ncol=1)
 
-fig.suptitle("Triple toggle switch — 10 individual trajectories (all 6 agents)", fontsize=12)
+fig.suptitle("Triple toggle switch — 10 individual trajectories (all 6 agents, no basal/deact)", fontsize=12)
 fig.tight_layout()
 
-fname = f"triple_toggle_trajectories_{COMMIT}.png"
+fname = f"triple_toggle_trajectories_no_basal_{COMMIT}.png"
 fig.savefig(fname, dpi=150)
 print(f"Saved {fname}")
