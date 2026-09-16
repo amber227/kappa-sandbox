@@ -1,0 +1,18 @@
+A minimal Kappa model of kinetic proofreading during template-directed polymerisation,
+built from the three reactions --- add, commit, proofread --- and the energy landscape of
+Pigolotti \& Sartori (2016).  The model uses a single agent type: a copy is a chain of
+monomer agents, the terminus is a pattern rather than a piece of bookkeeping, and
+proofreading genuinely shortens the copy.  Every rate is derived from the paper's
+landscape parameterisation, including the reverse of the proofreading reaction, which is
+fixed by detailed balance rather than set to zero; this makes the chemical drive on the
+discard step a meaningful knob.  Stochastic simulation in PyKappa recovers the
+phenomenon quantitatively: the error falls from $\etaB$ without the discard arc to
+$\etaC$ with it, the logarithmic slope of the error against the discrimination energy
+doubles from $\slopeB$ to $\slopeC$, and an \emph{undriven} discard arc makes the copy
+five times \emph{less} accurate than no proofreading at all.  The Hopfield floor
+$\eta_{\rm eq}^2$ is reached, but only as the growth velocity is driven to zero: at a
+working point that keeps $41\%$ of the unproofread speed the error sits a factor
+$\approx2$ above the floor, and this factor is shown to be a speed penalty rather than a
+change of exponent.  Results are
+cross-checked against two independent non-Kappa implementations and against the
+equilibrium bound at stall.

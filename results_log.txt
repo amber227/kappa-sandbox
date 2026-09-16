@@ -1,0 +1,10 @@
+29 jobs, 19.2M events
+delta_B_1.05         eta=0.27202 n=7992 v=12.046 cost=0.00 (489s)
+main_C_nodrive       eta=0.49419 n=109234 v=1552.327 cost=0.02 (527s)
+main_B               eta=0.10147 n=11097 v=9.746 cost=0.00 (872s)
+delta_C_1.05         eta=0.15249 n=2092 v=4.246 cost=1.65 (476s)
+delta_B_1.40         eta=0.21494 n=7337 v=11.215 cost=0.00 (529s)
+delta_B_1.75         eta=0.16915 n=7656 v=10.425 cost=0.00 (721s)
+delta_C_1.40         eta=0.08935 n=3100 v=4.215 cost=1.59 (941s)
+delta_B_2.10         eta=0.12130 n=8302 v=10.219 cost=0.00 (813s)
+delta_C_1.75         eta=0.05064 n=4423 v=3.881 cost=1.58 (1586s)

@@ -1,0 +1,21 @@
+// add        0 -> 1   the terminus recruits a free monomer into the active site
+M(c{y}, n[.]), M(p[.], n[.], c{n}, k{R}) -> M(c{y}, n[1]), M(p[1], n[.], c{n}, k{R}) @ 0.1
+
+// reject     1 -> 0   the monomer leaves again  (discriminating: x e^delta for W)
+M(c{y}, n[1]), M(p[1], n[.], c{n}, k{R}) -> M(c{y}, n[.]), M(p[.], n[.], c{n}, k{R}) @ 900
+
+// commit     1 -> 2   covalent incorporation     (NOT discriminating)
+M(c{y}, n[1]), M(p[1], n[.], c{n}, k{R}) -> M(c{y}, n[1]), M(p[1], n[.], c{y}, k{R}) @ 100
+
+// uncommit   2 -> 1   the reverse of commitment
+M(c{y}, n[1]), M(p[1], n[.], c{y}, k{R}) -> M(c{y}, n[1]), M(p[1], n[.], c{n}, k{R}) @ 0.05
+
+// proofread  2 -> 0   the terminal residue is excised back to the pool
+M(c{y}, n[1]), M(p[1], n[.], c{y}, k{R}) -> M(c{y}, n[.]), M(p[.], n[.], c{n}, k{R}) @ 5.549450549
+
+// ligate     0 -> 2   thermodynamic reverse of proofreading;
+//                     its rate is fixed by detailed balance, Eq. (3)
+M(c{y}, n[.]), M(p[.], n[.], c{n}, k{R}) -> M(c{y}, n[1]), M(p[1], n[.], c{y}, k{R}) @ 2.541837801e-09
+
+// chemostat  replenish the free pool towards its set point
+. -> M(p[.], n[.], c{n}, k{R}) @ [max] (0) (500 * (1000 - 'nfree_R'))

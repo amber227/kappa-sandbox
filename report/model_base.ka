@@ -1,0 +1,33 @@
+// ---- chemostat set-points (a %var is needed: PyKappa cannot parse |pattern|
+//      directly inside a rule rate, but it can inside a %var) ----
+%var: 'nfree_R' |M(p[.], n[.], c{n}, k{R})|
+%var: 'nfree_W' |M(p[.], n[.], c{n}, k{W})|
+
+// ---- initial state ----
+%init: 200 M(p[.], n[.], c{y}, k{S})
+%init: 1000 M(p[.], n[.], c{n}, k{R})
+%init: 1000 M(p[.], n[.], c{n}, k{W})
+
+// ---- R ----
+M(c{y}, n[.]), M(p[.], n[.], c{n}, k{R}) -> M(c{y}, n[1]), M(p[1], n[.], c{n}, k{R}) @ 0.1
+M(c{y}, n[1]), M(p[1], n[.], c{n}, k{R}) -> M(c{y}, n[.]), M(p[.], n[.], c{n}, k{R}) @ 900
+M(c{y}, n[1]), M(p[1], n[.], c{n}, k{R}) -> M(c{y}, n[1]), M(p[1], n[.], c{y}, k{R}) @ 100
+M(c{y}, n[1]), M(p[1], n[.], c{y}, k{R}) -> M(c{y}, n[1]), M(p[1], n[.], c{n}, k{R}) @ 0.05
+M(c{y}, n[1]), M(p[1], n[.], c{y}, k{R}) -> M(c{y}, n[.]), M(p[.], n[.], c{n}, k{R}) @ 5.549450549
+M(c{y}, n[.]), M(p[.], n[.], c{n}, k{R}) -> M(c{y}, n[1]), M(p[1], n[.], c{y}, k{R}) @ 2.541837801e-09
+. -> M(p[.], n[.], c{n}, k{R}) @ [max] (0) (500 * (1000 - 'nfree_R'))
+
+// ---- W ----
+M(c{y}, n[.]), M(p[.], n[.], c{n}, k{W}) -> M(c{y}, n[1]), M(p[1], n[.], c{n}, k{W}) @ 0.1
+M(c{y}, n[1]), M(p[1], n[.], c{n}, k{W}) -> M(c{y}, n[.]), M(p[.], n[.], c{n}, k{W}) @ 9000
+M(c{y}, n[1]), M(p[1], n[.], c{n}, k{W}) -> M(c{y}, n[1]), M(p[1], n[.], c{y}, k{W}) @ 100
+M(c{y}, n[1]), M(p[1], n[.], c{y}, k{W}) -> M(c{y}, n[1]), M(p[1], n[.], c{n}, k{W}) @ 0.05
+M(c{y}, n[1]), M(p[1], n[.], c{y}, k{W}) -> M(c{y}, n[.]), M(p[.], n[.], c{n}, k{W}) @ 55.49450549
+M(c{y}, n[.]), M(p[.], n[.], c{n}, k{W}) -> M(c{y}, n[1]), M(p[1], n[.], c{y}, k{W}) @ 2.541837801e-09
+. -> M(p[.], n[.], c{n}, k{W}) @ [max] (0) (500 * (1000 - 'nfree_W'))
+
+// ---- observables ----
+%obs: 'free_R' |M(p[.], n[.], c{n}, k{R})|
+%obs: 'free_W' |M(p[.], n[.], c{n}, k{W})|
+%obs: 'prod_R' |M(p[_], c{y}, k{R})|
+%obs: 'prod_W' |M(p[_], c{y}, k{W})|

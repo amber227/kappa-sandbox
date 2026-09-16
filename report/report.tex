@@ -1,0 +1,46 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{amsmath,amssymb,graphicx,booktabs,microtype}
+\usepackage[colorlinks=true,linkcolor=NavyBlue,citecolor=NavyBlue,urlcolor=NavyBlue]{hyperref}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathmorphing}
+\captionsetup{font=small,labelfont=bf}
+\usepackage[section]{placeins}
+\renewcommand{\topfraction}{0.92}\renewcommand{\bottomfraction}{0.7}
+\renewcommand{\textfraction}{0.08}\renewcommand{\floatpagefraction}{0.8}
+\setcounter{topnumber}{3}\setcounter{totalnumber}{4}
+\input{macros}
+
+\definecolor{kappakw}{HTML}{1F4E79}
+\definecolor{kappacm}{HTML}{6B7B8B}
+\lstdefinestyle{ka}{
+  basicstyle=\ttfamily\footnotesize, breaklines=true, columns=fullflexible,
+  commentstyle=\color{kappacm}\itshape, keywordstyle=\color{kappakw}\bfseries,
+  morecomment=[l]{//}, morekeywords={\%init,\%obs,\%var,\%agent},
+  literate={->}{{$\rightarrow$}}2 {<->}{{$\leftrightarrow$}}2,
+  frame=single, rulecolor=\color{black!25}, framesep=4pt, xleftmargin=2pt,
+}
+\lstdefinestyle{sh}{basicstyle=\ttfamily\footnotesize,breaklines=true,
+  frame=single,rulecolor=\color{black!25},framesep=4pt,columns=fullflexible}
+
+\newcommand{\kB}{k_\mathrm{B}}
+\newcommand{\ka}[1]{\texttt{#1}}
+
+\title{\vspace{-2.2em}Kinetic proofreading in a minimal Kappa model of\\
+template-directed polymerisation}
+\author{Reproduction of Pigolotti \& Sartori, \emph{J.\ Stat.\ Phys.}\ \textbf{162}, 1167 (2016)}
+\date{Commit \texttt{\githash}}
+
+\begin{document}
+\maketitle
+\vspace{-1.5em}
+\begin{abstract}\noindent
+\input{abstract}
+\end{abstract}
+
+\input{body}
+
+\end{document}

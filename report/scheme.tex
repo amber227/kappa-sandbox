@@ -1,0 +1,57 @@
+\begin{tikzpicture}[
+  x=0.98cm, y=0.98cm, every node/.style={font=\small},
+  res/.style={circle, draw=black!70, line width=0.7pt, minimum size=6.2mm, inner sep=0pt},
+  com/.style={res, fill=black!78, text=white},
+  unc/.style={res, fill=white, densely dashed, draw=black!55},
+  free/.style={res, fill=white, draw=black!45},
+  rr/.style={-{Latex[length=2mm]}, line width=0.6pt},
+  bb/.style={line width=1.1pt, black!70},
+  lbl/.style={font=\scriptsize, inner sep=1pt},
+]
+\newcommand{\chainbit}[1]{%
+  \node[lbl,black!45] at (-0.72,0) {$\cdots$};
+  \draw[bb] (-0.45,0)--(0.2,0);
+  \node[com] (b#1) at (0.2,0) {};  \node[com] (c#1) at (0.9,0) {};
+  \draw[bb] (b#1)--(c#1);}
+% ---------------- state 0 ----------------
+\begin{scope}[shift={(0,0)}]
+  \node[lbl, black!55] at (0.6,1.30) {state \textbf{0}};
+  \chainbit{0}
+  \node[lbl] at (0.9,0.60) {$3'$ tip};
+  \node[free] (f0) at (2.05,0) {$\nu$};
+  \node[lbl, black!45] at (2.05,-0.62) {pool};
+\end{scope}
+% ---------------- 0 <-> 1 ----------------
+\begin{scope}[shift={(2.85,0)}]
+  \draw[rr] (0,0.17)--(1.05,0.17);   \node[lbl] at (0.52,0.42) {\textbf{add}};
+  \draw[rr] (1.05,-0.17)--(0,-0.17); \node[lbl] at (0.52,-0.45) {reject};
+\end{scope}
+% ---------------- state 1 ----------------
+\begin{scope}[shift={(4.85,0)}]
+  \node[lbl, black!55] at (0.9,1.30) {state \textbf{1}};
+  \chainbit{1}
+  \node[unc] (d1) at (1.6,0) {$\nu$};  \draw[bb] (c1)--(d1);
+  \node[lbl, align=center, black!55] at (1.6,-0.72) {paired\\[-2pt]\texttt{c\{n\}}};
+\end{scope}
+% ---------------- 1 <-> 2 ----------------
+\begin{scope}[shift={(7.35,0)}]
+  \draw[rr] (0,0.17)--(1.05,0.17);   \node[lbl] at (0.52,0.42) {\textbf{commit}};
+  \draw[rr] (1.05,-0.17)--(0,-0.17); \node[lbl] at (0.52,-0.45) {uncommit};
+\end{scope}
+% ---------------- state 2 ----------------
+\begin{scope}[shift={(9.35,0)}]
+  \node[lbl, black!55, align=center] at (0.9,1.42)
+       {state \textbf{2}\\[-2pt]$\equiv$ state \textbf{0} of the next site};
+  \chainbit{2}
+  \node[com] (d2) at (1.6,0) {$\nu$};  \draw[bb] (c2)--(d2);
+  \node[lbl] at (1.6,0.60) {new tip};
+  \node[lbl, align=center, black!55] at (1.6,-0.72) {incorporated\\[-2pt]\texttt{c\{y\}}};
+\end{scope}
+% ---------------- discard arcs ----------------
+\draw[rr, line width=1.0pt]
+  (10.95,-1.28) .. controls (7.8,-2.15) and (3.6,-2.15) .. (0.30,-1.28);
+\node[lbl] at (5.65,-1.42) {\textbf{proofread}\, ($2\to0$; driven by $\mu_{02}$, the fuel)};
+\draw[rr, black!48]
+  (0.30,-2.38) .. controls (3.6,-3.20) and (7.8,-3.20) .. (10.95,-2.38);
+\node[lbl, black!48] at (5.65,-2.50) {ligate\, ($0\to2$; rate fixed by detailed balance)};
+\end{tikzpicture}

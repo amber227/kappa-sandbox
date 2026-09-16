@@ -143,3 +143,31 @@ if __name__ == "__main__":
     import json
     print(json.dumps({k: round(v, 6) for k, v in p.rates().items()}, indent=1))
     print(kappa(p))
+
+
+def landscape(p: Params) -> dict:
+    """Back out the Pigolotti-Sartori energy landscape (Eq. 1) implied by the rates.
+
+    Their parameterisation is  k_{j->i} = w_ij exp[(dE_j + mu_ij + d_ij[right])/T],
+    so the well depths dE_i and the barrier prefactors w_ij are fixed by the rates.
+    Barrier *levels* are B_ij = -T log w_ij, defined only up to the choice of time
+    unit; `tau` rescales every rate by 1/tau and shifts all barriers by +log tau.
+    """
+    from math import log
+    r = p.rates()
+    dE0 = 0.0
+    dE1 = {nu: log(r["k_off_" + nu] / p.assoc) for nu in "RW"}
+    dE2 = {nu: dE1[nu] - log(r["k_cat_" + nu] / r["k_un_" + nu]) for nu in "RW"}
+    # prefactors
+    from math import exp
+    w01 = p.assoc                                    # k_{0->1} = w01 * exp(dE0)
+    d21 = dE1["W"] - dE1["R"]                        # delta_21, forced = Delta_1
+    w12 = r["k_cat_R"] / exp(dE1["R"] + d21)
+    w20 = r["k_pf_R"] / exp(dE2["R"] + p.drive) if r["k_pf_R"] > 0 else float("nan")
+    return dict(
+        dE={0: {"R": dE0, "W": dE0}, 1: dE1, 2: dE2},
+        delta_01=0.0, delta_21=d21, delta_02=0.0,
+        Delta_1=dE1["W"] - dE1["R"], Delta_2=dE2["W"] - dE2["R"],
+        w={"01": w01, "12": w12, "20": w20},
+        mu_02=p.drive,
+    )
