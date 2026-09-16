@@ -365,16 +365,26 @@ emb = mixture.embeddings_in_component(pattern, specific_component)
    A(x[.]), B(x[.]) -> A(x[1]), B(x[1]) @ 0.001
    ```
 
-2. **Algebraic expressions in observables NOT supported**:
+2. **Algebraic expressions ARE supported in `%obs` and `%var` (verified Sep 2026)**:
    ```python
-   # WRONG - not supported in System.from_ka()
-   %obs: 'total' 'a' + 'b'
-   %obs: 'half' |A(x[1]), A(x[1])| / 2
-
-   # CORRECT - calculate in Python after simulation
-   df['total'] = df['a'] + df['b']
-   df['half'] = df['aa_bonds'] / 2
+   %obs: 'total' |A(x[1]), B(x[1])| + |A(x[.])|      # works
+   %var: 'nfree' |M(p[.], n[.], c{n}, k{R})|          # works
    ```
+   But `|pattern|` **cannot appear inside a rule rate**. `KappaTransformer` transforms
+   the pattern subtree bottom-up into a `Pattern` object before `rate()` hands the tree
+   to `ExpressionTransformer`, so evaluation dies with
+   `AttributeError: 'Pattern' object has no attribute 'type'`.
+   ```python
+   # WRONG
+   . -> M(...) @ 500 * (1000 - |M(p[.], n[.], c{n}, k{R})|)
+
+   # CORRECT - bind the count to a %var first, reference it by name in the rate
+   %var: 'nfree_R' |M(p[.], n[.], c{n}, k{R})|
+   . -> M(p[.], n[.], c{n}, k{R}) @ [max] (0) (500 * (1000 - 'nfree_R'))
+   ```
+   Clamp any rate that could go negative with `[max] (0) (...)`. A negative rate is not
+   an error: it flows into `random.choices(weights=...)` and silently corrupts rule
+   selection.
 
 3. **System.update_until() doesn't exist**:
    ```python
@@ -407,25 +417,40 @@ emb = mixture.embeddings_in_component(pattern, specific_component)
    %init: 100 TileA(n[.], s[.], e[.], w[.])
    ```
 
-6. **Agent creation/deletion (`->` with `.`) parses but is NOT implemented**:
-   - The Kappa syntax for creation (`. -> A()`) and deletion (`A() -> .`) uses `.` as a placeholder to keep agent counts equal on both sides of the rule. This syntax parses without error.
-   - However, `System.from_ka()` raises `NotImplementedError` at line 142 of system.py when it encounters a `"pattern"` tag in the parse tree. Both creation and deletion hit this path.
-   - **Workaround**: Implement the simulation loop directly in Python using the Gillespie SSA (or Euler method for deterministic approximation), tracking molecule counts as integers and computing propensities manually. This is often cleaner for models with significant creation/deletion flux anyway.
-   - Example of what fails silently:
+6. **Agent creation/deletion DOES work** (verified Sep 2026, pykappa 0.1.8):
    ```python
-   # Parses OK but raises NotImplementedError at System.from_ka()
-   . -> R(m[.])  @ 20.0   # zeroth-order synthesis
-   X() -> .      @ 0.5    # degradation
+   . -> A(x[.])  @ 1.0    # zeroth-order synthesis: works
+   A(x[.]) -> .  @ 1.0    # degradation: works
    ```
+   An earlier note here claimed `NotImplementedError`; that is the `tag == "pattern"`
+   branch of `System.from_ka`, which handles a bare pattern at top level, not a `.` slot
+   inside a rule. Creation is what makes a chemostatted species pool possible.
 
 7. **Complex observables trigger internal bugs**:
    - Too many wildcards `[_]` in different observables can cause AssertionError
    - Symptom: "assert item in self" in pykappa/utils.py
    - Solution: Simplify observables, calculate derived values in Python
 
-7. **Comments may not work in all contexts**:
-   - Use Kappa comments sparingly in System.from_ka() strings
-   - If errors occur, try removing all comments first
+8. **Comments must use `//`**. A `#` is a lexer error
+   (`No terminal matches '#' in the current parser context`).
+
+9. **Embedding selection uses the module-level RNG**. `KappaRule.select` calls
+   `random.choice`, not `System.rng`, so `System.from_ka(..., seed=s)` alone does NOT
+   make a run reproducible. Always also call `random.seed(s)`.
+
+10. **`system.tallies` is the cheap way to count events**. It is keyed by
+   `str(rule)` (the rule's kappa string), not by rule name. Since quoted labels do not
+   parse, generate the source and the names together and zip the names onto
+   `system.rules.values()`, which preserves source order.
+
+11. **Disable the monitor for long runs**. `Monitor.update()` evaluates every
+   observable after every event and dominates the runtime. Set `system.monitor = None`
+   after construction and sample observables yourself every N events.
+
+12. **Throughput**: expect ~1-2k events/s for a model with ~14 rules and ~10 tracked
+   components. Cost per event is roughly constant in system size (embeddings are
+   maintained incrementally in the update region), but linear in the number of tracked
+   components, so drop observables you do not need.
 
 ## Troubleshooting
 
