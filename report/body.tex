@@ -250,9 +250,12 @@ are defined up to the choice of time unit.}
 
 Figure~\ref{fig:main} compares three machines that differ only in the presence and the
 driving of the discard arc.  Protocol~B, with no discard arc at all, incorporates a
-mismatch with probability $\etaB$ (\etaloB--\etahiB, $\nB$ residues), essentially the
-equilibrium bound $\eta_{\rm eq}=\etaeq$ of Eq.~\eqref{eq:etaeq}: the selection step
-alone cannot do better than the binding free energy allows.  Adding the discard arc and
+mismatch with probability $\etaB$ (\etaloB--\etahiB, $\nB$ residues), against the
+equilibrium bound $\eta_{\rm eq}=\etaeq$ of Eq.~\eqref{eq:etaeq}; the $\sim\!10\%$
+excess is the deliberate compromise of \S2.3, the finite ratio
+$k^{\rm com}/k^{\rm rej}$ (the self-consistent theory for this rate set gives
+$\etaBtheory$).  Either way the selection step alone cannot do appreciably better than
+the binding free energy allows.  Adding the discard arc and
 driving it with $\mu_{02}=\pardrive\,\kB T$ lowers the error to $\etaC$
 (\etaloC--\etahiC, $\nC$ residues), a factor of $\gain$, and brings it to within
 $\approx2\times$ of the zero-speed floor $\eta_B^2=\etaBsq$ (\S\ref{sec:tradeoff}).  The middle case is the
@@ -305,8 +308,9 @@ dashed grey line is protocol~B, the dotted line the zero-speed floor $\eta_{\rm 
 A factor of a few in $\eta$ is not by itself evidence of proofreading --- many things
 lower an error rate.  The signature of \emph{kinetic} proofreading is that the same
 discrimination energy is used twice, so $\ln\eta$ falls twice as fast with $\delta$.
-Figure~\ref{fig:square} sweeps $\delta$ over a factor of $\sim\!10$ in $e^{\delta}$ and
-fits $\mathrm{d}\ln\eta/\mathrm{d}\delta$.  Protocol~B gives $\slopeB$; protocol~C gives
+Figure~\ref{fig:square} sweeps $\delta$ from $1.05$ to $2.45\,\kB T$ --- a factor of
+four in the discrimination ratio $e^{\delta}$ --- and fits
+$\mathrm{d}\ln\eta/\mathrm{d}\delta$.  Protocol~B gives $\slopeB$; protocol~C gives
 $\slopeC$, a ratio of $\sloperatio$.  (Neither is exactly $-1$ or $-2$ because
 $\eta_{\rm eq}=1/(1+e^{\delta})$ itself flattens at small $\delta$; the reference curves
 plotted are $\eta_{\rm eq}$ and $\eta_{\rm eq}^2$, and the \emph{ratio} of the slopes is
