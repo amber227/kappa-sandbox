@@ -149,7 +149,7 @@ def fig_main():
 
     # (a) composition of the growing copies
     ax = axs[0]
-    ends = []
+    ends, tops = [], []
     for name, lab, col in runs:
         f = os.path.join(RES, name + "_traj.csv")
         if not os.path.exists(f):
@@ -158,14 +158,28 @@ def fig_main():
         d = pd.read_csv(f)
         ax.plot(d.prod_R + d.prod_W, d.prod_W, color=col, label=lab)
         ends.append(float((d.prod_R + d.prod_W).iloc[-1]))
+        if name != "main_C_nodrive":
+            tops.append(float(d.prod_W.iloc[-1]))
     lim = min(ends) if ends else ax.get_xlim()[1]
     ax.set_xlim(0, lim)
-    for frac, ls, lab in [(ETA_EQ, (0, (4, 2)), r"$\eta_{\rm eq}=1/(1+e^{\delta})$"),
-                          (FLOOR, (0, (1, 1.6)), r"$\eta_{\rm eq}^2$ (zero-speed floor)")]:
-        ax.plot([0, lim], [0, frac * lim], color="0.35", ls=ls, lw=1.0, label=lab)
+    if tops:
+        ax.set_ylim(0, 1.45 * max(tops))
+        r0 = load("main_C_nodrive.json").get("main_C_nodrive")
+        if r0:
+            ax.annotate(rf"off scale, slope $={r0['eta']:.2f}$",
+                        xy=(0.295 * lim, ax.get_ylim()[1] * 0.965),
+                        xytext=(0.36 * lim, ax.get_ylim()[1] * 0.60),
+                        fontsize=7.5, color=C_C0,
+                        arrowprops=dict(arrowstyle="->", color=C_C0, lw=0.8))
+    for frac, ls in [(ETA_EQ, (0, (4, 2))), (FLOOR, (0, (1, 1.6)))]:
+        ax.plot([0, lim], [0, frac * lim], color="0.35", ls=ls, lw=1.0)
+    ax.text(lim * 0.985, ETA_EQ * lim * 1.03, r"$\eta_{\rm eq}$", fontsize=8,
+            color="0.35", ha="right", va="bottom")
+    ax.text(lim * 0.985, FLOOR * lim * 1.10, r"$\eta_{\rm eq}^2$", fontsize=8,
+            color="0.35", ha="right", va="bottom")
     ax.set_xlabel("residues incorporated"); ax.set_ylabel("mismatches incorporated")
     ax.set_title("(a) copy composition", loc="left")
-    ax.legend(loc="upper left")
+    ax.legend(loc="upper left", fontsize=7.5, borderpad=0.2, labelspacing=0.3)
 
     # (b) running error fraction
     ax = axs[1]

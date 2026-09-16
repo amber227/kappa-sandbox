@@ -32,7 +32,7 @@ lsdEoneR lsdEoneW lsdEtwoR lsdEtwoW lswomegazeroone lswomegaonetwo lswomegatwoze
 lsdeltatwoone etaeq etahop etairr etaB etaloB etahiB nB vB costB evB thB etaC etaloC
 etahiC nC vC costC evC thC etaCz etaloCz etahiCz nCz vCz costCz evCz thCz gain slowdown
 slopeB slopethB slopeC slopethC prefac drivecross etaCtheory etaBtheory vCtheory
-vBtheory njobs nevents sloperatio etafloor etaBsq astall etaCstall stallratio
+vBtheory velfrac njobs nevents sloperatio etafloor etaBsq astall etaCstall stallratio
 vstall""".split())
 
 git = subprocess.run(["git","-C",ROOT,"rev-parse","--short","HEAD"],
@@ -101,6 +101,8 @@ m("drivecross", fmt(cross, 3))
 m("etaCtheory", fmt(self_consistent_eta(Params())["eta"], 3))
 m("etaBtheory", fmt(eb, 3))
 m("vCtheory", fmt(self_consistent_eta(Params())["velocity"], 3))
+m("velfrac", fmt(100 * self_consistent_eta(Params())["velocity"] /
+                 self_consistent_eta(Params(proofread=False))["velocity"], 2))
 m("vBtheory", fmt(self_consistent_eta(Params(proofread=False))["velocity"], 3))
 # slope ratio, stall point, zero-speed floor
 SB2, SC2 = load("delta_B_*.json"), load("delta_C_*.json")
