@@ -285,9 +285,11 @@ from $\eta\approx0.49$ at zero drive to a plateau above
 $\mu_{02}\approx8\,\kB T$; it does not beat the no-proofreading machine until
 $\mu_{02}\approx\drivecross\,\kB T$.  This is the quantitative content of the statement
 that proofreading needs fuel: the discard arc buys accuracy only once it is driven hard
-enough that its reverse is negligible, and it costs both speed
-(panel~b: the growth velocity falls by $\slowdown\times$ between $\mu_{02}=0$ and the
-plateau) and monomers ($\costC$ excision events per residue retained).
+enough that its reverse is negligible, and it costs both speed and monomers.
+Panel~(b) shows the price: on the plateau the copy grows $\slowdown\times$ more slowly
+than the no-proofreading machine, and more than two orders of magnitude more slowly than
+at $\mu_{02}=0$, where the discard arc runs backwards as a fast unselective ligation.
+Each retained residue costs $\costC$ excision events at the working point.
 
 \begin{figure}[t]\centering
 \includegraphics[width=\textwidth]{../figures/fig3_drive_\githash.pdf}
@@ -371,10 +373,15 @@ only as the machine stalls.}
 \subsection{Validation}
 
 Figure~\ref{fig:valid}(a) puts every condition on a parity plot against the
-self-consistent theory, together with the stack SSA.  The three implementations agree
-across two decades in $\eta$, which is the evidence that the Kappa encoding --- in
-particular the decision to represent active-site occupancy as a bond plus an internal
-state, and the derived ligation rate --- is doing what it is supposed to.  The agreement
+self-consistent theory, together with the stack SSA.  Across all $\nruns$ conditions and
+a factor of $\sim\!40$ in $\eta$, the median relative deviation of PyKappa from the
+theory is $\medreldev\%$, and the deviations in units of their own binomial error are
+distributed with r.m.s.\ $\rmsz$ and a worst case of $\maxz$ --- i.e.\ they are
+statistical, not systematic (the small positive mean, $\meanz$, is consistent with the
+$\sim\!0.3\%$ asymmetry the one-sided chemostat leaves in $c_W/c_R$).  That is the
+evidence that the Kappa encoding --- in particular the decision to represent active-site
+occupancy as a bond plus an internal state, and the derived ligation rate --- is doing
+what it is supposed to.  The agreement
 of the stack SSA with the theory additionally says that the paper's uncorrelated-error
 ansatz is accurate here, i.e.\ that proofreading does not induce appreciable correlations
 along the copy.
@@ -390,8 +397,10 @@ overshoots $\eta_{\rm eq}$ at $v\to0$.
 \includegraphics[width=\textwidth]{../figures/fig6_validation_\githash.pdf}
 \caption{\textbf{Three implementations, and a thermodynamic check.}  (a) simulated
 $\eta$ against the self-consistent theory for every condition run.  (b) protocol~B as
-the polymerisation drive is reduced towards stall; the error converges on the
-equilibrium bound.}
+the polymerisation drive is reduced towards stall (by raising $k^{\rm unc}$); the theory
+converges on the equilibrium bound $\eta_{\rm eq}$, and the independent SSA agrees within
+its (large, because near stall almost nothing is incorporated) counting error at every
+point.}
 \label{fig:valid}
 \end{figure}
 

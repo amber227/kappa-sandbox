@@ -1,0 +1,7 @@
+5 re-runs: ['main_C_nodrive', 'drive_00.0', 'drive_02.0', 'drive_03.0', 'drive_04.0']
+main_C_nodrive       eta=0.49308 n=109809 v=2187.049 cost=0.01 (529s)
+drive_00.0           eta=0.49513 n=137182 v=2188.011 cost=0.01 (667s)
+drive_02.0           eta=0.45206 n=87834 v=284.668 cost=0.09 (710s)
+drive_03.0           eta=0.37836 n=49989 v=98.880 cost=0.22 (748s)
+drive_04.0           eta=0.24921 n=22760 v=34.273 cost=0.47 (505s)
+FOLLOWUP DONE

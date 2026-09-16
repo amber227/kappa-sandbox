@@ -258,8 +258,8 @@ def fig_drive():
     if B:
         ax.errorbar([19.5], [B["eta"]], yerr=_eb(B), fmt="s", ms=4, color=C_B, capsize=2.5)
     ax.axhline(FLOOR, color="0.35", ls=(0, (1, 1.6)), lw=1.0)
-    ax.text(11.0, FLOOR * 0.68, r"zero-speed floor $\eta_{\rm eq}^2$",
-            fontsize=7.5, color="0.35")
+    ax.text(19.6, FLOOR * 1.16, r"zero-speed floor $\eta_{\rm eq}^2$",
+            fontsize=7.5, color="0.35", ha="right")
     ax.axhline(ETA_EQ, color="0.35", ls=(0, (4, 2)), lw=1.0)
     ax.text(0.3, ETA_EQ * 1.14, r"$\eta_{\rm eq}$", fontsize=8, color="0.35")
     ax.set_yscale("log")
@@ -387,11 +387,14 @@ def fig_tradeoff():
     for x, y, lab in zip(v, eta, a):
         ax.annotate(f"{lab:.1f}", (x, y), textcoords="offset points",
                     xytext=(5, 4), fontsize=7, color="0.3")
-    ax.plot(v_ssa, [t["eta"] for t in ssa_pts], "^", ms=5.5, color="#8E5BA6", mfc="none",
-            zorder=4, label="stack SSA (near stall)")
+    _se = np.array([np.sqrt(max(t["eta"], 1e-9) * (1 - t["eta"]) / max(t["n_incorp"], 1))
+                    for t in ssa_pts])
+    ax.errorbar(v_ssa, [t["eta"] for t in ssa_pts], yerr=_se, fmt="^", ms=5.5,
+                color="#8E5BA6", mfc="none", capsize=2.5, lw=0.9, zorder=4,
+                label="stack SSA (near stall)")
     ax.axhline(floor, color="0.35", ls=(0, (1, 1.6)), lw=1.0)
-    ax.text(0.03, floor * 1.18, r"zero-speed floor $\eta_B^2$", fontsize=7.5,
-            color="0.35", transform=ax.get_yaxis_transform(), ha="left")
+    ax.text(0.97, floor * 0.80, r"zero-speed floor $\eta_B^2$", fontsize=7.5,
+            color="0.35", transform=ax.get_yaxis_transform(), ha="right", va="top")
     ax.set_xscale("log"); ax.set_yscale("log")
     ax.set_xlabel("growth velocity  [residues / chain / time]")
     ax.set_ylabel(r"error fraction $\eta$")
@@ -406,11 +409,11 @@ def fig_tradeoff():
                 mfc="w", capsize=2.5, lw=1.0, label="Kappa")
     ax.axhline(b["eta"], color=C_B, ls="--", lw=1.1)
     ax.text(0.88, b["eta"] * 1.12, "protocol B", ha="right", fontsize=7.5, color=C_B)
-    ax.plot(a_ssa, [t["eta"] for t in ssa_pts], "^", ms=5.5, color="#8E5BA6", mfc="none",
-            label="stack SSA")
+    ax.errorbar(a_ssa, [t["eta"] for t in ssa_pts], yerr=_se, fmt="^", ms=5.5,
+                color="#8E5BA6", mfc="none", capsize=2.5, lw=0.9, label="stack SSA")
     ax.axhline(floor, color="0.35", ls=(0, (1, 1.6)), lw=1.0)
-    ax.text(0.03, floor * 1.18, r"$\eta_B^2$", fontsize=8, color="0.35",
-            transform=ax.get_yaxis_transform(), ha="left")
+    ax.text(0.40, floor * 1.16, r"$\eta_B^2$", fontsize=8.5, color="0.35",
+            transform=ax.get_yaxis_transform(), ha="center")
     ax2 = ax.twinx()
     ax2.plot(at, vt, color="0.55", lw=1.1, ls="-.")
     ax2.plot(a, v, ".", color="0.55", ms=6)
@@ -420,7 +423,8 @@ def fig_tradeoff():
     ax.set_xlabel(r"excision strength  $k^R_{02}/v_{\rm com}$")
     ax.set_ylabel(r"$\eta$")
     ax.set_title("(b) the floor is reached only at stall", loc="left")
-    ax.legend(loc="lower left")
+    ax.legend(loc="lower left", bbox_to_anchor=(-0.01, -0.02), fontsize=7.5,
+              borderpad=0.2, labelspacing=0.3)
     fig.tight_layout()
     return save(fig, "fig5_tradeoff")
 

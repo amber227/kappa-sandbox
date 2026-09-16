@@ -32,7 +32,7 @@ lsdEoneR lsdEoneW lsdEtwoR lsdEtwoW lswomegazeroone lswomegaonetwo lswomegatwoze
 lsdeltatwoone etaeq etahop etairr etaB etaloB etahiB nB vB costB evB thB etaC etaloC
 etahiC nC vC costC evC thC etaCz etaloCz etahiCz nCz vCz costCz evCz thCz gain slowdown
 slopeB slopethB slopeC slopethC prefac drivecross etaCtheory etaBtheory vCtheory
-vBtheory velfrac njobs nevents sloperatio etafloor etaBsq astall etaCstall stallratio
+vBtheory velfrac njobs rmsz meanz maxz nruns medreldev nevents sloperatio etafloor etaBsq astall etaCstall stallratio
 vstall""".split())
 
 git = subprocess.run(["git","-C",ROOT,"rev-parse","--short","HEAD"],
@@ -129,7 +129,24 @@ if prev:
     m("etaCstall", fmt(prev[1]["eta"], 3))
     m("stallratio", fmt(prev[1]["eta"] / _eB**2, 3))
     m("vstall", fmt(prev[1]["velocity"], 2))
-m("njobs", str(len(glob.glob(os.path.join(RES, "*.json")))))
+# aggregate agreement between PyKappa and the self-consistent theory
+_z, _rel = [], []
+for _n, _r in R.items():
+    _t = self_consistent_eta(Params(**_r["params"]))["eta"]
+    if not np.isfinite(_t) or _t <= 0:
+        continue
+    _sd = np.sqrt(max(_r["eta"], 1e-9) * (1 - _r["eta"]) / max(_r["n_incorp"], 1))
+    if _sd > 0:
+        _z.append((_r["eta"] - _t) / _sd)
+    _rel.append(abs(_r["eta"] - _t) / _t)
+if _z:
+    _z = np.array(_z)
+    m("rmsz", fmt(float(np.sqrt((_z**2).mean())), 2))
+    m("meanz", fmt(float(_z.mean()), 2))
+    m("maxz", fmt(float(np.abs(_z).max()), 2))
+    m("nruns", str(len(_z)))
+    m("medreldev", fmt(100 * float(np.median(_rel)), 2))
+m("njobs", str(len(glob.glob(os.path.join(RES, "*.json"))) - 1))
 m("nevents", fmt(sum(v["n_events"] for v in R.values())/1e6, 3))
 
 # any macro the text uses but the data does not yet provide gets a loud placeholder,

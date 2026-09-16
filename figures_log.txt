@@ -1,0 +1,6 @@
+wrote fig1_landscape_9fff8ea.pdf
+wrote fig2_main_9fff8ea.pdf
+wrote fig3_drive_9fff8ea.pdf
+wrote fig4_squarelaw_9fff8ea.pdf
+wrote fig5_tradeoff_9fff8ea.pdf
+wrote fig6_validation_9fff8ea.pdf
