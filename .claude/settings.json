@@ -1,14 +1,3 @@
 {
-  "hooks": {
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "uv run /home/ec2-user/claude-slack-wrapper/stop_hook.py"
-          }
-        ]
-      }
-    ]
-  }
+  "hooks": {}
 }

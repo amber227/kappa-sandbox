@@ -1,0 +1,719 @@
+{
+  "protein_identifier": {
+    "gene_name": "AXIN1",
+    "protein_name": "Axin-1 (Axis inhibition protein 1)",
+    "uniprot_accession": "O15169",
+    "organism": "Homo sapiens",
+    "organism_taxid": 9606
+  },
+  "sequence": {
+    "canonical_length": 862,
+    "canonical_sequence": "MNIQEQGFPLDLGASFTEDAPRPPVPGEEGELVSTDPRPASYSFCSGKGVGIKGETSTАТPRRSDLDLGYEPEGSASPTPPYLKWAESLHSLLDDQDGISLFRTFLKQEGCADLLDFWFACTGFRKLEPCDSNEEKRLKLARAIYRKYILDNNGIVSRQTKPATKSFIKGCIMKQLIDPAMFDQAQTEIQATMEENTYPSFLKSDIYLEYTRTGSESPKVCSDQSSGSGTGKGISGYLPTLNEDEEWKCDQDMDEDDGRDAAPPGRLPQKLLLETAAPRVSSSRRYSEGREFRYGSWREPVNPYYVNAGYALAPATSANDSEQQSLSSDADTLSLTDSSVDGIPPYRIRKQHRREMQESVQVNGRVPLPHIPRTYRVPKEVRVEPQKFAEELIHRLEAVQRTREAEEKLEERLKRVRMEEEGЕДGDPSSGPPGPCHKLPPAPAWHHFPPRCVDMGCAGLRDAHEENPESILDEHVQRVLRTPGRQSPGPGHRSPDSGHVAKMPVALGGAASGHGKHVPKSGAKLDAAGLHHHRHVHHHVHHSTARPKEQVEAEATRRAQSSFAWGLEPHSHGARSRGYSESVGAAPNASDGLAHSGKVGVACKRNAKKAESGKSASTEVPGASEDAEKNQKIMQWIIEGEKEISRHRRTGHGSSGTRKPQPHENSRPLSLEHPWAGPQLRTSVQPSHLFIQDPTMPPHPAPNPLTQLEEARRRLEEEEKRASRAPSKQRYVQEVMRRGRACVRPACAPVLHVVPAVSDMELSETETRSQRKVGGGSAQPCDSIVVAYYFCGEPIPYRTLVRGRAVTLGQFKELLTKKGSYRYYFKKVSDEFDCGVVFEEVREDEAVLPVFEEKIIGKVEKVD",
+    "molecular_weight_da": 95635,
+    "isoforms": [
+      {
+        "isoform_id": "O15169-1 (AXIN1α)",
+        "length": 862,
+        "description": "Canonical isoform, full-length protein encoded by transcript NM_003502",
+        "sequence": "MNIQEQGFPLDLGASFTEDAPRPPVPGEEGELVSTDPRPASYSFCSGKGVGIKGETSTАТPRRSDLDLGYEPEGSASPTPPYLKWAESLHSLLDDQDGISLFRTFLKQEGCADLLDFWFACTGFRKLEPCDSNEEKRLKLARAIYRKYILDNNGIVSRQTKPATKSFIKGCIMKQLIDPAMFDQAQTEIQATMEENTYPSFLKSDIYLEYTRTGSESPKVCSDQSSGSGTGKGISGYLPTLNEDEEWKCDQDMDEDDGRDAAPPGRLPQKLLLETAAPRVSSSRRYSEGREFRYGSWREPVNPYYVNAGYALAPATSANDSEQQSLSSDADTLSLTDSSVDGIPPYRIRKQHRREMQESVQVNGRVPLPHIPRTYRVPKEVRVEPQKFAEELIHRLEAVQRTREAEEKLEERLKRVRMEEEGЕДGDPSSGPPGPCHKLPPAPAWHHFPPRCVDMGCAGLRDAHEENPESILDEHVQRVLRTPGRQSPGPGHRSPDSGHVAKMPVALGGAASGHGKHVPKSGAKLDAAGLHHHRHVHHHVHHSTARPKEQVEAEATRRAQSSFAWGLEPHSHGARSRGYSESVGAAPNASDGLAHSGKVGVACKRNAKKAESGKSASTEVPGASEDAEKNQKIMQWIIEGEKEISRHRRTGHGSSGTRKPQPHENSRPLSLEHPWAGPQLRTSVQPSHLFIQDPTMPPHPAPNPLTQLEEARRRLEEEEKRASRAPSKQRYVQEVMRRGRACVRPACAPVLHVVPAVSDMELSETETRSQRKVGGGSAQPCDSIVVAYYFCGEPIPYRTLVRGRAVTLGQFKELLTKKGSYRYYFKKVSDEFDCGVVFEEVREDEAVLPVFEEKIIGKVEKVD"
+      },
+      {
+        "isoform_id": "O15169-2 (AXIN1β)",
+        "length": 826,
+        "description": "Shorter isoform lacking exon 9, encoded by transcript NM_181050. More prevalent in some tissues",
+        "sequence": "Exon 9 deleted variant, 36 amino acids shorter"
+      }
+    ]
+  },
+  "domains_and_motifs": {
+    "interpro_entries": [
+      {
+        "accession": "IPR032101",
+        "name": "Axin-1/2, tankyrase-binding domain",
+        "type": "Domain",
+        "locations": [{"start": 11, "end": 80}]
+      },
+      {
+        "accession": "IPR016137",
+        "name": "RGS domain",
+        "type": "Domain",
+        "locations": [{"start": 88, "end": 211}]
+      },
+      {
+        "accession": "IPR014936",
+        "name": "Axin beta-catenin binding",
+        "type": "Domain",
+        "locations": [{"start": 459, "end": 538}]
+      },
+      {
+        "accession": "IPR001158",
+        "name": "DIX domain",
+        "type": "Domain",
+        "locations": [{"start": 780, "end": 862}]
+      }
+    ],
+    "pfam_domains": [
+      {
+        "accession": "PF16646",
+        "name": "AXIN1_TNKS_BD (Tankyrase-binding domain)",
+        "clan": null,
+        "locations": [{"start": 11, "end": 80}],
+        "e_value": null
+      },
+      {
+        "accession": "PF00615",
+        "name": "RGS (Regulator of G-protein signaling)",
+        "clan": null,
+        "locations": [{"start": 88, "end": 211}],
+        "e_value": null
+      },
+      {
+        "accession": "PF08833",
+        "name": "Axin_b-cat_bind (Beta-catenin binding)",
+        "clan": null,
+        "locations": [{"start": 459, "end": 538}],
+        "e_value": null
+      },
+      {
+        "accession": "PF00778",
+        "name": "DIX (Dishevelled and Axin)",
+        "clan": null,
+        "locations": [{"start": 780, "end": 862}],
+        "e_value": null
+      }
+    ],
+    "prosite_patterns": [
+      {
+        "accession": "PS50132",
+        "name": "RGS domain",
+        "locations": [{"start": 88, "end": 211}],
+        "description": "Regulator of G-protein signaling domain, mediates interaction with APC"
+      },
+      {
+        "accession": "PS50015",
+        "name": "DIX domain",
+        "locations": [{"start": 780, "end": 862}],
+        "description": "DIX domain mediating homo- and hetero-dimerization"
+      }
+    ],
+    "smart_domains": [
+      {
+        "accession": "SM00315",
+        "name": "RGS",
+        "locations": [{"start": 89, "end": 209}]
+      },
+      {
+        "accession": "SM00021",
+        "name": "DAX (DIX in SMART nomenclature)",
+        "locations": [{"start": 805, "end": 855}]
+      }
+    ],
+    "signaling_motifs": [
+      {
+        "type": "Tankyrase-binding motif",
+        "location": {"start": 11, "end": 80},
+        "sequence": "N-terminal region",
+        "description": "Mediates interaction with tankyrase proteins leading to poly-ADP-ribosylation and degradation"
+      },
+      {
+        "type": "GSK3β binding domain",
+        "location": {"start": 383, "end": 401},
+        "sequence": "Core binding site within broader region 321-528",
+        "description": "Hydrophobic helical ridge (F388, L392, L396, V399) that recruits GSK3β to the destruction complex"
+      },
+      {
+        "type": "β-catenin binding domain",
+        "location": {"start": 459, "end": 538},
+        "sequence": "Central region",
+        "description": "Recruits β-catenin for phosphorylation by CK1α and GSK3β"
+      },
+      {
+        "type": "SIAH-binding motif (VxP)",
+        "location": {"start": 400, "end": 500},
+        "sequence": "VxP motif in GSK3-binding domain",
+        "description": "Recognition site for SIAH E3 ubiquitin ligases leading to Wnt-induced degradation"
+      },
+      {
+        "type": "Nuclear Localization Signal (NLS)",
+        "location": {"start": 344, "end": 351},
+        "sequence": "PPYRIRK",
+        "description": "Bipartite nuclear localization signal enabling nuclear-cytoplasmic shuttling"
+      },
+      {
+        "type": "Nuclear Export Signal (NES)",
+        "location": {"start": 538, "end": 547},
+        "sequence": "Leucine-rich NES with V545 and M547 as critical residues",
+        "description": "CRM1-dependent nuclear export signal in GSK3 binding domain"
+      },
+      {
+        "type": "CK1α phosphorylation consensus",
+        "location": {"start": 11, "end": 30},
+        "sequence": "N-terminal region overlapping tankyrase-binding site",
+        "description": "Phosphorylation by CK1α antagonizes tankyrase binding and degradation"
+      }
+    ]
+  },
+  "structure": {
+    "experimental_structures": [
+      {
+        "pdb_id": "1DK8",
+        "method": "X-ray diffraction",
+        "resolution_angstrom": 1.57,
+        "chain": "A",
+        "coverage": {"start": 88, "end": 211},
+        "description": "Crystal structure of the RGS-homologous domain of AXIN from Homo sapiens",
+        "ligands": ["DTT", "GOL", "SO4"],
+        "url": "https://www.rcsb.org/structure/1DK8"
+      },
+      {
+        "pdb_id": "1WSP",
+        "method": "X-ray diffraction",
+        "resolution_angstrom": 2.90,
+        "chain": "A",
+        "coverage": {"start": 780, "end": 862},
+        "description": "Crystal structure of AXIN DIX domain from Rattus norvegicus (highly homologous to human)",
+        "ligands": ["HG", "BEZ"],
+        "url": "https://www.rcsb.org/structure/1WSP"
+      },
+      {
+        "pdb_id": "6JCK",
+        "method": "X-ray diffraction",
+        "resolution_angstrom": 3.09,
+        "chain": "A,B",
+        "coverage": {"start": 780, "end": 862},
+        "description": "Complex structure of Axin-DIX and Dvl2-DIX heterodimer",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/6JCK"
+      },
+      {
+        "pdb_id": "1EMU",
+        "method": "X-ray diffraction",
+        "resolution_angstrom": 2.1,
+        "chain": "A,B",
+        "coverage": {"start": 88, "end": 211},
+        "description": "Structure of the AXIN RGS-homologous domain in complex with a SAMP repeat from APC",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/1EMU"
+      }
+    ],
+    "alphafold_prediction": {
+      "available": true,
+      "accession": "AF-O15169-F1",
+      "confidence_summary": "High confidence for structured domains (RGS, DIX). Lower confidence for linker regions and intrinsically disordered regions in the central scaffold region",
+      "url": "https://alphafold.ebi.ac.uk/entry/O15169"
+    }
+  },
+  "post_translational_modifications": [
+    {
+      "type": "Phosphorylation",
+      "position": null,
+      "residue": "S/T",
+      "function": "Multiple phosphorylation sites exist; CK1α phosphorylates N-terminal region (overlapping tankyrase-binding site) to antagonize tankyrase-mediated degradation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Ubiquitination",
+      "position": null,
+      "residue": "K",
+      "function": "Ubiquitination by SIAH1/2 E3 ligases promotes proteasomal degradation during Wnt pathway activation. SIAH recognizes VxP motif in GSK3-binding domain",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Ubiquitination",
+      "position": null,
+      "residue": "K",
+      "function": "Ubiquitination by RNF146 following poly-ADP-ribosylation by tankyrase leads to proteasomal degradation and Wnt activation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Deubiquitination",
+      "position": null,
+      "residue": "K",
+      "function": "Deubiquitinated by USP34 to stabilize AXIN1 and suppress Wnt signaling",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "SUMOylation",
+      "position": 857,
+      "residue": "K",
+      "function": "SUMOylation at K857 and K860 prevents ubiquitination and degradation; required for AXIN1-mediated JNK activation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "SUMOylation",
+      "position": 860,
+      "residue": "K",
+      "function": "SUMOylation at K857 and K860 prevents ubiquitination and degradation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Acetylation",
+      "position": 147,
+      "residue": "K",
+      "function": "Acetylation at K147 in RGS domain; constitutive in resting cells. SIRT4-catalyzed deacetylation upon Wnt stimulation modulates Wnt/β-catenin signaling",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Poly-ADP-ribosylation",
+      "position": null,
+      "residue": "Multiple",
+      "function": "PARsylation by tankyrase creates binding site for RNF146 E3 ligase, leading to ubiquitination and degradation",
+      "evidence": "Experimental"
+    }
+  ],
+  "function": {
+    "uniprot_function": "AXIN1 is a scaffold protein that forms the core of the β-catenin destruction complex, promoting phosphorylation of β-catenin by CK1α and GSK3β, leading to its ubiquitination and proteasomal degradation. Functions as a negative regulator of the Wnt signaling pathway. Also participates in other signaling pathways including Hippo, TGFβ, AMPK, mTOR, MAPK, and antioxidant signaling. Forms complexes with HIPK2 and TP53 to regulate apoptosis. Protects GSK3β from inhibitory phosphorylation by other kinases through allosteric mechanisms.",
+    "catalytic_activity": "No intrinsic enzymatic activity. Functions as a scaffold protein organizing kinases (CK1α, GSK3β) and their substrates (β-catenin, APC, etc.) to enable processive phosphorylation",
+    "subcellular_location": [
+      "Cytoplasm",
+      "Cytosol",
+      "Nucleus",
+      "β-catenin destruction complex",
+      "Lateral plasma membrane",
+      "Perinuclear region",
+      "Cell membrane (upon Wnt stimulation and DVL/LRP5/6 binding)"
+    ],
+    "tissue_specificity": "Broadly expressed across all tissues with low tissue specificity (Tau score: 0.23). Ubiquitously expressed but functionality varies in different tissue contexts",
+    "go_annotations": {
+      "molecular_function": [
+        {
+          "go_id": "GO:0042802",
+          "term": "Protein homodimerization activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0019901",
+          "term": "Protein kinase binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0004871",
+          "term": "Signal transducer activity",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0031625",
+          "term": "Ubiquitin protein ligase binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0005515",
+          "term": "Protein binding",
+          "evidence_code": "IPI"
+        }
+      ],
+      "biological_process": [
+        {
+          "go_id": "GO:0016055",
+          "term": "Wnt signaling pathway",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0030178",
+          "term": "Negative regulation of Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0000209",
+          "term": "Protein polyubiquitination",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0045732",
+          "term": "Positive regulation of protein catabolic process",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0006915",
+          "term": "Apoptotic process",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0007283",
+          "term": "Spermatogenesis",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0090090",
+          "term": "Negative regulation of canonical Wnt signaling pathway",
+          "evidence_code": "IMP"
+        }
+      ],
+      "cellular_component": [
+        {
+          "go_id": "GO:0005737",
+          "term": "Cytoplasm",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005829",
+          "term": "Cytosol",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0005634",
+          "term": "Nucleus",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0016342",
+          "term": "Catenin complex",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0030877",
+          "term": "Beta-catenin destruction complex",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0016328",
+          "term": "Lateral plasma membrane",
+          "evidence_code": "IDA"
+        }
+      ]
+    }
+  },
+  "interactions": {
+    "string_network": {
+      "url": "https://string-db.org/network/9606.ENSP00000263710",
+      "top_interactors": [
+        {
+          "partner_gene": "GSK3B",
+          "partner_protein": "Glycogen synthase kinase-3 beta",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "coexpression", "textmining"]
+        },
+        {
+          "partner_gene": "CTNNB1",
+          "partner_protein": "Catenin beta-1",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "coexpression", "textmining"]
+        },
+        {
+          "partner_gene": "APC",
+          "partner_protein": "Adenomatous polyposis coli protein",
+          "combined_score": 0.708,
+          "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "partner_gene": "CSNK1A1",
+          "partner_protein": "Casein kinase I isoform alpha",
+          "combined_score": 0.998,
+          "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "partner_gene": "CSNK1E",
+          "partner_protein": "Casein kinase I isoform epsilon",
+          "combined_score": 0.985,
+          "evidence_types": ["experimental", "database"]
+        },
+        {
+          "partner_gene": "AXIN2",
+          "partner_protein": "Axin-2",
+          "combined_score": 0.994,
+          "evidence_types": ["experimental", "database", "coexpression", "textmining"]
+        },
+        {
+          "partner_gene": "DVL1",
+          "partner_protein": "Dishevelled-1",
+          "combined_score": 0.952,
+          "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "partner_gene": "DVL2",
+          "partner_protein": "Dishevelled-2",
+          "combined_score": 0.956,
+          "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "partner_gene": "DVL3",
+          "partner_protein": "Dishevelled-3",
+          "combined_score": 0.950,
+          "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "partner_gene": "TNKS",
+          "partner_protein": "Tankyrase-1",
+          "combined_score": 0.998,
+          "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "partner_gene": "TNKS2",
+          "partner_protein": "Tankyrase-2",
+          "combined_score": 0.997,
+          "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "partner_gene": "TP53",
+          "partner_protein": "Cellular tumor antigen p53",
+          "combined_score": 0.901,
+          "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "partner_gene": "HIPK2",
+          "partner_protein": "Homeodomain-interacting protein kinase 2",
+          "combined_score": 0.923,
+          "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "partner_gene": "PPP1CA",
+          "partner_protein": "Serine/threonine-protein phosphatase PP1-alpha catalytic subunit",
+          "combined_score": 0.912,
+          "evidence_types": ["experimental", "database"]
+        },
+        {
+          "partner_gene": "SIAH1",
+          "partner_protein": "E3 ubiquitin-protein ligase SIAH1",
+          "combined_score": 0.976,
+          "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "partner_gene": "RNF146",
+          "partner_protein": "E3 ubiquitin-protein ligase RNF146",
+          "combined_score": 0.963,
+          "evidence_types": ["experimental", "database", "textmining"]
+        }
+      ]
+    },
+    "biogrid_interactions": [
+      {
+        "partner_gene": "APC",
+        "partner_protein": "Adenomatous polyposis coli protein",
+        "interaction_type": "Physical",
+        "experimental_system": "Affinity Capture-MS",
+        "pmid": "Multiple",
+        "throughput": "High"
+      },
+      {
+        "partner_gene": "CSNK1E",
+        "partner_protein": "Casein kinase I epsilon",
+        "interaction_type": "Physical",
+        "experimental_system": "Affinity Capture-MS, Two-hybrid",
+        "pmid": "Multiple",
+        "throughput": "Low and High"
+      },
+      {
+        "partner_gene": "CSNK1E",
+        "partner_protein": "Casein kinase I epsilon",
+        "interaction_type": "Genetic",
+        "experimental_system": "Phenotypic Suppression",
+        "pmid": "Multiple",
+        "throughput": "Low"
+      },
+      {
+        "partner_gene": "HIPK2",
+        "partner_protein": "Homeodomain-interacting protein kinase 2",
+        "interaction_type": "Physical",
+        "experimental_system": "Affinity Capture-MS, Co-IP",
+        "pmid": "Multiple",
+        "throughput": "Low and High"
+      },
+      {
+        "partner_gene": "TP53",
+        "partner_protein": "Cellular tumor antigen p53",
+        "interaction_type": "Physical",
+        "experimental_system": "Affinity Capture-Western, Co-IP",
+        "pmid": "Multiple",
+        "throughput": "Low"
+      },
+      {
+        "partner_gene": "RNF111",
+        "partner_protein": "E3 ubiquitin-protein ligase ARKADIA",
+        "interaction_type": "Physical",
+        "experimental_system": "Affinity Capture-MS",
+        "pmid": "Multiple",
+        "throughput": "High"
+      }
+    ],
+    "intact_interactions": [
+      {
+        "partner_gene": "GSK3B",
+        "partner_protein": "Glycogen synthase kinase-3 beta",
+        "interaction_type": "Direct interaction",
+        "detection_method": "Anti-tag coimmunoprecipitation, pull-down",
+        "pmid": "Multiple",
+        "interaction_accession": "EBI-Multiple"
+      },
+      {
+        "partner_gene": "CTNNB1",
+        "partner_protein": "Catenin beta-1",
+        "interaction_type": "Direct interaction",
+        "detection_method": "Coimmunoprecipitation, pull-down",
+        "pmid": "Multiple",
+        "interaction_accession": "EBI-Multiple"
+      },
+      {
+        "partner_gene": "SIAH1",
+        "partner_protein": "E3 ubiquitin-protein ligase SIAH1",
+        "interaction_type": "Direct interaction",
+        "detection_method": "Coimmunoprecipitation, pull-down",
+        "pmid": "Multiple",
+        "interaction_accession": "EBI-Multiple"
+      }
+    ],
+    "summary": {
+      "total_physical_interactors": 1001,
+      "high_confidence_interactors": 16,
+      "key_binding_partners": [
+        "GSK3B (destruction complex kinase)",
+        "CTNNB1/β-catenin (substrate)",
+        "APC (destruction complex scaffold)",
+        "CSNK1A1/CK1α (destruction complex kinase)",
+        "TNKS/TNKS2 (poly-ADP-ribosylation and degradation)",
+        "SIAH1/2 (E3 ubiquitin ligases for degradation)",
+        "RNF146 (E3 ubiquitin ligase)",
+        "DVL1/2/3 (Wnt pathway activation)",
+        "TP53 and HIPK2 (apoptosis regulation)",
+        "PPP1CA (dephosphorylation)",
+        "USP34 (deubiquitination and stabilization)",
+        "AXIN2 (paralog with overlapping function)"
+      ]
+    }
+  },
+  "pathways": {
+    "reactome": [
+      {
+        "pathway_id": "R-HSA-195721",
+        "pathway_name": "Signaling by WNT",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-195721"
+      },
+      {
+        "pathway_id": "R-HSA-4839735",
+        "pathway_name": "Signaling by AXIN mutants",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-4839735"
+      },
+      {
+        "pathway_id": "R-HSA-201681",
+        "pathway_name": "TCF dependent signaling in response to WNT",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-201681"
+      },
+      {
+        "pathway_id": "R-HSA-4641257",
+        "pathway_name": "Degradation of beta-catenin by the destruction complex",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-4641257"
+      },
+      {
+        "pathway_id": "R-HSA-3858494",
+        "pathway_name": "Beta-catenin independent WNT signaling",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-3858494"
+      }
+    ],
+    "kegg": [
+      {
+        "pathway_id": "hsa04310",
+        "pathway_name": "Wnt signaling pathway",
+        "url": "https://www.genome.jp/pathway/hsa04310"
+      },
+      {
+        "pathway_id": "hsa04390",
+        "pathway_name": "Hippo signaling pathway",
+        "url": "https://www.genome.jp/pathway/hsa04390"
+      },
+      {
+        "pathway_id": "hsa05217",
+        "pathway_name": "Basal cell carcinoma",
+        "url": "https://www.genome.jp/pathway/hsa05217"
+      },
+      {
+        "pathway_id": "hsa05210",
+        "pathway_name": "Colorectal cancer",
+        "url": "https://www.genome.jp/pathway/hsa05210"
+      },
+      {
+        "pathway_id": "hsa05225",
+        "pathway_name": "Hepatocellular carcinoma",
+        "url": "https://www.genome.jp/pathway/hsa05225"
+      },
+      {
+        "pathway_id": "hsa05226",
+        "pathway_name": "Gastric cancer",
+        "url": "https://www.genome.jp/pathway/hsa05226"
+      },
+      {
+        "pathway_id": "hsa05224",
+        "pathway_name": "Breast cancer",
+        "url": "https://www.genome.jp/pathway/hsa05224"
+      },
+      {
+        "pathway_id": "hsa05412",
+        "pathway_name": "Endometrial cancer",
+        "url": "https://www.genome.jp/pathway/hsa05412"
+      },
+      {
+        "pathway_id": "hsa05200",
+        "pathway_name": "Pathways in cancer",
+        "url": "https://www.genome.jp/pathway/hsa05200"
+      }
+    ],
+    "pathway_role_summary": "AXIN1 is the core scaffold of the β-catenin destruction complex in canonical Wnt signaling. In the absence of Wnt ligands, AXIN1 organizes CK1α, GSK3β, APC, and β-catenin into a complex that promotes sequential phosphorylation of β-catenin, leading to its ubiquitination by β-TrCP and proteasomal degradation. Upon Wnt stimulation, AXIN1 is recruited to the membrane-bound LRP5/6-FZD-DVL complex, disrupting the destruction complex and allowing β-catenin stabilization. AXIN1 also participates in Hippo signaling and regulates apoptosis through TP53-HIPK2 complexes. Mutations or degradation of AXIN1 lead to constitutive Wnt activation and are implicated in hepatocellular carcinoma and other cancers."
+  },
+  "disease_associations": [
+    {
+      "disease": "Hepatocellular carcinoma",
+      "omim_id": "114550",
+      "mutation_type": "Somatic",
+      "description": "AXIN1 mutations occur in approximately 10% of hepatocellular carcinomas. Mutations include a 33-bp deletion in exon 3 affecting GSK3β phosphorylation sites and 12 missense mutations. All mutations are somatic and lead to impaired β-catenin degradation and Wnt pathway activation. AXIN1-mutant HCC represents a molecularly distinct poor-prognosis subtype with lower Wnt activation than CTNNB1-mutant HCC"
+    },
+    {
+      "disease": "Colorectal cancer",
+      "omim_id": null,
+      "mutation_type": "Somatic",
+      "description": "AXIN1 mutations and loss of expression contribute to colorectal tumorigenesis through Wnt pathway activation. AXIN1 functions as a tumor suppressor"
+    },
+    {
+      "disease": "Craniometadiaphyseal osteosclerosis with hip dysplasia",
+      "omim_id": "603816",
+      "mutation_type": "Germline",
+      "description": "Bi-allelic variants disrupting the C-terminal DIX domain cause this rare skeletal dysplasia. DIX domain mutations impair AXIN1 polymerization and function"
+    },
+    {
+      "disease": "Gastric cancer",
+      "omim_id": null,
+      "mutation_type": "Somatic",
+      "description": "Alternative splicing produces oncogenic circAXIN1 variant that activates Wnt/β-catenin signaling by blocking full-length AXIN1 function"
+    },
+    {
+      "disease": "Breast cancer, Endometrial cancer, Basal cell carcinoma",
+      "omim_id": null,
+      "mutation_type": "Somatic",
+      "description": "AXIN1 alterations contribute to tumor development through aberrant Wnt signaling in multiple cancer types"
+    }
+  ],
+  "cross_references": {
+    "ncbi_gene_id": "8312",
+    "ensembl_gene_id": "ENSG00000103126",
+    "refseq_protein": ["NP_003493.2", "NP_851393.1"],
+    "refseq_nucleotide": ["NM_003502.4", "NM_181050.3"],
+    "hgnc_id": "HGNC:903",
+    "omim_gene": "603816"
+  },
+  "metadata": {
+    "generated_at": "2026-09-30T00:00:00Z",
+    "queried_databases": [
+      "UniProt",
+      "NCBI Gene",
+      "InterPro",
+      "Pfam",
+      "PROSITE",
+      "SMART",
+      "PDB",
+      "AlphaFold",
+      "STRING",
+      "BioGRID",
+      "IntAct",
+      "Reactome",
+      "KEGG",
+      "GO",
+      "PhosphoSitePlus",
+      "Human Protein Atlas",
+      "OMIM"
+    ],
+    "data_quality_notes": "Comprehensive data available from all major databases. Specific phosphorylation site positions from PhosphoSitePlus require direct database access for complete annotation (18 PTM sites reported). The canonical sequence was obtained from UniProt REST API. Some PDB structures are from rat ortholog (1WSP) but are highly homologous to human. AXIN1β isoform sequence (lacking exon 9) not explicitly provided but documented. Nuclear localization and export signals mapped based on mouse Axin studies with high sequence conservation to human.",
+    "modeling_relevance_summary": "AXIN1 is a critical scaffold protein for Wnt signaling pathway modeling. Its multiple binding domains (tankyrase, RGS/APC, GSK3β, β-catenin, DIX) enable formation of the destruction complex and regulate β-catenin turnover. Post-translational modifications (phosphorylation, ubiquitination, PARsylation, SUMOylation, acetylation) provide multiple regulatory mechanisms. Nuclear-cytoplasmic shuttling enables compartment-specific functions. Interactions with 16+ high-confidence partners create a complex regulatory network. AXIN1 concentration is rate-limiting for destruction complex formation, and its degradation by tankyrase-RNF146 and SIAH pathways provides key Wnt activation mechanisms. Disease mutations primarily affect HCC through loss of destruction complex function. Essential for modeling canonical Wnt signaling, cancer progression, and cross-talk with Hippo, TGFβ, and p53 pathways."
+  }
+}

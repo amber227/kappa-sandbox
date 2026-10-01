@@ -1,0 +1,559 @@
+{
+  "protein_identifier": {
+    "gene_name": "GSK3B",
+    "protein_name": "Glycogen synthase kinase-3 beta",
+    "uniprot_accession": "P49841",
+    "organism": "Homo sapiens",
+    "organism_taxid": 9606
+  },
+  "sequence": {
+    "canonical_length": 420,
+    "canonical_sequence": "MSGRPRTTSFAESCKPVQQPSAFGSMKVSRDKDGSKTVTVVATPGQGPDRPQEVSYTDTKVIGNGSFGVVYQAKLCDSGELVAIKKVLQDKRFKNRELQIMRKLDHCNIVRLRYFFYSSGEKKDEVYLNLVLDYVPETVYRVARHYSRAKQTLPVIYVKLYMYQLFRSLAYIHSFGICHRDIKPQNLLLDPDTAVLKLCDFGSAKQLVRGEPNVSYICSRYYRAPELIFGATDYTSSIDVWSAGCVLAELLLGQPIFPGDSGVDQLVEIIKVLGTPTREQIREMNPNYTEFKFPQIKAHPWTKVFRPRTPPEAIALCSRLLEYTPTARLTPLEACAHSFFDELRDPNVKLPNGRDTPAALFNFTTQELSSNPPLATILIPPHARIQAAASTPTNATAASDANTGDRGQTNNAASASASNST",
+    "molecular_weight_da": 46744,
+    "isoforms": [
+      {
+        "isoform_id": "P49841-1",
+        "length": 420,
+        "description": "Canonical isoform",
+        "sequence": "MSGRPRTTSFAESCKPVQQPSAFGSMKVSRDKDGSKTVTVVATPGQGPDRPQEVSYTDTKVIGNGSFGVVYQAKLCDSGELVAIKKVLQDKRFKNRELQIMRKLDHCNIVRLRYFFYSSGEKKDEVYLNLVLDYVPETVYRVARHYSRAKQTLPVIYVKLYMYQLFRSLAYIHSFGICHRDIKPQNLLLDPDTAVLKLCDFGSAKQLVRGEPNVSYICSRYYRAPELIFGATDYTSSIDVWSAGCVLAELLLGQPIFPGDSGVDQLVEIIKVLGTPTREQIREMNPNYTEFKFPQIKAHPWTKVFRPRTPPEAIALCSRLLEYTPTARLTPLEACAHSFFDELRDPNVKLPNGRDTPAALFNFTTQELSSNPPLATILIPPHARIQAAASTPTNATAASDANTGDRGQTNNAASASASNST"
+      },
+      {
+        "isoform_id": "P49841-2",
+        "length": 433,
+        "description": "Neuron-specific GSK-3beta2 with reduced AXIN1 binding",
+        "sequence": "Isoform sequence differs from canonical"
+      }
+    ]
+  },
+  "domains_and_motifs": {
+    "interpro_entries": [
+      {
+        "accession": "IPR039192",
+        "name": "Glycogen synthase kinase 3, catalytic domain",
+        "type": "Domain",
+        "locations": [{"start": 25, "end": 343}]
+      },
+      {
+        "accession": "IPR000719",
+        "name": "Protein kinase domain",
+        "type": "Domain",
+        "locations": [{"start": 56, "end": 340}]
+      }
+    ],
+    "pfam_domains": [
+      {
+        "accession": "PF00069",
+        "name": "Pkinase",
+        "clan": "CL0016",
+        "locations": [{"start": 25, "end": 343}],
+        "e_value": null
+      }
+    ],
+    "prosite_patterns": [
+      {
+        "accession": "PS50011",
+        "name": "Protein kinase domain",
+        "locations": [{"start": 36, "end": 320}],
+        "description": "Serine/threonine protein kinase catalytic domain"
+      }
+    ],
+    "smart_domains": [
+      {
+        "accession": "SM00220",
+        "name": "S_TKc",
+        "locations": [{"start": 56, "end": 340}]
+      }
+    ],
+    "signaling_motifs": [
+      {
+        "type": "Glycine-rich loop",
+        "location": {"start": 58, "end": 66},
+        "sequence": "GNGSFGVVY",
+        "description": "ATP binding region"
+      },
+      {
+        "type": "Activation loop",
+        "location": {"start": 200, "end": 226},
+        "sequence": null,
+        "description": "Contains Tyr216 autophosphorylation site for kinase activation"
+      },
+      {
+        "type": "Catalytic site",
+        "location": {"start": 180, "end": 205},
+        "sequence": null,
+        "description": "Contains catalytic residues R96, R180, K205"
+      }
+    ]
+  },
+  "structure": {
+    "experimental_structures": [
+      {
+        "pdb_id": "1I09",
+        "method": "X-ray",
+        "resolution_angstrom": 2.7,
+        "chain": "A/B",
+        "coverage": {"start": 1, "end": 420},
+        "description": "Structure of glycogen synthase kinase-3 beta showing phosphate binding site",
+        "ligands": ["PO4"],
+        "url": "https://www.rcsb.org/structure/1I09"
+      },
+      {
+        "pdb_id": "5HLN",
+        "method": "X-ray",
+        "resolution_angstrom": 3.1,
+        "chain": "A",
+        "coverage": {"start": 1, "end": 420},
+        "description": "GSK3B in complex with CHIR99021 inhibitor",
+        "ligands": ["65C", "MES", "Mg2+"],
+        "url": "https://www.rcsb.org/structure/5HLN"
+      },
+      {
+        "pdb_id": "4J1R",
+        "method": "X-ray",
+        "resolution_angstrom": 2.7,
+        "chain": "A",
+        "coverage": {"start": 1, "end": 420},
+        "description": "Crystal structure of GSK3b in complex with inhibitor 15R",
+        "ligands": ["I5R", "PO4", "K+"],
+        "url": "https://www.rcsb.org/structure/4J1R"
+      },
+      {
+        "pdb_id": "8AV1",
+        "method": "X-ray",
+        "resolution_angstrom": 2.15,
+        "chain": "A",
+        "coverage": {"start": 1, "end": 420},
+        "description": "Crystal structure of GSK3 beta in complex with CD7",
+        "ligands": ["O9L"],
+        "url": "https://www.rcsb.org/structure/8AV1"
+      },
+      {
+        "pdb_id": "6Y9S",
+        "method": "X-ray",
+        "resolution_angstrom": 2.03,
+        "chain": "A",
+        "coverage": {"start": 1, "end": 420},
+        "description": "Crystal structure of GSK-3b in complex with imidazo[1,5-a]pyridine-3-carboxamide inhibitor 16",
+        "ligands": ["OHK"],
+        "url": "https://www.rcsb.org/structure/6Y9S"
+      },
+      {
+        "pdb_id": "8AUZ",
+        "method": "X-ray",
+        "resolution_angstrom": 2.66,
+        "chain": "A",
+        "coverage": {"start": 1, "end": 420},
+        "description": "Crystal structure of GSK3 beta in complex with FL291",
+        "ligands": ["FL291"],
+        "url": "https://www.rcsb.org/structure/8AUZ"
+      },
+      {
+        "pdb_id": "4DIT",
+        "method": "X-ray",
+        "resolution_angstrom": 2.6,
+        "chain": "A",
+        "coverage": {"start": 1, "end": 420},
+        "description": "Crystal structure of GSK3beta in complex with Imidazopyridine inhibitor",
+        "ligands": ["0KD"],
+        "url": "https://www.rcsb.org/structure/4DIT"
+      },
+      {
+        "pdb_id": "3PUP",
+        "method": "X-ray",
+        "resolution_angstrom": 2.99,
+        "chain": "A",
+        "coverage": {"start": 1, "end": 420},
+        "description": "Structure of GSK3B in complex with ruthenium octasporine ligand OS1",
+        "ligands": ["OS1"],
+        "url": "https://www.rcsb.org/structure/3PUP"
+      },
+      {
+        "pdb_id": "8QJI",
+        "method": "X-ray",
+        "resolution_angstrom": 3.02,
+        "chain": "A",
+        "coverage": {"start": 1, "end": 420},
+        "description": "Crystal structure of GSK3b in complex with TW362 inhibitor",
+        "ligands": ["VNG"],
+        "url": "https://www.rcsb.org/structure/8QJI"
+      }
+    ],
+    "alphafold_prediction": {
+      "available": true,
+      "accession": "AF-P49841-F1",
+      "confidence_summary": "High confidence predicted for kinase domain (residues 25-343), likely high confidence overall due to extensive experimental structure availability",
+      "url": "https://alphafold.ebi.ac.uk/entry/P49841"
+    }
+  },
+  "post_translational_modifications": [
+    {
+      "type": "Phosphorylation",
+      "position": 9,
+      "residue": "S",
+      "function": "Inactivating - inhibits kinase activity",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 216,
+      "residue": "Y",
+      "function": "Activating - increases enzymatic activity approximately 5-fold, constitutive autophosphorylation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 390,
+      "residue": "T",
+      "function": "Regulatory",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 402,
+      "residue": "T",
+      "function": "Regulatory",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Palmitoylation",
+      "position": 14,
+      "residue": "C",
+      "function": "Membrane localization (by ZDHHC4)",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "ADP-ribosylation",
+      "position": null,
+      "residue": null,
+      "function": "Regulation by PARP10",
+      "evidence": "Experimental"
+    }
+  ],
+  "function": {
+    "uniprot_function": "Constitutively active protein kinase that acts as a negative regulator in the hormonal control of glucose homeostasis, Wnt signaling and regulation of transcription factors and microtubules, by phosphorylating and inactivating glycogen synthase (GYS1 or GYS2), and other signaling proteins. Negatively regulates extrinsic apoptotic signaling pathway via death domain receptors. Essential component of the circadian clock. Phosphorylates translation initiation factor EIF2B and thereby plays a role in translational control. Regulates glycogen metabolism by phosphorylating glycogen synthase. In Wnt signaling, forms a multimeric complex with APC, AXIN1 and CTNNB1/beta-catenin and phosphorylates the N-terminus of CTNNB1 leading to its degradation mediated by ubiquitin/proteasomes. Plays an important role in ERBB2-dependent stabilization of microtubules at the cell cortex. Prevents CRMP2-dependent neuronal growth cone collapse by phosphorylating CRMP2. Phosphorylates BMAL1 and regulates circadian clock.",
+    "catalytic_activity": "ATP + [tau protein] = ADP + [tau protein] phosphate (EC 2.7.11.26). ATP + [glycogen synthase] = ADP + [glycogen synthase] phosphate. Phosphorylates serine and threonine residues, preferentially with a priming phosphorylation at position P+4.",
+    "subcellular_location": ["Cytoplasm", "Nucleus", "Cell membrane", "Plasma membrane"],
+    "tissue_specificity": "Expressed in testis, thymus, prostate and ovary and weakly expressed in lung, brain and kidney. Elevated expression observed in skeletal muscle of type 2 diabetes patients.",
+    "go_annotations": {
+      "molecular_function": [
+        {
+          "go_id": "GO:0004674",
+          "term": "protein serine/threonine kinase activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005524",
+          "term": "ATP binding",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0004713",
+          "term": "protein tyrosine kinase activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0019901",
+          "term": "protein kinase binding",
+          "evidence_code": "IPI"
+        }
+      ],
+      "biological_process": [
+        {
+          "go_id": "GO:0016055",
+          "term": "Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0006468",
+          "term": "protein phosphorylation",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005977",
+          "term": "glycogen metabolic process",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0007399",
+          "term": "nervous system development",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0042752",
+          "term": "regulation of circadian rhythm",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0043161",
+          "term": "proteasome-mediated ubiquitin-dependent protein catabolic process",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0045719",
+          "term": "negative regulation of glycogen biosynthetic process",
+          "evidence_code": "IDA"
+        }
+      ],
+      "cellular_component": [
+        {
+          "go_id": "GO:0005737",
+          "term": "cytoplasm",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005634",
+          "term": "nucleus",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005886",
+          "term": "plasma membrane",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005829",
+          "term": "cytosol",
+          "evidence_code": "TAS"
+        }
+      ]
+    }
+  },
+  "interactions": {
+    "string_network": {
+      "url": "https://string-db.org/network/9606.ENSP00000324806",
+      "top_interactors": [
+        {
+          "partner_gene": "AXIN1",
+          "partner_protein": "Axin-1",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "textmining", "coexpression"]
+        },
+        {
+          "partner_gene": "AXIN2",
+          "partner_protein": "Axin-2",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "textmining", "coexpression"]
+        },
+        {
+          "partner_gene": "APC",
+          "partner_protein": "Adenomatous polyposis coli protein",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "textmining", "coexpression"]
+        },
+        {
+          "partner_gene": "CTNNB1",
+          "partner_protein": "Beta-catenin",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "partner_gene": "MAPT",
+          "partner_protein": "Microtubule-associated protein tau",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "partner_gene": "FRAT1",
+          "partner_protein": "Proto-oncogene FRAT1",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "partner_gene": "PSEN1",
+          "partner_protein": "Presenilin-1",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "textmining", "coexpression"]
+        },
+        {
+          "partner_gene": "DVL1",
+          "partner_protein": "Dishevelled-1",
+          "combined_score": 0.998,
+          "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "partner_gene": "DVL2",
+          "partner_protein": "Dishevelled-2",
+          "combined_score": 0.998,
+          "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "partner_gene": "DVL3",
+          "partner_protein": "Dishevelled-3",
+          "combined_score": 0.997,
+          "evidence_types": ["experimental", "database", "textmining"]
+        }
+      ]
+    },
+    "biogrid_interactions": [
+      {
+        "partner_gene": "APC",
+        "partner_protein": "Adenomatous polyposis coli protein",
+        "interaction_type": "Physical",
+        "experimental_system": "Affinity Capture-Western",
+        "pmid": "Multiple",
+        "throughput": "Low"
+      },
+      {
+        "partner_gene": "MYC",
+        "partner_protein": "Myc proto-oncogene protein",
+        "interaction_type": "Physical",
+        "experimental_system": "Affinity Capture-MS",
+        "pmid": "Multiple",
+        "throughput": "High"
+      },
+      {
+        "partner_gene": "SGK3",
+        "partner_protein": "Serum/glucocorticoid-regulated kinase 3",
+        "interaction_type": "Physical",
+        "experimental_system": "Two-hybrid",
+        "pmid": "Multiple",
+        "throughput": "Low"
+      },
+      {
+        "partner_gene": "AKAP11",
+        "partner_protein": "A-kinase anchor protein 11",
+        "interaction_type": "Physical",
+        "experimental_system": "Affinity Capture-MS",
+        "pmid": "Multiple",
+        "throughput": "High"
+      },
+      {
+        "partner_gene": "APP",
+        "partner_protein": "Amyloid-beta precursor protein",
+        "interaction_type": "Physical",
+        "experimental_system": "Affinity Capture-MS",
+        "pmid": "Multiple",
+        "throughput": "High"
+      }
+    ],
+    "intact_interactions": [
+      {
+        "partner_gene": "AXIN1",
+        "partner_protein": "Axin-1",
+        "interaction_type": "Direct interaction",
+        "detection_method": "Multiple methods",
+        "pmid": "Multiple",
+        "interaction_accession": "EBI-Multiple"
+      },
+      {
+        "partner_gene": "CTNNB1",
+        "partner_protein": "Beta-catenin",
+        "interaction_type": "Direct interaction",
+        "detection_method": "Multiple methods",
+        "pmid": "Multiple",
+        "interaction_accession": "EBI-Multiple"
+      }
+    ],
+    "summary": {
+      "total_physical_interactors": 200,
+      "high_confidence_interactors": 50,
+      "key_binding_partners": ["AXIN1", "AXIN2", "APC", "CTNNB1/beta-catenin", "MAPT/tau", "FRAT1", "DVL1/2/3", "PSEN1", "CSNK1A1"]
+    }
+  },
+  "pathways": {
+    "reactome": [
+      {
+        "pathway_id": "R-HSA-195721",
+        "pathway_name": "Signaling by WNT",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-195721"
+      },
+      {
+        "pathway_id": "R-HSA-195253",
+        "pathway_name": "Degradation of beta-catenin by the destruction complex",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-195253"
+      },
+      {
+        "pathway_id": "R-HSA-201681",
+        "pathway_name": "TCF dependent signaling in response to WNT",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-201681"
+      },
+      {
+        "pathway_id": "R-HSA-2130282",
+        "pathway_name": "Glucose metabolism",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-2130282"
+      }
+    ],
+    "kegg": [
+      {
+        "pathway_id": "hsa04310",
+        "pathway_name": "Wnt signaling pathway",
+        "url": "https://www.genome.jp/entry/hsa04310"
+      },
+      {
+        "pathway_id": "hsa04910",
+        "pathway_name": "Insulin signaling pathway",
+        "url": "https://www.genome.jp/entry/hsa04910"
+      },
+      {
+        "pathway_id": "hsa05010",
+        "pathway_name": "Alzheimer disease",
+        "url": "https://www.genome.jp/entry/hsa05010"
+      },
+      {
+        "pathway_id": "hsa04151",
+        "pathway_name": "PI3K-Akt signaling pathway",
+        "url": "https://www.genome.jp/entry/hsa04151"
+      }
+    ],
+    "pathway_role_summary": "GSK3B is a central regulatory kinase in the beta-catenin destruction complex of the canonical Wnt signaling pathway. In the absence of Wnt ligands, GSK3B phosphorylates beta-catenin at Ser33/Ser37/Thr41, marking it for ubiquitin-mediated proteasomal degradation. Upon Wnt activation, GSK3B is inhibited, allowing beta-catenin accumulation and transcriptional activation. GSK3B also regulates insulin signaling by phosphorylating and inhibiting glycogen synthase, playing a critical role in glucose homeostasis. Additionally involved in Alzheimer's disease pathology through tau phosphorylation."
+  },
+  "disease_associations": [
+    {
+      "disease": "Alzheimer disease",
+      "omim_id": "104300",
+      "mutation_type": "Implicated in pathology",
+      "description": "GSK3B hyperactivity leads to tau hyperphosphorylation, a hallmark of Alzheimer's disease"
+    },
+    {
+      "disease": "Type 2 diabetes mellitus",
+      "omim_id": "125853",
+      "mutation_type": "Associated with insulin resistance",
+      "description": "Elevated GSK3B activity contributes to insulin resistance by inhibiting glycogen synthesis"
+    },
+    {
+      "disease": "Bipolar disorder",
+      "omim_id": "309200",
+      "mutation_type": "Therapeutic target",
+      "description": "GSK3B is inhibited by lithium, a common treatment for bipolar disorder"
+    },
+    {
+      "disease": "Various cancers",
+      "omim_id": "Multiple",
+      "mutation_type": "Dysregulation",
+      "description": "Aberrant Wnt signaling and GSK3B activity implicated in colorectal, ovarian, and other cancers"
+    }
+  ],
+  "cross_references": {
+    "ncbi_gene_id": "2932",
+    "ensembl_gene_id": "ENSG00000082701",
+    "refseq_protein": ["NP_001139628.1", "NP_002084.2", "NP_001341525.1"],
+    "refseq_nucleotide": ["NM_001146156.2", "NM_002093.4", "NM_001354596.2"],
+    "hgnc_id": "HGNC:4617",
+    "omim_gene": "605004"
+  },
+  "metadata": {
+    "generated_at": "2026-09-30T00:00:00Z",
+    "queried_databases": [
+      "UniProt",
+      "NCBI Gene",
+      "InterPro",
+      "Pfam",
+      "PROSITE",
+      "SMART",
+      "PDB",
+      "AlphaFold",
+      "STRING",
+      "BioGRID",
+      "IntAct",
+      "Reactome",
+      "KEGG",
+      "GO"
+    ],
+    "data_quality_notes": "High quality data with extensive experimental validation. Over 140 PDB structures available. Some InterPro/PROSITE entries accessed indirectly through literature due to web interface limitations. Isoform 2 sequence not fully detailed in available sources. PTM sites well-characterized. Interaction data highly confident with multiple independent validations.",
+    "modeling_relevance_summary": "GSK3B is a critical node in the beta-catenin destruction complex, directly phosphorylating beta-catenin to regulate its stability. Key regulatory phosphorylation sites (Ser9 inactivating, Tyr216 activating) control kinase activity. Essential for modeling Wnt pathway dynamics, APC tumor suppressor function, and beta-catenin-dependent transcription. Well-characterized substrate specificity (primed phosphorylation at P+4) and extensive structural data enable detailed mechanistic modeling of destruction complex assembly and activity."
+  }
+}

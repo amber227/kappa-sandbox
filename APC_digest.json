@@ -1,0 +1,524 @@
+{
+  "protein_identifier": {
+    "gene_name": "APC",
+    "protein_name": "Adenomatous polyposis coli protein",
+    "uniprot_accession": "P25054",
+    "organism": "Homo sapiens",
+    "organism_taxid": 9606
+  },
+  "sequence": {
+    "canonical_length": 2843,
+    "canonical_sequence": "MAAASYDQLLKQVEALKMENSNLRQELEDNSNHLTKLETEASNMKEVLKQLQGSIEDEAMASSGQIDLLERLKELNLDSSNFPGVKLRSKMSLRSYGSREGSVSSRSGECSPVPMGSFPRRGFVNGSRESTGYLEELEKERSLLLADLDKEEKEKDWYYAQLQNLTKRIDSLPLTENFSLQTDMTRRQLEYEARQIRVAMEEQLGTCQDMEKRAQRRIARIQQIEKDILRIRQLLQSQATEAERSSQNKHETGSHDAERQNEGQGVGEINMATSGNGQGSTTRMDHETASVLSSSSTHSAPRRLTSHLGTKVEMVYSLLSMLGTHDKDDMSRTLLAMSSSQDSCISMRQSGCLPLLIQLLHGNDKDSVLLGNSRGSKEARARASAALHNIIHSQPDDKRGRREIRVLHLLEQIRAYCETCWEWQEAHEPGMDQDKNPMPAPVEHQICPAVCVLMKLSFDEEHRHAMNELGGLQAIAELLQVDCEMYGLTNDHYSITLRRYAGMALTNLTFGDVANKATLCSMKGCMRALVAQLKSESEDLQQVIASVLRNLSWRADVNSKKTLREVGSVKALMECALEVKKESTLKSVLSALWNLSAHCTENKADICAVDGALAFLVGTLTYRSQTNTLAIIESGGGILRNVSSLIATNEDHRQILRENNCLQTLLQHLKSHSLTIVSNACGTLWNLSARNPKDQEALWDMGAVSMLKNLIHSKHKMIAMGSAAALRNLMANRPAKYKDANIMSPGSSLPSLHVRKQKALEAELDAQHLSETFDNIDNLSPKASHRSKQRHKQSLYGDYVFDTNRHDDNRSDNFNTGNMTVLSPYLNTTVLPSSSSSRGSLDSSRSEKDRSLERERGIGLGNYHPATENPGTSSKRGLQISTTAAQIAKVMEEVSAIHTSQEDRSSGSTTELHCVTDERNALRRSSAAHTHSNTYNFTKSENSNRTCSMPYAKLEYKRSSNDSLNSVSSSDGYGKRGQMKPSIESYSEDDESKFCSYGQYPADLAHKIHSANHMDDNDGELDTPINYSLKYSDEQLNSGRQSPSQNERWARPKHIIEDEIKQSEQRQSRNQSTTYPVYTESTDDKHLKFQPHFGQQECVSPYRSRGANGSETNRVGSNHGINQNVSQSLCQEDDYEDDKPTNYSERYSEEEQHEEEERPTNYSIKYNEEKRHVDQPIDYSLKYATDIPSSQKQSFSFSKSSSSGQSSKTEHMSSSSENTSTPSSNAKRQNQLHPSSAQSRSGQPQKAATCKVSSINQETIQTYCVEDTPICFSRCSSLSSLSSAEDEIGCNQTTQEADSANTLQIAEIKEKIGTRSAEDPVSEVPAVSQHPRTKSSRLQGSSLSSESARHKAVEFSSGAKSPSKSGAQTPKSPPEHYVQETPLMFSRCTSVSSLDSFESRSIASSVQSEPCSGMVSGIISPSDLPDSPGQTMPPSRSKTPPPPPQTAQTKREVPKNKAPTAEKRESGPKQAAVNAAVQRVQVLPDADTLLHFATESTPDGFSCSSSLSALSLDEPFIQKDVELRIMPPVQENDNGNETESEQPKESNENQEKEAEKTIDSEKDLLDDSDDDDIEILEECIISAMPTKSSRKAKKPAQTASKLPPPVARKPSQLPVYKLLPSQNRLQPQKHVSFTPGDDMPRVYCVEGTPINFSTATSLSDLTIESPPNELAAGEGVRGGAQSGEFEKRDTIPTEGRSTDEAQGGKTSSVTIPELDDNKAEEGDILAECINSAMPKGKSHKPFRVKKIMDQVQQASASSSAPNKNQLDGKKKKPTSPVKPIPQNTEYRTRVRKNADSKNNLNAERVFSDNKDSKKQNLKNNSKVFNDKLPNNEDRVRGSFAFDSPHHYTPIEGTPYCFSRNDSLSSLDFDDDDVDLSREKAELRKAKENKESEAKVTSHTELTSNQQSANKTQAIAKQPINRGQPKPILQKQSTFPQSSKDIPDRGAATDEKLQNFAIENTPVCFSHNSSLSSLSDIDQENNNKENEPIKETEPPDSQGEPSKPQASGYAPKSFHVEDTPVCFSRNSSLSSLSIDSEDDLLQECISSAMPKKKKPSRLKGDNEKHSPRNMGGILGEDLTLDLKDIQRPDSEHGLSPDSENFDWKAIQEGANSIVSSLHQAAAAACLSRQASSDSDSILSLKSGISLGSPFHLTPDQEEKPFTSNKGPRILKPGEKSTLETKKIESESKGIKGGKKVYKSLITGKVRSNSEISGQMKQPLQANMPSISRGRTMIHIPGVRNSSSSTSPVSKKGPPLKTPASKSPSEGQTATTSPRGAKPSVKSELSPVARQTSQIGGSSKAPSRSGSRDSTPSRPAQQPLSRPIQSPGRNSISPGRNGISPPNKLSQLPRTSSPSTASTKSSGSGKMSYTSPGRQMSQQNLTKQTGLSKNASSIPRSESASKGLNQMNNGNGANKKVELSRMSSTKSSGSESDRSERPVLVRQSTFIKEAPSPTLRRKLEESASFESLSPSSRPASPTRSQAQTPVLSPSLPDMSLSTHSSVQAGGWRKLPPNLSPTIEYNDGRPAKRHDIARSHSESPSRLPINRSGTWKREHSKHSSSLPRVSTWRRTGSSSSILSASSESSEKAKSEDEKHVNSISGTKQSKENQVSAKGTWRKIKENEFSPTNSTSQTVSSGATNGAESKTLIYQMAPAVSKTEDVWVRIEDCPINNPRSGRSPTGNTPPVIDSVSEKANPNIKDSKDNQAKQNVGNGSVPMRTVGLENRLNSFIQVDAPDQKGTEIKPGQNNPVPVSETNESSIVERTPFSSSSSSKHSSPSGTVAARVTPFNYNPSPRKSSADSTSARPSQIPTPVNNNTKKRDSKDTSTESSGTQSPKRHSGSYLVTSV",
+    "molecular_weight_da": 311646,
+    "isoforms": [
+      {
+        "name": "Isoform 1A (canonical)",
+        "length": 2843,
+        "description": "Full-length canonical form, strongly expressed in brain",
+        "uniprot_id": "P25054-1"
+      },
+      {
+        "name": "Isoform 1B",
+        "length": 2843,
+        "description": "Alternative promoter in exon 1B, predominant in most tissues except brain",
+        "uniprot_id": "P25054-1B"
+      },
+      {
+        "name": "Isoform 2 (short)",
+        "length": 2742,
+        "description": "Missing residues 312-412 due to alternative splicing",
+        "uniprot_id": "P25054-2"
+      }
+    ]
+  },
+  "domains_and_motifs": {
+    "interpro_entries": [
+      {
+        "interpro_id": "IPR011989",
+        "name": "Armadillo-like helical",
+        "description": "Armadillo repeat domain, mediates protein-protein interactions"
+      },
+      {
+        "interpro_id": "IPR000225",
+        "name": "Armadillo",
+        "description": "Armadillo-type fold consisting of alpha-helical repeats"
+      }
+    ],
+    "pfam_domains": [
+      {
+        "pfam_id": "PF00514",
+        "name": "Armadillo/beta-catenin-like repeat",
+        "region": "453-767",
+        "description": "Seven armadillo repeats forming a superhelix with positively charged groove for partner binding"
+      },
+      {
+        "pfam_id": "PF08833",
+        "name": "Axin beta-catenin binding motif",
+        "description": "Related to SAMP repeats that bind Axin in the destruction complex"
+      }
+    ],
+    "prosite_patterns": [
+      {
+        "prosite_id": "PS50176",
+        "name": "ARMADILLO",
+        "description": "Armadillo repeat profile"
+      }
+    ],
+    "smart_domains": [
+      {
+        "smart_id": "SM00185",
+        "name": "ARM",
+        "region": "453-767",
+        "description": "Armadillo repeats (7 repeats), binding partners include KAP3, Asef, IQGAP1, Sam68, Amer1/WTX"
+      }
+    ],
+    "signaling_motifs": [
+      {
+        "motif_type": "Coiled coil",
+        "regions": ["2-61", "127-248"],
+        "function": "N-terminal oligomerization/dimerization domain"
+      },
+      {
+        "motif_type": "15-amino acid repeats (15AARs)",
+        "regions": ["1021-1170"],
+        "count": 4,
+        "function": "Beta-catenin binding sites"
+      },
+      {
+        "motif_type": "20-amino acid repeats (20AARs)",
+        "regions": ["1265-2035"],
+        "count": 7,
+        "function": "Beta-catenin binding sites, phosphorylation increases affinity"
+      },
+      {
+        "motif_type": "SAMP repeats",
+        "count": 3,
+        "function": "Axin binding sites for destruction complex assembly"
+      },
+      {
+        "motif_type": "Basic region",
+        "region": "2167-2674",
+        "function": "Microtubule and actin filament binding"
+      },
+      {
+        "motif_type": "Mutation Cluster Region (MCR)",
+        "region": "1286-1513",
+        "function": "Hotspot for cancer-associated truncating mutations"
+      },
+      {
+        "motif_type": "MtLS motif",
+        "region": "2803-2806",
+        "sequence": "STLS",
+        "function": "Microtubule tip localization signal"
+      },
+      {
+        "motif_type": "PDZ-binding motif",
+        "region": "2841-2843",
+        "sequence": "TSV",
+        "function": "C-terminal binding to DLG1/DLG3 PDZ domains"
+      }
+    ]
+  },
+  "structure": {
+    "experimental_structures": [
+      {
+        "pdb_id": "1DEB",
+        "resolution_angstrom": 2.4,
+        "method": "X-ray crystallography",
+        "region": "2-55",
+        "description": "N-terminal coiled coil dimerization domain"
+      },
+      {
+        "pdb_id": "1M5I",
+        "method": "X-ray crystallography",
+        "region": "129-250",
+        "description": "Coiled coil region that interacts with nuclear export factor Crm-1"
+      },
+      {
+        "pdb_id": "3AU3",
+        "method": "X-ray crystallography",
+        "region": "305-775",
+        "description": "Armadillo repeat domain revealing inherent flexibility"
+      },
+      {
+        "pdb_id": "1JPP",
+        "method": "NMR",
+        "region": "1021-1035",
+        "description": "15-amino acid repeat fragment"
+      },
+      {
+        "pdb_id": "2RQU",
+        "method": "X-ray crystallography",
+        "region": "1578-1596",
+        "description": "20-amino acid repeat fragment"
+      }
+    ],
+    "alphafold_prediction": {
+      "alphafold_id": "AF-P25054-F1",
+      "url": "https://alphafold.ebi.ac.uk/entry/P25054",
+      "notes": "Full-length structure prediction available in AlphaFold DB. APC is largely intrinsically disordered (IDP) with structured ARM domain and coiled coils. Most of the central and C-terminal regions show low confidence (pLDDT < 70) indicating disorder."
+    }
+  },
+  "post_translational_modifications": [
+    {
+      "type": "Phosphorylation",
+      "sites": [
+        {"position": 744, "residue": "Ser", "kinase": "GSK3B", "function": "Regulates APC:Axin interaction"},
+        {"position": 780, "residue": "Ser", "kinase": "GSK3B"},
+        {"position": 1042, "residue": "Ser", "function": "Within 15aa repeat region"},
+        {"position": 2054, "residue": "Ser", "notes": "Commercial antibody available"},
+        {"position": 2151, "residue": "Thr"},
+        {"position": 2260, "residue": "Ser"},
+        {"position": 2671, "residue": "Ser"},
+        {"position": 2679, "residue": "Thr"},
+        {"position": 2789, "residue": "Ser"}
+      ],
+      "description": "Extensive phosphorylation by GSK3B and CK1 (casein kinase 1) regulates destruction complex activity. CK1 primes APC, enabling subsequent GSK3 phosphorylation. Phosphorylation of 20aa repeats increases beta-catenin binding affinity. R2 and B motifs contain multiple PPPSP motifs matching GSK3 consensus sequences."
+    },
+    {
+      "type": "Ubiquitination",
+      "description": "K63-linked ubiquitin chains facilitate APC proteasomal degradation and regulate its stability"
+    },
+    {
+      "type": "Acetylation",
+      "sites": [
+        {"position": 2, "residue": "Ala", "description": "N-terminal acetylation"}
+      ]
+    },
+    {
+      "type": "Initiator methionine removal",
+      "description": "Met-1 is removed post-translationally"
+    }
+  ],
+  "function": {
+    "uniprot_function": "Tumor suppressor that acts as an antagonist of the Wnt signaling pathway. Promotes rapid degradation of CTNNB1 (beta-catenin) and participates in Wnt signaling as a negative regulator. Activates the GEF activity of SPATA13 and ARHGEF4. Plays roles in cell migration, adhesion, transcriptional activation, and apoptosis. Regulates microtubule cytoskeleton organization and spindle formation during mitosis. Anchors microtubules to centrosomes and organizes F-actin into ordered bundles.",
+    "catalytic_activity": "Acts as a scaffold protein in the beta-catenin destruction complex, facilitating sequential phosphorylation of beta-catenin by CK1 and GSK3B, leading to beta-TrCP-mediated ubiquitination and proteasomal degradation.",
+    "subcellular_location": [
+      {
+        "location": "Cytoplasm",
+        "description": "Concentrated along lateral plasma membrane in intestinal epithelial cells"
+      },
+      {
+        "location": "Nucleus",
+        "description": "Shuttles between nucleus and cytoplasm, can regulate beta-catenin nuclear levels"
+      },
+      {
+        "location": "Plasma membrane",
+        "description": "Concentrated at apical plasma membranes in polarized epithelial cells"
+      },
+      {
+        "location": "Adherens junctions",
+        "description": "Sites of cell-cell adhesion"
+      },
+      {
+        "location": "Microtubule plus-ends",
+        "description": "MAPRE1/EB1-dependent targeting to growing microtubule tips"
+      },
+      {
+        "location": "Lamellipodium and membrane ruffles",
+        "description": "Dynamic regions of cell migration"
+      },
+      {
+        "location": "Centrosome",
+        "description": "Anchors microtubules during mitosis"
+      }
+    ],
+    "tissue_specificity": "Isoform 1A is very strongly expressed in brain but has relatively low expression levels in other tissues. Isoform 1B is the predominant form in all tissues except brain, including gastric mucosa and blood. Generally expressed in brain, small intestine, colon, thymus, skeletal muscle, heart, prostate, lung, spleen, ovary, testis, kidney, placenta, and liver. Overexpressed in amygdala (5.6-fold) and hippocampus (5.3-fold), particularly elevated in fetal brain (11.2-fold).",
+    "go_annotations": {
+      "molecular_function": [
+        {"go_id": "GO:0008013", "term": "beta-catenin binding", "evidence": "IPI"},
+        {"go_id": "GO:0008017", "term": "microtubule binding", "evidence": "IDA"},
+        {"go_id": "GO:0051011", "term": "microtubule plus-end binding", "evidence": "IDA"},
+        {"go_id": "GO:0031625", "term": "ubiquitin protein ligase binding", "evidence": "IPI"},
+        {"go_id": "GO:0005198", "term": "structural molecule activity", "evidence": "IEA"},
+        {"go_id": "GO:0003779", "term": "actin binding", "evidence": "IDA"},
+        {"go_id": "GO:0005515", "term": "protein binding", "evidence": "IPI"}
+      ],
+      "biological_process": [
+        {"go_id": "GO:0016055", "term": "Wnt signaling pathway", "evidence": "TAS"},
+        {"go_id": "GO:0090090", "term": "negative regulation of canonical Wnt signaling pathway", "evidence": "IDA"},
+        {"go_id": "GO:0030178", "term": "negative regulation of Wnt signaling pathway", "evidence": "IMP"},
+        {"go_id": "GO:0016477", "term": "cell migration", "evidence": "IMP"},
+        {"go_id": "GO:0007098", "term": "centrosome cycle", "evidence": "IEA"},
+        {"go_id": "GO:0051301", "term": "cell division", "evidence": "IEA"},
+        {"go_id": "GO:0000281", "term": "mitotic cytokinesis", "evidence": "IMP"},
+        {"go_id": "GO:0006974", "term": "cellular response to DNA damage stimulus", "evidence": "IEA"},
+        {"go_id": "GO:0007049", "term": "cell cycle", "evidence": "IEA"},
+        {"go_id": "GO:0008283", "term": "cell population proliferation", "evidence": "IEA"},
+        {"go_id": "GO:0030154", "term": "cell differentiation", "evidence": "IEA"}
+      ],
+      "cellular_component": [
+        {"go_id": "GO:0005912", "term": "adherens junction", "evidence": "IDA"},
+        {"go_id": "GO:0030877", "term": "beta-catenin destruction complex", "evidence": "IDA"},
+        {"go_id": "GO:0005874", "term": "microtubule", "evidence": "IDA"},
+        {"go_id": "GO:0005813", "term": "centrosome", "evidence": "IDA"},
+        {"go_id": "GO:0005737", "term": "cytoplasm", "evidence": "IDA"},
+        {"go_id": "GO:0005634", "term": "nucleus", "evidence": "IDA"},
+        {"go_id": "GO:0005886", "term": "plasma membrane", "evidence": "IDA"},
+        {"go_id": "GO:0005856", "term": "cytoskeleton", "evidence": "IDA"}
+      ]
+    }
+  },
+  "interactions": {
+    "string_network": {
+      "url": "https://string-db.org/network/9606.ENSP00000257430",
+      "description": "STRING database provides comprehensive protein-protein association networks including physical and functional interactions"
+    },
+    "biogrid_interactions": [
+      {
+        "partner": "GSK3B",
+        "interaction_type": "Physical",
+        "evidence": "Multiple experimental methods",
+        "biogrid_id": "824045",
+        "function": "GSK3B phosphorylates APC and beta-catenin in destruction complex"
+      },
+      {
+        "partner": "AXIN1",
+        "interaction_type": "Physical",
+        "evidence": "Affinity capture",
+        "function": "Scaffold protein in destruction complex, binds APC SAMP repeats"
+      },
+      {
+        "partner": "CTNNB1",
+        "interaction_type": "Physical",
+        "evidence": "Multiple methods",
+        "function": "Beta-catenin substrate for degradation, binds 15aa and 20aa repeats"
+      }
+    ],
+    "intact_interactions": [
+      {
+        "partner": "CTNNB1 (beta-catenin)",
+        "description": "Core substrate of destruction complex, 11 potential binding sites on APC"
+      },
+      {
+        "partner": "AXIN1/AXIN2",
+        "description": "Scaffold that bridges APC with GSK3B and CK1 kinases"
+      },
+      {
+        "partner": "GSK3B",
+        "description": "Kinase that phosphorylates beta-catenin, Axin, and APC"
+      },
+      {
+        "partner": "CSNK1A1 (CK1alpha)",
+        "description": "Priming kinase for GSK3B phosphorylation"
+      },
+      {
+        "partner": "BTRC (beta-TrCP)",
+        "description": "E3 ubiquitin ligase recognizing phosphorylated beta-catenin"
+      },
+      {
+        "partner": "MAPRE1 (EB1)",
+        "description": "Targets APC to growing microtubule plus-ends"
+      },
+      {
+        "partner": "DLG1/DLG3",
+        "description": "PDZ domain proteins binding C-terminal TSV motif"
+      },
+      {
+        "partner": "SPATA13",
+        "description": "Guanine nucleotide exchange factor activated by APC"
+      },
+      {
+        "partner": "ARHGEF4",
+        "description": "Rho GEF activated by APC ARM domain"
+      },
+      {
+        "partner": "KHDRBS1 (Sam68)",
+        "description": "RNA-binding protein interacting with ARM domain"
+      },
+      {
+        "partner": "IQGAP1",
+        "description": "Scaffold protein for cell migration, binds ARM domain"
+      },
+      {
+        "partner": "KIF3A/KAP3",
+        "description": "Kinesin motor complex component"
+      },
+      {
+        "partner": "AMER1 (WTX)",
+        "description": "Additional destruction complex component"
+      },
+      {
+        "partner": "PP2A",
+        "description": "Phosphatase that dephosphorylates destruction complex components"
+      }
+    ],
+    "summary": {
+      "total_interactions": "100+",
+      "high_confidence_partners": 14,
+      "key_complexes": [
+        "Beta-catenin destruction complex (APC, AXIN1/2, GSK3B, CSNK1A1, CTNNB1)",
+        "Microtubule plus-end complex (APC, MAPRE1, microtubules)",
+        "Cell adhesion complexes (APC, DLG proteins, adherens junctions)"
+      ]
+    }
+  },
+  "pathways": {
+    "reactome": [
+      {
+        "pathway_id": "R-HSA-195253",
+        "name": "Degradation of beta-catenin by the destruction complex",
+        "url": "https://reactome.org/content/detail/R-HSA-195253",
+        "description": "APC is central component promoting beta-catenin ubiquitination and degradation"
+      },
+      {
+        "pathway_id": "R-HSA-195721",
+        "name": "Signaling by WNT",
+        "url": "https://reactome.org/content/detail/R-HSA-195721",
+        "description": "APC acts as negative regulator in canonical Wnt pathway"
+      },
+      {
+        "pathway_id": "R-HSA-4839744",
+        "name": "Signaling by APC mutants",
+        "url": "https://reactome.org/content/detail/R-HSA-4839744",
+        "description": "Loss of APC function leads to constitutive Wnt activation in cancer"
+      },
+      {
+        "pathway_id": "R-HSA-195280",
+        "name": "Dissociation of beta-catenin from Axin and association with phospho-APC",
+        "description": "Sequential handoff mechanism in destruction complex"
+      },
+      {
+        "pathway_id": "R-HSA-201685",
+        "name": "Beta-catenin release from destruction complex",
+        "description": "Wnt-mediated inhibition of destruction complex activity"
+      },
+      {
+        "pathway_id": "R-HSA-3601585",
+        "name": "PP2A dephosphorylates AXIN, APC and CTNNB1 in destruction complex",
+        "description": "Phosphatase regulation of complex dynamics"
+      }
+    ],
+    "kegg": [
+      {
+        "pathway_id": "hsa04310",
+        "name": "Wnt signaling pathway",
+        "description": "APC is key negative regulator preventing beta-catenin accumulation. Pathway contains 138 genes total."
+      },
+      {
+        "pathway_id": "hsa05210",
+        "name": "Colorectal cancer",
+        "description": "APC mutations are initiating events in ~80% of colorectal cancers"
+      },
+      {
+        "pathway_id": "hsa04390",
+        "name": "Hippo signaling pathway",
+        "description": "Cross-talk with Wnt pathway through beta-catenin regulation"
+      }
+    ],
+    "pathway_role_summary": "APC is the central tumor suppressor in the canonical Wnt signaling pathway, acting as a scaffold in the beta-catenin destruction complex. In the absence of Wnt ligands, APC promotes efficient beta-catenin phosphorylation by CK1 and GSK3B, leading to ubiquitination by beta-TrCP and proteasomal degradation. APC facilitates Axin polymerization/condensate formation, increasing local concentration of kinases and substrates. Loss of APC function (through truncating mutations) is the initiating event in most colorectal cancers, leading to beta-catenin accumulation, nuclear translocation, and aberrant TCF/LEF-mediated transcription of proliferation genes."
+  },
+  "disease_associations": [
+    {
+      "disease": "Familial Adenomatous Polyposis 1 (FAP1)",
+      "omim": "175100",
+      "inheritance": "Autosomal dominant",
+      "description": "Cancer predisposition syndrome characterized by hundreds to thousands of adenomatous polyps in colon and rectum. Median diagnosis age: 40 years. Virtually 100% lifetime risk of colorectal cancer if untreated. Germline APC mutations identified in ~80% of FAP patients.",
+      "mutation_types": "Primarily truncating mutations (nonsense, frameshift) in mutation cluster region (MCR) codons 1286-1513. Over 60% of mutations cluster in this region representing <10% of coding sequence."
+    },
+    {
+      "disease": "Attenuated Familial Adenomatous Polyposis (AFAP)",
+      "description": "Milder variant with fewer polyps (<100), later onset. Associated with mutations outside MCR, particularly N-terminal and C-terminal regions. In-frame exon 12 or 13 skipping events documented."
+    },
+    {
+      "disease": "Gardner Syndrome",
+      "description": "FAP variant with extracolonic manifestations including osteomas, dental abnormalities, epidermoid cysts, desmoid tumors"
+    },
+    {
+      "disease": "Hereditary Desmoid Disease (DESMD)",
+      "description": "Characterized by aggressive fibromatosis without polyposis"
+    },
+    {
+      "disease": "Sporadic Colorectal Cancer",
+      "omim": "114500",
+      "description": "Somatic APC mutations in ~75-80% of sporadic colorectal tumors. Most common initiating event following 'Vogelstein model' of colorectal carcinogenesis. Mutation cluster region shows 63.3% of somatic mutations."
+    },
+    {
+      "disease": "Gastric Adenocarcinoma and Proximal Polyposis of Stomach (GAPPS)",
+      "description": "Gastric-specific polyposis and cancer risk"
+    },
+    {
+      "disease": "Hepatocellular Carcinoma (HCC)",
+      "involvement": "Probable",
+      "description": "APC mutations found in subset of liver cancers"
+    },
+    {
+      "disease": "Medulloblastoma (MDB)",
+      "involvement": "Probable",
+      "description": "Wnt-activated subgroup associated with APC pathway alterations"
+    },
+    {
+      "variant_associations": [
+        {
+          "variant": "I1307K",
+          "population": "Ashkenazi Jewish",
+          "risk": "Risk factor for colon and breast cancer, ~6% carrier frequency"
+        },
+        {
+          "variant": "E1317Q",
+          "association": "Colorectal tumors"
+        },
+        {
+          "variant": "p.Asp-1822",
+          "type": "Common polymorphism",
+          "dbsnp": "rs459552"
+        }
+      ]
+    }
+  ],
+  "cross_references": {
+    "ncbi_gene": "324",
+    "ensembl": "ENSG00000134982",
+    "ensembl_protein": "ENSP00000257430",
+    "omim": "611731",
+    "hgnc": "HGNC:583",
+    "refseq_mrna": ["NM_000038.6", "NM_001127510.2"],
+    "string": "9606.ENSP00000257430",
+    "pdb_entries": ["1DEB", "1M5I", "3AU3", "1JPP", "2RQU", "and 25+ more"],
+    "alphafold": "AF-P25054-F1",
+    "reactome": "UniProt:P25054",
+    "kegg_gene": "hsa:324",
+    "biogrid": "108303",
+    "intact": "EBI-491549",
+    "swiss-model": "P25054",
+    "iptmnet": "P25054",
+    "phosphositeplus": "P25054",
+    "chromosomal_location": "5q22.2"
+  },
+  "metadata": {
+    "generated_at": "2026-09-30T00:00:00Z",
+    "last_updated": "2026-09-30T00:00:00Z",
+    "queried_databases": [
+      "UniProt",
+      "NCBI Gene",
+      "Ensembl",
+      "InterPro",
+      "Pfam",
+      "PROSITE",
+      "SMART",
+      "PDB",
+      "AlphaFold DB",
+      "STRING",
+      "BioGRID",
+      "IntAct",
+      "Reactome",
+      "KEGG",
+      "OMIM",
+      "Human Protein Atlas",
+      "GeneCards",
+      "iPTMnet",
+      "GO Consortium",
+      "Pharos"
+    ],
+    "data_quality_notes": "Comprehensive data compiled from primary databases. UniProt entry P25054 is reviewed (Swiss-Prot quality, version 278 as of Sep 2026). Sequence is experimentally confirmed with 2843 amino acids, molecular weight 311,646 Da. 31+ experimental structures available for various domains and complexes. Extensive literature curation for interactions and disease associations. PTM data includes 28+ experimentally validated phosphorylation sites from large-scale phosphoproteomics studies (mitotic phosphorylation atlas, cervix carcinoma phosphoproteome). AlphaFold structure (AF-P25054-F1) indicates extensive intrinsic disorder outside ARM and coiled-coil domains, with multiple disordered regions spanning residues 828-2843. N-terminal initiator methionine is removed and position 2 (Ala) is acetylated. Alternative promoter usage (promoters 1A and 1B) leads to tissue-specific isoform expression.",
+    "modeling_relevance_summary": "APC is an excellent candidate for rule-based modeling of Wnt signaling and beta-catenin degradation. Key features for modeling: (1) Multivalent binding through 11 beta-catenin sites (4x 15aa, 7x 20aa repeats) enables processivity and avidity effects; (2) Three SAMP repeats for Axin binding create scaffold for complex assembly; (3) Phosphorylation-dependent affinity switching (20aa repeats have higher affinity when phosphorylated); (4) Sequential handoff mechanism (Axin->APC) for substrate processing; (5) Liquid-liquid phase separation/condensate formation by Axin-APC promoting local concentration effects; (6) Intrinsic disorder in central region allows conformational flexibility; (7) Well-defined stoichiometry in destruction complex (2:2:2 APC:Axin:GSK3B proposed); (8) Clear enzymatic cascade (CK1 priming -> GSK3B sequential phosphorylation -> beta-TrCP recognition); (9) Truncation mutations provide natural perturbation experiments (loss of different numbers of binding sites); (10) Extensive quantitative data on binding affinities, phosphorylation rates, and degradation kinetics available in literature. Main challenges: large size and multiple interaction sites require careful parameterization; phase separation behavior may require advanced modeling approaches; full mechanistic details of phosphorylation-regulated APC:Axin interaction still emerging. Most colorectal cancer mutations cluster in MCR (codons 1286-1513), eliminating 20aa repeats and causing constitutive Wnt activation - this provides clear genotype-phenotype relationships for model validation.",
+    "database_urls": {
+      "uniprot": "https://www.uniprot.org/uniprotkb/P25054",
+      "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/324",
+      "string": "https://string-db.org/network/9606.ENSP00000257430",
+      "alphafold": "https://alphafold.ebi.ac.uk/entry/P25054",
+      "reactome": "https://reactome.org/content/detail/interactor/P25054",
+      "pdb_search": "https://www.rcsb.org/search?request=%7B%22query%22%3A%7B%22type%22%3A%22terminal%22%2C%22service%22%3A%22text%22%2C%22parameters%22%3A%7B%22attribute%22%3A%22rcsb_polymer_entity_container_identifiers.reference_sequence_identifiers.database_accession%22%2C%22operator%22%3A%22exact_match%22%2C%22value%22%3A%22P25054%22%7D%7D%7D"
+    }
+  }
+}

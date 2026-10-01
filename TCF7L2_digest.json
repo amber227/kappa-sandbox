@@ -1,0 +1,807 @@
+{
+  "protein_identifier": {
+    "gene_name": "TCF7L2",
+    "protein_name": "Transcription factor 7-like 2",
+    "uniprot_accession": "Q9NQB0",
+    "organism": "Homo sapiens",
+    "organism_taxid": 9606
+  },
+  "sequence": {
+    "canonical_length": 619,
+    "canonical_sequence": "Not available - requires direct UniProt API access",
+    "molecular_weight_da": 67919,
+    "isoforms": [
+      {
+        "isoform_id": "Extended (E) isoforms",
+        "length": null,
+        "description": "Contains C-clamp domain and CtBP binding motifs C-terminally. Maintains epithelial morphogenesis in 3D organoids. Alternative splicing at exons 13-16.",
+        "sequence": "Not available"
+      },
+      {
+        "isoform_id": "Medium (M) isoforms",
+        "length": null,
+        "description": "Lacks C-clamp and CtBP binding motifs. Disrupts morphogenesis of 3D epithelial organoids. Alternative splicing at exons 13-16.",
+        "sequence": "Not available"
+      },
+      {
+        "isoform_id": "Short (S) isoforms",
+        "length": null,
+        "description": "Contains partial C-clamp domain. Disrupts morphogenesis. Estimated molecular weight 58 kDa.",
+        "sequence": "Not available"
+      }
+    ]
+  },
+  "domains_and_motifs": {
+    "interpro_entries": [
+      {
+        "accession": "IPR009071",
+        "name": "High mobility group box domain",
+        "type": "Domain",
+        "locations": [
+          {
+            "start": 350,
+            "end": 418
+          }
+        ]
+      },
+      {
+        "accession": "IPR013558",
+        "name": "CTNNB1 binding, N-terminal",
+        "type": "Domain",
+        "locations": [
+          {
+            "start": 5,
+            "end": 259
+          }
+        ]
+      },
+      {
+        "accession": "IPR024940",
+        "name": "Transcription factor TCF/LEF",
+        "type": "Family",
+        "locations": []
+      },
+      {
+        "accession": "IPR027397",
+        "name": "Catenin binding domain superfamily",
+        "type": "Homologous Superfamily",
+        "locations": [
+          {
+            "start": 1,
+            "end": 62
+          }
+        ]
+      },
+      {
+        "accession": "IPR036910",
+        "name": "High mobility group box domain superfamily",
+        "type": "Homologous Superfamily",
+        "locations": [
+          {
+            "start": 348,
+            "end": 433
+          }
+        ]
+      }
+    ],
+    "pfam_domains": [
+      {
+        "accession": "PF02791",
+        "name": "CTNNB1-binding domain",
+        "clan": null,
+        "locations": [
+          {
+            "start": 1,
+            "end": 259
+          }
+        ],
+        "e_value": null
+      },
+      {
+        "accession": "PF00505",
+        "name": "HMG box",
+        "clan": null,
+        "locations": [
+          {
+            "start": 350,
+            "end": 417
+          }
+        ],
+        "e_value": null
+      }
+    ],
+    "prosite_patterns": [
+      {
+        "accession": null,
+        "name": "TCF/LEF consensus binding site",
+        "locations": [],
+        "description": "DNA binding motif: 5'-CCTTTGATC-3' recognized by HMG box domain"
+      }
+    ],
+    "smart_domains": [
+      {
+        "accession": "SM00398",
+        "name": "HMG box",
+        "locations": [
+          {
+            "start": 350,
+            "end": 418
+          }
+        ]
+      }
+    ],
+    "signaling_motifs": [
+      {
+        "type": "C-clamp domain",
+        "location": {
+          "start": null,
+          "end": null
+        },
+        "sequence": "Present in E isoforms, partial in S isoforms, absent in M isoforms",
+        "description": "C-terminal domain involved in DNA binding specificity"
+      },
+      {
+        "type": "CtBP binding motif",
+        "location": {
+          "start": null,
+          "end": null
+        },
+        "sequence": "Present in E isoforms only",
+        "description": "Mediates interaction with C-terminal binding protein (CtBP) corepressor"
+      },
+      {
+        "type": "Groucho/TLE binding domain",
+        "location": {
+          "start": null,
+          "end": null
+        },
+        "sequence": null,
+        "description": "Recruits Groucho/TLE corepressors in absence of beta-catenin"
+      },
+      {
+        "type": "NLK phosphorylation sites",
+        "location": {
+          "start": 201,
+          "end": 212
+        },
+        "sequence": "T201, T212",
+        "description": "Phosphorylation by NLK inhibits DNA binding"
+      },
+      {
+        "type": "TNIK phosphorylation site",
+        "location": {
+          "start": 154,
+          "end": 154
+        },
+        "sequence": "S154",
+        "description": "Facilitates recruitment of transcriptional co-activators"
+      }
+    ]
+  },
+  "structure": {
+    "experimental_structures": [
+      {
+        "pdb_id": "1JPW",
+        "method": "X-ray",
+        "resolution_angstrom": 2.5,
+        "chain": null,
+        "coverage": {
+          "start": null,
+          "end": null
+        },
+        "description": "Crystal structure of human Tcf-4 (TCF7L2) in complex with beta-catenin. Shows beta-catenin binding domain.",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/1JPW"
+      },
+      {
+        "pdb_id": "2GL7",
+        "method": "X-ray",
+        "resolution_angstrom": 2.6,
+        "chain": null,
+        "coverage": {
+          "start": null,
+          "end": null
+        },
+        "description": "Crystal structure of beta-catenin/BCL9/Tcf4 (TCF7L2) triple complex. BCL9 binding to first armadillo repeat of beta-catenin.",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/2GL7"
+      }
+    ],
+    "alphafold_prediction": {
+      "available": true,
+      "accession": "AF-Q9NQB0-F1",
+      "confidence_summary": "AlphaFold prediction available. pLDDT scores indicate high confidence (≥90) for structured domains (HMG box, beta-catenin binding domain), likely low confidence (<70) for intrinsically disordered regions and linkers. Full-length structure predicted using AlphaFold3.",
+      "url": "https://alphafold.ebi.ac.uk/entry/Q9NQB0"
+    }
+  },
+  "post_translational_modifications": [
+    {
+      "type": "Phosphorylation",
+      "position": 58,
+      "residue": "S",
+      "function": "Regulatory",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 60,
+      "residue": "S",
+      "function": "Regulatory",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 82,
+      "residue": "S",
+      "function": "Regulatory",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 120,
+      "residue": "S",
+      "function": "Regulatory",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 122,
+      "residue": "S",
+      "function": "Regulatory",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 154,
+      "residue": "S",
+      "function": "Activating - facilitates recruitment of transcriptional co-activators",
+      "evidence": "Experimental - TNIK kinase substrate"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 177,
+      "residue": "S",
+      "function": "Regulatory",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 179,
+      "residue": "S",
+      "function": "Regulatory",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 201,
+      "residue": "T",
+      "function": "Inhibitory - prevents DNA binding and transcriptional activation",
+      "evidence": "Experimental - NLK kinase substrate"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 212,
+      "residue": "T",
+      "function": "Inhibitory - prevents DNA binding and transcriptional activation",
+      "evidence": "Experimental - NLK kinase substrate"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 246,
+      "residue": "S",
+      "function": "Regulatory",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "SUMOylation",
+      "position": null,
+      "residue": "Multiple sites - polysumoylation",
+      "function": "Regulates transcription activity without altering CTNNB1 binding or DNA binding",
+      "evidence": "Experimental - enhanced by PIAS family, reversed by SENP2"
+    },
+    {
+      "type": "Ubiquitination",
+      "position": null,
+      "residue": "Unknown",
+      "function": "Regulatory - mechanism being elucidated",
+      "evidence": "Experimental - reported for TCF/LEF family members"
+    }
+  ],
+  "function": {
+    "uniprot_function": "Participates in the Wnt signaling pathway and modulates MYC expression by binding to its promoter in a sequence-specific manner. Acts as repressor in the absence of CTNNB1, and as activator in its presence. Activates transcription from promoters with several copies of the Tcf motif 5'-CCTTTGATC-3' in the presence of CTNNB1. Binds to DNA and bends it to some extent. Necessary for the terminal differentiation of epidermal cells, the formation of keratohyalin granules and the development of the barrier function of the epidermium. Required for the maintenance of the epithelial stem-cell compartment of the small intestine.",
+    "catalytic_activity": "Not applicable - transcription factor, not an enzyme",
+    "subcellular_location": [
+      "Nucleus",
+      "Nucleoplasm",
+      "Nuclear bodies",
+      "PML body",
+      "Cytosol (minor)"
+    ],
+    "tissue_specificity": "Ubiquitous nuclear expression across human tissues. Low tissue specificity. Cell type enrichment in large ducts. High expression in fat (RPKM 12.8), colon (RPKM 11.3), and 25 other tissues.",
+    "go_annotations": {
+      "molecular_function": [
+        {
+          "go_id": "GO:0003700",
+          "term": "DNA-binding transcription factor activity, RNA polymerase II-specific",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0001227",
+          "term": "DNA-binding transcription repressor activity, RNA polymerase II-specific",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0000981",
+          "term": "DNA-binding transcription factor activity, RNA polymerase II-specific",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0001228",
+          "term": "DNA-binding transcription activator activity, RNA polymerase II-specific",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0000987",
+          "term": "cis-regulatory region sequence-specific DNA binding",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0003682",
+          "term": "chromatin binding",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0008013",
+          "term": "beta-catenin binding",
+          "evidence_code": "IPI"
+        }
+      ],
+      "biological_process": [
+        {
+          "go_id": "GO:0016055",
+          "term": "Wnt signaling pathway",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0060070",
+          "term": "canonical Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0006357",
+          "term": "regulation of transcription by RNA polymerase II",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0042593",
+          "term": "glucose homeostasis",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0031016",
+          "term": "pancreas development",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0001569",
+          "term": "branching involved in blood vessel morphogenesis",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0008284",
+          "term": "positive regulation of cell population proliferation",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0045444",
+          "term": "fat cell differentiation",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0032024",
+          "term": "positive regulation of insulin secretion",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:1904837",
+          "term": "beta-catenin-TCF complex assembly",
+          "evidence_code": "IDA"
+        }
+      ],
+      "cellular_component": [
+        {
+          "go_id": "GO:0016607",
+          "term": "nuclear speck",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005654",
+          "term": "nucleoplasm",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005634",
+          "term": "nucleus",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0000785",
+          "term": "chromatin",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0016604",
+          "term": "nuclear body",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0016605",
+          "term": "PML body",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:1990907",
+          "term": "beta-catenin-TCF7L2 complex",
+          "evidence_code": "IDA"
+        }
+      ]
+    }
+  },
+  "interactions": {
+    "string_network": {
+      "url": "https://string-db.org/network/9606.ENSP00000369397",
+      "top_interactors": [
+        {
+          "partner_gene": "CTNNB1",
+          "partner_protein": "Catenin beta-1",
+          "combined_score": 0.999,
+          "evidence_types": [
+            "experimental",
+            "database",
+            "textmining",
+            "coexpression"
+          ]
+        },
+        {
+          "partner_gene": "BCL9",
+          "partner_protein": "B-cell lymphoma 9 protein",
+          "combined_score": 0.998,
+          "evidence_types": [
+            "experimental",
+            "database",
+            "textmining"
+          ]
+        },
+        {
+          "partner_gene": "EP300",
+          "partner_protein": "Histone acetyltransferase p300",
+          "combined_score": 0.987,
+          "evidence_types": [
+            "experimental",
+            "database",
+            "textmining"
+          ]
+        },
+        {
+          "partner_gene": "CREBBP",
+          "partner_protein": "CREB-binding protein",
+          "combined_score": 0.986,
+          "evidence_types": [
+            "experimental",
+            "database",
+            "textmining"
+          ]
+        },
+        {
+          "partner_gene": "TLE1",
+          "partner_protein": "Transducin-like enhancer protein 1",
+          "combined_score": 0.982,
+          "evidence_types": [
+            "experimental",
+            "database",
+            "textmining"
+          ]
+        },
+        {
+          "partner_gene": "CTBP1",
+          "partner_protein": "C-terminal-binding protein 1",
+          "combined_score": 0.978,
+          "evidence_types": [
+            "experimental",
+            "database",
+            "textmining"
+          ]
+        },
+        {
+          "partner_gene": "NLK",
+          "partner_protein": "Nemo-like kinase",
+          "combined_score": 0.975,
+          "evidence_types": [
+            "experimental",
+            "database",
+            "textmining"
+          ]
+        },
+        {
+          "partner_gene": "JUP",
+          "partner_protein": "Junction plakoglobin (gamma-catenin)",
+          "combined_score": 0.958,
+          "evidence_types": [
+            "experimental",
+            "database",
+            "textmining"
+          ]
+        },
+        {
+          "partner_gene": "MYC",
+          "partner_protein": "Myc proto-oncogene protein",
+          "combined_score": 0.945,
+          "evidence_types": [
+            "experimental",
+            "database",
+            "textmining",
+            "coexpression"
+          ]
+        },
+        {
+          "partner_gene": "HNF4A",
+          "partner_protein": "Hepatocyte nuclear factor 4-alpha",
+          "combined_score": 0.932,
+          "evidence_types": [
+            "experimental",
+            "database",
+            "textmining"
+          ]
+        }
+      ]
+    },
+    "biogrid_interactions": [
+      {
+        "partner_gene": "CTNNB1",
+        "partner_protein": "Catenin beta-1",
+        "interaction_type": "Physical",
+        "experimental_system": "Co-immunoprecipitation / Two-hybrid",
+        "pmid": "Multiple publications",
+        "throughput": "Low"
+      },
+      {
+        "partner_gene": "NLK",
+        "partner_protein": "Nemo-like kinase",
+        "interaction_type": "Physical",
+        "experimental_system": "Phosphorylation",
+        "pmid": "Multiple publications",
+        "throughput": "Low"
+      },
+      {
+        "partner_gene": "CTBP1",
+        "partner_protein": "C-terminal-binding protein 1",
+        "interaction_type": "Physical",
+        "experimental_system": "Co-immunoprecipitation",
+        "pmid": "Multiple publications",
+        "throughput": "Low"
+      },
+      {
+        "partner_gene": "EP300",
+        "partner_protein": "E1A binding protein p300",
+        "interaction_type": "Physical",
+        "experimental_system": "Co-immunoprecipitation",
+        "pmid": "Multiple publications",
+        "throughput": "Low"
+      },
+      {
+        "partner_gene": "JUP",
+        "partner_protein": "Junction plakoglobin",
+        "interaction_type": "Physical",
+        "experimental_system": "Co-immunoprecipitation",
+        "pmid": "Multiple publications",
+        "throughput": "Low"
+      },
+      {
+        "partner_gene": "ZNF44",
+        "partner_protein": "Zinc finger protein 44",
+        "interaction_type": "Physical",
+        "experimental_system": "Unknown",
+        "pmid": "BioGRID:3195983",
+        "throughput": "Unknown"
+      }
+    ],
+    "intact_interactions": [
+      {
+        "partner_gene": "CTNNB1",
+        "partner_protein": "Catenin beta-1",
+        "interaction_type": "Direct interaction",
+        "detection_method": "X-ray crystallography / Co-immunoprecipitation",
+        "pmid": "Multiple publications",
+        "interaction_accession": "Multiple entries"
+      },
+      {
+        "partner_gene": "BCL9",
+        "partner_protein": "B-cell lymphoma 9 protein",
+        "interaction_type": "Association",
+        "detection_method": "X-ray crystallography",
+        "pmid": "Multiple publications",
+        "interaction_accession": "Multiple entries"
+      },
+      {
+        "partner_gene": "PARP1",
+        "partner_protein": "Poly [ADP-ribose] polymerase 1",
+        "interaction_type": "Association",
+        "detection_method": "Co-immunoprecipitation",
+        "pmid": "Multiple publications",
+        "interaction_accession": "Multiple entries"
+      },
+      {
+        "partner_gene": "HNF4A",
+        "partner_protein": "Hepatocyte nuclear factor 4-alpha",
+        "interaction_type": "Direct interaction",
+        "detection_method": "Co-immunoprecipitation",
+        "pmid": "Multiple publications",
+        "interaction_accession": "Multiple entries"
+      },
+      {
+        "partner_gene": "OLIG2",
+        "partner_protein": "Oligodendrocyte transcription factor 2",
+        "interaction_type": "Direct interaction",
+        "detection_method": "Co-immunoprecipitation",
+        "pmid": "Multiple publications",
+        "interaction_accession": "Multiple entries"
+      },
+      {
+        "partner_gene": "PML",
+        "partner_protein": "Promyelocytic leukemia protein (isoform PML-4)",
+        "interaction_type": "Association",
+        "detection_method": "Co-immunoprecipitation",
+        "pmid": "Multiple publications",
+        "interaction_accession": "Multiple entries"
+      },
+      {
+        "partner_gene": "FERMT2",
+        "partner_protein": "Fermitin family homolog 2",
+        "interaction_type": "Association",
+        "detection_method": "Mass spectrometry",
+        "pmid": "Multiple publications",
+        "interaction_accession": "Multiple entries"
+      }
+    ],
+    "summary": {
+      "total_physical_interactors": 760,
+      "high_confidence_interactors": 50,
+      "key_binding_partners": [
+        "CTNNB1 (beta-catenin) - primary coactivator in Wnt pathway",
+        "BCL9 - enhances beta-catenin/TCF7L2 complex activity",
+        "TLE1/Groucho - corepressor in absence of beta-catenin",
+        "CTBP1 - C-terminal binding protein corepressor",
+        "EP300/CREBBP - histone acetyltransferases for transcriptional activation",
+        "NLK - kinase that phosphorylates and inhibits TCF7L2",
+        "HNF4A - liver-specific transcription factor interaction",
+        "PARP1 - forms complex with TCF7L2 at chromatin",
+        "GATA3 - tethers TCF7L2 to chromatin in some contexts"
+      ]
+    }
+  },
+  "pathways": {
+    "reactome": [
+      {
+        "pathway_id": "R-HSA-201681",
+        "pathway_name": "TCF dependent signaling in response to WNT",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-201681"
+      },
+      {
+        "pathway_id": "R-HSA-201722",
+        "pathway_name": "Formation of the beta-catenin:TCF transactivating complex",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-201722"
+      },
+      {
+        "pathway_id": "R-HSA-201923",
+        "pathway_name": "Transcriptional activation of cell cycle inhibitor p21",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-201923"
+      },
+      {
+        "pathway_id": "R-HSA-195721",
+        "pathway_name": "Signaling by WNT",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-195721"
+      }
+    ],
+    "kegg": [
+      {
+        "pathway_id": "hsa04310",
+        "pathway_name": "Wnt signaling pathway",
+        "url": "https://www.genome.jp/pathway/hsa04310"
+      },
+      {
+        "pathway_id": "hsa05210",
+        "pathway_name": "Colorectal cancer",
+        "url": "https://www.genome.jp/pathway/hsa05210"
+      },
+      {
+        "pathway_id": "hsa05217",
+        "pathway_name": "Basal cell carcinoma",
+        "url": "https://www.genome.jp/pathway/hsa05217"
+      },
+      {
+        "pathway_id": "hsa04550",
+        "pathway_name": "Signaling pathways regulating pluripotency of stem cells",
+        "url": "https://www.genome.jp/pathway/hsa04550"
+      }
+    ],
+    "pathway_role_summary": "TCF7L2 is a critical effector of canonical Wnt/beta-catenin signaling. In the absence of Wnt signal, TCF7L2 recruits Groucho/TLE corepressors to inhibit target gene transcription. Upon Wnt stimulation, beta-catenin accumulates in the nucleus, displaces corepressors from TCF7L2, and converts it into a transcriptional activator. The beta-catenin/TCF7L2 complex regulates expression of genes involved in cell proliferation (MYC, CCND1), stem cell maintenance (LGR5), and glucose homeostasis. TCF7L2 plays essential roles in intestinal epithelial stem cell maintenance, pancreatic beta-cell function, liver metabolism, and adipocyte differentiation. Dysregulation contributes to colorectal cancer (80-90% have APC/CTNNB1 mutations affecting Wnt pathway) and type 2 diabetes."
+  },
+  "disease_associations": [
+    {
+      "disease": "Type 2 diabetes mellitus",
+      "omim_id": "125853",
+      "mutation_type": "Germline polymorphisms (SNPs)",
+      "description": "TCF7L2 is the T2D-associated gene with the largest effect on disease susceptibility. SNP rs7903146 (C>T) shows OR=1.87 for TT vs CC genotype. SNPs rs12255372 and rs290481 also significantly associated. Polymorphisms affect glucose homeostasis, insulin secretion, and pancreatic beta-cell function."
+    },
+    {
+      "disease": "Colorectal cancer",
+      "omim_id": "114500",
+      "mutation_type": "Somatic mutations / altered expression",
+      "description": "TCF7L2 belongs to most frequently mutated genes in CRC. Paradoxical tumor suppressor role - loss of nuclear TCF7L2 promotes migration and invasion. 80-90% of CRC contain mutations in APC or CTNNB1 affecting Wnt pathway. TCF7L2 directly suppresses pro-metastatic RUNX2 and impacts cell adhesion molecules."
+    },
+    {
+      "disease": "Hepatocellular carcinoma",
+      "omim_id": "114550",
+      "mutation_type": "Altered expression",
+      "description": "TCF7L2 promotes metastasis via NEDD9-mediated activation of AKT/mTOR signaling pathway. Spatial transcriptional activity of hepatic TCF7L2 regulates zonated metabolic pathways contributing to liver fibrosis."
+    },
+    {
+      "disease": "Basal cell carcinoma",
+      "omim_id": "605462",
+      "mutation_type": "Pathway dysregulation",
+      "description": "Aberrant Wnt/beta-catenin/TCF7L2 signaling contributes to pathogenesis."
+    }
+  ],
+  "cross_references": {
+    "ncbi_gene_id": "6934",
+    "ensembl_gene_id": "ENSG00000148737",
+    "refseq_protein": [
+      "NP_001129893.1",
+      "NP_001129894.1",
+      "NP_001129895.1",
+      "NP_001136214.1",
+      "NP_001136215.1",
+      "NP_001136216.1",
+      "NP_030646.2"
+    ],
+    "refseq_nucleotide": [
+      "NM_001136421.2",
+      "NM_001136422.2",
+      "NM_001136423.2",
+      "NM_001136242.2",
+      "NM_001136243.2",
+      "NM_001136244.2",
+      "NM_030756.4"
+    ],
+    "hgnc_id": "HGNC:11641",
+    "omim_gene": "602228"
+  },
+  "metadata": {
+    "generated_at": "2026-09-30T00:00:00Z",
+    "queried_databases": [
+      "UniProt",
+      "NCBI Gene",
+      "InterPro",
+      "Pfam",
+      "PROSITE",
+      "SMART",
+      "PDB",
+      "AlphaFold",
+      "STRING",
+      "BioGRID",
+      "IntAct",
+      "Reactome",
+      "KEGG",
+      "GO",
+      "Human Protein Atlas",
+      "GeneCards",
+      "OMIM"
+    ],
+    "data_quality_notes": "High-quality data available from multiple authoritative sources. Direct UniProt web interface access was limited, so canonical amino acid sequence not retrieved. Isoform sequences and precise domain boundaries for some motifs require direct database queries. Some interaction evidence codes and PMIDs are aggregated as 'Multiple publications' due to high volume. Most data cross-validated across multiple sources. PDB structures available only for beta-catenin binding domain, not full-length or isolated HMG box. AlphaFold prediction provides full-length structural model.",
+    "modeling_relevance_summary": "TCF7L2 is a critical nuclear effector of Wnt signaling with well-characterized molecular switch behavior: functions as transcriptional repressor (with Groucho/TLE) in basal state, converts to activator (with beta-catenin/EP300) upon Wnt stimulation. Multiple regulatory PTMs (phosphorylation by NLK inhibits activity, sumoylation modulates function). Alternative splicing generates functionally distinct isoforms affecting protein-protein interactions and transcriptional output. Key for modeling: (1) CTNNB1 binding induces functional switch, (2) NLK phosphorylation provides negative feedback, (3) Multiple coactivator/corepressor partners, (4) Isoform-specific effects on target gene regulation. Highly relevant for Wnt pathway models, diabetes/metabolism models, and cancer signaling networks."
+  }
+}
