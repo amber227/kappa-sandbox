@@ -41,48 +41,25 @@ You MUST use this exact schema structure:
       }
     ]
   },
-  "domains_and_motifs": {
-    "interpro_entries": [
-      {
-        "accession": "IPR000001",
-        "name": "Domain name",
-        "type": "Domain/Family/Repeat/Site",
-        "locations": [{"start": 10, "end": 100}]
-      }
-    ],
-    "pfam_domains": [
-      {
-        "accession": "PF00001",
-        "name": "Domain name",
-        "clan": "Clan if applicable",
-        "locations": [{"start": 10, "end": 100}],
-        "e_value": 1e-50
-      }
-    ],
-    "prosite_patterns": [
-      {
-        "accession": "PS00001",
-        "name": "Pattern/Profile name",
-        "locations": [{"start": 50, "end": 60}],
-        "description": "Brief functional description"
-      }
-    ],
-    "smart_domains": [
-      {
-        "accession": "SM00001",
-        "name": "Domain name",
-        "locations": [{"start": 10, "end": 100}]
-      }
-    ],
-    "signaling_motifs": [
-      {
-        "type": "SH2/SH3/PDZ/etc binding site",
-        "location": {"start": 100, "end": 110},
-        "sequence": "YXXP",
-        "description": "Functional note"
-      }
-    ]
-  },
+  "domains_and_motifs": [
+    {
+      "identifier": "unique_id_for_domain_instance",
+      "name": "Domain/motif name",
+      "type": "Domain/Family/Repeat/Site/Motif/Signal/NLS/NES/Degron/Binding_site",
+      "locations": [{"start": 10, "end": 100}],
+      "sequence": "MASTQ...",
+      "description": "Functional description of this domain/motif",
+      "sources": [
+        {
+          "database": "InterPro/Pfam/PROSITE/SMART/UniProt/Literature",
+          "accession": "IPR000001 or PF00001 or PS00001",
+          "e_value": 1e-50,
+          "clan": "Clan if applicable (for Pfam)",
+          "notes": "Any additional source-specific information"
+        }
+      ]
+    }
+  ],
   "structure": {
     "experimental_structures": [
       {
@@ -141,44 +118,78 @@ You MUST use this exact schema structure:
       ]
     }
   },
-  "interactions": {
-    "string_network": {
-      "url": "Direct link to STRING network view",
-      "top_interactors": [
+  "interactions": [
+    {
+      "partner": {
+        "gene_name": "GENE1",
+        "protein_name": "Protein name",
+        "uniprot_accession": "P12345"
+      },
+      "interaction_type": "Physical_association/Direct_interaction/Enzymatic_reaction/Regulatory/Genetic",
+      "mechanism": "Binding/Phosphorylation/Ubiquitination/Acetylation/Methylation/etc",
+      "direction": "bidirectional/this_modifies_partner/partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "reference_to_identifier_in_domains_and_motifs",
+            "residues": [123, 124, 125],
+            "residue_names": ["S123", "Y124", "T125"],
+            "description": "Specific binding/modification site"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "SH2 domain or Kinase domain",
+            "residues": [50, 51, 52],
+            "description": "Partner site if known"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 1e-6,
+        "kd_range_m": [1e-7, 1e-5],
+        "kon_m1s1": 1e5,
+        "koff_s1": 0.1,
+        "kcat_s1": 10,
+        "km_m": 1e-5,
+        "ic50_m": 1e-6,
+        "ec50_m": 1e-6,
+        "measurement_method": "SPR/ITC/FRET/Kinase assay/etc",
+        "conditions": "pH 7.4, 25C, buffer details",
+        "notes": "Additional kinetic information and caveats"
+      },
+      "evidence": [
         {
-          "partner_gene": "GENE1",
-          "partner_protein": "Protein name",
+          "source": "STRING",
           "combined_score": 0.95,
-          "evidence_types": ["experimental", "database", "coexpression"]
+          "evidence_types": ["experimental", "database", "coexpression"],
+          "url": "https://string-db.org/..."
+        },
+        {
+          "source": "BioGRID",
+          "experimental_system": "Two-hybrid/Co-IP/Y2H/etc",
+          "pmid": "12345678",
+          "throughput": "Low/High",
+          "interaction_id": "123456"
+        },
+        {
+          "source": "IntAct",
+          "detection_method": "Method name",
+          "pmid": "12345678",
+          "interaction_accession": "EBI-123456"
+        },
+        {
+          "source": "Literature",
+          "pmid": "12345678",
+          "description": "Specific finding from paper",
+          "notes": "Experimental details"
         }
-      ]
-    },
-    "biogrid_interactions": [
-      {
-        "partner_gene": "GENE2",
-        "partner_protein": "Protein name",
-        "interaction_type": "Physical/Genetic",
-        "experimental_system": "Two-hybrid/Co-IP/etc",
-        "pmid": "12345678",
-        "throughput": "Low/High"
-      }
-    ],
-    "intact_interactions": [
-      {
-        "partner_gene": "GENE3",
-        "partner_protein": "Protein name",
-        "interaction_type": "Direct interaction/Association/etc",
-        "detection_method": "Method name",
-        "pmid": "12345678",
-        "interaction_accession": "EBI-123456"
-      }
-    ],
-    "summary": {
-      "total_physical_interactors": 50,
-      "high_confidence_interactors": 20,
-      "key_binding_partners": ["Protein names of most important interactors"]
+      ],
+      "functional_effect": "Activating/Inhibitory/Scaffolding/Localization/Degradation/etc",
+      "pathway_context": "Brief note on pathway role if relevant"
     }
-  },
+  ],
   "pathways": {
     "reactome": [
       {
@@ -260,7 +271,14 @@ You MUST use this exact schema structure:
 - **PROSITE**: Look for functional motifs and patterns
   - Pay attention to post-translational modification sites
 - **SMART**: Additional domain architecture view
-- **Special attention**: Look for signaling-relevant motifs (kinase domains, SH2/SH3 domains, PDZ domains, phosphorylation sites, degrons, nuclear localization signals)
+- **UniProt**: Check sequence features section for additional motifs
+- **Special attention**: Look for signaling-relevant motifs (kinase domains, SH2/SH3 domains, PDZ domains, phosphorylation sites, degrons, nuclear localization signals, binding sites)
+
+**Deduplication strategy**: Create ONE entry per unique domain/motif instance based on:
+1. Same name/type AND same sequence coordinates → merge into single entry with multiple sources
+2. Different sources reporting same domain at same location → list all sources
+3. Create a unique identifier for each domain instance (e.g., "ARM_repeat_1", "NLS_344_351", "SH2_binding_100_110")
+4. This identifier will be used to reference sites in the interactions section
 
 ### 4. Structural Information
 - **PDB**: Query for experimental structures
@@ -280,10 +298,27 @@ You MUST use this exact schema structure:
   - Look for low-throughput experiments (higher reliability)
 - **IntAct**: Additional physical interaction evidence
   - Often has more detailed method descriptions
-- **Synthesis**: Create a unified interaction list, prioritizing:
-  1. Multiple independent experimental confirmations
-  2. Low-throughput experiments over high-throughput screens
-  3. Direct physical interactions over genetic/functional associations
+- **UniProt**: Check for curated interaction information and binding sites
+- **Literature/PubMed**: For quantitative kinetic data (Kd, kon, koff, Kcat, Km)
+  - Search for specific protein pairs with terms like "binding affinity", "kinetic constants", "Kd", "dissociation constant"
+  - Look for enzymatic parameters for kinase-substrate, E3 ligase-target relationships
+
+**Deduplication and synthesis**: Create ONE entry per unique interaction partner:
+1. Same partner across multiple databases → merge into single entry with evidence from all sources
+2. For each interaction, specify:
+   - Which domain/motif (by identifier from domains_and_motifs) is involved
+   - Specific residues if known
+   - Whether interaction is site-specific or non-site-specific
+3. Include kinetic/affinity data when available:
+   - Kd (dissociation constant) - binding strength
+   - kon/koff (association/dissociation rates)
+   - Kcat/Km (enzymatic efficiency for enzyme-substrate pairs)
+   - IC50/EC50 for inhibitory/activating interactions
+4. Prioritize:
+   - Multiple independent experimental confirmations
+   - Low-throughput experiments over high-throughput screens
+   - Direct physical interactions with structural/kinetic data
+   - Enzymatic interactions with catalytic parameters
 
 ### 6. Pathway Context
 - **Reactome**: Get detailed pathway annotations
@@ -320,16 +355,30 @@ You MUST use this exact schema structure:
    - Domains involved in protein-protein interaction
    - Subcellular localization dynamics
    - Regulatory interactions (kinases that phosphorylate, E3 ligases that ubiquitinate)
+   - Quantitative kinetic parameters (Kd, kon/koff, Kcat, Km)
 
-5. **Create the output file**:
+5. **Deduplicate systematically**:
+   - **Domains/motifs**: Merge entries with same name and coordinates from different sources
+   - **Interactions**: Create one entry per partner, consolidating evidence from all databases
+   - Assign unique identifiers to each domain/motif instance for cross-referencing
+   - Link interaction sites to domain/motif identifiers
+
+6. **Search for kinetic data**:
+   - Use WebSearch with terms: "[protein1] [protein2] binding affinity Kd"
+   - Search: "[kinase] [substrate] Km Kcat"
+   - Check recent papers (last 5-10 years) for quantitative measurements
+   - Include measurement conditions (pH, temperature, buffer) in notes
+
+7. **Create the output file**:
    - Use format: `{GENE_NAME}_digest.json` (e.g., `APC_digest.json`)
    - Ensure valid JSON formatting
    - Include all schema fields even if empty
 
-6. **Provide a brief summary** after completion noting:
+8. **Provide a brief summary** after completion noting:
    - Key findings relevant to signaling modeling
    - Data quality and completeness
    - Any notable gaps or uncertainties
+   - Availability of quantitative kinetic data
 
 ## Common Queries
 
@@ -346,7 +395,11 @@ Before finalizing the JSON:
 - ✓ Cross-references are valid IDs
 - ✓ URLs are functional
 - ✓ JSON is valid (no syntax errors)
-- ✓ Duplicate information is reconciled across sources
-- ✓ Conflicting information is noted in metadata
+- ✓ **No duplicate domains/motifs**: Each unique domain instance appears exactly once with all sources listed
+- ✓ **No duplicate interactions**: Each unique partner appears exactly once with all evidence sources listed
+- ✓ **Domain identifiers are unique and descriptive** (e.g., "ARM_repeat_1", not just "ARM")
+- ✓ **Interaction sites reference valid domain_motif_ids** from the domains_and_motifs section
+- ✓ **Kinetic data includes units and measurement conditions** where available
+- ✓ Conflicting information is noted in metadata or evidence notes
 
 Your goal is to create a comprehensive, accurate, and modeling-ready protein information digest that serves as a single source of truth for all available knowledge about a protein from authoritative databases.
