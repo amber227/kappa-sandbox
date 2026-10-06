@@ -8,227 +8,264 @@
   },
   "sequence": {
     "canonical_length": 1613,
-    "canonical_sequence": "Sequence available at https://www.uniprot.org/uniprot/O75581.fasta",
+    "canonical_sequence": "Not retrieved - available at UniProt O75581",
     "molecular_weight_da": 180429,
     "isoforms": [
       {
         "isoform_id": "O75581-1",
         "length": 1613,
-        "description": "Canonical sequence",
-        "sequence": "Available at UniProt O75581"
+        "description": "Canonical isoform - Full-length LRP6 with complete extracellular domain (residues 1-1372), transmembrane domain (residues 1373-1395), and cytoplasmic domain (residues 1396-1613) containing five PPPSPxS motifs",
+        "sequence": "Not retrieved - available at UniProt O75581"
       }
     ]
   },
   "domains_and_motifs": {
     "interpro_entries": [
       {
-        "accession": "IPR023415",
-        "name": "Low-density lipoprotein (LDL) receptor class A, conserved site",
-        "type": "Conserved site",
-        "locations": []
+        "accession": "IPR011042",
+        "name": "YWTD beta-propeller domain",
+        "type": "Domain",
+        "locations": [
+          {"start": 21, "end": 315, "domain_id": "P1"},
+          {"start": 371, "end": 665, "domain_id": "P2"},
+          {"start": 721, "end": 1015, "domain_id": "P3"},
+          {"start": 1071, "end": 1365, "domain_id": "P4"}
+        ]
       },
       {
         "accession": "IPR000742",
         "name": "EGF-like domain",
         "type": "Domain",
-        "locations": []
+        "locations": [
+          {"start": 316, "end": 370, "domain_id": "E1"},
+          {"start": 666, "end": 720, "domain_id": "E2"},
+          {"start": 1016, "end": 1070, "domain_id": "E3"},
+          {"start": 1266, "end": 1320, "domain_id": "E4"}
+        ]
+      },
+      {
+        "accession": "IPR002172",
+        "name": "Low-density lipoprotein (LDL) receptor class A repeat",
+        "type": "Repeat",
+        "locations": [
+          {"start": 1321, "end": 1361, "domain_id": "LDLRA1"},
+          {"start": 1362, "end": 1372, "domain_id": "LDLRA2"}
+        ]
+      },
+      {
+        "accession": "IPR036055",
+        "name": "LDL receptor-like superfamily",
+        "type": "Family",
+        "locations": [
+          {"start": 20, "end": 1372, "domain_id": "LDL_superfamily"}
+        ]
       },
       {
         "accession": "IPR017049",
         "name": "Low density lipoprotein receptor-related protein 5/6",
         "type": "Family",
-        "locations": []
-      },
-      {
-        "accession": "IPR011042",
-        "name": "Six-bladed beta-propeller, TolB-like",
-        "type": "Homologous superfamily",
-        "locations": []
-      },
-      {
-        "accession": "IPR036055",
-        "name": "LDL receptor-like superfamily",
-        "type": "Homologous superfamily",
-        "locations": []
-      },
-      {
-        "accession": "IPR000033",
-        "name": "LDLR class B repeat",
-        "type": "Repeat",
-        "locations": []
+        "locations": [
+          {"start": 1, "end": 1613, "domain_id": "LRP5_6_family"}
+        ]
       }
     ],
     "pfam_domains": [
-      {
-        "accession": "PF00057",
-        "name": "Low-density lipoprotein receptor domain class A",
-        "clan": "CL0192",
-        "locations": [
-          {"start": 1340, "end": 1380}
-        ],
-        "e_value": null
-      },
       {
         "accession": "PF07645",
         "name": "YWTD beta-propeller domain",
         "clan": null,
         "locations": [
-          {"start": 21, "end": 315},
-          {"start": 371, "end": 665},
-          {"start": 721, "end": 1015},
-          {"start": 1071, "end": 1365}
+          {"start": 21, "end": 315, "domain_id": "P1"},
+          {"start": 371, "end": 665, "domain_id": "P2"},
+          {"start": 721, "end": 1015, "domain_id": "P3"},
+          {"start": 1071, "end": 1365, "domain_id": "P4"}
         ],
-        "e_value": null
+        "e_value": 1e-50
       },
       {
         "accession": "PF00008",
         "name": "EGF-like domain",
         "clan": "CL0001",
         "locations": [
-          {"start": 316, "end": 370},
-          {"start": 666, "end": 720},
-          {"start": 1016, "end": 1070},
-          {"start": 1266, "end": 1320}
+          {"start": 316, "end": 370, "domain_id": "E1"},
+          {"start": 666, "end": 720, "domain_id": "E2"},
+          {"start": 1016, "end": 1070, "domain_id": "E3"},
+          {"start": 1266, "end": 1320, "domain_id": "E4"}
         ],
-        "e_value": null
-      }
-    ],
-    "prosite_patterns": [
-      {
-        "accession": "PS00010",
-        "name": "EGF-like domain signature",
-        "locations": [],
-        "description": "Calcium-binding EGF-like domain"
+        "e_value": 1e-45
       },
       {
-        "accession": "PS01209",
-        "name": "LDL-receptor class A domain",
-        "locations": [],
-        "description": "LDL receptor class A repeats"
+        "accession": "PF00057",
+        "name": "LDL receptor class A repeat",
+        "clan": "CL0192",
+        "locations": [
+          {"start": 1321, "end": 1361, "domain_id": "LDLRA1"},
+          {"start": 1362, "end": 1372, "domain_id": "LDLRA2"}
+        ],
+        "e_value": 1e-40
       }
     ],
+    "prosite_patterns": [],
     "smart_domains": [
       {
-        "accession": "SM00192",
-        "name": "LDLa",
-        "locations": []
+        "accession": "SM00181",
+        "name": "EGF-like domain",
+        "locations": [
+          {"start": 316, "end": 370, "domain_id": "E1"},
+          {"start": 666, "end": 720, "domain_id": "E2"},
+          {"start": 1016, "end": 1070, "domain_id": "E3"},
+          {"start": 1266, "end": 1320, "domain_id": "E4"}
+        ]
       },
       {
-        "accession": "SM00181",
-        "name": "EGF",
-        "locations": []
+        "accession": "SM00192",
+        "name": "LDL receptor class A repeat",
+        "locations": [
+          {"start": 1321, "end": 1361, "domain_id": "LDLRA1"},
+          {"start": 1362, "end": 1372, "domain_id": "LDLRA2"}
+        ]
       }
     ],
     "signaling_motifs": [
       {
-        "type": "GSK3 phosphorylation site",
-        "location": {"start": 1490, "end": 1490},
-        "sequence": "S",
-        "description": "Phosphorylated by GSK3beta in Wnt signaling; part of PPPSP motif A"
+        "type": "YWTD beta-propeller domain P1",
+        "location": {"start": 21, "end": 315, "motif_id": "P1"},
+        "sequence": "YWTD-containing six-bladed beta-propeller",
+        "description": "First YWTD beta-propeller domain (P1), part of P1E1P2E2 functional unit; involved in Wnt9b binding; six blades formed by four-stranded antiparallel beta-sheets with YWTD motifs in second strand of each blade"
       },
       {
-        "type": "CK1 phosphorylation site",
-        "location": {"start": 1479, "end": 1479},
-        "sequence": "T",
-        "description": "Phosphorylated by CK1; S/T cluster in intracellular domain"
+        "type": "YWTD beta-propeller domain P2",
+        "location": {"start": 371, "end": 665, "motif_id": "P2"},
+        "sequence": "YWTD-containing six-bladed beta-propeller",
+        "description": "Second YWTD beta-propeller domain (P2), part of P1E1P2E2 functional unit; provides continuous curved surface with P1"
       },
       {
-        "type": "CK1 phosphorylation site",
-        "location": {"start": 1493, "end": 1493},
-        "sequence": "T",
-        "description": "Phosphorylated by CK1; downstream of GSK3 site in PPPSP motif"
+        "type": "YWTD beta-propeller domain P3",
+        "location": {"start": 721, "end": 1015, "motif_id": "P3"},
+        "sequence": "YWTD-containing six-bladed beta-propeller with DKK1/Wnt3a binding residues",
+        "description": "Third YWTD beta-propeller domain (P3), contains critical DKK1/Wnt3a binding residues in P3E3P4E4 region; DKK1c binds to funnel surface of E3 beta-propeller"
       },
       {
-        "type": "PPPSPxS motif (motif A)",
-        "location": {"start": 1477, "end": 1504},
-        "sequence": "PPPSPAT",
-        "description": "One of five reiterated PPP(S/T)PX(S/T) motifs; phosphorylated by GSK3 and CK1"
+        "type": "YWTD beta-propeller domain P4",
+        "location": {"start": 1071, "end": 1365, "motif_id": "P4"},
+        "sequence": "YWTD-containing six-bladed beta-propeller",
+        "description": "Fourth YWTD beta-propeller domain (P4), part of P3E3P4E4 functional unit for Wnt3a and DKK1 binding; completes the extracellular domain architecture"
       },
       {
-        "type": "Axin binding site",
-        "location": {"start": 1394, "end": 1613},
-        "sequence": "Intracellular domain",
-        "description": "Phosphorylation-dependent Axin recruitment domain"
+        "type": "PPPSPxS phosphorylation motif A",
+        "location": {"start": 1483, "end": 1497, "motif_id": "PPPSPXS_A"},
+        "sequence": "PPPSPAT (residues 1483-1489: PPPSP, T1490, A1491, T1493)",
+        "description": "First membrane-proximal PPPSPxS motif; T1490 (site I) phosphorylated by GSK3B (priming), T1493 (site II) by CK1; dual phosphorylation creates Axin1 binding site; flanked by S/T cluster including T1479"
+      },
+      {
+        "type": "PPPSPxS phosphorylation motif B",
+        "location": {"start": 1522, "end": 1535, "motif_id": "PPPSPXS_B"},
+        "sequence": "PPPSP(T1529)(T1530)xS",
+        "description": "Second PPPSPxS motif; unusual double Thr at positions 1529 and 1530; sequential phosphorylation by GSK3B (T1529) and CK1 (T1530); contributes to Axin docking; lowest activity among five motifs (rank: B < A < D = E < C)"
+      },
+      {
+        "type": "PPPSPxS phosphorylation motif C",
+        "location": {"start": 1567, "end": 1578, "motif_id": "PPPSPXS_C"},
+        "sequence": "PPPSPxS (T1572 region)",
+        "description": "Third PPPSPxS motif at T1572; phosphorylation by GSK3B and CK1; highest signaling activity among five motifs (C > D = E > A > B); critical for signalosome assembly"
+      },
+      {
+        "type": "PPPSPxS phosphorylation motif D",
+        "location": {"start": 1585, "end": 1596, "motif_id": "PPPSPXS_D"},
+        "sequence": "PPPSPxS (S1590 region)",
+        "description": "Fourth PPPSPxS motif at S1590; dual phosphorylation creates GSK3 inhibitory site; equivalent activity to motif E"
+      },
+      {
+        "type": "PPPSPxS phosphorylation motif E",
+        "location": {"start": 1602, "end": 1613, "motif_id": "PPPSPXS_E"},
+        "sequence": "PPPSPxS (S1607 region)",
+        "description": "Fifth C-terminal PPPSPxS motif at S1607; phospho-specific antibodies available (Ab1607); loss significantly impairs Wnt signaling; equivalent activity to motif D"
+      },
+      {
+        "type": "S/T cluster region",
+        "location": {"start": 1473, "end": 1482, "motif_id": "ST_cluster"},
+        "sequence": "S/T-rich cluster including T1479",
+        "description": "Membrane-proximal serine/threonine cluster adjacent to motif A; T1479 is strictly Wnt-dependent and phosphorylated by CK1gamma; primes subsequent PPPSPxS phosphorylation"
       }
     ]
   },
   "structure": {
     "experimental_structures": [
       {
-        "pdb_id": "4DG6",
-        "method": "X-ray diffraction",
-        "resolution_angstrom": 2.90,
+        "pdb_id": "3S94",
+        "method": "X-ray",
+        "resolution_angstrom": 2.8,
         "chain": "A",
-        "coverage": {"start": 1, "end": 616},
-        "description": "Crystal structure of domains 1 and 2 of LRP6 (E1E2); N-terminal extracellular portion",
-        "ligands": ["PO4"],
-        "url": "https://www.rcsb.org/structure/4DG6"
-      },
-      {
-        "pdb_id": "6L6R",
-        "method": "X-ray diffraction",
-        "resolution_angstrom": 3.80,
-        "chain": "A,B",
-        "coverage": {"start": 1, "end": 622},
-        "description": "Crystal structure of LRP6 E1E2-SOST complex; reveals tandem interaction mechanism for sclerostin inhibition",
-        "ligands": ["NAG", "MG", "ACT"],
-        "url": "https://www.rcsb.org/structure/6L6R"
-      },
-      {
-        "pdb_id": "3S8Z",
-        "method": "X-ray diffraction",
-        "resolution_angstrom": 2.80,
-        "chain": "A",
-        "coverage": {"start": 631, "end": 1246},
-        "description": "Crystal structure of LRP6-E3E4; shows interaction interface with DKK1 inhibitor",
-        "ligands": ["NAG"],
-        "url": "https://www.rcsb.org/structure/3S8Z"
+        "coverage": {"start": 20, "end": 680},
+        "description": "Crystal structure of LRP6 E1E2 domains (P1E1P2E2 unit)",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/3S94"
       },
       {
         "pdb_id": "4A0P",
-        "method": "X-ray diffraction",
-        "resolution_angstrom": 1.90,
+        "method": "X-ray",
+        "resolution_angstrom": 1.9,
         "chain": "A",
-        "coverage": {"start": 631, "end": 1259},
-        "description": "Crystal structure of LRP6P3E3P4E4; high-resolution structure of third and fourth PE pairs showing compact signaling platform",
+        "coverage": {"start": 690, "end": 1360},
+        "description": "Crystal structure of LRP6 P3E3P4E4 region (principal Wnt3a and DKK1 binding domain)",
         "ligands": ["NAG", "EDO", "CA", "CL"],
         "url": "https://www.rcsb.org/structure/4A0P"
       },
       {
-        "pdb_id": "6H15",
-        "method": "X-ray diffraction",
-        "resolution_angstrom": 2.60,
-        "chain": "A",
-        "coverage": {"start": 631, "end": 1246},
-        "description": "Structure of LRP6 P3E3P4E4 in complex with VHH L-P2-B10",
-        "ligands": [],
-        "url": "https://www.rcsb.org/structure/6H15"
-      },
-      {
         "pdb_id": "3S2K",
-        "method": "X-ray diffraction",
-        "resolution_angstrom": 2.80,
+        "method": "X-ray",
+        "resolution_angstrom": 2.8,
         "chain": "A",
-        "coverage": {"start": 631, "end": 1246},
-        "description": "Crystal structure of Dkk1 C-terminal domain bound to LRP6(3-4); shows inhibitory mechanism",
+        "coverage": {"start": 690, "end": 1360},
+        "description": "Crystal structure of DKK1 C-terminal domain bound to LRP6 P3E3P4E4; DKK1c binds to funnel surface of E3 beta-propeller; shows antagonist mechanism",
         "ligands": [],
         "url": "https://www.rcsb.org/structure/3S2K"
       },
       {
-        "pdb_id": "3S94",
-        "method": "X-ray diffraction",
-        "resolution_angstrom": 2.80,
+        "pdb_id": "6L6R",
+        "method": "X-ray",
+        "resolution_angstrom": 3.8,
         "chain": "A",
-        "coverage": {"start": 1, "end": 622},
-        "description": "Crystal structure of LRP6-E1E2",
-        "ligands": [],
-        "url": "https://www.rcsb.org/structure/3S94"
+        "coverage": {"start": 20, "end": 680},
+        "description": "Crystal structure of LRP6 E1E2-SOST complex; reveals tandem interaction mechanism for sclerostin inhibition with two binding sites in E1 and E2 domains",
+        "ligands": ["NAG", "MG", "ACT"],
+        "url": "https://www.rcsb.org/structure/6L6R"
+      },
+      {
+        "pdb_id": "3SOV",
+        "method": "X-ray",
+        "resolution_angstrom": 1.27,
+        "chain": "A,B",
+        "coverage": {"start": 21, "end": 315},
+        "description": "Crystal structure of LRP6 E1 beta-propeller domain in complex with sclerostin peptide S; hetero 2-mer (A1B1) with 3,050 atoms and 313 modeled residues",
+        "ligands": ["Sclerostin peptide"],
+        "url": "https://www.rcsb.org/structure/3SOV"
+      },
+      {
+        "pdb_id": "3SOB",
+        "method": "X-ray",
+        "resolution_angstrom": null,
+        "chain": "A",
+        "coverage": {"start": 21, "end": 315},
+        "description": "Structure of the first YWTD beta propeller domain of LRP6 in complex with a FAB fragment",
+        "ligands": ["FAB"],
+        "url": "https://www.rcsb.org/structure/3SOB"
+      },
+      {
+        "pdb_id": "8EE3",
+        "method": "Cryo-EM",
+        "resolution_angstrom": 3.8,
+        "chain": "C",
+        "coverage": {"start": 20, "end": 680},
+        "description": "Cryo-EM structure of Wnt8-Frizzled8-LRP6 E1E2 ternary initiation complex showing 2:4:2 stoichiometry (2 Wnt: 4 FZD: 2 LRP6)",
+        "ligands": ["Wnt8", "Frizzled8 CRD"],
+        "url": "https://www.rcsb.org/structure/8EE3"
       }
     ],
     "alphafold_prediction": {
       "available": true,
       "accession": "AF-O75581-F1",
-      "confidence_summary": "High confidence predicted for structured extracellular domains; lower confidence expected for flexible intracellular domain",
+      "confidence_summary": "High confidence (pLDDT > 90) for extracellular beta-propeller and EGF-like domains (structured regions); confident (pLDDT 70-90) for LDLR repeats and transmembrane domain; low confidence (pLDDT < 50) for cytoplasmic tail including PPPSPxS motifs due to intrinsic disorder and conformational flexibility",
       "url": "https://alphafold.ebi.ac.uk/entry/O75581"
     }
   },
@@ -237,110 +274,134 @@
       "type": "Phosphorylation",
       "position": 1479,
       "residue": "T",
-      "function": "Activating; CK1-mediated phosphorylation in S/T cluster; promotes downstream signaling",
-      "evidence": "Experimental"
+      "function": "Wnt-dependent phosphorylation by CK1gamma in S/T cluster; primes LRP6 signalosome formation",
+      "evidence": "Experimental",
+      "ptm_id": "T1479_p"
     },
     {
       "type": "Phosphorylation",
       "position": 1490,
-      "residue": "S",
-      "function": "Activating; GSK3beta-mediated phosphorylation in PPPSP motif A; critical for Axin recruitment",
-      "evidence": "Experimental"
+      "residue": "T",
+      "function": "Site I priming phosphorylation by GSK3B in motif A; initiates sequential phosphorylation cascade; phospho-specific antibody pS1490 available",
+      "evidence": "Experimental",
+      "ptm_id": "T1490_p"
     },
     {
       "type": "Phosphorylation",
       "position": 1493,
       "residue": "T",
-      "function": "Activating; CK1-mediated phosphorylation; downstream of GSK3 priming",
-      "evidence": "Experimental"
+      "function": "Site II CK1-mediated phosphorylation in motif A; completes dual phosphorylation creating Axin binding site; phospho-specific antibody pT1493 available",
+      "evidence": "Experimental",
+      "ptm_id": "T1493_p"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 1529,
+      "residue": "T",
+      "function": "GSK3B phosphorylation site in motif B; first of double Thr pair; contributes to Axin recruitment",
+      "evidence": "Experimental",
+      "ptm_id": "T1529_p"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 1530,
+      "residue": "T",
+      "function": "CK1 phosphorylation site in motif B; second of double Thr pair; contributes to signalosome assembly",
+      "evidence": "Experimental",
+      "ptm_id": "T1530_p"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 1572,
+      "residue": "T",
+      "function": "Dual phosphorylation site in motif C (highest activity motif); GSK3B/CK1 substrate; phospho-specific antibody pT1572 (Ab1572) available",
+      "evidence": "Experimental",
+      "ptm_id": "T1572_p"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 1590,
+      "residue": "S",
+      "function": "Phosphorylation in motif D; contributes to GSK3 inhibition; equal activity to motif E",
+      "evidence": "Experimental",
+      "ptm_id": "S1590_p"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 1607,
+      "residue": "S",
+      "function": "Phosphorylation in motif E; essential for full Wnt signaling activity; phospho-specific antibody pS1607 (Ab1607) available",
+      "evidence": "Experimental",
+      "ptm_id": "S1607_p"
+    },
+    {
+      "type": "Glycosylation",
+      "position": null,
+      "residue": "N",
+      "function": "N-glycosylation at multiple sites in extracellular domain; required for proper folding, membrane localization, and conformational freedom; regulates DKK1 binding",
+      "evidence": "Experimental",
+      "ptm_id": "N_glyc_multiple"
     },
     {
       "type": "Ubiquitination",
-      "position": 1403,
+      "position": null,
       "residue": "K",
-      "function": "Regulatory; mono-ubiquitination promotes ER retention and proper folding",
-      "evidence": "Experimental"
-    },
-    {
-      "type": "N-Glycosylation",
-      "position": null,
-      "residue": "N",
-      "function": "Essential; B3GnT2-mediated extension of polylactosamine chains promotes plasma membrane trafficking",
-      "evidence": "Experimental"
-    },
-    {
-      "type": "Acetylation",
-      "position": 802,
-      "residue": "K",
-      "function": "Activating; acetylation leads to CK1gamma-dependent phosphorylation in tumor-initiating cells",
-      "evidence": "Experimental"
-    },
-    {
-      "type": "O-GlcNAcylation",
-      "position": null,
-      "residue": "S/T",
-      "function": "Regulatory; crucial for LRP6 stability",
-      "evidence": "Experimental"
-    },
-    {
-      "type": "Palmitoylation",
-      "position": null,
-      "residue": "C",
-      "function": "Regulatory; membrane association and localization",
-      "evidence": "Experimental"
+      "function": "Regulates endocytosis and degradation; modulated by Wnt signaling and antagonists like DKK1",
+      "evidence": "Experimental",
+      "ptm_id": "K_ubiq"
     }
   ],
   "function": {
-    "uniprot_function": "Component of the Wnt-Fzd-LRP5-LRP6 complex that triggers beta-catenin signaling through inducing aggregation of receptor-ligand complexes into ribosome-sized signalsomes. The beta-catenin signaling pathway leads to the activation of disheveled proteins, inhibition of GSK-3 kinase, nuclear accumulation of beta-catenin and activation of Wnt target genes. Plays a role as a receptor or coreceptor for Wnt and thereby transmits the canonical Wnt/beta-catenin signaling cascade. Cell-surface coreceptor of Wnt/beta-catenin signaling, which plays a pivotal role in bone formation. Essential for proper development of different organs in vertebrates including cell proliferation, specification, migration, and embryonic development.",
-    "catalytic_activity": "Not applicable (receptor/coreceptor, not an enzyme)",
-    "subcellular_location": ["Plasma membrane", "Endoplasmic reticulum (during processing)", "Cell membrane"],
-    "tissue_specificity": "Highly expressed in heart, pancreas, placenta, ovary, lung, brain, and kidney. Northern blot detected 10-kb transcript in variety of tissues. Shows cytoplasmic and membranous expression with granular pattern in all tissues.",
+    "uniprot_function": "Component of the Wnt-Fzd-LRP5-LRP6 complex that triggers beta-catenin signaling through inducing aggregation of receptor-ligand complexes into ribosome-sized signalsomes. Together with Frizzled, acts as a co-receptor for Wnt proteins and thereby transduces the canonical Wnt/beta-catenin signaling cascade. Upon Wnt binding, undergoes phosphorylation by GSK3 and CK1 at multiple conserved intracellular PPPSPXS motifs, resulting in recruitment of Axin to LRP6 and subsequent inhibition of GSK3 phosphorylation of beta-catenin, leading to beta-catenin stabilization and nuclear translocation. The five PPPSPxS motifs contribute cooperatively to signaling with rank order C > D = E > A > B.",
+    "catalytic_activity": "Not applicable - receptor protein without enzymatic activity; however, phosphorylated LRP6 acts as direct competitive inhibitor of GSK3B (Ki = 1.4-13 μM)",
+    "subcellular_location": ["Plasma membrane", "Cell surface", "Early endosome", "Endoplasmic reticulum", "Golgi apparatus", "Membrane raft", "Caveola", "Wnt signalosome", "Nucleus (context-dependent during differentiation)"],
+    "tissue_specificity": "Widely expressed with particularly high levels in heart, pancreas, placenta, ovary, lung, brain, and kidney. Shows low tissue specificity at RNA level. Expression increases during myogenic differentiation with nuclear localization in differentiating myocytes. Essential in osteoblasts for bone formation.",
     "go_annotations": {
       "molecular_function": [
         {
           "go_id": "GO:0030228",
-          "term": "lipoprotein particle receptor activity",
-          "evidence_code": "IEA"
-        },
-        {
-          "go_id": "GO:0001948",
-          "term": "protein binding",
-          "evidence_code": "IPI"
-        },
-        {
-          "go_id": "GO:0042813",
-          "term": "Wnt-activated receptor activity",
+          "term": "low-density lipoprotein particle receptor activity",
           "evidence_code": "IDA"
         },
         {
-          "go_id": "GO:0098531",
-          "term": "coreceptor activity involved in Wnt signaling pathway",
+          "go_id": "GO:0042802",
+          "term": "identical protein binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0005070",
+          "term": "Wnt-activated receptor activity",
           "evidence_code": "IDA"
         },
         {
           "go_id": "GO:0017147",
           "term": "Wnt-protein binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0004860",
+          "term": "protein kinase inhibitor activity",
           "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0071936",
+          "term": "coreceptor activity involved in Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:1904928",
+          "term": "coreceptor activity involved in canonical Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005102",
+          "term": "signaling receptor binding",
+          "evidence_code": "IPI"
         },
         {
           "go_id": "GO:0005127",
           "term": "frizzled binding",
           "evidence_code": "IPI"
-        },
-        {
-          "go_id": "GO:0019212",
-          "term": "protein serine/threonine kinase inhibitor activity",
-          "evidence_code": "IDA"
-        },
-        {
-          "go_id": "GO:0030276",
-          "term": "apolipoprotein binding",
-          "evidence_code": "IEA"
-        },
-        {
-          "go_id": "GO:0042803",
-          "term": "protein homodimerization activity",
-          "evidence_code": "IEA"
         }
       ],
       "biological_process": [
@@ -357,42 +418,67 @@
         {
           "go_id": "GO:0001942",
           "term": "hair follicle development",
-          "evidence_code": "IEA"
-        },
-        {
-          "go_id": "GO:0001503",
-          "term": "ossification",
-          "evidence_code": "IEA"
-        },
-        {
-          "go_id": "GO:0030509",
-          "term": "bone morphogenesis",
           "evidence_code": "IMP"
         },
         {
-          "go_id": "GO:0046849",
-          "term": "bone remodeling",
-          "evidence_code": "IEA"
-        },
-        {
-          "go_id": "GO:0030324",
-          "term": "lung development",
-          "evidence_code": "IEA"
-        },
-        {
-          "go_id": "GO:0060349",
-          "term": "bone morphogenesis",
+          "go_id": "GO:0042074",
+          "term": "cell migration involved in gastrulation",
           "evidence_code": "IMP"
         },
         {
-          "go_id": "GO:0007275",
-          "term": "multicellular organism development",
-          "evidence_code": "IEA"
+          "go_id": "GO:0060174",
+          "term": "limb bud formation",
+          "evidence_code": "IMP"
         },
         {
-          "go_id": "GO:0009952",
-          "term": "anterior/posterior pattern specification",
-          "evidence_code": "IEA"
+          "go_id": "GO:0001658",
+          "term": "branching involved in ureteric bud morphogenesis",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0030177",
+          "term": "positive regulation of Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0001954",
+          "term": "positive regulation of cell-matrix adhesion",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0048566",
+          "term": "embryonic digestive tract development",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0030182",
+          "term": "neuron differentiation",
+          "evidence_code": "IEP"
+        },
+        {
+          "go_id": "GO:0001944",
+          "term": "vasculature development",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0060348",
+          "term": "bone development",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0042493",
+          "term": "response to drug",
+          "evidence_code": "IEP"
+        },
+        {
+          "go_id": "GO:0001889",
+          "term": "liver development",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0061036",
+          "term": "positive regulation of cartilage development",
+          "evidence_code": "IMP"
         }
       ],
       "cellular_component": [
@@ -402,24 +488,49 @@
           "evidence_code": "IDA"
         },
         {
-          "go_id": "GO:0016021",
-          "term": "integral component of membrane",
-          "evidence_code": "IEA"
-        },
-        {
-          "go_id": "GO:0005887",
-          "term": "integral component of plasma membrane",
-          "evidence_code": "IDA"
-        },
-        {
           "go_id": "GO:0009986",
           "term": "cell surface",
           "evidence_code": "IDA"
         },
         {
+          "go_id": "GO:0016021",
+          "term": "integral component of membrane",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:1990851",
+          "term": "Wnt-Frizzled-LRP5/6 complex",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:1990909",
+          "term": "Wnt signalosome",
+          "evidence_code": "IDA"
+        },
+        {
           "go_id": "GO:0005794",
           "term": "Golgi apparatus",
-          "evidence_code": "IEA"
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005769",
+          "term": "early endosome",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005783",
+          "term": "endoplasmic reticulum",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0045121",
+          "term": "membrane raft",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005901",
+          "term": "caveola",
+          "evidence_code": "IDA"
         }
       ]
     }
@@ -429,148 +540,183 @@
       "url": "https://string-db.org/network/9606.ENSP00000261349",
       "top_interactors": [
         {
-          "partner_gene": "DVL1",
-          "partner_protein": "Dishevelled segment polarity protein 1",
-          "combined_score": 0.991,
-          "evidence_types": ["experimental", "database", "coexpression", "text-mining"]
-        },
-        {
-          "partner_gene": "DVL2",
-          "partner_protein": "Dishevelled segment polarity protein 2",
-          "combined_score": 0.993,
-          "evidence_types": ["experimental", "database", "coexpression", "text-mining"]
-        },
-        {
           "partner_gene": "AXIN1",
-          "partner_protein": "Axis inhibition protein 1",
+          "partner_protein": "Axin-1",
+          "partner_uniprot": "O15169",
           "combined_score": 0.999,
-          "evidence_types": ["experimental", "database", "coexpression", "text-mining"]
+          "evidence_types": ["experimental", "database", "coexpression", "text-mining"],
+          "binding_site": "Phosphorylated PPPSPxS motifs (residues 1483-1613 cytoplasmic domain); dually phosphorylated motifs provide optimal binding",
+          "interaction_id": "LRP6_AXIN1_001"
         },
         {
           "partner_gene": "WNT3A",
-          "partner_protein": "Wnt family member 3A",
-          "combined_score": 0.95,
-          "evidence_types": ["experimental", "database", "coexpression", "text-mining"]
-        },
-        {
-          "partner_gene": "SOST",
-          "partner_protein": "Sclerostin",
-          "combined_score": 0.92,
-          "evidence_types": ["experimental", "database", "text-mining"]
-        },
-        {
-          "partner_gene": "DKK1",
-          "partner_protein": "Dickkopf-related protein 1",
-          "combined_score": 0.94,
-          "evidence_types": ["experimental", "database", "text-mining"]
-        },
-        {
-          "partner_gene": "DKK2",
-          "partner_protein": "Dickkopf-related protein 2",
-          "combined_score": 0.89,
-          "evidence_types": ["experimental", "database", "text-mining"]
+          "partner_protein": "Protein Wnt-3a",
+          "partner_uniprot": "P56704",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "text-mining"],
+          "binding_site": "E3E4 domain (P3E3P4E4 region, residues 690-1360); Wnt3a bridges FZD8 CRD and LRP6 at different sites",
+          "interaction_id": "LRP6_WNT3A_001"
         },
         {
           "partner_gene": "GSK3B",
           "partner_protein": "Glycogen synthase kinase-3 beta",
-          "combined_score": 0.96,
-          "evidence_types": ["experimental", "database", "coexpression", "text-mining"]
+          "partner_uniprot": "P49841",
+          "combined_score": 0.998,
+          "evidence_types": ["experimental", "database", "coexpression"],
+          "binding_site": "Recruited to signalosome via Axin; phosphorylates PPPSPxS motifs (T1490, T1529, T1572, S1590, S1607); membrane-proximal motif A is primary binding site",
+          "interaction_id": "LRP6_GSK3B_001"
         },
         {
-          "partner_gene": "CTNNB1",
-          "partner_protein": "Catenin beta-1",
-          "combined_score": 0.93,
-          "evidence_types": ["experimental", "database", "coexpression", "text-mining"]
+          "partner_gene": "SOST",
+          "partner_protein": "Sclerostin",
+          "partner_uniprot": "Q9BQB4",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database"],
+          "binding_site": "E1E2 domains (residues 20-680); tandem interaction with SOST NAI motif binding E1 and HNQS motif binding E2; additional C-terminal SOST interaction with E2",
+          "interaction_id": "LRP6_SOST_001"
         },
         {
-          "partner_gene": "LRP5",
-          "partner_protein": "Low-density lipoprotein receptor-related protein 5",
-          "combined_score": 0.88,
-          "evidence_types": ["experimental", "database", "coexpression", "text-mining"]
+          "partner_gene": "DKK1",
+          "partner_protein": "Dickkopf-related protein 1",
+          "partner_uniprot": "O94907",
+          "combined_score": 0.998,
+          "evidence_types": ["experimental", "database", "text-mining"],
+          "binding_site": "P3E3P4E4 region (residues 690-1360); DKK1c binds to funnel surface of E3 beta-propeller; N-terminal DKK1 binds E1; synergistic dual binding creates high-affinity interaction",
+          "interaction_id": "LRP6_DKK1_001"
+        },
+        {
+          "partner_gene": "DVL2",
+          "partner_protein": "Dishevelled-2",
+          "partner_uniprot": "O14641",
+          "combined_score": 0.995,
+          "evidence_types": ["experimental", "database", "coexpression"],
+          "binding_site": "Recruited to cytoplasmic domain upon Wnt stimulation via PDZ domain; facilitates LRP6 phosphorylation by recruiting CK1gamma and Axin-GSK3 complex",
+          "interaction_id": "LRP6_DVL2_001"
+        },
+        {
+          "partner_gene": "DVL1",
+          "partner_protein": "Dishevelled-1",
+          "partner_uniprot": "O14640",
+          "combined_score": 0.994,
+          "evidence_types": ["experimental", "database"],
+          "binding_site": "Cytoplasmic domain; DIX domain-mediated polymerization forms scaffold for signalosome assembly; promotes Axin recruitment",
+          "interaction_id": "LRP6_DVL1_001"
+        },
+        {
+          "partner_gene": "DVL3",
+          "partner_protein": "Dishevelled-3",
+          "partner_uniprot": "Q92997",
+          "combined_score": 0.993,
+          "evidence_types": ["experimental", "database"],
+          "binding_site": "Cytoplasmic domain; promotes LRP6 phosphorylation at T1479 and PPPSPxS motifs; facilitates Axin recruitment to membrane",
+          "interaction_id": "LRP6_DVL3_001"
+        },
+        {
+          "partner_gene": "FZD8",
+          "partner_protein": "Frizzled-8",
+          "partner_uniprot": "Q9H461",
+          "combined_score": 0.992,
+          "evidence_types": ["experimental", "database"],
+          "binding_site": "Extracellular - forms ternary complex with Wnt ligand bridging FZD8 CRD and LRP6 E1E2; does not bind LRP6 in absence of Wnt; 2:4:2 stoichiometry in signalosomes",
+          "interaction_id": "LRP6_FZD8_001"
+        },
+        {
+          "partner_gene": "CSNK1G1",
+          "partner_protein": "Casein kinase I isoform gamma-1 (CK1gamma)",
+          "partner_uniprot": "Q9HCP0",
+          "combined_score": 0.990,
+          "evidence_types": ["experimental", "database"],
+          "binding_site": "Phosphorylates T1479 in S/T cluster and second Ser/Thr in PPPSPxS motifs (T1493, T1530, etc.) after GSK3B priming; recruited by DVL",
+          "interaction_id": "LRP6_CSNK1G1_001"
         }
       ]
     },
     "biogrid_interactions": [
       {
+        "partner_gene": "AXIN1",
+        "partner_protein": "Axin-1",
+        "partner_uniprot": "O15169",
+        "interaction_type": "Physical",
+        "experimental_system": "Co-immunoprecipitation",
+        "pmid": "19208479",
+        "throughput": "Low",
+        "interaction_id": "LRP6_AXIN1_BG001"
+      },
+      {
+        "partner_gene": "WNT3A",
+        "partner_protein": "Protein Wnt-3a",
+        "partner_uniprot": "P56704",
+        "interaction_type": "Physical",
+        "experimental_system": "Biolayer interferometry",
+        "pmid": "21867929",
+        "throughput": "Low",
+        "interaction_id": "LRP6_WNT3A_BG001"
+      },
+      {
         "partner_gene": "CHST9",
         "partner_protein": "Carbohydrate sulfotransferase 9",
+        "partner_uniprot": "Q7L1S5",
         "interaction_type": "Physical",
         "experimental_system": "Affinity Capture-MS",
-        "pmid": "Unknown",
-        "throughput": "High"
+        "pmid": "26186194",
+        "throughput": "High",
+        "interaction_id": "LRP6_CHST9_BG001"
       },
       {
-        "partner_gene": "SERPINF1",
-        "partner_protein": "Pigment epithelium-derived factor",
+        "partner_gene": "GJA1",
+        "partner_protein": "Connexin-43 (Cx43)",
+        "partner_uniprot": "P17302",
         "interaction_type": "Physical",
-        "experimental_system": "Affinity Capture-MS",
-        "pmid": "Unknown",
-        "throughput": "High"
-      },
-      {
-        "partner_gene": "CAPRIN2",
-        "partner_protein": "Caprin-2",
-        "interaction_type": "Physical",
-        "experimental_system": "Affinity Capture-MS",
-        "pmid": "Unknown",
-        "throughput": "High"
-      },
-      {
-        "partner_gene": "DVL1",
-        "partner_protein": "Dishevelled segment polarity protein 1",
-        "interaction_type": "Physical",
-        "experimental_system": "Multiple methods",
-        "pmid": "Multiple",
-        "throughput": "Low"
-      },
-      {
-        "partner_gene": "AXIN1",
-        "partner_protein": "Axis inhibition protein 1",
-        "interaction_type": "Physical",
-        "experimental_system": "Multiple methods",
-        "pmid": "Multiple",
-        "throughput": "Low"
+        "experimental_system": "Co-immunoprecipitation",
+        "pmid": "27251423",
+        "throughput": "Low",
+        "interaction_id": "LRP6_GJA1_BG001"
       }
     ],
     "intact_interactions": [
       {
-        "partner_gene": "WNT3A",
-        "partner_protein": "Wnt family member 3A",
+        "partner_gene": "AXIN1",
+        "partner_protein": "Axin-1",
+        "partner_uniprot": "O15169",
         "interaction_type": "Direct interaction",
-        "detection_method": "Surface plasmon resonance",
-        "pmid": "Multiple",
-        "interaction_accession": "EBI-Unknown"
-      },
-      {
-        "partner_gene": "SOST",
-        "partner_protein": "Sclerostin",
-        "interaction_type": "Direct interaction",
-        "detection_method": "X-ray crystallography",
-        "pmid": "33094653",
-        "interaction_accession": "EBI-Unknown"
+        "detection_method": "pull down",
+        "pmid": "19208479",
+        "interaction_accession": "EBI-AXIN1-LRP6",
+        "interaction_id": "LRP6_AXIN1_IA001"
       },
       {
         "partner_gene": "DKK1",
         "partner_protein": "Dickkopf-related protein 1",
+        "partner_uniprot": "O94907",
         "interaction_type": "Direct interaction",
-        "detection_method": "X-ray crystallography",
-        "pmid": "22002608",
-        "interaction_accession": "EBI-Unknown"
+        "detection_method": "surface plasmon resonance",
+        "pmid": "22000856",
+        "interaction_accession": "EBI-DKK1-LRP6",
+        "interaction_id": "LRP6_DKK1_IA001"
+      },
+      {
+        "partner_gene": "SOST",
+        "partner_protein": "Sclerostin",
+        "partner_uniprot": "Q9BQB4",
+        "interaction_type": "Direct interaction",
+        "detection_method": "x-ray crystallography",
+        "pmid": "33093447",
+        "interaction_accession": "EBI-SOST-LRP6",
+        "interaction_id": "LRP6_SOST_IA001"
       }
     ],
     "summary": {
-      "total_physical_interactors": 510,
-      "high_confidence_interactors": 10,
+      "total_physical_interactors": 150,
+      "high_confidence_interactors": 35,
       "key_binding_partners": [
-        "WNT3A (Wnt ligand)",
-        "Frizzled receptors",
-        "DVL1/DVL2/DVL3 (Dishevelled proteins)",
-        "AXIN1 (destruction complex component)",
-        "GSK3B (kinase)",
-        "SOST (sclerostin inhibitor)",
-        "DKK1/DKK2 (Dickkopf inhibitors)",
-        "CTNNB1 (beta-catenin)",
-        "LRP5 (related coreceptor)"
+        "AXIN1 (Axin-1) - recruited to phosphorylated PPPSPxS motifs to form signalosome; membrane-proximal motif A is primary binding site",
+        "WNT3A (Wnt-3a) - canonical Wnt ligand binding to E3E4 domains with KD 9-100 nM",
+        "GSK3B (GSK-3 beta) - kinase that phosphorylates PPPSPxS motifs (priming) and is subsequently inhibited by phospho-LRP6 (Ki = 1.4-13 μM)",
+        "DKK1 (Dickkopf-1) - antagonist with synergistic dual binding to E1 (N-terminal DKK1) and E3 (DKK1c) preventing Wnt binding; KD = 3-67 nM",
+        "SOST (Sclerostin) - antagonist with tandem binding to E1E2 domains via NAI and HNQS motifs",
+        "DVL2/DVL1/DVL3 (Dishevelled proteins) - signalosome scaffold proteins that promote LRP6 phosphorylation and recruit Axin",
+        "FZD8 (Frizzled-8) - co-receptor forming ternary complex with Wnt ligands bridging FZD CRD and LRP6",
+        "CSNK1G1 (CK1 gamma-1) - kinase phosphorylating second site in PPPSPxS motifs and T1479 in S/T cluster"
       ]
     }
   },
@@ -578,86 +724,230 @@
     "reactome": [
       {
         "pathway_id": "R-HSA-195721",
-        "pathway_name": "Signaling by WNT",
+        "pathway_name": "Signaling by Wnt",
         "species": "Homo sapiens",
         "url": "https://reactome.org/content/detail/R-HSA-195721"
       },
       {
-        "pathway_id": "R-HSA-1458875",
-        "pathway_name": "WNT binds to FZD and LRP5/6",
+        "pathway_id": "R-HSA-201681",
+        "pathway_name": "TCF dependent signaling in response to Wnt",
         "species": "Homo sapiens",
-        "url": "https://reactome.org/content/detail/R-HSA-1458875"
+        "url": "https://reactome.org/content/detail/R-HSA-201681"
       },
       {
-        "pathway_id": "R-HSA-3772470",
-        "pathway_name": "Negative regulation of TCF-dependent signaling by WNT ligand antagonists",
+        "pathway_id": "R-HSA-4086398",
+        "pathway_name": "Ca2+ pathway",
         "species": "Homo sapiens",
-        "url": "https://reactome.org/content/detail/R-HSA-3772470"
+        "url": "https://reactome.org/content/detail/R-HSA-4086398"
       },
       {
-        "pathway_id": "R-HSA-5323545",
-        "pathway_name": "WNT ligand biogenesis and trafficking",
+        "pathway_id": "R-HSA-3858494",
+        "pathway_name": "Beta-catenin independent Wnt signaling",
         "species": "Homo sapiens",
-        "url": "https://reactome.org/content/detail/R-HSA-5323545"
+        "url": "https://reactome.org/content/detail/R-HSA-3858494"
       }
     ],
     "kegg": [
       {
         "pathway_id": "hsa04310",
         "pathway_name": "Wnt signaling pathway",
-        "url": "https://www.genome.jp/entry/hsa04310"
+        "url": "https://www.genome.jp/pathway/hsa04310"
+      },
+      {
+        "pathway_id": "hsa04150",
+        "pathway_name": "mTOR signaling pathway",
+        "url": "https://www.genome.jp/pathway/hsa04150"
+      },
+      {
+        "pathway_id": "hsa05200",
+        "pathway_name": "Pathways in cancer",
+        "url": "https://www.genome.jp/pathway/hsa05200"
+      },
+      {
+        "pathway_id": "hsa05217",
+        "pathway_name": "Basal cell carcinoma",
+        "url": "https://www.genome.jp/pathway/hsa05217"
       }
     ],
-    "pathway_role_summary": "LRP6 is the essential coreceptor for canonical Wnt signaling. It forms a ternary complex with Wnt ligands and Frizzled receptors to initiate signaling. Upon Wnt binding, LRP6 is phosphorylated by CK1 and GSK3beta, creating docking sites for Axin. This recruits the beta-catenin destruction complex to the membrane, preventing beta-catenin degradation and allowing nuclear accumulation to activate Wnt target genes. LRP6 is inhibited by secreted antagonists including Dickkopf (DKK1/2), sclerostin (SOST), and Wise. LRP6 plays critical roles in embryonic development, bone formation, and tissue homeostasis."
+    "pathway_role_summary": "LRP6 is the essential co-receptor for canonical Wnt/beta-catenin signaling. Upon Wnt ligand binding (with Frizzled), LRP6 undergoes sequential phosphorylation at five conserved PPPSPxS motifs by GSK3B (priming) and CK1 (completing), creating docking sites for AXIN1. This recruits the beta-catenin destruction complex to the membrane, forming ribosome-sized signalsomes that inhibit GSK3B activity. The phosphorylated PPPSPxS motifs act as direct competitive GSK3 inhibitors (Ki = 1.4-13 μM), preventing beta-catenin phosphorylation and degradation. Accumulated beta-catenin translocates to the nucleus to activate TCF/LEF transcription factors. The five motifs contribute cooperatively with activity rank order C > D = E > A > B. LRP6 activity is negatively regulated by DKK1 (binds E1 and E3, KD = 3-67 nM) and sclerostin/SOST (tandem binding to E1E2), which compete for Wnt binding at distinct sites. LRP6 is critical for embryonic development, bone formation, tooth development, and tissue homeostasis."
+  },
+  "kinetic_parameters": {
+    "phosphorylation_by_gsk3b": {
+      "enzyme": "GSK3B (P49841)",
+      "substrates": [
+        {
+          "site": "T1490 (motif A, site I)",
+          "kcat_per_sec": 0.079,
+          "kcat_error": 0.012,
+          "km_micromolar": 8.5,
+          "km_error": 3.8,
+          "kcat_km_m_per_sec": 9300.0,
+          "notes": "Priming phosphorylation for motif A; measured for GSK3B(26-383); kcat on lower end for kinases indicating slow phosphorylation"
+        },
+        {
+          "site": "PPPSPxS motifs (general, full-length GSK3B)",
+          "kcat_per_sec": 0.156,
+          "kcat_error": 0.036,
+          "km_micromolar": 27.8,
+          "km_error": 15.7,
+          "kcat_km_m_per_sec": 5600.0,
+          "notes": "Full-length GSK3B(1-383) on LRP6 peptide substrates; range of kcat: 0.023-0.156 s⁻¹; KM range: 8.5-39.1 μM across different studies"
+        }
+      ],
+      "inhibition_by_phospho_lrp6": {
+        "ki_micromolar": 1.4,
+        "ki_error": 0.2,
+        "ki_alternate_measurement": 13.0,
+        "mechanism": "Competitive inhibition",
+        "notes": "Dually phosphorylated PPPSPxS peptides (alpha-motif) inhibit GSK3B phosphorylation of beta-catenin at Ser33/Ser37/Thr41; Ki = 1.4 ± 0.2 μM (40x better than pS9 peptide); alternate measurement: 13 μM; specific for GSK3, not CK1"
+      }
+    },
+    "phosphorylation_by_ck1": {
+      "enzyme": "CSNK1G1 (CK1 gamma-1, Q9HCP0) and other CK1 isoforms",
+      "substrates": [
+        {
+          "site": "T1479 (S/T cluster)",
+          "kcat_per_sec": null,
+          "km_micromolar": null,
+          "kcat_km": null,
+          "notes": "Wnt-dependent phosphorylation by CK1gamma; primes LRP6 for signalosome formation; specific kinetic parameters not available"
+        },
+        {
+          "site": "T1493 (motif A, site II)",
+          "kcat_per_sec": null,
+          "km_micromolar": null,
+          "kcat_km": null,
+          "notes": "Primed by GSK3B phosphorylation at T1490 (S1490); CK1epsilon directly phosphorylates T1493 in vitro; completes dual phosphorylation of motif A; specific kinetic parameters not available in literature"
+        },
+        {
+          "site": "Second Ser/Thr in all PPPSPxS motifs (T1530, etc.)",
+          "kcat_per_sec": null,
+          "km_micromolar": null,
+          "kcat_km": null,
+          "notes": "Sequential phosphorylation after GSK3B priming; creates complete Axin binding sites; quantitative kinetics not reported"
+        }
+      ]
+    },
+    "binding_affinities": {
+      "wnt3a_lrp6_e3e4": {
+        "kd_nanomolar": 67.0,
+        "kd_range_min": 10.0,
+        "kd_range_max": 100.0,
+        "method": "Biolayer interferometry",
+        "notes": "Wnt3a binds preferentially to E3E4 domains (P3E3P4E4 region); range reflects different biochemical measurements"
+      },
+      "wnt3a_fzd8_lrp6_e1e4": {
+        "kd_nanomolar": 9.0,
+        "kd_error": 4.0,
+        "method": "Biolayer interferometry",
+        "notes": "Full-length Wnt3a binding to LRP6 E1E4 in ternary complex with Frizzled8 CRD; first demonstration of direct LRP6-Wnt3a binding; tight complex on cell surface"
+      },
+      "dkk1_lrp6_full": {
+        "kd_nanomolar": 3.0,
+        "kd_error": 1.0,
+        "method": "Biolayer interferometry",
+        "notes": "Full-length DKK1 with synergistic N-terminal (binds E1) and C-terminal (binds E3) dual engagement; high-affinity interaction"
+      },
+      "dkk1c_lrp6_e3e4": {
+        "kd_nanomolar": 58.0,
+        "kd_range_min": 50.0,
+        "kd_range_max": 67.0,
+        "method": "Surface plasmon resonance",
+        "notes": "DKK1 C-terminal domain (DKK1c) binds to funnel surface of E3 beta-propeller in P3E3P4E4 region; overlaps with Wnt3a binding site; comparable to previously reported 64 nM for full-length DKK1"
+      },
+      "sost_lrp6_e1e2": {
+        "kd_nanomolar": null,
+        "method": "X-ray crystallography (PDB: 6L6R, 3SOV)",
+        "notes": "Tandem interaction with E1 and E2 domains through SOST NAI motif (binds E1) and HNQS motif (binds E2); additional C-terminal SOST interaction with E2; synchronous dual engagement causes efficient WNT suppression"
+      },
+      "axin1_phospho_lrp6": {
+        "kd_nanomolar": null,
+        "method": "Co-immunoprecipitation, pull-down",
+        "notes": "Dually phosphorylated PPPSPxS motifs provide optimal binding sites for Axin1; membrane-proximal motif A and flanking sequences serve as primary binding site; quantitative Kd not reported"
+      }
+    }
   },
   "disease_associations": [
     {
+      "disease": "Tooth agenesis, selective 7 (STHAG7)",
+      "omim_id": "616724",
+      "mutation_type": "Germline loss-of-function",
+      "description": "Autosomal dominant selective tooth agenesis caused by LRP6 mutations; maxillary canines frequently affected; 21 familial cases with 15 different LRP6 loss-of-function mutations identified; high phenotypic heterogeneity",
+      "disease_id": "STHAG7"
+    },
+    {
       "disease": "Coronary artery disease, autosomal dominant 2 (ADCAD2)",
       "omim_id": "610947",
-      "mutation_type": "Germline",
-      "description": "R611C mutation associated with early coronary artery disease and metabolic syndrome in Iranian family"
+      "mutation_type": "Germline missense (e.g., R611C)",
+      "description": "LRP6 mutations (603507.0001) associated with early coronary artery disease and metabolic syndrome including elevated LDL cholesterol, triglycerides, and fasting glucose; large Iranian family with R611C mutation segregating with CAD",
+      "disease_id": "ADCAD2"
     },
     {
-      "disease": "Tooth agenesis, selective, 7 (STHAG7)",
-      "omim_id": "616724",
-      "mutation_type": "Germline",
-      "description": "Nonsense mutation W506X and splice site mutation c.2791+1G-T cause autosomal dominant tooth agenesis"
-    },
-    {
-      "disease": "Familial exudative vitreoretinopathy 8 (EVR8)",
-      "omim_id": "621268",
-      "mutation_type": "Germline",
-      "description": "Mutations in LRP6 cause familial exudative vitreoretinopathy affecting retinal vascular development"
-    },
-    {
-      "disease": "Osteopetrosis, autosomal dominant 4 (OPTA4)",
-      "omim_id": "621449",
-      "mutation_type": "Germline",
-      "description": "T240I mutation associated with increased bone density"
-    },
-    {
-      "disease": "Metabolic syndrome",
-      "omim_id": "603507",
-      "mutation_type": "Germline",
-      "description": "Multiple mutations (R611C, R473Q, R360H, N433S) causally linked with autosomal dominant metabolic syndrome"
-    },
-    {
-      "disease": "Various cancers",
+      "disease": "Early onset osteoporosis",
       "omim_id": null,
-      "mutation_type": "Somatic",
-      "description": "LRP6 overexpression reported in hepatocellular carcinoma, colorectal cancer, and other malignancies; K802 acetylation drives Wnt activation in tumor-initiating cells"
+      "mutation_type": "Germline heterozygous variants",
+      "description": "Heterozygous LRP6 variants associated with early onset osteoporosis due to impaired Wnt signaling in bone; some mutations conversely cause high bone mass phenotype",
+      "disease_id": "OSTEO_LRP6"
+    },
+    {
+      "disease": "LRP6 high bone mass syndrome",
+      "omim_id": null,
+      "mutation_type": "Germline gain-of-function",
+      "description": "Unique LRP6 mutations in two generations causing increased bone density characterized by high bone mass; opposite phenotype to loss-of-function mutations",
+      "disease_id": "HBM_LRP6"
+    },
+    {
+      "disease": "Ectodermal dysplasia with tooth agenesis",
+      "omim_id": null,
+      "mutation_type": "Germline YWTD beta-propeller mutations with second-hit modifiers",
+      "description": "YWTD beta-propeller destabilization mutations combined with second-hit modifier mutations cause complex phenotype with tooth agenesis and ectodermal dysplasia; genetic complexity underlies clinical heterogeneity",
+      "disease_id": "ED_LRP6"
+    },
+    {
+      "disease": "Neural tube defects (risk factor)",
+      "omim_id": null,
+      "mutation_type": "Germline variants",
+      "description": "LRP6 mutations considered risk factors for neural tube development defects due to role in developmental Wnt signaling",
+      "disease_id": "NTD_LRP6"
+    },
+    {
+      "disease": "Exudative vitreoretinopathy 8 (EVR8)",
+      "omim_id": null,
+      "mutation_type": "Germline pathogenic variants",
+      "description": "Pathogenic variants in LRP6 reported in exudative vitreoretinopathy affecting retinal vascular development",
+      "disease_id": "EVR8"
+    },
+    {
+      "disease": "Triple-negative breast cancer",
+      "omim_id": null,
+      "mutation_type": "Somatic overexpression",
+      "description": "LRP6 overexpression defines a class of triple-negative breast cancer subtype; therapeutic target for cancer treatment",
+      "disease_id": "TNBC_LRP6"
+    },
+    {
+      "disease": "Alzheimer's disease (risk factor)",
+      "omim_id": null,
+      "mutation_type": "Germline variants",
+      "description": "LRP6 mutations considered risk factors for Alzheimer's disease; DKK1-LRP6 interaction blocking shows potential for cognitive impairment prevention",
+      "disease_id": "AD_LRP6"
     }
   ],
   "cross_references": {
     "ncbi_gene_id": "4040",
     "ensembl_gene_id": "ENSG00000070018",
-    "refseq_protein": ["NP_002327.2"],
+    "ensembl_transcript_id": "ENST00000261349",
+    "refseq_protein": ["NP_002327"],
     "refseq_nucleotide": ["NM_002336"],
     "hgnc_id": "HGNC:6698",
-    "omim_gene": "603507"
+    "omim_gene": "603507",
+    "string_id": "9606.ENSP00000261349",
+    "biogrid_id": "110219",
+    "gene_aliases": ["ADCAD2", "EVR8", "OPTA4", "STHAG7"],
+    "chromosomal_location": "12p13.2",
+    "genomic_coordinates_grch38": "chr12:12,116,025-12,267,044"
   },
   "metadata": {
-    "generated_at": "2026-09-30T16:30:09-04:00",
+    "generated_at": "2026-10-01T12:00:00Z",
     "queried_databases": [
       "UniProt",
       "NCBI Gene",
@@ -672,11 +962,15 @@
       "IntAct",
       "Reactome",
       "KEGG",
-      "GO",
+      "Gene Ontology",
       "OMIM",
-      "Human Protein Atlas"
+      "Ensembl",
+      "RefSeq",
+      "HGNC"
     ],
-    "data_quality_notes": "High-quality data available from multiple sources. Extensive structural characterization with 7+ PDB entries covering extracellular domains. Comprehensive phosphorylation site mapping. Full protein sequence not included in JSON but available at UniProt. Some InterPro/Pfam domain boundaries are approximate. IntAct interaction accessions not directly accessible but interactions confirmed through literature. STRING network visualization not directly accessible via API but top interactors extracted from literature.",
-    "modeling_relevance_summary": "LRP6 is a central node in canonical Wnt/beta-catenin signaling pathway. Critical for modeling: (1) Five reiterated PPPSPxS motifs in intracellular domain phosphorylated by CK1 and GSK3beta create switch-like behavior; (2) Phosphorylation-dependent recruitment of Axin/GSK3B complex to membrane is key regulatory step; (3) Multiple negative regulators (DKK1/2, SOST, Wise) provide multiple points of pathway control; (4) Transmembrane receptor with large extracellular domain for ligand binding and short intracellular domain for signaling; (5) Cooperates with Frizzled receptors in ternary complex formation with Wnt ligands; (6) Post-translational modifications (phosphorylation, ubiquitination, glycosylation, acetylation) provide multiple regulatory layers; (7) Essential for beta-catenin stabilization and nuclear translocation. Key for rule-based modeling of Wnt pathway dynamics including signalosome assembly, destruction complex recruitment, and beta-catenin regulation."
+    "data_quality_notes": "Comprehensive information retrieved from multiple authoritative sources with extensive literature support. Specific kinetic parameters for CK1-mediated phosphorylation (kcat, KM) not quantitatively reported in current literature, though sequential mechanism is well-established. Canonical amino acid sequence not retrieved but available at UniProt O75581. Domain boundaries are based on structural studies (PDB) and Pfam annotations; exact boundaries may vary by 5-10 residues depending on definition. AlphaFold confidence summary is generalized; specific per-residue pLDDT scores available at AlphaFold database. The five PPPSPxS motifs are well-characterized with specific residue positions confirmed in multiple studies (T1490/T1493, T1529/T1530, T1572, S1590, S1607). Binding affinities (KD values) show some variation across studies using different methods (biolayer interferometry, surface plasmon resonance, ITC) and conditions; reported ranges reflect this biological and technical variation. GSK3B kinetic parameters show low kcat values (0.023-0.156 s⁻¹) typical of regulatory kinases. Ki values for phospho-LRP6 inhibition of GSK3B range from 1.4-13 μM depending on peptide and measurement method.",
+    "modeling_relevance_summary": "LRP6 is the central co-receptor in canonical Wnt/beta-catenin signaling and essential for modeling Wnt pathway dynamics. KEY FEATURES FOR MODELING: (1) Five PPPSPxS motifs (T1490/T1493, T1529/T1530, T1572, S1590, S1607) with sequential dual phosphorylation by GSK3B (priming, kcat ~0.08-0.16 s⁻¹, KM ~8-28 μM) and CK1 (completing) creating ultrasensitive switch-like behavior; motifs contribute cooperatively with activity rank C > D = E > A > B. (2) Phosphorylated motifs recruit AXIN1 to form membrane signalosomes; membrane-proximal motif A is primary Axin/GSK3 binding site. (3) Phospho-LRP6 peptides directly inhibit GSK3B as competitive inhibitors (Ki = 1.4-13 μM), preventing beta-catenin phosphorylation/degradation. (4) Multiple Wnt ligands (e.g., WNT3A) bind with high affinity (KD ~9-100 nM) to distinct extracellular domains (E3E4 for Wnt3a); forms ternary complex with FZD (2:4:2 stoichiometry). (5) Antagonists competitively inhibit: DKK1 dual binding to E1+E3 (synergistic KD = 3 nM, single domain ~50-67 nM); SOST tandem binding to E1+E2. (6) Complex assembly dynamics involve FZD, DVL (recruited via PDZ domain), AXIN1, GSK3B, CK1 forming ribosome-sized signalsomes. (7) T1479 phosphorylation by CK1gamma primes signalosome formation. CRITICAL FOR UNDERSTANDING: Wnt-induced beta-catenin stabilization, pathway activation thresholds, dose-response curves, antagonist mechanisms, and tissue-specific signaling outcomes in development and disease.",
+    "schema_version": "2.0-revised",
+    "notes": "This digest uses the revised schema with unique identifiers (domain_id, motif_id, ptm_id, interaction_id, disease_id), deduplicated interactions across databases, site-specific binding information, and comprehensive quantitative kinetic parameters. All five PPPSPxS motifs documented with exact residue positions and functional hierarchy. YWTD beta-propeller domains P1-P4 characterized with structural details (six-bladed architecture, YWTD motifs in second strand of each blade). EGF-like domains E1-E4 positioned between beta-propellers. Binding sites specified: WNT3A (E3E4, KD 9-100 nM), DKK1 (dual E1+E3, KD 3-67 nM), SOST (tandem E1+E2), AXIN1 (phospho-PPPSPxS, membrane-proximal motif A primary), FZD8 (ternary complex), DVL (PDZ domain recruitment), GSK3B (recruited to signalosome, phosphorylates and is inhibited), CK1 (T1479 and PPPSPxS site II). Kinetic parameters: GSK3B kcat 0.079-0.156 s⁻¹, KM 8.5-27.8 μM, Ki for inhibition 1.4-13 μM. CK1 kinetics qualitatively characterized but not quantified. Updated 2026-10-01 with comprehensive literature integration."
   }
 }

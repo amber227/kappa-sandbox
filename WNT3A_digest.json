@@ -8,111 +8,146 @@
   },
   "sequence": {
     "canonical_length": 352,
-    "canonical_sequence": "Signal peptide (1-18): MAPLGYFLLLCSLKQALG; Mature protein starts at position 19. Full sequence available at UniProt P56704. After TIKI cleavage, 8 N-terminal residues (SYPIWWSL) are removed from mature form.",
+    "canonical_sequence": "MAPLGYFLLLCSLKQALGSYPIWWSLAVGPQYSSLGSQPILCASIPGLVPKQLRFCRNYVEIMPSVAEGIKIGIQECQHQFRGRRWNCTTVHDSLAIFGPVLDKATRESAFVHAIASAGVAFAVTRSCAEGTAAICGCSSRHQGSPGKGWKWGGCSEDIEFGGMVSREFADARENRPDARSAMNRHNNEAGRQAIASHMHLKCKCHGLSGSCEVKTCWWSQPDFRAIGDFLKDKYDSASEMVVEKHRESRGWVETLRPRYTYFKVPTERDLVYYEASPNFCEPNPETGSFGTRDRTCNVSSHGIDGCDLLCCGRGHNARAERRREKCRCVFHWCCYVSCQECTRVYDVHTCK",
     "molecular_weight_da": 39365,
     "isoforms": [
       {
-        "isoform_id": "P56704-1",
-        "length": 352,
-        "description": "Canonical isoform, most commonly studied form",
-        "sequence": "See UniProt P56704-1"
-      },
-      {
         "isoform_id": "P56704-2",
         "length": 385,
-        "description": "Alternative isoform with additional 33 residues at C-terminus",
-        "sequence": "See UniProt P56704-2"
+        "description": "Alternative isoform with lengthened sequence (33 additional residues)",
+        "sequence": null
       }
     ]
   },
   "domains_and_motifs": {
     "interpro_entries": [
       {
+        "id": "WNT3A_IPR005817",
         "accession": "IPR005817",
-        "name": "Wnt",
+        "name": "Wnt family",
         "type": "Family",
-        "locations": [{"start": 39, "end": 352}]
-      },
-      {
-        "accession": "IPR009141",
-        "name": "Wnt-3 protein",
-        "type": "Family",
-        "locations": [{"start": 39, "end": 352}]
-      },
-      {
-        "accession": "IPR043158",
-        "name": "Wnt, C-terminal domain",
-        "type": "Homologous superfamily",
-        "locations": [{"start": 237, "end": 352}]
-      },
-      {
-        "accession": "IPR018161",
-        "name": "Wnt protein, conserved site",
-        "type": "Conserved site",
-        "locations": [{"start": 190, "end": 210}]
+        "locations": [{"start": 45, "end": 352}]
       }
     ],
     "pfam_domains": [
       {
+        "id": "WNT3A_PF00110",
         "accession": "PF00110",
-        "name": "wnt domain",
-        "clan": "CL0067",
-        "locations": [{"start": 39, "end": 352}],
-        "e_value": 1e-80
+        "name": "Wnt domain",
+        "clan": null,
+        "locations": [{"start": 45, "end": 352}],
+        "e_value": null
       }
     ],
     "prosite_patterns": [],
     "smart_domains": [],
     "signaling_motifs": [
       {
-        "type": "N-terminal domain (NTD) - Thumb structure",
-        "location": {"start": 39, "end": 236},
-        "sequence": "Forms thumb-like structure for FZD interaction",
-        "description": "N-terminal alpha-helix rich domain that mediates Frizzled receptor binding"
+        "id": "WNT3A_SIGNAL_1-29",
+        "type": "Signal peptide",
+        "location": {"start": 1, "end": 29},
+        "sequence": "MAPLGYFLLLCSLKQALGSYPIWWS",
+        "description": "N-terminal signal sequence for ER targeting. Cleavage occurs independently of glycosylation and palmitoylation modifications.",
+        "functional_role": "er_targeting_secretion",
+        "evidence": "experimental"
       },
       {
-        "type": "C-terminal domain (CTD) - Index finger structure",
-        "location": {"start": 237, "end": 352},
-        "sequence": "Forms index finger-like structure",
-        "description": "C-terminal beta-sheet rich domain that mediates LRP6 co-receptor interaction"
-      },
-      {
-        "type": "Palmitoylation site (cysteine)",
+        "id": "WNT3A_LIPID_CYS77",
+        "type": "Palmitoylation site (Cys)",
         "location": {"start": 77, "end": 77},
         "sequence": "C",
-        "description": "S-palmitoylation at Cys77 with palmitate, critical for biological activity"
+        "description": "Cysteine modified with palmitate (C16:0) via thioester linkage by PORCN. Essential for FZD receptor binding and biological activity. Not required for secretion.",
+        "modification": "palmitate_16_0",
+        "linkage": "thioester",
+        "enzyme": "PORCN",
+        "functional_role": "receptor_binding",
+        "evidence": "experimental",
+        "binding_partners": ["FZD1", "FZD2", "FZD4", "FZD5", "FZD7", "FZD8", "FZD10"]
       },
       {
-        "type": "Palmitoleylation site (serine)",
+        "id": "WNT3A_LIPID_SER209",
+        "type": "Palmitoleoylation site (Ser)",
         "location": {"start": 209, "end": 209},
         "sequence": "S",
-        "description": "O-palmitoleylation at Ser209 with palmitoleic acid (C16:1), requires Porcupine, essential for WLS-dependent secretion"
+        "description": "Serine modified with palmitoleate (C16:1) via oxyester linkage by PORCN. Absolutely required for WLS binding and secretion. Forms beta-hairpin that inserts into WLS hydrophobic tunnel.",
+        "modification": "palmitoleate_16_1",
+        "linkage": "oxyester",
+        "enzyme": "PORCN",
+        "functional_role": "wls_binding_secretion",
+        "evidence": "experimental",
+        "binding_partners": ["WLS"],
+        "structural_evidence": "PDB 7DRT shows palmitoleate at Ser209 in WLS complex"
       },
       {
-        "type": "N-glycosylation site",
-        "location": {"start": 87, "end": 87},
+        "id": "WNT3A_NTD_45-180",
+        "type": "N-terminal domain (Saposin-like)",
+        "location": {"start": 45, "end": 180},
+        "sequence": null,
+        "description": "Saposin-like N-terminal domain with alpha-helical bundle structure. Contains multiple disulfide bonds critical for folding.",
+        "functional_role": "structural_scaffold",
+        "evidence": "structural"
+      },
+      {
+        "id": "WNT3A_CTD_181-352",
+        "type": "C-terminal domain (Cytokine-like)",
+        "location": {"start": 181, "end": 352},
+        "sequence": null,
+        "description": "Cytokine-like C-terminal domain. Contains thumb (181-220) and index finger (300-340) regions that engage FZD CRD.",
+        "functional_role": "receptor_binding",
+        "evidence": "structural"
+      },
+      {
+        "id": "WNT3A_THUMB_181-220",
+        "type": "Thumb region",
+        "location": {"start": 181, "end": 220},
+        "sequence": null,
+        "description": "Contains Ser209 palmitoylation site and critical disulfide bonds (Cys181, Cys183, Cys190, Cys195). Palmitoleate-modified thumb inserts into FZD CRD hydrophobic groove.",
+        "functional_role": "fzd_crd_binding_site1",
+        "evidence": "structural",
+        "critical_residues": ["C181", "C183", "C190", "C195", "S209"]
+      },
+      {
+        "id": "WNT3A_INDEX_300-340",
+        "type": "Index finger region",
+        "location": {"start": 300, "end": 340},
+        "sequence": null,
+        "description": "Contains multiple cysteines (Cys313, Cys315, Cys320, Cys321, Cys325, Cys328). Engages opposite face of FZD CRD from thumb region.",
+        "functional_role": "fzd_crd_binding_site2",
+        "evidence": "structural",
+        "critical_residues": ["C313", "C315", "C320", "C321", "C325", "C328"]
+      },
+      {
+        "id": "WNT3A_NGLYC_ASN90",
+        "type": "N-glycosylation site (predicted)",
+        "location": {"start": 90, "end": 90},
         "sequence": "N",
-        "description": "N-glycosylation at Asn87, high mannose-type glycan, critical for secretion"
+        "description": "Predicted N-glycosylation site based on WNT3 homology (Asn90 in WNT3). Glycosylation coupled with palmitoylation for active Wnt production.",
+        "functional_role": "protein_stability_secretion",
+        "evidence": "predicted_from_homology"
       },
       {
-        "type": "N-glycosylation site",
-        "location": {"start": 298, "end": 298},
+        "id": "WNT3A_NGLYC_ASN301",
+        "type": "N-glycosylation site (predicted)",
+        "location": {"start": 301, "end": 301},
         "sequence": "N",
-        "description": "N-glycosylation at Asn298, high mannose-type glycan, less readily glycosylated than N87"
-      },
-      {
-        "type": "TIKI cleavage site",
-        "location": {"start": 19, "end": 26},
-        "sequence": "SYPIWWSL",
-        "description": "8 residues removed by TIKI proteins after signal peptide cleavage, regulatory modification"
-      },
-      {
-        "type": "Disulfide bond network",
-        "location": {"start": 181, "end": 195},
-        "sequence": "Cys181, Cys183, Cys190, Cys195",
-        "description": "Critical disulfide bonds in thumb region for structural stability, 11 total disulfide bonds among 22-24 cysteines"
+        "description": "Predicted N-glycosylation site based on WNT3 homology (Asn301 in WNT3).",
+        "functional_role": "protein_stability",
+        "evidence": "predicted_from_homology"
       }
-    ]
+    ],
+    "disulfide_bonds": {
+      "total_cysteines": 22,
+      "total_disulfide_bonds": 11,
+      "pattern": "Invariant among Wnt proteins",
+      "critical_for_secretion": ["C181", "C183", "C190", "C195"],
+      "tolerant_to_mutation": [
+        {"pair": [105, 113], "region": "between_helices"},
+        {"pair": [115, 133], "region": "between_helices"},
+        {"pair": [313, 315], "region": "index_finger"},
+        {"pair": [320, 321], "region": "index_finger"},
+        {"pair": [325, 328], "region": "index_finger"}
+      ]
+    }
   },
   "structure": {
     "experimental_structures": [
@@ -120,387 +155,649 @@
         "pdb_id": "7DRT",
         "method": "Cryo-EM",
         "resolution_angstrom": 2.2,
-        "chain": "B",
-        "coverage": {"start": 19, "end": 352},
-        "description": "Human Wntless (WLS) in complex with Wnt3a - wild type",
-        "ligands": ["Palmitoleic acid", "Palmitate"],
-        "url": "https://www.rcsb.org/structure/7DRT"
+        "chain": "A",
+        "coverage": {"start": 1, "end": 352},
+        "description": "Human Wntless in complex with Wnt3a. Full-length WNT3A (352 residues) bound to WLS cargo receptor. Shows palmitoleate-modified Ser209 beta-hairpin inserted into WLS hydrophobic tunnel.",
+        "ligands": ["PAM (palmitoleic acid at Ser209)", "PCW (phosphocholine)", "LPE (lysophospholipid)", "CLR (cholesterol)"],
+        "url": "https://www.rcsb.org/structure/7DRT",
+        "biological_assembly": "WNT3A-WLS hetero-dimer",
+        "deposition_date": "2020-12-29",
+        "release_date": "2021-07-14"
       },
       {
         "pdb_id": "7URD",
         "method": "Cryo-EM",
         "resolution_angstrom": 2.92,
-        "chain": "P",
+        "chain": "peptide",
         "coverage": {"start": 190, "end": 220},
-        "description": "Human PORCN in complex with LGK974 inhibitor and WNT3A peptide (hairpin 2 fragment)",
-        "ligands": ["LGK974", "Palmitoleic acid"],
-        "url": "https://www.rcsb.org/structure/7URD"
-      },
-      {
-        "pdb_id": "8TZR",
-        "method": "Cryo-EM",
-        "resolution_angstrom": 3.0,
-        "chain": "W",
-        "coverage": {"start": 19, "end": 352},
-        "description": "Structure of human Wnt3a bound to WLS and CALR (calreticulin)",
-        "ligands": ["Palmitoleic acid", "Palmitate", "Ca2+"],
-        "url": "https://www.rcsb.org/structure/8TZR"
-      },
-      {
-        "pdb_id": "21KR",
-        "method": "Cryo-EM",
-        "resolution_angstrom": 3.5,
-        "chain": "A",
-        "coverage": {"start": 19, "end": 352},
-        "description": "Wnt3a/Fzd8-CRD/LRP6-E3E4 ternary complex (2:4:2 stoichiometry) with FKBP - demonstrates canonical signaling complex assembly",
-        "ligands": ["Palmitoleic acid"],
-        "url": "https://www.rcsb.org/structure/21KR"
+        "description": "PORCN in complex with LGK974 inhibitor and WNT3A peptide fragment. Shows PORCN active site and substrate recognition of WNT3A hairpin 2 region containing Ser209.",
+        "ligands": ["LGK974 (PORCN inhibitor)", "Palmitoleic acid"],
+        "url": "https://www.rcsb.org/structure/7URD",
+        "biological_assembly": null,
+        "deposition_date": null,
+        "release_date": null
       }
     ],
     "alphafold_prediction": {
       "available": true,
       "accession": "AF-P56704-F1",
-      "confidence_summary": "High confidence prediction for structured domains (residues 40-350), lower confidence for signal peptide and extreme termini. Lipid modifications and glycosylation not modeled.",
-      "url": "https://alphafold.ebi.ac.uk/entry/P56704"
+      "confidence_summary": "High confidence (pLDDT > 80) for structured Wnt domain (residues 45-352). Lower confidence for N-terminal signal peptide (1-29) and flexible loops. AlphaFold3 shows highest accuracy among prediction algorithms for WNT3A.",
+      "url": "https://alphafold.ebi.ac.uk/entry/P56704",
+      "notes": "AlphaFold3 and RoseTTAFold emerged as most accurate models. AlphaFold3 received highest QMEANDisCo score when compared to experimental 7DRT structure."
     }
   },
   "post_translational_modifications": [
     {
+      "id": "WNT3A_PTM_SIGCLV",
       "type": "Signal peptide cleavage",
-      "position": 18,
-      "residue": "G-S",
-      "function": "ER targeting and removal",
+      "position": 29,
+      "residue": "S-L",
+      "function": "Removal of N-terminal signal peptide after ER translocation. Cleavage independent of N-glycosylation and palmitoylation.",
       "evidence": "Experimental"
     },
     {
-      "type": "Proteolytic cleavage (TIKI)",
-      "position": 26,
-      "residue": "L-G",
-      "function": "Regulatory processing removes 8 N-terminal residues (SYPIWWSL)",
-      "evidence": "Experimental"
-    },
-    {
-      "type": "S-Palmitoylation",
+      "id": "WNT3A_PTM_PALM_CYS77",
+      "type": "Palmitoylation",
       "position": 77,
       "residue": "C",
-      "function": "Activating - essential for biological activity and receptor binding",
+      "lipid": "palmitate (C16:0)",
+      "linkage": "thioester",
+      "enzyme": "PORCN",
+      "function": "Essential for FZD receptor binding and biological activity. Not required for secretion.",
       "evidence": "Experimental"
     },
     {
-      "type": "O-Palmitoleylation",
+      "id": "WNT3A_PTM_PALMOL_SER209",
+      "type": "Palmitoleoylation",
       "position": 209,
       "residue": "S",
-      "function": "Activating - essential for WLS-dependent secretion, requires Porcupine enzyme",
-      "evidence": "Experimental"
+      "lipid": "palmitoleate (C16:1)",
+      "linkage": "oxyester",
+      "enzyme": "PORCN",
+      "function": "Absolutely required for WLS binding and secretion. S209A mutation abolishes WLS interaction.",
+      "evidence": "Experimental",
+      "inhibitors": ["IWP-2", "LGK974"]
     },
     {
-      "type": "N-Glycosylation",
-      "position": 87,
+      "id": "WNT3A_PTM_NGLYC_ASN90",
+      "type": "N-glycosylation",
+      "position": 90,
       "residue": "N",
-      "function": "Required for proper folding and secretion, high mannose-type glycan",
-      "evidence": "Experimental"
+      "glycan_type": "high_mannose",
+      "function": "Protein folding, stability, and secretion. Glycosylation and palmitoylation coupled.",
+      "evidence": "Predicted from WNT3 homology"
     },
     {
-      "type": "N-Glycosylation",
-      "position": 298,
+      "id": "WNT3A_PTM_NGLYC_ASN301",
+      "type": "N-glycosylation",
+      "position": 301,
       "residue": "N",
-      "function": "Required for proper folding and secretion, high mannose-type glycan",
-      "evidence": "Experimental"
-    },
-    {
-      "type": "Disulfide bonds",
-      "position": null,
-      "residue": "C (22-24 cysteines total)",
-      "function": "Structural stabilization - 11 intramolecular disulfide bonds, critical for protein fold",
-      "evidence": "Experimental"
+      "glycan_type": "high_mannose",
+      "function": "Protein folding and stability.",
+      "evidence": "Predicted from WNT3 homology"
     }
   ],
   "function": {
-    "uniprot_function": "Ligand for members of the frizzled family of seven transmembrane receptors. Functions in the canonical Wnt signaling pathway that results in activation of transcription factors of the TCF/LEF family. Required for normal embryonic mesoderm development and formation of caudal somites. Required for normal morphogenesis of the developing neural tube. Mediates self-renewal of the stem cells at the bottom of intestinal crypts (in vitro). Component of the Wnt-Fzd-LRP5-LRP6 signaling complex that contains a WNT protein, a FZD protein and LRP5 or LRP6, and interacts directly in the complex with LRP6.",
-    "catalytic_activity": "Not applicable - signaling ligand, not an enzyme",
+    "uniprot_function": "Ligand for members of the frizzled family of seven transmembrane receptors. Functions in the canonical Wnt signaling pathway that results in activation of transcription factors of the TCF/LEF family. Component of the Wnt-Fzd-LRP5-LRP6 signaling complex. Required for paraxial mesoderm formation, somite and tailbud development in embryonic development.",
+    "catalytic_activity": null,
     "subcellular_location": [
-      "Secreted",
-      "Extracellular region",
-      "Extracellular matrix",
-      "Cell surface",
-      "Endoplasmic reticulum lumen (during processing)",
-      "Golgi lumen (during processing)",
-      "Extracellular vesicles (exosomes - intraluminal)",
-      "Small extracellular vesicles"
+      "Endoplasmic reticulum",
+      "Golgi apparatus",
+      "Trans-Golgi network",
+      "Plasma membrane",
+      "Extracellular space",
+      "Extracellular vesicles"
     ],
-    "tissue_specificity": "Tissue enriched in placenta (Placenta - Pregnancy hormone signaling cluster). Biased expression in placenta (RPKM 9.0) and lung (RPKM 1.6). Expressed during early embryonic development (8-cell stage in mouse).",
+    "tissue_specificity": "Expressed in developing neural tube (roof plate, dorsal spinal cord), developing brain (narrow midline region extending into telencephalon), paraxial mesoderm, periumbilical mesenchyme. NOT expressed in limb ectoderm (unlike WNT3). Wnt3a null mutants lack paraxial mesoderm and have tailbud defects.",
     "go_annotations": {
       "molecular_function": [
         {
           "go_id": "GO:0005102",
-          "term": "Signaling receptor binding",
-          "evidence_code": "IPI"
-        },
-        {
-          "go_id": "GO:0005125",
-          "term": "Cytokine activity",
+          "term": "signaling receptor binding",
           "evidence_code": "IDA"
         },
         {
-          "go_id": "GO:0048018",
-          "term": "Receptor ligand activity",
+          "go_id": "GO:0005109",
+          "term": "frizzled binding",
           "evidence_code": "IDA"
         },
         {
-          "go_id": "GO:0005515",
-          "term": "Protein binding",
+          "go_id": "GO:0017147",
+          "term": "Wnt-protein binding",
           "evidence_code": "IPI"
         }
       ],
       "biological_process": [
         {
+          "go_id": "GO:0007267",
+          "term": "cell-cell signaling",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0016055",
+          "term": "Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
           "go_id": "GO:0060070",
-          "term": "Canonical Wnt signaling pathway",
+          "term": "canonical Wnt signaling pathway",
           "evidence_code": "IDA"
         },
         {
-          "go_id": "GO:0090263",
-          "term": "Positive regulation of canonical Wnt signaling pathway",
-          "evidence_code": "IDA"
-        },
-        {
-          "go_id": "GO:0007275",
-          "term": "Multicellular organism development",
-          "evidence_code": "IEA"
-        },
-        {
-          "go_id": "GO:0048339",
-          "term": "Paraxial mesoderm development",
+          "go_id": "GO:0001756",
+          "term": "somitogenesis",
           "evidence_code": "IMP"
         },
         {
-          "go_id": "GO:0021536",
-          "term": "Neural tube patterning",
-          "evidence_code": "IMP"
-        },
-        {
-          "go_id": "GO:0061351",
-          "term": "Neural precursor cell proliferation",
-          "evidence_code": "IEA"
-        },
-        {
-          "go_id": "GO:0008283",
-          "term": "Cell proliferation",
+          "go_id": "GO:0007419",
+          "term": "ventral cord development",
           "evidence_code": "IDA"
-        },
-        {
-          "go_id": "GO:0030154",
-          "term": "Cell differentiation",
-          "evidence_code": "IEA"
         }
       ],
       "cellular_component": [
         {
           "go_id": "GO:0005576",
-          "term": "Extracellular region",
+          "term": "extracellular region",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0005783",
+          "term": "endoplasmic reticulum",
           "evidence_code": "IDA"
         },
         {
-          "go_id": "GO:0005615",
-          "term": "Extracellular space",
+          "go_id": "GO:0005794",
+          "term": "Golgi apparatus",
           "evidence_code": "IDA"
         },
         {
-          "go_id": "GO:0031012",
-          "term": "Extracellular matrix",
+          "go_id": "GO:0005886",
+          "term": "plasma membrane",
           "evidence_code": "IDA"
         },
         {
           "go_id": "GO:0070062",
-          "term": "Extracellular exosome",
+          "term": "extracellular exosome",
           "evidence_code": "IDA"
         }
       ]
     }
   },
   "interactions": {
+    "receptor_interactions": [
+      {
+        "id": "INT_WNT3A_FZD1",
+        "partner_gene": "FZD1",
+        "partner_protein": "Frizzled-1",
+        "partner_uniprot": "Q9UP38",
+        "interaction_type": "receptor_ligand",
+        "binding_mode": "two_site",
+        "binding_sites": [
+          {
+            "id": "WNT3A_FZD1_SITE1",
+            "wnt3a_region": "thumb (Ser209 palmitoleate + Cys77 palmitate)",
+            "wnt3a_residues": ["C77", "S209"],
+            "partner_region": "FZD1 CRD hydrophobic groove",
+            "partner_residues": [],
+            "interaction_type": "lipid_protein"
+          },
+          {
+            "id": "WNT3A_FZD1_SITE2",
+            "wnt3a_region": "index finger",
+            "wnt3a_residues": [],
+            "partner_region": "FZD1 CRD concave surface",
+            "partner_residues": [],
+            "interaction_type": "protein_protein"
+          }
+        ],
+        "affinity": {
+          "kd_kinetic_nm": 29.9,
+          "kd_kinetic_sem": 1.5,
+          "kd_saturation_nm": 36.7,
+          "kd_saturation_sem": 12.7,
+          "method": "NanoBiT/BRET live cell assay",
+          "conditions": "HEK293 cells, eGFP-WNT3A, HiBiT-FZD1"
+        },
+        "functional_outcome": "canonical_wnt_beta_catenin_signaling",
+        "evidence": "experimental"
+      },
+      {
+        "id": "INT_WNT3A_FZD2",
+        "partner_gene": "FZD2",
+        "partner_protein": "Frizzled-2",
+        "partner_uniprot": "Q14332",
+        "interaction_type": "receptor_ligand",
+        "binding_mode": "two_site",
+        "binding_sites": [
+          {
+            "id": "WNT3A_FZD2_SITE1",
+            "wnt3a_region": "thumb",
+            "wnt3a_residues": ["C77", "S209"],
+            "partner_region": "FZD2 CRD hydrophobic groove",
+            "partner_residues": [],
+            "interaction_type": "lipid_protein"
+          },
+          {
+            "id": "WNT3A_FZD2_SITE2",
+            "wnt3a_region": "index finger",
+            "wnt3a_residues": [],
+            "partner_region": "FZD2 CRD concave surface",
+            "partner_residues": [],
+            "interaction_type": "protein_protein"
+          }
+        ],
+        "affinity": {
+          "kd_kinetic_nm": 5.4,
+          "kd_kinetic_sem": 0.1,
+          "kd_saturation_nm": 48.6,
+          "kd_saturation_sem": 8.2,
+          "method": "NanoBiT/BRET live cell assay",
+          "conditions": "HEK293 cells, eGFP-WNT3A, HiBiT-FZD2"
+        },
+        "functional_outcome": "canonical_wnt_beta_catenin_signaling",
+        "evidence": "experimental"
+      },
+      {
+        "id": "INT_WNT3A_FZD4",
+        "partner_gene": "FZD4",
+        "partner_protein": "Frizzled-4",
+        "partner_uniprot": "Q9ULV1",
+        "interaction_type": "receptor_ligand",
+        "binding_mode": "two_site",
+        "binding_sites": [
+          {
+            "id": "WNT3A_FZD4_SITE1",
+            "wnt3a_region": "thumb",
+            "wnt3a_residues": ["C77", "S209"],
+            "partner_region": "FZD4 CRD hydrophobic groove",
+            "partner_residues": [],
+            "interaction_type": "lipid_protein"
+          },
+          {
+            "id": "WNT3A_FZD4_SITE2",
+            "wnt3a_region": "index finger",
+            "wnt3a_residues": [],
+            "partner_region": "FZD4 CRD concave surface",
+            "partner_residues": [],
+            "interaction_type": "protein_protein"
+          }
+        ],
+        "affinity": {
+          "kd_kinetic_nm": 9.4,
+          "kd_kinetic_sem": 0.5,
+          "kd_saturation_nm": 17.7,
+          "kd_saturation_sem": 7.2,
+          "method": "NanoBiT/BRET live cell assay",
+          "conditions": "HEK293 cells, eGFP-WNT3A, HiBiT-FZD4"
+        },
+        "functional_outcome": "canonical_wnt_beta_catenin_signaling",
+        "evidence": "experimental"
+      },
+      {
+        "id": "INT_WNT3A_FZD5",
+        "partner_gene": "FZD5",
+        "partner_protein": "Frizzled-5",
+        "partner_uniprot": "Q13467",
+        "interaction_type": "receptor_ligand",
+        "binding_mode": "two_site",
+        "binding_sites": [
+          {
+            "id": "WNT3A_FZD5_SITE1",
+            "wnt3a_region": "thumb",
+            "wnt3a_residues": ["C77", "S209"],
+            "partner_region": "FZD5 CRD hydrophobic groove",
+            "partner_residues": [],
+            "interaction_type": "lipid_protein"
+          },
+          {
+            "id": "WNT3A_FZD5_SITE2",
+            "wnt3a_region": "index finger",
+            "wnt3a_residues": [],
+            "partner_region": "FZD5 CRD concave surface",
+            "partner_residues": [],
+            "interaction_type": "protein_protein"
+          }
+        ],
+        "affinity": {
+          "kd_kinetic_nm": 2.3,
+          "kd_kinetic_sem": 0.2,
+          "kd_saturation_nm": 14.9,
+          "kd_saturation_sem": 7.6,
+          "method": "NanoBiT/BRET live cell assay",
+          "conditions": "HEK293 cells, eGFP-WNT3A, HiBiT-FZD5"
+        },
+        "functional_outcome": "canonical_wnt_beta_catenin_signaling",
+        "evidence": "experimental",
+        "notes": "Highest affinity FZD receptor for WNT3A (2.3 nM kinetic Kd)"
+      },
+      {
+        "id": "INT_WNT3A_FZD7",
+        "partner_gene": "FZD7",
+        "partner_protein": "Frizzled-7",
+        "partner_uniprot": "O75084",
+        "interaction_type": "receptor_ligand",
+        "binding_mode": "two_site",
+        "binding_sites": [
+          {
+            "id": "WNT3A_FZD7_SITE1",
+            "wnt3a_region": "thumb",
+            "wnt3a_residues": ["C77", "S209"],
+            "partner_region": "FZD7 CRD hydrophobic groove",
+            "partner_residues": [],
+            "interaction_type": "lipid_protein"
+          },
+          {
+            "id": "WNT3A_FZD7_SITE2",
+            "wnt3a_region": "index finger",
+            "wnt3a_residues": [],
+            "partner_region": "FZD7 CRD concave surface",
+            "partner_residues": [],
+            "interaction_type": "protein_protein"
+          }
+        ],
+        "affinity": {
+          "kd_kinetic_nm": 2.8,
+          "kd_kinetic_sem": 0.2,
+          "kd_saturation_nm": 24.9,
+          "kd_saturation_sem": 9.9,
+          "method": "NanoBiT/BRET live cell assay",
+          "conditions": "HEK293 cells, eGFP-WNT3A, HiBiT-FZD7"
+        },
+        "functional_outcome": "canonical_wnt_beta_catenin_signaling",
+        "evidence": "experimental"
+      },
+      {
+        "id": "INT_WNT3A_FZD8",
+        "partner_gene": "FZD8",
+        "partner_protein": "Frizzled-8",
+        "partner_uniprot": "Q9H461",
+        "interaction_type": "receptor_ligand",
+        "binding_mode": "two_site",
+        "binding_sites": [
+          {
+            "id": "WNT3A_FZD8_SITE1",
+            "wnt3a_region": "thumb",
+            "wnt3a_residues": ["C77", "S209"],
+            "partner_region": "FZD8 CRD hydrophobic groove",
+            "partner_residues": [],
+            "interaction_type": "lipid_protein"
+          },
+          {
+            "id": "WNT3A_FZD8_SITE2",
+            "wnt3a_region": "index finger",
+            "wnt3a_residues": [],
+            "partner_region": "FZD8 CRD concave surface",
+            "partner_residues": [],
+            "interaction_type": "protein_protein"
+          }
+        ],
+        "affinity": {
+          "kd_kinetic_nm": 17.8,
+          "kd_kinetic_sem": 4.4,
+          "kd_saturation_nm": 4.9,
+          "kd_saturation_sem": 3.1,
+          "method": "NanoBiT/BRET live cell assay",
+          "conditions": "HEK293 cells, eGFP-WNT3A, HiBiT-FZD8"
+        },
+        "functional_outcome": "canonical_wnt_beta_catenin_signaling",
+        "evidence": "experimental",
+        "notes": "Xenopus Wnt8-FZD8 CRD crystal structure available as structural homolog"
+      },
+      {
+        "id": "INT_WNT3A_FZD10",
+        "partner_gene": "FZD10",
+        "partner_protein": "Frizzled-10",
+        "partner_uniprot": "Q9ULW2",
+        "interaction_type": "receptor_ligand",
+        "binding_mode": "two_site",
+        "binding_sites": [
+          {
+            "id": "WNT3A_FZD10_SITE1",
+            "wnt3a_region": "thumb",
+            "wnt3a_residues": ["C77", "S209"],
+            "partner_region": "FZD10 CRD hydrophobic groove",
+            "partner_residues": [],
+            "interaction_type": "lipid_protein"
+          },
+          {
+            "id": "WNT3A_FZD10_SITE2",
+            "wnt3a_region": "index finger",
+            "wnt3a_residues": [],
+            "partner_region": "FZD10 CRD concave surface",
+            "partner_residues": [],
+            "interaction_type": "protein_protein"
+          }
+        ],
+        "affinity": {
+          "kd_kinetic_nm": 4.3,
+          "kd_kinetic_sem": 0.3,
+          "kd_saturation_nm": 21.3,
+          "kd_saturation_sem": 9.0,
+          "method": "NanoBiT/BRET live cell assay",
+          "conditions": "HEK293 cells, eGFP-WNT3A, HiBiT-FZD10"
+        },
+        "functional_outcome": "canonical_wnt_beta_catenin_signaling",
+        "evidence": "experimental"
+      },
+      {
+        "id": "INT_WNT3A_LRP6",
+        "partner_gene": "LRP6",
+        "partner_protein": "Low-density lipoprotein receptor-related protein 6",
+        "partner_uniprot": "O75581",
+        "interaction_type": "coreceptor_ligand",
+        "binding_mode": "direct",
+        "binding_sites": [
+          {
+            "id": "WNT3A_LRP6_E3E4",
+            "wnt3a_region": "NTD and CTD (full-length engagement)",
+            "wnt3a_residues": [],
+            "partner_region": "E3E4 propeller domains (extracellular repeats 3-4)",
+            "partner_residues": [],
+            "interaction_type": "protein_protein"
+          }
+        ],
+        "affinity": {
+          "kd_nm": 174,
+          "kd_full_e1e4_nm": 9,
+          "method": "Reconstituted FZD8-CRD-WNT3A-LRP6 complex",
+          "conditions": "Purified proteins"
+        },
+        "functional_outcome": "Forms ternary WNT3A-FZD-LRP6 signaling complex. WNT3A bridges FZD CRD and LRP6 E3E4. LRP6 intracellular PPPSPxS motifs phosphorylated by GSK3B/CK1 recruit AXIN.",
+        "evidence": "experimental",
+        "notes": "WNT3A preferentially binds E3E4 (not E1E2 like WNT9B). Affinity for E3E4 alone (174 nM) weaker than full E1E4 (9 nM)."
+      },
+      {
+        "id": "INT_WNT3A_LRP5",
+        "partner_gene": "LRP5",
+        "partner_protein": "Low-density lipoprotein receptor-related protein 5",
+        "partner_uniprot": "O75197",
+        "interaction_type": "coreceptor_ligand",
+        "binding_mode": "direct",
+        "binding_sites": [
+          {
+            "id": "WNT3A_LRP5_ECTODOMAIN",
+            "wnt3a_region": "NTD and CTD",
+            "wnt3a_residues": [],
+            "partner_region": "Extracellular propeller repeats",
+            "partner_residues": [],
+            "interaction_type": "protein_protein"
+          }
+        ],
+        "affinity": {
+          "string_combined_score": 0.999
+        },
+        "functional_outcome": "Alternative co-receptor to LRP6. Can interact with FZD5 independent of WNT ligands.",
+        "evidence": "experimental",
+        "notes": "LRP5 less preferred than LRP6 for WNT3A signaling"
+      },
+      {
+        "id": "INT_WNT3A_WLS",
+        "partner_gene": "WLS",
+        "partner_protein": "Wntless protein (GPR177, C1orf139)",
+        "partner_uniprot": "Q5T9L3",
+        "interaction_type": "cargo_receptor",
+        "binding_mode": "lipid_dependent",
+        "binding_sites": [
+          {
+            "id": "WNT3A_WLS_TUNNEL",
+            "wnt3a_region": "Ser209 palmitoleate-modified beta-hairpin (thumb region)",
+            "wnt3a_residues": ["S209"],
+            "partner_region": "Hydrophobic tunnel with GPCR-like fold and lateral opening",
+            "partner_residues": [],
+            "interaction_type": "lipid_recognition"
+          }
+        ],
+        "affinity": {
+          "notes": "Specific Kd not quantified. Binding absolutely dependent on PORCN-mediated Ser209 palmitoleoylation. S209A mutation completely abolishes binding. PORCN inhibitors (IWP-2, LGK974) block binding."
+        },
+        "functional_outcome": "WLS escorts palmitoleoylated WNT3A from ER/Golgi to plasma membrane for secretion. After WNT3A release, WLS undergoes clathrin-dependent endocytosis and retrograde trafficking for recycling.",
+        "evidence": "experimental",
+        "structural_evidence": "PDB 7DRT (2.2 Å cryo-EM, WNT3A-WLS binary complex)"
+      },
+      {
+        "id": "INT_WNT3A_PORCN",
+        "partner_gene": "PORCN",
+        "partner_protein": "Protein-serine O-palmitoleoyltransferase porcupine",
+        "partner_uniprot": "Q9H237",
+        "interaction_type": "enzyme_substrate",
+        "binding_mode": "catalytic",
+        "binding_sites": [
+          {
+            "id": "WNT3A_PORCN_SER209",
+            "wnt3a_region": "Ser209 (O-acylation substrate)",
+            "wnt3a_residues": ["S209"],
+            "partner_region": "Active site with acyl-CoA binding pocket",
+            "partner_residues": [],
+            "interaction_type": "enzymatic"
+          },
+          {
+            "id": "WNT3A_PORCN_CYS77",
+            "wnt3a_region": "Cys77 (S-acylation substrate)",
+            "wnt3a_residues": ["C77"],
+            "partner_region": "Active site with acyl-CoA binding pocket",
+            "partner_residues": [],
+            "interaction_type": "enzymatic"
+          }
+        ],
+        "affinity": {
+          "notes": "Kinetic parameters not available. PORCN inhibitors compete for acyl-CoA binding site."
+        },
+        "kinetic_data": {
+          "reaction_1": {
+            "description": "Ser209 O-palmitoleoylation",
+            "substrate": "palmitoleoyl-CoA (C16:1-CoA)",
+            "product": "S209-palmitoleate WNT3A",
+            "linkage": "oxyester",
+            "functional_consequence": "enables_wls_binding_and_secretion"
+          },
+          "reaction_2": {
+            "description": "Cys77 S-palmitoylation",
+            "substrate": "palmitoyl-CoA (C16:0-CoA)",
+            "product": "C77-palmitate WNT3A",
+            "linkage": "thioester",
+            "functional_consequence": "enables_fzd_receptor_binding"
+          },
+          "inhibitors": [
+            {
+              "name": "LGK974",
+              "type": "clinical_stage_porcn_inhibitor",
+              "mechanism": "competes_for_acyl_coa_binding_site",
+              "pdb": "7URD"
+            },
+            {
+              "name": "IWP-2",
+              "type": "porcn_inhibitor",
+              "mechanism": "blocks_wnt_palmitoylation"
+            }
+          ]
+        },
+        "functional_outcome": "Dual lipidation of WNT3A in ER. Ser209 palmitoleoylation required for secretion (WLS binding). Cys77 palmitoylation required for receptor binding and biological activity.",
+        "evidence": "experimental",
+        "structural_evidence": "PDB 7URD (PORCN-WNT3A peptide-LGK974)"
+      }
+    ],
     "string_network": {
       "url": "https://string-db.org/network/9606.ENSP00000284523",
       "top_interactors": [
         {
-          "partner_gene": "CTNNB1",
-          "partner_protein": "Catenin beta-1",
-          "combined_score": 0.973,
-          "evidence_types": ["experimental", "database", "coexpression", "textmining"]
-        },
-        {
-          "partner_gene": "FZD1",
-          "partner_protein": "Frizzled-1",
-          "combined_score": 0.965,
-          "evidence_types": ["experimental", "database", "textmining"]
-        },
-        {
           "partner_gene": "LRP6",
           "partner_protein": "Low-density lipoprotein receptor-related protein 6",
-          "combined_score": 0.958,
-          "evidence_types": ["experimental", "database", "textmining"]
-        },
-        {
-          "partner_gene": "FZD3",
-          "partner_protein": "Frizzled-3",
-          "combined_score": 0.947,
-          "evidence_types": ["experimental", "database", "textmining"]
-        },
-        {
-          "partner_gene": "FZD2",
-          "partner_protein": "Frizzled-2",
-          "combined_score": 0.942,
-          "evidence_types": ["experimental", "database", "textmining"]
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "coexpression", "text-mining"]
         },
         {
           "partner_gene": "LRP5",
           "partner_protein": "Low-density lipoprotein receptor-related protein 5",
-          "combined_score": 0.937,
-          "evidence_types": ["experimental", "database", "textmining"]
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "coexpression", "text-mining"]
         },
         {
           "partner_gene": "WLS",
-          "partner_protein": "Wntless homolog (Protein Wntless)",
-          "combined_score": 0.925,
-          "evidence_types": ["experimental", "database", "textmining"]
-        },
-        {
-          "partner_gene": "DVL1",
-          "partner_protein": "Dishevelled-1",
-          "combined_score": 0.918,
-          "evidence_types": ["database", "coexpression", "textmining"]
-        },
-        {
-          "partner_gene": "DVL2",
-          "partner_protein": "Dishevelled-2",
-          "combined_score": 0.915,
-          "evidence_types": ["database", "coexpression", "textmining"]
+          "partner_protein": "Wntless protein",
+          "combined_score": 0.998,
+          "evidence_types": ["experimental", "database", "text-mining"]
         },
         {
           "partner_gene": "PORCN",
           "partner_protein": "Protein-serine O-palmitoleoyltransferase porcupine",
-          "combined_score": 0.910,
-          "evidence_types": ["experimental", "database", "textmining"]
+          "combined_score": 0.997,
+          "evidence_types": ["experimental", "database", "text-mining"]
         },
         {
-          "partner_gene": "FZD8",
-          "partner_protein": "Frizzled-8",
-          "combined_score": 0.905,
-          "evidence_types": ["experimental", "database", "textmining"]
+          "partner_gene": "FZD1",
+          "partner_protein": "Frizzled-1",
+          "combined_score": 0.962,
+          "evidence_types": ["experimental", "database", "text-mining"]
         },
         {
-          "partner_gene": "GSK3B",
-          "partner_protein": "Glycogen synthase kinase-3 beta",
-          "combined_score": 0.896,
-          "evidence_types": ["database", "textmining"]
+          "partner_gene": "CTNNB1",
+          "partner_protein": "Catenin beta-1",
+          "combined_score": 0.956,
+          "evidence_types": ["database", "text-mining", "coexpression"]
+        },
+        {
+          "partner_gene": "DVL1",
+          "partner_protein": "Dishevelled-1",
+          "combined_score": 0.912,
+          "evidence_types": ["database", "text-mining", "coexpression"]
+        },
+        {
+          "partner_gene": "DVL2",
+          "partner_protein": "Dishevelled-2",
+          "combined_score": 0.912,
+          "evidence_types": ["database", "text-mining", "coexpression"]
+        },
+        {
+          "partner_gene": "DVL3",
+          "partner_protein": "Dishevelled-3",
+          "combined_score": 0.912,
+          "evidence_types": ["database", "text-mining", "coexpression"]
         },
         {
           "partner_gene": "AXIN1",
           "partner_protein": "Axin-1",
-          "combined_score": 0.887,
-          "evidence_types": ["database", "textmining"]
+          "combined_score": 0.898,
+          "evidence_types": ["database", "text-mining"]
         },
         {
-          "partner_gene": "TCF7",
-          "partner_protein": "Transcription factor 7",
-          "combined_score": 0.875,
-          "evidence_types": ["database", "textmining"]
-        },
-        {
-          "partner_gene": "LEF1",
-          "partner_protein": "Lymphoid enhancer-binding factor 1",
-          "combined_score": 0.862,
-          "evidence_types": ["database", "textmining"]
+          "partner_gene": "GSK3B",
+          "partner_protein": "Glycogen synthase kinase-3 beta",
+          "combined_score": 0.884,
+          "evidence_types": ["database", "text-mining"]
         }
       ]
     },
-    "biogrid_interactions": [
-      {
-        "partner_gene": "LRP6",
-        "partner_protein": "Low-density lipoprotein receptor-related protein 6",
-        "interaction_type": "Physical",
-        "experimental_system": "Direct interaction",
-        "pmid": "Multiple",
-        "throughput": "Low"
-      },
-      {
-        "partner_gene": "LRP5",
-        "partner_protein": "Low-density lipoprotein receptor-related protein 5",
-        "interaction_type": "Physical",
-        "experimental_system": "Direct interaction",
-        "pmid": "Multiple",
-        "throughput": "Low"
-      },
-      {
-        "partner_gene": "FZD1",
-        "partner_protein": "Frizzled-1",
-        "interaction_type": "Physical",
-        "experimental_system": "Direct binding",
-        "pmid": "Multiple",
-        "throughput": "Low"
-      },
-      {
-        "partner_gene": "FZD2",
-        "partner_protein": "Frizzled-2",
-        "interaction_type": "Physical",
-        "experimental_system": "Direct binding",
-        "pmid": "Multiple",
-        "throughput": "Low"
-      },
-      {
-        "partner_gene": "WLS",
-        "partner_protein": "Wntless homolog",
-        "interaction_type": "Physical",
-        "experimental_system": "Co-crystal structure",
-        "pmid": "34162881",
-        "throughput": "Low"
-      },
-      {
-        "partner_gene": "PORCN",
-        "partner_protein": "Protein-serine O-palmitoleoyltransferase porcupine",
-        "interaction_type": "Physical",
-        "experimental_system": "Co-IP",
-        "pmid": "Multiple",
-        "throughput": "Low"
-      }
-    ],
-    "intact_interactions": [
-      {
-        "partner_gene": "LRP6",
-        "partner_protein": "Low-density lipoprotein receptor-related protein 6",
-        "interaction_type": "Direct interaction",
-        "detection_method": "X-ray crystallography, pull-down",
-        "pmid": "Multiple",
-        "interaction_accession": "EBI-Multiple"
-      },
-      {
-        "partner_gene": "FZD8",
-        "partner_protein": "Frizzled-8",
-        "interaction_type": "Direct interaction",
-        "detection_method": "Cryo-electron microscopy",
-        "pmid": "Multiple",
-        "interaction_accession": "EBI-Multiple"
-      },
-      {
-        "partner_gene": "WLS",
-        "partner_protein": "Wntless homolog",
-        "interaction_type": "Direct interaction",
-        "detection_method": "Cryo-electron microscopy, co-immunoprecipitation",
-        "pmid": "34162881",
-        "interaction_accession": "EBI-Multiple"
-      }
-    ],
+    "biogrid_interactions": [],
+    "intact_interactions": [],
     "summary": {
-      "total_physical_interactors": 325,
+      "total_physical_interactors": 718,
       "high_confidence_interactors": 15,
       "key_binding_partners": [
-        "FZD1/2/3/8 (Frizzled receptors - direct ligand binding)",
-        "LRP5/6 (Co-receptors - forms ternary complex with FZD)",
-        "WLS (Wntless - essential for secretion and trafficking)",
-        "PORCN (Porcupine - catalyzes palmitoleylation)",
-        "CTNNB1 (β-catenin - downstream effector)",
-        "DVL1/2/3 (Dishevelled proteins - cytoplasmic transducers)",
-        "CALR (Calreticulin - chaperone during secretion)"
+        "FZD1, FZD2, FZD4, FZD5, FZD7, FZD8, FZD10 (receptors with quantitative Kd values)",
+        "LRP5, LRP6 (co-receptors)",
+        "WLS (cargo receptor for secretion)",
+        "PORCN (dual lipid-modifying enzyme)",
+        "CTNNB1, DVL1/2/3, AXIN1, GSK3B (downstream pathway components - indirect)"
       ]
     }
   },
@@ -513,98 +810,51 @@
         "url": "https://reactome.org/content/detail/R-HSA-195721"
       },
       {
-        "pathway_id": "R-HSA-3772441",
-        "pathway_name": "Negative regulation of TCF-dependent signaling by WNT ligand antagonists",
+        "pathway_id": "R-HSA-3858494",
+        "pathway_name": "Beta-catenin independent WNT signaling",
         "species": "Homo sapiens",
-        "url": "https://reactome.org/content/detail/R-HSA-3772441"
+        "url": "https://reactome.org/content/detail/R-HSA-3858494"
       },
       {
         "pathway_id": "R-HSA-5323545",
         "pathway_name": "WNT ligand biogenesis and trafficking",
         "species": "Homo sapiens",
         "url": "https://reactome.org/content/detail/R-HSA-5323545"
-      },
-      {
-        "pathway_id": "R-HSA-201681",
-        "pathway_name": "TCF dependent signaling in response to WNT",
-        "species": "Homo sapiens",
-        "url": "https://reactome.org/content/detail/R-HSA-201681"
       }
     ],
     "kegg": [
       {
         "pathway_id": "hsa04310",
         "pathway_name": "Wnt signaling pathway",
-        "url": "https://www.kegg.jp/pathway/hsa04310"
-      },
-      {
-        "pathway_id": "hsa05200",
-        "pathway_name": "Pathways in cancer",
-        "url": "https://www.kegg.jp/pathway/hsa05200"
-      },
-      {
-        "pathway_id": "hsa05217",
-        "pathway_name": "Basal cell carcinoma",
-        "url": "https://www.kegg.jp/pathway/hsa05217"
+        "url": "https://www.genome.jp/pathway/hsa04310"
       }
     ],
-    "pathway_role_summary": "WNT3A is a prototypical canonical Wnt ligand that initiates β-catenin-dependent signaling. Upon binding to Frizzled receptors and LRP5/6 co-receptors, WNT3A triggers the disassembly of the β-catenin destruction complex (APC/AXIN/GSK3β), leading to β-catenin stabilization, nuclear translocation, and activation of TCF/LEF transcription factors. Critical for embryonic development (mesoderm formation, neural tube patterning, somitogenesis), stem cell self-renewal (intestinal crypts), and implicated in cancer when dysregulated. WNT3A biogenesis requires lipidation by PORCN and trafficking by WLS, making it a key node for therapeutic intervention."
+    "pathway_role_summary": "WNT3A is a canonical Wnt ligand that activates Wnt/beta-catenin signaling. After PORCN-mediated dual lipidation (Cys77, Ser209) in ER, WNT3A binds WLS for secretion. Extracellular WNT3A binds FZD receptors and LRP5/6 co-receptors forming ternary signaling complex. This recruits DVL, sequesters AXIN from destruction complex, redirects GSK3B to phosphorylate LRP6 (not CTNNB1), stabilizes beta-catenin, enabling nuclear translocation and TCF/LEF-dependent transcription. Essential for paraxial mesoderm formation, somitogenesis, and neural tube patterning in development."
   },
   "disease_associations": [
     {
-      "disease": "Syndromic X-Linked Intellectual Disability Snyder Type",
-      "omim_id": "606359",
-      "mutation_type": "Associated pathway disruption",
-      "description": "WNT3A pathway involvement in neurodevelopmental disorders"
-    },
-    {
-      "disease": "Hypophosphatasia, Adult",
-      "omim_id": null,
-      "mutation_type": "Associated",
-      "description": "Related to WNT signaling in bone metabolism"
-    },
-    {
-      "disease": "Colorectal Cancer",
-      "omim_id": null,
-      "mutation_type": "Somatic overexpression",
-      "description": "High WNT3A expression correlates with poor prognosis; promotes cancer stem cell self-renewal"
-    },
-    {
-      "disease": "Hepatocellular Carcinoma",
-      "omim_id": null,
-      "mutation_type": "Somatic overexpression",
-      "description": "Elevated WNT3A expression associated with poor clinical outcome"
-    },
-    {
-      "disease": "Esophageal Squamous Cell Carcinoma",
-      "omim_id": null,
-      "mutation_type": "Somatic overexpression",
-      "description": "WNT3A expression associated with poor prognosis"
-    },
-    {
-      "disease": "Prostate Cancer",
-      "omim_id": null,
-      "mutation_type": "Somatic",
-      "description": "WNT3A regulates self-renewal of prostate cancer cells with stem cell characteristics"
+      "disease": "Tetra-amelia syndrome (WNT3, not WNT3A)",
+      "omim_id": "273395",
+      "mutation_type": "Germline",
+      "description": "WNT3 (close homolog) Q83X homozygous nonsense mutation causes tetra-amelia with craniofacial and urogenital defects. WNT3A itself not associated with disease, suggesting potential embryonic lethality or functional redundancy."
     }
   ],
   "cross_references": {
     "ncbi_gene_id": "89780",
     "ensembl_gene_id": "ENSG00000154342",
     "refseq_protein": ["NP_149122.1"],
-    "refseq_nucleotide": ["NM_033131.3"],
+    "refseq_nucleotide": ["NM_033131.4"],
     "hgnc_id": "HGNC:15983",
     "omim_gene": "606359"
   },
   "metadata": {
-    "generated_at": "2026-09-30T00:00:00Z",
+    "generated_at": "2026-10-01T00:00:00Z",
     "queried_databases": [
       "UniProt",
       "NCBI Gene",
+      "RefSeq",
       "InterPro",
       "Pfam",
-      "PROSITE",
-      "SMART",
       "PDB",
       "AlphaFold",
       "STRING",
@@ -613,10 +863,11 @@
       "Reactome",
       "KEGG",
       "GO",
-      "Human Protein Atlas",
-      "GeneCards"
+      "OMIM",
+      "Ensembl",
+      "HGNC"
     ],
-    "data_quality_notes": "Comprehensive data available from multiple sources. Experimental structures include full-length WNT3A in complex with WLS and receptor complexes. PTM sites well-characterized experimentally (palmitoylation at C77 and S209, glycosylation at N87 and N298). Note: WNT3A shows no clear germline mutation signal but overexpression is common in cancers. PROSITE and SMART domain annotations limited - primary domain classification through InterPro/Pfam. Tissue expression data primarily from Human Protein Atlas and GTEx.",
-    "modeling_relevance_summary": "WNT3A is a critical canonical Wnt signaling ligand, essential for modeling Wnt/β-catenin pathway dynamics. Key modeling considerations: (1) Dual lipidation (C77, S209) is absolutely required for activity and secretion - must model PORCN-dependent modification; (2) WLS-dependent trafficking from ER to cell surface - rate-limiting step; (3) Ternary complex formation with FZD and LRP6 - cooperative binding with specific stoichiometry (2:4:2); (4) LRP6 phosphorylation cascade as amplification mechanism; (5) Negative regulation by secreted antagonists (DKK, SFRP); (6) TIKI-mediated cleavage as additional regulatory layer. Structural data supports mechanistic modeling of receptor complex assembly. Extensive interaction data enables construction of complete canonical Wnt pathway network from ligand secretion through β-catenin/TCF transcriptional activation."
+    "data_quality_notes": "Comprehensive high-quality dataset. Cryo-EM structures: 7DRT (2.2 Å, WNT3A-WLS), 7URD (2.92 Å, PORCN-WNT3A peptide-LGK974). Lipidation sites (Cys77, Ser209) extensively characterized with clear functional distinctions. Quantitative binding affinities available for 7 FZD receptors (Kd range 2.3-29.9 nM kinetic, 4.9-48.6 nM saturation) from live-cell NanoBiT/BRET assays. WNT3A-LRP6 affinity: 174 nM (E3E4 alone), 9 nM (full E1E4). Site-specific binding information from mutagenesis and structural studies. Unique IDs assigned to all domains, motifs, PTMs, and interactions to enable unambiguous reference in rule-based models. N-glycosylation sites predicted from WNT3 homology (experimental validation for WNT3A pending). Kinetic parameters for PORCN enzymatic activity not available in literature.",
+    "modeling_relevance_summary": "WNT3A is ideal for modeling canonical Wnt pathway with following features: (1) Dual lipidation checkpoint: Ser209 palmitoleoylation (secretion-enabling via WLS) vs Cys77 palmitoylation (receptor-binding-enabling). (2) Quantitative FZD receptor binding affinities (2.3-29.9 nM) enable parametrization of receptor selectivity and competition. (3) Site-specific binding interfaces: thumb (lipid site 1) and index finger (protein site 2) engaging FZD CRD. (4) Ternary complex stoichiometry: WNT3A bridges FZD-LRP6 with E3E4 domain preference. (5) Biogenesis pathway: ER synthesis → PORCN dual lipidation → WLS cargo loading → secretion. (6) Druggable nodes: PORCN inhibitors (LGK974 clinical stage, IWP-2). (7) High-resolution structures (7DRT at 2.2 Å) enable molecular-level modeling. (8) Unique identifiers for all features enable precise rule specification in Kappa models."
   }
 }

@@ -1,7 +1,7 @@
 {
   "protein_identifier": {
     "gene_name": "AXIN1",
-    "protein_name": "Axin-1 (Axis inhibition protein 1)",
+    "protein_name": "Axis inhibition protein 1 (Axin-1)",
     "uniprot_accession": "O15169",
     "organism": "Homo sapiens",
     "organism_taxid": 9606
@@ -12,564 +12,1283 @@
     "molecular_weight_da": 95635,
     "isoforms": [
       {
-        "isoform_id": "O15169-1 (AXIN1α)",
+        "isoform_id": "O15169-1",
         "length": 862,
-        "description": "Canonical isoform, full-length protein encoded by transcript NM_003502",
+        "description": "Canonical isoform (AXIN1α) encoded by transcript NM_003502",
         "sequence": "MNIQEQGFPLDLGASFTEDAPRPPVPGEEGELVSTDPRPASYSFCSGKGVGIKGETSTАТPRRSDLDLGYEPEGSASPTPPYLKWAESLHSLLDDQDGISLFRTFLKQEGCADLLDFWFACTGFRKLEPCDSNEEKRLKLARAIYRKYILDNNGIVSRQTKPATKSFIKGCIMKQLIDPAMFDQAQTEIQATMEENTYPSFLKSDIYLEYTRTGSESPKVCSDQSSGSGTGKGISGYLPTLNEDEEWKCDQDMDEDDGRDAAPPGRLPQKLLLETAAPRVSSSRRYSEGREFRYGSWREPVNPYYVNAGYALAPATSANDSEQQSLSSDADTLSLTDSSVDGIPPYRIRKQHRREMQESVQVNGRVPLPHIPRTYRVPKEVRVEPQKFAEELIHRLEAVQRTREAEEKLEERLKRVRMEEEGЕДGDPSSGPPGPCHKLPPAPAWHHFPPRCVDMGCAGLRDAHEENPESILDEHVQRVLRTPGRQSPGPGHRSPDSGHVAKMPVALGGAASGHGKHVPKSGAKLDAAGLHHHRHVHHHVHHSTARPKEQVEAEATRRAQSSFAWGLEPHSHGARSRGYSESVGAAPNASDGLAHSGKVGVACKRNAKKAESGKSASTEVPGASEDAEKNQKIMQWIIEGEKEISRHRRTGHGSSGTRKPQPHENSRPLSLEHPWAGPQLRTSVQPSHLFIQDPTMPPHPAPNPLTQLEEARRRLEEEEKRASRAPSKQRYVQEVMRRGRACVRPACAPVLHVVPAVSDMELSETETRSQRKVGGGSAQPCDSIVVAYYFCGEPIPYRTLVRGRAVTLGQFKELLTKKGSYRYYFKKVSDEFDCGVVFEEVREDEAVLPVFEEKIIGKVEKVD"
       },
       {
-        "isoform_id": "O15169-2 (AXIN1β)",
+        "isoform_id": "O15169-2",
         "length": 826,
-        "description": "Shorter isoform lacking exon 9, encoded by transcript NM_181050. More prevalent in some tissues",
-        "sequence": "Exon 9 deleted variant, 36 amino acids shorter"
+        "description": "Shorter isoform (AXIN1β) lacking exon 9, encoded by transcript NM_181050. Deletion of 36 amino acids (aa 730-765) in the region between DIX domain and C-terminus",
+        "sequence": "See NP_851393"
       }
     ]
   },
-  "domains_and_motifs": {
-    "interpro_entries": [
-      {
-        "accession": "IPR032101",
-        "name": "Axin-1/2, tankyrase-binding domain",
-        "type": "Domain",
-        "locations": [{"start": 11, "end": 80}]
-      },
-      {
-        "accession": "IPR016137",
-        "name": "RGS domain",
-        "type": "Domain",
-        "locations": [{"start": 88, "end": 211}]
-      },
-      {
-        "accession": "IPR014936",
-        "name": "Axin beta-catenin binding",
-        "type": "Domain",
-        "locations": [{"start": 459, "end": 538}]
-      },
-      {
-        "accession": "IPR001158",
-        "name": "DIX domain",
-        "type": "Domain",
-        "locations": [{"start": 780, "end": 862}]
-      }
-    ],
-    "pfam_domains": [
-      {
-        "accession": "PF16646",
-        "name": "AXIN1_TNKS_BD (Tankyrase-binding domain)",
-        "clan": null,
-        "locations": [{"start": 11, "end": 80}],
-        "e_value": null
-      },
-      {
-        "accession": "PF00615",
-        "name": "RGS (Regulator of G-protein signaling)",
-        "clan": null,
-        "locations": [{"start": 88, "end": 211}],
-        "e_value": null
-      },
-      {
-        "accession": "PF08833",
-        "name": "Axin_b-cat_bind (Beta-catenin binding)",
-        "clan": null,
-        "locations": [{"start": 459, "end": 538}],
-        "e_value": null
-      },
-      {
-        "accession": "PF00778",
-        "name": "DIX (Dishevelled and Axin)",
-        "clan": null,
-        "locations": [{"start": 780, "end": 862}],
-        "e_value": null
-      }
-    ],
-    "prosite_patterns": [
-      {
-        "accession": "PS50132",
-        "name": "RGS domain",
-        "locations": [{"start": 88, "end": 211}],
-        "description": "Regulator of G-protein signaling domain, mediates interaction with APC"
-      },
-      {
-        "accession": "PS50015",
-        "name": "DIX domain",
-        "locations": [{"start": 780, "end": 862}],
-        "description": "DIX domain mediating homo- and hetero-dimerization"
-      }
-    ],
-    "smart_domains": [
-      {
-        "accession": "SM00315",
-        "name": "RGS",
-        "locations": [{"start": 89, "end": 209}]
-      },
-      {
-        "accession": "SM00021",
-        "name": "DAX (DIX in SMART nomenclature)",
-        "locations": [{"start": 805, "end": 855}]
-      }
-    ],
-    "signaling_motifs": [
-      {
-        "type": "Tankyrase-binding motif",
-        "location": {"start": 11, "end": 80},
-        "sequence": "N-terminal region",
-        "description": "Mediates interaction with tankyrase proteins leading to poly-ADP-ribosylation and degradation"
-      },
-      {
-        "type": "GSK3β binding domain",
-        "location": {"start": 383, "end": 401},
-        "sequence": "Core binding site within broader region 321-528",
-        "description": "Hydrophobic helical ridge (F388, L392, L396, V399) that recruits GSK3β to the destruction complex"
-      },
-      {
-        "type": "β-catenin binding domain",
-        "location": {"start": 459, "end": 538},
-        "sequence": "Central region",
-        "description": "Recruits β-catenin for phosphorylation by CK1α and GSK3β"
-      },
-      {
-        "type": "SIAH-binding motif (VxP)",
-        "location": {"start": 400, "end": 500},
-        "sequence": "VxP motif in GSK3-binding domain",
-        "description": "Recognition site for SIAH E3 ubiquitin ligases leading to Wnt-induced degradation"
-      },
-      {
-        "type": "Nuclear Localization Signal (NLS)",
-        "location": {"start": 344, "end": 351},
-        "sequence": "PPYRIRK",
-        "description": "Bipartite nuclear localization signal enabling nuclear-cytoplasmic shuttling"
-      },
-      {
-        "type": "Nuclear Export Signal (NES)",
-        "location": {"start": 538, "end": 547},
-        "sequence": "Leucine-rich NES with V545 and M547 as critical residues",
-        "description": "CRM1-dependent nuclear export signal in GSK3 binding domain"
-      },
-      {
-        "type": "CK1α phosphorylation consensus",
-        "location": {"start": 11, "end": 30},
-        "sequence": "N-terminal region overlapping tankyrase-binding site",
-        "description": "Phosphorylation by CK1α antagonizes tankyrase binding and degradation"
-      }
-    ]
-  },
+  "domains_and_motifs": [
+    {
+      "identifier": "TNKS_BD_11_80",
+      "name": "Tankyrase-binding domain",
+      "type": "Domain",
+      "locations": [{"start": 11, "end": 80}],
+      "sequence": "APRPPVPGEEGELVSTDPRPASYSFCSGKGVGIKGETSTАТPRRSDLDLGYEPEGSASPTPPYLKWAESLH",
+      "description": "N-terminal domain containing two discrete tankyrase-binding segments (TBS1: residues 1-43, TBS2: residues 44-80) that bind simultaneously to ARC2 domains of tankyrase homodimers. Contains conserved RPPVPGEE motif. Binding leads to poly-ADP-ribosylation and subsequent degradation via RNF146",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR032101",
+          "notes": "Axin-1/2, tankyrase-binding domain"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF16646",
+          "notes": "AXIN1_TNKS_BD"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:22307604",
+          "notes": "Crystal structure and binding characterization"
+        }
+      ]
+    },
+    {
+      "identifier": "RGS_88_211",
+      "name": "RGS domain (Regulator of G-protein signaling)",
+      "type": "Domain",
+      "locations": [{"start": 88, "end": 211}],
+      "sequence": "SLLDDQDGISLFRTFLKQEGCADLLDFWFACTGFRKLEPCDSNEEKRLKLARAIYRKYILDNNGIVSRQTKPATKSFIKGCIMKQLIDPAMFDQAQTEIQATMEENTYPSFLKSDIYLEYTRTGSESPKVCSDQSSGSGTGKGISGYLPTLNEDEEWK",
+      "description": "RGS-homologous domain responsible for binding to SAMP repeats of APC. Structurally related to classical RGS domains but binds APC instead of G-proteins. Contains conserved groove that interacts with SAMP peptides. Also contains acetylation site K147 regulated by SIRT4",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR016137",
+          "notes": "RGS domain"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF00615",
+          "notes": "RGS domain"
+        },
+        {
+          "database": "PROSITE",
+          "accession": "PS50132",
+          "notes": "RGS domain profile"
+        },
+        {
+          "database": "SMART",
+          "accession": "SM00315",
+          "notes": "RGS domain (residues 89-209)"
+        },
+        {
+          "database": "PDB",
+          "accession": "1DK8",
+          "notes": "Crystal structure at 1.57Å resolution"
+        },
+        {
+          "database": "PDB",
+          "accession": "1EMU",
+          "notes": "Complex with APC SAMP repeat at 2.1Å"
+        }
+      ]
+    },
+    {
+      "identifier": "NLS1_345_354",
+      "name": "Nuclear localization signal 1",
+      "type": "NLS",
+      "locations": [{"start": 345, "end": 354}],
+      "sequence": "PYRIRKQHRR",
+      "description": "First of three bipartite nuclear localization signals enabling nuclear import",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "O15169",
+          "notes": "Experimentally validated NLS"
+        }
+      ]
+    },
+    {
+      "identifier": "VxP_degron_365_367",
+      "name": "VxP degron motif",
+      "type": "Degron",
+      "locations": [{"start": 365, "end": 367}],
+      "sequence": "VEP",
+      "description": "SIAH1/2 E3 ligase recognition motif (V-x-P where x=E). Part of larger conserved sequence EMTPVEPA (361-368). Recognition by SIAH1/2 leads to ubiquitination and proteasomal degradation during Wnt activation. CK1ε phosphorylation enhances SIAH1 binding",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "PMID:28546513",
+          "notes": "SIAH E3 ligases mediate Wnt-induced Axin degradation"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:37083834",
+          "notes": "Structural basis of AXIN2-SIAH1 interaction via VxP motif"
+        }
+      ]
+    },
+    {
+      "identifier": "GSK3B_BD_383_401",
+      "name": "GSK3β binding domain (core)",
+      "type": "Binding_site",
+      "locations": [{"start": 383, "end": 401}],
+      "sequence": "FAEELIHRLEAVQRTREAE",
+      "description": "Core GSK3β-binding domain forming amphipathic α-helix that docks into GSK3β hydrophobic channel. Key hydrophobic residues F388, L392, L396, V399 create binding interface. Extended functional region spans 384-518 (miniAxin construct). Overlaps with SIAH-binding VxP degron motif",
+      "sources": [
+        {
+          "database": "PDB",
+          "accession": "1O9U",
+          "notes": "AXIN1-GSK3β complex structure"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:12697834",
+          "notes": "Structural basis for GSK3β recruitment"
+        },
+        {
+          "database": "ELM",
+          "accession": "DOC_GSK3_Axin_1",
+          "notes": "GSK3 docking motif"
+        }
+      ]
+    },
+    {
+      "identifier": "NLS2_408_418",
+      "name": "Nuclear localization signal 2",
+      "type": "NLS",
+      "locations": [{"start": 408, "end": 418}],
+      "sequence": "KLEERLKRVRM",
+      "description": "Second bipartite NLS. Also contains nuclear export signal (NES) starting at K409 (LEERLKRVRM)",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "O15169",
+          "notes": "Dual NLS/NES function"
+        }
+      ]
+    },
+    {
+      "identifier": "CTNNB1_BD_459_538",
+      "name": "β-catenin binding domain",
+      "type": "Binding_site",
+      "locations": [{"start": 459, "end": 538}],
+      "sequence": "CGAGLRDAHEENPESILDEHVQRVLRTPGRQSPGPGHRSPDSGHVAKMPVALGGAASGHGKHVPKSGAKLDAAGLHHHRHVHHHVHH",
+      "description": "Central region binding domain that recruits β-catenin for phosphorylation. Forms α-helix occupying groove between armadillo repeats 3 and 4 of β-catenin. Essential for destruction complex function",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR014936",
+          "notes": "Axin beta-catenin binding domain"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF08833",
+          "notes": "Axin_b-cat_bind"
+        },
+        {
+          "database": "PDB",
+          "accession": "1QZ7",
+          "notes": "β-catenin binding domain complex (Xenopus Axin ortholog)"
+        }
+      ]
+    },
+    {
+      "identifier": "NLS3_719_739",
+      "name": "Nuclear localization signal 3",
+      "type": "NLS",
+      "locations": [{"start": 719, "end": 739}],
+      "sequence": "KRASRAPSKQRYVQEVMRRGR",
+      "description": "Third bipartite nuclear localization signal near DIX domain",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "O15169",
+          "notes": "Experimentally validated NLS"
+        }
+      ]
+    },
+    {
+      "identifier": "DIX_805_855",
+      "name": "DIX domain (Dishevelled and Axin)",
+      "type": "Domain",
+      "locations": [{"start": 805, "end": 855}],
+      "sequence": "GEPIPYRTLVRGRAVTLGQFKELLTKKGSYRYYFKKVSDEFDCGVVFEEVR",
+      "description": "C-terminal DIX domain with β-grasp fold (5-stranded β-sheet with α-helix). Mediates head-to-tail polymerization forming helical filaments essential for Wnt signaling. Enables both AXIN1 homo-oligomerization and hetero-oligomerization with DVL proteins. Critical for phase separation and destruction complex assembly",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR001158",
+          "notes": "DIX domain"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF00778",
+          "notes": "DIX domain"
+        },
+        {
+          "database": "PROSITE",
+          "accession": "PS50015",
+          "notes": "DIX domain profile"
+        },
+        {
+          "database": "SMART",
+          "accession": "SM00021",
+          "notes": "DAX domain (DIX in SMART nomenclature)"
+        },
+        {
+          "database": "PDB",
+          "accession": "6JCK",
+          "notes": "AXIN-DIX/DVL2-DIX heterodimer at 3.09Å"
+        },
+        {
+          "database": "PDB",
+          "accession": "1WSP",
+          "notes": "Rat AXIN DIX domain (homologous to human)"
+        }
+      ]
+    },
+    {
+      "identifier": "SUMO_site_857_860",
+      "name": "SUMOylation motif KVEKVD",
+      "type": "Site",
+      "locations": [{"start": 857, "end": 862}],
+      "sequence": "KVEKVD",
+      "description": "C-terminal doublet KV(E/D) SUMOylation consensus motif. SUMOylation at K857 and K860 protects AXIN1 from ubiquitination and degradation, and is required for JNK activation. Interacts with SUMO E3 ligases PIAS1, PIASxβ, and PIASy",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "PMID:12223491",
+          "notes": "SUMO-1 modification of C-terminal KVEKVD"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:18495659",
+          "notes": "SUMOylation protects from ubiquitination"
+        }
+      ]
+    }
+  ],
   "structure": {
     "experimental_structures": [
       {
         "pdb_id": "1DK8",
-        "method": "X-ray diffraction",
+        "method": "X-ray",
         "resolution_angstrom": 1.57,
         "chain": "A",
         "coverage": {"start": 88, "end": 211},
-        "description": "Crystal structure of the RGS-homologous domain of AXIN from Homo sapiens",
+        "description": "Crystal structure of AXIN1 RGS domain from Homo sapiens",
         "ligands": ["DTT", "GOL", "SO4"],
         "url": "https://www.rcsb.org/structure/1DK8"
       },
       {
+        "pdb_id": "1EMU",
+        "method": "X-ray",
+        "resolution_angstrom": 2.1,
+        "chain": "A,B",
+        "coverage": {"start": 88, "end": 211},
+        "description": "AXIN1 RGS domain in complex with APC SAMP repeat peptide",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/1EMU"
+      },
+      {
+        "pdb_id": "1O9U",
+        "method": "X-ray",
+        "resolution_angstrom": 2.3,
+        "chain": "A,B",
+        "coverage": {"start": 383, "end": 401},
+        "description": "GSK3β in complex with AXIN1 peptide",
+        "ligands": ["ADP"],
+        "url": "https://www.rcsb.org/structure/1O9U"
+      },
+      {
+        "pdb_id": "1QZ7",
+        "method": "X-ray",
+        "resolution_angstrom": 2.3,
+        "chain": "A,B",
+        "coverage": {"start": 459, "end": 538},
+        "description": "β-catenin in complex with AXIN1 β-catenin-binding domain (Xenopus laevis ortholog, highly conserved)",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/1QZ7"
+      },
+      {
         "pdb_id": "1WSP",
-        "method": "X-ray diffraction",
-        "resolution_angstrom": 2.90,
+        "method": "X-ray",
+        "resolution_angstrom": 2.9,
         "chain": "A",
-        "coverage": {"start": 780, "end": 862},
-        "description": "Crystal structure of AXIN DIX domain from Rattus norvegicus (highly homologous to human)",
+        "coverage": {"start": 805, "end": 855},
+        "description": "AXIN DIX domain (Rattus norvegicus, 100% conserved with human)",
         "ligands": ["HG", "BEZ"],
         "url": "https://www.rcsb.org/structure/1WSP"
       },
       {
         "pdb_id": "6JCK",
-        "method": "X-ray diffraction",
+        "method": "X-ray",
         "resolution_angstrom": 3.09,
         "chain": "A,B",
-        "coverage": {"start": 780, "end": 862},
-        "description": "Complex structure of Axin-DIX and Dvl2-DIX heterodimer",
+        "coverage": {"start": 805, "end": 855},
+        "description": "Complex structure of AXIN-DIX and DVL2-DIX heterodimer showing head-to-tail polymerization interface",
         "ligands": [],
         "url": "https://www.rcsb.org/structure/6JCK"
-      },
-      {
-        "pdb_id": "1EMU",
-        "method": "X-ray diffraction",
-        "resolution_angstrom": 2.1,
-        "chain": "A,B",
-        "coverage": {"start": 88, "end": 211},
-        "description": "Structure of the AXIN RGS-homologous domain in complex with a SAMP repeat from APC",
-        "ligands": [],
-        "url": "https://www.rcsb.org/structure/1EMU"
       }
     ],
     "alphafold_prediction": {
       "available": true,
       "accession": "AF-O15169-F1",
-      "confidence_summary": "High confidence for structured domains (RGS, DIX). Lower confidence for linker regions and intrinsically disordered regions in the central scaffold region",
+      "confidence_summary": "Global pLDDT: 62.3. High confidence (pLDDT >90) for structured domains: RGS (88-211), DIX (805-855). Moderate confidence (pLDDT 70-90) for GSK3β and β-catenin binding regions (383-538). Low confidence (pLDDT <50) for intrinsically disordered N-terminal (1-87) and central linker regions, consistent with scaffold protein architecture",
       "url": "https://alphafold.ebi.ac.uk/entry/O15169"
     }
   },
   "post_translational_modifications": [
     {
       "type": "Phosphorylation",
-      "position": null,
-      "residue": "S/T",
-      "function": "Multiple phosphorylation sites exist; CK1α phosphorylates N-terminal region (overlapping tankyrase-binding site) to antagonize tankyrase-mediated degradation",
+      "position": 51,
+      "residue": "S",
+      "function": "CK1α phosphorylation in N-terminal tankyrase-binding domain. Antagonizes tankyrase binding and protects from degradation",
       "evidence": "Experimental"
     },
     {
-      "type": "Ubiquitination",
-      "position": null,
-      "residue": "K",
-      "function": "Ubiquitination by SIAH1/2 E3 ligases promotes proteasomal degradation during Wnt pathway activation. SIAH recognizes VxP motif in GSK3-binding domain",
+      "type": "Phosphorylation",
+      "position": 54,
+      "residue": "S",
+      "function": "CK1α phosphorylation in N-terminal tankyrase-binding domain",
       "evidence": "Experimental"
     },
     {
-      "type": "Ubiquitination",
-      "position": null,
-      "residue": "K",
-      "function": "Ubiquitination by RNF146 following poly-ADP-ribosylation by tankyrase leads to proteasomal degradation and Wnt activation",
+      "type": "Phosphorylation",
+      "position": 56,
+      "residue": "T",
+      "function": "CK1α phosphorylation in N-terminal tankyrase-binding domain",
       "evidence": "Experimental"
     },
     {
-      "type": "Deubiquitination",
-      "position": null,
-      "residue": "K",
-      "function": "Deubiquitinated by USP34 to stabilize AXIN1 and suppress Wnt signaling",
+      "type": "Phosphorylation",
+      "position": 57,
+      "residue": "S",
+      "function": "CK1α phosphorylation in N-terminal tankyrase-binding domain",
       "evidence": "Experimental"
     },
     {
-      "type": "SUMOylation",
-      "position": 857,
-      "residue": "K",
-      "function": "SUMOylation at K857 and K860 prevents ubiquitination and degradation; required for AXIN1-mediated JNK activation",
+      "type": "Phosphorylation",
+      "position": 58,
+      "residue": "T",
+      "function": "CK1α phosphorylation in N-terminal tankyrase-binding domain",
       "evidence": "Experimental"
     },
     {
-      "type": "SUMOylation",
-      "position": 860,
-      "residue": "K",
-      "function": "SUMOylation at K857 and K860 prevents ubiquitination and degradation",
+      "type": "Phosphorylation",
+      "position": 60,
+      "residue": "T",
+      "function": "CK1α phosphorylation in N-terminal tankyrase-binding domain",
       "evidence": "Experimental"
     },
     {
       "type": "Acetylation",
       "position": 147,
       "residue": "K",
-      "function": "Acetylation at K147 in RGS domain; constitutive in resting cells. SIRT4-catalyzed deacetylation upon Wnt stimulation modulates Wnt/β-catenin signaling",
+      "function": "Acetylation in RGS domain, constitutive in resting cells. SIRT4-catalyzed deacetylation upon Wnt stimulation modulates Wnt/β-catenin signaling",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 157,
+      "residue": "S",
+      "function": "PLK1 phosphorylation disengages AXIN1 from γ-tubulin, regulating mitotic spindle function",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 485,
+      "residue": "T",
+      "function": "Regulatory phosphorylation site near β-catenin binding domain",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 497,
+      "residue": "S",
+      "function": "GSK3β phosphorylation site; decreases within 15-30 min of Wnt3a treatment",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 500,
+      "residue": "S",
+      "function": "GSK3β phosphorylation site; decreases within 15-30 min of Wnt3a treatment",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Ubiquitination",
+      "position": 505,
+      "residue": "K",
+      "function": "SMURF2-mediated ubiquitination leading to proteasomal degradation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Ubiquitination",
+      "position": 789,
+      "residue": "K",
+      "function": "SMURF1-mediated K29-linked polyubiquitination (non-proteolytic)",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Ubiquitination",
+      "position": 821,
+      "residue": "K",
+      "function": "SMURF1-mediated K29-linked polyubiquitination (non-proteolytic)",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "SUMOylation",
+      "position": 857,
+      "residue": "K",
+      "function": "SUMO-1 modification prevents ubiquitination and degradation; required for JNK activation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "SUMOylation",
+      "position": 860,
+      "residue": "K",
+      "function": "SUMO-1 modification prevents ubiquitination and degradation",
       "evidence": "Experimental"
     },
     {
       "type": "Poly-ADP-ribosylation",
       "position": null,
       "residue": "Multiple",
-      "function": "PARsylation by tankyrase creates binding site for RNF146 E3 ligase, leading to ubiquitination and degradation",
+      "function": "PARsylation by TNKS1/2 on tankyrase-binding domain creates recognition site for RNF146 E3 ligase WWE domain, leading to K48-linked ubiquitination and proteasomal degradation",
       "evidence": "Experimental"
     }
   ],
   "function": {
-    "uniprot_function": "AXIN1 is a scaffold protein that forms the core of the β-catenin destruction complex, promoting phosphorylation of β-catenin by CK1α and GSK3β, leading to its ubiquitination and proteasomal degradation. Functions as a negative regulator of the Wnt signaling pathway. Also participates in other signaling pathways including Hippo, TGFβ, AMPK, mTOR, MAPK, and antioxidant signaling. Forms complexes with HIPK2 and TP53 to regulate apoptosis. Protects GSK3β from inhibitory phosphorylation by other kinases through allosteric mechanisms.",
-    "catalytic_activity": "No intrinsic enzymatic activity. Functions as a scaffold protein organizing kinases (CK1α, GSK3β) and their substrates (β-catenin, APC, etc.) to enable processive phosphorylation",
+    "uniprot_function": "AXIN1 functions as a concentration-limiting scaffold protein organizing the β-catenin destruction complex. Binds and coordinates CK1α, GSK3β, APC, and β-catenin to enable processive phosphorylation of β-catenin at Ser45 (CK1α) followed by Thr41, Ser37, Ser33 (GSK3β), leading to β-TrCP-mediated ubiquitination and proteasomal degradation. Acts as negative regulator of canonical Wnt signaling. Upon Wnt stimulation, recruited to plasma membrane via DVL-LRP5/6 complex, disrupting destruction complex. Protects GSK3β from inhibitory phosphorylation by other kinases through allosteric occlusion mechanism. Also participates in non-canonical functions: forms complex with HIPK2 and TP53 to regulate apoptosis; involved in Hippo, TGFβ, AMPK, mTOR, and MAPK signaling pathways",
+    "catalytic_activity": "No intrinsic enzymatic activity. Functions as scaffold organizing enzyme-substrate complexes for processive multi-site phosphorylation",
     "subcellular_location": [
       "Cytoplasm",
       "Cytosol",
       "Nucleus",
-      "β-catenin destruction complex",
+      "β-catenin destruction complex puncta (biomolecular condensates)",
+      "Plasma membrane (upon Wnt stimulation)",
       "Lateral plasma membrane",
-      "Perinuclear region",
-      "Cell membrane (upon Wnt stimulation and DVL/LRP5/6 binding)"
+      "Perinuclear region"
     ],
-    "tissue_specificity": "Broadly expressed across all tissues with low tissue specificity (Tau score: 0.23). Ubiquitously expressed but functionality varies in different tissue contexts",
+    "tissue_specificity": "Ubiquitously expressed in all tissues with low tissue specificity (Tau score: 0.23). Functional role varies by developmental and tissue context",
     "go_annotations": {
       "molecular_function": [
-        {
-          "go_id": "GO:0042802",
-          "term": "Protein homodimerization activity",
-          "evidence_code": "IDA"
-        },
-        {
-          "go_id": "GO:0019901",
-          "term": "Protein kinase binding",
-          "evidence_code": "IPI"
-        },
-        {
-          "go_id": "GO:0004871",
-          "term": "Signal transducer activity",
-          "evidence_code": "TAS"
-        },
-        {
-          "go_id": "GO:0031625",
-          "term": "Ubiquitin protein ligase binding",
-          "evidence_code": "IPI"
-        },
-        {
-          "go_id": "GO:0005515",
-          "term": "Protein binding",
-          "evidence_code": "IPI"
-        }
+        {"go_id": "GO:0060090", "term": "Molecular adaptor activity", "evidence_code": "IDA"},
+        {"go_id": "GO:0070016", "term": "Armadillo repeat domain binding", "evidence_code": "IPI"},
+        {"go_id": "GO:0008013", "term": "Beta-catenin binding", "evidence_code": "IPI"},
+        {"go_id": "GO:0019901", "term": "Protein kinase binding", "evidence_code": "IPI"},
+        {"go_id": "GO:0042802", "term": "Protein homodimerization activity", "evidence_code": "IDA"},
+        {"go_id": "GO:0031625", "term": "Ubiquitin protein ligase binding", "evidence_code": "IPI"},
+        {"go_id": "GO:0005515", "term": "Protein binding", "evidence_code": "IPI"}
       ],
       "biological_process": [
-        {
-          "go_id": "GO:0016055",
-          "term": "Wnt signaling pathway",
-          "evidence_code": "TAS"
-        },
-        {
-          "go_id": "GO:0030178",
-          "term": "Negative regulation of Wnt signaling pathway",
-          "evidence_code": "IDA"
-        },
-        {
-          "go_id": "GO:0000209",
-          "term": "Protein polyubiquitination",
-          "evidence_code": "IMP"
-        },
-        {
-          "go_id": "GO:0045732",
-          "term": "Positive regulation of protein catabolic process",
-          "evidence_code": "IDA"
-        },
-        {
-          "go_id": "GO:0006915",
-          "term": "Apoptotic process",
-          "evidence_code": "IMP"
-        },
-        {
-          "go_id": "GO:0007283",
-          "term": "Spermatogenesis",
-          "evidence_code": "IEA"
-        },
-        {
-          "go_id": "GO:0090090",
-          "term": "Negative regulation of canonical Wnt signaling pathway",
-          "evidence_code": "IMP"
-        }
+        {"go_id": "GO:0016055", "term": "Wnt signaling pathway", "evidence_code": "TAS"},
+        {"go_id": "GO:0030178", "term": "Negative regulation of Wnt signaling pathway", "evidence_code": "IDA"},
+        {"go_id": "GO:0090090", "term": "Negative regulation of canonical Wnt signaling pathway", "evidence_code": "IMP"},
+        {"go_id": "GO:0000209", "term": "Protein polyubiquitination", "evidence_code": "IMP"},
+        {"go_id": "GO:0045732", "term": "Positive regulation of protein catabolic process", "evidence_code": "IDA"},
+        {"go_id": "GO:0006915", "term": "Apoptotic process", "evidence_code": "IMP"},
+        {"go_id": "GO:0007283", "term": "Spermatogenesis", "evidence_code": "IEA"},
+        {"go_id": "GO:0035567", "term": "Non-canonical Wnt signaling pathway", "evidence_code": "TAS"}
       ],
       "cellular_component": [
-        {
-          "go_id": "GO:0005737",
-          "term": "Cytoplasm",
-          "evidence_code": "IDA"
-        },
-        {
-          "go_id": "GO:0005829",
-          "term": "Cytosol",
-          "evidence_code": "TAS"
-        },
-        {
-          "go_id": "GO:0005634",
-          "term": "Nucleus",
-          "evidence_code": "IDA"
-        },
-        {
-          "go_id": "GO:0016342",
-          "term": "Catenin complex",
-          "evidence_code": "IDA"
-        },
-        {
-          "go_id": "GO:0030877",
-          "term": "Beta-catenin destruction complex",
-          "evidence_code": "IDA"
-        },
-        {
-          "go_id": "GO:0016328",
-          "term": "Lateral plasma membrane",
-          "evidence_code": "IDA"
-        }
+        {"go_id": "GO:0005737", "term": "Cytoplasm", "evidence_code": "IDA"},
+        {"go_id": "GO:0005829", "term": "Cytosol", "evidence_code": "TAS"},
+        {"go_id": "GO:0005634", "term": "Nucleus", "evidence_code": "IDA"},
+        {"go_id": "GO:0030877", "term": "Beta-catenin destruction complex", "evidence_code": "IDA"},
+        {"go_id": "GO:0016342", "term": "Catenin complex", "evidence_code": "IDA"},
+        {"go_id": "GO:0016328", "term": "Lateral plasma membrane", "evidence_code": "IDA"}
       ]
     }
   },
-  "interactions": {
-    "string_network": {
-      "url": "https://string-db.org/network/9606.ENSP00000263710",
-      "top_interactors": [
+  "interactions": [
+    {
+      "partner": {
+        "gene_name": "APC",
+        "protein_name": "Adenomatous polyposis coli protein",
+        "uniprot_accession": "P25054"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "RGS_88_211",
+            "residues": [],
+            "residue_names": [],
+            "description": "RGS domain binds to SAMP repeats of APC. Conserved groove on RGS surface distinct from G-protein interface mediates SAMP binding"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "SAMP repeats (15R and 20R regions)",
+            "residues": [],
+            "description": "Three SAMP (Ser-Ala-Met-Pro) repeats in APC bind AXIN1 RGS domain. Each SAMP ~25 amino acids"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": null,
+        "notes": "High-affinity interaction structurally characterized (PDB: 1EMU) but quantitative Kd not reported in literature. Functional data suggests high affinity as APC can bind up to 3 AXIN1 molecules"
+      },
+      "evidence": [
         {
-          "partner_gene": "GSK3B",
-          "partner_protein": "Glycogen synthase kinase-3 beta",
-          "combined_score": 0.999,
-          "evidence_types": ["experimental", "database", "coexpression", "textmining"]
+          "source": "PDB",
+          "interaction_id": "1EMU",
+          "description": "Crystal structure of AXIN RGS domain with APC SAMP repeat at 2.1Å resolution"
         },
         {
-          "partner_gene": "CTNNB1",
-          "partner_protein": "Catenin beta-1",
-          "combined_score": 0.999,
-          "evidence_types": ["experimental", "database", "coexpression", "textmining"]
-        },
-        {
-          "partner_gene": "APC",
-          "partner_protein": "Adenomatous polyposis coli protein",
+          "source": "STRING",
           "combined_score": 0.708,
           "evidence_types": ["experimental", "database", "textmining"]
         },
         {
-          "partner_gene": "CSNK1A1",
-          "partner_protein": "Casein kinase I isoform alpha",
-          "combined_score": 0.998,
-          "evidence_types": ["experimental", "database", "textmining"]
+          "source": "BioGRID",
+          "experimental_system": "Affinity Capture-MS",
+          "throughput": "High"
         },
         {
-          "partner_gene": "CSNK1E",
-          "partner_protein": "Casein kinase I isoform epsilon",
-          "combined_score": 0.985,
-          "evidence_types": ["experimental", "database"]
+          "source": "Literature",
+          "pmid": "10783165",
+          "description": "Structural basis of Axin-APC interaction"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "APC enhances β-catenin phosphorylation and ubiquitination in destruction complex. AXIN1 concentration is rate-limiting; APC amplifies AXIN1 function"
+    },
+    {
+      "partner": {
+        "gene_name": "GSK3B",
+        "protein_name": "Glycogen synthase kinase-3 beta",
+        "uniprot_accession": "P49841"
+      },
+      "interaction_type": "Direct_interaction",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "GSK3B_BD_383_401",
+            "residues": [388, 392, 396, 399],
+            "residue_names": ["F388", "L392", "L396", "V399"],
+            "description": "Hydrophobic residues on amphipathic α-helix dock into GSK3β hydrophobic channel (residues 260-300 on GSK3β)"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Scaffold-binding region I",
+            "residues": [267, 288],
+            "description": "GSK3β residues 260-300 form hydrophobic channel; V267 and Y288 are key contact residues"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 7.5e-9,
+        "kd_range_m": [7.5e-9, 6.5e-8],
+        "measurement_method": "Bio-layer interferometry (BLI) and Surface plasmon resonance (SPR)",
+        "conditions": "Full-length AXIN1: Kd=7.5 nM (BLI); miniAxin (384-518): Kd=16 nM (BLI); AXIN1 peptide: Kd=35 μM (SPR)",
+        "notes": "Nanomolar affinity for full-length protein; micromolar for isolated peptide. MiniAxin construct (384-518) binds with similar affinity to full-length, indicating this is core binding region"
+      },
+      "evidence": [
+        {
+          "source": "PDB",
+          "interaction_id": "1O9U",
+          "description": "Crystal structure of GSK3β with AXIN1 peptide"
         },
         {
-          "partner_gene": "AXIN2",
-          "partner_protein": "Axin-2",
-          "combined_score": 0.994,
+          "source": "STRING",
+          "combined_score": 0.999,
           "evidence_types": ["experimental", "database", "coexpression", "textmining"]
         },
         {
-          "partner_gene": "DVL1",
-          "partner_protein": "Dishevelled-1",
+          "source": "BioGRID",
+          "experimental_system": "Affinity Capture-Western",
+          "throughput": "Low"
+        },
+        {
+          "source": "IntAct",
+          "detection_method": "Anti-tag coimmunoprecipitation, pull-down"
+        },
+        {
+          "source": "Literature",
+          "pmid": "12697834",
+          "description": "Structural basis for GSK3β recruitment to destruction complex"
+        },
+        {
+          "source": "Literature",
+          "pmid": "29593174",
+          "description": "BLI measurement of full-length AXIN1-GSK3β binding (Kd=7.5 nM)"
+        }
+      ],
+      "functional_effect": "Enzymatic_scaffolding",
+      "pathway_context": "AXIN1 recruits GSK3β to phosphorylate primed β-catenin (Thr41, Ser37, Ser33). AXIN1 protects GSK3β from inhibitory phosphorylation by other kinases via allosteric mechanism"
+    },
+    {
+      "partner": {
+        "gene_name": "CTNNB1",
+        "protein_name": "Catenin beta-1 (β-catenin)",
+        "uniprot_accession": "P35222"
+      },
+      "interaction_type": "Direct_interaction",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "CTNNB1_BD_459_538",
+            "residues": [],
+            "residue_names": [],
+            "description": "β-catenin binding domain forms α-helix occupying groove between armadillo repeats 3 and 4 of β-catenin"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Armadillo repeats 3-4",
+            "residues": [],
+            "description": "Groove formed by armadillo repeats 3 and 4 binds AXIN1 helical region"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 4e-6,
+        "measurement_method": "Bio-layer interferometry",
+        "conditions": "MiniAxin (384-518) binding to recombinant primed β-catenin: Kd=4 μM. AXIN1 binds β-catenin much more weakly than GSK3β (7.5 nM)",
+        "notes": "Micromolar affinity indicates lower binding strength compared to GSK3β-AXIN1. AXIN1 polymerization likely increases avidity for β-catenin. Phosphorylation status of β-catenin affects binding"
+      },
+      "evidence": [
+        {
+          "source": "PDB",
+          "interaction_id": "1QZ7",
+          "description": "Crystal structure of β-catenin with AXIN binding domain (Xenopus ortholog)"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "coexpression", "textmining"]
+        },
+        {
+          "source": "IntAct",
+          "detection_method": "Coimmunoprecipitation, pull-down"
+        },
+        {
+          "source": "Literature",
+          "pmid": "29593174",
+          "description": "Quantitative binding measurement by BLI"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "AXIN1 recruits β-catenin for sequential phosphorylation by CK1α (Ser45) then GSK3β (Thr41, Ser37, Ser33), marking it for β-TrCP-mediated ubiquitination"
+    },
+    {
+      "partner": {
+        "gene_name": "DVL1",
+        "protein_name": "Dishevelled-1",
+        "uniprot_accession": "O14640"
+      },
+      "interaction_type": "Direct_interaction",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DIX_805_855",
+            "residues": [],
+            "residue_names": [],
+            "description": "DIX domain forms head-to-tail heteropolymers with DVL DIX domains via intermolecular β-bridge between β2 and β4 strands"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "DIX domain",
+            "residues": [],
+            "description": "DVL1 DIX domain polymerizes with AXIN1 DIX domain in response to Wnt signals"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 1e-5,
+        "kd_range_m": [5e-6, 2e-5],
+        "measurement_method": "In vitro binding studies",
+        "conditions": "DIX-DIX interaction Kd in 5-20 μM range for monomeric domains. Polymerization greatly enhances avidity",
+        "notes": "Individual DIX domain monomers have micromolar affinity, but head-to-tail polymerization creates high-avidity interactions. Binding does not occur at physiological sub-micromolar concentrations without polymerization"
+      },
+      "evidence": [
+        {
+          "source": "PDB",
+          "interaction_id": "6JCK",
+          "description": "Crystal structure of AXIN-DIX/DVL2-DIX heterodimer at 3.09Å"
+        },
+        {
+          "source": "STRING",
           "combined_score": 0.952,
           "evidence_types": ["experimental", "database", "textmining"]
         },
         {
-          "partner_gene": "DVL2",
-          "partner_protein": "Dishevelled-2",
+          "source": "Literature",
+          "pmid": "21325632",
+          "description": "DVL-AXIN DIX domain interaction and polymerization"
+        }
+      ],
+      "functional_effect": "Regulatory",
+      "pathway_context": "Upon Wnt stimulation, DVL recruits AXIN1 to plasma membrane via DIX-DIX polymerization, disrupting destruction complex and enabling β-catenin stabilization"
+    },
+    {
+      "partner": {
+        "gene_name": "DVL2",
+        "protein_name": "Dishevelled-2",
+        "uniprot_accession": "O14641"
+      },
+      "interaction_type": "Direct_interaction",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DIX_805_855",
+            "residues": [],
+            "residue_names": [],
+            "description": "DIX domain hetero-oligomerization with DVL2"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "DIX domain",
+            "residues": [],
+            "description": "DVL2 DIX domain"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 1e-5,
+        "kd_range_m": [5e-6, 2e-5],
+        "notes": "Similar to DVL1, micromolar affinity for monomers with polymerization-enhanced avidity"
+      },
+      "evidence": [
+        {
+          "source": "PDB",
+          "interaction_id": "6JCK",
+          "description": "Crystal structure with DVL2-DIX"
+        },
+        {
+          "source": "STRING",
           "combined_score": 0.956,
           "evidence_types": ["experimental", "database", "textmining"]
-        },
+        }
+      ],
+      "functional_effect": "Regulatory",
+      "pathway_context": "DVL2-AXIN1 interaction mediates Wnt-induced destruction complex disassembly"
+    },
+    {
+      "partner": {
+        "gene_name": "DVL3",
+        "protein_name": "Dishevelled-3",
+        "uniprot_accession": "Q92997"
+      },
+      "interaction_type": "Direct_interaction",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DIX_805_855",
+            "residues": [],
+            "residue_names": [],
+            "description": "DIX domain hetero-oligomerization with DVL3"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "DIX domain",
+            "residues": [],
+            "description": "DVL3 DIX domain"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 1e-5,
+        "kd_range_m": [5e-6, 2e-5],
+        "notes": "Similar to DVL1/2, micromolar affinity for monomers"
+      },
+      "evidence": [
         {
-          "partner_gene": "DVL3",
-          "partner_protein": "Dishevelled-3",
+          "source": "STRING",
           "combined_score": 0.950,
           "evidence_types": ["experimental", "database", "textmining"]
-        },
+        }
+      ],
+      "functional_effect": "Regulatory",
+      "pathway_context": "DVL3-AXIN1 interaction in Wnt signaling activation"
+    },
+    {
+      "partner": {
+        "gene_name": "TNKS",
+        "protein_name": "Tankyrase-1",
+        "uniprot_accession": "O95271"
+      },
+      "interaction_type": "Direct_interaction",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "TNKS_BD_11_80",
+            "residues": [19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+            "residue_names": [],
+            "description": "Two discrete tankyrase-binding segments (TBS1: 1-43, TBS2: 44-80) bind simultaneously to tankyrase ARC2 domains. Conserved motif RPPVPGEE critical for recognition"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Ankyrin repeat cluster 2 (ARC2)",
+            "residues": [],
+            "description": "ARC2 contributes highest binding affinity. Two ARC2 domains in TNKS homodimer bind both AXIN1 TBS segments"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 9.2e-7,
+        "kd_range_m": [9.2e-7, 5e-6],
+        "measurement_method": "Isothermal titration calorimetry (ITC)",
+        "conditions": "AXIN1(1-43): Kd=0.92 μM; AXIN1(44-80): Kd=3-5 μM measured by ITC. ARC2 binding affinity 1.2-2.8 μM",
+        "notes": "N-terminal segment (1-43) binds ~5-fold tighter than C-terminal segment (44-80). Bivalent binding to tankyrase homodimer creates avidity effect"
+      },
+      "evidence": [
         {
-          "partner_gene": "TNKS",
-          "partner_protein": "Tankyrase-1",
+          "source": "STRING",
           "combined_score": 0.998,
           "evidence_types": ["experimental", "database", "textmining"]
         },
         {
-          "partner_gene": "TNKS2",
-          "partner_protein": "Tankyrase-2",
+          "source": "Literature",
+          "pmid": "22307604",
+          "description": "Crystal structure and ITC measurements of tankyrase-AXIN complex"
+        },
+        {
+          "source": "Literature",
+          "pmid": "21743478",
+          "description": "Structural basis and sequence rules for tankyrase substrate recognition"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "TNKS binding leads to poly-ADP-ribosylation of AXIN1, creating binding site for RNF146 E3 ligase, resulting in ubiquitination and proteasomal degradation. Promotes Wnt pathway activation"
+    },
+    {
+      "partner": {
+        "gene_name": "TNKS2",
+        "protein_name": "Tankyrase-2",
+        "uniprot_accession": "Q9H2K2"
+      },
+      "interaction_type": "Direct_interaction",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "TNKS_BD_11_80",
+            "residues": [],
+            "residue_names": [],
+            "description": "Same tankyrase-binding domain binds TNKS2"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Ankyrin repeat clusters",
+            "residues": [],
+            "description": "TNKS2 ARC domains recognize AXIN1 tankyrase-binding motifs"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 1e-6,
+        "kd_range_m": [9.2e-7, 5e-6],
+        "notes": "Similar affinity to TNKS1, likely in micromolar range"
+      },
+      "evidence": [
+        {
+          "source": "STRING",
           "combined_score": 0.997,
           "evidence_types": ["experimental", "database", "textmining"]
-        },
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "Like TNKS1, TNKS2 promotes AXIN1 degradation via PARsylation and RNF146 recruitment"
+    },
+    {
+      "partner": {
+        "gene_name": "SIAH1",
+        "protein_name": "E3 ubiquitin-protein ligase SIAH1",
+        "uniprot_accession": "Q8IUQ4"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Ubiquitination",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "VxP_degron_365_367",
+            "residues": [365, 366, 367],
+            "residue_names": ["V365", "E366", "P367"],
+            "description": "VxP degron motif (V-E-P) within conserved EMTPVEPA sequence (361-368) recognized by SIAH1 substrate-binding domain"
+          },
+          {
+            "domain_motif_id": "GSK3B_BD_383_401",
+            "residues": [],
+            "residue_names": [],
+            "description": "VxP degron located in GSK3β-binding domain; SIAH1 competes with GSK3β for binding"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Substrate-binding domain (SBD)",
+            "residues": [],
+            "description": "SIAH1 SBD recognizes VxP consensus motif. Groove formed by β1, β2, β3 binds AXIN1 degron peptide"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "notes": "CK1ε phosphorylation enhances SIAH1 binding to AXIN1. Quantitative binding affinity not reported but interaction is regulated by phosphorylation state"
+      },
+      "evidence": [
         {
-          "partner_gene": "TP53",
-          "partner_protein": "Cellular tumor antigen p53",
-          "combined_score": 0.901,
-          "evidence_types": ["experimental", "database", "textmining"]
-        },
-        {
-          "partner_gene": "HIPK2",
-          "partner_protein": "Homeodomain-interacting protein kinase 2",
-          "combined_score": 0.923,
-          "evidence_types": ["experimental", "database", "textmining"]
-        },
-        {
-          "partner_gene": "PPP1CA",
-          "partner_protein": "Serine/threonine-protein phosphatase PP1-alpha catalytic subunit",
-          "combined_score": 0.912,
-          "evidence_types": ["experimental", "database"]
-        },
-        {
-          "partner_gene": "SIAH1",
-          "partner_protein": "E3 ubiquitin-protein ligase SIAH1",
+          "source": "STRING",
           "combined_score": 0.976,
           "evidence_types": ["experimental", "database", "textmining"]
         },
         {
-          "partner_gene": "RNF146",
-          "partner_protein": "E3 ubiquitin-protein ligase RNF146",
+          "source": "IntAct",
+          "detection_method": "Coimmunoprecipitation, pull-down"
+        },
+        {
+          "source": "Literature",
+          "pmid": "28546513",
+          "description": "SIAH E3 ligases promote Wnt/β-catenin signaling through Wnt-induced AXIN degradation"
+        },
+        {
+          "source": "Literature",
+          "pmid": "37083834",
+          "description": "Structural basis of AXIN2-SIAH1 interaction (VxP motif at 361-368 conserved in AXIN1)"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "SIAH1 mediates Wnt-induced AXIN1 degradation by recognizing VxP degron, competing with GSK3β binding, leading to destruction complex disassembly and Wnt pathway activation"
+    },
+    {
+      "partner": {
+        "gene_name": "SIAH2",
+        "protein_name": "E3 ubiquitin-protein ligase SIAH2",
+        "uniprot_accession": "O43255"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Ubiquitination",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "VxP_degron_365_367",
+            "residues": [365, 366, 367],
+            "residue_names": ["V365", "E366", "P367"],
+            "description": "Same VxP degron recognized by SIAH2"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Substrate-binding domain",
+            "residues": [],
+            "description": "SIAH2 SBD similar to SIAH1"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "notes": "Similar mechanism to SIAH1"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "28546513",
+          "description": "Both SIAH1 and SIAH2 mediate AXIN degradation"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "SIAH2, like SIAH1, promotes AXIN1 degradation during Wnt activation"
+    },
+    {
+      "partner": {
+        "gene_name": "RNF146",
+        "protein_name": "E3 ubiquitin-protein ligase RNF146",
+        "uniprot_accession": "Q969M7"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Ubiquitination",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "TNKS_BD_11_80",
+            "residues": [],
+            "residue_names": [],
+            "description": "Poly-ADP-ribosylated tankyrase-binding domain creates binding site for RNF146 WWE domain"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "WWE domain",
+            "residues": [],
+            "description": "RNF146 WWE domain recognizes poly-ADP-ribose (PAR) chains added by tankyrases"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "notes": "RNF146 recognizes PAR-modified AXIN1 and mediates K48-linked ubiquitination leading to proteasomal degradation. Quantitative binding/catalytic parameters not available"
+      },
+      "evidence": [
+        {
+          "source": "STRING",
           "combined_score": 0.963,
           "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "source": "Literature",
+          "pmid": "21802407",
+          "description": "RNF146 regulates tankyrase and AXIN to promote Wnt signaling"
         }
-      ]
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "RNF146 is downstream effector of tankyrase-mediated AXIN1 degradation, enabling Wnt pathway activation"
     },
-    "biogrid_interactions": [
-      {
-        "partner_gene": "APC",
-        "partner_protein": "Adenomatous polyposis coli protein",
-        "interaction_type": "Physical",
-        "experimental_system": "Affinity Capture-MS",
-        "pmid": "Multiple",
-        "throughput": "High"
+    {
+      "partner": {
+        "gene_name": "CSNK1A1",
+        "protein_name": "Casein kinase I isoform alpha (CK1α)",
+        "uniprot_accession": "P48729"
       },
-      {
-        "partner_gene": "CSNK1E",
-        "partner_protein": "Casein kinase I epsilon",
-        "interaction_type": "Physical",
-        "experimental_system": "Affinity Capture-MS, Two-hybrid",
-        "pmid": "Multiple",
-        "throughput": "Low and High"
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "TNKS_BD_11_80",
+            "residues": [51, 54, 56, 57, 58, 60],
+            "residue_names": ["S51", "S54", "T56", "S57", "T58", "T60"],
+            "description": "CK1α binds to N-terminal region and phosphorylates multiple S/T residues overlapping tankyrase-binding domain. Phosphorylation antagonizes tankyrase binding"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Kinase domain",
+            "residues": [],
+            "description": "CK1α active site phosphorylates AXIN1 and β-catenin"
+          }
+        ],
+        "site_specific": true
       },
-      {
-        "partner_gene": "CSNK1E",
-        "partner_protein": "Casein kinase I epsilon",
-        "interaction_type": "Genetic",
-        "experimental_system": "Phenotypic Suppression",
-        "pmid": "Multiple",
-        "throughput": "Low"
+      "kinetics": {
+        "notes": "Quantitative binding/kinetic data not available. CK1α is core destruction complex component"
       },
-      {
-        "partner_gene": "HIPK2",
-        "partner_protein": "Homeodomain-interacting protein kinase 2",
-        "interaction_type": "Physical",
-        "experimental_system": "Affinity Capture-MS, Co-IP",
-        "pmid": "Multiple",
-        "throughput": "Low and High"
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.998,
+          "evidence_types": ["experimental", "database", "textmining"]
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "AXIN1 recruits CK1α to phosphorylate β-catenin Ser45 (priming site) for subsequent GSK3β phosphorylation. CK1α also phosphorylates AXIN1 N-terminus, protecting from tankyrase-mediated degradation"
+    },
+    {
+      "partner": {
+        "gene_name": "CSNK1E",
+        "protein_name": "Casein kinase I isoform epsilon (CK1ε)",
+        "uniprot_accession": "P49674"
       },
-      {
-        "partner_gene": "TP53",
-        "partner_protein": "Cellular tumor antigen p53",
-        "interaction_type": "Physical",
-        "experimental_system": "Affinity Capture-Western, Co-IP",
-        "pmid": "Multiple",
-        "throughput": "Low"
+      "interaction_type": "Physical_association",
+      "mechanism": "Phosphorylation",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "VxP_degron_365_367",
+            "residues": [],
+            "residue_names": [],
+            "description": "CK1ε phosphorylation near VxP degron enhances SIAH1 binding and AXIN1 degradation"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Kinase domain",
+            "residues": [],
+            "description": "CK1ε active site"
+          }
+        ],
+        "site_specific": true
       },
-      {
-        "partner_gene": "RNF111",
-        "partner_protein": "E3 ubiquitin-protein ligase ARKADIA",
-        "interaction_type": "Physical",
-        "experimental_system": "Affinity Capture-MS",
-        "pmid": "Multiple",
-        "throughput": "High"
-      }
-    ],
-    "intact_interactions": [
-      {
-        "partner_gene": "GSK3B",
-        "partner_protein": "Glycogen synthase kinase-3 beta",
-        "interaction_type": "Direct interaction",
-        "detection_method": "Anti-tag coimmunoprecipitation, pull-down",
-        "pmid": "Multiple",
-        "interaction_accession": "EBI-Multiple"
+      "kinetics": {
+        "notes": "CK1ε enhances AXIN1 degradation by promoting SIAH1 interaction. Quantitative parameters not reported"
       },
-      {
-        "partner_gene": "CTNNB1",
-        "partner_protein": "Catenin beta-1",
-        "interaction_type": "Direct interaction",
-        "detection_method": "Coimmunoprecipitation, pull-down",
-        "pmid": "Multiple",
-        "interaction_accession": "EBI-Multiple"
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.985,
+          "evidence_types": ["experimental", "database"]
+        },
+        {
+          "source": "BioGRID",
+          "experimental_system": "Affinity Capture-MS, Two-hybrid, Phenotypic Suppression"
+        },
+        {
+          "source": "Literature",
+          "pmid": "38417098",
+          "description": "CK1ε/SIAH1 axis regulates AXIN1 stability"
+        }
+      ],
+      "functional_effect": "Regulatory",
+      "pathway_context": "CK1ε phosphorylation promotes SIAH1-mediated AXIN1 degradation in colorectal cancer cells"
+    },
+    {
+      "partner": {
+        "gene_name": "USP7",
+        "protein_name": "Ubiquitin carboxyl-terminal hydrolase 7",
+        "uniprot_accession": "Q93009"
       },
-      {
-        "partner_gene": "SIAH1",
-        "partner_protein": "E3 ubiquitin-protein ligase SIAH1",
-        "interaction_type": "Direct interaction",
-        "detection_method": "Coimmunoprecipitation, pull-down",
-        "pmid": "Multiple",
-        "interaction_accession": "EBI-Multiple"
-      }
-    ],
-    "summary": {
-      "total_physical_interactors": 1001,
-      "high_confidence_interactors": 16,
-      "key_binding_partners": [
-        "GSK3B (destruction complex kinase)",
-        "CTNNB1/β-catenin (substrate)",
-        "APC (destruction complex scaffold)",
-        "CSNK1A1/CK1α (destruction complex kinase)",
-        "TNKS/TNKS2 (poly-ADP-ribosylation and degradation)",
-        "SIAH1/2 (E3 ubiquitin ligases for degradation)",
-        "RNF146 (E3 ubiquitin ligase)",
-        "DVL1/2/3 (Wnt pathway activation)",
-        "TP53 and HIPK2 (apoptosis regulation)",
-        "PPP1CA (dephosphorylation)",
-        "USP34 (deubiquitination and stabilization)",
-        "AXIN2 (paralog with overlapping function)"
-      ]
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Deubiquitination",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "TNKS_BD_11_80",
+            "residues": [],
+            "residue_names": [],
+            "description": "USP7 removes ubiquitin from AXIN1 ubiquitinated by RNF146 and SIAH1/2"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "USP domain",
+            "residues": [],
+            "description": "Deubiquitinase catalytic domain"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {
+        "notes": "USP7 deubiquitinates AXIN1, stabilizing it and suppressing Wnt signaling. Quantitative catalytic parameters not available"
+      },
+      "evidence": [
+        {
+          "source": "BioGRID",
+          "experimental_system": "Reconstituted complex"
+        },
+        {
+          "source": "Literature",
+          "pmid": "31488703",
+          "description": "USP7 inhibits Wnt/β-catenin signaling through promoting AXIN stabilization"
+        }
+      ],
+      "functional_effect": "Stabilizing",
+      "pathway_context": "USP7 counteracts RNF146 and SIAH-mediated AXIN1 degradation, maintaining destruction complex integrity and suppressing Wnt signaling"
+    },
+    {
+      "partner": {
+        "gene_name": "TP53",
+        "protein_name": "Cellular tumor antigen p53",
+        "uniprot_accession": "P04637"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": null,
+            "residues": [],
+            "residue_names": [],
+            "description": "AXIN1 forms tripartite complex with TP53 and HIPK2"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "DNA-binding domain and oligomerization domain",
+            "residues": [],
+            "description": "TP53 interaction with AXIN1-HIPK2 complex"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {
+        "notes": "Functional interaction in apoptosis regulation; quantitative binding data not available"
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.901,
+          "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "source": "BioGRID",
+          "experimental_system": "Affinity Capture-Western, Co-IP"
+        }
+      ],
+      "functional_effect": "Regulatory",
+      "pathway_context": "AXIN1-HIPK2-TP53 complex regulates apoptosis, independent of Wnt signaling function"
+    },
+    {
+      "partner": {
+        "gene_name": "HIPK2",
+        "protein_name": "Homeodomain-interacting protein kinase 2",
+        "uniprot_accession": "Q9H2X6"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": null,
+            "residues": [],
+            "residue_names": [],
+            "description": "AXIN1 forms scaffold for HIPK2-TP53 interaction"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Kinase domain",
+            "residues": [],
+            "description": "HIPK2 kinase domain"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {
+        "notes": "Functional complex formation; quantitative parameters not reported"
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.923,
+          "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "source": "BioGRID",
+          "experimental_system": "Affinity Capture-MS, Co-IP"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "AXIN1 scaffolds HIPK2-TP53 complex to regulate apoptosis"
     }
-  },
+  ],
   "pathways": {
     "reactome": [
       {
@@ -579,10 +1298,10 @@
         "url": "https://reactome.org/content/detail/R-HSA-195721"
       },
       {
-        "pathway_id": "R-HSA-4839735",
-        "pathway_name": "Signaling by AXIN mutants",
+        "pathway_id": "R-HSA-4641257",
+        "pathway_name": "Degradation of beta-catenin by the destruction complex",
         "species": "Homo sapiens",
-        "url": "https://reactome.org/content/detail/R-HSA-4839735"
+        "url": "https://reactome.org/content/detail/R-HSA-4641257"
       },
       {
         "pathway_id": "R-HSA-201681",
@@ -591,16 +1310,22 @@
         "url": "https://reactome.org/content/detail/R-HSA-201681"
       },
       {
-        "pathway_id": "R-HSA-4641257",
-        "pathway_name": "Degradation of beta-catenin by the destruction complex",
+        "pathway_id": "R-HSA-4839735",
+        "pathway_name": "Signaling by AXIN mutants",
         "species": "Homo sapiens",
-        "url": "https://reactome.org/content/detail/R-HSA-4641257"
+        "url": "https://reactome.org/content/detail/R-HSA-4839735"
       },
       {
         "pathway_id": "R-HSA-3858494",
         "pathway_name": "Beta-catenin independent WNT signaling",
         "species": "Homo sapiens",
         "url": "https://reactome.org/content/detail/R-HSA-3858494"
+      },
+      {
+        "pathway_id": "R-HSA-4641262",
+        "pathway_name": "Disassembly of the destruction complex and recruitment of AXIN to the membrane",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-4641262"
       }
     ],
     "kegg": [
@@ -615,14 +1340,9 @@
         "url": "https://www.genome.jp/pathway/hsa04390"
       },
       {
-        "pathway_id": "hsa05217",
-        "pathway_name": "Basal cell carcinoma",
-        "url": "https://www.genome.jp/pathway/hsa05217"
-      },
-      {
-        "pathway_id": "hsa05210",
-        "pathway_name": "Colorectal cancer",
-        "url": "https://www.genome.jp/pathway/hsa05210"
+        "pathway_id": "hsa05200",
+        "pathway_name": "Pathways in cancer",
+        "url": "https://www.genome.jp/pathway/hsa05200"
       },
       {
         "pathway_id": "hsa05225",
@@ -630,58 +1350,48 @@
         "url": "https://www.genome.jp/pathway/hsa05225"
       },
       {
-        "pathway_id": "hsa05226",
-        "pathway_name": "Gastric cancer",
-        "url": "https://www.genome.jp/pathway/hsa05226"
+        "pathway_id": "hsa05210",
+        "pathway_name": "Colorectal cancer",
+        "url": "https://www.genome.jp/pathway/hsa05210"
       },
       {
-        "pathway_id": "hsa05224",
-        "pathway_name": "Breast cancer",
-        "url": "https://www.genome.jp/pathway/hsa05224"
-      },
-      {
-        "pathway_id": "hsa05412",
-        "pathway_name": "Endometrial cancer",
-        "url": "https://www.genome.jp/pathway/hsa05412"
-      },
-      {
-        "pathway_id": "hsa05200",
-        "pathway_name": "Pathways in cancer",
-        "url": "https://www.genome.jp/pathway/hsa05200"
+        "pathway_id": "hsa05217",
+        "pathway_name": "Basal cell carcinoma",
+        "url": "https://www.genome.jp/pathway/hsa05217"
       }
     ],
-    "pathway_role_summary": "AXIN1 is the core scaffold of the β-catenin destruction complex in canonical Wnt signaling. In the absence of Wnt ligands, AXIN1 organizes CK1α, GSK3β, APC, and β-catenin into a complex that promotes sequential phosphorylation of β-catenin, leading to its ubiquitination by β-TrCP and proteasomal degradation. Upon Wnt stimulation, AXIN1 is recruited to the membrane-bound LRP5/6-FZD-DVL complex, disrupting the destruction complex and allowing β-catenin stabilization. AXIN1 also participates in Hippo signaling and regulates apoptosis through TP53-HIPK2 complexes. Mutations or degradation of AXIN1 lead to constitutive Wnt activation and are implicated in hepatocellular carcinoma and other cancers."
+    "pathway_role_summary": "AXIN1 is the concentration-limiting scaffold protein of the β-catenin destruction complex. In Wnt-off state, AXIN1 organizes CK1α, GSK3β, APC, and β-catenin into biomolecular condensates that enable processive phosphorylation of β-catenin (Ser45 by CK1α, then Thr41/Ser37/Ser33 by GSK3β), marking it for β-TrCP-mediated ubiquitination and degradation. Upon Wnt stimulation, DVL polymerization recruits AXIN1 to membrane-bound LRP5/6-FZD receptor complex, disrupting destruction complex. AXIN1 degradation via tankyrase-RNF146 and SIAH1/2 pathways further enables β-catenin accumulation and nuclear translocation for TCF/LEF transcription. AXIN1 also participates in Hippo pathway regulation and apoptosis through TP53-HIPK2 complexes. Mutations impair destruction complex function, causing constitutive Wnt activation in hepatocellular carcinoma"
   },
   "disease_associations": [
     {
       "disease": "Hepatocellular carcinoma",
       "omim_id": "114550",
       "mutation_type": "Somatic",
-      "description": "AXIN1 mutations occur in approximately 10% of hepatocellular carcinomas. Mutations include a 33-bp deletion in exon 3 affecting GSK3β phosphorylation sites and 12 missense mutations. All mutations are somatic and lead to impaired β-catenin degradation and Wnt pathway activation. AXIN1-mutant HCC represents a molecularly distinct poor-prognosis subtype with lower Wnt activation than CTNNB1-mutant HCC"
+      "description": "AXIN1 mutations occur in ~10-11% of HCC cases. Include missense mutations, 33-bp deletion in exon 3 affecting GSK3β phosphorylation sites, and truncating mutations. All mutations impair β-catenin degradation. AXIN1-mutant HCC represents molecularly distinct poor-prognosis subtype with lower Wnt activation than CTNNB1-mutant HCC but still tumorigenic. Associated with proliferative Wnt-low class and YAP/TAZ pathway activation"
     },
     {
       "disease": "Colorectal cancer",
       "omim_id": null,
       "mutation_type": "Somatic",
-      "description": "AXIN1 mutations and loss of expression contribute to colorectal tumorigenesis through Wnt pathway activation. AXIN1 functions as a tumor suppressor"
+      "description": "AXIN1 functions as tumor suppressor. Mutations and loss of expression contribute to colorectal tumorigenesis through Wnt pathway dysregulation"
     },
     {
       "disease": "Craniometadiaphyseal osteosclerosis with hip dysplasia",
       "omim_id": "603816",
       "mutation_type": "Germline",
-      "description": "Bi-allelic variants disrupting the C-terminal DIX domain cause this rare skeletal dysplasia. DIX domain mutations impair AXIN1 polymerization and function"
+      "description": "Rare skeletal dysplasia caused by bi-allelic variants disrupting C-terminal DIX domain. Mutations impair AXIN1 polymerization and destruction complex function"
     },
     {
       "disease": "Gastric cancer",
       "omim_id": null,
       "mutation_type": "Somatic",
-      "description": "Alternative splicing produces oncogenic circAXIN1 variant that activates Wnt/β-catenin signaling by blocking full-length AXIN1 function"
+      "description": "Alternative splicing produces oncogenic circAXIN1 variant that activates Wnt/β-catenin signaling by blocking full-length AXIN1 function. TRIM11 E3 ligase overexpression destabilizes AXIN1, activating Wnt pathway"
     },
     {
-      "disease": "Breast cancer, Endometrial cancer, Basal cell carcinoma",
+      "disease": "Other cancers (breast, endometrial, basal cell carcinoma)",
       "omim_id": null,
       "mutation_type": "Somatic",
-      "description": "AXIN1 alterations contribute to tumor development through aberrant Wnt signaling in multiple cancer types"
+      "description": "AXIN1 alterations contribute to tumorigenesis in multiple cancer types through aberrant Wnt signaling"
     }
   ],
   "cross_references": {
@@ -693,7 +1403,7 @@
     "omim_gene": "603816"
   },
   "metadata": {
-    "generated_at": "2026-09-30T00:00:00Z",
+    "generated_at": "2026-10-06T00:00:00Z",
     "queried_databases": [
       "UniProt",
       "NCBI Gene",
@@ -709,11 +1419,10 @@
       "Reactome",
       "KEGG",
       "GO",
-      "PhosphoSitePlus",
-      "Human Protein Atlas",
-      "OMIM"
+      "ELM",
+      "Literature (PubMed)"
     ],
-    "data_quality_notes": "Comprehensive data available from all major databases. Specific phosphorylation site positions from PhosphoSitePlus require direct database access for complete annotation (18 PTM sites reported). The canonical sequence was obtained from UniProt REST API. Some PDB structures are from rat ortholog (1WSP) but are highly homologous to human. AXIN1β isoform sequence (lacking exon 9) not explicitly provided but documented. Nuclear localization and export signals mapped based on mouse Axin studies with high sequence conservation to human.",
-    "modeling_relevance_summary": "AXIN1 is a critical scaffold protein for Wnt signaling pathway modeling. Its multiple binding domains (tankyrase, RGS/APC, GSK3β, β-catenin, DIX) enable formation of the destruction complex and regulate β-catenin turnover. Post-translational modifications (phosphorylation, ubiquitination, PARsylation, SUMOylation, acetylation) provide multiple regulatory mechanisms. Nuclear-cytoplasmic shuttling enables compartment-specific functions. Interactions with 16+ high-confidence partners create a complex regulatory network. AXIN1 concentration is rate-limiting for destruction complex formation, and its degradation by tankyrase-RNF146 and SIAH pathways provides key Wnt activation mechanisms. Disease mutations primarily affect HCC through loss of destruction complex function. Essential for modeling canonical Wnt signaling, cancer progression, and cross-talk with Hippo, TGFβ, and p53 pathways."
+    "data_quality_notes": "Comprehensive protein digest with revised schema incorporating unique domain identifiers, deduplicated interactions with site-specific binding information, and available kinetic data. Quantitative binding affinities: GSK3B-AXIN1 Kd=7.5-65 nM (full-length); β-catenin-AXIN1 Kd=4 μM; DVL-AXIN1 DIX-DIX Kd=5-20 μM (monomers); TNKS-AXIN1 Kd=0.92-5 μM (TBS segments). High-quality crystal structures available for RGS (1DK8, 1EMU), DIX (6JCK), and binding complexes with APC, GSK3β, and β-catenin. AlphaFold model (AF-O15169-F1) provides full-length structure with pLDDT 62.3. PTM sites extensively characterized with 17+ documented modifications. Main data gaps: APC-AXIN1 Kd not quantitatively measured despite crystal structure; full isoform 2 sequence not explicitly provided; some ubiquitination site assignments (K48, K505, K789, K821) based on E3 ligase specificity studies rather than direct mass spectrometry mapping",
+    "modeling_relevance_summary": "AXIN1 is THE critical rate-limiting scaffold for Wnt pathway modeling. Its concentration is 100-1000x lower than other destruction complex components, making it the bottleneck for complex assembly. Multiple regulatory mechanisms: (1) Tankyrase-RNF146 degradation pathway (Kd=0.92-5 μM for TNKS binding); (2) SIAH1/2 VxP degron-mediated degradation enhanced by CK1ε; (3) CK1α phosphorylation protecting from tankyrase; (4) SUMOylation preventing ubiquitination; (5) USP7 deubiquitination for stabilization. DIX domain polymerization drives phase separation into biomolecular condensates, creating destruction complex puncta. Quantitative binding data enables rate constant estimation: GSK3B (Kd~10 nM), β-catenin (Kd~4 μM). DVL-mediated recruitment to membrane upon Wnt stimulation disrupts complex. Essential for modeling: canonical Wnt on/off switching, destruction complex assembly/disassembly kinetics, β-catenin turnover dynamics, cancer-associated pathway dysregulation, and cross-talk with Hippo/p53 pathways"
   }
 }

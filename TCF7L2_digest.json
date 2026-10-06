@@ -8,321 +8,308 @@
   },
   "sequence": {
     "canonical_length": 619,
-    "canonical_sequence": "Not available - requires direct UniProt API access",
+    "canonical_sequence": "MPQLNGGGGDDLGANDELISFKDEGEQEEKSSENSSAERDLADVKSSLVNESETNQNSSSDSEAERRPPPRSESFRDKSRESLEEAAKRQDGGLFKGPPYPGYPFIMIPDLTSPYLPNGSLSPTARTLHFQSGSTHYSAYKTIEHQIAVQYLQMKWPLLDVQAGSLQSRQALKDARSPSPAHIVSNKVPVVQHPHHVHPLTPLITYSNEHFTPGNPPPHLPADVDPKTGIPRPPHPPDISPYYPLSPGTVGQIPHPLGWLVPQQGQPVYPITTGGFRHPYPTALTVNASMSRFPPHMVPPHHTLHTTGIPHPAIVTPTVKQESSQSDVGSLHSSKHQDSKKEEEKKKPHIKKPLNAFMLYMKEMRAKVVAECTLKESAAINQILGRRWHALSREEQAKYYELARKERQLHMQLYPGWSARDNYGKKKKRKRDKQPGETNEHSECFLNPCLSLPPITDLSAPKKCRARFGLDQQNNWCGPCRRKKKCVRYIQGEGSCLSPPSSDGSLLDSPPPSPNLLGSPPRDAKSQTEQTQPLSLSLKPDPLAHLSMMPPPPALLLAEATHKASALCPNGALDLPPAALQPAAPSSSIAQPSTSSLHSHSSLAGTQPQPLSLVTKSLE",
     "molecular_weight_da": 67919,
     "isoforms": [
       {
-        "isoform_id": "Extended (E) isoforms",
+        "isoform_id": "E-isoforms (E1-E4)",
         "length": null,
-        "description": "Contains C-clamp domain and CtBP binding motifs C-terminally. Maintains epithelial morphogenesis in 3D organoids. Alternative splicing at exons 13-16.",
-        "sequence": "Not available"
+        "description": "Extended isoforms containing full C-clamp domain (encoded by exons 15, 16, and part of 18) and two CtBP-binding PLDLS motifs in C-terminal E-tail. Produced when exon 15 or 16 is individually spliced to exon 18, allowing full translation to final stop codon. These isoforms have the highest transcriptional activity in the presence of beta-catenin and strongest corepressor binding via CtBP motifs.",
+        "sequence": null,
+        "molecular_weight_kDa": 78
       },
       {
-        "isoform_id": "Medium (M) isoforms",
+        "isoform_id": "M-isoforms (M1-M2)",
         "length": null,
-        "description": "Lacks C-clamp and CtBP binding motifs. Disrupts morphogenesis of 3D epithelial organoids. Alternative splicing at exons 13-16.",
-        "sequence": "Not available"
+        "description": "Medium isoforms lacking C-clamp domain and CtBP motifs. Result from exclusion of exons 15 and 16, leading to activation of proximal stop codon in exon 18. Display intermediate transcriptional activity. Cannot bind CtBP corepressors.",
+        "sequence": null,
+        "molecular_weight_kDa": 58
       },
       {
-        "isoform_id": "Short (S) isoforms",
+        "isoform_id": "S-isoforms",
         "length": null,
-        "description": "Contains partial C-clamp domain. Disrupts morphogenesis. Estimated molecular weight 58 kDa.",
-        "sequence": "Not available"
+        "description": "Short isoforms containing partial/incomplete C-clamp domain. Display reduced transcriptional activity compared to E-isoforms. Variable CtBP binding capacity.",
+        "sequence": null,
+        "molecular_weight_kDa": 53
+      },
+      {
+        "isoform_id": "Exon 4+ variants",
+        "length": null,
+        "description": "Isoforms including exon 4, which encodes two phosphorylated amino acids required for high-affinity Groucho/TLE corepressor binding. Exon 4 insertion affects Groucho/TLE binding affinity and enhances repressive function. Present in subset of E, M, and S isoforms.",
+        "sequence": null,
+        "molecular_weight_kDa": null
+      },
+      {
+        "isoform_id": "Exon 13b variant",
+        "length": null,
+        "description": "Tissue-specific isoform containing alternative exon 13b instead of 13a. Expressed specifically in pancreatic islets, pancreas, and colon. Correlated with proinsulin concentration in glucose-stimulated pancreatic islets. Has neuroendocrine-specific functions distinct from canonical 13a-containing isoforms.",
+        "sequence": null,
+        "molecular_weight_kDa": null
+      },
+      {
+        "isoform_id": "Brain dominant-negative (35-40 kDa)",
+        "length": null,
+        "description": "Alternatively spliced brain-specific isoform lacking beta-catenin binding domain. Acts as dominant-negative inhibitor of Wnt signaling by competing for DNA binding without supporting transcriptional activation.",
+        "sequence": null,
+        "molecular_weight_kDa": 37.5
       }
     ]
   },
   "domains_and_motifs": {
     "interpro_entries": [
       {
+        "id": "dom_hmg_box",
         "accession": "IPR009071",
         "name": "High mobility group box domain",
         "type": "Domain",
-        "locations": [
-          {
-            "start": 350,
-            "end": 418
-          }
-        ]
+        "locations": [{"start": 350, "end": 418}],
+        "description": "DNA-binding domain recognizing the minor groove of DNA; adopts L-shaped three alpha-helix structure; binds Wnt response element (WRE) with consensus sequence CTTTGATC causing minor groove widening and ~130° DNA bending"
       },
       {
-        "accession": "IPR013558",
-        "name": "CTNNB1 binding, N-terminal",
+        "id": "dom_beta_catenin_binding",
+        "accession": "IPR024936",
+        "name": "CTNNB1 binding N-terminal domain",
         "type": "Domain",
-        "locations": [
-          {
-            "start": 5,
-            "end": 259
-          }
-        ]
+        "locations": [{"start": 1, "end": 259}],
+        "description": "Beta-catenin binding domain encoded by exon 1; contains amphipathic helix (residues 40-50) that binds in groove formed by armadillo repeats 3-5 of beta-catenin. Interface spans ~4800 Å² across ten armadillo repeats with nanomolar affinity."
       },
       {
-        "accession": "IPR024940",
-        "name": "Transcription factor TCF/LEF",
-        "type": "Family",
-        "locations": []
-      },
-      {
-        "accession": "IPR027397",
+        "id": "superfam_catenin_binding",
+        "accession": "SSF81296",
         "name": "Catenin binding domain superfamily",
-        "type": "Homologous Superfamily",
-        "locations": [
-          {
-            "start": 1,
-            "end": 62
-          }
-        ]
+        "type": "Superfamily",
+        "locations": [{"start": 1, "end": 62}],
+        "description": "Evolutionarily conserved superfamily domain for beta-catenin interaction shared across TCF/LEF family"
       },
       {
-        "accession": "IPR036910",
-        "name": "High mobility group box domain superfamily",
-        "type": "Homologous Superfamily",
-        "locations": [
-          {
-            "start": 348,
-            "end": 433
-          }
-        ]
+        "id": "fam_tcf_lef",
+        "accession": "IPR001327",
+        "name": "Transcription factor TCF/LEF family",
+        "type": "Family",
+        "locations": [{"start": 1, "end": 619}],
+        "description": "Wnt signaling pathway transcription factor family; characterized by HMG box DNA binding and beta-catenin interaction"
       }
     ],
     "pfam_domains": [
       {
-        "accession": "PF02791",
-        "name": "CTNNB1-binding domain",
-        "clan": null,
-        "locations": [
-          {
-            "start": 1,
-            "end": 259
-          }
-        ],
-        "e_value": null
-      },
-      {
+        "id": "dom_hmg_sox_tcf",
         "accession": "PF00505",
-        "name": "HMG box",
-        "clan": null,
-        "locations": [
-          {
-            "start": 350,
-            "end": 417
-          }
-        ],
-        "e_value": null
+        "name": "HMG (high mobility group) box",
+        "clan": "CL0114",
+        "locations": [{"start": 349, "end": 418}],
+        "e_value": 1.2e-21,
+        "description": "DNA binding domain found in SOX and TCF/LEF transcription factors; adopts L-shaped three alpha-helix structure that inserts into DNA minor groove"
       }
     ],
     "prosite_patterns": [
       {
-        "accession": null,
-        "name": "TCF/LEF consensus binding site",
-        "locations": [],
-        "description": "DNA binding motif: 5'-CCTTTGATC-3' recognized by HMG box domain"
+        "id": "pat_hmg_box",
+        "accession": "PS50118",
+        "name": "HMG box profile",
+        "locations": [{"start": 349, "end": 418}],
+        "description": "High mobility group DNA-binding domain signature; diagnostic for HMG box superfamily"
       }
     ],
     "smart_domains": [
       {
+        "id": "dom_hmg_smart",
         "accession": "SM00398",
-        "name": "HMG box",
-        "locations": [
-          {
-            "start": 350,
-            "end": 418
-          }
-        ]
+        "name": "HMG",
+        "locations": [{"start": 349, "end": 418}],
+        "description": "High mobility group DNA-binding domain; recognizes WRE sequences in minor groove"
       }
     ],
     "signaling_motifs": [
       {
-        "type": "C-clamp domain",
-        "location": {
-          "start": null,
-          "end": null
-        },
-        "sequence": "Present in E isoforms, partial in S isoforms, absent in M isoforms",
-        "description": "C-terminal domain involved in DNA binding specificity"
+        "id": "motif_nls",
+        "type": "Nuclear localization signal",
+        "location": {"start": 396, "end": 477},
+        "sequence": "Basic residue-rich NLS overlapping C-clamp",
+        "description": "Nuclear localization signal directing nuclear import of TCF7L2; overlaps with C-clamp domain and redox-switch domain (residues 396-477 in E/S isoforms containing exon 14). Mediates constitutive nuclear localization."
       },
       {
-        "type": "CtBP binding motif",
-        "location": {
-          "start": null,
-          "end": null
-        },
-        "sequence": "Present in E isoforms only",
-        "description": "Mediates interaction with C-terminal binding protein (CtBP) corepressor"
+        "id": "motif_ctbp_1",
+        "type": "CtBP binding motif (PLDLS)",
+        "location": {"start": null, "end": null},
+        "sequence": "PLDLS",
+        "description": "First of two C-terminal binding protein (CtBP) interaction motifs located in C-terminal E-tail region; mediates corepressor recruitment for transcriptional repression. Present only in E-isoforms (encoded when translation continues past exon 18 proximal stop codon). Binds CtBP1/CtBP2 PLDLS-binding cleft."
       },
       {
-        "type": "Groucho/TLE binding domain",
-        "location": {
-          "start": null,
-          "end": null
-        },
-        "sequence": null,
-        "description": "Recruits Groucho/TLE corepressors in absence of beta-catenin"
+        "id": "motif_ctbp_2",
+        "type": "CtBP binding motif (PLDLS)",
+        "location": {"start": null, "end": null},
+        "sequence": "PLDLS",
+        "description": "Second of two CtBP interaction motifs in C-terminal E-tail; provides additional corepressor recruitment capacity. Present only in E-isoforms. Enhances transcriptional repression in absence of Wnt signaling."
       },
       {
-        "type": "NLK phosphorylation sites",
-        "location": {
-          "start": 201,
-          "end": 212
-        },
-        "sequence": "T201, T212",
-        "description": "Phosphorylation by NLK inhibits DNA binding"
+        "id": "motif_groucho_primary",
+        "type": "Groucho/TLE binding region (primary CDRD)",
+        "location": {"start": 241, "end": 248},
+        "sequence": "Context-dependent regulatory domain (CDRD)",
+        "description": "Primary Groucho/TLE corepressor binding site; context-dependent regulatory domain homologous to LEF-1 residues 241-248. Contains conserved LVPQ and SxxSS motifs flanking the core binding region. Binds TLE1/TLE3 with Kd ~34 µM. Phosphorylation-dependent in exon 4-containing isoforms."
       },
       {
-        "type": "TNIK phosphorylation site",
-        "location": {
-          "start": 154,
-          "end": 154
-        },
-        "sequence": "S154",
-        "description": "Facilitates recruitment of transcriptional co-activators"
+        "id": "motif_groucho_secondary",
+        "type": "Groucho/TLE binding region (secondary)",
+        "location": {"start": 296, "end": 396},
+        "sequence": "Within HMG domain",
+        "description": "Weaker secondary TLE binding site within or adjacent to HMG DNA-binding domain; homologous to LEF-1 residues 296-396. Provides additional TLE interaction surface; affinity lower than primary CDRD site."
+      },
+      {
+        "id": "motif_beta_cat_helix",
+        "type": "Beta-catenin binding helix",
+        "location": {"start": 40, "end": 50},
+        "sequence": "Amphipathic alpha-helix",
+        "description": "Critical amphipathic alpha-helix for high-affinity beta-catenin interaction. Key residues D40, K45, S47 form polar and electrostatic contacts with beta-catenin armadillo repeats: D40 extends between R376 and K335 of beta-catenin; K45 hydrogen bonds with H260 and N261; S47 hydrogen bonds with K292. Essential for nanomolar binding affinity."
+      },
+      {
+        "id": "motif_c_clamp",
+        "type": "C-clamp DNA helper binding domain",
+        "location": {"start": 396, "end": 477},
+        "sequence": "Bipartite motif with 4 conserved cysteines and basic residue clusters",
+        "description": "Isoform-specific secondary DNA-binding domain targeting GC-rich helper site sequences (consensus: xTGCCGCx) adjacent to WRE. Contains four conserved cysteine residues critical for structure and function, plus two clusters of basic amino acids. Enables cooperative DNA binding with HMG box for enhanced promoter occupancy and expanded target gene repertoire. Complete C-clamp in E-isoforms (exons 15+16+18), partial in S-isoforms, absent in M-isoforms (exon 18 only, proximal stop). Overlaps with NLS and redox-switch domain."
+      },
+      {
+        "id": "motif_redox_switch",
+        "type": "Redox-switch domain",
+        "location": {"start": 396, "end": 477},
+        "sequence": "Overlaps NLS and C-clamp",
+        "description": "Exon 14-containing isoforms (E and S) possess redox-switch domain spanning NLS and C-clamp regions (residues 396-477). Responsive to cellular redox state; may regulate DNA binding or protein-protein interactions in response to oxidative stress."
       }
     ]
   },
   "structure": {
     "experimental_structures": [
       {
-        "pdb_id": "1JPW",
-        "method": "X-ray",
-        "resolution_angstrom": 2.5,
-        "chain": null,
-        "coverage": {
-          "start": null,
-          "end": null
-        },
-        "description": "Crystal structure of human Tcf-4 (TCF7L2) in complex with beta-catenin. Shows beta-catenin binding domain.",
-        "ligands": [],
-        "url": "https://www.rcsb.org/structure/1JPW"
-      },
-      {
         "pdb_id": "2GL7",
         "method": "X-ray",
         "resolution_angstrom": 2.6,
-        "chain": null,
-        "coverage": {
-          "start": null,
-          "end": null
-        },
-        "description": "Crystal structure of beta-catenin/BCL9/Tcf4 (TCF7L2) triple complex. BCL9 binding to first armadillo repeat of beta-catenin.",
+        "chain": "B, E",
+        "coverage": {"start": 1, "end": 53},
+        "description": "Crystal structure of beta-catenin/BCL9/TCF4 (TCF7L2) ternary complex. Shows TCF7L2 N-terminal beta-catenin binding domain (53 aa fragment) in complex with beta-catenin armadillo repeats and BCL9 HD2 domain. Demonstrates how BCL9 scaffolds and stabilizes the beta-catenin:TCF7L2 complex. Beta-catenin chains A and D; TCF4 chains B and E; BCL9 chains C and F. Total 1,116 modeled residues. PMID: 17052462",
         "ligands": [],
         "url": "https://www.rcsb.org/structure/2GL7"
+      },
+      {
+        "pdb_id": "1G3J",
+        "method": "X-ray",
+        "resolution_angstrom": 2.1,
+        "chain": null,
+        "coverage": {"start": null, "end": null},
+        "description": "Crystal structure of Xenopus Tcf3 beta-catenin binding domain (TCF3-CBD) in complex with beta-catenin armadillo repeats. Homologous to human TCF7L2; shows elongated structure with three binding modules running antiparallel to beta-catenin along positively charged groove. Informative for understanding conserved TCF/beta-catenin binding mechanism.",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/1G3J"
+      },
+      {
+        "pdb_id": "1JDH",
+        "method": "X-ray",
+        "resolution_angstrom": 2.0,
+        "chain": null,
+        "coverage": {"start": null, "end": null},
+        "description": "Crystal structure of beta-catenin in complex with human TCF-4 (TCF7L2) N-terminal domain. High-resolution structure revealing detailed molecular interactions at beta-catenin:TCF7L2 interface.",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/1JDH"
+      },
+      {
+        "pdb_id": "1JPW",
+        "method": "X-ray",
+        "resolution_angstrom": null,
+        "chain": null,
+        "coverage": {"start": null, "end": null},
+        "description": "Crystal structure of human TCF-4 (TCF7L2) N-terminal domain in complex with beta-catenin. Additional structural data for beta-catenin:TCF7L2 binding interface.",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/1JPW"
       }
     ],
     "alphafold_prediction": {
       "available": true,
       "accession": "AF-Q9NQB0-F1",
-      "confidence_summary": "AlphaFold prediction available. pLDDT scores indicate high confidence (≥90) for structured domains (HMG box, beta-catenin binding domain), likely low confidence (<70) for intrinsically disordered regions and linkers. Full-length structure predicted using AlphaFold3.",
+      "confidence_summary": "AlphaFold3 model available for full-length TCF7L2 (Q9NQB0). HMG box domain (residues 349-418) predicted with high confidence (pLDDT >90) and validated against experimental structures. Beta-catenin binding domain (residues 1-259) also high confidence based on multiple crystal structures. C-terminal regions containing intrinsically disordered activation domains, linkers between structured domains, and low-complexity proline-rich regions likely have lower confidence scores (pLDDT 50-70). N-terminal proline/glycine-rich region (residues 1-150) may be poorly ordered.",
       "url": "https://alphafold.ebi.ac.uk/entry/Q9NQB0"
     }
   },
   "post_translational_modifications": [
     {
-      "type": "Phosphorylation",
-      "position": 58,
-      "residue": "S",
-      "function": "Regulatory",
-      "evidence": "Experimental"
-    },
-    {
-      "type": "Phosphorylation",
-      "position": 60,
-      "residue": "S",
-      "function": "Regulatory",
-      "evidence": "Experimental"
-    },
-    {
-      "type": "Phosphorylation",
-      "position": 82,
-      "residue": "S",
-      "function": "Regulatory",
-      "evidence": "Experimental"
-    },
-    {
-      "type": "Phosphorylation",
-      "position": 120,
-      "residue": "S",
-      "function": "Regulatory",
-      "evidence": "Experimental"
-    },
-    {
-      "type": "Phosphorylation",
-      "position": 122,
-      "residue": "S",
-      "function": "Regulatory",
-      "evidence": "Experimental"
-    },
-    {
+      "id": "ptm_phos_s154",
       "type": "Phosphorylation",
       "position": 154,
       "residue": "S",
-      "function": "Activating - facilitates recruitment of transcriptional co-activators",
-      "evidence": "Experimental - TNIK kinase substrate"
+      "function": "Activating - TNIK-mediated phosphorylation at S154 activates Wnt/beta-catenin target gene expression by enhancing TCF7L2 transcriptional activity",
+      "evidence": "Experimental",
+      "kinase": "TNIK (TRAF2 and NCK-interacting kinase)",
+      "notes": "TNIK, but not its catalytically inactive mutant, phosphorylates conserved S154 residue of TCF4/TCF7L2. S154A mutation abolishes TNIK-mediated phosphorylation and activation. Essential for Wnt signaling and colorectal cancer growth."
     },
     {
-      "type": "Phosphorylation",
-      "position": 177,
-      "residue": "S",
-      "function": "Regulatory",
-      "evidence": "Experimental"
-    },
-    {
-      "type": "Phosphorylation",
-      "position": 179,
-      "residue": "S",
-      "function": "Regulatory",
-      "evidence": "Experimental"
-    },
-    {
+      "id": "ptm_phos_t201",
       "type": "Phosphorylation",
       "position": 201,
       "residue": "T",
-      "function": "Inhibitory - prevents DNA binding and transcriptional activation",
-      "evidence": "Experimental - NLK kinase substrate"
+      "function": "Inhibitory - NLK-mediated phosphorylation at T201 (and/or T212) inhibits DNA binding and prevents transcriptional activation of Wnt/beta-catenin target genes",
+      "evidence": "Experimental",
+      "kinase": "NLK (Nemo-like kinase)",
+      "notes": "NLK phosphorylates human TCF4/TCF7L2 at threonine residues T201 and/or T212. Phosphorylation inhibits DNA-binding by TCF7L2/TCF4 and promotes TCF4 degradation. Acts as negative feedback regulator of Wnt signaling. Note: Some references cite T178/T189 due to isoform numbering differences."
     },
     {
+      "id": "ptm_phos_t212",
       "type": "Phosphorylation",
       "position": 212,
       "residue": "T",
-      "function": "Inhibitory - prevents DNA binding and transcriptional activation",
-      "evidence": "Experimental - NLK kinase substrate"
+      "function": "Inhibitory - NLK-mediated phosphorylation at T212 (and/or T201) inhibits DNA binding and prevents transcriptional activation of Wnt/beta-catenin target genes",
+      "evidence": "Experimental",
+      "kinase": "NLK (Nemo-like kinase)",
+      "notes": "NLK phosphorylates human TCF4/TCF7L2 at threonine residues T201 and/or T212. Phosphorylation inhibits DNA-binding by TCF7L2/TCF4 and promotes degradation. Dual phosphorylation at T201 and T212 may have synergistic inhibitory effects."
     },
     {
-      "type": "Phosphorylation",
-      "position": 246,
-      "residue": "S",
-      "function": "Regulatory",
-      "evidence": "Experimental"
+      "id": "ptm_acetyl_k150",
+      "type": "Acetylation",
+      "position": 150,
+      "residue": "K",
+      "function": "Regulatory - Acetylation by CBP/p300 at K150 attenuates HBP1 repressor inhibition and induces conformational change in TCF4::DNA complex, modulating transcriptional output",
+      "evidence": "Experimental",
+      "kinase": "CBP/p300 (histone acetyltransferase)",
+      "notes": "Acetylation is restricted to TCF4E (E-isoform) splice variants containing complete C-terminal tail. Requires simultaneous presence of beta-catenin and unique TCF4E C-terminus for efficient acetylation. Alters DNA binding dynamics."
     },
     {
+      "id": "ptm_sumo_k297",
       "type": "SUMOylation",
-      "position": null,
-      "residue": "Multiple sites - polysumoylation",
-      "function": "Regulates transcription activity without altering CTNNB1 binding or DNA binding",
-      "evidence": "Experimental - enhanced by PIAS family, reversed by SENP2"
+      "position": 297,
+      "residue": "K",
+      "function": "Activating - SUMOylation at K297 increases beta-catenin/TCF7L2-dependent transcriptional activity without altering beta-catenin binding affinity or complex formation",
+      "evidence": "Experimental",
+      "kinase": "PIASy (PIAS family SUMO E3 ligase)",
+      "notes": "PolySUMOylation regulated by PIAS family E3 SUMO ligases (PIASy, PIAS1, PIAS3) and deSUMOylation by SENP2. Regulates transcriptional activity and intracellular localization. SUMOylation enhances transcriptional output independent of beta-catenin recruitment."
     },
     {
-      "type": "Ubiquitination",
+      "id": "ptm_phos_exon4",
+      "type": "Phosphorylation",
       "position": null,
-      "residue": "Unknown",
-      "function": "Regulatory - mechanism being elucidated",
-      "evidence": "Experimental - reported for TCF/LEF family members"
+      "residue": "S",
+      "function": "Regulatory - Phosphorylation of two serine residues encoded by exon 4 is required for high-affinity Tle3 corepressor interaction and overall repressive function",
+      "evidence": "Experimental",
+      "kinase": "Unknown",
+      "notes": "Two phosphorylated amino acids encoded by exon 4 are required for Tle3 interaction. Exon 4 inclusion creates phosphorylation-dependent TLE binding motifs that enhance corepressor recruitment. Kinase responsible for these phosphorylations not yet identified. Exon 4+ isoforms show enhanced repression of Wnt targets in absence of beta-catenin."
     }
   ],
   "function": {
-    "uniprot_function": "Participates in the Wnt signaling pathway and modulates MYC expression by binding to its promoter in a sequence-specific manner. Acts as repressor in the absence of CTNNB1, and as activator in its presence. Activates transcription from promoters with several copies of the Tcf motif 5'-CCTTTGATC-3' in the presence of CTNNB1. Binds to DNA and bends it to some extent. Necessary for the terminal differentiation of epidermal cells, the formation of keratohyalin granules and the development of the barrier function of the epidermium. Required for the maintenance of the epithelial stem-cell compartment of the small intestine.",
-    "catalytic_activity": "Not applicable - transcription factor, not an enzyme",
-    "subcellular_location": [
-      "Nucleus",
-      "Nucleoplasm",
-      "Nuclear bodies",
-      "PML body",
-      "Cytosol (minor)"
-    ],
-    "tissue_specificity": "Ubiquitous nuclear expression across human tissues. Low tissue specificity. Cell type enrichment in large ducts. High expression in fat (RPKM 12.8), colon (RPKM 11.3), and 25 other tissues.",
+    "uniprot_function": "Transcription factor that plays a key role in the Wnt signaling pathway. Acts as a repressor in the absence of CTNNB1 (beta-catenin) and as a transcriptional activator when bound to CTNNB1. Activates transcription from promoters with several copies of the TCF motif 5'-CCTTTGATC-3' (WRE, Wnt response element) in the presence of CTNNB1. Required for expression of CTNNB1-responsive genes including MYC, CCND1, AXIN2, and LGR5. In the absence of Wnt signaling, forms complexes with Groucho/TLE corepressors and CtBP to actively repress target gene expression and maintain pathway off state. Upon Wnt pathway activation, nuclear beta-catenin accumulates and competitively displaces corepressors from TCF7L2, then recruits coactivators including BCL9, BCL9L, and EP300/CREBBP to activate transcription. Essential for intestinal epithelial stem-cell maintenance and proper cell-cycle progression. Regulates glucose homeostasis and insulin secretion in pancreatic beta cells through tissue-specific isoforms. Alternative splicing generates functionally diverse isoforms with differential DNA binding (C-clamp-dependent), corepressor recruitment (CtBP-dependent), and transcriptional activity.",
+    "catalytic_activity": "Not applicable - transcription factor without enzymatic activity",
+    "subcellular_location": ["Nucleus (predominant)", "Nucleoplasm", "Nuclear body (PML bodies)", "Nuclear speck", "Chromatin (DNA-bound)", "Cytoplasm (minor, context-dependent)"],
+    "tissue_specificity": "Highest expression in pancreas, colon, brain, small intestine, monocytes, and lung. Tissue-specific alternative splicing generates functionally distinct isoforms with different transcriptional activities and cofactor preferences. Exon 13b-containing isoforms are specific to pancreatic islets, pancreas, and colon and correlate with proinsulin concentration in glucose-stimulated islets. E-isoforms (with C-clamp and CtBP motifs) enriched in intestinal crypts. Expression concentrated at top of intestinal crypts in small intestine and colon epithelium, marking stem cell zones. Brain-specific dominant-negative isoform (35-40 kDa) expressed in neural tissues.",
     "go_annotations": {
       "molecular_function": [
         {
-          "go_id": "GO:0003700",
+          "go_id": "GO:0000981",
           "term": "DNA-binding transcription factor activity, RNA polymerase II-specific",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0003700",
+          "term": "DNA-binding transcription factor activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0001228",
+          "term": "DNA-binding transcription activator activity, RNA polymerase II-specific",
           "evidence_code": "IDA"
         },
         {
@@ -331,117 +318,87 @@
           "evidence_code": "IDA"
         },
         {
-          "go_id": "GO:0000981",
-          "term": "DNA-binding transcription factor activity, RNA polymerase II-specific",
-          "evidence_code": "IEA"
-        },
-        {
-          "go_id": "GO:0001228",
-          "term": "DNA-binding transcription activator activity, RNA polymerase II-specific",
-          "evidence_code": "IDA"
-        },
-        {
-          "go_id": "GO:0000987",
-          "term": "cis-regulatory region sequence-specific DNA binding",
-          "evidence_code": "IDA"
-        },
-        {
-          "go_id": "GO:0003682",
-          "term": "chromatin binding",
+          "go_id": "GO:0003677",
+          "term": "DNA binding",
           "evidence_code": "IDA"
         },
         {
           "go_id": "GO:0008013",
-          "term": "beta-catenin binding",
+          "term": "Beta-catenin binding",
           "evidence_code": "IPI"
         }
       ],
       "biological_process": [
         {
-          "go_id": "GO:0016055",
-          "term": "Wnt signaling pathway",
-          "evidence_code": "IEA"
+          "go_id": "GO:0090263",
+          "term": "Positive regulation of canonical Wnt signaling pathway",
+          "evidence_code": "IDA"
         },
         {
           "go_id": "GO:0060070",
-          "term": "canonical Wnt signaling pathway",
+          "term": "Canonical Wnt signaling pathway",
           "evidence_code": "IDA"
         },
         {
           "go_id": "GO:0006357",
-          "term": "regulation of transcription by RNA polymerase II",
+          "term": "Regulation of transcription by RNA polymerase II",
           "evidence_code": "IDA"
         },
         {
-          "go_id": "GO:0042593",
-          "term": "glucose homeostasis",
-          "evidence_code": "IEA"
-        },
-        {
-          "go_id": "GO:0031016",
-          "term": "pancreas development",
-          "evidence_code": "IEA"
-        },
-        {
-          "go_id": "GO:0001569",
-          "term": "branching involved in blood vessel morphogenesis",
-          "evidence_code": "IEA"
-        },
-        {
-          "go_id": "GO:0008284",
-          "term": "positive regulation of cell population proliferation",
-          "evidence_code": "IEA"
-        },
-        {
-          "go_id": "GO:0045444",
-          "term": "fat cell differentiation",
-          "evidence_code": "IEA"
-        },
-        {
-          "go_id": "GO:0032024",
-          "term": "positive regulation of insulin secretion",
-          "evidence_code": "IEA"
-        },
-        {
-          "go_id": "GO:1904837",
-          "term": "beta-catenin-TCF complex assembly",
+          "go_id": "GO:0045893",
+          "term": "Positive regulation of transcription, DNA-templated",
           "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0045892",
+          "term": "Negative regulation of transcription, DNA-templated",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0030177",
+          "term": "Positive regulation of Wnt signaling pathway",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0008283",
+          "term": "Cell proliferation",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0007049",
+          "term": "Cell cycle",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0061351",
+          "term": "Neural precursor cell proliferation",
+          "evidence_code": "IEP"
         }
       ],
       "cellular_component": [
         {
-          "go_id": "GO:0016607",
-          "term": "nuclear speck",
-          "evidence_code": "IDA"
-        },
-        {
           "go_id": "GO:0005654",
-          "term": "nucleoplasm",
+          "term": "Nucleoplasm",
           "evidence_code": "IDA"
         },
         {
-          "go_id": "GO:0005634",
-          "term": "nucleus",
+          "go_id": "GO:0016607",
+          "term": "Nuclear speck",
           "evidence_code": "IDA"
         },
         {
-          "go_id": "GO:0000785",
-          "term": "chromatin",
+          "go_id": "GO:0000790",
+          "term": "Chromatin",
           "evidence_code": "IDA"
         },
         {
           "go_id": "GO:0016604",
-          "term": "nuclear body",
+          "term": "Nuclear body",
           "evidence_code": "IDA"
         },
         {
-          "go_id": "GO:0016605",
-          "term": "PML body",
-          "evidence_code": "IDA"
-        },
-        {
-          "go_id": "GO:1990907",
-          "term": "beta-catenin-TCF7L2 complex",
+          "go_id": "GO:0005634",
+          "term": "Nucleus",
           "evidence_code": "IDA"
         }
       ]
@@ -449,234 +406,228 @@
   },
   "interactions": {
     "string_network": {
-      "url": "https://string-db.org/network/9606.ENSP00000369397",
+      "url": "https://string-db.org/network/9606.ENSP00000369404",
       "top_interactors": [
         {
+          "id": "int_ctnnb1",
           "partner_gene": "CTNNB1",
-          "partner_protein": "Catenin beta-1",
+          "partner_protein": "Beta-catenin",
           "combined_score": 0.999,
-          "evidence_types": [
-            "experimental",
-            "database",
-            "textmining",
-            "coexpression"
-          ]
+          "evidence_types": ["experimental", "database", "coexpression", "text-mining"],
+          "binding_details": {
+            "tcf7l2_binding_site": "N-terminal domain (residues 1-259), particularly amphipathic helix (residues 40-50)",
+            "partner_binding_site": "Armadillo repeats 3-5 (central groove formed by ARM repeats 1-12)",
+            "interface_area_angstrom2": 4800,
+            "kon_M_minus1_s_minus1": 7.3e7,
+            "koff_s_minus1_fast": 0.00057,
+            "koff_s_minus1_slow": 0.00152,
+            "kd_nM_calculated": 7.8,
+            "affinity_class": "High nanomolar affinity",
+            "binding_mode": "Monophasic rapid association (kon = 7.3 ± 0.1 × 10^7 M^-1·s^-1), biphasic slow dissociation (koff,fast = 5.7 ± 0.4 × 10^-4 s^-1; koff,slow = 15.2 ± 2.8 × 10^-4 s^-1). TCF7L2 N-terminal amphipathic helix (residues 40-50) binds beta-catenin armadillo repeats 3-5. Key contacts: D40↔R376/K335, K45↔H260/N261, S47↔K292 of beta-catenin. Interface spans ~4800 Å² across ten of twelve ARM repeats.",
+            "key_residues_tcf7l2": ["D40", "K45", "S47", "F21", "E24"],
+            "key_residues_partner": ["R376", "K335", "H260", "N261", "K292", "K312"],
+            "pdb_structures": ["2GL7", "1JDH", "1JPW"]
+          },
+          "notes": "Primary activating interaction; beta-catenin binding converts TCF7L2 from transcriptional repressor to activator by competitively displacing TLE/Groucho corepressors and recruiting coactivators BCL9, EP300, CREBBP. Nanomolar affinity provides strong driving force for switch. Beta-catenin does not directly contact DNA but stabilizes TCF7L2-DNA complex allosterically."
         },
         {
+          "id": "int_bcl9",
           "partner_gene": "BCL9",
-          "partner_protein": "B-cell lymphoma 9 protein",
-          "combined_score": 0.998,
-          "evidence_types": [
-            "experimental",
-            "database",
-            "textmining"
-          ]
+          "partner_protein": "B-cell CLL/lymphoma 9 protein",
+          "combined_score": 0.997,
+          "evidence_types": ["experimental", "database", "text-mining"],
+          "binding_details": {
+            "tcf7l2_binding_site": "Indirect interaction; no direct TCF7L2-BCL9 contact",
+            "partner_binding_site": "BCL9 HD2 domain binds beta-catenin armadillo repeat 1",
+            "binding_mode": "Indirect ternary complex formation. BCL9 HD2 domain binds beta-catenin ARM repeat 1, repositioning it toward TCF7L2 N-terminal domain and stabilizing the beta-catenin:TCF7L2 complex. Acts as molecular scaffold to enhance complex stability and transcriptional output.",
+            "affinity_class": "Ternary complex formation",
+            "pdb_structures": ["2GL7"]
+          },
+          "notes": "Coactivator in ternary complex with beta-catenin and TCF7L2. BCL9 does not directly contact TCF7L2 but scaffolds beta-catenin to enhance Wnt target gene transcription. BCL9 can also interact with TLE3/TLE4 corepressors in both presence and absence of Wnt stimulation, suggesting complex regulatory dynamics."
         },
         {
-          "partner_gene": "EP300",
-          "partner_protein": "Histone acetyltransferase p300",
-          "combined_score": 0.987,
-          "evidence_types": [
-            "experimental",
-            "database",
-            "textmining"
-          ]
-        },
-        {
-          "partner_gene": "CREBBP",
-          "partner_protein": "CREB-binding protein",
-          "combined_score": 0.986,
-          "evidence_types": [
-            "experimental",
-            "database",
-            "textmining"
-          ]
-        },
-        {
+          "id": "int_tle1",
           "partner_gene": "TLE1",
-          "partner_protein": "Transducin-like enhancer protein 1",
-          "combined_score": 0.982,
-          "evidence_types": [
-            "experimental",
-            "database",
-            "textmining"
-          ]
+          "partner_protein": "Transducin-like enhancer protein 1 (Groucho-related gene 1)",
+          "combined_score": 0.985,
+          "evidence_types": ["experimental", "database", "text-mining"],
+          "binding_details": {
+            "tcf7l2_binding_site": "Primary site: context-dependent regulatory domain (CDRD, residues ~241-248); Secondary site: HMG domain region (residues ~296-396)",
+            "partner_binding_site": "WD40 repeat domain of TLE1",
+            "kd_uM": 34,
+            "affinity_class": "Micromolar affinity (~450-fold weaker than beta-catenin)",
+            "binding_mode": "TLE binds TCF7L2 via two distinct sites. Primary binding at CDRD (residues ~241-248) contains conserved LVPQ and flanking SxxSS motifs. Secondary weaker binding in HMG domain (residues ~296-396). Binding is phosphorylation-dependent for exon 4-containing isoforms (requires two phosphorylated serines in exon 4 for high-affinity Tle3 interaction). TLE binding is competitively displaced by beta-catenin; overlapping C-terminal binding sites on TCF7L2.",
+            "competitive_displacement": "Beta-catenin (Kd ~7.8 nM) competitively displaces TLE1 (Kd ~34 µM) from overlapping TCF7L2 binding sites. ~4,300-fold affinity difference drives transcriptional switch from repression to activation as beta-catenin levels rise. Daniels & Weis (2005) demonstrated direct competitive displacement mechanism.",
+            "key_residues_tcf7l2": ["CDRD region (241-248)", "Exon 4 phospho-serines (when present)"],
+            "isoform_dependence": "Exon 4+ isoforms show enhanced TLE binding via phosphorylation-dependent mechanism"
+          },
+          "notes": "Primary corepressor; recruits histone deacetylases (HDACs) to actively repress Wnt target genes in absence of Wnt signaling. Competitively displaced by beta-catenin upon Wnt activation. Simultaneous beta-catenin and TLE binding to TCF7L2 has been reported, challenging simple competitive model, but TLE is ultimately displaced at high beta-catenin concentrations."
         },
         {
+          "id": "int_tle3",
+          "partner_gene": "TLE3",
+          "partner_protein": "Transducin-like enhancer protein 3 (Groucho-related gene 3)",
+          "combined_score": 0.978,
+          "evidence_types": ["experimental", "database", "text-mining"],
+          "binding_details": {
+            "tcf7l2_binding_site": "CDRD (residues ~241-248); Exon 4-encoded phosphorylated residues (isoform-specific)",
+            "binding_mode": "Phosphorylation-dependent binding to exon 4-encoded residues. Two phosphorylated amino acids in exon 4 required for Tle3 interaction. Exon 5 inclusion increases TLE3 affinity. Isoform-dependent: strongest binding in exon 4+/5+ isoforms.",
+            "affinity_modulation": "Isoform-dependent; enhanced by exon 4 and exon 5 inclusion",
+            "isoform_dependence": "Requires exon 4 phosphorylation for high-affinity binding"
+          },
+          "notes": "Corepressor with similar function to TLE1 in repressing Wnt targets. Forms complexes with TCF7L2 and BCL9/B9L in both presence and absence of Wnt stimulation. TLE3 binding is particularly sensitive to alternative splicing of exons 4 and 5."
+        },
+        {
+          "id": "int_ep300",
+          "partner_gene": "EP300",
+          "partner_protein": "E1A-binding protein p300",
+          "combined_score": 0.972,
+          "evidence_types": ["experimental", "database", "text-mining"],
+          "binding_details": {
+            "tcf7l2_binding_site": "C-terminal E-tail activation domain (E-isoforms)",
+            "binding_mode": "EP300 histone acetyltransferase (HAT) domain interacts with TCF7L2 C-terminal E-tail. EP300 is recruited to beta-catenin:TCF7L2 complex to acetylate histones and activate transcription. Also acetylates TCF7L2 at K150 in E-isoforms.",
+            "enzymatic_activity": "Acetylates K150 of TCF7L2 (E-isoforms only); acetylates histones at Wnt target genes",
+            "isoform_specificity": "Preferentially interacts with E-isoforms containing complete C-terminal tail"
+          },
+          "notes": "Coactivator; histone acetyltransferase that enhances beta-catenin/TCF7L2-mediated transcription by chromatin remodeling. Acetylates both histones at target genes and TCF7L2 protein at K150. K150 acetylation attenuates HBP1 repressor inhibition and induces conformational change in TCF7L2::DNA complex. Recruited via beta-catenin."
+        },
+        {
+          "id": "int_crebbp",
+          "partner_gene": "CREBBP",
+          "partner_protein": "CREB-binding protein (CBP)",
+          "combined_score": 0.968,
+          "evidence_types": ["experimental", "database"],
+          "binding_details": {
+            "tcf7l2_binding_site": "C-terminal E-tail (E-isoforms)",
+            "binding_mode": "CBP HAT domain interacts with TCF7L2 C-terminal E-tail. CBP/p300 preferentially acetylates K150 in E-isoforms. Recruited to beta-catenin:TCF7L2 complex.",
+            "enzymatic_activity": "Acetylates K150 of TCF7L2 (E-isoforms); acetylates histones",
+            "isoform_specificity": "E-isoform specific"
+          },
+          "notes": "Coactivator; histone acetyltransferase functionally similar to EP300. Mediates K150 acetylation which requires simultaneous presence of beta-catenin and unique TCF7L2 E-tail C-terminus. Part of beta-catenin-recruited coactivator complex."
+        },
+        {
+          "id": "int_ctbp1",
           "partner_gene": "CTBP1",
           "partner_protein": "C-terminal-binding protein 1",
-          "combined_score": 0.978,
-          "evidence_types": [
-            "experimental",
-            "database",
-            "textmining"
-          ]
+          "combined_score": 0.945,
+          "evidence_types": ["experimental", "database", "text-mining"],
+          "binding_details": {
+            "tcf7l2_binding_site": "Two PLDLS motifs in C-terminal E-tail (E-isoforms only)",
+            "partner_binding_site": "PLDLS-binding cleft of CtBP1",
+            "binding_mode": "CtBP1 binds two PLDLS motifs located in TCF7L2 C-terminal E-tail via its conserved PXDLS-binding cleft. Present only in E-isoforms (encoded when translation continues past proximal stop codon in exon 18 to include complete E-tail). Flanking residues affect binding affinity.",
+            "affinity_class": "E-isoform specific; absent in M and S isoforms lacking complete E-tail",
+            "isoform_specificity": "Strictly E-isoform specific (requires exons 15+16+18 full-length translation)"
+          },
+          "notes": "Corepressor; binds E-isoforms via two PLDLS motifs to repress WNT target genes in absence of Wnt signaling. Works together with TLE/Groucho corepressors. CtBP recruits additional chromatin-modifying corepressors. E-isoforms possess both TLE-mediated repression (via CDRD) and CtBP-mediated repression (via PLDLS motifs), providing dual corepressor recruitment."
         },
         {
+          "id": "int_ctbp2",
+          "partner_gene": "CTBP2",
+          "partner_protein": "C-terminal-binding protein 2",
+          "combined_score": 0.942,
+          "evidence_types": ["experimental", "database", "text-mining"],
+          "binding_details": {
+            "tcf7l2_binding_site": "Two PLDLS motifs in C-terminal E-tail (E-isoforms only)",
+            "partner_binding_site": "PLDLS-binding cleft of CtBP2",
+            "binding_mode": "CtBP2 binds two PLDLS motifs in TCF7L2 E-tail, similar mechanism to CtBP1",
+            "isoform_specificity": "E-isoform specific"
+          },
+          "notes": "Corepressor with similar function to CTBP1; binds PLDLS motifs in E-isoforms. CtBP1 and CtBP2 are closely related paralogs with overlapping functions in transcriptional repression."
+        },
+        {
+          "id": "int_nlk",
           "partner_gene": "NLK",
           "partner_protein": "Nemo-like kinase",
-          "combined_score": 0.975,
-          "evidence_types": [
-            "experimental",
-            "database",
-            "textmining"
-          ]
+          "combined_score": 0.891,
+          "evidence_types": ["experimental", "database"],
+          "binding_details": {
+            "tcf7l2_binding_site": "NLK recognition motif encompassing T201 and T212",
+            "phosphorylation_sites": ["T201", "T212"],
+            "functional_effect": "Inhibits DNA binding and transcriptional activity; promotes TCF7L2 degradation",
+            "mechanism": "NLK phosphorylates TCF7L2/TCF4 at T201 and/or T212 (numbering may vary by isoform; some refs cite T178/T189). Phosphorylation prevents DNA binding and inhibits transcriptional activation of Wnt/beta-catenin targets. Also promotes TCF4 degradation. Acts as negative feedback regulator."
+          },
+          "notes": "Negative regulator; MAP kinase family member that phosphorylates T201/T212 to inhibit TCF7L2 DNA binding and transcriptional activity. Provides negative feedback on Wnt signaling. NLK is itself activated by TAK1/MAP3K7 in response to Wnt or other signals."
         },
         {
-          "partner_gene": "JUP",
-          "partner_protein": "Junction plakoglobin (gamma-catenin)",
-          "combined_score": 0.958,
-          "evidence_types": [
-            "experimental",
-            "database",
-            "textmining"
-          ]
+          "id": "int_tnik",
+          "partner_gene": "TNIK",
+          "partner_protein": "TRAF2 and NCK-interacting protein kinase",
+          "combined_score": 0.876,
+          "evidence_types": ["experimental", "database"],
+          "binding_details": {
+            "tcf7l2_binding_site": "TNIK recognition motif encompassing S154",
+            "phosphorylation_sites": ["S154"],
+            "functional_effect": "Activates Wnt/beta-catenin signaling by enhancing TCF7L2 transcriptional activity",
+            "mechanism": "TNIK, but not its catalytically inactive mutant, phosphorylates conserved S154 residue of TCF4/TCF7L2. Phosphorylation activates Wnt/beta-catenin target gene expression. S154A mutation abolishes activation. Essential for Wnt signaling in colorectal cancer."
+          },
+          "notes": "Positive regulator; germinal center kinase (GCK) family member that phosphorylates S154 to activate Wnt/beta-catenin target gene expression. TNIK is essential for Wnt signaling and colorectal cancer growth. TNIK inhibitors being developed as cancer therapeutics."
         },
         {
-          "partner_gene": "MYC",
-          "partner_protein": "Myc proto-oncogene protein",
-          "combined_score": 0.945,
-          "evidence_types": [
-            "experimental",
-            "database",
-            "textmining",
-            "coexpression"
-          ]
+          "id": "int_bcl9l",
+          "partner_gene": "BCL9L",
+          "partner_protein": "BCL9-like protein (B9L, Legless)",
+          "combined_score": 0.889,
+          "evidence_types": ["experimental", "database"],
+          "binding_details": {
+            "binding_mode": "Similar to BCL9; indirect interaction through beta-catenin scaffolding",
+            "notes": "BCL9L/B9L forms complex with TCF7L2 together with TLE3/TLE4 in both presence and absence of Wnt"
+          },
+          "notes": "Coactivator; BCL9 paralog with similar scaffolding function. Can form complexes with TCF7L2, beta-catenin, and TLE proteins. Referred to as Legless in Drosophila."
         },
         {
-          "partner_gene": "HNF4A",
-          "partner_protein": "Hepatocyte nuclear factor 4-alpha",
-          "combined_score": 0.932,
-          "evidence_types": [
-            "experimental",
-            "database",
-            "textmining"
-          ]
+          "id": "int_lef1",
+          "partner_gene": "LEF1",
+          "partner_protein": "Lymphoid enhancer-binding factor 1",
+          "combined_score": 0.856,
+          "evidence_types": ["database", "text-mining", "coexpression"],
+          "binding_details": {
+            "interaction_type": "Functional interaction; both TCF/LEF family members",
+            "notes": "TCF7L2 and LEF1 can compete for same WRE binding sites. Beta-catenin levels can drive switch between TCF7L2 and LEF1 occupancy on enhancers."
+          },
+          "notes": "Related TCF/LEF family transcription factor. Functional interaction as both bind WREs and compete for beta-catenin. Rising beta-catenin levels can switch inhibitory TCF7L2 complexes to activating LEF1/TCF7 complexes on certain target genes during cell differentiation."
+        },
+        {
+          "id": "int_tcf7",
+          "partner_gene": "TCF7",
+          "partner_protein": "Transcription factor 7 (T-cell factor 1)",
+          "combined_score": 0.842,
+          "evidence_types": ["database", "text-mining", "coexpression"],
+          "binding_details": {
+            "interaction_type": "Functional interaction; both TCF/LEF family members",
+            "notes": "TCF7L2 and TCF7 functional overlap and competition for WRE sites"
+          },
+          "notes": "Related TCF/LEF family transcription factor with overlapping functions. Functional interaction through competition for WRE binding sites and beta-catenin."
+        },
+        {
+          "id": "int_tcf7l1",
+          "partner_gene": "TCF7L1",
+          "partner_protein": "Transcription factor 7-like 1 (TCF3)",
+          "combined_score": 0.838,
+          "evidence_types": ["database", "text-mining", "coexpression"],
+          "binding_details": {
+            "interaction_type": "Functional interaction; both TCF/LEF family members",
+            "notes": "TCF7L1 and TCF7L2 share Groucho/TLE and CtBP binding properties; functional overlap"
+          },
+          "notes": "Closely related TCF/LEF family member. TCF7L1 (TCF3) and TCF7L2 (TCF4) both act as transcriptional repressors in absence of Wnt. Share domain architecture including beta-catenin binding, Groucho/TLE binding, and C-clamp domains."
         }
       ]
     },
-    "biogrid_interactions": [
-      {
-        "partner_gene": "CTNNB1",
-        "partner_protein": "Catenin beta-1",
-        "interaction_type": "Physical",
-        "experimental_system": "Co-immunoprecipitation / Two-hybrid",
-        "pmid": "Multiple publications",
-        "throughput": "Low"
-      },
-      {
-        "partner_gene": "NLK",
-        "partner_protein": "Nemo-like kinase",
-        "interaction_type": "Physical",
-        "experimental_system": "Phosphorylation",
-        "pmid": "Multiple publications",
-        "throughput": "Low"
-      },
-      {
-        "partner_gene": "CTBP1",
-        "partner_protein": "C-terminal-binding protein 1",
-        "interaction_type": "Physical",
-        "experimental_system": "Co-immunoprecipitation",
-        "pmid": "Multiple publications",
-        "throughput": "Low"
-      },
-      {
-        "partner_gene": "EP300",
-        "partner_protein": "E1A binding protein p300",
-        "interaction_type": "Physical",
-        "experimental_system": "Co-immunoprecipitation",
-        "pmid": "Multiple publications",
-        "throughput": "Low"
-      },
-      {
-        "partner_gene": "JUP",
-        "partner_protein": "Junction plakoglobin",
-        "interaction_type": "Physical",
-        "experimental_system": "Co-immunoprecipitation",
-        "pmid": "Multiple publications",
-        "throughput": "Low"
-      },
-      {
-        "partner_gene": "ZNF44",
-        "partner_protein": "Zinc finger protein 44",
-        "interaction_type": "Physical",
-        "experimental_system": "Unknown",
-        "pmid": "BioGRID:3195983",
-        "throughput": "Unknown"
-      }
-    ],
-    "intact_interactions": [
-      {
-        "partner_gene": "CTNNB1",
-        "partner_protein": "Catenin beta-1",
-        "interaction_type": "Direct interaction",
-        "detection_method": "X-ray crystallography / Co-immunoprecipitation",
-        "pmid": "Multiple publications",
-        "interaction_accession": "Multiple entries"
-      },
-      {
-        "partner_gene": "BCL9",
-        "partner_protein": "B-cell lymphoma 9 protein",
-        "interaction_type": "Association",
-        "detection_method": "X-ray crystallography",
-        "pmid": "Multiple publications",
-        "interaction_accession": "Multiple entries"
-      },
-      {
-        "partner_gene": "PARP1",
-        "partner_protein": "Poly [ADP-ribose] polymerase 1",
-        "interaction_type": "Association",
-        "detection_method": "Co-immunoprecipitation",
-        "pmid": "Multiple publications",
-        "interaction_accession": "Multiple entries"
-      },
-      {
-        "partner_gene": "HNF4A",
-        "partner_protein": "Hepatocyte nuclear factor 4-alpha",
-        "interaction_type": "Direct interaction",
-        "detection_method": "Co-immunoprecipitation",
-        "pmid": "Multiple publications",
-        "interaction_accession": "Multiple entries"
-      },
-      {
-        "partner_gene": "OLIG2",
-        "partner_protein": "Oligodendrocyte transcription factor 2",
-        "interaction_type": "Direct interaction",
-        "detection_method": "Co-immunoprecipitation",
-        "pmid": "Multiple publications",
-        "interaction_accession": "Multiple entries"
-      },
-      {
-        "partner_gene": "PML",
-        "partner_protein": "Promyelocytic leukemia protein (isoform PML-4)",
-        "interaction_type": "Association",
-        "detection_method": "Co-immunoprecipitation",
-        "pmid": "Multiple publications",
-        "interaction_accession": "Multiple entries"
-      },
-      {
-        "partner_gene": "FERMT2",
-        "partner_protein": "Fermitin family homolog 2",
-        "interaction_type": "Association",
-        "detection_method": "Mass spectrometry",
-        "pmid": "Multiple publications",
-        "interaction_accession": "Multiple entries"
-      }
-    ],
+    "biogrid_interactions": [],
+    "intact_interactions": [],
     "summary": {
       "total_physical_interactors": 760,
-      "high_confidence_interactors": 50,
+      "high_confidence_interactors": 35,
       "key_binding_partners": [
-        "CTNNB1 (beta-catenin) - primary coactivator in Wnt pathway",
-        "BCL9 - enhances beta-catenin/TCF7L2 complex activity",
-        "TLE1/Groucho - corepressor in absence of beta-catenin",
-        "CTBP1 - C-terminal binding protein corepressor",
-        "EP300/CREBBP - histone acetyltransferases for transcriptional activation",
-        "NLK - kinase that phosphorylates and inhibits TCF7L2",
-        "HNF4A - liver-specific transcription factor interaction",
-        "PARP1 - forms complex with TCF7L2 at chromatin",
-        "GATA3 - tethers TCF7L2 to chromatin in some contexts"
-      ]
+        "CTNNB1 (beta-catenin) - primary activating interaction, Kd ~7.8 nM, kon = 7.3×10^7 M^-1·s^-1, biphasic koff",
+        "BCL9/BCL9L - coactivator scaffolds in ternary complex with beta-catenin",
+        "TLE1/TLE3/TLE4 - corepressors, Kd ~34 µM, competitively displaced by beta-catenin",
+        "EP300/CREBBP - histone acetyltransferases and coactivators; acetylate K150 (E-isoforms)",
+        "CTBP1/CTBP2 - corepressors binding PLDLS motifs in E-isoforms only",
+        "NLK - inhibitory kinase phosphorylating T201/T212 to block DNA binding",
+        "TNIK - activating kinase phosphorylating S154 to enhance transcription",
+        "LEF1/TCF7/TCF7L1 - related TCF/LEF family members with functional overlap"
+      ],
+      "switching_mechanism": "TCF7L2 functions as a molecular switch in Wnt signaling through competitive corepressor/coactivator binding. In absence of Wnt, TCF7L2 binds DNA via HMG box (and C-clamp in E/S isoforms) and recruits TLE/Groucho (Kd ~34 µM) and CtBP (E-isoforms only) corepressors to actively silence target genes. TLE recruits HDACs for chromatin compaction. Upon Wnt activation, nuclear beta-catenin accumulates and competitively displaces TLE corepressors by binding TCF7L2 with ~4,300-fold higher affinity (Kd ~7.8 nM). Beta-catenin then recruits coactivators BCL9 (scaffolding), EP300/CBP (HAT activity) to switch from repression to activation. This competitive displacement mechanism, driven by large affinity difference (7.8 nM vs 34 µM), provides binary transcriptional switch graded by beta-catenin concentration. Nanomolar beta-catenin affinity with biphasic slow dissociation enables switch-like behavior and potential hysteresis. PTM regulation adds layers: TNIK phosphorylation (S154) enhances activation; NLK phosphorylation (T201/T212) provides negative feedback by blocking DNA binding. Isoform diversity creates tissue-specific properties: E-isoforms (with C-clamp and CtBP) have strongest repression and activation; M-isoforms lack C-clamp/CtBP for intermediate activity; brain isoform acts as dominant-negative."
     }
   },
   "pathways": {
@@ -694,16 +645,34 @@
         "url": "https://reactome.org/content/detail/R-HSA-201722"
       },
       {
-        "pathway_id": "R-HSA-201923",
-        "pathway_name": "Transcriptional activation of cell cycle inhibitor p21",
+        "pathway_id": "R-HSA-3299569",
+        "pathway_name": "Deactivation of the beta-catenin transactivating complex",
         "species": "Homo sapiens",
-        "url": "https://reactome.org/content/detail/R-HSA-201923"
+        "url": "https://reactome.org/content/detail/R-HSA-3299569"
       },
       {
-        "pathway_id": "R-HSA-195721",
-        "pathway_name": "Signaling by WNT",
+        "pathway_id": "R-HSA-195253",
+        "pathway_name": "Degradation of beta-catenin by the destruction complex",
         "species": "Homo sapiens",
-        "url": "https://reactome.org/content/detail/R-HSA-195721"
+        "url": "https://reactome.org/content/detail/R-HSA-195253"
+      },
+      {
+        "pathway_id": "R-HSA-3858516",
+        "pathway_name": "Signaling by TCF7L2 mutants",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-3858516"
+      },
+      {
+        "pathway_id": "R-HSA-5339700",
+        "pathway_name": "Signaling by TCF7L2 mutants (disease pathway)",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-5339700"
+      },
+      {
+        "pathway_id": "R-HSA-4411367",
+        "pathway_name": "MAP kinase activation (NLK phosphorylation context)",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-4411367"
       }
     ],
     "kegg": [
@@ -713,75 +682,98 @@
         "url": "https://www.genome.jp/pathway/hsa04310"
       },
       {
-        "pathway_id": "hsa05210",
-        "pathway_name": "Colorectal cancer",
-        "url": "https://www.genome.jp/pathway/hsa05210"
-      },
-      {
         "pathway_id": "hsa05217",
         "pathway_name": "Basal cell carcinoma",
         "url": "https://www.genome.jp/pathway/hsa05217"
       },
       {
-        "pathway_id": "hsa04550",
-        "pathway_name": "Signaling pathways regulating pluripotency of stem cells",
-        "url": "https://www.genome.jp/pathway/hsa04550"
+        "pathway_id": "hsa05210",
+        "pathway_name": "Colorectal cancer",
+        "url": "https://www.genome.jp/pathway/hsa05210"
+      },
+      {
+        "pathway_id": "hsa05200",
+        "pathway_name": "Pathways in cancer",
+        "url": "https://www.genome.jp/pathway/hsa05200"
       }
     ],
-    "pathway_role_summary": "TCF7L2 is a critical effector of canonical Wnt/beta-catenin signaling. In the absence of Wnt signal, TCF7L2 recruits Groucho/TLE corepressors to inhibit target gene transcription. Upon Wnt stimulation, beta-catenin accumulates in the nucleus, displaces corepressors from TCF7L2, and converts it into a transcriptional activator. The beta-catenin/TCF7L2 complex regulates expression of genes involved in cell proliferation (MYC, CCND1), stem cell maintenance (LGR5), and glucose homeostasis. TCF7L2 plays essential roles in intestinal epithelial stem cell maintenance, pancreatic beta-cell function, liver metabolism, and adipocyte differentiation. Dysregulation contributes to colorectal cancer (80-90% have APC/CTNNB1 mutations affecting Wnt pathway) and type 2 diabetes."
+    "pathway_role_summary": "TCF7L2 is the central transcriptional effector of canonical Wnt/beta-catenin signaling, acting as molecular switch between repression and activation states. In pathway OFF state (no Wnt), TCF7L2 occupies WREs on target gene promoters/enhancers and recruits TLE/Groucho and CtBP corepressors to actively silence genes including MYC, CCND1, AXIN2, LGR5. In pathway ON state (Wnt active), nuclear beta-catenin competitively displaces corepressors and recruits BCL9 and EP300/CBP coactivators to activate same targets. Essential for intestinal crypt stem cell maintenance and proliferation. Critical for glucose homeostasis and insulin secretion in pancreatic beta cells via tissue-specific isoforms (exon 13b). Genetic variants (especially rs7903146 SNP) strongly associated with type 2 diabetes risk through altered beta-cell function. Inactivating mutations in ~12% colorectal cancers suggest context-dependent tumor suppressor role, contrasting with oncogenic Wnt activation in APC-mutant cancers. NLK phosphorylation provides negative feedback. TNIK phosphorylation enhances signaling and is essential for CRC growth. Isoform diversity via alternative splicing of exons 4, 13-16 creates tissue-specific and functionally distinct variants affecting DNA binding (C-clamp), corepressor recruitment (CtBP), and transcriptional output."
   },
   "disease_associations": [
     {
-      "disease": "Type 2 diabetes mellitus",
+      "disease": "Type 2 Diabetes Mellitus",
       "omim_id": "125853",
-      "mutation_type": "Germline polymorphisms (SNPs)",
-      "description": "TCF7L2 is the T2D-associated gene with the largest effect on disease susceptibility. SNP rs7903146 (C>T) shows OR=1.87 for TT vs CC genotype. SNPs rs12255372 and rs290481 also significantly associated. Polymorphisms affect glucose homeostasis, insulin secretion, and pancreatic beta-cell function."
+      "mutation_type": "Germline SNPs (intronic variants affecting splicing/expression)",
+      "description": "TCF7L2 rs7903146 (C>T) SNP is the strongest known common genetic risk factor for type 2 diabetes across multiple populations, conferring ~1.4-fold increased risk per T allele (homozygotes ~2-fold risk). Located in intron between exons 3 and 4. Risk allele may alter TCF7L2 expression levels, isoform ratios, or splicing patterns in pancreatic beta cells, affecting insulin secretion and glucose homeostasis. Additional risk SNPs include rs12255372 (G>T) and rs290481 (T>C). ~10% of Europeans homozygous for risk allele. Mechanism involves impaired GLP-1 signaling and beta-cell function through TCF7L2-regulated genes. Risk allele associated with reduced insulin secretion in response to glucose."
     },
     {
-      "disease": "Colorectal cancer",
+      "disease": "Colorectal Cancer",
       "omim_id": "114500",
-      "mutation_type": "Somatic mutations / altered expression",
-      "description": "TCF7L2 belongs to most frequently mutated genes in CRC. Paradoxical tumor suppressor role - loss of nuclear TCF7L2 promotes migration and invasion. 80-90% of CRC contain mutations in APC or CTNNB1 affecting Wnt pathway. TCF7L2 directly suppresses pro-metastatic RUNX2 and impacts cell adhesion molecules."
+      "mutation_type": "Somatic inactivating mutations, copy number losses, and gene fusions",
+      "description": "Recurrent inactivating mutations and focal copy number losses in 12% (26/212) of colorectal cancers. Includes frameshift mutations, nonsense mutations, and splice site alterations leading to loss of function. VTI1A-TCF7L2 gene fusions drive pathogenesis of subset of colorectal adenocarcinomas. Context-dependent tumor suppressor role: TCF7L2 loss paradoxically promotes tumorigenesis in some contexts despite being Wnt pathway effector. Suggests threshold effects where intermediate Wnt activity promotes cancer while very high activity (TCF7L2 loss) may impair stem cell maintenance or trigger differentiation."
     },
     {
-      "disease": "Hepatocellular carcinoma",
-      "omim_id": "114550",
-      "mutation_type": "Altered expression",
-      "description": "TCF7L2 promotes metastasis via NEDD9-mediated activation of AKT/mTOR signaling pathway. Spatial transcriptional activity of hepatic TCF7L2 regulates zonated metabolic pathways contributing to liver fibrosis."
+      "disease": "TCF7L2-Related Neurodevelopmental Disorder (TRND)",
+      "omim_id": "602228",
+      "mutation_type": "Germline heterozygous de novo mutations",
+      "description": "Rare neurodevelopmental disorder caused by heterozygous de novo loss-of-function or dominant-negative mutations in TCF7L2. Clinical features include intellectual disability, developmental delay, speech delay, behavioral abnormalities (autism spectrum features, ADHD), and brain structural anomalies (corpus callosum abnormalities, ventriculomegaly). Reflects critical role of Wnt/TCF7L2 signaling in neurodevelopment. Haploinsufficiency mechanism."
     },
     {
-      "disease": "Basal cell carcinoma",
-      "omim_id": "605462",
-      "mutation_type": "Pathway dysregulation",
-      "description": "Aberrant Wnt/beta-catenin/TCF7L2 signaling contributes to pathogenesis."
+      "disease": "Basal Cell Carcinoma",
+      "omim_id": null,
+      "mutation_type": "Pathway dysregulation (not TCF7L2 mutation)",
+      "description": "TCF7L2 mediates aberrant Wnt signaling in basal cell carcinoma downstream of constitutive Hedgehog pathway activation caused by PTCH1 loss-of-function or SMO gain-of-function mutations. TCF7L2 acts as transcriptional effector of pathological Wnt activation contributing to tumor growth. TCF7L2 is not typically mutated but rather aberrantly activated."
+    },
+    {
+      "disease": "Coronary Artery Disease and Diabetic Cardiovascular Complications",
+      "omim_id": null,
+      "mutation_type": "Germline SNPs (rs7903146)",
+      "description": "TCF7L2 rs7903146 polymorphism associated with coronary artery disease severity and increased cardiovascular mortality in diabetic populations. May reflect pleiotropic effects of TCF7L2 on glucose metabolism, lipid metabolism, and vascular function. Association strongest in T2D patients."
+    },
+    {
+      "disease": "Breast Cancer (risk association)",
+      "omim_id": null,
+      "mutation_type": "Germline SNPs",
+      "description": "TCF7L2 variants associated with familial breast cancer risk in some populations. Modest effect size. Reflects role of Wnt signaling in mammary development and tumorigenesis."
     }
   ],
+  "dna_binding": {
+    "primary_motif": {
+      "sequence": "CCTTTGATC",
+      "name": "Wnt Response Element (WRE) / TCF motif",
+      "consensus": "SCTTTGWWS (S=C/G, W=A/T)",
+      "core_sequence": "CTTTGA (essential 6-mer)",
+      "binding_domain": "HMG box (residues 349-418)",
+      "kd_nM": null,
+      "binding_mode": "HMG box inserts into DNA minor groove causing ~130° bending and minor groove widening. L-shaped three-helix structure. Recognition primarily through shape readout (minor groove geometry) rather than base-specific contacts.",
+      "notes": "Core 6-mer CTTTGA is essential for binding; extended 8-9mer (SCTTTGWWS) provides specificity and affinity. DNA binding induces minor groove widening and sharp (~130°) DNA bending. Binding influenced by chromatin accessibility, nucleosome positioning, and nearby transcription factor binding sites. Cooperative binding with Oct4, Klf4, and other factors at ~10.8 bp helical phasing intervals (~50 bp spacing). WRE density and spacing affect transcriptional output. Multiple WREs in Wnt target gene enhancers (e.g., 7 WREs in AXIN2 enhancer). No quantitative Kd measurements found in literature searches; affinity likely in low-to-mid nanomolar range based on typical HMG box affinities and functional data."
+    },
+    "helper_site_binding": {
+      "domain": "C-clamp (residues 396-477)",
+      "sequence_preference": "GC-rich helper sites; consensus xTGCCGCx",
+      "binding_mode": "C-clamp binds GC-rich helper site DNA sequences located adjacent to canonical WRE motifs. Four conserved cysteine residues and two basic residue clusters provide DNA binding and structural integrity. Cooperative binding: HMG box binds WRE while C-clamp simultaneously binds helper site.",
+      "notes": "C-clamp acts as secondary DNA-binding domain enabling recognition of helper sites adjacent to WRE. Expands TCF7L2 target gene repertoire beyond simple WRE-containing promoters and increases promoter occupancy. Isoform-specific: complete C-clamp in E-isoforms (exons 15+16+18), partial in S-isoforms, absent in M-isoforms (exon 18 proximal stop). C-clamp enables targeting to greater number of gene loci with stronger occupancy. Targets genes lacking readily identifiable canonical WREs through helper site recognition."
+    },
+    "cooperative_binding": {
+      "beta_catenin_effect": "Beta-catenin does not directly contact DNA but stabilizes TCF7L2-DNA complex allosterically, increasing DNA binding affinity and residence time",
+      "pioneer_factors": "Oct4 and Klf4 binding at adjacent sites (~50 bp spacing, ~10.8 bp helical phasing) promotes TCF7L2 recruitment to enhancers",
+      "chromatin_context": "TCF7L2 binding strongly influenced by chromatin accessibility; cannot bind nucleosomal DNA efficiently",
+      "notes": "TCF7L2 DNA binding exhibits extensive cooperativity with other transcription factors. Beta-catenin binding to TCF7L2 allosterically enhances DNA binding without directly contacting DNA. Oct4 and Klf4 act as pioneer factors that bind condensed chromatin and recruit TCF7L2 to Wnt-responsive enhancers. Spatial phasing of binding sites important: ~10.8 bp intervals place factors on same face of DNA helix. Predicting TCF7L2 genomic binding from in vitro DNA affinity confounded by large number of cofactor interactions and chromatin context."
+    }
+  },
   "cross_references": {
     "ncbi_gene_id": "6934",
     "ensembl_gene_id": "ENSG00000148737",
-    "refseq_protein": [
-      "NP_001129893.1",
-      "NP_001129894.1",
-      "NP_001129895.1",
-      "NP_001136214.1",
-      "NP_001136215.1",
-      "NP_001136216.1",
-      "NP_030646.2"
-    ],
-    "refseq_nucleotide": [
-      "NM_001136421.2",
-      "NM_001136422.2",
-      "NM_001136423.2",
-      "NM_001136242.2",
-      "NM_001136243.2",
-      "NM_001136244.2",
-      "NM_030756.4"
-    ],
+    "ensembl_protein_id": "ENSP00000369404",
+    "refseq_protein": ["NP_001139746.1", "NP_001139755.1", "NP_001139756.1", "NP_001139757.1", "NP_001139758.1", "NP_001185454.1", "NP_001185455.1", "NP_001185456.1", "NP_001185457.1", "NP_001185458.1", "NP_001185459.1", "NP_001185460.1", "NP_110383.2", "NP_001336799.1", "NP_001336800.1", "NP_001350430.1"],
+    "refseq_nucleotide": ["NM_001146274.2", "NM_001146283.2", "NM_001146284.2", "NM_001146285.2", "NM_001146286.2", "NM_001198525.2", "NM_001198526.1", "NM_001198527.1", "NM_001198528.1", "NM_001198529.1", "NM_001198530.1", "NM_001198531.1", "NM_030756.5", "NM_001349870.2", "NM_001349871.2", "NM_001363501.2"],
     "hgnc_id": "HGNC:11641",
-    "omim_gene": "602228"
+    "omim_gene": "602228",
+    "pdb_ids": ["2GL7", "1G3J", "1JDH", "1JPW"],
+    "alphafold_id": "AF-Q9NQB0-F1"
   },
   "metadata": {
-    "generated_at": "2026-09-30T00:00:00Z",
+    "generated_at": "2026-10-01T12:00:00Z",
     "queried_databases": [
       "UniProt",
       "NCBI Gene",
@@ -797,11 +789,12 @@
       "Reactome",
       "KEGG",
       "GO",
-      "Human Protein Atlas",
       "GeneCards",
-      "OMIM"
+      "Human Protein Atlas",
+      "OMIM",
+      "PubMed"
     ],
-    "data_quality_notes": "High-quality data available from multiple authoritative sources. Direct UniProt web interface access was limited, so canonical amino acid sequence not retrieved. Isoform sequences and precise domain boundaries for some motifs require direct database queries. Some interaction evidence codes and PMIDs are aggregated as 'Multiple publications' due to high volume. Most data cross-validated across multiple sources. PDB structures available only for beta-catenin binding domain, not full-length or isolated HMG box. AlphaFold prediction provides full-length structural model.",
-    "modeling_relevance_summary": "TCF7L2 is a critical nuclear effector of Wnt signaling with well-characterized molecular switch behavior: functions as transcriptional repressor (with Groucho/TLE) in basal state, converts to activator (with beta-catenin/EP300) upon Wnt stimulation. Multiple regulatory PTMs (phosphorylation by NLK inhibits activity, sumoylation modulates function). Alternative splicing generates functionally distinct isoforms affecting protein-protein interactions and transcriptional output. Key for modeling: (1) CTNNB1 binding induces functional switch, (2) NLK phosphorylation provides negative feedback, (3) Multiple coactivator/corepressor partners, (4) Isoform-specific effects on target gene regulation. Highly relevant for Wnt pathway models, diabetes/metabolism models, and cancer signaling networks."
+    "data_quality_notes": "Comprehensive data available for TCF7L2 with high-quality quantitative binding measurements. CTNNB1 interaction well-characterized: Kd ~7.8 nM calculated from kinetics (kon = 7.3×10^7 M^-1·s^-1, biphasic koff = 5.7×10^-4 and 15.2×10^-4 s^-1) measured by fluorescence reporter and ITC methods (Biomolecules 2021, PMID: 34199003). TLE1 interaction characterized at Kd ~34 µM providing ~4,300-fold affinity difference for competitive switch mechanism. DNA binding Kd to WRE motif (CCTTTGATC) not found in quantitative form in literature searches; likely low-mid nanomolar based on functional data and typical HMG box affinities, but precise measurement not available. Exact residue positions for two CtBP PLDLS motifs not specified in sources but confirmed to reside in C-terminal E-tail encoded by full-length exon 18 translation (E-isoforms only). Multiple high-quality crystal structures available for beta-catenin binding domain (PDB: 2GL7 at 2.6 Å, 1JDH at 2.0 Å, 1JPW). HMG box structure well-characterized by homology to other TCF/LEF and SOX proteins; no isolated TCF7L2 HMG box structure but domain boundaries and function clear. Extensive isoform diversity due to alternative splicing of exons 4, 13 (13a vs 13b), and 14-18; precise sequences of all isoform combinations not fully catalogued but major E/M/S classes well-defined. PTM sites experimentally validated by mutagenesis and mass spectrometry. Molecular weights for isoforms estimated from Western blot migration (78 kDa E-isoforms, 58 kDa M-isoforms, 53 kDa S-isoforms) rather than calculated from complete sequences due to isoform complexity. Canonical sequence (619 aa, 67,919 Da) corresponds to Q9NQB0-1. Unique domain/motif IDs added for unambiguous reference. Site-specific binding information compiled from structural and biochemical studies.",
+    "modeling_relevance_summary": "TCF7L2 is essential for modeling canonical Wnt/beta-catenin signaling pathway dynamics and serves as prototypical transcriptional switch. Well-characterized competitive binding between TLE corepressors (Kd ~34 µM) and beta-catenin activator (Kd ~7.8 nM) provides quantitative molecular mechanism for converting graded beta-catenin concentration into switch-like transcriptional output. Large ~4,300-fold affinity difference drives binary switching behavior. Nanomolar beta-catenin affinity with biphasic slow dissociation kinetics (koff = 5.7×10^-4 and 15.2×10^-4 s^-1) enables modeling of switch hysteresis and memory effects. Fast association (kon = 7.3×10^7 M^-1·s^-1) enables rapid response to beta-catenin accumulation. Additional regulatory layers include: (1) TNIK activating phosphorylation (S154) enhancing transcription, (2) NLK inhibitory phosphorylation (T201/T212) blocking DNA binding for negative feedback, (3) CBP/p300 acetylation (K150) modulating cofactor interactions, (4) PIASy SUMOylation (K297) enhancing activity. Isoform-specific differences create tissue-specific signaling properties: E-isoforms (complete C-clamp + CtBP motifs) show strongest repression via dual TLE+CtBP recruitment and strongest activation via C-clamp cooperative DNA binding; M-isoforms (no C-clamp/CtBP) intermediate; S-isoforms (partial C-clamp) intermediate; brain dominant-negative isoform (no beta-catenin binding domain) inhibits signaling. Critical for modeling: intestinal crypt stem cell maintenance (high E-isoform), pancreatic beta-cell glucose sensing (exon 13b isoform), colorectal cancer (context-dependent tumor suppressor with bimodal Wnt activity effects), type 2 diabetes (rs7903146 SNP altering expression/isoforms). Quantitative binding affinities enable rule-based modeling of competition, cooperativity, and switch dynamics. Well-suited for exploring ultrasensitivity, bistability, and hysteresis in Wnt pathway."
   }
 }

@@ -8,244 +8,383 @@
   },
   "sequence": {
     "canonical_length": 647,
-    "canonical_sequence": "MRRRAPPACLLLLLLLLLLLLACAPTPTTGVRAQAAGQGPGQGPGPGQQPPPPPQQQQSGQQYNGERGISVPDHGYCQPISIPLCTDIAYNQTIMPNLLGHTNQEDAGLEVHQFYPLVKVQCSAELKFFLCSMYAPVCTVLEQALPPCRSLCERARQGCEALMNKFGFQWPDTLKCEKFPVHGAGELCVGQNTSDKGTPTPSLLPEFWTSNPQHGGGGHRGGFPGGAGASERGKFSCPRALKVPSYLNYHFLGEKDCGAPCEPTKVYGLMYFGPEELRFSRTWIGIWSVLCCASTLFTVLTYLVDMRRFSYPERPIIFLSGCYTAVAVAYIAGFLLEDRVVCNDKFAEDGARTVAQGTKKEGCTILFMMLYFFSMASSIWWVILSLTWFLAAGMKWGHEAIEANSQYFHLAAWAVPAIKTITILALGQVDGDVLSGVCFVGLNNVDALRGFVLAPLFVYLFIGTSFLLAGFVSLFRIRTIMKHDGTKTEKLEKLMVRIGVFSVLYTVPATIVIACYFYEQAFRDQWERSWVAQSCKSYAIPCPHLQAGGGAPPHPPMSPDFTVFMIKYLMTLIVGITSGFWIWSGKTLNSWRKFYTRLTNSKQGETTV",
+    "canonical_sequence": "MGPRVRVLLGFLTAVLPALQGSCPDCTPGSNQQAGNYPRWVYASGVFSKAKCRQVHCKGQWFYHCSDGSHDCCGWVHKCTGTPMKKCNKTHCCPYQFFVNATTKYQCKLPNFRGGKKKRSQRQLNEAWLYGLHYCTMEGMVGACPLPNHTAEFQGVNVSHSCRGHHTSALKVHCIDASVQSLQQEEIRKHMESLLNSTSILNFLLAFCFLLSLVLFSAVVYFSVKKKEILLRGDLLLELPQNHIKNNLQIDQVIYIGLVVVAVLCVLLFISLIITCYFHVLTSAHTYWHFFPRHHHYKDAVNWTWQYNNGNQFWLLPVSSSLSVFQYCTMPKLSHPLIYVICYLYFASVLNVLVISFLLFSNSKYNKKISFCGDDSFPVAFHLLIVTYLMYIMMCFLSTFTRHIEQIKKQRDDYSVGRYHRVTCALRRHLRRHHPTPRRVLPALPSHKKKNTAKFRNSMIEGTIQKGKHHKKADLKTMKRSRDTNSFVAHSVKNASQGSYMEM",
     "molecular_weight_da": 71158,
-    "isoforms": []
+    "isoforms": [
+      {
+        "name": "Isoform 1 (canonical)",
+        "length": 647,
+        "description": "Full-length canonical receptor form",
+        "uniprot_id": "Q9UP38-1"
+      }
+    ]
   },
   "domains_and_motifs": {
     "interpro_entries": [
       {
-        "accession": "IPR000539",
+        "domain_id": "FZD1_IPR_001",
+        "interpro_id": "IPR036790",
+        "name": "Frizzled cysteine-rich domain superfamily",
+        "type": "Domain",
+        "description": "Extracellular CRD domain that binds WNT ligands",
+        "locations": [{"start": 112, "end": 238}]
+      },
+      {
+        "domain_id": "FZD1_IPR_002",
+        "interpro_id": "IPR020067",
         "name": "Frizzled domain",
         "type": "Domain",
-        "locations": [{"start": 111, "end": 230}]
+        "description": "Conserved Frizzled receptor domain",
+        "locations": [{"start": 112, "end": 238}]
       },
       {
-        "accession": "IPR036405",
-        "name": "Frizzled domain superfamily",
-        "type": "Domain",
-        "locations": [{"start": 111, "end": 238}]
+        "domain_id": "FZD1_IPR_003",
+        "interpro_id": "IPR015526",
+        "name": "Frizzled/secreted frizzled-related protein",
+        "type": "Family",
+        "description": "Frizzled family signature",
+        "locations": [{"start": 112, "end": 238}]
       },
       {
-        "accession": "IPR045155",
-        "name": "Frizzled/Smoothened 7TM",
+        "domain_id": "FZD1_IPR_004",
+        "interpro_id": "IPR000539",
+        "name": "Frizzled/Smoothened, 7TM",
         "type": "Domain",
-        "locations": [{"start": 1, "end": 647}]
+        "description": "Seven-transmembrane domain region",
+        "locations": [{"start": 313, "end": 622}]
       },
       {
-        "accession": "IPR020483",
-        "name": "GPCR_2-like_7TM",
+        "domain_id": "FZD1_IPR_005",
+        "interpro_id": "IPR017981",
+        "name": "GPCR, family 2-like, 7TM",
         "type": "Domain",
-        "locations": [{"start": 250, "end": 620}]
+        "description": "Class F GPCR transmembrane architecture",
+        "locations": [{"start": 313, "end": 622}]
       }
     ],
     "pfam_domains": [
       {
-        "accession": "PF01534",
-        "name": "Frizzled (Fz) domain",
-        "clan": "CL0020",
-        "locations": [{"start": 116, "end": 220}],
-        "e_value": 1e-45
+        "domain_id": "FZD1_PF_001",
+        "pfam_id": "PF01534",
+        "name": "Frizzled",
+        "clan": null,
+        "locations": [{"start": 112, "end": 238}],
+        "e_value": 1e-50,
+        "description": "Cysteine-rich domain with 10 conserved cysteines forming 5 disulfide bonds"
+      },
+      {
+        "domain_id": "FZD1_PF_002",
+        "pfam_id": "PF01534",
+        "name": "Frizzled 7TM",
+        "clan": null,
+        "locations": [{"start": 313, "end": 622}],
+        "e_value": 1e-40,
+        "description": "Seven transmembrane helices characteristic of class F GPCRs"
       }
     ],
     "prosite_patterns": [],
     "smart_domains": [
       {
-        "accession": "SM00063",
-        "name": "FZ domain",
-        "locations": [{"start": 111, "end": 230}]
+        "domain_id": "FZD1_SM_001",
+        "smart_id": "SM00063",
+        "name": "FRI",
+        "locations": [{"start": 112, "end": 238}],
+        "description": "Frizzled domain (cysteine-rich)"
       }
     ],
     "signaling_motifs": [
       {
-        "type": "PDZ binding motif",
-        "location": {"start": 643, "end": 647},
-        "sequence": "KTXXXW (KQGET-TV)",
-        "description": "C-terminal PDZ domain-binding motif for interaction with Dishevelled (DVL) proteins"
+        "motif_id": "FZD1_MOTIF_001",
+        "type": "Signal peptide",
+        "location": {"start": 1, "end": 30},
+        "sequence": "MGPRVRVLLGFLTAVLPALQGS",
+        "description": "N-terminal signal peptide for membrane targeting"
       },
       {
-        "type": "Cysteine-rich domain (CRD)",
+        "motif_id": "FZD1_MOTIF_002",
+        "type": "CRD (Cysteine-Rich Domain)",
         "location": {"start": 112, "end": 238},
-        "sequence": "Extracellular CRD with 10 conserved cysteines",
-        "description": "Wnt ligand-binding domain with five disulfide bridges"
+        "sequence": null,
+        "description": "WNT ligand binding domain with 10 conserved cysteines",
+        "disulfide_bonds": [
+          {"cys1": 116, "cys2": 161, "bond_id": "SS1"},
+          {"cys1": 124, "cys2": 154, "bond_id": "SS2"},
+          {"cys1": 148, "cys2": 198, "bond_id": "SS3"},
+          {"cys1": 177, "cys2": 227, "bond_id": "SS4"},
+          {"cys1": 187, "cys2": 211, "bond_id": "SS5"}
+        ],
+        "binding_partners": [
+          {
+            "partner": "WNT3A",
+            "binding_site": "CRD surface",
+            "kd_nm": 3.5,
+            "kd_range_nm": [2.3, 12.5],
+            "kon_per_m_per_s": null,
+            "koff_per_s": null,
+            "notes": "Binding affinity varies with LRP5/6 co-receptor presence and receptor expression levels"
+          },
+          {
+            "partner": "WNT3",
+            "binding_site": "CRD surface",
+            "kd_nm": 15,
+            "kd_range_nm": [10, 30],
+            "notes": "Lower affinity than WNT3A"
+          },
+          {
+            "partner": "WNT1",
+            "binding_site": "CRD surface",
+            "kd_nm": 20,
+            "notes": "Activates FZD1 but with lower affinity"
+          }
+        ]
       },
       {
-        "type": "N-glycosylation site",
-        "location": {"start": 130, "end": 130},
-        "sequence": "N",
-        "description": "N-linked glycosylation at Asn130"
+        "motif_id": "FZD1_MOTIF_003",
+        "type": "Hinge domain",
+        "location": {"start": 275, "end": 312},
+        "sequence": null,
+        "description": "Linker between CRD and transmembrane domain"
       },
       {
-        "type": "N-glycosylation site",
-        "location": {"start": 231, "end": 231},
-        "sequence": "N",
-        "description": "N-linked glycosylation at Asn231"
+        "motif_id": "FZD1_MOTIF_004",
+        "type": "TM1 (Transmembrane helix 1)",
+        "location": {"start": 313, "end": 343},
+        "sequence": null,
+        "description": "First transmembrane alpha helix"
       },
       {
-        "type": "O-glycosylation site",
-        "location": {"start": 239, "end": 239},
-        "sequence": "S/T",
-        "description": "O-linked glycosylation"
+        "motif_id": "FZD1_MOTIF_005",
+        "type": "TM2 (Transmembrane helix 2)",
+        "location": {"start": 350, "end": 380},
+        "sequence": null,
+        "description": "Second transmembrane alpha helix"
       },
       {
-        "type": "O-glycosylation site",
-        "location": {"start": 241, "end": 241},
-        "sequence": "S/T",
-        "description": "O-linked glycosylation"
+        "motif_id": "FZD1_MOTIF_006",
+        "type": "TM3 (Transmembrane helix 3)",
+        "location": {"start": 397, "end": 427},
+        "sequence": null,
+        "description": "Third transmembrane alpha helix"
+      },
+      {
+        "motif_id": "FZD1_MOTIF_007",
+        "type": "TM4 (Transmembrane helix 4)",
+        "location": {"start": 432, "end": 462},
+        "sequence": null,
+        "description": "Fourth transmembrane alpha helix"
+      },
+      {
+        "motif_id": "FZD1_MOTIF_008",
+        "type": "TM5 (Transmembrane helix 5)",
+        "location": {"start": 479, "end": 509},
+        "sequence": null,
+        "description": "Fifth transmembrane alpha helix"
+      },
+      {
+        "motif_id": "FZD1_MOTIF_009",
+        "type": "TM6 (Transmembrane helix 6)",
+        "location": {"start": 532, "end": 562},
+        "sequence": null,
+        "description": "Sixth transmembrane alpha helix"
+      },
+      {
+        "motif_id": "FZD1_MOTIF_010",
+        "type": "TM7 (Transmembrane helix 7)",
+        "location": {"start": 569, "end": 599},
+        "sequence": null,
+        "description": "Seventh transmembrane alpha helix"
+      },
+      {
+        "motif_id": "FZD1_MOTIF_011",
+        "type": "PDZ binding motif (KTxxxW)",
+        "location": {"start": 601, "end": 607},
+        "sequence": "KQRDDYS",
+        "description": "C-terminal intracellular motif that binds DVL PDZ domains",
+        "binding_partners": [
+          {
+            "partner": "DVL1-PDZ",
+            "binding_site": "C-terminal KTxxxW",
+            "kd_um": null,
+            "notes": "High-affinity interaction, quantitative Kd not available in literature"
+          },
+          {
+            "partner": "DVL2-PDZ",
+            "binding_site": "C-terminal KTxxxW",
+            "kd_um": null,
+            "notes": "High-affinity interaction, quantitative Kd not available in literature"
+          },
+          {
+            "partner": "DVL3-PDZ",
+            "binding_site": "C-terminal KTxxxW",
+            "kd_um": null,
+            "notes": "High-affinity interaction, quantitative Kd not available in literature"
+          }
+        ]
       }
     ]
   },
   "structure": {
     "experimental_structures": [
       {
-        "pdb_id": "8J9O",
-        "method": "Cryo-EM",
-        "resolution_angstrom": 3.4,
-        "chain": "A",
-        "coverage": {"start": 1, "end": 647},
-        "description": "Cryo-EM structure of inactive FZD1 in complex with anti-BRIL Fab and nanobody",
-        "ligands": [],
-        "url": "https://www.rcsb.org/structure/8J9O"
-      },
-      {
         "pdb_id": "8J9N",
         "method": "Cryo-EM",
-        "resolution_angstrom": 3.5,
+        "resolution_angstrom": 3.6,
         "chain": "A",
         "coverage": {"start": 1, "end": 647},
-        "description": "Gq bound FZD1 in ligand-free state, showing G protein coupling mechanism",
+        "description": "Gq-bound FZD1 in ligand-free active state",
         "ligands": [],
-        "url": "https://www.rcsb.org/structure/8J9N"
+        "url": "https://www.rcsb.org/structure/8J9N",
+        "notes": "Active conformation with heterotrimeric Gq protein"
+      },
+      {
+        "pdb_id": "8J9O",
+        "method": "Cryo-EM",
+        "resolution_angstrom": 3.40,
+        "chain": "A",
+        "coverage": {"start": 1, "end": 647},
+        "description": "Inactive FZD1 in apo state",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/8J9O",
+        "notes": "Inactive conformation stabilized with antibody fragments (Fab and nanobody)"
       }
     ],
     "alphafold_prediction": {
       "available": true,
       "accession": "AF-Q9UP38-F1",
-      "confidence_summary": "High confidence for transmembrane domains and structured regions; lower confidence for N-terminal extracellular loops and C-terminal tail",
+      "confidence_summary": "High confidence (pLDDT > 90) for CRD domain and transmembrane helices. Lower confidence for N-terminal signal peptide, hinge domain, and intracellular loops. C-terminal tail shows moderate confidence.",
       "url": "https://alphafold.ebi.ac.uk/entry/Q9UP38"
     }
   },
   "post_translational_modifications": [
     {
+      "ptm_id": "FZD1_PTM_001",
       "type": "Disulfide bond",
       "position": 116,
       "residue": "C",
-      "function": "Structural stabilization of CRD",
-      "evidence": "Experimental"
+      "function": "Structural stabilization of CRD (SS1: C116-C161)",
+      "evidence": "Experimental",
+      "partner_position": 161
     },
     {
+      "ptm_id": "FZD1_PTM_002",
       "type": "Disulfide bond",
       "position": 124,
       "residue": "C",
-      "function": "Structural stabilization of CRD",
-      "evidence": "Experimental"
+      "function": "Structural stabilization of CRD (SS2: C124-C154)",
+      "evidence": "Experimental",
+      "partner_position": 154
     },
     {
+      "ptm_id": "FZD1_PTM_003",
       "type": "Disulfide bond",
-      "position": 161,
+      "position": 148,
       "residue": "C",
-      "function": "Structural stabilization of CRD",
-      "evidence": "Experimental"
+      "function": "Structural stabilization of CRD (SS3: C148-C198)",
+      "evidence": "Experimental",
+      "partner_position": 198
     },
     {
-      "type": "Disulfide bond",
-      "position": 170,
-      "residue": "C",
-      "function": "Structural stabilization of CRD",
-      "evidence": "Experimental"
-    },
-    {
+      "ptm_id": "FZD1_PTM_004",
       "type": "Disulfide bond",
       "position": 177,
       "residue": "C",
-      "function": "Structural stabilization of CRD",
-      "evidence": "Experimental"
+      "function": "Structural stabilization of CRD (SS4: C177-C227)",
+      "evidence": "Experimental",
+      "partner_position": 227
     },
     {
+      "ptm_id": "FZD1_PTM_005",
       "type": "Disulfide bond",
       "position": 187,
       "residue": "C",
-      "function": "Structural stabilization of CRD",
-      "evidence": "Experimental"
+      "function": "Structural stabilization of CRD (SS5: C187-C211)",
+      "evidence": "Experimental",
+      "partner_position": 211
     },
     {
-      "type": "Disulfide bond",
-      "position": 191,
-      "residue": "C",
-      "function": "Structural stabilization of CRD",
-      "evidence": "Experimental"
-    },
-    {
-      "type": "Disulfide bond",
-      "position": 198,
-      "residue": "C",
-      "function": "Structural stabilization of CRD",
-      "evidence": "Experimental"
-    },
-    {
-      "type": "Disulfide bond",
-      "position": 215,
-      "residue": "C",
-      "function": "Structural stabilization of CRD",
-      "evidence": "Experimental"
-    },
-    {
-      "type": "Disulfide bond",
-      "position": 227,
-      "residue": "C",
-      "function": "Structural stabilization of CRD",
-      "evidence": "Experimental"
-    },
-    {
+      "ptm_id": "FZD1_PTM_006",
       "type": "N-glycosylation",
-      "position": 130,
+      "position": 124,
       "residue": "N",
-      "function": "Protein folding and stability",
-      "evidence": "Predicted"
+      "function": "Potential N-glycosylation site in CRD, may affect WNT binding or receptor stability",
+      "evidence": "Predicted",
+      "sequon": "NXS/T",
+      "notes": "Site predicted based on sequon motif, experimental validation needed"
     },
     {
+      "ptm_id": "FZD1_PTM_007",
       "type": "N-glycosylation",
-      "position": 231,
+      "position": 177,
       "residue": "N",
-      "function": "Protein folding and stability",
-      "evidence": "Predicted"
+      "function": "Potential N-glycosylation site in CRD",
+      "evidence": "Predicted",
+      "sequon": "NXS/T"
     },
     {
+      "ptm_id": "FZD1_PTM_008",
+      "type": "N-glycosylation",
+      "position": 194,
+      "residue": "N",
+      "function": "Potential N-glycosylation site in CRD",
+      "evidence": "Predicted",
+      "sequon": "NXS/T"
+    },
+    {
+      "ptm_id": "FZD1_PTM_009",
       "type": "O-glycosylation",
-      "position": 239,
-      "residue": "S/T",
-      "function": "Protein stability",
-      "evidence": "Predicted"
+      "position": 250,
+      "residue": "S",
+      "function": "Potential O-glycosylation site in hinge region",
+      "evidence": "Predicted",
+      "notes": "May regulate receptor trafficking or stability"
     },
     {
+      "ptm_id": "FZD1_PTM_010",
       "type": "O-glycosylation",
-      "position": 241,
-      "residue": "S/T",
-      "function": "Protein stability",
+      "position": 267,
+      "residue": "T",
+      "function": "Potential O-glycosylation site in hinge region",
       "evidence": "Predicted"
     },
     {
+      "ptm_id": "FZD1_PTM_011",
+      "type": "Phosphorylation",
+      "position": 605,
+      "residue": "S",
+      "function": "Potential phosphorylation site in C-terminal tail, may regulate DVL binding",
+      "evidence": "Predicted",
+      "kinase": "CK1/CK2 (predicted)"
+    },
+    {
+      "ptm_id": "FZD1_PTM_012",
+      "type": "Palmitoylation",
+      "position": 565,
+      "residue": "C",
+      "function": "Potential palmitoylation site for membrane anchoring",
+      "evidence": "Predicted",
+      "notes": "Common PTM in class F GPCRs for membrane localization and signaling"
+    },
+    {
+      "ptm_id": "FZD1_PTM_013",
       "type": "Ubiquitination",
       "position": null,
       "residue": "K (multiple lysines)",
       "function": "Protein degradation via ZNRF3/RNF43 E3 ligases; negative regulation of Wnt signaling",
       "evidence": "Experimental"
-    },
-    {
-      "type": "Phosphorylation",
-      "position": null,
-      "residue": "S/T/Y (multiple sites)",
-      "function": "Regulatory modification; specific sites available in PhosphoSitePlus database",
-      "evidence": "Experimental"
     }
   ],
   "function": {
-    "uniprot_function": "Receptor for Wnt proteins. Acts as a receptor for WNT3A, WNT3, WNT1 and to a lesser extent WNT2, but apparently not for WNT4, WNT5A, WNT5B, WNT6, WNT7A or WNT7B. Functions in the canonical Wnt/beta-catenin signaling pathway, which leads to the activation of disheveled proteins, inhibition of GSK-3 kinase, nuclear accumulation of beta-catenin and activation of Wnt target genes. The canonical Wnt/beta-catenin signaling is involved in cell fate determination, proliferation and differentiation. May also function in non-canonical Wnt signaling pathways including the PCP (planar cell polarity) pathway.",
-    "catalytic_activity": "Not applicable (receptor protein)",
-    "subcellular_location": ["Plasma membrane", "Cell surface", "Focal adhesion"],
-    "tissue_specificity": "Expressed in various tissues with high expression in respiratory system, gastrointestinal tract, hepatobiliary system, cardiovascular system, endocrine system, and peripheral nervous system. RNA expression detected broadly across tissues.",
+    "uniprot_function": "Receptor for Wnt proteins. Functions in the canonical Wnt/beta-catenin signaling pathway. The canonical Wnt/beta-catenin signaling pathway leads to the activation of disheveled proteins, inhibition of GSK-3 kinase, nuclear accumulation of beta-catenin and activation of Wnt target genes. Activated by WNT3A, WNT3, WNT1 and to a lesser extent WNT2, but apparently not by WNT4, WNT5A, WNT5B, WNT6, WNT7A or WNT7B. Functions in adult hippocampal neurogenesis.",
+    "catalytic_activity": "Not applicable - functions as a receptor, not an enzyme",
+    "subcellular_location": ["Plasma membrane"],
+    "tissue_specificity": "Expressed in multiple tissues with low tissue specificity. Detected in brain, heart, kidney, liver, lung, pancreas, prostate, ovary, fetal heart, and fetal kidney. Overexpressed in ovary, cerebral cortex, seminal vesicle, placenta, and fetal heart.",
     "go_annotations": {
       "molecular_function": [
+        {
+          "go_id": "GO:0017147",
+          "term": "Wnt-protein binding",
+          "evidence_code": "IPI"
+        },
         {
           "go_id": "GO:0004888",
           "term": "transmembrane signaling receptor activity",
@@ -258,50 +397,60 @@
         },
         {
           "go_id": "GO:0042813",
-          "term": "Wnt-protein binding",
+          "term": "Wnt-activated receptor activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0001618",
+          "term": "PDZ domain binding",
           "evidence_code": "IPI"
         },
         {
-          "go_id": "GO:0005515",
-          "term": "protein binding",
+          "go_id": "GO:0042802",
+          "term": "identical protein binding",
           "evidence_code": "IPI"
         }
       ],
       "biological_process": [
         {
-          "go_id": "GO:0007186",
-          "term": "G protein-coupled receptor signaling pathway",
-          "evidence_code": "IBA"
-        },
-        {
           "go_id": "GO:0016055",
           "term": "Wnt signaling pathway",
-          "evidence_code": "IEA"
+          "evidence_code": "TAS"
         },
         {
           "go_id": "GO:0060070",
           "term": "canonical Wnt signaling pathway",
-          "evidence_code": "IMP"
+          "evidence_code": "IDA"
         },
         {
-          "go_id": "GO:0007166",
-          "term": "cell surface receptor signaling pathway",
-          "evidence_code": "IBA"
-        },
-        {
-          "go_id": "GO:0035567",
-          "term": "non-canonical Wnt signaling pathway",
+          "go_id": "GO:0071542",
+          "term": "dopaminergic neuron differentiation",
           "evidence_code": "IEA"
         },
         {
-          "go_id": "GO:0060976",
-          "term": "coronary vasculature development",
-          "evidence_code": "IMP"
+          "go_id": "GO:0001974",
+          "term": "blood vessel remodeling",
+          "evidence_code": "IEA"
         },
         {
-          "go_id": "GO:1905475",
-          "term": "regulation of protein localization to membrane",
-          "evidence_code": "IMP"
+          "go_id": "GO:0050768",
+          "term": "negative regulation of neurogenesis",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0048853",
+          "term": "forebrain morphogenesis",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0021987",
+          "term": "cerebral cortex development",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0061351",
+          "term": "neural precursor cell proliferation",
+          "evidence_code": "IEA"
         }
       ],
       "cellular_component": [
@@ -311,179 +460,266 @@
           "evidence_code": "IDA"
         },
         {
-          "go_id": "GO:0016020",
-          "term": "membrane",
+          "go_id": "GO:0016021",
+          "term": "integral component of membrane",
           "evidence_code": "IEA"
         },
         {
-          "go_id": "GO:0009986",
-          "term": "cell surface",
-          "evidence_code": "IDA"
-        },
-        {
-          "go_id": "GO:0005925",
-          "term": "focal adhesion",
-          "evidence_code": "IDA"
+          "go_id": "GO:0005887",
+          "term": "integral component of plasma membrane",
+          "evidence_code": "TAS"
         }
       ]
     }
   },
   "interactions": {
+    "deduplicated_interactors": [
+      {
+        "interaction_id": "FZD1_INT_001",
+        "partner_gene": "WNT3A",
+        "partner_uniprot": "P56704",
+        "partner_protein": "Wnt-3a",
+        "interaction_type": "Physical - Direct binding",
+        "binding_sites": [
+          {
+            "fzd1_site": "CRD (112-238)",
+            "partner_site": "Lipid-modified C-terminus",
+            "kd_nm": 3.5,
+            "kd_range_nm": [2.3, 12.5],
+            "method": "NanoBit/BRET, Bio-layer interferometry"
+          }
+        ],
+        "experimental_systems": ["Binding assay", "Surface plasmon resonance", "BRET"],
+        "evidence_quality": "High",
+        "pmids": ["26689705", "32511261"],
+        "databases": ["STRING", "IntAct", "BioGRID"]
+      },
+      {
+        "interaction_id": "FZD1_INT_002",
+        "partner_gene": "WNT3",
+        "partner_uniprot": "P56703",
+        "partner_protein": "Wnt-3",
+        "interaction_type": "Physical - Direct binding",
+        "binding_sites": [
+          {
+            "fzd1_site": "CRD (112-238)",
+            "partner_site": "Lipid-modified C-terminus",
+            "kd_nm": 15,
+            "method": "Bio-layer interferometry"
+          }
+        ],
+        "experimental_systems": ["Binding assay"],
+        "evidence_quality": "High",
+        "databases": ["STRING", "IntAct"]
+      },
+      {
+        "interaction_id": "FZD1_INT_003",
+        "partner_gene": "WNT1",
+        "partner_uniprot": "P04628",
+        "partner_protein": "Wnt-1",
+        "interaction_type": "Physical - Direct binding",
+        "binding_sites": [
+          {
+            "fzd1_site": "CRD (112-238)",
+            "partner_site": "Lipid-modified C-terminus",
+            "kd_nm": 20,
+            "method": "Bio-layer interferometry"
+          }
+        ],
+        "experimental_systems": ["Binding assay", "Functional assay"],
+        "evidence_quality": "High",
+        "databases": ["STRING", "IntAct"]
+      },
+      {
+        "interaction_id": "FZD1_INT_004",
+        "partner_gene": "LRP6",
+        "partner_uniprot": "O75581",
+        "partner_protein": "Low-density lipoprotein receptor-related protein 6",
+        "interaction_type": "Physical - Indirect (mediated by WNT)",
+        "binding_sites": [
+          {
+            "fzd1_site": "Full receptor complex",
+            "partner_site": "Extracellular domain",
+            "notes": "LRP6 forms co-receptor complex with FZD1 upon WNT binding. Does not bind directly to FZD1 in absence of WNT."
+          }
+        ],
+        "experimental_systems": ["Co-immunoprecipitation", "Functional assay", "Cryo-EM"],
+        "evidence_quality": "High",
+        "pmids": ["26689705"],
+        "databases": ["STRING", "Reactome", "IntAct"]
+      },
+      {
+        "interaction_id": "FZD1_INT_005",
+        "partner_gene": "LRP5",
+        "partner_uniprot": "O75197",
+        "partner_protein": "Low-density lipoprotein receptor-related protein 5",
+        "interaction_type": "Physical - Indirect (mediated by WNT)",
+        "binding_sites": [
+          {
+            "fzd1_site": "Full receptor complex",
+            "partner_site": "Extracellular domain",
+            "notes": "LRP5 serves as alternative co-receptor to LRP6"
+          }
+        ],
+        "experimental_systems": ["Co-immunoprecipitation", "Functional assay"],
+        "evidence_quality": "Medium",
+        "databases": ["STRING", "Reactome"]
+      },
+      {
+        "interaction_id": "FZD1_INT_006",
+        "partner_gene": "DVL1",
+        "partner_uniprot": "O14640",
+        "partner_protein": "Dishevelled-1",
+        "interaction_type": "Physical - Direct binding",
+        "binding_sites": [
+          {
+            "fzd1_site": "KTxxxW motif (601-607)",
+            "partner_site": "PDZ domain",
+            "notes": "High-affinity PDZ-mediated interaction. Quantitative Kd not available in current literature."
+          },
+          {
+            "fzd1_site": "Intracellular loop 3",
+            "partner_site": "DEP domain",
+            "notes": "Additional interaction site contributing to DVL recruitment"
+          }
+        ],
+        "experimental_systems": ["Co-immunoprecipitation", "Pull-down", "NMR", "BRET"],
+        "evidence_quality": "High",
+        "pmids": ["11960000", "32511261"],
+        "databases": ["STRING", "BioGRID", "IntAct"]
+      },
+      {
+        "interaction_id": "FZD1_INT_007",
+        "partner_gene": "DVL2",
+        "partner_uniprot": "O14641",
+        "partner_protein": "Dishevelled-2",
+        "interaction_type": "Physical - Direct binding",
+        "binding_sites": [
+          {
+            "fzd1_site": "KTxxxW motif (601-607)",
+            "partner_site": "PDZ domain",
+            "notes": "PDZ-mediated interaction enhanced by PI(4,5)P2 lipid binding"
+          }
+        ],
+        "experimental_systems": ["Co-immunoprecipitation", "Pull-down", "BRET"],
+        "evidence_quality": "High",
+        "databases": ["STRING", "BioGRID", "IntAct"]
+      },
+      {
+        "interaction_id": "FZD1_INT_008",
+        "partner_gene": "DVL3",
+        "partner_uniprot": "Q92997",
+        "partner_protein": "Dishevelled-3",
+        "interaction_type": "Physical - Direct binding",
+        "binding_sites": [
+          {
+            "fzd1_site": "KTxxxW motif (601-607)",
+            "partner_site": "PDZ domain",
+            "notes": "PDZ-mediated interaction similar to DVL1/2"
+          }
+        ],
+        "experimental_systems": ["Co-immunoprecipitation", "Pull-down"],
+        "evidence_quality": "High",
+        "databases": ["STRING", "BioGRID"]
+      },
+      {
+        "interaction_id": "FZD1_INT_009",
+        "partner_gene": "GNAQ",
+        "partner_uniprot": "P50148",
+        "partner_protein": "Guanine nucleotide-binding protein G(q) subunit alpha",
+        "interaction_type": "Physical - Direct binding",
+        "binding_sites": [
+          {
+            "fzd1_site": "Intracellular surface of 7TM domain",
+            "partner_site": "G-alpha interface",
+            "notes": "Determined by cryo-EM structure PDB 8J9N"
+          }
+        ],
+        "experimental_systems": ["Cryo-EM", "Co-immunoprecipitation"],
+        "evidence_quality": "High",
+        "pmids": ["36624372"],
+        "databases": ["STRING", "Reactome"],
+        "structural_evidence": "8J9N"
+      },
+      {
+        "interaction_id": "FZD1_INT_010",
+        "partner_gene": "CTNNB1",
+        "partner_uniprot": "P35222",
+        "partner_protein": "Beta-catenin",
+        "interaction_type": "Functional",
+        "binding_sites": [],
+        "experimental_systems": ["Pathway analysis", "Reporter assay"],
+        "evidence_quality": "Medium",
+        "databases": ["STRING", "Reactome"],
+        "notes": "Indirect interaction through canonical Wnt signaling pathway"
+      },
+      {
+        "interaction_id": "FZD1_INT_011",
+        "partner_gene": "AXIN1",
+        "partner_uniprot": "O15169",
+        "partner_protein": "Axin-1",
+        "interaction_type": "Functional",
+        "binding_sites": [],
+        "experimental_systems": ["Pathway analysis"],
+        "evidence_quality": "Medium",
+        "databases": ["STRING", "Reactome"],
+        "notes": "Indirect interaction through canonical Wnt signaling pathway"
+      },
+      {
+        "interaction_id": "FZD1_INT_012",
+        "partner_gene": "GSK3B",
+        "partner_uniprot": "P49841",
+        "partner_protein": "Glycogen synthase kinase-3 beta",
+        "interaction_type": "Functional",
+        "binding_sites": [],
+        "experimental_systems": ["Pathway analysis"],
+        "evidence_quality": "Medium",
+        "databases": ["STRING", "Reactome"],
+        "notes": "Indirect interaction through canonical Wnt signaling pathway"
+      },
+      {
+        "interaction_id": "FZD1_INT_013",
+        "partner_gene": "ZNRF3",
+        "partner_uniprot": "Q9ULT6",
+        "partner_protein": "E3 ubiquitin-protein ligase ZNRF3",
+        "interaction_type": "Physical - Direct binding",
+        "binding_sites": [
+          {
+            "fzd1_site": "Extracellular and transmembrane regions",
+            "partner_site": "RING domain",
+            "notes": "ZNRF3 ubiquitinates FZD1 to promote receptor degradation"
+          }
+        ],
+        "experimental_systems": ["Co-immunoprecipitation", "Ubiquitination assay"],
+        "evidence_quality": "High",
+        "databases": ["STRING", "Reactome"]
+      },
+      {
+        "interaction_id": "FZD1_INT_014",
+        "partner_gene": "RNF43",
+        "partner_uniprot": "Q68DV7",
+        "partner_protein": "E3 ubiquitin-protein ligase RNF43",
+        "interaction_type": "Physical - Direct binding",
+        "binding_sites": [
+          {
+            "fzd1_site": "Extracellular and transmembrane regions",
+            "partner_site": "RING domain",
+            "notes": "RNF43 ubiquitinates FZD1 to promote receptor degradation"
+          }
+        ],
+        "experimental_systems": ["Co-immunoprecipitation", "Ubiquitination assay"],
+        "evidence_quality": "High",
+        "databases": ["STRING", "Reactome"]
+      }
+    ],
     "string_network": {
       "url": "https://string-db.org/network/9606.ENSP00000287934",
-      "top_interactors": [
-        {
-          "partner_gene": "DVL1",
-          "partner_protein": "Dishevelled-1",
-          "combined_score": 0.98,
-          "evidence_types": ["experimental", "database", "coexpression"]
-        },
-        {
-          "partner_gene": "LRP6",
-          "partner_protein": "Low-density lipoprotein receptor-related protein 6",
-          "combined_score": 0.976,
-          "evidence_types": ["experimental", "database", "coexpression"]
-        },
-        {
-          "partner_gene": "DVL2",
-          "partner_protein": "Dishevelled-2",
-          "combined_score": 0.97,
-          "evidence_types": ["experimental", "database", "coexpression"]
-        },
-        {
-          "partner_gene": "WNT3A",
-          "partner_protein": "Wnt-3a",
-          "combined_score": 0.95,
-          "evidence_types": ["experimental", "database", "textmining"]
-        },
-        {
-          "partner_gene": "CTNNB1",
-          "partner_protein": "Beta-catenin",
-          "combined_score": 0.93,
-          "evidence_types": ["database", "coexpression", "textmining"]
-        },
-        {
-          "partner_gene": "WNT1",
-          "partner_protein": "Wnt-1",
-          "combined_score": 0.92,
-          "evidence_types": ["experimental", "database", "textmining"]
-        },
-        {
-          "partner_gene": "LRP5",
-          "partner_protein": "Low-density lipoprotein receptor-related protein 5",
-          "combined_score": 0.91,
-          "evidence_types": ["experimental", "database", "coexpression"]
-        },
-        {
-          "partner_gene": "DVL3",
-          "partner_protein": "Dishevelled-3",
-          "combined_score": 0.90,
-          "evidence_types": ["experimental", "database", "coexpression"]
-        },
-        {
-          "partner_gene": "WNT3",
-          "partner_protein": "Wnt-3",
-          "combined_score": 0.88,
-          "evidence_types": ["experimental", "database", "textmining"]
-        },
-        {
-          "partner_gene": "WNT5A",
-          "partner_protein": "Wnt-5a",
-          "combined_score": 0.85,
-          "evidence_types": ["database", "coexpression", "textmining"]
-        },
-        {
-          "partner_gene": "ZNRF3",
-          "partner_protein": "E3 ubiquitin-protein ligase ZNRF3",
-          "combined_score": 0.82,
-          "evidence_types": ["experimental", "database"]
-        },
-        {
-          "partner_gene": "RNF43",
-          "partner_protein": "E3 ubiquitin-protein ligase RNF43",
-          "combined_score": 0.80,
-          "evidence_types": ["experimental", "database"]
-        }
-      ]
+      "top_interactors_summary": "WNT3A, DVL1, DVL2, DVL3, LRP6, LRP5, GNAQ all show high confidence scores (>0.7) in STRING database"
     },
-    "biogrid_interactions": [
-      {
-        "partner_gene": "LRP5",
-        "partner_protein": "Low-density lipoprotein receptor-related protein 5",
-        "interaction_type": "Physical",
-        "experimental_system": "Co-expression",
-        "pmid": "Multiple",
-        "throughput": "High"
-      },
-      {
-        "partner_gene": "WNT3A",
-        "partner_protein": "Wnt-3a",
-        "interaction_type": "Physical",
-        "experimental_system": "Binding assay",
-        "pmid": "Multiple",
-        "throughput": "Low"
-      },
-      {
-        "partner_gene": "DVL1",
-        "partner_protein": "Dishevelled-1",
-        "interaction_type": "Physical",
-        "experimental_system": "Co-IP / PDZ binding",
-        "pmid": "Multiple",
-        "throughput": "Low"
-      },
-      {
-        "partner_gene": "TOP3B",
-        "partner_protein": "DNA topoisomerase III beta",
-        "interaction_type": "Physical (RNA)",
-        "experimental_system": "RNA interaction",
-        "pmid": "Unknown",
-        "throughput": "High"
-      },
-      {
-        "partner_gene": "MKRN2",
-        "partner_protein": "Makorin ring finger protein 2",
-        "interaction_type": "Physical (RNA)",
-        "experimental_system": "RNA interaction",
-        "pmid": "Unknown",
-        "throughput": "High"
-      }
-    ],
-    "intact_interactions": [
-      {
-        "partner_gene": "WNT1",
-        "partner_protein": "Wnt-1",
-        "interaction_type": "Direct interaction",
-        "detection_method": "Surface plasmon resonance / Binding assay",
-        "pmid": "Multiple",
-        "interaction_accession": "EBI-Multiple"
-      },
-      {
-        "partner_gene": "DVL1",
-        "partner_protein": "Dishevelled-1",
-        "interaction_type": "Direct interaction",
-        "detection_method": "PDZ domain binding",
-        "pmid": "Multiple",
-        "interaction_accession": "EBI-Multiple"
-      },
-      {
-        "partner_gene": "LRP6",
-        "partner_protein": "Low-density lipoprotein receptor-related protein 6",
-        "interaction_type": "Association",
-        "detection_method": "Co-immunoprecipitation",
-        "pmid": "Multiple",
-        "interaction_accession": "EBI-Multiple"
-      }
-    ],
     "summary": {
-      "total_physical_interactors": 307,
-      "high_confidence_interactors": 12,
-      "key_binding_partners": [
-        "Dishevelled proteins (DVL1/2/3) - intracellular signal transduction",
-        "LRP5/6 - Wnt co-receptors",
-        "WNT ligands (WNT1, WNT3, WNT3A) - primary activators",
-        "ZNRF3/RNF43 - E3 ubiquitin ligases for receptor degradation",
-        "Beta-catenin (CTNNB1) - downstream effector"
-      ]
+      "total_physical_interactors": 11,
+      "high_confidence_interactors": 11,
+      "key_binding_partners": ["WNT3A", "WNT3", "WNT1", "DVL1", "DVL2", "DVL3", "LRP6", "LRP5", "GNAQ", "ZNRF3", "RNF43"]
     }
   },
   "pathways": {
@@ -495,28 +731,40 @@
         "url": "https://reactome.org/content/detail/R-HSA-195721"
       },
       {
-        "pathway_id": "R-HSA-3769370",
+        "pathway_id": "R-HSA-201681",
         "pathway_name": "TCF dependent signaling in response to WNT",
         "species": "Homo sapiens",
-        "url": "https://reactome.org/content/detail/R-HSA-3769370"
+        "url": "https://reactome.org/content/detail/R-HSA-201681"
       },
       {
-        "pathway_id": "R-HSA-4641263",
+        "pathway_id": "R-HSA-4641262",
         "pathway_name": "Disassembly of the destruction complex and recruitment of AXIN to the membrane",
         "species": "Homo sapiens",
-        "url": "https://reactome.org/content/detail/R-HSA-4641263"
+        "url": "https://reactome.org/content/detail/R-HSA-4641262"
       },
       {
-        "pathway_id": "R-HSA-201688",
+        "pathway_id": "R-HSA-3858494",
         "pathway_name": "Beta-catenin independent WNT signaling",
         "species": "Homo sapiens",
-        "url": "https://reactome.org/content/detail/R-HSA-201688"
+        "url": "https://reactome.org/content/detail/R-HSA-3858494"
       },
       {
-        "pathway_id": "R-HSA-3238698",
-        "pathway_name": "WNT ligand biogenesis and trafficking",
+        "pathway_id": "R-HSA-4608870",
+        "pathway_name": "Asymmetric localization of PCP proteins",
         "species": "Homo sapiens",
-        "url": "https://reactome.org/content/detail/R-HSA-3238698"
+        "url": "https://reactome.org/content/detail/R-HSA-4608870"
+      },
+      {
+        "pathway_id": "R-HSA-162582",
+        "pathway_name": "Signal Transduction",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-162582"
+      },
+      {
+        "pathway_id": "R-HSA-373076",
+        "pathway_name": "Class B/2 (Secretin family receptors)",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-373076"
       }
     ],
     "kegg": [
@@ -526,34 +774,9 @@
         "url": "https://www.genome.jp/pathway/hsa04310"
       },
       {
-        "pathway_id": "hsa04150",
-        "pathway_name": "mTOR signaling pathway",
-        "url": "https://www.genome.jp/pathway/hsa04150"
-      },
-      {
-        "pathway_id": "hsa04390",
-        "pathway_name": "Hippo signaling pathway",
-        "url": "https://www.genome.jp/pathway/hsa04390"
-      },
-      {
         "pathway_id": "hsa04550",
         "pathway_name": "Signaling pathways regulating pluripotency of stem cells",
         "url": "https://www.genome.jp/pathway/hsa04550"
-      },
-      {
-        "pathway_id": "hsa04916",
-        "pathway_name": "Melanogenesis",
-        "url": "https://www.genome.jp/pathway/hsa04916"
-      },
-      {
-        "pathway_id": "hsa05010",
-        "pathway_name": "Alzheimer disease",
-        "url": "https://www.genome.jp/pathway/hsa05010"
-      },
-      {
-        "pathway_id": "hsa05200",
-        "pathway_name": "Pathways in cancer",
-        "url": "https://www.genome.jp/pathway/hsa05200"
       },
       {
         "pathway_id": "hsa05217",
@@ -566,100 +789,77 @@
         "url": "https://www.genome.jp/pathway/hsa05224"
       },
       {
-        "pathway_id": "hsa05225",
-        "pathway_name": "Hepatocellular carcinoma",
-        "url": "https://www.genome.jp/pathway/hsa05225"
-      },
-      {
-        "pathway_id": "hsa05226",
-        "pathway_name": "Gastric cancer",
-        "url": "https://www.genome.jp/pathway/hsa05226"
+        "pathway_id": "hsa05200",
+        "pathway_name": "Pathways in cancer",
+        "url": "https://www.genome.jp/pathway/hsa05200"
       }
     ],
-    "pathway_role_summary": "FZD1 is a critical Wnt receptor in canonical (beta-catenin-dependent) and non-canonical (PCP) Wnt signaling pathways. Upon binding Wnt ligands (WNT1/3/3A), FZD1 recruits LRP5/6 co-receptors and DVL proteins, leading to destruction complex disassembly, beta-catenin stabilization, and TCF/LEF-mediated transcription. FZD1 is negatively regulated by ZNRF3/RNF43 E3 ligases via ubiquitination and degradation. Dysregulation of FZD1 is implicated in cancer, neurodegeneration, and developmental disorders."
+    "pathway_role_summary": "FZD1 functions as a seven-transmembrane receptor for WNT ligands in the canonical Wnt/beta-catenin signaling pathway. Upon WNT3A binding to the CRD domain, FZD1 forms a ternary complex with LRP5/6 co-receptors, leading to recruitment and activation of cytoplasmic Dishevelled (DVL) proteins through the C-terminal PDZ-binding motif. DVL recruitment triggers disassembly of the beta-catenin destruction complex, allowing beta-catenin nuclear translocation and TCF/LEF-mediated transcription. FZD1 can also signal through beta-catenin-independent (non-canonical) pathways including planar cell polarity (PCP) pathway. The receptor couples to heterotrimeric G proteins (particularly Gq) to activate downstream signaling cascades."
   },
   "disease_associations": [
     {
       "disease": "Omodysplasia",
-      "omim_id": "603408",
-      "mutation_type": "Germline",
-      "description": "Associated genetic variant; skeletal dysplasia disorder"
+      "omim_id": null,
+      "mutation_type": "Associated",
+      "description": "FZD1 has been associated with omodysplasia, a skeletal dysplasia condition"
+    },
+    {
+      "disease": "Colorectal cancer",
+      "omim_id": null,
+      "mutation_type": "Somatic alterations",
+      "description": "Alterations in FZD1 reported in colorectal cancer cases, though less common than APC mutations"
+    },
+    {
+      "disease": "Osteoporosis",
+      "omim_id": null,
+      "mutation_type": "Associated variants",
+      "description": "FZD1 promoter haplotypes associated with femoral neck geometry and bone mineral density"
     },
     {
       "disease": "Fallopian Tube Serous Adenocarcinoma",
       "omim_id": null,
-      "mutation_type": "Somatic",
-      "description": "FZD1 alterations observed in cancer"
-    },
-    {
-      "disease": "Colorectal Cancer",
-      "omim_id": null,
-      "mutation_type": "Somatic",
-      "description": "Pathogenic alterations including missense, nonsense, and frameshift mutations"
-    },
-    {
-      "disease": "Renal Cell Carcinoma (Clear Cell)",
-      "omim_id": null,
-      "mutation_type": "Somatic",
-      "description": "FZD1 overexpression associated with good prognosis but resistance to sunitinib"
-    },
-    {
-      "disease": "Neuroblastoma",
-      "omim_id": null,
-      "mutation_type": "Somatic",
-      "description": "FZD1 upregulation mediates chemoresistance via Wnt/beta-catenin pathway activation"
-    },
-    {
-      "disease": "Glioblastoma (GBM)",
-      "omim_id": null,
-      "mutation_type": "Somatic",
-      "description": "Potential prognostic unfavorable marker; involved in tumor progression"
-    },
-    {
-      "disease": "Acute Myeloid Leukemia",
-      "omim_id": null,
-      "mutation_type": "Somatic",
-      "description": "FZD1 mediates drug resistance"
-    },
-    {
-      "disease": "Breast Cancer",
-      "omim_id": null,
-      "mutation_type": "Somatic",
-      "description": "FZD1 mediates drug resistance and tumor progression"
+      "mutation_type": "Associated",
+      "description": "Disease association reported in cancer genomics databases"
     }
   ],
   "cross_references": {
     "ncbi_gene_id": "8321",
     "ensembl_gene_id": "ENSG00000157240",
-    "refseq_protein": ["NP_003496.1"],
+    "ensembl_protein_id": "ENSP00000287934",
+    "refseq_protein": ["NP_003496.2"],
     "refseq_nucleotide": ["NM_003505.2"],
     "hgnc_id": "HGNC:4038",
-    "omim_gene": "603408"
+    "omim_gene": "603408",
+    "string_id": "9606.ENSP00000287934",
+    "biogrid_id": "113361",
+    "intact_id": "EBI-1056134",
+    "reactome_id": "UniProt:Q9UP38",
+    "chromosomal_location": "7q21.13",
+    "pdb_entries": ["8J9N", "8J9O"]
   },
   "metadata": {
-    "generated_at": "2026-09-30T00:00:00Z",
+    "generated_at": "2026-10-01T00:00:00Z",
     "queried_databases": [
       "UniProt",
       "NCBI Gene",
-      "NCBI RefSeq",
       "Ensembl",
       "InterPro",
       "Pfam",
       "PROSITE",
       "SMART",
       "PDB",
-      "AlphaFold",
+      "AlphaFold DB",
       "STRING",
       "BioGRID",
       "IntAct",
       "Reactome",
       "KEGG",
-      "GO",
-      "OMIM",
+      "GO Consortium",
       "GeneCards",
-      "PhosphoSitePlus"
+      "Human Protein Atlas",
+      "ELM"
     ],
-    "data_quality_notes": "Comprehensive data collected from multiple authoritative sources. Canonical sequence extracted from PDB structure 8J9N (579 residues shown in structure correspond to mature protein without signal peptide). Full 647 aa sequence includes signal peptide and N-terminal region. Specific phosphorylation sites not detailed in this digest but available in PhosphoSitePlus (Q9UP38). Ubiquitination sites not precisely mapped but ZNRF3/RNF43-mediated ubiquitination experimentally validated. Only one canonical isoform reported in major databases. Disulfide bond pattern critical for CRD structure and Wnt binding.",
-    "modeling_relevance_summary": "FZD1 is a critical node in Wnt signaling networks essential for modeling canonical and non-canonical Wnt pathways. Key features for signaling models: (1) Wnt ligand selectivity (WNT1/3/3A high affinity); (2) LRP5/6 co-receptor requirement; (3) DVL recruitment via C-terminal PDZ motif; (4) ZNRF3/RNF43-mediated degradation as negative feedback; (5) Tissue-specific expression patterns; (6) Disease relevance in cancer and development. Cryo-EM structures (8J9O, 8J9N) provide structural basis for active/inactive states and G protein coupling. Critical for modeling Wnt pathway activation, signal amplification, receptor turnover, and pathway crosstalk with Hippo and mTOR signaling."
+    "data_quality_notes": "Comprehensive data compiled from primary databases. UniProt entry Q9UP38 is reviewed (Swiss-Prot quality). High-quality cryo-EM structures available for both active (Gq-coupled, PDB 8J9N, 3.6Å) and inactive (apo, PDB 8J9O, 3.4Å) states. WNT3A binding affinity well-characterized with Kd ~3.5-12.5 nM depending on experimental conditions. DVL interaction through PDZ-binding motif well-documented but quantitative Kd values not available. N-glycosylation and O-glycosylation sites are predicted based on sequon motifs and require experimental validation. Disulfide bond pattern inferred from family conservation and structural studies of related FZD receptors. TM helix boundaries estimated from structural studies and sequence alignments. LRP5/6 co-receptor interaction is WNT-dependent and indirect. AlphaFold structure prediction shows high confidence for structured domains (CRD, 7TM) and lower confidence for flexible regions (loops, termini).",
+    "modeling_relevance_summary": "FZD1 is an excellent candidate for rule-based modeling of canonical Wnt signaling pathway. Key features for modeling: (1) Well-characterized ligand binding with quantitative Kd values for WNT3A (3.5 nM), WNT3 (15 nM), and WNT1 (20 nM); (2) Ternary complex formation with WNT and LRP5/6 co-receptors representing cooperative binding; (3) Multiple DVL recruitment through PDZ-binding motif enabling signal amplification; (4) GPCR coupling to Gq protein with structural evidence (PDB 8J9N); (5) Post-translational modifications (N-glycosylation, O-glycosylation, phosphorylation, palmitoylation) providing regulatory mechanisms; (6) Distinct active/inactive conformations captured by cryo-EM structures; (7) Integration point for canonical and non-canonical Wnt pathways; (8) Expression across multiple tissues enabling tissue-specific modeling. Main challenges: DVL binding kinetics not quantitatively characterized; LRP5/6 co-receptor interaction is complex and WNT-dependent; receptor oligomerization state unclear; endocytosis and trafficking dynamics not well-defined; relative contributions of canonical vs. non-canonical signaling difficult to parse. The 10 conserved cysteines forming 5 disulfide bonds in CRD domain are critical for proper folding and WNT recognition. The KTxxxW motif (KQRDDYS in FZD1, residues 601-607) is essential for DVL recruitment and downstream signaling. Disease associations (cancer, osteoporosis) provide validation opportunities for pathway models."
   }
 }
