@@ -2,7 +2,6 @@
   "protein_identifier": {
     "gene_name": "CTNNB1",
     "protein_name": "Catenin beta-1",
-    "common_name": "Beta-catenin",
     "uniprot_accession": "P35222",
     "organism": "Homo sapiens",
     "organism_taxid": 9606
@@ -20,793 +19,1160 @@
       }
     ]
   },
-  "domains_and_motifs": {
-    "interpro_entries": [
-      {
-        "id": "domain_IPR000225",
-        "accession": "IPR000225",
-        "name": "Armadillo",
-        "type": "Domain",
-        "locations": [{"start": 151, "end": 636}]
-      },
-      {
-        "id": "domain_IPR011989",
-        "accession": "IPR011989",
-        "name": "Armadillo-like helical",
-        "type": "Homologous Superfamily",
-        "locations": [{"start": 141, "end": 664}]
-      },
-      {
-        "id": "domain_IPR016024",
-        "accession": "IPR016024",
-        "name": "Armadillo-type fold",
-        "type": "Domain",
-        "locations": [{"start": 141, "end": 664}]
-      },
-      {
-        "id": "domain_IPR013284",
-        "accession": "IPR013284",
-        "name": "Beta-catenin",
-        "type": "Family",
-        "locations": [{"start": 87, "end": 627}]
-      }
-    ],
-    "pfam_domains": [
-      {
-        "id": "domain_PF00514",
-        "accession": "PF00514",
-        "name": "Armadillo/beta-catenin-like repeat",
-        "clan": "CL0020",
-        "locations": [{"start": 151, "end": 636}],
-        "e_value": 1e-50,
-        "description": "Central armadillo repeat domain consisting of 12 repeats of approximately 42 amino acids each"
-      }
-    ],
-    "prosite_patterns": [
-      {
-        "id": "domain_PS50176",
-        "accession": "PS50176",
-        "name": "ARM_REPEAT",
-        "locations": [
-          {"start": 151, "end": 191},
-          {"start": 193, "end": 234},
-          {"start": 235, "end": 276},
-          {"start": 277, "end": 318},
-          {"start": 319, "end": 360},
-          {"start": 361, "end": 389},
-          {"start": 400, "end": 441},
-          {"start": 442, "end": 484},
-          {"start": 489, "end": 530},
-          {"start": 531, "end": 571},
-          {"start": 594, "end": 636},
-          {"start": 637, "end": 666}
-        ],
-        "description": "Armadillo/plakoglobin ARM repeat profile. Each repeat consists of alpha helices forming hairpin structures. The 12 repeats form superhelix mediating protein-protein interactions"
-      }
-    ],
-    "smart_domains": [
-      {
-        "id": "domain_SM00185",
-        "accession": "SM00185",
-        "name": "ARM",
-        "locations": [{"start": 151, "end": 636}],
-        "description": "Armadillo repeat domain spanning 12 tandem repeats forming superhelix for protein binding"
-      }
-    ],
-    "armadillo_repeats": [
-      {
-        "id": "motif_ARM1",
-        "repeat_number": 1,
-        "name": "ARM repeat 1",
-        "type": "Armadillo repeat",
-        "location": {"start": 141, "end": 183},
-        "description": "First ARM repeat with structurally dynamic properties; helix H1 and H2 fused into single elongated helix with kink"
-      },
-      {
-        "id": "motif_ARM2",
-        "repeat_number": 2,
-        "name": "ARM repeat 2",
-        "type": "Armadillo repeat",
-        "location": {"start": 184, "end": 226},
-        "description": "Second ARM repeat; part of binding interface for partner proteins; contributes to positively charged groove spanning ARM2-10"
-      },
-      {
-        "id": "motif_ARM3",
-        "repeat_number": 3,
-        "name": "ARM repeat 3",
-        "type": "Armadillo repeat",
-        "location": {"start": 227, "end": 268},
-        "description": "Third ARM repeat; beginning of core binding groove (ARM3-9) for TCF/LEF and E-cadherin partners"
-      },
-      {
-        "id": "motif_ARM4",
-        "repeat_number": 4,
-        "name": "ARM repeat 4",
-        "type": "Armadillo repeat",
-        "location": {"start": 269, "end": 310},
-        "description": "Fourth ARM repeat; part of core binding groove"
-      },
-      {
-        "id": "motif_ARM5",
-        "repeat_number": 5,
-        "name": "ARM repeat 5",
-        "type": "Armadillo repeat",
-        "location": {"start": 311, "end": 353},
-        "description": "Fifth ARM repeat containing Lys312, critical for salt bridge formation with binding partners including TCF/LEF and E-cadherin"
-      },
-      {
-        "id": "motif_ARM6",
-        "repeat_number": 6,
-        "name": "ARM repeat 6",
-        "type": "Armadillo repeat",
-        "location": {"start": 354, "end": 395},
-        "description": "Sixth ARM repeat; end of N-terminal half of ARM domain (residues 141-395)"
-      },
-      {
-        "id": "motif_ARM7",
-        "repeat_number": 7,
-        "name": "ARM repeat 7",
-        "type": "Armadillo repeat",
-        "location": {"start": 396, "end": 437},
-        "description": "Seventh ARM repeat; beginning of C-terminal half (residues 396-664); structurally atypical without standard three-helix structure"
-      },
-      {
-        "id": "motif_ARM8",
-        "repeat_number": 8,
-        "name": "ARM repeat 8",
-        "type": "Armadillo repeat",
-        "location": {"start": 438, "end": 479},
-        "description": "Eighth ARM repeat; contains Lys435 critical for salt bridge formation with TCF/LEF and other binding partners"
-      },
-      {
-        "id": "motif_ARM9",
-        "repeat_number": 9,
-        "name": "ARM repeat 9",
-        "type": "Armadillo repeat",
-        "location": {"start": 480, "end": 521},
-        "description": "Ninth ARM repeat; end of core binding groove (ARM3-9) for major binding partners"
-      },
-      {
-        "id": "motif_ARM10",
-        "repeat_number": 10,
-        "name": "ARM repeat 10",
-        "type": "Armadillo repeat",
-        "location": {"start": 522, "end": 563},
-        "description": "Tenth ARM repeat; contributes to extended binding groove"
-      },
-      {
-        "id": "motif_ARM11",
-        "repeat_number": 11,
-        "name": "ARM repeat 11",
-        "type": "Armadillo repeat",
-        "location": {"start": 564, "end": 621},
-        "description": "Eleventh ARM repeat"
-      },
-      {
-        "id": "motif_ARM12",
-        "repeat_number": 12,
-        "name": "ARM repeat 12",
-        "type": "Armadillo repeat",
-        "location": {"start": 622, "end": 664},
-        "description": "Twelfth and final ARM repeat; capped by C-terminal helix C (residues 667-683)"
-      }
-    ],
-    "signaling_motifs": [
-      {
-        "id": "motif_destruction_box",
-        "type": "Destruction box (phosphodegron)",
-        "location": {"start": 29, "end": 45},
-        "sequence": "SGIHSGATTTAPSLSGK",
-        "description": "N-terminal destruction box containing sequential phosphorylation sites for CK1 (Ser45) and GSK3B (Thr41, Ser37, Ser33) that target beta-catenin for ubiquitination and degradation"
-      },
-      {
-        "id": "motif_pSer45_CK1",
-        "type": "CK1 phosphorylation site (priming)",
-        "location": {"start": 45, "end": 45},
-        "sequence": "S",
-        "residue": "Ser45",
-        "description": "Priming phosphorylation site for CK1alpha; initiates sequential phosphorylation cascade; necessary and sufficient for GSK3B recognition"
-      },
-      {
-        "id": "motif_pThr41_GSK3B",
-        "type": "GSK3B phosphorylation site (relay)",
-        "location": {"start": 41, "end": 41},
-        "sequence": "T",
-        "residue": "Thr41",
-        "description": "GSK3B phosphorylation relay residue; strictly required for sequential phosphorylation after Ser45 priming; bridges Ser45 to Ser37/Ser33"
-      },
-      {
-        "id": "motif_pSer37_GSK3B",
-        "type": "GSK3B phosphorylation site (beta-TrCP recognition)",
-        "location": {"start": 37, "end": 37},
-        "sequence": "S",
-        "residue": "Ser37",
-        "description": "GSK3B phosphorylation site; creates beta-TrCP recognition motif DSGXXpS with pSer33"
-      },
-      {
-        "id": "motif_pSer33_GSK3B",
-        "type": "GSK3B phosphorylation site (beta-TrCP recognition)",
-        "location": {"start": 33, "end": 33},
-        "sequence": "S",
-        "residue": "Ser33",
-        "description": "GSK3B phosphorylation site; phosphorylation with pSer37 creates DSGXXpS motif recognized by beta-TrCP E3 ligase; most frequently mutated site in cancer"
-      },
-      {
-        "id": "motif_ubiq_Lys19",
-        "type": "Ubiquitination site (primary)",
-        "location": {"start": 19, "end": 19},
-        "sequence": "K",
-        "residue": "Lys19",
-        "description": "Primary beta-TrCP-dependent ubiquitination site for proteasomal targeting; one of only two lysines in N-terminal 130 residues"
-      },
-      {
-        "id": "motif_ubiq_Lys49",
-        "type": "Ubiquitination site (secondary) / Acetylation site",
-        "location": {"start": 49, "end": 49},
-        "sequence": "K",
-        "residue": "Lys49",
-        "description": "Secondary/cryptic beta-TrCP-dependent ubiquitination site; acetylation at this site by HDAC6 reduces ubiquitination and modulates stability"
-      },
-      {
-        "id": "motif_alpha_catenin_binding",
-        "type": "Alpha-catenin binding site",
-        "location": {"start": 120, "end": 147},
-        "description": "Extended helix region forming binding site for alpha-catenin in adherens junctions; links E-cadherin complex to actin cytoskeleton"
-      },
-      {
-        "id": "motif_Lys312_salt_bridge",
-        "type": "Salt bridge residue (binding determinant)",
-        "location": {"start": 312, "end": 312},
-        "sequence": "K",
-        "residue": "Lys312",
-        "description": "Critical lysine in ARM5 forming salt bridges with TCF/LEF transcription factors and other binding partners; part of core binding groove"
-      },
-      {
-        "id": "motif_Lys435_salt_bridge",
-        "type": "Salt bridge residue (binding determinant)",
-        "location": {"start": 435, "end": 435},
-        "sequence": "K",
-        "residue": "Lys435",
-        "description": "Critical lysine in ARM8 forming salt bridges with TCF/LEF and other binding partners; together with Lys312 defines binding specificity"
-      },
-      {
-        "id": "motif_C_terminal_transactivation",
-        "type": "Transactivation domain (C-terminal)",
-        "location": {"start": 667, "end": 781},
-        "description": "C-terminal transactivation domain (CTD) containing helix C (667-683) and intrinsically disordered region with glutamine-rich repeats; interacts with transcriptional co-activators CBP/p300, BCL9; critical for Wnt signaling transcriptional output"
-      },
-      {
-        "id": "motif_N_terminal_transactivation",
-        "type": "Transactivation domain (N-terminal)",
-        "location": {"start": 1, "end": 132},
-        "description": "N-terminal transactivation domain with independent transcriptional activation capability; contains destruction box and regulatory phosphorylation sites"
-      },
-      {
-        "id": "motif_helix_C",
-        "type": "C-terminal capping helix",
-        "location": {"start": 667, "end": 683},
-        "description": "Alpha helix C that packs against hydrophobic residues from ARM12, capping the C-terminal end of armadillo repeat region"
-      }
-    ]
-  },
+  "domains_and_motifs": [
+    {
+      "domain_motif_id": "DM_CTNNB1_001",
+      "name": "ARM repeat 1",
+      "type": "Armadillo_repeat",
+      "locations": [{"start": 141, "end": 183}],
+      "sequence": "RAIPELTKLLNDEDQVVVNKAAVMVHQLSKKEASRHAIMRSQ",
+      "description": "First ARM repeat with structurally dynamic properties; helix H1 and H2 fused into single elongated helix with kink; involved in CK1alpha binding and recognition",
+      "sources": [
+        {
+          "database": "PROSITE",
+          "accession": "PS50176",
+          "notes": "Armadillo/plakoglobin ARM repeat profile"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:17052462",
+          "notes": "Structural characterization showing atypical helix fusion"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_002",
+      "name": "ARM repeat 2",
+      "type": "Armadillo_repeat",
+      "locations": [{"start": 184, "end": 226}],
+      "sequence": "MQMVSAIVRTMQNTNDVETARCTAGTLHNLSHHREGLLAIFK",
+      "description": "Second ARM repeat; part of binding interface for partner proteins; contributes to positively charged groove spanning ARM2-10",
+      "sources": [
+        {
+          "database": "PROSITE",
+          "accession": "PS50176",
+          "notes": "Armadillo/plakoglobin ARM repeat profile"
+        },
+        {
+          "database": "InterPro",
+          "accession": "IPR000225",
+          "notes": "Armadillo domain"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_003",
+      "name": "ARM repeat 3",
+      "type": "Armadillo_repeat",
+      "locations": [{"start": 227, "end": 268}],
+      "sequence": "SGGIPALVKMLGSPVDSVLFYAITTLHNLLLHQEGAKMAV",
+      "description": "Third ARM repeat; beginning of core binding groove (ARM3-9) for TCF/LEF and E-cadherin partners",
+      "sources": [
+        {
+          "database": "PROSITE",
+          "accession": "PS50176",
+          "notes": "Armadillo/plakoglobin ARM repeat profile"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF00514",
+          "clan": "CL0020",
+          "e_value": 1e-50,
+          "notes": "Armadillo/beta-catenin-like repeat"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_004",
+      "name": "ARM repeat 4",
+      "type": "Armadillo_repeat",
+      "locations": [{"start": 269, "end": 310}],
+      "sequence": "RLAGGLQKMVALLNKTNVKFLAITTDCLQILAYGNQESKLI",
+      "description": "Fourth ARM repeat; part of core binding groove",
+      "sources": [
+        {
+          "database": "PROSITE",
+          "accession": "PS50176",
+          "notes": "Armadillo/plakoglobin ARM repeat profile"
+        },
+        {
+          "database": "SMART",
+          "accession": "SM00185",
+          "notes": "ARM domain"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_005",
+      "name": "ARM repeat 5",
+      "type": "Armadillo_repeat",
+      "locations": [{"start": 311, "end": 353}],
+      "sequence": "ILASGGPQALVNIMRTYTYEKLLWTTSRVLKVLSVCSSNKPA",
+      "description": "Fifth ARM repeat containing Lys312, critical for salt bridge formation with binding partners including TCF/LEF and E-cadherin",
+      "sources": [
+        {
+          "database": "PROSITE",
+          "accession": "PS50176",
+          "notes": "Armadillo/plakoglobin ARM repeat profile"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:11357125",
+          "notes": "Lys312 identified as key salt bridge residue in TCF4 binding"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_006",
+      "name": "ARM repeat 6",
+      "type": "Armadillo_repeat",
+      "locations": [{"start": 354, "end": 395}],
+      "sequence": "IVEAGGMQALGLHLTDPSQRLVQNCLWTLRNLSDAATKV",
+      "description": "Sixth ARM repeat; end of N-terminal half of ARM domain (residues 141-395)",
+      "sources": [
+        {
+          "database": "PROSITE",
+          "accession": "PS50176",
+          "notes": "Armadillo/plakoglobin ARM repeat profile"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_007",
+      "name": "ARM repeat 7",
+      "type": "Armadillo_repeat",
+      "locations": [{"start": 396, "end": 437}],
+      "sequence": "KEITASWMKLHAGDAAFDNKKFFVPRTCPEKHAQEFLSQLC",
+      "description": "Seventh ARM repeat; beginning of C-terminal half (residues 396-664); structurally atypical without standard three-helix structure",
+      "sources": [
+        {
+          "database": "PROSITE",
+          "accession": "PS50176",
+          "notes": "Armadillo/plakoglobin ARM repeat profile"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_008",
+      "name": "ARM repeat 8",
+      "type": "Armadillo_repeat",
+      "locations": [{"start": 438, "end": 479}],
+      "sequence": "EAGDQLAAYNLIRGSDISRFQASANLLQSTHVAVQPTSDSF",
+      "description": "Eighth ARM repeat; contains Lys435 critical for salt bridge formation with TCF/LEF and other binding partners",
+      "sources": [
+        {
+          "database": "PROSITE",
+          "accession": "PS50176",
+          "notes": "Armadillo/plakoglobin ARM repeat profile"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:11357125",
+          "notes": "Lys435 identified as key salt bridge residue"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_009",
+      "name": "ARM repeat 9",
+      "type": "Armadillo_repeat",
+      "locations": [{"start": 480, "end": 521}],
+      "sequence": "EIPDDVPLPAGWEMAKTSSGQRYFLNHIDQTTTWQDPRKAML",
+      "description": "Ninth ARM repeat; end of core binding groove (ARM3-9) for major binding partners",
+      "sources": [
+        {
+          "database": "PROSITE",
+          "accession": "PS50176",
+          "notes": "Armadillo/plakoglobin ARM repeat profile"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_010",
+      "name": "ARM repeat 10",
+      "type": "Armadillo_repeat",
+      "locations": [{"start": 522, "end": 563}],
+      "sequence": "SQMNVTAPTSPPVQQNMMNSASGPLPDGWEQAMTQDGEIYI",
+      "description": "Tenth ARM repeat; contributes to extended binding groove; contains 14-residue insertion between helix 2 and 3",
+      "sources": [
+        {
+          "database": "PROSITE",
+          "accession": "PS50176",
+          "notes": "Armadillo/plakoglobin ARM repeat profile"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:9733643",
+          "notes": "ARM10 has unique 14-residue insertion"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_011",
+      "name": "ARM repeat 11",
+      "type": "Armadillo_repeat",
+      "locations": [{"start": 564, "end": 621}],
+      "sequence": "NHKNKTTSWLDPRLDPRFAMNQRISQSAPVKQPPPLAPQSPQGGVMPNHPLSGFPAP",
+      "description": "Eleventh ARM repeat; part of R11-C transactivation region essential for Wnt target gene activation",
+      "sources": [
+        {
+          "database": "PROSITE",
+          "accession": "PS50176",
+          "notes": "Armadillo/plakoglobin ARM repeat profile"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_012",
+      "name": "ARM repeat 12",
+      "type": "Armadillo_repeat",
+      "locations": [{"start": 622, "end": 664}],
+      "sequence": "PQGCEEAPCCWSSIPMSPPMPSPHPSPLMSYPGLSPPSAAAGLPF",
+      "description": "Twelfth and final ARM repeat; capped by C-terminal helix C (residues 667-683)",
+      "sources": [
+        {
+          "database": "PROSITE",
+          "accession": "PS50176",
+          "notes": "Armadillo/plakoglobin ARM repeat profile"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_013",
+      "name": "Destruction box (phosphodegron)",
+      "type": "Degron",
+      "locations": [{"start": 29, "end": 45}],
+      "sequence": "SGIHSGATTTAPSLSGK",
+      "description": "N-terminal destruction box containing sequential phosphorylation sites for CK1 (Ser45) and GSK3B (Thr41, Ser37, Ser33) that target beta-catenin for ubiquitination and degradation",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "P35222",
+          "notes": "Destruction box region"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:10428031",
+          "notes": "Characterization of sequential phosphorylation and beta-TrCP recognition"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_014",
+      "name": "Ser45 (CK1 priming site)",
+      "type": "Phosphorylation_site",
+      "locations": [{"start": 45, "end": 45}],
+      "sequence": "S",
+      "description": "Priming phosphorylation site for CK1alpha; initiates sequential phosphorylation cascade; necessary and sufficient for GSK3B recognition",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "P35222",
+          "notes": "MOD_RES 45; Phosphoserine; by CSNK1A1"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:12878698",
+          "notes": "Ser45 as priming site"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_015",
+      "name": "Thr41 (GSK3B site)",
+      "type": "Phosphorylation_site",
+      "locations": [{"start": 41, "end": 41}],
+      "sequence": "T",
+      "description": "GSK3B phosphorylation relay residue; strictly required for sequential phosphorylation after Ser45 priming; bridges Ser45 to Ser37/Ser33",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "P35222",
+          "notes": "MOD_RES 41; Phosphothreonine; by GSK3B"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_016",
+      "name": "Ser37 (GSK3B site, beta-TrCP recognition)",
+      "type": "Phosphorylation_site",
+      "locations": [{"start": 37, "end": 37}],
+      "sequence": "S",
+      "description": "GSK3B phosphorylation site; creates beta-TrCP recognition motif DSGXXpS with pSer33",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "P35222",
+          "notes": "MOD_RES 37; Phosphoserine; by GSK3B"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_017",
+      "name": "Ser33 (GSK3B site, beta-TrCP recognition)",
+      "type": "Phosphorylation_site",
+      "locations": [{"start": 33, "end": 33}],
+      "sequence": "S",
+      "description": "GSK3B phosphorylation site; phosphorylation with pSer37 creates DSGXXpS motif recognized by beta-TrCP E3 ligase; most frequently mutated site in cancer",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "P35222",
+          "notes": "MOD_RES 33; Phosphoserine; by GSK3B"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:15327768",
+          "notes": "Critical for beta-TrCP recognition"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_018",
+      "name": "Lys19 ubiquitination site",
+      "type": "Ubiquitination_site",
+      "locations": [{"start": 19, "end": 19}],
+      "sequence": "K",
+      "description": "Primary beta-TrCP-dependent ubiquitination site for proteasomal targeting; one of only two lysines in N-terminal 130 residues",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "P35222",
+          "notes": "MOD_RES 19; N6-ubiquitinyl lysine"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_019",
+      "name": "Lys49 ubiquitination/acetylation site",
+      "type": "Ubiquitination_site",
+      "locations": [{"start": 49, "end": 49}],
+      "sequence": "K",
+      "description": "Secondary/cryptic beta-TrCP-dependent ubiquitination site; acetylation at this site by HDAC6 reduces ubiquitination and modulates stability",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "P35222",
+          "notes": "MOD_RES 49; N6-ubiquitinyl lysine and N6-acetyllysine"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_020",
+      "name": "Alpha-catenin binding site",
+      "type": "Binding_site",
+      "locations": [{"start": 120, "end": 147}],
+      "sequence": "EELATRAIPELTKLLNDEDQVVVNKAA",
+      "description": "Extended helix region forming binding site for alpha-catenin in adherens junctions; links E-cadherin complex to actin cytoskeleton",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "PMID:11357122",
+          "notes": "Structural characterization of alpha-catenin binding"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_021",
+      "name": "Lys312 salt bridge residue",
+      "type": "Binding_site",
+      "locations": [{"start": 312, "end": 312}],
+      "sequence": "K",
+      "description": "Critical lysine in ARM5 forming salt bridges with TCF/LEF transcription factors and other binding partners; part of core binding groove",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "PMID:11357125",
+          "notes": "Key residue for TCF4 binding via salt bridge"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_022",
+      "name": "Lys435 salt bridge residue",
+      "type": "Binding_site",
+      "locations": [{"start": 435, "end": 435}],
+      "sequence": "K",
+      "description": "Critical lysine in ARM8 forming salt bridges with TCF/LEF and other binding partners; together with Lys312 defines binding specificity",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "PMID:11357125",
+          "notes": "Key residue for TCF4 binding via salt bridge"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_023",
+      "name": "C-terminal transactivation domain",
+      "type": "Domain",
+      "locations": [{"start": 667, "end": 781}],
+      "sequence": "PNVEGTPPLGQSVSDAASAEQGTPPPRASQILKSSGDPQGCFQSTFNQCPCNSSKESSQVPVEVKCDVEKDCLELEGKGPDATGVGSSGFPVPESQDQDQRQEDPKQQKTSVQTSVPEEVQDQQVLQGPQAEQELELDCPQQLSLQVLQQQIPQQQQQQQQQQQQQQQHTPQQQQQQALQQPQVGQQQVQLQQHQQLQQQQHQHQLQQQQVSPASQQQ",
+      "description": "C-terminal transactivation domain (CTD) containing helix C (667-683) and intrinsically disordered region with glutamine-rich repeats; interacts with transcriptional co-activators CBP/p300, BCL9; critical for Wnt signaling transcriptional output",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "P35222",
+          "notes": "Region: Transactivation domain"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:18178557",
+          "notes": "C-terminal transactivation function"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_024",
+      "name": "N-terminal transactivation domain",
+      "type": "Domain",
+      "locations": [{"start": 1, "end": 132}],
+      "sequence": "MATQADLMELDMAMEPDRKAAVSHWQQQSYLDSGIHSGATTTAPSLSGKGNPEEEDVDTSQVLYEWEQGFSQSFTQEQVADIDGQYAMTRAQRVRAAMFPETLDEGMQIPSTQFDAAHPTNVQRLAEPSQMLKHAVVNLINYQDDAEE",
+      "description": "N-terminal transactivation domain with independent transcriptional activation capability; contains destruction box and regulatory phosphorylation sites",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "P35222",
+          "notes": "Region: Transactivation domain"
+        }
+      ]
+    },
+    {
+      "domain_motif_id": "DM_CTNNB1_025",
+      "name": "Helix C (C-terminal capping helix)",
+      "type": "Motif",
+      "locations": [{"start": 667, "end": 683}],
+      "sequence": "PNVEGTPPLGQSVSDAA",
+      "description": "Alpha helix C that packs against hydrophobic residues from ARM12, capping the C-terminal end of armadillo repeat region",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "PMID:18178557",
+          "notes": "Structural characterization of helix C"
+        }
+      ]
+    }
+  ],
   "structure": {
     "experimental_structures": [
       {
         "pdb_id": "1JDH",
-        "method": "X-ray diffraction",
+        "method": "X-ray",
         "resolution_angstrom": 1.9,
         "chain": "A",
         "coverage": {"start": 134, "end": 664},
-        "description": "Crystal structure of beta-catenin armadillo repeat region in complex with hTCF-4, showing TCF4 docking to beta-catenin through salt bridge interactions with Lys312",
+        "description": "Crystal structure of beta-catenin armadillo repeat region in complex with hTCF-4, showing TCF4 docking to beta-catenin through salt bridge interactions with Lys312 and Lys435",
         "ligands": [],
-        "partners": ["hTCF-4 (Chain B)"],
         "url": "https://www.rcsb.org/structure/1JDH"
       },
       {
         "pdb_id": "2Z6H",
-        "method": "X-ray diffraction",
+        "method": "X-ray",
         "resolution_angstrom": 2.2,
         "chain": "A",
         "coverage": {"start": 141, "end": 781},
-        "description": "Crystal structure of beta-catenin armadillo repeat region and its C-terminal domain; full-length structure showing ARM repeats plus C-terminal transactivation domain",
+        "description": "Full-length crystal structure of beta-catenin showing ARM repeats plus C-terminal transactivation domain with helix C capping ARM12",
         "ligands": [],
-        "partners": [],
         "url": "https://www.rcsb.org/structure/2Z6H"
       },
       {
-        "pdb_id": "7ZRB",
-        "method": "X-ray diffraction",
+        "pdb_id": "1I7X",
+        "method": "X-ray",
         "resolution_angstrom": 2.5,
         "chain": "A",
-        "coverage": {"start": 141, "end": 664},
-        "description": "Crystal structure of beta-catenin armadillo repeats domain in complex with inhibitor RS6452 targeting the ARM groove",
-        "ligands": ["RS6452"],
-        "partners": [],
-        "url": "https://www.rcsb.org/structure/7ZRB"
-      },
-      {
-        "pdb_id": "7AR4",
-        "method": "X-ray diffraction",
-        "resolution_angstrom": 2.1,
-        "chain": "A",
-        "coverage": {"start": 141, "end": 664},
-        "description": "Crystal structure of beta-catenin in complex with cyclic peptide inhibitor; demonstrates bicyclic beta-sheet mimetics targeting ARM groove",
-        "ligands": ["Cyclic peptide inhibitor"],
-        "partners": [],
-        "url": "https://www.rcsb.org/structure/7AR4"
+        "coverage": {"start": 134, "end": 665},
+        "description": "Beta-catenin/E-cadherin complex showing interaction spanning all 12 ARM repeats with E-cadherin cytoplasmic domain",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/1I7X"
       },
       {
         "pdb_id": "1V18",
-        "method": "X-ray diffraction",
+        "method": "X-ray",
         "resolution_angstrom": 2.1,
         "chain": "A",
         "coverage": {"start": 134, "end": 671},
-        "description": "Crystal structure of beta-catenin (mouse) complexed with phosphorylated APC 20mer repeat; demonstrates phosphorylation-dependent binding mechanism",
-        "ligands": ["Phosphoserine (SEP)"],
-        "partners": ["APC 20-residue repeat (phosphorylated)"],
+        "description": "Beta-catenin complexed with phosphorylated APC 20mer repeat; demonstrates phosphorylation-dependent high-affinity binding mechanism",
+        "ligands": ["Phosphoserine"],
         "url": "https://www.rcsb.org/structure/1V18"
+      },
+      {
+        "pdb_id": "1G3J",
+        "method": "X-ray",
+        "resolution_angstrom": 2.1,
+        "chain": "A",
+        "coverage": {"start": 134, "end": 664},
+        "description": "Crystal structure of beta-catenin armadillo repeat region in complex with Xenopus TCF3 beta-catenin binding domain",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/1G3J"
       }
     ],
     "alphafold_prediction": {
       "available": true,
       "accession": "AF-P35222-F1",
-      "global_pLDDT": 81.06,
-      "confidence_summary": "Overall confident prediction (pLDDT=81.06). High confidence expected for structured ARM repeat domain (residues 141-664). Lower confidence for disordered N-terminal regulatory region (1-140) and C-terminal transactivation domain (665-781) with glutamine-rich repeats and flexible sequences",
-      "url": "https://alphafold.ebi.ac.uk/entry/P35222",
-      "release_date": "2021-07-01",
-      "last_updated": "2025-08-01"
+      "confidence_summary": "Overall confident prediction (pLDDT=81.06). High confidence (>90) expected for structured ARM repeat domain (residues 141-664). Lower confidence for disordered N-terminal regulatory region (1-140) and C-terminal transactivation domain (665-781) with glutamine-rich repeats",
+      "url": "https://alphafold.ebi.ac.uk/entry/P35222"
     }
   },
   "post_translational_modifications": [
     {
-      "id": "ptm_pSer45_CK1",
       "type": "Phosphorylation",
       "position": 45,
       "residue": "S",
-      "function": "Priming phosphorylation by CK1alpha; initiates sequential phosphorylation cascade by GSK3B; necessary and sufficient for GSK3B recognition",
-      "enzyme": "CK1alpha (CSNK1A1)",
+      "function": "Priming phosphorylation by CK1alpha; initiates sequential phosphorylation cascade; necessary and sufficient for GSK3B recognition",
       "evidence": "Experimental"
     },
     {
-      "id": "ptm_pThr41_GSK3B",
       "type": "Phosphorylation",
       "position": 41,
       "residue": "T",
-      "function": "Phosphorylation relay residue; strictly required for sequential phosphorylation after Ser45 priming; conformational importance for GSK3B processivity",
-      "enzyme": "GSK3B",
+      "function": "GSK3B relay phosphorylation; strictly required after Ser45 priming",
       "evidence": "Experimental"
     },
     {
-      "id": "ptm_pSer37_GSK3B",
       "type": "Phosphorylation",
       "position": 37,
       "residue": "S",
-      "function": "Creates beta-TrCP recognition motif (DSGXXpS) with pSer33; triggers ubiquitination and degradation",
-      "enzyme": "GSK3B, HIPK2",
+      "function": "GSK3B phosphorylation; creates beta-TrCP recognition motif with pSer33",
       "evidence": "Experimental"
     },
     {
-      "id": "ptm_pSer33_GSK3B",
       "type": "Phosphorylation",
       "position": 33,
       "residue": "S",
-      "function": "Critical for beta-TrCP E3 ligase recognition; completes DSGXXpS degron motif; most frequently mutated in cancer",
-      "enzyme": "GSK3B, HIPK2",
+      "function": "GSK3B phosphorylation; critical for beta-TrCP recognition; most frequently mutated in cancer",
       "evidence": "Experimental"
     },
     {
-      "id": "ptm_pSer29",
-      "type": "Phosphorylation",
-      "position": 29,
-      "residue": "S",
-      "function": "Additional regulatory phosphorylation in destruction box region",
-      "enzyme": "GSK3B",
-      "evidence": "Experimental"
-    },
-    {
-      "id": "ptm_pTyr142_FYN",
-      "type": "Phosphorylation",
-      "position": 142,
-      "residue": "Y",
-      "function": "Tyrosine phosphorylation affecting cadherin binding and signaling",
-      "enzyme": "FYN, PTK6",
-      "evidence": "Experimental"
-    },
-    {
-      "id": "ptm_pSer552_PKA",
-      "type": "Phosphorylation",
-      "position": 552,
-      "residue": "S",
-      "function": "PKA-mediated activation of transcriptional activity",
-      "enzyme": "PKA",
-      "evidence": "Experimental"
-    },
-    {
-      "id": "ptm_pTyr654_EGFR",
-      "type": "Phosphorylation",
-      "position": 654,
-      "residue": "Y",
-      "function": "Dissociation from E-cadherin/beta-catenin/alpha-catenin complex; promotes nuclear translocation",
-      "enzyme": "EGFR",
-      "evidence": "Experimental"
-    },
-    {
-      "id": "ptm_pTyr670_RON",
-      "type": "Phosphorylation",
-      "position": 670,
-      "residue": "Y",
-      "function": "Tyrosine phosphorylation in C-terminal helix C region",
-      "enzyme": "RON kinase",
-      "evidence": "Experimental"
-    },
-    {
-      "id": "ptm_pSer675_PKA",
-      "type": "Phosphorylation",
-      "position": 675,
-      "residue": "S",
-      "function": "Promotes binding to transcriptional coactivator CBP (CREB-binding protein); enhances transcriptional activation",
-      "enzyme": "PKA",
-      "evidence": "Experimental"
-    },
-    {
-      "id": "ptm_pSer715_PKCdelta",
-      "type": "Phosphorylation",
-      "position": 715,
-      "residue": "S",
-      "function": "Regulatory phosphorylation in C-terminal transactivation domain",
-      "enzyme": "PKCδ",
-      "evidence": "Experimental"
-    },
-    {
-      "id": "ptm_ubiq_Lys19",
       "type": "Ubiquitination",
       "position": 19,
       "residue": "K",
-      "function": "Primary ubiquitination site for beta-TrCP-dependent proteasomal degradation after phosphorylation at Ser33/Ser37",
-      "enzyme": "SCF-beta-TrCP E3 ligase complex (BTRC/FBXW1)",
+      "function": "Primary beta-TrCP-dependent ubiquitination for proteasomal degradation",
       "evidence": "Experimental"
     },
     {
-      "id": "ptm_ubiq_Lys49",
       "type": "Ubiquitination",
       "position": 49,
       "residue": "K",
-      "function": "Secondary/cryptic ubiquitination site for beta-TrCP-dependent degradation; becomes more important when Lys19 is unavailable",
-      "enzyme": "SCF-beta-TrCP E3 ligase complex",
+      "function": "Secondary beta-TrCP-dependent ubiquitination site",
       "evidence": "Experimental"
     },
     {
-      "id": "ptm_acetyl_Lys49",
       "type": "Acetylation",
       "position": 49,
       "residue": "K",
-      "function": "N6-acetyllysine; reduces ubiquitination at Lys49; modulates protein stability and membrane localization; deacetylated by SIRT1 and HDAC6",
-      "enzyme": "Acetyltransferase (writer); HDAC6/SIRT1 (eraser)",
+      "function": "Reduces ubiquitination; modulates stability; deacetylated by SIRT1/HDAC6",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 142,
+      "residue": "Y",
+      "function": "Tyrosine phosphorylation affecting cadherin binding",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 654,
+      "residue": "Y",
+      "function": "Dissociation from E-cadherin complex; promotes nuclear translocation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 675,
+      "residue": "S",
+      "function": "Promotes CBP binding; enhances transcriptional activation",
       "evidence": "Experimental"
     }
   ],
   "function": {
-    "uniprot_function": "Key downstream component of the canonical Wnt signaling pathway. In the absence of Wnt, forms a complex with AXIN1, AXIN2, APC, CSNK1A1 and GSK3B that promotes phosphorylation on N-terminal Ser and Thr residues and ubiquitination of CTNNB1 via BTRC and its subsequent degradation by the proteasome. In the presence of Wnt ligand, CTNNB1 is not ubiquitinated and accumulates in the nucleus, where it acts as a coactivator for transcription factors of the TCF/LEF family, leading to activation of Wnt responsive genes. Involved in the regulation of cell adhesion, as component of an E-cadherin:catenin adhesion complex. Acts as a negative regulator of centrosome cohesion. Blocks anoikis of malignant kidney and intestinal epithelial cells and promotes their aggregation.",
+    "uniprot_function": "Key downstream component of the canonical Wnt signaling pathway. In the absence of Wnt, forms a complex with AXIN1, AXIN2, APC, CSNK1A1 and GSK3B that promotes phosphorylation on N-terminal Ser and Thr residues and ubiquitination of CTNNB1 via BTRC and its subsequent degradation by the proteasome. In the presence of Wnt ligand, CTNNB1 is not ubiquitinated and accumulates in the nucleus, where it acts as a coactivator for transcription factors of the TCF/LEF family, leading to activation of Wnt responsive genes. Involved in the regulation of cell adhesion, as component of an E-cadherin:catenin adhesion complex. Acts as a negative regulator of centrosome cohesion.",
     "catalytic_activity": "Non-enzymatic; functions as structural and signaling adapter protein",
-    "subcellular_location": [
-      "Cytoplasm",
-      "Nucleus (upon Wnt stimulation)",
-      "Cell membrane (adherens junction)",
-      "Centrosome",
-      "Beta-catenin destruction complex"
-    ],
-    "tissue_specificity": "Broadly expressed in multiple tissues including colon epithelium, hair follicles, and throughout developing embryo. Particularly important in tissues with high Wnt signaling activity and epithelial homeostasis",
+    "subcellular_location": ["Cytoplasm", "Nucleus", "Cell membrane", "Adherens junction", "Centrosome"],
+    "tissue_specificity": "Broadly expressed in multiple tissues including colon epithelium, hair follicles, and throughout developing embryo",
     "go_annotations": {
       "molecular_function": [
         {"go_id": "GO:0003713", "term": "transcription coactivator activity", "evidence_code": "IDA"},
         {"go_id": "GO:0005515", "term": "protein binding", "evidence_code": "IPI"},
         {"go_id": "GO:0045296", "term": "cadherin binding", "evidence_code": "IPI"},
-        {"go_id": "GO:0008013", "term": "beta-catenin binding", "evidence_code": "IPI"},
-        {"go_id": "GO:0003682", "term": "chromatin binding", "evidence_code": "IDA"},
-        {"go_id": "GO:0001221", "term": "transcription cofactor binding", "evidence_code": "IPI"}
+        {"go_id": "GO:0003682", "term": "chromatin binding", "evidence_code": "IDA"}
       ],
       "biological_process": [
         {"go_id": "GO:0016055", "term": "Wnt signaling pathway", "evidence_code": "IDA"},
         {"go_id": "GO:0060070", "term": "canonical Wnt signaling pathway", "evidence_code": "IDA"},
         {"go_id": "GO:0007155", "term": "cell adhesion", "evidence_code": "IDA"},
-        {"go_id": "GO:0045893", "term": "positive regulation of transcription, DNA-templated", "evidence_code": "IDA"},
-        {"go_id": "GO:0001837", "term": "epithelial to mesenchymal transition", "evidence_code": "IMP"},
-        {"go_id": "GO:1904885", "term": "beta-catenin destruction complex assembly", "evidence_code": "TAS"}
+        {"go_id": "GO:0045893", "term": "positive regulation of transcription", "evidence_code": "IDA"}
       ],
       "cellular_component": [
         {"go_id": "GO:0005737", "term": "cytoplasm", "evidence_code": "IDA"},
         {"go_id": "GO:0005634", "term": "nucleus", "evidence_code": "IDA"},
         {"go_id": "GO:0005886", "term": "plasma membrane", "evidence_code": "IDA"},
         {"go_id": "GO:0005912", "term": "adherens junction", "evidence_code": "IDA"},
-        {"go_id": "GO:0030877", "term": "beta-catenin destruction complex", "evidence_code": "IDA"},
-        {"go_id": "GO:1990907", "term": "beta-catenin-TCF complex", "evidence_code": "IDA"}
+        {"go_id": "GO:0030877", "term": "beta-catenin destruction complex", "evidence_code": "IDA"}
       ]
     }
   },
-  "interactions": {
-    "quantitative_binding_data": [
-      {
-        "id": "binding_APC_phosphorylated_high",
-        "partner_gene": "APC",
-        "partner_protein": "Adenomatous polyposis coli protein",
-        "partner_site": "APC-2,3 repeats (phosphorylated)",
-        "kd_nm": 2.1,
-        "kd_um": 0.0021,
-        "modification_state": "APC phosphorylated by CK1ε and GSK3β",
-        "measurement_method": "Isothermal titration calorimetry",
-        "stoichiometry": "1:1",
-        "description": "Phosphorylated APC-2,3 binds full-length beta-catenin with very high affinity (~300-fold increase over unphosphorylated)"
+  "interactions": [
+    {
+      "partner": {
+        "gene_name": "APC",
+        "protein_name": "Adenomatous polyposis coli protein",
+        "uniprot_accession": "P25054"
       },
-      {
-        "id": "binding_APC_R3_phosphorylated",
-        "partner_gene": "APC",
-        "partner_protein": "Adenomatous polyposis coli protein",
-        "partner_site": "R3 repeat (phosphorylated)",
-        "kd_nm": 10,
-        "kd_um": 0.01,
-        "kd_error_nm": 1.3,
-        "modification_state": "APC R3 repeat phosphorylated",
-        "measurement_method": "Surface plasmon resonance",
-        "stoichiometry": "1:1",
-        "description": "Phosphorylated APC R3 fragment binds full-length beta-catenin; critical for destruction complex function"
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DM_CTNNB1_005",
+            "residues": [],
+            "residue_names": [],
+            "description": "ARM repeats 5-9 form extended binding groove for APC 15R and 20R repeats"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "15-amino acid repeats (15R)",
+            "residues": [],
+            "description": "Four 15R repeats bind ARM5-9 groove"
+          },
+          {
+            "domain_motif_name": "20-amino acid repeat 3 (20R3)",
+            "residues": [],
+            "description": "Highest affinity repeat when phosphorylated"
+          }
+        ],
+        "site_specific": true
       },
-      {
-        "id": "binding_APC_unphosphorylated",
-        "partner_gene": "APC",
-        "partner_protein": "Adenomatous polyposis coli protein",
-        "partner_site": "APC-2,3 repeats (unphosphorylated)",
-        "kd_nm": 600,
-        "kd_um": 0.6,
-        "modification_state": "Unphosphorylated APC",
-        "measurement_method": "Isothermal titration calorimetry",
-        "stoichiometry": "1:1",
-        "description": "Unphosphorylated APC has 300-fold weaker affinity; demonstrates critical role of APC phosphorylation in destruction complex assembly"
+      "kinetics": {
+        "kd_m": 1.5e-9,
+        "kd_range_m": [2e-9, 10e-9],
+        "measurement_method": "Surface plasmon resonance, Isothermal titration calorimetry",
+        "conditions": "Phosphorylated APC (CK1epsilon and GSK3beta)",
+        "notes": "Phosphorylation increases affinity ~300-fold (from 0.6-3.1 μM unphosphorylated to 2-10 nM phosphorylated). 20R3 has highest affinity (Kd ~1.5 nM when phosphorylated)."
       },
-      {
-        "id": "binding_APC_R3_unphosphorylated",
-        "partner_gene": "APC",
-        "partner_protein": "Adenomatous polyposis coli protein",
-        "partner_site": "R3 repeat (unphosphorylated)",
-        "kd_nm": 3100,
-        "kd_um": 3.1,
-        "kd_error_nm": 300,
-        "modification_state": "Unphosphorylated",
-        "measurement_method": "Surface plasmon resonance",
-        "description": "Unphosphorylated R3 has ~300-fold weaker binding than phosphorylated form"
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "coexpression"],
+          "url": "https://string-db.org/"
+        },
+        {
+          "source": "BioGRID",
+          "experimental_system": "Co-crystal Structure, Co-immunoprecipitation",
+          "pmid": "15327768",
+          "throughput": "Low"
+        },
+        {
+          "source": "IntAct",
+          "detection_method": "Surface plasmon resonance",
+          "pmid": "15327768",
+          "interaction_accession": "EBI-9645731"
+        },
+        {
+          "source": "Literature",
+          "pmid": "15327768",
+          "description": "Mechanism of phosphorylation-dependent binding of APC to beta-catenin",
+          "notes": "300-fold affinity increase upon phosphorylation"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "APC is essential component of destruction complex; phosphorylation-dependent high-affinity binding enables efficient beta-catenin capture and presentation to kinases"
+    },
+    {
+      "partner": {
+        "gene_name": "AXIN1",
+        "protein_name": "Axin-1",
+        "uniprot_accession": "O15169"
       },
-      {
-        "id": "binding_alpha_catenin",
-        "partner_gene": "CTNNA1",
-        "partner_protein": "Alpha-catenin",
-        "partner_site": "Full-length",
-        "kd_nm": 15,
-        "kd_um": 0.015,
-        "modification_state": "Native",
-        "measurement_method": "Isothermal titration calorimetry",
-        "stoichiometry": "1:1",
-        "description": "High-affinity interaction in context of cadherin-catenin complex; links to actin cytoskeleton"
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DM_CTNNB1_001",
+            "residues": [],
+            "residue_names": [],
+            "description": "ARM1 involved in AXIN1-mediated CK1 recruitment and Ser45 phosphorylation"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Beta-catenin binding domain",
+            "residues": [],
+            "description": "Intrinsically disordered region that binds beta-catenin ARM groove"
+          }
+        ],
+        "site_specific": true
       },
-      {
-        "id": "binding_E_cadherin_estimated",
-        "partner_gene": "CDH1",
-        "partner_protein": "E-cadherin",
-        "partner_site": "Cytoplasmic domain",
-        "kd_nm": 85,
-        "kd_um": 0.085,
-        "modification_state": "Native",
-        "measurement_method": "Estimated from plakoglobin homology data",
-        "stoichiometry": "1:1",
-        "description": "Estimated Kd based on plakoglobin binding to E-cadherin; beta-catenin expected to have similar high-affinity binding for adherens junction formation"
+      "kinetics": {
+        "measurement_method": "Co-immunoprecipitation",
+        "conditions": "Physiological",
+        "notes": "Direct binding essential for destruction complex assembly; quantitative Kd not extensively characterized but binding is high-affinity based on functional data. AXIN1 enhances phosphorylation efficiency ~2-fold."
       },
-      {
-        "id": "binding_AXIN1_qualitative",
-        "partner_gene": "AXIN1",
-        "partner_protein": "Axin-1",
-        "partner_site": "Beta-catenin binding domain",
-        "kd_nm": null,
-        "kd_um": null,
-        "modification_state": "Native",
-        "measurement_method": "Co-immunoprecipitation (qualitative)",
-        "stoichiometry": "1:1",
-        "description": "Direct binding essential for destruction complex assembly; AXIN1 serves as scaffold organizing beta-catenin, CK1, GSK3B, and APC; quantitative Kd not available in literature"
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "coexpression"]
+        },
+        {
+          "source": "BioGRID",
+          "experimental_system": "Co-immunoprecipitation",
+          "pmid": "9734785",
+          "throughput": "Low"
+        },
+        {
+          "source": "Literature",
+          "pmid": "34403655",
+          "description": "AXIN polymers scaffold destruction complex and enhance beta-catenin phosphorylation",
+          "notes": "AXIN organizes CK1, GSK3B, APC, and beta-catenin"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "AXIN1 is rate-limiting scaffold organizing destruction complex; recruits CK1 and GSK3B to phosphorylate beta-catenin"
+    },
+    {
+      "partner": {
+        "gene_name": "GSK3B",
+        "protein_name": "Glycogen synthase kinase-3 beta",
+        "uniprot_accession": "P49841"
       },
-      {
-        "id": "binding_GSK3B_substrate",
-        "partner_gene": "GSK3B",
-        "partner_protein": "Glycogen synthase kinase-3 beta",
-        "partner_site": "Catalytic domain binding to beta-catenin N-terminus",
-        "km_um": 8.5,
-        "km_error_um": 3.8,
-        "modification_state": "Ser45-phosphorylated beta-catenin (primed substrate)",
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Phosphorylation",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DM_CTNNB1_015",
+            "residues": [41],
+            "residue_names": ["T41"],
+            "description": "Thr41 phosphorylation site"
+          },
+          {
+            "domain_motif_id": "DM_CTNNB1_016",
+            "residues": [37],
+            "residue_names": ["S37"],
+            "description": "Ser37 phosphorylation site"
+          },
+          {
+            "domain_motif_id": "DM_CTNNB1_017",
+            "residues": [33],
+            "residue_names": ["S33"],
+            "description": "Ser33 phosphorylation site"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Kinase catalytic domain",
+            "residues": [],
+            "description": "Catalytic domain recognizes primed substrate"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "km_m": 8.5e-6,
+        "kcat_s1": 0.079,
         "measurement_method": "Enzyme kinetics assay",
-        "description": "Km for GSK3B-mediated phosphorylation of beta-catenin; see kinetic_parameters section for full kinetic data"
+        "conditions": "Ser45-primed beta-catenin substrate, pH 7.4",
+        "notes": "Km ~8.5 μM, kcat ~0.079/sec for catalytic domain. Full-length GSK3B shows ~3-fold higher Km (~27.8 μM) due to N-terminal autoinhibition. Sequential phosphorylation: Thr41 → Ser37 → Ser33 after Ser45 priming."
       },
-      {
-        "id": "binding_TCF7L2_qualitative",
-        "partner_gene": "TCF7L2",
-        "partner_protein": "Transcription factor 7-like 2 (TCF4)",
-        "partner_site": "Beta-catenin binding domain",
-        "kd_nm": null,
-        "kd_um": null,
-        "modification_state": "Native",
-        "measurement_method": "X-ray crystallography, co-immunoprecipitation",
-        "stoichiometry": "1:1",
-        "description": "Nuclear transcriptional partner; binds ARM repeats 3-9 via salt bridges with Lys312 and Lys435; direct Kd values not extensively characterized in literature though binding is high-affinity based on structural and functional data"
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "coexpression"]
+        },
+        {
+          "source": "BioGRID",
+          "experimental_system": "Affinity Capture-Western",
+          "pmid": "Multiple",
+          "throughput": "Low"
+        },
+        {
+          "source": "Literature",
+          "pmid": "19619541",
+          "description": "Kinetic parameters for GSK3B phosphorylation of beta-catenin",
+          "notes": "Computational and experimental characterization"
+        }
+      ],
+      "functional_effect": "Inhibitory",
+      "pathway_context": "GSK3B sequentially phosphorylates Thr41, Ser37, Ser33 after Ser45 priming; creates beta-TrCP recognition motif for ubiquitination and degradation"
+    },
+    {
+      "partner": {
+        "gene_name": "CSNK1A1",
+        "protein_name": "Casein kinase I isoform alpha",
+        "uniprot_accession": "P48729"
       },
-      {
-        "id": "binding_LEF1_qualitative",
-        "partner_gene": "LEF1",
-        "partner_protein": "Lymphoid enhancer-binding factor 1",
-        "partner_site": "Beta-catenin binding domain",
-        "kd_nm": null,
-        "kd_um": null,
-        "modification_state": "Native",
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Phosphorylation",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DM_CTNNB1_014",
+            "residues": [45],
+            "residue_names": ["S45"],
+            "description": "Ser45 priming phosphorylation site"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Kinase catalytic domain",
+            "residues": [],
+            "description": "CK1 catalytic domain"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "measurement_method": "Enzyme assay",
+        "notes": "Ser45 phosphorylation is priming event; necessary and sufficient for GSK3B recognition. Quantitative kinetic parameters not extensively characterized but priming is rate-limiting for destruction complex."
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.992,
+          "evidence_types": ["experimental", "database"]
+        },
+        {
+          "source": "Literature",
+          "pmid": "12878698",
+          "description": "CK1 primes beta-catenin for GSK3B phosphorylation",
+          "notes": "Ser45 phosphorylation initiates cascade"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "CK1 initiates sequential phosphorylation cascade by priming Ser45; enables GSK3B processivity"
+    },
+    {
+      "partner": {
+        "gene_name": "TCF7L2",
+        "protein_name": "Transcription factor 7-like 2",
+        "uniprot_accession": "Q9NQB0"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DM_CTNNB1_005",
+            "residues": [312],
+            "residue_names": ["K312"],
+            "description": "Lys312 salt bridge in ARM5"
+          },
+          {
+            "domain_motif_id": "DM_CTNNB1_008",
+            "residues": [435],
+            "residue_names": ["K435"],
+            "description": "Lys435 salt bridge in ARM8"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Beta-catenin binding domain",
+            "residues": [],
+            "description": "Acidic region binds positively charged ARM groove"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kon_m1s1": 7.3e7,
+        "koff_s1": 0.00057,
+        "measurement_method": "Fluorescence kinetics, Surface plasmon resonance",
+        "conditions": "pH 7.4, physiological buffer",
+        "notes": "Association kinetics monophasic and rapid (7.3 × 10^7 M^-1·s^-1); dissociation biphasic and slow (5.7 × 10^-4 s^-1, 15.2 × 10^-4 s^-1). Nanomolar affinity spanning 10 of 12 ARM repeats with ~4800 Å² interface."
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.998,
+          "evidence_types": ["experimental", "database", "text-mining"]
+        },
+        {
+          "source": "BioGRID",
+          "experimental_system": "Two-hybrid, Co-crystal",
+          "pmid": "11357125",
+          "throughput": "Low"
+        },
+        {
+          "source": "IntAct",
+          "detection_method": "X-ray crystallography",
+          "pmid": "11357125",
+          "interaction_accession": "EBI-3913536"
+        },
+        {
+          "source": "Literature",
+          "pmid": "34055760",
+          "description": "Parallel and sequential pathways of molecular recognition",
+          "notes": "Detailed kinetic characterization"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Nuclear transcriptional partner; binds ARM3-9 to activate Wnt target genes"
+    },
+    {
+      "partner": {
+        "gene_name": "LEF1",
+        "protein_name": "Lymphoid enhancer-binding factor 1",
+        "uniprot_accession": "Q9UJU2"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DM_CTNNB1_005",
+            "residues": [],
+            "residue_names": [],
+            "description": "ARM repeats 3-9 binding groove"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Beta-catenin binding domain",
+            "residues": [],
+            "description": "Similar binding mode to TCF7L2"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
         "measurement_method": "Co-immunoprecipitation",
-        "description": "Nuclear transcriptional partner; similar binding mode to TCF7L2; quantitative Kd not extensively reported"
+        "notes": "Nuclear transcriptional partner; similar binding mode to TCF7L2; quantitative Kd not extensively reported"
       },
-      {
-        "id": "binding_beta_TrCP_qualitative",
-        "partner_gene": "BTRC",
-        "partner_protein": "Beta-transducin repeat-containing protein (beta-TrCP)",
-        "partner_site": "WD40 domain binding to phospho-degron",
-        "kd_nm": null,
-        "kd_um": null,
-        "modification_state": "Beta-catenin phosphorylated at Ser33/Ser37 (DSGXXpS motif)",
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.997,
+          "evidence_types": ["experimental", "database", "coexpression"]
+        },
+        {
+          "source": "BioGRID",
+          "experimental_system": "Affinity Capture-Western",
+          "pmid": "502986",
+          "throughput": "Low"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Nuclear transcriptional partner; activates Wnt target genes"
+    },
+    {
+      "partner": {
+        "gene_name": "CDH1",
+        "protein_name": "Cadherin-1 (E-cadherin)",
+        "uniprot_accession": "P12830"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DM_CTNNB1_002",
+            "residues": [],
+            "residue_names": [],
+            "description": "ARM repeats span all 12 repeats for E-cadherin binding"
+          },
+          {
+            "domain_motif_id": "DM_CTNNB1_020",
+            "residues": [],
+            "residue_names": [],
+            "description": "Alpha-catenin binding region overlaps with ARM1"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Cytoplasmic domain (C-terminal 72 residues)",
+            "residues": [],
+            "description": "Minimal binding site 30 residues"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 85e-9,
+        "measurement_method": "Estimated from plakoglobin homology",
+        "notes": "Estimated Kd ~85 nM based on plakoglobin data; beta-catenin expected similar high-affinity binding. Phosphorylation by CKII and GSK3B increases affinity."
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.998,
+          "evidence_types": ["experimental", "database", "coexpression"]
+        },
+        {
+          "source": "BioGRID",
+          "experimental_system": "Co-crystal Structure",
+          "pmid": "11357122",
+          "throughput": "Low"
+        },
+        {
+          "source": "Literature",
+          "pmid": "11357122",
+          "description": "Structure of beta-catenin/E-cadherin complex",
+          "notes": "Interaction spans all 12 ARM repeats"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "Adherens junction component; links E-cadherin to actin via alpha-catenin"
+    },
+    {
+      "partner": {
+        "gene_name": "CTNNA1",
+        "protein_name": "Catenin alpha-1",
+        "uniprot_accession": "P35221"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DM_CTNNB1_020",
+            "residues": [],
+            "residue_names": [],
+            "description": "Extended helix region in ARM1 area"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Full-length alpha-catenin",
+            "residues": [],
+            "description": "Links to actin cytoskeleton"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 15e-9,
+        "measurement_method": "Isothermal titration calorimetry",
+        "conditions": "Context of cadherin-catenin complex",
+        "notes": "High-affinity interaction (Kd ~15 nM) in context of cadherin complex; links to actin cytoskeleton"
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "coexpression"]
+        },
+        {
+          "source": "Literature",
+          "pmid": "11357122",
+          "description": "Alpha-catenin links beta-catenin/E-cadherin to actin",
+          "notes": "High-affinity binding"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "Links adherens junction to actin cytoskeleton"
+    },
+    {
+      "partner": {
+        "gene_name": "BTRC",
+        "protein_name": "Beta-transducin repeat-containing protein",
+        "uniprot_accession": "Q9Y297"
+      },
+      "interaction_type": "Regulatory",
+      "mechanism": "Ubiquitination",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DM_CTNNB1_017",
+            "residues": [33, 37],
+            "residue_names": ["pS33", "pS37"],
+            "description": "Phosphorylated DSGXXpS degron motif"
+          },
+          {
+            "domain_motif_id": "DM_CTNNB1_018",
+            "residues": [19],
+            "residue_names": ["K19"],
+            "description": "Primary ubiquitination site"
+          },
+          {
+            "domain_motif_id": "DM_CTNNB1_019",
+            "residues": [49],
+            "residue_names": ["K49"],
+            "description": "Secondary ubiquitination site"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "WD40 domain",
+            "residues": [],
+            "description": "Recognizes phospho-degron motif"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
         "measurement_method": "Co-immunoprecipitation",
-        "stoichiometry": "Part of SCF E3 ligase complex",
-        "description": "Recognizes phosphorylated DSGXXpS motif (pSer33/pSer37); recruits SCF ubiquitin ligase complex for beta-catenin ubiquitination at Lys19/Lys49; native Kd not quantified but small molecule enhancers achieve sub-nM affinity"
-      }
-    ],
-    "string_network": {
-      "url": "https://string-db.org/network/9606.ENSP00000344456",
-      "top_interactors": [
-        {"partner_gene": "APC", "partner_protein": "Adenomatous polyposis coli protein", "combined_score": 0.999, "evidence_types": ["experimental", "database", "coexpression", "text-mining"]},
-        {"partner_gene": "AXIN1", "partner_protein": "Axin-1", "combined_score": 0.999, "evidence_types": ["experimental", "database", "coexpression"]},
-        {"partner_gene": "GSK3B", "partner_protein": "Glycogen synthase kinase-3 beta", "combined_score": 0.999, "evidence_types": ["experimental", "database", "coexpression"]},
-        {"partner_gene": "TCF7L2", "partner_protein": "Transcription factor 7-like 2", "combined_score": 0.998, "evidence_types": ["experimental", "database", "text-mining"]},
-        {"partner_gene": "LEF1", "partner_protein": "Lymphoid enhancer-binding factor 1", "combined_score": 0.997, "evidence_types": ["experimental", "database", "coexpression"]},
-        {"partner_gene": "CDH1", "partner_protein": "E-cadherin", "combined_score": 0.998, "evidence_types": ["experimental", "database", "coexpression"]},
-        {"partner_gene": "CTNNA1", "partner_protein": "Alpha-catenin", "combined_score": 0.999, "evidence_types": ["experimental", "database", "coexpression"]},
-        {"partner_gene": "BTRC", "partner_protein": "Beta-TrCP", "combined_score": 0.994, "evidence_types": ["experimental", "database"]},
-        {"partner_gene": "CSNK1A1", "partner_protein": "Casein kinase I alpha 1", "combined_score": 0.992, "evidence_types": ["experimental", "database"]},
-        {"partner_gene": "EP300", "partner_protein": "E1A binding protein p300", "combined_score": 0.989, "evidence_types": ["experimental", "database", "text-mining"]},
-        {"partner_gene": "CREBBP", "partner_protein": "CREB binding protein", "combined_score": 0.988, "evidence_types": ["experimental", "database", "text-mining"]},
-        {"partner_gene": "BCL9", "partner_protein": "B-cell CLL/lymphoma 9 protein", "combined_score": 0.985, "evidence_types": ["experimental", "database"]}
-      ]
-    },
-    "biogrid_interactions": [
-      {"partner_gene": "APC", "partner_protein": "Adenomatous polyposis coli", "interaction_type": "Physical", "experimental_system": "Co-crystal Structure, Co-immunoprecipitation", "pmid": "Multiple", "throughput": "Low"},
-      {"partner_gene": "AXIN1", "partner_protein": "Axin-1", "interaction_type": "Physical", "experimental_system": "Co-immunoprecipitation", "pmid": "9734785", "throughput": "Low"},
-      {"partner_gene": "TCF7L2", "partner_protein": "Transcription factor 7-like 2", "interaction_type": "Physical", "experimental_system": "Two-hybrid, Co-crystal", "pmid": "Multiple", "throughput": "Low"},
-      {"partner_gene": "GSK3B", "partner_protein": "Glycogen synthase kinase-3 beta", "interaction_type": "Physical", "experimental_system": "Affinity Capture-Western", "pmid": "Multiple", "throughput": "Low"},
-      {"partner_gene": "CDH1", "partner_protein": "E-cadherin", "interaction_type": "Physical", "experimental_system": "Co-crystal Structure", "pmid": "11357122", "throughput": "Low"},
-      {"partner_gene": "BTRC", "partner_protein": "Beta-TrCP", "interaction_type": "Physical", "experimental_system": "Affinity Capture-Western", "pmid": "10428031", "throughput": "Low"}
-    ],
-    "intact_interactions": [
-      {"partner_gene": "TCF7L2", "partner_protein": "Transcription factor 7-like 2", "interaction_type": "Direct interaction", "detection_method": "X-ray crystallography", "pmid": "11357125", "interaction_accession": "EBI-3913536"},
-      {"partner_gene": "APC", "partner_protein": "Adenomatous polyposis coli", "interaction_type": "Direct interaction", "detection_method": "Surface plasmon resonance", "pmid": "15327768", "interaction_accession": "EBI-9645731"}
-    ],
-    "summary": {
-      "total_physical_interactors": 2779,
-      "high_confidence_interactors": 150,
-      "key_binding_partners": [
-        "APC (destruction complex scaffold, Kd ~2-10 nM when phosphorylated, ~0.6-3.1 μM unphosphorylated)",
-        "AXIN1 (destruction complex scaffold, organizes CK1/GSK3B/beta-catenin)",
-        "GSK3B (kinase, phosphorylates Ser33/37/Thr41, Km ~8.5 μM)",
-        "CSNK1A1/CK1alpha (kinase, primes Ser45)",
-        "BTRC/beta-TrCP (E3 ubiquitin ligase, recognizes phospho-degron)",
-        "TCF7L2 (transcription factor, nuclear partner)",
-        "LEF1 (transcription factor, nuclear partner)",
-        "CDH1/E-cadherin (adherens junction, Kd ~85 nM estimated)",
-        "CTNNA1/alpha-catenin (adherens junction linker, Kd ~15 nM)",
-        "EP300/CBP (transcriptional coactivator)",
-        "CREBBP (transcriptional coactivator)",
-        "BCL9 (transcriptional coactivator)"
-      ]
+        "conditions": "Requires beta-catenin phosphorylation at Ser33/Ser37",
+        "notes": "Recognizes phosphorylated DSGXXpS motif (pSer33/pSer37); recruits SCF E3 ligase for ubiquitination at Lys19/Lys49; native Kd not quantified but high-affinity binding to phospho-degron"
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.994,
+          "evidence_types": ["experimental", "database"]
+        },
+        {
+          "source": "BioGRID",
+          "experimental_system": "Affinity Capture-Western",
+          "pmid": "10428031",
+          "throughput": "Low"
+        },
+        {
+          "source": "Literature",
+          "pmid": "10428031",
+          "description": "Beta-TrCP recognizes phosphorylated beta-catenin for ubiquitination",
+          "notes": "Phosphorylation-dependent recognition"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "E3 ubiquitin ligase component; targets phosphorylated beta-catenin for proteasomal degradation"
     }
-  },
-  "kinetic_parameters": {
-    "phosphorylation_gsk3b_catalytic_domain": {
-      "substrate": "Beta-catenin (Ser45-primed)",
-      "enzyme": "GSK3B (residues 26-383, catalytic domain)",
-      "km_um": 8.5,
-      "km_error_um": 3.8,
-      "kcat_per_sec": 0.079,
-      "kcat_error_per_sec": 0.012,
-      "kcat_km_m_per_sec": 9300,
-      "kcat_km_error_m_per_sec": 4400,
-      "description": "Kinetic parameters for GSK3B catalytic domain-mediated phosphorylation of beta-catenin at Thr41/Ser37/Ser33 after Ser45 priming by CK1",
-      "reference": "PMC2724396",
-      "notes": "Measurements for isolated catalytic domain without N-terminal regulatory region"
-    },
-    "phosphorylation_gsk3b_full_length": {
-      "substrate": "Beta-catenin (Ser45-primed)",
-      "enzyme": "GSK3B (residues 1-383, full-length)",
-      "km_um": 27.8,
-      "km_error_um": 15.7,
-      "kcat_per_sec": 0.156,
-      "kcat_error_per_sec": 0.036,
-      "description": "Full-length GSK3B shows ~3-fold higher Km and ~2-fold higher kcat compared to catalytic domain alone due to N-terminal autoinhibitory effects",
-      "reference": "PMC2724396"
-    },
-    "phosphorylation_gsk3b_inhibited": {
-      "substrate": "Beta-catenin (Ser45-primed)",
-      "enzyme": "GSK3B (residues 1-383, pSer9-phosphorylated/inhibited)",
-      "km_um": 21.7,
-      "km_error_um": 9.0,
-      "kcat_per_sec": 0.027,
-      "kcat_error_per_sec": 0.004,
-      "description": "N-terminal phosphorylation at Ser9 by AKT/PKA inhibits GSK3B activity ~5-fold (kcat reduction); represents physiological inhibition mechanism",
-      "reference": "PMC2724396",
-      "notes": "Demonstrates regulation of beta-catenin degradation through GSK3B Ser9 phosphorylation"
-    },
-    "sequential_phosphorylation_cascade": {
-      "order": "Ser45 (CK1alpha) → Thr41 (GSK3B) → Ser37 (GSK3B) → Ser33 (GSK3B)",
-      "priming_requirement": "Ser45 phosphorylation by CK1alpha is necessary and sufficient for GSK3B recognition and processivity",
-      "priming_kinase": "CK1alpha (CSNK1A1), also CK1delta and CK1epsilon isoforms",
-      "sequential_kinase": "GSK3B (or GSK3A)",
-      "fold_enhancement_by_axin": 2,
-      "axin_mechanism": "AXIN1 scaffold co-localizes beta-catenin with CK1 and GSK3B, enhancing local concentration and phosphorylation efficiency by ~2-fold",
-      "description": "Strictly ordered sequential phosphorylation cascade; Ser45 priming creates recognition motif for GSK3B which then processively phosphorylates Thr41→Ser37→Ser33 in N-to-C direction",
-      "degron_formation": "Phosphorylation at Ser33+Ser37 creates DSGXXpS motif recognized by beta-TrCP WD40 domain",
-      "reference": "Multiple (PMC2855705, Cell 2006)"
-    },
-    "ck1_priming_phosphorylation": {
-      "substrate": "Beta-catenin (unphosphorylated)",
-      "enzyme": "CK1alpha (CSNK1A1)",
-      "target_site": "Ser45",
-      "km_um": null,
-      "kcat_per_sec": null,
-      "description": "CK1 phosphorylates non-consensus site at Ser45; quantitative kinetic parameters not extensively characterized but priming is rate-limiting for destruction complex",
-      "notes": "Ser45 sequence context does not conform to canonical CK1 consensus (requires acidic residues at n-3); suggests specialized recognition mechanism"
-    }
-  },
+  ],
   "pathways": {
     "reactome": [
       {"pathway_id": "R-HSA-195721", "pathway_name": "Signaling by WNT", "species": "Homo sapiens", "url": "https://reactome.org/content/detail/R-HSA-195721"},
       {"pathway_id": "R-HSA-201681", "pathway_name": "TCF dependent signaling in response to WNT", "species": "Homo sapiens", "url": "https://reactome.org/content/detail/R-HSA-201681"},
-      {"pathway_id": "R-HSA-3299569", "pathway_name": "TCF/LEF:CTNNB1 bind canonical WNT target promoters", "species": "Homo sapiens", "url": "https://reactome.org/content/detail/R-HSA-3299569"},
       {"pathway_id": "R-HSA-8944362", "pathway_name": "Degradation of beta-catenin by the destruction complex", "species": "Homo sapiens", "url": "https://reactome.org/content/detail/R-HSA-8944362"},
-      {"pathway_id": "R-HSA-8951442", "pathway_name": "Regulation of beta-catenin stability", "species": "Homo sapiens", "url": "https://reactome.org/content/detail/R-HSA-8951442"},
       {"pathway_id": "R-HSA-418990", "pathway_name": "Adherens junctions interactions", "species": "Homo sapiens", "url": "https://reactome.org/content/detail/R-HSA-418990"}
     ],
     "kegg": [
       {"pathway_id": "hsa04310", "pathway_name": "Wnt signaling pathway", "url": "https://www.genome.jp/pathway/hsa04310"},
-      {"pathway_id": "hsa04510", "pathway_name": "Focal adhesion", "url": "https://www.genome.jp/pathway/hsa04510"},
       {"pathway_id": "hsa04520", "pathway_name": "Adherens junction", "url": "https://www.genome.jp/pathway/hsa04520"},
-      {"pathway_id": "hsa05210", "pathway_name": "Colorectal cancer", "url": "https://www.genome.jp/pathway/hsa05210"},
-      {"pathway_id": "hsa05217", "pathway_name": "Basal cell carcinoma", "url": "https://www.genome.jp/pathway/hsa05217"},
-      {"pathway_id": "hsa05225", "pathway_name": "Hepatocellular carcinoma", "url": "https://www.genome.jp/pathway/hsa05225"}
+      {"pathway_id": "hsa05210", "pathway_name": "Colorectal cancer", "url": "https://www.genome.jp/pathway/hsa05210"}
     ],
-    "pathway_role_summary": "Beta-catenin is the central effector of canonical Wnt signaling. In the absence of Wnt, it is sequentially phosphorylated by CK1 (Ser45) and GSK3B (Thr41, Ser37, Ser33) within the destruction complex organized by AXIN1/2 and APC, leading to beta-TrCP-mediated ubiquitination (at Lys19/Lys49) and proteasomal degradation. Phosphorylation-dependent APC binding (300-fold affinity increase when phosphorylated, Kd ~2-10 nM vs 0.6-3.1 μM) is critical for efficient destruction complex function. Upon Wnt binding to FZD/LRP5/6 receptors, the destruction complex is inhibited, beta-catenin accumulates and translocates to the nucleus where it binds TCF/LEF transcription factors (via ARM repeats 3-9, salt bridges with Lys312/Lys435) to activate target genes controlling proliferation, differentiation, and stem cell maintenance. Beta-catenin also functions independently of Wnt signaling as a structural component of adherens junctions, linking E-cadherin (Kd ~85 nM) to the actin cytoskeleton via alpha-catenin (Kd ~15 nM)."
+    "pathway_role_summary": "Beta-catenin is the central effector of canonical Wnt signaling. In the absence of Wnt, it is sequentially phosphorylated by CK1 (Ser45) and GSK3B (Thr41, Ser37, Ser33) within the destruction complex organized by AXIN1 and APC, leading to beta-TrCP-mediated ubiquitination and proteasomal degradation. Phosphorylation-dependent APC binding (300-fold affinity increase, Kd 2-10 nM vs 0.6-3.1 μM) is critical for destruction complex function. Upon Wnt binding to FZD/LRP receptors, beta-catenin accumulates and translocates to the nucleus where it binds TCF/LEF transcription factors via ARM repeats 3-9 to activate target genes. Beta-catenin also functions in adherens junctions, linking E-cadherin to actin via alpha-catenin."
   },
   "disease_associations": [
-    {"disease": "Colorectal cancer", "omim_id": "114500", "mutation_type": "Somatic", "description": "Activating mutations in exon 3 affecting Ser33, Ser37, Thr41, or Ser45 prevent phosphorylation-dependent degradation, leading to constitutive Wnt signaling. Common mutations include Ser45 deletion/missense and Ser33 to Tyr substitution. Found in up to 25% of colorectal cancers."},
-    {"disease": "Hepatocellular carcinoma", "omim_id": "114550", "mutation_type": "Somatic", "description": "Frequent CTNNB1 mutations including Ser45 to Phe or Pro substitutions, and Thr41 mutations. CTNNB1 mutations associated with favorable clinical outcomes and longer time to recurrence in HCC patients."},
-    {"disease": "Medulloblastoma", "omim_id": "155255", "mutation_type": "Somatic", "description": "Mutations in exon 3 degradation targeting box lead to accumulation of beta-catenin, particularly in WNT-subgroup medulloblastomas with excellent prognosis."},
-    {"disease": "Neurodevelopmental disorder with spastic diplegia and visual defects", "omim_id": "615075", "mutation_type": "Germline", "description": "De novo germline mutations (e.g., Leu388Pro in ARM7) cause neurodevelopmental disorders with intellectual disability, motor delays, and visual impairment due to constitutive Wnt signaling during development."},
-    {"disease": "Pilomatricoma", "omim_id": "132600", "mutation_type": "Somatic", "description": "Benign hair follicle tumor with high frequency of CTNNB1 exon 3 mutations"},
-    {"disease": "Desmoid tumor (aggressive fibromatosis)", "omim_id": "135290", "mutation_type": "Somatic", "description": "Nearly all cases harbor either APC or CTNNB1 mutations, typically at Thr41 or Ser45"},
-    {"disease": "Endometrial cancer", "omim_id": "608089", "mutation_type": "Somatic", "description": "CTNNB1 mutations found in endometrioid subtype endometrial cancers"},
-    {"disease": "Hepatoblastoma", "omim_id": "114550", "mutation_type": "Somatic", "description": "Childhood liver tumor with frequent CTNNB1 activating mutations"}
+    {"disease": "Colorectal cancer", "omim_id": "114500", "mutation_type": "Somatic", "description": "Activating mutations at Ser33, Ser37, Thr41, Ser45 prevent degradation; constitutive Wnt signaling; found in ~25% of cases"},
+    {"disease": "Hepatocellular carcinoma", "omim_id": "114550", "mutation_type": "Somatic", "description": "Frequent exon 3 mutations including Ser45 and Thr41 substitutions"},
+    {"disease": "Medulloblastoma", "omim_id": "155255", "mutation_type": "Somatic", "description": "Exon 3 mutations in WNT-subgroup with excellent prognosis"},
+    {"disease": "Neurodevelopmental disorder", "omim_id": "615075", "mutation_type": "Germline", "description": "De novo germline mutations cause intellectual disability and visual defects"}
   ],
   "cross_references": {
     "ncbi_gene_id": "1499",
     "ensembl_gene_id": "ENSG00000168036",
-    "ensembl_protein_id": "ENSP00000344456",
-    "refseq_protein": ["NP_001895.1", "NP_001091679.1", "NP_001098210.1"],
-    "refseq_nucleotide": ["NM_001904.4", "NM_001098209.2", "NM_001098210.2"],
-    "refseq_gene": "NG_013302.2",
+    "refseq_protein": ["NP_001895.1"],
+    "refseq_nucleotide": ["NM_001904.4"],
     "hgnc_id": "HGNC:2514",
-    "omim_gene": "116806",
-    "genomic_location": "3p22.1",
-    "genomic_coordinates": "chr3:41,194,741-41,260,096 (GRCh38)",
-    "strand": "forward"
+    "omim_gene": "116806"
   },
   "metadata": {
-    "generated_at": "2026-10-01T00:00:00Z",
-    "queried_databases": ["UniProt", "NCBI Gene", "Ensembl", "InterPro", "Pfam", "PROSITE", "SMART", "PDB", "AlphaFold", "STRING", "BioGRID", "IntAct", "Reactome", "KEGG", "GO", "OMIM", "GeneCards"],
-    "data_quality_notes": "Comprehensive quantitative data available for APC binding affinity with dramatic phosphorylation-dependence (Kd 2-10 nM phosphorylated vs 600-3100 nM unphosphorylated, ~300-fold difference). GSK3B kinetic parameters well-characterized (Km ~8.5 μM, kcat ~0.079/sec for catalytic domain). Individual ARM repeat boundaries based on PROSITE annotations and structural literature (~42 residues each). Direct Kd values for AXIN1, TCF7L2/LEF1, and beta-TrCP not quantitatively characterized in accessible literature - these interactions studied via co-IP and structural methods. E-cadherin binding Kd estimated from plakoglobin homology data (~85 nM). Alpha-catenin binding well-characterized at 15 nM. PTM sites extensively documented with 15+ phosphorylation sites across Ser/Thr/Tyr residues. Sequential phosphorylation cascade mechanism well-established with strict Ser45 priming requirement.",
-    "modeling_relevance_summary": "Beta-catenin is the central node of canonical Wnt signaling and critical target for cancer therapy modeling. Key quantitative parameters for pathway modeling: (1) Sequential phosphorylation cascade (CK1→GSK3B) with well-defined kinetics (Km ~8.5 μM, kcat ~0.079/sec); (2) Destruction complex assembly via AXIN1 provides ~2-fold catalytic enhancement; (3) Phosphorylation-dependent APC binding shows dramatic 300-fold affinity increase (Kd 2-10 nM vs 0.6-3.1 μM), rate-limiting for destruction complex function; (4) 12 ARM repeats (residues 141-664) create extended binding groove with specific binding determinants (Lys312 in ARM5, Lys435 in ARM8) for multiple overlapping partners; (5) Nuclear vs cytoplasmic partitioning controlled by phosphorylation state and competitive binding; (6) Dual function in cell adhesion (E-cadherin ~85 nM, alpha-catenin ~15 nM) vs transcription (TCF/LEF) creates functional compartmentalization; (7) Disease-relevant mutations at destruction box (Ser33/Ser37/Thr41/Ser45) provide constitutive activation phenotypes. Quantitative binding and kinetic data enables mechanistic rule-based modeling of destruction complex dynamics, Wnt-induced stabilization, and therapeutic intervention strategies."
+    "generated_at": "2026-10-06T00:00:00Z",
+    "queried_databases": ["UniProt", "NCBI Gene", "InterPro", "Pfam", "PROSITE", "SMART", "PDB", "AlphaFold", "STRING", "BioGRID", "IntAct", "Reactome", "KEGG", "GO"],
+    "data_quality_notes": "Comprehensive data available. Quantitative binding: APC (Kd 2-10 nM phosphorylated, 300-fold increase over unphosphorylated); alpha-catenin (15 nM); E-cadherin (85 nM estimated). GSK3B kinetics well-characterized (Km 8.5 μM, kcat 0.079/sec). TCF7L2 kinetics measured (kon 7.3×10^7 M^-1s^-1, koff 5.7×10^-4 s^-1). Individual ARM repeat boundaries from PROSITE and structural literature. Sequential phosphorylation mechanism well-established with strict Ser45 priming requirement. AXIN1, LEF1, beta-TrCP binding characterized qualitatively.",
+    "modeling_relevance_summary": "Beta-catenin is the central node of canonical Wnt signaling. Key parameters: (1) Sequential phosphorylation cascade (CK1→GSK3B) with well-defined kinetics; (2) Phosphorylation-dependent APC binding shows 300-fold affinity increase, rate-limiting for destruction; (3) 12 ARM repeats create extended binding groove with specific determinants (Lys312, Lys435); (4) Dual function in adhesion (E-cadherin, alpha-catenin) vs transcription (TCF/LEF) creates compartmentalization; (5) Disease mutations at destruction box provide constitutive activation. Quantitative data enables mechanistic modeling of destruction complex dynamics and therapeutic intervention."
   }
 }
