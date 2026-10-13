@@ -1,0 +1,8 @@
+%init:  10 bCat()
+
+bCat(S33{p}, S37{p}, arm[rpt1.APC]) -> . @ 1.0
+bCat(S33{p}, S37{p}, arm[rpt3.APC]) -> . @ 1.0
+bCat(S33{p}, S37{p}, arm[rpt4.APC]) -> . @ 1.0
+bCat(S33{p}, S37{p}, arm[rpt5.APC]) -> . @ 1.0
+bCat(S33{p}, S37{p}, arm[rpt6.APC]) -> . @ 1.0
+bCat(S33{p}, S37{p}, arm[rpt7.APC]) -> . @ 1.0
