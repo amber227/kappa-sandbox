@@ -8,860 +8,594 @@
   },
   "sequence": {
     "canonical_length": 695,
-    "canonical_sequence": "MAETKIIYHMDEEETPYLVKLPVAPERVTLADFKNVLSNRPVHAYKFFFKSMDQDFGVVKEEIFDDNAKLPCFNGRVVSWLVLAEGAHSDAGSQGTDSHTDLPPPLERTGGIGDSRPPSFHPNVASSRDGMDNETGTESMVSHRRERARRRNREEAARTNGHPRGDRRRDVGLPPDSASTALSSELESSSFVDSDEDGSTSRLSSSTEQSTSSRLIRKHKRRRRKQRLRQADRASSFSSITDSTMSLNIVTVTLNMERHHFLGISIVGQSNDRGDGGIYIGSIMKGGAVAADGRIEPGDMLLQVNDVNFENMSNDDAVRVLREIVSQTGPISLTVAKCWDPTPRSYFTVPRADPVRPIDPAAWLSHTAALTGALPRYGTSPCSSAVTRTSSSSLTSSVPGAPQLEEAPLTVKSDMSAVVRVMQLPDSGLEIRDRMWLKITIANAVIGADVVDWLYTHVEGFKERREARKYASSLLKHGFLRHTVNKITFSEQCYYVFGDLCSNLATLNLNSGSSGTSDQDTLAPLPHPAAPWPLGQGYPYQYPGPPPCFPPAYQDPGFSYGSGSTGSQQSEGSKSSGSTRSSRRAPGREKERRAAGAGGSGSESDHTAPSGVGSSWRERPAGQLSRGSSPRSQASATAPGLPPPHPTTKAYTVVGGPPGGPPVRELAAVPPELTGSRQSFQKAMGNPCEFFVDIM",
+    "canonical_sequence": "MAETKIIYHMDEEETPYLVKLPVAPERVTLADFKNVLSNRPVHAYKFFFKSMDQDFGVVKEEIFDDNAKLPCFNGRVVSWLVLAEGAHSDAGSQGTDSHTDLPPPLERTGGIGDSRPPSFHPNVASSRDGMDNETGTESMVSHRRERARRRNREEAARTNGHPRGDRRRDVGLPPDSASTALSSELESSSFVDSDEDGSTSRLSSSTEQSTSSRLIRKHKRRRRKQRLRQADRASSFSSITDSTMSLNIVTVTLNMERHHFLGISIVGQSNDRGDGGIYIGSIMKGGAVAADGRIEPGDMLLQVNDVNFENMSNDDAVRVLREIVSQTGPISLTVAKATDCWDPTPRSYFTVPRADPVRPIDPAAWLSHTAALTGALPRYGTSPCSSAVTRTSSSSLTSSVPGAPQLEEAPLTVKSDMSAVVRVMQLPDSGLEIRDRMWLKITIANAVIGADVVDWLYTHVEGFKERREARKYASSLLKHGFLRHTVNKITFSEQCYYVFGDLCSNLATLNLNSGSSGTSDQDTLAPLPHPAAPWPLGQGYPYQYPGPPPCFPPAYQDPGFSYGSGSTGSQQSEGSKSSGSTRSSRRAPGREKERRAAGAGGSGSESDHTAPSGVGSSWRERPAGQLSRGSSPRSQASATAPGLPPPHPTTKAYTVVGGPPGGPPVRELAAVPPELTGSRQSFQKAMGNPCEFFVDIM",
     "molecular_weight_da": 75187,
     "isoforms": [
       {
-        "isoform_id": "O14640-1",
+        "isoform_id": "O14640-2",
         "length": 695,
-        "description": "Canonical isoform",
-        "sequence": "MAETKIIYHMDEEETPYLVKLPVAPERVTLADFKNVLSNRPVHAYKFFFKSMDQDFGVVKEEIFDDNAKLPCFNGRVVSWLVLAEGAHSDAGSQGTDSHTDLPPPLERTGGIGDSRPPSFHPNVASSRDGMDNETGTESMVSHRRERARRRNREEAARTNGHPRGDRRRDVGLPPDSASTALSSELESSSFVDSDEDGSTSRLSSSTEQSTSSRLIRKHKRRRRKQRLRQADRASSFSSITDSTMSLNIVTVTLNMERHHFLGISIVGQSNDRGDGGIYIGSIMKGGAVAADGRIEPGDMLLQVNDVNFENMSNDDAVRVLREIVSQTGPISLTVAKCWDPTPRSYFTVPRADPVRPIDPAAWLSHTAALTGALPRYGTSPCSSAVTRTSSSSLTSSVPGAPQLEEAPLTVKSDMSAVVRVMQLPDSGLEIRDRMWLKITIANAVIGADVVDWLYTHVEGFKERREARKYASSLLKHGFLRHTVNKITFSEQCYYVFGDLCSNLATLNLNSGSSGTSDQDTLAPLPHPAAPWPLGQGYPYQYPGPPPCFPPAYQDPGFSYGSGSTGSQQSEGSKSSGSTRSSRRAPGREKERRAAGAGGSGSESDHTAPSGVGSSWRERPAGQLSRGSSPRSQASATAPGLPPPHPTTKAYTVVGGPPGGPPVRELAAVPPELTGSRQSFQKAMGNPCEFFVDIM"
+        "description": "Alternative splicing variant with sequence variation at positions 378-403",
+        "sequence": "Isoform 2 contains glutamic acid substitution at specified region"
       }
     ]
   },
-  "domains_and_motifs": {
-    "interpro_entries": [
-      {
-        "id": "DVL1_DIX",
-        "accession": "IPR003351",
-        "name": "DIX domain",
-        "type": "Domain",
-        "locations": [{"start": 1, "end": 82}],
-        "description": "N-terminal domain mediating head-to-tail polymerization with AXIN1 DAX domain for signalosome assembly"
-      },
-      {
-        "id": "DVL1_PDZ",
-        "accession": "IPR001478",
-        "name": "PDZ domain",
-        "type": "Domain",
-        "locations": [{"start": 249, "end": 342}],
-        "description": "Central domain binding FZD KTxxxW motif for membrane recruitment"
-      },
-      {
-        "id": "DVL1_DEP",
-        "accession": "IPR000591",
-        "name": "DEP domain",
-        "type": "Domain",
-        "locations": [{"start": 404, "end": 502}],
-        "description": "C-terminal domain with polybasic membrane-targeting region"
-      }
-    ],
-    "pfam_domains": [
-      {
-        "id": "DVL1_DIX_PF",
-        "accession": "PF02377",
-        "name": "Dishevelled family",
-        "clan": "CL0622",
-        "locations": [{"start": 3, "end": 81}],
-        "e_value": 1e-45,
-        "description": "DIX domain with 4 beta-sheets and 1 helix"
-      },
-      {
-        "id": "DVL1_PDZ_PF",
-        "accession": "PF00595",
-        "name": "PDZ domain",
-        "clan": "CL0466",
-        "locations": [{"start": 244, "end": 343}],
-        "e_value": 1e-38,
-        "description": "PDZ domain with 6 beta-strands and 2 alpha-helices"
-      },
-      {
-        "id": "DVL1_DEP_PF",
-        "accession": "PF00610",
-        "name": "DEP domain",
-        "clan": "CL0340",
-        "locations": [{"start": 428, "end": 497}],
-        "e_value": 1e-32,
-        "description": "DEP domain with helix bundle (H1-H3) and beta-hairpin arm (B1-B2)"
-      }
-    ],
-    "prosite_patterns": [],
-    "smart_domains": [
-      {
-        "id": "DVL1_DIX_SM",
-        "accession": "SM00021",
-        "name": "DIX",
-        "locations": [{"start": 1, "end": 85}],
-        "description": "Dishevelled and Axin domain for protein polymerization"
-      },
-      {
-        "id": "DVL1_PDZ_SM",
-        "accession": "SM00228",
-        "name": "PDZ",
-        "locations": [{"start": 251, "end": 335}],
-        "description": "PDZ domain for C-terminal peptide binding"
-      },
-      {
-        "id": "DVL1_DEP_SM",
-        "accession": "SM00244",
-        "name": "DEP",
-        "locations": [{"start": 430, "end": 497}],
-        "description": "DEP domain for membrane targeting"
-      }
-    ],
-    "signaling_motifs": [
-      {
-        "id": "DVL1_PGXPP_DEGRON",
-        "type": "KLHL12 E3 ligase degron",
-        "location": {"start": 658, "end": 663},
-        "sequence": "PGGPPG",
-        "description": "PGXPP degron motif for KLHL12 binding and ubiquitination; extended binding region 655-663 (GGPPGGPPV); core motif 658-662 (PGGPP)",
-        "binding_partners": [
-          {
-            "partner": "KLHL12",
-            "partner_region": "Kelch domain beta-propeller",
-            "binding_mode": "U-shaped turn conformation",
-            "affinity_kd_um": 22.0,
-            "notes": "Low micromolar affinity; mutation/deletion reduces ubiquitination and increases DVL1 stability"
-          }
-        ]
-      },
-      {
-        "id": "DVL1_CK1_PHOSPHO_S143",
-        "type": "CK1 phosphorylation site",
-        "location": {"start": 143, "end": 143},
-        "sequence": "S",
-        "description": "Serine 143 phosphorylated by CK1δ/ε creating interface for PLK1 interaction; dephosphorylated by PP5 and PTEN; S143-phospho-DVL1 localizes to centrosome",
-        "kinases": ["CK1δ", "CK1ε"],
-        "phosphatases": ["PP5", "PTEN"]
-      },
-      {
-        "id": "DVL1_CK1_PHOSPHO_T224",
-        "type": "CK1 phosphorylation site",
-        "location": {"start": 224, "end": 224},
-        "sequence": "T",
-        "description": "Threonine 224 phosphorylated by CK1δ/ε creating interface for PLK1 interaction",
-        "kinases": ["CK1δ", "CK1ε"]
-      },
-      {
-        "id": "DVL1_DIX_HEAD",
-        "type": "DIX head interface",
-        "location": {"start": 1, "end": 35},
-        "sequence": "MAETKIIYHMDEEETPYLVKLPVAPERVTLADFK",
-        "description": "Head interface (beta1, beta2, C-terminal helix) for head-to-tail DIX polymerization with AXIN1 DAX domain",
-        "binding_partners": [
-          {
-            "partner": "AXIN1",
-            "partner_region": "DAX domain tail interface (residues around Y760/V800/F801)",
-            "binding_mode": "Head-to-tail heterotypic polymerization",
-            "critical_residues": ["Y27", "F43"],
-            "notes": "Same residues mediate both homo- and heterotypic DIX-DIX interactions"
-          }
-        ]
-      },
-      {
-        "id": "DVL1_DIX_TAIL",
-        "type": "DIX tail interface",
-        "location": {"start": 50, "end": 82},
-        "sequence": "NGRVVSWLVLAEGAHSDAGSQGTDSHTDLPPPL",
-        "description": "Tail interface (beta3, beta4) for head-to-tail DIX polymerization",
-        "binding_partners": [
-          {
-            "partner": "AXIN1",
-            "partner_region": "DAX domain head interface",
-            "binding_mode": "Head-to-tail heterotypic polymerization",
-            "critical_residues": ["V67", "K68", "E69"],
-            "notes": "Mutations V67A/K68A/E69A inhibit canonical Wnt pathway"
-          }
-        ]
-      },
-      {
-        "id": "DVL1_PDZ_FZD_BINDING",
-        "type": "FZD binding site",
-        "location": {"start": 249, "end": 342},
-        "sequence": "SLNIVTVTLNMERHHFLGISIVGQSNDRGDGGIYIGSIMKGGAVAADGRIEPGDMLLQVNDVNFENMSNDDAVRVLREIVSQTGPISLTVAKCWDPTPRSYFTVPRAD",
-        "description": "PDZ domain binding conserved KTxxxW motif in FZD cytoplasmic tail (2 residues after TM7); binds FZD1/2/3/4/7 with high affinity",
-        "binding_partners": [
-          {
-            "partner": "FZD receptors (FZD1/2/3/4/7)",
-            "partner_region": "KTxxxW motif in cytoplasmic tail",
-            "binding_mode": "PDZ-ligand interaction with flanking residues contributing to specificity",
-            "notes": "Lysine and tryptophan invariant; conformational structure important for high-affinity binding"
-          }
-        ]
-      }
-    ]
-  },
+  "domains_and_motifs": [
+    {
+      "identifier": "DIX_1_85",
+      "name": "DIX domain",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 1,
+          "end": 85
+        }
+      ],
+      "sequence": "MAETKIIYHMDEEETPYLVKLPVAPERVTLADFKNVLSNRPVHAYKFFFKSMDQDFGVVKEEIFDDNAKLPCFNGRVVSW",
+      "description": "Domain present in Dishevelled and Axin; mediates homooligomerization and heterotypic interactions with Axin DIX domain. Critical for Wnt signaling pathway activation.",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR001158",
+          "notes": "Domain present in Dishevelled and axin"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF00778",
+          "notes": "DIX domain"
+        },
+        {
+          "database": "PROSITE",
+          "accession": "PS50841",
+          "notes": "DIX domain profile"
+        },
+        {
+          "database": "SMART",
+          "accession": "SM00021",
+          "notes": "DIX domain"
+        }
+      ]
+    },
+    {
+      "identifier": "DVL_specific_90_247",
+      "name": "Dishevelled-specific domain",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 90,
+          "end": 247
+        }
+      ],
+      "sequence": "LLAEGAHSDAGSQGTDSHTDLPPPLERTGGIGDSRPPSFHPNVASSRDGMDNETGTESMVSHRRERARRRNREEAARTNGHPRGDRRRDVGLPPDSASTALSSELESSSFVDSDEDGSTSRLSSSTEQSTSSRLIRKHKRRRRKQRLRQADRASSFSSITDSTMSLNIVTVTL",
+      "description": "Central region unique to Dishevelled proteins; contains multiple phosphorylation sites and basic residues. Subject to extensive phosphorylation by casein kinases.",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR003351",
+          "notes": "Dishevelled protein domain"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF02377",
+          "notes": "Dishevelled-specific domain"
+        }
+      ]
+    },
+    {
+      "identifier": "PDZ_251_339",
+      "name": "PDZ domain",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 251,
+          "end": 339
+        }
+      ],
+      "sequence": "NMERHHFLGISIVGQSNDRGDGGIYIGSIMKGGAVAADGRIEPGDMLLQVNDVNFENMSNDDAVRVLREIVSQTGPISLTVAKATDCWDPTPRSYFTVPRAD",
+      "description": "Protein-protein interaction domain that binds to C-terminal motifs in Frizzled receptors (KTxxxW motif) and other signaling partners. Forms homotrimers in crystal structures. Binding site for small molecule inhibitors.",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR001478",
+          "notes": "PDZ domain"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF00595",
+          "notes": "PDZ domain (also known as DHR or GLGF)"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF13180",
+          "notes": "PDZ domain"
+        },
+        {
+          "database": "PROSITE",
+          "accession": "PS50106",
+          "notes": "PDZ domain profile"
+        },
+        {
+          "database": "SMART",
+          "accession": "SM00228",
+          "notes": "PDZ domain"
+        },
+        {
+          "database": "UniProt",
+          "notes": "Crystal structures available: 6LCA (homotrimer), 6LCB (with inhibitor NPL3009)"
+        }
+      ]
+    },
+    {
+      "identifier": "DEP_425_499",
+      "name": "DEP domain",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 425,
+          "end": 499
+        }
+      ],
+      "sequence": "IRDRMWLKITIANAVIGADVVDWLYTHVEGFKERREARKYASSLLKHGFLRHTVNKITFSEQCYYVFGDLCSNLATLNLN",
+      "description": "Dishevelled/EGL-10/Pleckstrin domain; mediates interaction with cell membrane and is involved in planar cell polarity signaling. Required for membrane localization upon Wnt stimulation.",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR000591",
+          "notes": "DEP domain"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF00610",
+          "notes": "DEP domain"
+        },
+        {
+          "database": "PROSITE",
+          "accession": "PS50186",
+          "notes": "DEP domain profile"
+        },
+        {
+          "database": "SMART",
+          "accession": "SM00049",
+          "notes": "DEP domain"
+        }
+      ]
+    },
+    {
+      "identifier": "DVL_C_terminal_503_685",
+      "name": "Dishevelled C-terminal domain",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 503,
+          "end": 685
+        }
+      ],
+      "sequence": "SGSSGTSDQDTLAPLPHPAAPWPLGQGYPYQYPGPPPCFPPAYQDPGFSYGSGSTGSQQSEGSKSSGSTRSSRRAPGREKERRAAGAGGSGSESDHTAPSGVGSSWRERPAGQLSRGSSPRSQASATAPGLPPPHPTTKAYTVVGGPPGGPPVRELAAVPPELTGSRQSFQKAMGNPCEFFVD",
+      "description": "C-terminal region of Dishevelled; largely disordered with low complexity and proline-rich sequences. Contains the PGXPP degron motif recognized by KLHL12 E3 ubiquitin ligase.",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR024580",
+          "notes": "Dishevelled C-terminal domain"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF12316",
+          "notes": "Dishevelled C-terminal domain"
+        }
+      ]
+    },
+    {
+      "identifier": "PGXPP_degron_650_669",
+      "name": "PGXPP degron motif",
+      "type": "Degron",
+      "locations": [
+        {
+          "start": 650,
+          "end": 669
+        }
+      ],
+      "sequence": "AYTVVGGPPGGPPVRELAAV",
+      "description": "Degron motif recognized by KLHL12 E3 ubiquitin ligase for proteasomal degradation. Contains PGXPP consensus sequence. Adopts U-shaped turn conformation when bound to KLHL12 Kelch domain.",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "PMID:32612755",
+          "notes": "Identified by crystallography; Kd = 22.3 \u03bcM binding to KLHL12"
+        },
+        {
+          "database": "UniProt",
+          "notes": "Ubiquitination site for protein degradation"
+        }
+      ]
+    },
+    {
+      "identifier": "FZD_binding_PDZ",
+      "name": "Frizzled C-terminal binding site",
+      "type": "Binding_site",
+      "locations": [
+        {
+          "start": 251,
+          "end": 339
+        }
+      ],
+      "sequence": "NMERHHFLGISIVGQSNDRGDGGIYIGSIMKGGAVAADGRIEPGDMLLQVNDVNFENMSNDDAVRVLREIVSQTGPISLTVAKATDCWDPTPRSYFTVPRAD",
+      "description": "PDZ domain binding groove that recognizes KTxxxW motif in the C-terminus of Frizzled receptors. Critical for Wnt signal transduction from membrane to cytoplasm.",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "PMID:25829223",
+          "notes": "Direct binding to Frizzled C-terminal motif; affinity ~3-4 \u03bcM"
+        },
+        {
+          "database": "UniProt",
+          "notes": "Binding site for frizzled family members"
+        }
+      ]
+    },
+    {
+      "identifier": "CK1_phosphorylation_sites",
+      "name": "Casein kinase phosphorylation sites",
+      "type": "Motif",
+      "locations": [
+        {
+          "start": 90,
+          "end": 247
+        }
+      ],
+      "sequence": "Multiple sites in basic/PDZ region",
+      "description": "Multiple serine and threonine residues phosphorylated by casein kinase 1 epsilon (CSNK1E) and casein kinase 2 (CSNK2). Phosphorylation regulates DVL1 activity and membrane translocation. S194 phosphorylation enhances ARRB1 interaction.",
+      "sources": [
+        {
+          "database": "UniProt",
+          "notes": "Phosphorylation at Ser-194 by casein kinases"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:25280217",
+          "notes": "Sequential phosphorylation by CK1 epsilon regulates Wnt pathway activation"
+        }
+      ]
+    },
+    {
+      "identifier": "NLS_nuclear_import",
+      "name": "Nuclear localization signal",
+      "type": "NLS",
+      "locations": [
+        {
+          "start": 150,
+          "end": 170
+        }
+      ],
+      "sequence": "RKHKRRRRKQRLRQADRASS",
+      "description": "Basic region that mediates nuclear translocation, enhanced by interaction with FOXK2. Important for DVL1 nuclear functions in transcriptional regulation.",
+      "sources": [
+        {
+          "database": "UniProt",
+          "notes": "Nuclear localization enhanced by FOXK2"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:35524084",
+          "notes": "DVL1 requires nuclear localization for proliferation regulation"
+        }
+      ]
+    }
+  ],
   "structure": {
     "experimental_structures": [
       {
-        "pdb_id": "3PZ8",
+        "pdb_id": "6LCA",
         "method": "X-ray",
-        "resolution_angstrom": 2.87,
-        "chain": "A",
-        "coverage": {"start": 1, "end": 82},
-        "description": "Crystal structure of Dvl1-DIX(Y17D) mutant",
-        "ligands": [],
-        "url": "https://www.rcsb.org/structure/3PZ8"
-      },
-      {
-        "pdb_id": "1MC7",
-        "method": "X-ray",
-        "resolution_angstrom": 1.76,
-        "chain": "A",
-        "coverage": {"start": 249, "end": 342},
-        "description": "Native mouse Dvl1 PDZ domain crystal structure",
-        "ligands": [],
-        "url": "https://www.rcsb.org/structure/1MC7"
+        "resolution_angstrom": 2.4,
+        "chain": "A,B,C,D,E,F,G,H",
+        "coverage": {
+          "start": 251,
+          "end": 352
+        },
+        "description": "Crystal structure of human Dishevelled1 PDZ domain homotrimer. Shows unique trimeric assembly with C3 cyclic symmetry where \u03b22-\u03b23 loops occupy canonical ligand-binding clefts, forming auto-inhibitory trimer.",
+        "ligands": [
+          "SO4"
+        ],
+        "url": "https://www.rcsb.org/structure/6LCA"
       },
       {
         "pdb_id": "6LCB",
         "method": "X-ray",
-        "resolution_angstrom": 2.4,
+        "resolution_angstrom": 1.4,
         "chain": "A",
-        "coverage": {"start": 249, "end": 342},
-        "description": "Crystal structure of human Dishevelled1 PDZ domain with inhibitor NPL3009",
-        "ligands": ["NPL3009"],
+        "coverage": {
+          "start": 251,
+          "end": 352
+        },
+        "description": "Crystal structure of human Dishevelled1 PDZ domain with its inhibitor NPL3009. High-resolution structure showing small molecule binding in PDZ groove.",
+        "ligands": [
+          "NPL3009 (E83)",
+          "SO4"
+        ],
         "url": "https://www.rcsb.org/structure/6LCB"
-      },
-      {
-        "pdb_id": "1FSH",
-        "method": "NMR",
-        "resolution_angstrom": null,
-        "chain": "A",
-        "coverage": {"start": 404, "end": 502},
-        "description": "Solution structure of mouse Dvl-1 DEP domain",
-        "ligands": [],
-        "url": "https://www.rcsb.org/structure/1FSH"
       },
       {
         "pdb_id": "6TTK",
         "method": "X-ray",
-        "resolution_angstrom": 2.4,
-        "chain": "B",
-        "coverage": {"start": 655, "end": 663},
-        "description": "Crystal structure of KLHL12 Kelch domain in complex with DVL1 peptide (GGPPGGPPV)",
-        "ligands": [],
+        "resolution_angstrom": 2.38,
+        "chain": "E,F,G,H (DVL1 peptide)",
+        "coverage": {
+          "start": 650,
+          "end": 664
+        },
+        "description": "Crystal structure of the kelch domain of human KLHL12 in complex with DVL1 peptide (residues 650-669). Shows PGXPP degron motif in U-shaped turn conformation bound to KLHL12 \u03b2-propeller domain. Demonstrates molecular basis for ubiquitin-mediated degradation.",
+        "ligands": [
+          "EDO",
+          "Na",
+          "Cl"
+        ],
         "url": "https://www.rcsb.org/structure/6TTK"
       }
     ],
     "alphafold_prediction": {
       "available": true,
       "accession": "AF-O14640-F1",
-      "confidence_summary": "High confidence (pLDDT >70) for three structured domains: DIX (1-85), PDZ (251-335), DEP (430-497). Low confidence for intrinsically disordered regions (IDRs): IDR1 between DIX-PDZ, IDR2 between PDZ-DEP, IDR3 after DEP domain. Structured domains have pLDDT >90 indicating side-chain accuracy comparable to crystal structures.",
+      "confidence_summary": "High confidence (pLDDT > 70) for structured domains: DIX (1-85), PDZ (251-339), DEP (425-499). Low confidence (pLDDT < 50) for disordered regions: basic/phosphorylation region (90-247), C-terminal domain (503-695). These predictions align with known domain architecture and experimental disorder predictions.",
       "url": "https://alphafold.ebi.ac.uk/entry/O14640"
     }
   },
   "post_translational_modifications": [
     {
-      "id": "DVL1_PHOS_S143",
       "type": "Phosphorylation",
-      "position": 143,
+      "position": 194,
       "residue": "S",
-      "function": "Activating - creates PLK1 interaction interface for primary cilia disassembly",
-      "evidence": "Experimental",
-      "enzymes": {
-        "kinases": ["CK1δ", "CK1ε"],
-        "phosphatases": ["PP5", "PTEN"]
-      },
-      "notes": "Wnt-induced phosphorylation; S143-phospho-DVL1 localizes to centrosome"
+      "function": "Enhances ARRB1 (beta-arrestin-1) interaction; regulates DVL1 activity in Wnt signaling",
+      "evidence": "Experimental"
     },
     {
-      "id": "DVL1_PHOS_T224",
       "type": "Phosphorylation",
-      "position": 224,
-      "residue": "T",
-      "function": "Activating - creates PLK1 interaction interface",
-      "evidence": "Experimental",
-      "enzymes": {
-        "kinases": ["CK1δ", "CK1ε"],
-        "phosphatases": []
-      },
-      "notes": "Wnt-induced phosphorylation by CK1"
+      "position": null,
+      "residue": "S/T",
+      "function": "Multiple constitutive and Wnt-induced phosphorylation sites in basic/PDZ region by casein kinase 1 epsilon (CSNK1E) and casein kinase 2 (CSNK2). More than 50 sites identified across DVL family members. Sequential phosphorylation activates DVL and triggers membrane translocation.",
+      "evidence": "Experimental"
     },
     {
-      "id": "DVL1_UBIQ_K50",
       "type": "Ubiquitination",
-      "position": 50,
+      "position": null,
       "residue": "K",
-      "function": "Signaling - K63-linked ubiquitination for Wnt signaling activation",
-      "evidence": "Experimental",
-      "enzymes": {
-        "e3_ligases": ["KLHL12"],
-        "deubiquitinases": ["USP14", "CYLD"]
-      },
-      "notes": "Principal K63-linked ubiquitination site in CYLD-deficient cells; required for Wnt signaling"
+      "function": "Both Lys-48-linked (degradation signal) and Lys-63-linked (signaling) polyubiquitin chains. KLHL12 E3 ligase mediates Lys-48 ubiquitination via PGXPP degron recognition. CYLD deubiquitinase removes ubiquitin to stabilize DVL1.",
+      "evidence": "Experimental"
     },
     {
-      "id": "DVL1_UBIQ_K285",
-      "type": "Ubiquitination",
-      "position": 285,
-      "residue": "K",
-      "function": "Degradation - K48-linked ubiquitination for proteasomal degradation",
-      "evidence": "Experimental",
-      "enzymes": {
-        "e3_ligases": ["KLHL12", "HECW1"],
-        "deubiquitinases": []
-      },
-      "notes": "K48-linked ubiquitination site for protein turnover"
-    },
-    {
-      "id": "DVL1_UBIQ_K444",
-      "type": "Ubiquitination",
-      "position": 444,
-      "residue": "K",
-      "function": "Regulatory",
-      "evidence": "Predicted",
-      "enzymes": {
-        "e3_ligases": [],
-        "deubiquitinases": []
-      },
-      "notes": "Conserved residue in DEP domain; predicted ubiquitination site"
-    },
-    {
-      "id": "DVL1_UBIQ_K451",
-      "type": "Ubiquitination",
-      "position": 451,
-      "residue": "K",
-      "function": "Regulatory",
-      "evidence": "Predicted",
-      "enzymes": {
-        "e3_ligases": [],
-        "deubiquitinases": []
-      },
-      "notes": "Conserved residue in DEP domain; predicted ubiquitination site"
+      "type": "Glycosylation",
+      "position": null,
+      "residue": null,
+      "function": "Two O-linked glycosylation sites documented; functional significance unclear",
+      "evidence": "Experimental"
     }
   ],
   "function": {
-    "uniprot_function": "Segment polarity protein dishevelled homolog DVL-1 is a cytoplasmic scaffold protein that transduces Wnt signaling from Frizzled receptors to downstream effectors. DVL1 participates in both canonical Wnt/beta-catenin signaling and non-canonical Wnt pathways including planar cell polarity and Wnt/Ca2+ pathways. Upon Wnt pathway activation, phosphorylated DVL translocates to the plasma membrane through interaction between the DVL PDZ domain and the FZD KTxxxW motif. DVL1 mediates signal transduction for multiple Wnt ligands, enabling LEF1 activation during WNT1 and WNT3A signaling. DVL1 binds to the cytoplasmic C-terminus of Frizzled family members and is required for Wnt-induced LRP6 phosphorylation and signalosome assembly. DVL1 forms polymers that recruit AXIN1/GSK3B complexes to the membrane, promoting formation of signalosomes that inhibit the beta-catenin destruction complex.",
-    "catalytic_activity": "Not an enzyme; functions as scaffold protein",
+    "uniprot_function": "Participates in Wnt signaling by binding to the cytoplasmic C-terminus of frizzled family members and transducing the Wnt signal to down-stream effectors. Plays a role both in canonical and non-canonical Wnt signaling. Implicated in the signal transduction pathways mediated by multiple Wnt genes. Required for LEF1 activation upon WNT1 or WNT3A stimulation. Forms a ternary complex with MUSK and PAK1 that is important for MUSK-dependent regulation of AChR clustering during the formation of the neuromuscular junction. May play a role in hair cell orientation in the inner ear and neuromuscular junction development.",
+    "catalytic_activity": "Not an enzyme; functions as a scaffold and signal transduction adaptor protein",
     "subcellular_location": [
+      "Cell membrane (peripheral, cytoplasmic side)",
       "Cytoplasm",
-      "Plasma membrane (upon Wnt activation)",
-      "Centrosome (when phosphorylated at S143)",
-      "Dendrites and axons in neurons",
-      "Microtubule-associated",
-      "Actin-rich regions"
+      "Cytosol",
+      "Cytoplasmic vesicles",
+      "Nucleus (upon interaction with FOXK2 or during Wnt signaling)",
+      "Wnt signalosome (membrane-associated puncta upon pathway activation)"
     ],
-    "tissue_specificity": "Expressed in adult brain, placenta, lung, liver, and kidney with same patterns in fetal tissues. In embryonic development, expressed in neural tube (particularly dorsal portions), optic stalk, ventral forebrain, midbrain, eye, spinal cord, and notochord. In neurons, localizes to dendrites and axons associated with microtubules and actin-rich regions. Low brain regional specificity in adults.",
+    "tissue_specificity": "Widely expressed. Found in brain, heart, kidney, liver, lung, skeletal muscle, pancreas, and placenta. Expression in multiple embryonic and adult tissues consistent with roles in development and tissue homeostasis.",
     "go_annotations": {
       "molecular_function": [
         {
-          "go_id": "GO:0003674",
-          "term": "Molecular function",
-          "evidence_code": "IDA",
-          "description": "Scaffold protein activity in Wnt signaling"
+          "go_id": "GO:0005515",
+          "term": "protein binding",
+          "evidence_code": "IPI"
         },
         {
-          "go_id": "GO:0005515",
-          "term": "Protein binding",
-          "evidence_code": "IPI",
-          "description": "Binds multiple partners including FZD, AXIN1, LRP6, APC"
+          "go_id": "GO:0003700",
+          "term": "DNA-binding transcription factor activity",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0005070",
+          "term": "SH3/SH2 adaptor activity",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0008013",
+          "term": "beta-catenin binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0017147",
+          "term": "Wnt-protein binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0019902",
+          "term": "phosphatase binding",
+          "evidence_code": "IPI"
         },
         {
           "go_id": "GO:0019904",
-          "term": "Protein domain specific binding",
-          "evidence_code": "IDA",
-          "description": "PDZ domain binds FZD KTxxxW motif; DIX domain binds AXIN1 DAX domain"
+          "term": "protein domain specific binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0042803",
+          "term": "protein homodimerization activity",
+          "evidence_code": "IPI"
         }
       ],
       "biological_process": [
         {
-          "go_id": "GO:0016055",
-          "term": "Wnt signaling pathway",
-          "evidence_code": "IDA",
-          "description": "Central mediator of Wnt/beta-catenin canonical pathway"
+          "go_id": "GO:0007275",
+          "term": "multicellular organism development",
+          "evidence_code": "TAS"
         },
         {
           "go_id": "GO:0060070",
-          "term": "Canonical Wnt signaling pathway",
-          "evidence_code": "IMP",
-          "description": "Required for beta-catenin stabilization"
+          "term": "canonical Wnt signaling pathway",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0035567",
+          "term": "non-canonical Wnt signaling pathway",
+          "evidence_code": "IMP"
         },
         {
           "go_id": "GO:0007224",
-          "term": "Smoothened signaling pathway",
-          "evidence_code": "IDA",
-          "description": "Cross-talk with Hedgehog signaling"
+          "term": "smoothened signaling pathway",
+          "evidence_code": "TAS"
         },
         {
-          "go_id": "GO:0001736",
-          "term": "Establishment of planar polarity",
-          "evidence_code": "IDA",
-          "description": "Non-canonical Wnt/PCP pathway"
+          "go_id": "GO:0045944",
+          "term": "positive regulation of transcription by RNA polymerase II",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0007399",
+          "term": "nervous system development",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0007528",
+          "term": "neuromuscular junction development",
+          "evidence_code": "IMP"
         },
         {
           "go_id": "GO:0030182",
-          "term": "Neuron differentiation",
-          "evidence_code": "IDA",
-          "description": "Neuroblast specification in development"
+          "term": "neuron differentiation",
+          "evidence_code": "IMP"
         },
         {
-          "go_id": "GO:0007275",
-          "term": "Multicellular organism development",
-          "evidence_code": "IDA",
-          "description": "Segmentation and developmental processes"
+          "go_id": "GO:0048814",
+          "term": "regulation of dendrite morphogenesis",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0001756",
+          "term": "somitogenesis",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0016055",
+          "term": "Wnt signaling pathway",
+          "evidence_code": "TAS"
         }
       ],
       "cellular_component": [
         {
           "go_id": "GO:0005737",
-          "term": "Cytoplasm",
-          "evidence_code": "IDA",
-          "description": "Primary localization as cytoplasmic scaffold"
+          "term": "cytoplasm",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005829",
+          "term": "cytosol",
+          "evidence_code": "IDA"
         },
         {
           "go_id": "GO:0005886",
-          "term": "Plasma membrane",
-          "evidence_code": "IDA",
-          "description": "Recruited upon Wnt activation for signalosome assembly"
+          "term": "plasma membrane",
+          "evidence_code": "IDA"
         },
         {
-          "go_id": "GO:0005813",
-          "term": "Centrosome",
-          "evidence_code": "IDA",
-          "description": "S143-phosphorylated DVL1 localizes to centrosome"
+          "go_id": "GO:0005634",
+          "term": "nucleus",
+          "evidence_code": "IDA"
         },
         {
-          "go_id": "GO:0015630",
-          "term": "Microtubule cytoskeleton",
-          "evidence_code": "IDA",
-          "description": "Associates with microtubules in neurons"
+          "go_id": "GO:0030877",
+          "term": "beta-catenin destruction complex",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:1990909",
+          "term": "Wnt signalosome",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0045202",
+          "term": "synapse",
+          "evidence_code": "IDA"
         }
-      ]
-    }
-  },
-  "interactions": {
-    "string_network": {
-      "url": "https://string-db.org/network/9606.ENSP00000368169",
-      "top_interactors": [
-        {
-          "interaction_id": "DVL1_AXIN1",
-          "partner_gene": "AXIN1",
-          "partner_protein": "Axin-1",
-          "combined_score": 0.999,
-          "evidence_types": ["experimental", "database", "coexpression", "textmining"],
-          "binding_sites": {
-            "dvl1_region": "DIX domain (1-82)",
-            "partner_region": "DAX domain (residues 1-86)"
-          },
-          "notes": "Direct DIX-DAX domain interaction; co-polymerizes in signalosomes"
-        },
-        {
-          "interaction_id": "DVL1_APC",
-          "partner_gene": "APC",
-          "partner_protein": "Adenomatous polyposis coli protein",
-          "combined_score": 0.998,
-          "evidence_types": ["experimental", "database", "textmining"],
-          "binding_sites": {},
-          "notes": "Destruction complex component; negative regulator of beta-catenin"
-        },
-        {
-          "interaction_id": "DVL1_CTNNB1",
-          "partner_gene": "CTNNB1",
-          "partner_protein": "Catenin beta-1",
-          "combined_score": 0.997,
-          "evidence_types": ["experimental", "database", "coexpression", "textmining"],
-          "binding_sites": {},
-          "notes": "Key effector of canonical Wnt signaling"
-        },
-        {
-          "interaction_id": "DVL1_GSK3B",
-          "partner_gene": "GSK3B",
-          "partner_protein": "Glycogen synthase kinase-3 beta",
-          "combined_score": 0.996,
-          "evidence_types": ["experimental", "database", "textmining"],
-          "binding_sites": {},
-          "notes": "Destruction complex kinase; recruited to signalosomes"
-        },
-        {
-          "interaction_id": "DVL1_LRP6",
-          "partner_gene": "LRP6",
-          "partner_protein": "Low-density lipoprotein receptor-related protein 6",
-          "combined_score": 0.995,
-          "evidence_types": ["experimental", "database", "coexpression", "textmining"],
-          "binding_sites": {
-            "dvl1_region": "Multiple domains",
-            "partner_region": "Intracellular domain phosphorylated PPPSP motifs"
-          },
-          "notes": "Wnt co-receptor; DVL required for LRP6 phosphorylation and signalosome formation"
-        },
-        {
-          "interaction_id": "DVL1_DVL2",
-          "partner_gene": "DVL2",
-          "partner_protein": "Segment polarity protein dishevelled homolog DVL-2",
-          "combined_score": 0.994,
-          "evidence_types": ["experimental", "database", "coexpression", "textmining"],
-          "binding_sites": {
-            "dvl1_region": "DIX domain (1-82)",
-            "partner_region": "DIX domain"
-          },
-          "notes": "Paralog with overlapping function"
-        },
-        {
-          "interaction_id": "DVL1_DVL3",
-          "partner_gene": "DVL3",
-          "partner_protein": "Segment polarity protein dishevelled homolog DVL-3",
-          "combined_score": 0.993,
-          "evidence_types": ["experimental", "database", "coexpression", "textmining"],
-          "binding_sites": {
-            "dvl1_region": "DIX domain (1-82)",
-            "partner_region": "DIX domain"
-          },
-          "notes": "Paralog with overlapping function"
-        },
-        {
-          "interaction_id": "DVL1_CSNK1E",
-          "partner_gene": "CSNK1E",
-          "partner_protein": "Casein kinase I epsilon",
-          "combined_score": 0.985,
-          "evidence_types": ["experimental", "database", "textmining"],
-          "binding_sites": {
-            "dvl1_region": "S143, T224",
-            "partner_region": "Kinase domain"
-          },
-          "notes": "CK1ε phosphorylates DVL at S143 and T224"
-        },
-        {
-          "interaction_id": "DVL1_CSNK1D",
-          "partner_gene": "CSNK1D",
-          "partner_protein": "Casein kinase I delta",
-          "combined_score": 0.982,
-          "evidence_types": ["experimental", "database", "textmining"],
-          "binding_sites": {
-            "dvl1_region": "S143, T224",
-            "partner_region": "Kinase domain"
-          },
-          "notes": "CK1δ phosphorylates DVL at S143 and T224"
-        },
-        {
-          "interaction_id": "DVL1_AXIN2",
-          "partner_gene": "AXIN2",
-          "partner_protein": "Axin-2",
-          "combined_score": 0.980,
-          "evidence_types": ["experimental", "database", "textmining"],
-          "binding_sites": {
-            "dvl1_region": "DIX domain (1-82)",
-            "partner_region": "DIX domain"
-          },
-          "notes": "Destruction complex scaffold; DIX domain interaction"
-        },
-        {
-          "interaction_id": "DVL1_FZD_FAMILY",
-          "partner_gene": "FZD1/2/3/4/7",
-          "partner_protein": "Frizzled receptors",
-          "combined_score": 0.950,
-          "evidence_types": ["experimental", "database"],
-          "binding_sites": {
-            "dvl1_region": "PDZ domain (249-342)",
-            "partner_region": "KTxxxW motif in cytoplasmic tail"
-          },
-          "notes": "PDZ domain binds FZD KTxxxW motif for membrane recruitment"
-        }
-      ]
-    },
-    "biogrid_interactions": [
-      {
-        "interaction_id": "BG_DVL1_KLHL12",
-        "partner_gene": "KLHL12",
-        "partner_protein": "Kelch-like protein 12",
-        "interaction_type": "Physical",
-        "experimental_system": "Co-immunoprecipitation",
-        "pmid": "32241596",
-        "throughput": "Low",
-        "binding_sites": {
-          "dvl1_region": "PGXPP degron (658-663)",
-          "partner_region": "Kelch domain beta-propeller"
-        },
-        "quantitative": {
-          "kd_um": 22.0,
-          "method": "Fluorescence polarization"
-        },
-        "notes": "E3 ubiquitin ligase binding PGXPP degron motif (658-663); Kd ~22 μM"
-      },
-      {
-        "interaction_id": "BG_DVL1_AXIN1",
-        "partner_gene": "AXIN1",
-        "partner_protein": "Axin-1",
-        "interaction_type": "Physical",
-        "experimental_system": "Pull-down",
-        "pmid": "21245374",
-        "throughput": "Low",
-        "binding_sites": {
-          "dvl1_region": "DIX domain (1-82)",
-          "partner_region": "DAX domain"
-        },
-        "notes": "DIX-DAX head-to-tail heterotypic polymerization"
-      },
-      {
-        "interaction_id": "BG_DVL1_HECW1",
-        "partner_gene": "HECW1",
-        "partner_protein": "E3 ubiquitin-protein ligase HECW1",
-        "interaction_type": "Physical",
-        "experimental_system": "Affinity Capture-MS",
-        "pmid": "24412244",
-        "throughput": "High",
-        "binding_sites": {},
-        "notes": "E3 ligase mediating DVL1 ubiquitination"
-      },
-      {
-        "interaction_id": "BG_DVL1_USP14",
-        "partner_gene": "USP14",
-        "partner_protein": "Ubiquitin carboxyl-terminal hydrolase 14",
-        "interaction_type": "Physical",
-        "experimental_system": "Co-immunoprecipitation",
-        "pmid": "23752213",
-        "throughput": "Low",
-        "binding_sites": {
-          "dvl1_region": "K63-linked ubiquitin chains",
-          "partner_region": "Catalytic domain"
-        },
-        "notes": "Deubiquitinase preferentially removing K63-linked polyubiquitin chains"
-      },
-      {
-        "interaction_id": "BG_DVL1_CYLD",
-        "partner_gene": "CYLD",
-        "partner_protein": "Cylindromatosis protein",
-        "interaction_type": "Physical",
-        "experimental_system": "Biochemical Activity",
-        "pmid": "17210684",
-        "throughput": "Low",
-        "binding_sites": {
-          "dvl1_region": "K63-linked ubiquitin on K50, K285, others",
-          "partner_region": "Catalytic USP domain"
-        },
-        "quantitative": {
-          "regulation": "Phosphorylation at S418/S568 reduces catalytic efficiency",
-          "temporal_kinetics": "Rapid phosphorylation within 5 min of TNF-α stimulation"
-        },
-        "notes": "Deubiquitinase removing K63-linked polyubiquitin; negatively regulates Wnt signaling"
-      },
-      {
-        "interaction_id": "BG_DVL1_FZD1",
-        "partner_gene": "FZD1",
-        "partner_protein": "Frizzled-1",
-        "interaction_type": "Physical",
-        "experimental_system": "Two-hybrid",
-        "pmid": "10446135",
-        "throughput": "Low",
-        "binding_sites": {
-          "dvl1_region": "PDZ domain (249-342)",
-          "partner_region": "KTxxxW motif"
-        },
-        "notes": "PDZ domain binds FZD1 KTxxxW motif"
-      },
-      {
-        "interaction_id": "BG_DVL1_FZD2",
-        "partner_gene": "FZD2",
-        "partner_protein": "Frizzled-2",
-        "interaction_type": "Physical",
-        "experimental_system": "Protein-peptide",
-        "pmid": "11867732",
-        "throughput": "Low",
-        "binding_sites": {
-          "dvl1_region": "PDZ domain (249-342)",
-          "partner_region": "KTxxxW motif"
-        },
-        "notes": "PDZ domain binds FZD2 KTxxxW motif"
-      },
-      {
-        "interaction_id": "BG_DVL1_PLK1",
-        "partner_gene": "PLK1",
-        "partner_protein": "Serine/threonine-protein kinase PLK1",
-        "interaction_type": "Physical",
-        "experimental_system": "Co-immunoprecipitation",
-        "pmid": "28130421",
-        "throughput": "Low",
-        "binding_sites": {
-          "dvl1_region": "Phospho-S143, phospho-T224",
-          "partner_region": "Polo-box domain"
-        },
-        "notes": "Binds phosphorylated S143/T224 sites; regulates cilia disassembly"
-      }
-    ],
-    "intact_interactions": [
-      {
-        "interaction_id": "IA_DVL1_AXIN1",
-        "partner_gene": "AXIN1",
-        "partner_protein": "Axin-1",
-        "interaction_type": "Direct interaction",
-        "detection_method": "Pull-down",
-        "pmid": "21245374",
-        "interaction_accession": "EBI-10183846",
-        "binding_sites": {
-          "dvl1_region": "DIX domain (1-82)",
-          "partner_region": "DAX domain"
-        },
-        "notes": "DIX domain-mediated polymerization"
-      },
-      {
-        "interaction_id": "IA_DVL1_LRP6",
-        "partner_gene": "LRP6",
-        "partner_protein": "Low-density lipoprotein receptor-related protein 6",
-        "interaction_type": "Association",
-        "detection_method": "Immunoprecipitation",
-        "pmid": "14585963",
-        "interaction_accession": "EBI-2917234",
-        "binding_sites": {
-          "dvl1_region": "Multiple domains",
-          "partner_region": "Phosphorylated PPPSP motifs (intracellular)"
-        },
-        "notes": "Wnt-induced signalosome formation; DVL required for LRP6 phosphorylation by CK1γ"
-      },
-      {
-        "interaction_id": "IA_DVL1_CSNK1E",
-        "partner_gene": "CSNK1E",
-        "partner_protein": "Casein kinase I epsilon",
-        "interaction_type": "Phosphorylation reaction",
-        "detection_method": "In vitro kinase assay",
-        "pmid": "30683708",
-        "interaction_accession": "EBI-12856234",
-        "binding_sites": {
-          "dvl1_region": "S143, T224",
-          "partner_region": "Kinase active site"
-        },
-        "notes": "CK1ε phosphorylates S143 and T224"
-      }
-    ],
-    "summary": {
-      "total_physical_interactors": 131,
-      "high_confidence_interactors": 20,
-      "key_binding_partners": [
-        "AXIN1 (DIX-DAX polymerization for signalosome assembly)",
-        "FZD receptors (PDZ domain binds KTxxxW motif for membrane recruitment)",
-        "LRP6 (co-receptor; DVL-dependent phosphorylation and signalosome formation)",
-        "KLHL12 (E3 ligase binding PGXPP degron; Kd ~22 μM)",
-        "USP14 (deubiquitinase for K63-polyubiquitin removal)",
-        "CYLD (deubiquitinase negatively regulating Wnt signaling)",
-        "CK1ε/CK1δ (kinases phosphorylating S143/T224)",
-        "APC (destruction complex component)",
-        "GSK3B (destruction complex kinase)"
       ]
     }
   },
   "pathways": {
     "reactome": [
       {
+        "pathway_id": "R-HSA-201688",
+        "pathway_name": "WNT mediated activation of DVL",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-201688"
+      },
+      {
+        "pathway_id": "R-HSA-201681",
+        "pathway_name": "TCF dependent signaling in response to WNT",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-201681"
+      },
+      {
+        "pathway_id": "R-HSA-3772435",
+        "pathway_name": "Degradation of DVL",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-3772435"
+      },
+      {
         "pathway_id": "R-HSA-201687",
         "pathway_name": "Signaling by WNT",
         "species": "Homo sapiens",
-        "url": "https://reactome.org/content/detail/R-HSA-201687",
-        "role": "Central scaffold protein mediating Wnt signal transduction"
-      },
-      {
-        "pathway_id": "R-HSA-201688",
-        "pathway_name": "TCF dependent signaling in response to WNT",
-        "species": "Homo sapiens",
-        "url": "https://reactome.org/content/detail/R-HSA-201688",
-        "role": "Required for beta-catenin stabilization and TCF/LEF activation"
-      },
-      {
-        "pathway_id": "R-HSA-4086398",
-        "pathway_name": "Degradation of DVL",
-        "species": "Homo sapiens",
-        "url": "https://reactome.org/content/detail/R-HSA-4086398",
-        "role": "Substrate for ubiquitination by KLHL12 and other E3 ligases"
+        "url": "https://reactome.org/content/detail/R-HSA-201687"
       },
       {
         "pathway_id": "R-HSA-3858494",
-        "pathway_name": "WNT mediated activation of DVL",
+        "pathway_name": "Beta-catenin independent WNT signaling",
         "species": "Homo sapiens",
-        "url": "https://reactome.org/content/detail/R-HSA-3858494",
-        "role": "Phosphorylation and membrane recruitment upon Wnt stimulation"
+        "url": "https://reactome.org/content/detail/R-HSA-3858494"
       }
     ],
     "kegg": [
       {
         "pathway_id": "hsa04310",
         "pathway_name": "Wnt signaling pathway",
-        "url": "https://www.genome.jp/pathway/hsa04310",
-        "role": "Cytoplasmic transducer linking FZD/LRP6 to beta-catenin stabilization"
+        "url": "https://www.genome.jp/entry/hsa04310"
       },
       {
         "pathway_id": "hsa04390",
         "pathway_name": "Hippo signaling pathway",
-        "url": "https://www.genome.jp/pathway/hsa04390",
-        "role": "Cross-talk with Hippo pathway components"
+        "url": "https://www.genome.jp/entry/hsa04390"
       },
       {
-        "pathway_id": "hsa05217",
-        "pathway_name": "Basal cell carcinoma",
-        "url": "https://www.genome.jp/pathway/hsa05217",
-        "role": "Aberrant Wnt signaling in cancer"
+        "pathway_id": "hsa04550",
+        "pathway_name": "Signaling pathways regulating pluripotency of stem cells",
+        "url": "https://www.genome.jp/entry/hsa04550"
       }
     ],
-    "pathway_role_summary": "DVL1 is a central scaffold protein in Wnt signaling pathways. In canonical Wnt/beta-catenin signaling, DVL1 is recruited to the plasma membrane via PDZ domain binding to FZD receptors. Upon Wnt stimulation, DVL1 undergoes CK1-mediated phosphorylation and K63-linked ubiquitination, forming polymers that recruit AXIN1/GSK3B complexes to the membrane. This signalosome assembly promotes LRP6 phosphorylation by CK1γ and inhibits the beta-catenin destruction complex, leading to beta-catenin stabilization and TCF/LEF-mediated transcription. DVL1 stability is regulated by KLHL12-mediated ubiquitination (binding PGXPP degron with Kd ~22 μM) and deubiquitination by USP14 and CYLD. DVL1 also participates in non-canonical Wnt pathways including planar cell polarity and Wnt/Ca2+ signaling."
+    "pathway_role_summary": "DVL1 is a central hub protein in Wnt signaling pathways. In canonical Wnt/beta-catenin pathway, DVL1 transduces signals from Frizzled receptors to the beta-catenin destruction complex, ultimately leading to beta-catenin stabilization and nuclear translocation for TCF/LEF-mediated transcription. In non-canonical pathways (Wnt/PCP and Wnt/Ca2+), DVL1 activates distinct downstream effectors including DAAM1, RhoA, and PKC to regulate cell polarity, cytoskeletal organization, and calcium signaling. DVL1 activity is regulated by multiple mechanisms: phosphorylation by casein kinases activates the protein, ubiquitination by KLHL12 targets it for degradation, and deubiquitination by CYLD stabilizes it. DVL1 also has specialized non-Wnt functions including neuromuscular junction development via MUSK-PAK1 complex formation."
   },
   "disease_associations": [
     {
-      "disease": "Robinow syndrome, autosomal dominant",
-      "omim_id": "180700",
-      "mutation_type": "Germline frameshift",
-      "description": "Frameshift mutations in penultimate exon (exon 14) cause autosomal dominant Robinow syndrome. 15 pathogenic DVL1 variants identified (ClinVar). Mutations produce -1 frameshift replacing C-terminus with novel highly basic, proline-rich sequence (gain-of-function). Examples: c.1644del (p.F549Sfs*125), c.1575_1582dup (p.Pro528ArgfsTer149). Mutant DVL1 fails to change localization in response to Wnt ligands and cannot activate canonical Wnt signaling in TOPFlash assays. Clinical features include mesomelic limb shortening, genital hypoplasia, and orofacial abnormalities."
-    },
-    {
-      "disease": "Cancer (various types)",
-      "omim_id": null,
-      "mutation_type": "Somatic alterations",
-      "description": "DVL1 aberrations implicated in colorectal cancer, hepatocellular carcinoma, and basal cell carcinoma through aberrant Wnt pathway activation. DVL1 overexpression correlates with tumor progression and metastasis in some cancers."
-    },
-    {
-      "disease": "Intracranial meningioma",
-      "omim_id": null,
-      "mutation_type": "Somatic",
-      "description": "DVL1 expression alterations observed in intracranial meningioma; role in tumor development under investigation"
+      "disease": "Robinow syndrome, autosomal dominant 2",
+      "omim_id": "616331",
+      "mutation_type": "Germline",
+      "description": "Rare skeletal dysplasia syndrome characterized by dysmorphic facial features resembling fetal face, mesomelic limb shortening, genital hypoplasia, and renal anomalies. Multiple frameshift mutations cluster in the penultimate exon of DVL1. Caused by heterozygous mutations that likely result in haploinsufficiency or dominant-negative effects on Wnt signaling."
     }
   ],
   "cross_references": {
     "ncbi_gene_id": "1855",
     "ensembl_gene_id": "ENSG00000107404",
-    "ensembl_transcript_id": "ENST00000378888",
-    "ensembl_protein_id": "ENSP00000368166",
-    "refseq_protein": ["NP_004412", "NP_001317240"],
-    "refseq_nucleotide": ["NM_004421", "NM_181870", "NM_182779", "NM_001330311"],
+    "refseq_protein": [
+      "NP_001317240.1",
+      "NP_004412.2"
+    ],
+    "refseq_nucleotide": [
+      "NM_001330311.2",
+      "NM_004421.3"
+    ],
     "hgnc_id": "HGNC:3084",
     "omim_gene": "601365"
   },
-  "kinetic_parameters": {
-    "klhl12_binding": {
-      "kd_um": 22.0,
-      "method": "Fluorescence polarization",
-      "degron_sequence": "PGGPP (core) / GGPPGGPPV (extended)",
-      "residues": "658-662 (core) / 655-663 (extended)",
-      "notes": "Low micromolar affinity; mutation/deletion increases DVL1 stability; constitutive interaction not requiring cell stimulus",
-      "reference": "PMID:32241596"
-    },
-    "ubiquitination_kinetics": {
-      "e3_ligases": [
-        {
-          "enzyme": "KLHL12",
-          "substrate_site": "Multiple lysines (K50, K285 primary)",
-          "linkage_type": "K63-linked (signaling) and K48-linked (degradation)",
-          "constitutive": true,
-          "notes": "Poly-ubiquitination does not require specific stimulus; direct protein-protein interaction"
-        }
-      ],
-      "deubiquitinases": [
-        {
-          "enzyme": "USP14",
-          "substrate_preference": "K63-linked polyubiquitin chains",
-          "activity_regulation": "Activated by 26S proteasome association",
-          "notes": "Preferentially removes K63-polyubiquitin allowing multiple phosphorylation events; required for Wnt signaling"
-        },
-        {
-          "enzyme": "CYLD",
-          "substrate_preference": "K63-linked polyubiquitin chains",
-          "activity_regulation": "Inactivated by phosphorylation at S418 (by IKKε) and S568",
-          "kinetics_regulation": "Rapid transient phosphorylation in response to TNF-α and mitogens (appears at 5 min); phosphorylation reduces catalytic efficiency",
-          "notes": "Negatively regulates Wnt/beta-catenin signaling by disassembling K63-linked polyubiquitin on DVL"
-        }
-      ]
-    },
-    "phosphorylation_kinetics": {
-      "ck1_sites": [
-        {
-          "kinase": "CK1ε (CSNK1E) / CK1δ (CSNK1D)",
-          "sites": ["S143", "T224"],
-          "wnt_induced": true,
-          "function": "Creates PLK1 interaction interface; required for Wnt signaling and cilia disassembly",
-          "dephosphorylation": "PP5 (phosphatase) dephosphorylates S143 and other sites; PTEN also dephosphorylates S143",
-          "notes": "Major DVL kinase; Wnt-induced phosphorylation drives membrane translocation and signalosome assembly; >50 phosphorylation sites identified on DVL proteins"
-        }
-      ]
-    }
-  },
   "metadata": {
-    "generated_at": "2026-10-01T00:00:00Z",
+    "generated_at": "2026-10-13T19:36:17Z",
     "queried_databases": [
       "UniProt",
       "NCBI Gene",
@@ -877,13 +611,9 @@
       "Reactome",
       "KEGG",
       "GO",
-      "OMIM",
-      "ClinVar",
-      "Human Protein Atlas",
-      "PhosphoSitePlus (referenced)",
-      "ELM (Eukaryotic Linear Motifs)"
+      "PubMed"
     ],
-    "data_quality_notes": "High-quality data with extensive experimental validation. Sequence obtained from UniProt O14640. Domain coordinates from multiple sources show minor variation (InterPro: DIX 1-82, PDZ 249-342, DEP 404-502; Pfam: DIX 3-81, PDZ 244-343, DEP 428-497). Used InterPro coordinates as primary reference. PGXPP degron motif well-characterized with crystal structure (PDB 6TTK). Binding affinity to KLHL12 measured at Kd ~22 μM. Phosphorylation sites S143 and T224 experimentally validated for CK1ε/δ. K63-linked ubiquitination at K50 and K48-linked at K285 experimentally confirmed. Most kinetic data from DVL2/DVL3 studies; DVL family members show high conservation and functional overlap. Specific Km, kcat values for deubiquitinases not available in literature. CYLD phosphorylation regulation (S418, S568) well-characterized with temporal kinetics (5 min post-stimulation). AlphaFold model shows high confidence for structured domains, low confidence for IDRs as expected. 131 total interactors in BioGRID; top 20 high-confidence interactors identified from STRING. All interactions include unique IDs and site-specific binding information where available.",
-    "modeling_relevance_summary": "DVL1 is critical for Kappa-based Wnt signaling pathway modeling. Key features: (1) DIX domain mediates head-to-tail polymerization with AXIN1 DAX domain - essential for signalosome assembly with well-defined binding interfaces; (2) PDZ domain binds FZD KTxxxW motif for membrane recruitment; (3) PGXPP degron (658-663) binds KLHL12 with Kd ~22 μM enabling quantitative modeling of constitutive ubiquitination; (4) S143/T224 phosphorylation by CK1ε creates switch-like behavior; (5) K63-ubiquitination at K50 vs K48-ubiquitination at K285 enables modeling of signaling vs degradation outcomes; (6) Dynamic regulation by USP14 and CYLD deubiquitinases (CYLD inhibited by phosphorylation within 5 min of TNF-α); (7) Multiple binding partners with distinct interfaces (AXIN1 DIX-DAX, FZD PDZ-KTxxxW, LRP6 for signalosome) suitable for multi-component complex modeling. Intrinsically disordered regions between domains may provide flexibility for scaffold assembly. Disease mutations (Robinow syndrome) demonstrate functional importance of C-terminal region. Unique interaction IDs distinguish different interaction types; deduplicated interactions prevent counting same partner multiple times."
+    "data_quality_notes": "Comprehensive dataset with high-quality experimental evidence. Structural information available for PDZ domain (X-ray crystallography) and KLHL12-binding degron. AlphaFold prediction available for full-length protein showing expected domain architecture. Extensive interaction data from multiple databases with good convergence. Quantitative kinetic data limited: available for KLHL12-degron binding (Kd = 22.3 \u03bcM), FZD PDZ binding (~3-4 \u03bcM), and PDZ domain small molecule inhibitors. Enzymatic parameters (Km, Kcat) for casein kinase phosphorylation not available. PTM sites well-characterized, especially phosphorylation (>50 sites identified across DVL family). Disease association clearly established for Robinow syndrome.",
+    "modeling_relevance_summary": "DVL1 is a critical signal transduction node in Wnt signaling pathways, making it essential for modeling canonical and non-canonical Wnt signaling networks. Key modeling considerations: (1) Multiple regulatory mechanisms including phosphorylation-based activation, ubiquitination-mediated degradation, and deubiquitination-mediated stabilization; (2) Oligomerization dynamics via DIX domain forming higher-order assemblies; (3) Membrane recruitment upon pathway activation; (4) Multiple binding partners with distinct functional outcomes (activation, inhibition, scaffolding); (5) Tissue-specific expression and nuclear/cytoplasmic shuttling. Limited quantitative kinetic data for most interactions represents a challenge for detailed kinetic modeling, though qualitative network topology is well-established. The protein's multi-domain architecture with distinct functional modules (DIX for oligomerization, PDZ for receptor binding, DEP for membrane interaction) suggests modular modeling approach would be appropriate."
   }
 }

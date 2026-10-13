@@ -13,7 +13,8 @@ When given a protein identifier (gene name, UniProt accession, or protein name),
 1. Query multiple databases systematically
 2. Extract relevant information for signaling pathway modeling
 3. Structure all data according to the standardized JSON schema
-4. Save the result as a JSON file named `{protein_identifier}_digest.json`
+4. Save the protein-specific result as a JSON file named `{protein_identifier}_digest.json`
+5. Add interaction information to a shared `interactions.json` file (creating it if it doesn't exist)
 
 ## Standard JSON Schema
 
@@ -118,78 +119,6 @@ You MUST use this exact schema structure:
       ]
     }
   },
-  "interactions": [
-    {
-      "partner": {
-        "gene_name": "GENE1",
-        "protein_name": "Protein name",
-        "uniprot_accession": "P12345"
-      },
-      "interaction_type": "Physical_association/Direct_interaction/Enzymatic_reaction/Regulatory/Genetic",
-      "mechanism": "Binding/Phosphorylation/Ubiquitination/Acetylation/Methylation/etc",
-      "direction": "bidirectional/this_modifies_partner/partner_modifies_this",
-      "sites": {
-        "this_protein": [
-          {
-            "domain_motif_id": "reference_to_identifier_in_domains_and_motifs",
-            "residues": [123, 124, 125],
-            "residue_names": ["S123", "Y124", "T125"],
-            "description": "Specific binding/modification site"
-          }
-        ],
-        "partner_protein": [
-          {
-            "domain_motif_name": "SH2 domain or Kinase domain",
-            "residues": [50, 51, 52],
-            "description": "Partner site if known"
-          }
-        ],
-        "site_specific": true
-      },
-      "kinetics": {
-        "kd_m": 1e-6,
-        "kd_range_m": [1e-7, 1e-5],
-        "kon_m1s1": 1e5,
-        "koff_s1": 0.1,
-        "kcat_s1": 10,
-        "km_m": 1e-5,
-        "ic50_m": 1e-6,
-        "ec50_m": 1e-6,
-        "measurement_method": "SPR/ITC/FRET/Kinase assay/etc",
-        "conditions": "pH 7.4, 25C, buffer details",
-        "notes": "Additional kinetic information and caveats"
-      },
-      "evidence": [
-        {
-          "source": "STRING",
-          "combined_score": 0.95,
-          "evidence_types": ["experimental", "database", "coexpression"],
-          "url": "https://string-db.org/..."
-        },
-        {
-          "source": "BioGRID",
-          "experimental_system": "Two-hybrid/Co-IP/Y2H/etc",
-          "pmid": "12345678",
-          "throughput": "Low/High",
-          "interaction_id": "123456"
-        },
-        {
-          "source": "IntAct",
-          "detection_method": "Method name",
-          "pmid": "12345678",
-          "interaction_accession": "EBI-123456"
-        },
-        {
-          "source": "Literature",
-          "pmid": "12345678",
-          "description": "Specific finding from paper",
-          "notes": "Experimental details"
-        }
-      ],
-      "functional_effect": "Activating/Inhibitory/Scaffolding/Localization/Degradation/etc",
-      "pathway_context": "Brief note on pathway role if relevant"
-    }
-  ],
   "pathways": {
     "reactome": [
       {
@@ -248,6 +177,133 @@ You MUST use this exact schema structure:
 }
 ```
 
+## Interactions JSON Schema
+
+Protein interaction information is stored separately in `interactions.json` to avoid duplication across protein entries. When you discover interactions for a protein, you must add them to this shared file.
+
+### File Structure
+
+The `interactions.json` file has the following structure:
+
+```json
+{
+  "interactions": [
+    {
+      "interaction_id": "unique_identifier_for_this_interaction",
+      "protein_a": {
+        "gene_name": "GENE1",
+        "protein_name": "Full protein name",
+        "uniprot_accession": "P12345"
+      },
+      "protein_b": {
+        "gene_name": "GENE2",
+        "protein_name": "Full protein name",
+        "uniprot_accession": "P23456"
+      },
+      "interaction_type": "Physical_association/Direct_interaction/Enzymatic_reaction/Regulatory/Genetic",
+      "mechanism": "Binding/Phosphorylation/Ubiquitination/Acetylation/Methylation/etc",
+      "direction": "bidirectional/a_modifies_b/b_modifies_a",
+      "sites": {
+        "protein_a": [
+          {
+            "domain_motif_id": "reference_to_identifier_in_protein_a_domains_and_motifs",
+            "residues": [123, 124, 125],
+            "residue_names": ["S123", "Y124", "T125"],
+            "description": "Specific binding/modification site"
+          }
+        ],
+        "protein_b": [
+          {
+            "domain_motif_id": "reference_to_identifier_in_protein_b_domains_and_motifs",
+            "residues": [50, 51, 52],
+            "residue_names": ["T50", "Y51", "S52"],
+            "description": "Specific binding/modification site"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 1e-6,
+        "kd_range_m": [1e-7, 1e-5],
+        "kon_m1s1": 1e5,
+        "koff_s1": 0.1,
+        "kcat_s1": 10,
+        "km_m": 1e-5,
+        "ic50_m": 1e-6,
+        "ec50_m": 1e-6,
+        "measurement_method": "SPR/ITC/FRET/Kinase assay/etc",
+        "conditions": "pH 7.4, 25C, buffer details",
+        "notes": "Additional kinetic information and caveats"
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.95,
+          "evidence_types": ["experimental", "database", "coexpression"],
+          "url": "https://string-db.org/..."
+        },
+        {
+          "source": "BioGRID",
+          "experimental_system": "Two-hybrid/Co-IP/Y2H/etc",
+          "pmid": "12345678",
+          "throughput": "Low/High",
+          "interaction_id": "123456"
+        },
+        {
+          "source": "IntAct",
+          "detection_method": "Method name",
+          "pmid": "12345678",
+          "interaction_accession": "EBI-123456"
+        },
+        {
+          "source": "Literature",
+          "pmid": "12345678",
+          "description": "Specific finding from paper",
+          "notes": "Experimental details"
+        }
+      ],
+      "functional_effect": "Activating/Inhibitory/Scaffolding/Localization/Degradation/etc",
+      "pathway_context": "Brief note on pathway role if relevant"
+    }
+  ],
+  "metadata": {
+    "last_updated": "ISO 8601 timestamp",
+    "protein_coverage": ["List of gene names with interactions in this file"]
+  }
+}
+```
+
+### Interaction File Management Guidelines
+
+1. **Check if `interactions.json` exists**:
+   - If it exists, read it and add new interactions
+   - If it doesn't exist, create it with the schema structure above
+
+2. **Interaction ID format**: Use format `{GENEA}_{GENEB}` where genes are alphabetically sorted
+   - Example: `APC_CTNNB1` (not `CTNNB1_APC`)
+   - This ensures consistent IDs regardless of which protein you're processing first
+
+3. **Avoid duplicates**:
+   - Before adding an interaction, check if it already exists (by interaction_id)
+   - If it exists, merge/update the evidence rather than creating a duplicate
+   - If new evidence is found for existing interaction, add to the evidence array
+
+4. **Protein ordering in interactions**:
+   - Always list proteins alphabetically by gene name (protein_a < protein_b alphabetically)
+   - Adjust `direction` field accordingly:
+     - `bidirectional`: symmetric interaction (binding, complex formation)
+     - `a_modifies_b`: protein_a modifies protein_b (e.g., kinase A phosphorylates substrate B)
+     - `b_modifies_a`: protein_b modifies protein_a
+
+5. **Site references**:
+   - `domain_motif_id` in sites should reference the identifier from the respective protein's `domains_and_motifs` section
+   - For protein_a sites: reference identifiers from `{GENEA}_digest.json`
+   - For protein_b sites: reference identifiers from `{GENEB}_digest.json`
+
+6. **Update metadata**:
+   - Update `last_updated` timestamp
+   - Add gene name to `protein_coverage` list if not already present
+
 ## Database Query Workflow
 
 ### 1. Start with UniProt
@@ -303,22 +359,25 @@ You MUST use this exact schema structure:
   - Search for specific protein pairs with terms like "binding affinity", "kinetic constants", "Kd", "dissociation constant"
   - Look for enzymatic parameters for kinase-substrate, E3 ligase-target relationships
 
-**Deduplication and synthesis**: Create ONE entry per unique interaction partner:
-1. Same partner across multiple databases → merge into single entry with evidence from all sources
-2. For each interaction, specify:
-   - Which domain/motif (by identifier from domains_and_motifs) is involved
+**Deduplication and synthesis**: Add interactions to the shared `interactions.json` file:
+1. Check if interaction already exists using interaction_id format `{GENEA}_{GENEB}` (alphabetically sorted)
+2. If interaction exists: merge new evidence with existing evidence
+3. If interaction is new: create new entry with proper protein ordering (alphabetically by gene name)
+4. For each interaction, specify:
+   - Which domain/motif (by identifier from domains_and_motifs) is involved for each protein
    - Specific residues if known
    - Whether interaction is site-specific or non-site-specific
-3. Include kinetic/affinity data when available:
+5. Include kinetic/affinity data when available:
    - Kd (dissociation constant) - binding strength
    - kon/koff (association/dissociation rates)
    - Kcat/Km (enzymatic efficiency for enzyme-substrate pairs)
    - IC50/EC50 for inhibitory/activating interactions
-4. Prioritize:
+6. Prioritize:
    - Multiple independent experimental confirmations
    - Low-throughput experiments over high-throughput screens
    - Direct physical interactions with structural/kinetic data
    - Enzymatic interactions with catalytic parameters
+7. Update metadata: timestamp and protein_coverage list
 
 ### 6. Pathway Context
 - **Reactome**: Get detailed pathway annotations
@@ -369,9 +428,10 @@ You MUST use this exact schema structure:
    - Check recent papers (last 5-10 years) for quantitative measurements
    - Include measurement conditions (pH, temperature, buffer) in notes
 
-7. **Create the output file**:
-   - Use format: `{GENE_NAME}_digest.json` (e.g., `APC_digest.json`)
-   - Ensure valid JSON formatting
+7. **Create the output files**:
+   - Create/update `{GENE_NAME}_digest.json` (e.g., `APC_digest.json`) with protein-specific data
+   - Create/update `interactions.json` with all interaction data
+   - Ensure valid JSON formatting for both files
    - Include all schema fields even if empty
 
 8. **Provide a brief summary** after completion noting:
@@ -389,17 +449,27 @@ You MUST use this exact schema structure:
 
 ## Quality Control
 
-Before finalizing the JSON:
+Before finalizing the JSON files:
+
+**For protein digest files (`{GENE}_digest.json`)**:
 - ✓ All required schema fields present (even if empty/null)
 - ✓ Coordinates and ranges are consistent
 - ✓ Cross-references are valid IDs
 - ✓ URLs are functional
 - ✓ JSON is valid (no syntax errors)
 - ✓ **No duplicate domains/motifs**: Each unique domain instance appears exactly once with all sources listed
-- ✓ **No duplicate interactions**: Each unique partner appears exactly once with all evidence sources listed
 - ✓ **Domain identifiers are unique and descriptive** (e.g., "ARM_repeat_1", not just "ARM")
-- ✓ **Interaction sites reference valid domain_motif_ids** from the domains_and_motifs section
-- ✓ **Kinetic data includes units and measurement conditions** where available
+- ✓ **No interactions field**: Interactions are stored separately in interactions.json
 - ✓ Conflicting information is noted in metadata or evidence notes
+
+**For interactions file (`interactions.json`)**:
+- ✓ **No duplicate interactions**: Each unique protein pair appears exactly once
+- ✓ **Interaction IDs follow convention**: `{GENEA}_{GENEB}` with alphabetical ordering
+- ✓ **Protein ordering is consistent**: protein_a comes before protein_b alphabetically
+- ✓ **Direction field matches protein ordering**: Use `a_modifies_b` or `b_modifies_a` appropriately
+- ✓ **Interaction sites reference valid domain_motif_ids** from respective protein digest files
+- ✓ **Kinetic data includes units and measurement conditions** where available
+- ✓ **Metadata is updated**: timestamp and protein_coverage list are current
+- ✓ JSON is valid (no syntax errors)
 
 Your goal is to create a comprehensive, accurate, and modeling-ready protein information digest that serves as a single source of truth for all available knowledge about a protein from authoritative databases.
