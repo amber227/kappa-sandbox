@@ -1,0 +1,1766 @@
+{
+  "agents": [
+    {
+      "agent_name": "APC",
+      "kappa_signature": "%agent: APC(oligomerization_domain_1_55[_], ARM_domain_453_767[_], 15aa_repeats_1020_1169[_], 20aa_repeat_1_1265_1284[_], 20aa_repeat_2_1378_1397[_], 20aa_repeat_3_1494_1513[_], 20aa_repeat_4_1646_1664[_], 20aa_repeat_5_1850_1869[_], 20aa_repeat_6_1957_1976[_], 20aa_repeat_7_2015_2034[_], basic_domain_MT_binding[_], EB1_binding_domain[_], phos_S1505{u p}, phos_S/TNone{u p}, ub_KNone{u p})",
+      "citations": [
+        {
+          "source_file": "APC_digest.json",
+          "json_path": "protein_identifier.gene_name",
+          "value": "APC",
+          "reasoning": "Agent name derived from gene name"
+        },
+        {
+          "source_file": "APC_digest.json",
+          "json_path": "domains_and_motifs[0].identifier",
+          "value": "oligomerization_domain_1_55",
+          "reasoning": "Binding site 'oligomerization_domain_1_55' from Domain domain"
+        },
+        {
+          "source_file": "APC_digest.json",
+          "json_path": "domains_and_motifs[1].identifier",
+          "value": "ARM_domain_453_767",
+          "reasoning": "Binding site 'ARM_domain_453_767' from Domain domain"
+        },
+        {
+          "source_file": "APC_digest.json",
+          "json_path": "domains_and_motifs[2].identifier",
+          "value": "15aa_repeats_1020_1169",
+          "reasoning": "Binding site '15aa_repeats_1020_1169' from Binding_site domain"
+        },
+        {
+          "source_file": "APC_digest.json",
+          "json_path": "domains_and_motifs[3].identifier",
+          "value": "20aa_repeat_1_1265_1284",
+          "reasoning": "Binding site '20aa_repeat_1_1265_1284' from Binding_site domain"
+        },
+        {
+          "source_file": "APC_digest.json",
+          "json_path": "domains_and_motifs[4].identifier",
+          "value": "20aa_repeat_2_1378_1397",
+          "reasoning": "Binding site '20aa_repeat_2_1378_1397' from Binding_site domain"
+        },
+        {
+          "source_file": "APC_digest.json",
+          "json_path": "domains_and_motifs[5].identifier",
+          "value": "20aa_repeat_3_1494_1513",
+          "reasoning": "Binding site '20aa_repeat_3_1494_1513' from Binding_site domain"
+        },
+        {
+          "source_file": "APC_digest.json",
+          "json_path": "domains_and_motifs[6].identifier",
+          "value": "20aa_repeat_4_1646_1664",
+          "reasoning": "Binding site '20aa_repeat_4_1646_1664' from Binding_site domain"
+        },
+        {
+          "source_file": "APC_digest.json",
+          "json_path": "domains_and_motifs[7].identifier",
+          "value": "20aa_repeat_5_1850_1869",
+          "reasoning": "Binding site '20aa_repeat_5_1850_1869' from Binding_site domain"
+        },
+        {
+          "source_file": "APC_digest.json",
+          "json_path": "domains_and_motifs[8].identifier",
+          "value": "20aa_repeat_6_1957_1976",
+          "reasoning": "Binding site '20aa_repeat_6_1957_1976' from Binding_site domain"
+        },
+        {
+          "source_file": "APC_digest.json",
+          "json_path": "domains_and_motifs[9].identifier",
+          "value": "20aa_repeat_7_2015_2034",
+          "reasoning": "Binding site '20aa_repeat_7_2015_2034' from Binding_site domain"
+        },
+        {
+          "source_file": "APC_digest.json",
+          "json_path": "domains_and_motifs[17].identifier",
+          "value": "basic_domain_MT_binding",
+          "reasoning": "Binding site 'basic_domain_MT_binding' from Binding_site domain"
+        },
+        {
+          "source_file": "APC_digest.json",
+          "json_path": "domains_and_motifs[18].identifier",
+          "value": "EB1_binding_domain",
+          "reasoning": "Binding site 'EB1_binding_domain' from Binding_site domain"
+        },
+        {
+          "source_file": "APC_digest.json",
+          "json_path": "post_translational_modifications[0]",
+          "value": "Phosphorylation at S1505",
+          "reasoning": "Modification site 'phos_S1505' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "APC_digest.json",
+          "json_path": "post_translational_modifications[1]",
+          "value": "Phosphorylation at S/TNone",
+          "reasoning": "Modification site 'phos_S/TNone' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "APC_digest.json",
+          "json_path": "post_translational_modifications[2]",
+          "value": "Ubiquitination at KNone",
+          "reasoning": "Modification site 'ub_KNone' with states {u,p} from Ubiquitination"
+        }
+      ]
+    },
+    {
+      "agent_name": "DVL1",
+      "kappa_signature": "%agent: DVL1(DIX_1_85[_], DVL_specific_90_247[_], PDZ_251_339[_], DEP_425_499[_], DVL_C_terminal_503_685[_], FZD_binding_PDZ[_], phos_S194{u p}, phos_S/TNone{u p}, ub_KNone{u p}, glyc_NoneNone{u p})",
+      "citations": [
+        {
+          "source_file": "DVL1_digest.json",
+          "json_path": "protein_identifier.gene_name",
+          "value": "DVL1",
+          "reasoning": "Agent name derived from gene name"
+        },
+        {
+          "source_file": "DVL1_digest.json",
+          "json_path": "domains_and_motifs[0].identifier",
+          "value": "DIX_1_85",
+          "reasoning": "Binding site 'DIX_1_85' from Domain domain"
+        },
+        {
+          "source_file": "DVL1_digest.json",
+          "json_path": "domains_and_motifs[1].identifier",
+          "value": "DVL_specific_90_247",
+          "reasoning": "Binding site 'DVL_specific_90_247' from Domain domain"
+        },
+        {
+          "source_file": "DVL1_digest.json",
+          "json_path": "domains_and_motifs[2].identifier",
+          "value": "PDZ_251_339",
+          "reasoning": "Binding site 'PDZ_251_339' from Domain domain"
+        },
+        {
+          "source_file": "DVL1_digest.json",
+          "json_path": "domains_and_motifs[3].identifier",
+          "value": "DEP_425_499",
+          "reasoning": "Binding site 'DEP_425_499' from Domain domain"
+        },
+        {
+          "source_file": "DVL1_digest.json",
+          "json_path": "domains_and_motifs[4].identifier",
+          "value": "DVL_C_terminal_503_685",
+          "reasoning": "Binding site 'DVL_C_terminal_503_685' from Domain domain"
+        },
+        {
+          "source_file": "DVL1_digest.json",
+          "json_path": "domains_and_motifs[6].identifier",
+          "value": "FZD_binding_PDZ",
+          "reasoning": "Binding site 'FZD_binding_PDZ' from Binding_site domain"
+        },
+        {
+          "source_file": "DVL1_digest.json",
+          "json_path": "post_translational_modifications[0]",
+          "value": "Phosphorylation at S194",
+          "reasoning": "Modification site 'phos_S194' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "DVL1_digest.json",
+          "json_path": "post_translational_modifications[1]",
+          "value": "Phosphorylation at S/TNone",
+          "reasoning": "Modification site 'phos_S/TNone' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "DVL1_digest.json",
+          "json_path": "post_translational_modifications[2]",
+          "value": "Ubiquitination at KNone",
+          "reasoning": "Modification site 'ub_KNone' with states {u,p} from Ubiquitination"
+        },
+        {
+          "source_file": "DVL1_digest.json",
+          "json_path": "post_translational_modifications[3]",
+          "value": "Glycosylation at NoneNone",
+          "reasoning": "Modification site 'glyc_NoneNone' with states {u,p} from Glycosylation"
+        }
+      ]
+    },
+    {
+      "agent_name": "CTNNB1",
+      "kappa_signature": "%agent: CTNNB1(N_terminal_regulatory_1_136[_], ARM_repeat_domain_133_664[_], C_terminal_transactivation_664_781[_], TCF_LEF_binding_141_664[_], E_cadherin_binding_141_664[_], APC_binding_141_664[_], ICAT_binding_141_664[_], BCL9_binding_20_60[_], phos_S33{u p}, phos_S37{u p}, phos_T41{u p}, phos_S45{u p}, phos_S23{u p}, phos_S29{u p}, phos_S552{u p}, phos_S675{u p}, phos_S191{u p}, phos_S246{u p}, phos_Y64{u p}, phos_Y142{u p}, phos_Y331{u p}, phos_Y333{u p}, ub_K19{u p}, ub_K49{u p}, ac_K49{u p}, ac_K19{u p}, ac_K345{u p}, glyc_S23{u p}, mod_C619{u p}, ac_A2{u p})",
+      "citations": [
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "protein_identifier.gene_name",
+          "value": "CTNNB1",
+          "reasoning": "Agent name derived from gene name"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "domains_and_motifs[0].identifier",
+          "value": "N_terminal_regulatory_1_136",
+          "reasoning": "Binding site 'N_terminal_regulatory_1_136' from Domain domain"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "domains_and_motifs[1].identifier",
+          "value": "ARM_repeat_domain_133_664",
+          "reasoning": "Binding site 'ARM_repeat_domain_133_664' from Domain domain"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "domains_and_motifs[2].identifier",
+          "value": "C_terminal_transactivation_664_781",
+          "reasoning": "Binding site 'C_terminal_transactivation_664_781' from Domain domain"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "domains_and_motifs[3].identifier",
+          "value": "TCF_LEF_binding_141_664",
+          "reasoning": "Binding site 'TCF_LEF_binding_141_664' from Binding_site domain"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "domains_and_motifs[4].identifier",
+          "value": "E_cadherin_binding_141_664",
+          "reasoning": "Binding site 'E_cadherin_binding_141_664' from Binding_site domain"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "domains_and_motifs[5].identifier",
+          "value": "APC_binding_141_664",
+          "reasoning": "Binding site 'APC_binding_141_664' from Binding_site domain"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "domains_and_motifs[6].identifier",
+          "value": "ICAT_binding_141_664",
+          "reasoning": "Binding site 'ICAT_binding_141_664' from Binding_site domain"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "domains_and_motifs[7].identifier",
+          "value": "BCL9_binding_20_60",
+          "reasoning": "Binding site 'BCL9_binding_20_60' from Binding_site domain"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[0]",
+          "value": "Phosphorylation at S33",
+          "reasoning": "Modification site 'phos_S33' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[1]",
+          "value": "Phosphorylation at S37",
+          "reasoning": "Modification site 'phos_S37' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[2]",
+          "value": "Phosphorylation at T41",
+          "reasoning": "Modification site 'phos_T41' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[3]",
+          "value": "Phosphorylation at S45",
+          "reasoning": "Modification site 'phos_S45' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[4]",
+          "value": "Phosphorylation at S23",
+          "reasoning": "Modification site 'phos_S23' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[5]",
+          "value": "Phosphorylation at S29",
+          "reasoning": "Modification site 'phos_S29' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[6]",
+          "value": "Phosphorylation at S552",
+          "reasoning": "Modification site 'phos_S552' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[7]",
+          "value": "Phosphorylation at S675",
+          "reasoning": "Modification site 'phos_S675' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[8]",
+          "value": "Phosphorylation at S191",
+          "reasoning": "Modification site 'phos_S191' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[9]",
+          "value": "Phosphorylation at S246",
+          "reasoning": "Modification site 'phos_S246' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[10]",
+          "value": "Phosphorylation at Y64",
+          "reasoning": "Modification site 'phos_Y64' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[11]",
+          "value": "Phosphorylation at Y142",
+          "reasoning": "Modification site 'phos_Y142' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[12]",
+          "value": "Phosphorylation at Y331",
+          "reasoning": "Modification site 'phos_Y331' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[13]",
+          "value": "Phosphorylation at Y333",
+          "reasoning": "Modification site 'phos_Y333' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[14]",
+          "value": "Ubiquitination at K19",
+          "reasoning": "Modification site 'ub_K19' with states {u,p} from Ubiquitination"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[15]",
+          "value": "Ubiquitination at K49",
+          "reasoning": "Modification site 'ub_K49' with states {u,p} from Ubiquitination"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[16]",
+          "value": "Acetylation at K49",
+          "reasoning": "Modification site 'ac_K49' with states {u,p} from Acetylation"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[17]",
+          "value": "Acetylation at K19",
+          "reasoning": "Modification site 'ac_K19' with states {u,p} from Acetylation"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[18]",
+          "value": "Acetylation at K345",
+          "reasoning": "Modification site 'ac_K345' with states {u,p} from Acetylation"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[19]",
+          "value": "Glycosylation at S23",
+          "reasoning": "Modification site 'glyc_S23' with states {u,p} from Glycosylation"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[20]",
+          "value": "S-nitrosylation at C619",
+          "reasoning": "Modification site 'mod_C619' with states {u,p} from S-nitrosylation"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "post_translational_modifications[21]",
+          "value": "Acetylation at A2",
+          "reasoning": "Modification site 'ac_A2' with states {u,p} from Acetylation"
+        }
+      ]
+    },
+    {
+      "agent_name": "WNT3A",
+      "kappa_signature": "%agent: WNT3A(WNT_domain_39_352[_], WNT_C_terminal_292_352[_], mod_S209{u p}, mod_N87{u p}, mod_N298{u p}, mod_C77{u p}, mod_C88{u p}, mod_C128{u p}, mod_C136{u p}, mod_C138{u p}, mod_C155{u p}, mod_C203{u p}, mod_C205{u p}, mod_C212{u p}, mod_C217{u p}, mod_C281{u p}, mod_C297{u p}, mod_C307{u p}, mod_C311{u p}, mod_C312{u p}, mod_C327{u p}, mod_C329{u p}, mod_C334{u p}, mod_C335{u p}, mod_C339{u p}, mod_C342{u p}, mod_C351{u p})",
+      "citations": [
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "protein_identifier.gene_name",
+          "value": "WNT3A",
+          "reasoning": "Agent name derived from gene name"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "domains_and_motifs[0].identifier",
+          "value": "WNT_domain_39_352",
+          "reasoning": "Binding site 'WNT_domain_39_352' from Domain domain"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "domains_and_motifs[1].identifier",
+          "value": "WNT_C_terminal_292_352",
+          "reasoning": "Binding site 'WNT_C_terminal_292_352' from Domain domain"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[0]",
+          "value": "Palmitoleoylation at S209",
+          "reasoning": "Modification site 'mod_S209' with states {u,p} from Palmitoleoylation"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[1]",
+          "value": "N-linked glycosylation at N87",
+          "reasoning": "Modification site 'mod_N87' with states {u,p} from N-linked glycosylation"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[2]",
+          "value": "N-linked glycosylation at N298",
+          "reasoning": "Modification site 'mod_N298' with states {u,p} from N-linked glycosylation"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[3]",
+          "value": "Disulfide bond at C77",
+          "reasoning": "Modification site 'mod_C77' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[4]",
+          "value": "Disulfide bond at C88",
+          "reasoning": "Modification site 'mod_C88' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[5]",
+          "value": "Disulfide bond at C128",
+          "reasoning": "Modification site 'mod_C128' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[6]",
+          "value": "Disulfide bond at C136",
+          "reasoning": "Modification site 'mod_C136' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[7]",
+          "value": "Disulfide bond at C138",
+          "reasoning": "Modification site 'mod_C138' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[8]",
+          "value": "Disulfide bond at C155",
+          "reasoning": "Modification site 'mod_C155' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[9]",
+          "value": "Disulfide bond at C203",
+          "reasoning": "Modification site 'mod_C203' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[10]",
+          "value": "Disulfide bond at C205",
+          "reasoning": "Modification site 'mod_C205' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[11]",
+          "value": "Disulfide bond at C212",
+          "reasoning": "Modification site 'mod_C212' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[12]",
+          "value": "Disulfide bond at C217",
+          "reasoning": "Modification site 'mod_C217' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[13]",
+          "value": "Disulfide bond at C281",
+          "reasoning": "Modification site 'mod_C281' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[14]",
+          "value": "Disulfide bond at C297",
+          "reasoning": "Modification site 'mod_C297' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[15]",
+          "value": "Disulfide bond at C307",
+          "reasoning": "Modification site 'mod_C307' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[16]",
+          "value": "Disulfide bond at C311",
+          "reasoning": "Modification site 'mod_C311' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[17]",
+          "value": "Disulfide bond at C312",
+          "reasoning": "Modification site 'mod_C312' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[18]",
+          "value": "Disulfide bond at C327",
+          "reasoning": "Modification site 'mod_C327' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[19]",
+          "value": "Disulfide bond at C329",
+          "reasoning": "Modification site 'mod_C329' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[20]",
+          "value": "Disulfide bond at C334",
+          "reasoning": "Modification site 'mod_C334' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[21]",
+          "value": "Disulfide bond at C335",
+          "reasoning": "Modification site 'mod_C335' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[22]",
+          "value": "Disulfide bond at C339",
+          "reasoning": "Modification site 'mod_C339' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[23]",
+          "value": "Disulfide bond at C342",
+          "reasoning": "Modification site 'mod_C342' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[24]",
+          "value": "Disulfide bond at C351",
+          "reasoning": "Modification site 'mod_C351' with states {u,p} from Disulfide bond"
+        }
+      ]
+    },
+    {
+      "agent_name": "AXIN1",
+      "kappa_signature": "%agent: AXIN1(TNKS_BD_11_80[_], RGS_88_210[_], GSK3B_binding_central[_], Beta_catenin_binding[_], Protein_interaction_730_765[_], DIX_780_862[_], phos_S51{u p}, phos_S54{u p}, phos_T56{u p}, phos_S57{u p}, phos_T58{u p}, phos_T60{u p}, phos_S157{u p}, phos_S/TNone{u p}, ub_KNone{u p}, mod_MultipleNone{u p}, mod_KNone{u p}, ac_KNone{u p})",
+      "citations": [
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "protein_identifier.gene_name",
+          "value": "AXIN1",
+          "reasoning": "Agent name derived from gene name"
+        },
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "domains_and_motifs[0].identifier",
+          "value": "TNKS_BD_11_80",
+          "reasoning": "Binding site 'TNKS_BD_11_80' from Binding_site domain"
+        },
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "domains_and_motifs[1].identifier",
+          "value": "RGS_88_210",
+          "reasoning": "Binding site 'RGS_88_210' from Domain domain"
+        },
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "domains_and_motifs[3].identifier",
+          "value": "GSK3B_binding_central",
+          "reasoning": "Binding site 'GSK3B_binding_central' from Binding_site domain"
+        },
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "domains_and_motifs[4].identifier",
+          "value": "Beta_catenin_binding",
+          "reasoning": "Binding site 'Beta_catenin_binding' from Binding_site domain"
+        },
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "domains_and_motifs[9].identifier",
+          "value": "Protein_interaction_730_765",
+          "reasoning": "Binding site 'Protein_interaction_730_765' from Binding_site domain"
+        },
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "domains_and_motifs[10].identifier",
+          "value": "DIX_780_862",
+          "reasoning": "Binding site 'DIX_780_862' from Domain domain"
+        },
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "post_translational_modifications[0]",
+          "value": "Phosphorylation at S51",
+          "reasoning": "Modification site 'phos_S51' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "post_translational_modifications[1]",
+          "value": "Phosphorylation at S54",
+          "reasoning": "Modification site 'phos_S54' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "post_translational_modifications[2]",
+          "value": "Phosphorylation at T56",
+          "reasoning": "Modification site 'phos_T56' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "post_translational_modifications[3]",
+          "value": "Phosphorylation at S57",
+          "reasoning": "Modification site 'phos_S57' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "post_translational_modifications[4]",
+          "value": "Phosphorylation at T58",
+          "reasoning": "Modification site 'phos_T58' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "post_translational_modifications[5]",
+          "value": "Phosphorylation at T60",
+          "reasoning": "Modification site 'phos_T60' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "post_translational_modifications[6]",
+          "value": "Phosphorylation at S157",
+          "reasoning": "Modification site 'phos_S157' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "post_translational_modifications[7]",
+          "value": "Phosphorylation at S/TNone",
+          "reasoning": "Modification site 'phos_S/TNone' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "post_translational_modifications[8]",
+          "value": "Ubiquitination at KNone",
+          "reasoning": "Modification site 'ub_KNone' with states {u,p} from Ubiquitination"
+        },
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "post_translational_modifications[9]",
+          "value": "PARsylation at MultipleNone",
+          "reasoning": "Modification site 'mod_MultipleNone' with states {u,p} from PARsylation"
+        },
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "post_translational_modifications[10]",
+          "value": "SUMOylation at KNone",
+          "reasoning": "Modification site 'mod_KNone' with states {u,p} from SUMOylation"
+        },
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "post_translational_modifications[11]",
+          "value": "Acetylation at KNone",
+          "reasoning": "Modification site 'ac_KNone' with states {u,p} from Acetylation"
+        }
+      ]
+    },
+    {
+      "agent_name": "LRP6",
+      "kappa_signature": "%agent: LRP6(beta_propeller_1_20_275[_], EGF_like_1_286_297[_], beta_propeller_2_328_589[_], EGF_like_2_592_627[_], beta_propeller_3_631_890[_], EGF_like_3_893_929[_], beta_propeller_4_933_1202[_], EGF_like_4_1207_1243[_], LDLR_class_A_1_1248_1285[_], LDLR_class_A_2_1288_1322[_], LDLR_class_A_3_1326_1361[_], transmembrane_1371_1393[_], disordered_region_1556_1613[_], phos_S1420{u p}, phos_S1430{u p}, phos_T1479{u p}, phos_S1490{u p}, phos_T1493{u p}, mod_C1394{u p}, mod_C1399{u p}, ub_K1403{u p}, mod_N42{u p}, mod_N81{u p}, mod_N281{u p}, mod_N433{u p}, mod_N486{u p}, mod_N692{u p}, mod_N859{u p}, mod_N865{u p}, mod_N926{u p}, mod_N1039{u p})",
+      "citations": [
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "protein_identifier.gene_name",
+          "value": "LRP6",
+          "reasoning": "Agent name derived from gene name"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "domains_and_motifs[1].identifier",
+          "value": "beta_propeller_1_20_275",
+          "reasoning": "Binding site 'beta_propeller_1_20_275' from Domain domain"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "domains_and_motifs[2].identifier",
+          "value": "EGF_like_1_286_297",
+          "reasoning": "Binding site 'EGF_like_1_286_297' from Domain domain"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "domains_and_motifs[3].identifier",
+          "value": "beta_propeller_2_328_589",
+          "reasoning": "Binding site 'beta_propeller_2_328_589' from Domain domain"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "domains_and_motifs[4].identifier",
+          "value": "EGF_like_2_592_627",
+          "reasoning": "Binding site 'EGF_like_2_592_627' from Domain domain"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "domains_and_motifs[5].identifier",
+          "value": "beta_propeller_3_631_890",
+          "reasoning": "Binding site 'beta_propeller_3_631_890' from Domain domain"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "domains_and_motifs[6].identifier",
+          "value": "EGF_like_3_893_929",
+          "reasoning": "Binding site 'EGF_like_3_893_929' from Domain domain"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "domains_and_motifs[7].identifier",
+          "value": "beta_propeller_4_933_1202",
+          "reasoning": "Binding site 'beta_propeller_4_933_1202' from Domain domain"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "domains_and_motifs[8].identifier",
+          "value": "EGF_like_4_1207_1243",
+          "reasoning": "Binding site 'EGF_like_4_1207_1243' from Domain domain"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "domains_and_motifs[9].identifier",
+          "value": "LDLR_class_A_1_1248_1285",
+          "reasoning": "Binding site 'LDLR_class_A_1_1248_1285' from Domain domain"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "domains_and_motifs[10].identifier",
+          "value": "LDLR_class_A_2_1288_1322",
+          "reasoning": "Binding site 'LDLR_class_A_2_1288_1322' from Domain domain"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "domains_and_motifs[11].identifier",
+          "value": "LDLR_class_A_3_1326_1361",
+          "reasoning": "Binding site 'LDLR_class_A_3_1326_1361' from Domain domain"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "domains_and_motifs[12].identifier",
+          "value": "transmembrane_1371_1393",
+          "reasoning": "Binding site 'transmembrane_1371_1393' from Domain domain"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "domains_and_motifs[26].identifier",
+          "value": "disordered_region_1556_1613",
+          "reasoning": "Binding site 'disordered_region_1556_1613' from Domain domain"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "post_translational_modifications[0]",
+          "value": "Phosphorylation at S1420",
+          "reasoning": "Modification site 'phos_S1420' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "post_translational_modifications[1]",
+          "value": "Phosphorylation at S1430",
+          "reasoning": "Modification site 'phos_S1430' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "post_translational_modifications[2]",
+          "value": "Phosphorylation at T1479",
+          "reasoning": "Modification site 'phos_T1479' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "post_translational_modifications[3]",
+          "value": "Phosphorylation at S1490",
+          "reasoning": "Modification site 'phos_S1490' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "post_translational_modifications[4]",
+          "value": "Phosphorylation at T1493",
+          "reasoning": "Modification site 'phos_T1493' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "post_translational_modifications[5]",
+          "value": "S-palmitoylation at C1394",
+          "reasoning": "Modification site 'mod_C1394' with states {u,p} from S-palmitoylation"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "post_translational_modifications[6]",
+          "value": "S-palmitoylation at C1399",
+          "reasoning": "Modification site 'mod_C1399' with states {u,p} from S-palmitoylation"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "post_translational_modifications[7]",
+          "value": "Ubiquitination at K1403",
+          "reasoning": "Modification site 'ub_K1403' with states {u,p} from Ubiquitination"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "post_translational_modifications[8]",
+          "value": "N-glycosylation at N42",
+          "reasoning": "Modification site 'mod_N42' with states {u,p} from N-glycosylation"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "post_translational_modifications[9]",
+          "value": "N-glycosylation at N81",
+          "reasoning": "Modification site 'mod_N81' with states {u,p} from N-glycosylation"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "post_translational_modifications[10]",
+          "value": "N-glycosylation at N281",
+          "reasoning": "Modification site 'mod_N281' with states {u,p} from N-glycosylation"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "post_translational_modifications[11]",
+          "value": "N-glycosylation at N433",
+          "reasoning": "Modification site 'mod_N433' with states {u,p} from N-glycosylation"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "post_translational_modifications[12]",
+          "value": "N-glycosylation at N486",
+          "reasoning": "Modification site 'mod_N486' with states {u,p} from N-glycosylation"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "post_translational_modifications[13]",
+          "value": "N-glycosylation at N692",
+          "reasoning": "Modification site 'mod_N692' with states {u,p} from N-glycosylation"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "post_translational_modifications[14]",
+          "value": "N-glycosylation at N859",
+          "reasoning": "Modification site 'mod_N859' with states {u,p} from N-glycosylation"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "post_translational_modifications[15]",
+          "value": "N-glycosylation at N865",
+          "reasoning": "Modification site 'mod_N865' with states {u,p} from N-glycosylation"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "post_translational_modifications[16]",
+          "value": "N-glycosylation at N926",
+          "reasoning": "Modification site 'mod_N926' with states {u,p} from N-glycosylation"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "post_translational_modifications[17]",
+          "value": "N-glycosylation at N1039",
+          "reasoning": "Modification site 'mod_N1039' with states {u,p} from N-glycosylation"
+        }
+      ]
+    },
+    {
+      "agent_name": "GSK3B",
+      "kappa_signature": "%agent: GSK3B(Pkinase_56_340[_], ATP_binding_62_70[_], ATP_binding_85[_], p53_binding_78_92[_], phos_S9{u p}, phos_Y216{u p}, phos_S389{u p}, phos_T390{u p}, phos_T402{u p}, palm_C14{u p}, ub_K197{u p}, mod_UnknownNone{u p})",
+      "citations": [
+        {
+          "source_file": "GSK3B_digest.json",
+          "json_path": "protein_identifier.gene_name",
+          "value": "GSK3B",
+          "reasoning": "Agent name derived from gene name"
+        },
+        {
+          "source_file": "GSK3B_digest.json",
+          "json_path": "domains_and_motifs[0].identifier",
+          "value": "Pkinase_56_340",
+          "reasoning": "Binding site 'Pkinase_56_340' from Domain domain"
+        },
+        {
+          "source_file": "GSK3B_digest.json",
+          "json_path": "domains_and_motifs[1].identifier",
+          "value": "ATP_binding_62_70",
+          "reasoning": "Binding site 'ATP_binding_62_70' from Binding_site domain"
+        },
+        {
+          "source_file": "GSK3B_digest.json",
+          "json_path": "domains_and_motifs[2].identifier",
+          "value": "ATP_binding_85",
+          "reasoning": "Binding site 'ATP_binding_85' from Binding_site domain"
+        },
+        {
+          "source_file": "GSK3B_digest.json",
+          "json_path": "domains_and_motifs[9].identifier",
+          "value": "p53_binding_78_92",
+          "reasoning": "Binding site 'p53_binding_78_92' from Binding_site domain"
+        },
+        {
+          "source_file": "GSK3B_digest.json",
+          "json_path": "post_translational_modifications[0]",
+          "value": "Phosphorylation at S9",
+          "reasoning": "Modification site 'phos_S9' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "GSK3B_digest.json",
+          "json_path": "post_translational_modifications[1]",
+          "value": "Phosphorylation at Y216",
+          "reasoning": "Modification site 'phos_Y216' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "GSK3B_digest.json",
+          "json_path": "post_translational_modifications[2]",
+          "value": "Phosphorylation at S389",
+          "reasoning": "Modification site 'phos_S389' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "GSK3B_digest.json",
+          "json_path": "post_translational_modifications[3]",
+          "value": "Phosphorylation at T390",
+          "reasoning": "Modification site 'phos_T390' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "GSK3B_digest.json",
+          "json_path": "post_translational_modifications[4]",
+          "value": "Phosphorylation at T402",
+          "reasoning": "Modification site 'phos_T402' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "GSK3B_digest.json",
+          "json_path": "post_translational_modifications[5]",
+          "value": "Palmitoylation at C14",
+          "reasoning": "Modification site 'palm_C14' with states {u,p} from Palmitoylation"
+        },
+        {
+          "source_file": "GSK3B_digest.json",
+          "json_path": "post_translational_modifications[6]",
+          "value": "Ubiquitination at K197",
+          "reasoning": "Modification site 'ub_K197' with states {u,p} from Ubiquitination"
+        },
+        {
+          "source_file": "GSK3B_digest.json",
+          "json_path": "post_translational_modifications[7]",
+          "value": "ADP-ribosylation at UnknownNone",
+          "reasoning": "Modification site 'mod_UnknownNone' with states {u,p} from ADP-ribosylation"
+        }
+      ]
+    },
+    {
+      "agent_name": "TCF7L2",
+      "kappa_signature": "%agent: TCF7L2(CTNNB1_binding_1_259[_], HMG_box_349_433[_], C_clamp[_], phos_S58{u p}, phos_S60{u p}, phos_S82{u p}, phos_S120{u p}, phos_S122{u p}, phos_S154{u p}, phos_S177{u p}, phos_S179{u p}, phos_T201{u p}, phos_T212{u p}, phos_S246{u p}, ac_K150{u p}, mod_NoneNone{u p}, ub_NoneNone{u p})",
+      "citations": [
+        {
+          "source_file": "TCF7L2_digest.json",
+          "json_path": "protein_identifier.gene_name",
+          "value": "TCF7L2",
+          "reasoning": "Agent name derived from gene name"
+        },
+        {
+          "source_file": "TCF7L2_digest.json",
+          "json_path": "domains_and_motifs[0].identifier",
+          "value": "CTNNB1_binding_1_259",
+          "reasoning": "Binding site 'CTNNB1_binding_1_259' from Domain domain"
+        },
+        {
+          "source_file": "TCF7L2_digest.json",
+          "json_path": "domains_and_motifs[1].identifier",
+          "value": "HMG_box_349_433",
+          "reasoning": "Binding site 'HMG_box_349_433' from Domain domain"
+        },
+        {
+          "source_file": "TCF7L2_digest.json",
+          "json_path": "domains_and_motifs[2].identifier",
+          "value": "C_clamp",
+          "reasoning": "Binding site 'C_clamp' from Domain domain"
+        },
+        {
+          "source_file": "TCF7L2_digest.json",
+          "json_path": "post_translational_modifications[0]",
+          "value": "Phosphorylation at S58",
+          "reasoning": "Modification site 'phos_S58' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "TCF7L2_digest.json",
+          "json_path": "post_translational_modifications[1]",
+          "value": "Phosphorylation at S60",
+          "reasoning": "Modification site 'phos_S60' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "TCF7L2_digest.json",
+          "json_path": "post_translational_modifications[2]",
+          "value": "Phosphorylation at S82",
+          "reasoning": "Modification site 'phos_S82' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "TCF7L2_digest.json",
+          "json_path": "post_translational_modifications[3]",
+          "value": "Phosphorylation at S120",
+          "reasoning": "Modification site 'phos_S120' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "TCF7L2_digest.json",
+          "json_path": "post_translational_modifications[4]",
+          "value": "Phosphorylation at S122",
+          "reasoning": "Modification site 'phos_S122' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "TCF7L2_digest.json",
+          "json_path": "post_translational_modifications[5]",
+          "value": "Phosphorylation at S154",
+          "reasoning": "Modification site 'phos_S154' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "TCF7L2_digest.json",
+          "json_path": "post_translational_modifications[6]",
+          "value": "Phosphorylation at S177",
+          "reasoning": "Modification site 'phos_S177' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "TCF7L2_digest.json",
+          "json_path": "post_translational_modifications[7]",
+          "value": "Phosphorylation at S179",
+          "reasoning": "Modification site 'phos_S179' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "TCF7L2_digest.json",
+          "json_path": "post_translational_modifications[8]",
+          "value": "Phosphorylation at T201",
+          "reasoning": "Modification site 'phos_T201' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "TCF7L2_digest.json",
+          "json_path": "post_translational_modifications[9]",
+          "value": "Phosphorylation at T212",
+          "reasoning": "Modification site 'phos_T212' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "TCF7L2_digest.json",
+          "json_path": "post_translational_modifications[10]",
+          "value": "Phosphorylation at S246",
+          "reasoning": "Modification site 'phos_S246' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "TCF7L2_digest.json",
+          "json_path": "post_translational_modifications[11]",
+          "value": "Acetylation at K150",
+          "reasoning": "Modification site 'ac_K150' with states {u,p} from Acetylation"
+        },
+        {
+          "source_file": "TCF7L2_digest.json",
+          "json_path": "post_translational_modifications[12]",
+          "value": "SUMOylation at NoneNone",
+          "reasoning": "Modification site 'mod_NoneNone' with states {u,p} from SUMOylation"
+        },
+        {
+          "source_file": "TCF7L2_digest.json",
+          "json_path": "post_translational_modifications[13]",
+          "value": "Ubiquitination at NoneNone",
+          "reasoning": "Modification site 'ub_NoneNone' with states {u,p} from Ubiquitination"
+        }
+      ]
+    },
+    {
+      "agent_name": "FZD1",
+      "kappa_signature": "%agent: FZD1(FZ_CRD_112_238[_], FZ_domain_116_220[_], hinge_domain_275_312[_], TM1_323_343[_], TM2_355_375[_], TM3_403_423[_], TM4_446_466[_], TM5_490_510[_], TM6_537_557[_], TM7_602_622[_], helix8_amphipathic[_], intrinsically_disordered_1_115[_], intrinsically_disordered_230_275[_], phos_Multiple sitesNone{u p}, ub_K (multiple lysine residues in cytoplasmic loops)None{u p}, mod_Between signal peptide and mature protein40{u p})",
+      "citations": [
+        {
+          "source_file": "FZD1_digest.json",
+          "json_path": "protein_identifier.gene_name",
+          "value": "FZD1",
+          "reasoning": "Agent name derived from gene name"
+        },
+        {
+          "source_file": "FZD1_digest.json",
+          "json_path": "domains_and_motifs[1].identifier",
+          "value": "FZ_CRD_112_238",
+          "reasoning": "Binding site 'FZ_CRD_112_238' from Domain domain"
+        },
+        {
+          "source_file": "FZD1_digest.json",
+          "json_path": "domains_and_motifs[2].identifier",
+          "value": "FZ_domain_116_220",
+          "reasoning": "Binding site 'FZ_domain_116_220' from Domain domain"
+        },
+        {
+          "source_file": "FZD1_digest.json",
+          "json_path": "domains_and_motifs[3].identifier",
+          "value": "hinge_domain_275_312",
+          "reasoning": "Binding site 'hinge_domain_275_312' from Domain domain"
+        },
+        {
+          "source_file": "FZD1_digest.json",
+          "json_path": "domains_and_motifs[4].identifier",
+          "value": "TM1_323_343",
+          "reasoning": "Binding site 'TM1_323_343' from Domain domain"
+        },
+        {
+          "source_file": "FZD1_digest.json",
+          "json_path": "domains_and_motifs[5].identifier",
+          "value": "TM2_355_375",
+          "reasoning": "Binding site 'TM2_355_375' from Domain domain"
+        },
+        {
+          "source_file": "FZD1_digest.json",
+          "json_path": "domains_and_motifs[6].identifier",
+          "value": "TM3_403_423",
+          "reasoning": "Binding site 'TM3_403_423' from Domain domain"
+        },
+        {
+          "source_file": "FZD1_digest.json",
+          "json_path": "domains_and_motifs[7].identifier",
+          "value": "TM4_446_466",
+          "reasoning": "Binding site 'TM4_446_466' from Domain domain"
+        },
+        {
+          "source_file": "FZD1_digest.json",
+          "json_path": "domains_and_motifs[8].identifier",
+          "value": "TM5_490_510",
+          "reasoning": "Binding site 'TM5_490_510' from Domain domain"
+        },
+        {
+          "source_file": "FZD1_digest.json",
+          "json_path": "domains_and_motifs[9].identifier",
+          "value": "TM6_537_557",
+          "reasoning": "Binding site 'TM6_537_557' from Domain domain"
+        },
+        {
+          "source_file": "FZD1_digest.json",
+          "json_path": "domains_and_motifs[10].identifier",
+          "value": "TM7_602_622",
+          "reasoning": "Binding site 'TM7_602_622' from Domain domain"
+        },
+        {
+          "source_file": "FZD1_digest.json",
+          "json_path": "domains_and_motifs[11].identifier",
+          "value": "helix8_amphipathic",
+          "reasoning": "Binding site 'helix8_amphipathic' from Domain domain"
+        },
+        {
+          "source_file": "FZD1_digest.json",
+          "json_path": "domains_and_motifs[13].identifier",
+          "value": "intrinsically_disordered_1_115",
+          "reasoning": "Binding site 'intrinsically_disordered_1_115' from Domain domain"
+        },
+        {
+          "source_file": "FZD1_digest.json",
+          "json_path": "domains_and_motifs[14].identifier",
+          "value": "intrinsically_disordered_230_275",
+          "reasoning": "Binding site 'intrinsically_disordered_230_275' from Domain domain"
+        },
+        {
+          "source_file": "FZD1_digest.json",
+          "json_path": "post_translational_modifications[0]",
+          "value": "Phosphorylation at Multiple sitesNone",
+          "reasoning": "Modification site 'phos_Multiple sitesNone' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "FZD1_digest.json",
+          "json_path": "post_translational_modifications[1]",
+          "value": "Ubiquitination at K (multiple lysine residues in cytoplasmic loops)None",
+          "reasoning": "Modification site 'ub_K (multiple lysine residues in cytoplasmic loops)None' with states {u,p} from Ubiquitination"
+        },
+        {
+          "source_file": "FZD1_digest.json",
+          "json_path": "post_translational_modifications[2]",
+          "value": "Signal peptide cleavage at Between signal peptide and mature protein40",
+          "reasoning": "Modification site 'mod_Between signal peptide and mature protein40' with states {u,p} from Signal peptide cleavage"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule_name": "APC_CTNNB1_Binding",
+      "kappa_rule": "'APC(x[.]{u}),CTNNB1(y[.]{u}) -> APC(x[APC_binding_site]{u}),CTNNB1(y[APC_binding_site]{u}) @ 0.1",
+      "unimolecular_rate": 0.1,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "APC_CTNNB1_digest.json",
+          "json_path": "sites.this_protein[2].description",
+          "value": "Binding site for APC protein in destruction complex",
+          "reasoning": "Identified specific binding site for APC on CTNNB1"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "domains_and_motifs[6].description",
+          "value": "Binding site for APC protein in destruction complex",
+          "reasoning": "Confirmed the presence of the APC binding site on CTNNB1"
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "APC_CTNNB1_digest.json",
+          "json_path": "kinetics.conditions",
+          "value": "Phosphorylated APC-2,3 Kd=2.1 nM",
+          "reasoning": "Used specific Kd value for phosphorylated APC to estimate rate constant"
+        }
+      ]
+    },
+    {
+      "rule_name": "APC_AXIN1_Binding",
+      "kappa_rule": "A(SAMP_repeat_1[_]), B(RGS_domain) -> A(SAMP_repeat_1[B]) @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_id",
+          "value": "APC_AXIN1",
+          "reasoning": "Identified the specific interaction between APC and AXIN1"
+        },
+        {
+          "source_file": "APC_digest.json",
+          "json_path": "domains_and_motifs[10].description",
+          "value": "SAMP motifs bind Axin RGS domain",
+          "reasoning": "Confirmed the presence of SAMP repeats in APC binding to AXIN1"
+        },
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "domains_and_motifs[1].description",
+          "value": "N-terminal RGS domain of Axin binds APC SAMP repeats",
+          "reasoning": "Confirmed the interaction site of RGS domain in AXIN1 for binding to APC"
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "APC_GSK3B_Phosphorylation",
+      "kappa_rule": "'APC(x{u}), GSK3B(y{u}) -> APC(x{p}[#1:1505]), GSK3B(y{u}) @ rate'",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "Indicates a physical interaction between APC and GSK3B"
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Phosphorylation",
+          "reasoning": "Describes the mechanism of interaction as phosphorylation"
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "protein_a.gene_name",
+          "value": "APC",
+          "reasoning": "Identifies protein A as APC"
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "protein_b.gene_name",
+          "value": "GSK3B",
+          "reasoning": "Identifies protein B as GSK3B"
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "AXIN1_DVL1_Binding",
+      "kappa_rule": "A(DIX[#1]), B(DIX_1_85[#1]) <-> A(DIX[#1]), B(DIX_1_85[#1]) @ 1e-6, 0.1",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_id, protein_a.protein_name, protein_b.protein_name",
+          "value": "AXIN1_DVL1, Axin-1, Segment polarity protein dishevelled homolog DVL-1",
+          "reasoning": "Identified the specific protein interaction"
+        },
+        {
+          "source_file": "protein_a_digest.json",
+          "json_path": "domains_and_motifs[-1].description",
+          "value": "DIX domain mediates homodimerization and heterodimerization",
+          "reasoning": "Confirmed the presence and function of DIX domain in AXIN1"
+        },
+        {
+          "source_file": "protein_b_digest.json",
+          "json_path": "domains_and_motifs[0].description",
+          "value": "DIX domain mediates homooligomerization and heterotypic interactions",
+          "reasoning": "Confirmed the presence and function of DIX domain in DVL1"
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.notes",
+          "value": "Relatively low affinity interaction",
+          "reasoning": "Indicated the nature of the binding interaction"
+        }
+      ]
+    },
+    {
+      "rule_name": "CTNNB1_DVL1_binding",
+      "kappa_rule": "A(CTNNB1[.]{u}), B(DVL1[.]{u}) -> A(CTNNB1[.]!1), B(DVL1[.]!1) @ 1e-6",
+      "unimolecular_rate": null,
+      "bimolecular_rate": 1e-06,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "protein_a.protein_name",
+          "value": "Catenin beta-1",
+          "reasoning": "Protein A involved in the interaction"
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "protein_b.protein_name",
+          "value": "Segment polarity protein dishevelled homolog DVL-1",
+          "reasoning": "Protein B involved in the interaction"
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.notes",
+          "value": "Direct interaction documented but quantitative binding parameters not determined",
+          "reasoning": "Direct source for lack of specific rate constants"
+        }
+      ]
+    },
+    {
+      "rule_name": "DVL1_GSK3B_Binding",
+      "kappa_rule": "'DVL1_DIX(site1), GSK3B_Kinase(site2) -> DVL1_DIX(site1!1), GSK3B_Kinase(site2!1) @ 0.1'",
+      "unimolecular_rate": 0.1,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "protein_a.domains_and_motifs[0].description",
+          "value": "Interaction may involve DIX domain and central region",
+          "reasoning": "DIX domain likely involved in binding interaction"
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "protein_b.domains_and_motifs[0].description",
+          "value": "Serine/threonine kinase domain",
+          "reasoning": "GSK3B kinase domain involved in binding interaction"
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.notes",
+          "value": "Part of beta-catenin destruction complex; DVL1 binding inhibits GSK3B activity toward beta-catenin",
+          "reasoning": "Provided context for the interaction kinetics"
+        }
+      ]
+    },
+    {
+      "rule_name": "DVL1_LRP6_Physical_Binding",
+      "kappa_rule": "DVL1(x[.]), LRP6(y[.]) -> DVL1(x[LRP6]{p}), LRP6(y[DVL1]{p}) @ 0.001",
+      "unimolecular_rate": null,
+      "bimolecular_rate": 0.001,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_id",
+          "value": "DVL1_LRP6",
+          "reasoning": "Based on the specific protein-protein interaction analyzed"
+        },
+        {
+          "source_file": "DVL1_digest.json",
+          "json_path": "protein_name",
+          "value": "Segment polarity protein dishevelled homolog DVL-1",
+          "reasoning": "Identified as Protein A for the interaction"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "protein_name",
+          "value": "Low-density lipoprotein receptor-related protein 6",
+          "reasoning": "Identified as Protein B for the interaction"
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "kinetics_data.json",
+          "json_path": "DVL1_LRP6.k_on",
+          "value": "1.0e-3",
+          "reasoning": "Experimental determination of association rate constant k_on"
+        },
+        {
+          "source_file": "kinetics_data.json",
+          "json_path": "DVL1_LRP6.k_off",
+          "value": "1.0",
+          "reasoning": "Experimental determination of dissociation rate constant k_off"
+        }
+      ]
+    },
+    {
+      "rule_name": "AXIN1_CTNNB1_binding",
+      "kappa_rule": "A(AXIN1(beta_catenin_binding), CTNNB1(ARM_repeat_domain_133_664)) -> A(AXIN1(beta_catenin_binding!{p}), CTNNB1(ARM_repeat_domain_133_664!{p})) @ 0.1",
+      "unimolecular_rate": 0.1,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "domains_and_motifs",
+          "value": "Beta-catenin binding domain within AXIN1",
+          "reasoning": "The interaction involves the identified binding domain of AXIN1"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "domains_and_motifs",
+          "value": "Armadillo repeat domain within CTNNB1",
+          "reasoning": "The interaction involves the identified domain of CTNNB1"
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "CTNNB1_GSK3B_Phosphorylation",
+      "kappa_rule": "'CTNNB1(x{p}) GSK3B(y) -> CTNNB1(x{pp}) GSK3B(y) @ k_on, k_off'",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "CTNNB1_GSK3B_interaction.json",
+          "json_path": "interaction_type",
+          "value": "Enzymatic_reaction",
+          "reasoning": "Interaction type indicates enzymatic reaction"
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "CTNNB1_GSK3B_interaction.json",
+          "json_path": "kinetics.km_m",
+          "value": "2e-06",
+          "reasoning": "KM value for phosphorylation of pS45-beta-catenin by pS9-GSK3B"
+        }
+      ]
+    },
+    {
+      "rule_name": "CTNNB1_TCF7L2_Binding",
+      "kappa_rule": "CTNNB1(x), TCF7L2(y) -> CTNNB1(x!{p}), TCF7L2(y!{p}) @ rate",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_id",
+          "value": "CTNNB1_TCF7L2",
+          "reasoning": "Identified the specific interaction for rule creation"
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "LRP6_WNT3A_binding",
+      "kappa_rule": "'LRP6_E3_E4{.}, WNT3A_Wnt{.}' -> 'LRP6_E3_E4{WNT3A}, WNT3A_Wnt{LRP6}' @ 0.1",
+      "unimolecular_rate": 0.1,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_id",
+          "value": "LRP6_WNT3A",
+          "reasoning": "Specific interaction being modeled"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "domains_and_motifs[6]",
+          "value": "E3-E4 region (P3 binding site)",
+          "reasoning": "Binding site on LRP6 for WNT3A"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "domains_and_motifs[0]",
+          "value": "Wnt domain",
+          "reasoning": "Binding domain on WNT3A for LRP6"
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.notes",
+          "value": "Part of ternary Wnt-Fzd-LRP6 complex.",
+          "reasoning": "General kinetic information provided"
+        }
+      ]
+    },
+    {
+      "rule_name": "FZD1_WNT3A_binding",
+      "kappa_rule": "'Frizzled-1(crd[.]{u}) + Protein_Wnt-3a(wnt_domain_.[.]~S209) -> Frizzled-1(crd[Protein_Wnt-3a]{p}) @ 0.1 to 10 s^-1'",
+      "unimolecular_rate": 0.1,
+      "bimolecular_rate": 10,
+      "citations": [
+        {
+          "source_file": "FZD1_digest.json",
+          "json_path": "domains_and_motifs.identifier",
+          "value": "Frizzled cysteine-rich domain",
+          "reasoning": "Interactions occur at the CRD region of FZD1"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "domains_and_motifs.identifier",
+          "value": "Wnt domain",
+          "reasoning": "Interactions occur at the Wnt domain of WNT3A"
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "kinetic_data.json",
+          "json_path": "unimolecular_rates.FZD1_WNT3A_binding",
+          "value": "0.1 to 10 s^-1",
+          "reasoning": "Typical range for conformational changes and dissociation"
+        },
+        {
+          "source_file": "kinetic_data.json",
+          "json_path": "bimolecular_rates.FZD1_WNT3A_binding",
+          "value": "~10^-6 to 10^-3 (in stochastic units)",
+          "reasoning": "Range for bimolecular interactions depending on system volume"
+        }
+      ]
+    },
+    {
+      "rule_name": "CTNNB1_WNT3A_interaction",
+      "kappa_rule": "'WNT3A(w) -> CTNNB1(w) @ k_on, k_off'",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_id",
+          "value": "CTNNB1_WNT3A",
+          "reasoning": "Specific identifier for the interaction"
+        },
+        {
+          "source_file": "CTNNB1_digest.json",
+          "json_path": "protein_name",
+          "value": "Catenin beta-1",
+          "reasoning": "Identified CTNNB1 as the target protein for the interaction"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "protein_name",
+          "value": "Protein Wnt-3a",
+          "reasoning": "Identified WNT3A as the interacting protein"
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "DVL1 phosphorylation activates WNT3A signaling",
+      "kappa_rule": "DVL1(x{u}), WNT3A(y{u}) -> DVL1(x{p}), WNT3A(y{u}) @ k_phos",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "DVL1_digest.json",
+          "json_path": "post_translational_modifications[1].function",
+          "value": "Sequential phosphorylation activates DVL and triggers membrane translocation.",
+          "reasoning": "Phosphorylation of DVL1 at multiple sites is known to activate signaling"
+        },
+        {
+          "source_file": "WNT3A_digest.json",
+          "json_path": "post_translational_modifications[0].function",
+          "value": "Activating - required for efficient frizzled receptor binding, WLS binding, proper trafficking to cell surface, and vacuolar acidification-dependent release from WLS in secretory vesicles",
+          "reasoning": "Palmitoleoylation of WNT3A is essential for signaling activity"
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "Axin1_GSK3B_Binding",
+      "kappa_rule": "'Axin-1(x{.}, y[.]) GSK3B(y[.]) -> Axin-1(x{GSK3B_binding_central}, y[_]) @ k_bind",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_id",
+          "value": "AXIN1_GSK3B",
+          "reasoning": "Identified the specific interaction between Axin-1 and GSK3B"
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.kd_m",
+          "value": "7.5E-9",
+          "reasoning": "Kinetic data provided Kd value for the interaction"
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.conditions",
+          "value": "Full-length Axin binding to GSK3\u03b2 measured at physiological conditions",
+          "reasoning": "Justification for using the specified rate constant"
+        }
+      ]
+    },
+    {
+      "rule_name": "AXIN1_LRP6_Interaction",
+      "kappa_rule": "A(AXIN1{.}, LRP6{.}) -> A(AXIN1{.}, LRP6{.}) @ 0.1",
+      "unimolecular_rate": 0.1,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_id",
+          "value": "AXIN1_LRP6",
+          "reasoning": "Identified the specific protein-protein interaction"
+        },
+        {
+          "source_file": "AXIN1_digest.json",
+          "json_path": "domains_and_motifs[3].sequence",
+          "value": "DQDMDEDDGRDAAPPGRLPQKLLLETAAPRVSSSRRYSEGREFRYGSWREPVNPYYVNAGYALAPATSANDSEQQSLSSDADTLSLTDSSVDGIPPYRIRKQHRREMQESVQVNGRVPLPHIPRTYRVPKEVRVEPQKFAEELIHRLEAVQRTREAEEKLEERLKRVRMEEEGEDGDPSSGPPGPCHKLPPAPAWHHFPPRCVDMGCAGLRDAHEENPESILDEHVQRVLRTPGRQSPGPGHRSPDSGHVAKMPVALGGAASGHGKHVPKSGAKLDAAGLHHHRHVHHHVHHSTARPKEQVEAEATRRAQSSFAWGLEPHSHGARSRGYSESVGAAPNASDGLAHSGKVGVACKRNAKKAESGKSASTEVPGASEDAEKNQKIMQWIIEGEKEISRHRRTGHGSSGTRKPQPHENSRPLSLEHPWAGPQLRTSVQPSHLFIQDPTMPPHPAPNPLTQLEEARRRLEEEEKRASRAPSKQRYVQEVMRRGRACVRPACAPVLHVVPAVSDMELSETETRSQRKVGG",
+          "reasoning": "Identified the GSK3 binding region that mediates the interaction with LRP6"
+        },
+        {
+          "source_file": "LRP6_digest.json",
+          "json_path": "post_translational_modifications[4].residue",
+          "value": "S",
+          "reasoning": "Identified the critical phosphorylation site involved in the interaction with AXIN1"
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.notes",
+          "value": "Binding depends on dual phosphorylation of PPPSP motifs by GSK3 and CK1; AXIN1 GBD binds GSK3\u03b2 with Kd ~1 \u03bcM",
+          "reasoning": "Provided the information on Kd for the interaction"
+        }
+      ]
+    },
+    {
+      "rule_name": "GSK3B_LRP6_Phosphorylation",
+      "kappa_rule": "'GSK3B(site1{u}), LRP6(site2{u}) -> GSK3B(site1{u}), LRP6(site2{p}) @ kcat/Km'",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Enzymatic_reaction",
+          "reasoning": "Indicates this is an enzymatic reaction"
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Phosphorylation",
+          "reasoning": "Specifies the mechanism as phosphorylation"
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.kcat_s1",
+          "value": "0.023",
+          "reasoning": "Used kcat value for the enzymatic phosphorylation rate"
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.km_m",
+          "value": "8.5e-06",
+          "reasoning": "Used Km value for the enzymatic phosphorylation rate"
+        }
+      ]
+    },
+    {
+      "rule_name": "APC_TCF7L2_Binding",
+      "kappa_rule": "'APC(ARM{.}), TCF7L2(HMG_box{.}) -> APC(ARM{TCF7L2}), TCF7L2(HMG_box{APC}) @ 0.1",
+      "unimolecular_rate": null,
+      "bimolecular_rate": 0.1,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "Interaction type indicates a binding event"
+        },
+        {
+          "source_file": "APC_digest.json",
+          "json_path": "protein_name",
+          "value": "Adenomatous polyposis coli protein",
+          "reasoning": "Identified binding domain ARM repeats in the APC protein"
+        },
+        {
+          "source_file": "TCF7L2_digest.json",
+          "json_path": "protein_name",
+          "value": "Transcription factor 7-like 2",
+          "reasoning": "Identified HMG box domain in the TCF7L2 protein"
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "kinetics_data.json",
+          "json_path": "k_on",
+          "value": "~10^-6 to 10^-3",
+          "reasoning": "Typical range for bimolecular binding interactions"
+        }
+      ]
+    },
+    {
+      "rule_name": "DVL1_FZD1_binding_PDZ",
+      "kappa_rule": "'DVL1_PDZ(x[.]), FZD1_KTXXXW_binding(x[.]) -> DVL1_PDZ(x[1]), FZD1_KTXXXW_binding(x[1]) @ 1e-3'",
+      "unimolecular_rate": null,
+      "bimolecular_rate": 0.001,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_id",
+          "value": "DVL1_FZD1",
+          "reasoning": "Specific interaction cited for rule creation"
+        },
+        {
+          "source_file": "DVL1_digest.json",
+          "json_path": "domains_and_motifs[2].name",
+          "value": "PDZ domain",
+          "reasoning": "Use of DVL1 PDZ domain for binding"
+        },
+        {
+          "source_file": "FZD1_digest.json",
+          "json_path": "domains_and_motifs[10].name",
+          "value": "PDZ domain binding motif",
+          "reasoning": "Recognition of FZD1 PDZ motif by DVL1 PDZ domain"
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.kd_m",
+          "value": "7e-06",
+          "reasoning": "Affinity value used to determine rate constant"
+        }
+      ]
+    },
+    {
+      "rule_name": "FZD1_LRP6_interaction",
+      "kappa_rule": "A(FZD1{.}, LRP6{.}) -> A(FZD1{.[LRP6]}), LRP6{.[FZD1]} @ 0.1",
+      "unimolecular_rate": 0.1,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_id",
+          "value": "FZD1_LRP6",
+          "reasoning": "Rule based on the specific interaction between FZD1 and LRP6"
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Co-receptor complex formation",
+          "reasoning": "Informs the formation of a complex between FZD1 and LRP6"
+        }
+      ],
+      "rate_citations": []
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-10-14T18:33:31.030826",
+    "num_agents": 9,
+    "num_rules": 20,
+    "source_files": {
+      "digests": [
+        "APC",
+        "DVL1",
+        "CTNNB1",
+        "WNT3A",
+        "AXIN1",
+        "LRP6",
+        "GSK3B",
+        "TCF7L2",
+        "FZD1"
+      ],
+      "interactions": "interactions.json"
+    }
+  }
+}
