@@ -1,5 +1,7 @@
 from pathlib import Path
 from pykappa.system import System
+from pykappa.pattern import Component
+from collections import defaultdict
 
 def unique_agents(mixture):
     unique_agents = []
@@ -43,6 +45,17 @@ def main():
     for rule_name, rule in system.rules.items():
         print(f"{rule_name}: {rule.kappa_str}")
 
+    causal_graph = defaultdict(set)
+
+    for name_a, rule_a in system.rules.items():
+        for name_b, rule_b in system.rules.items():
+            for agent_a in rule_a.left.agents:
+                if agent_a is None:
+                    continue
+                if Component([agent_a]).embeddings(rule_b.right):
+                    causal_graph[name_a].add(name_b)
+
+    print(causal_graph)
 
 if __name__ == "__main__":
     main()
