@@ -8,7 +8,13 @@ dependencies = [
     "kappy",
     "matplotlib>=3.10.8",
     "pandas>=3.0.1",
-    "pykappa>=0.1.8",
+    "pykappa",
     "seaborn>=0.13.2",
     "tqdm>=4.67.3",
 ]
+
+[tool.uv.sources]
+pykappa = { path = "../pykappa", editable = true }
+
+[tool.setuptools]
+packages = []

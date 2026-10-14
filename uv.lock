@@ -61,6 +61,15 @@ wheels = [
 ]
 
 [[package]]
+name = "cloudpickle"
+version = "3.1.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/27/fb/576f067976d320f5f0114a8d9fa1215425441bb35627b1993e5afd8111e5/cloudpickle-3.1.2.tar.gz", hash = "sha256:7fda9eb655c9c230dab534f1983763de5835249750e85fbcef43aaa30a9a2414", size = 22330, upload-time = "2025-11-03T09:25:26.604Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/88/39/799be3f2f0f38cc727ee3b4f1445fe6d5e4133064ec2e4115069418a5bb6/cloudpickle-3.1.2-py3-none-any.whl", hash = "sha256:9acb47f6afd73f60dc1df93bb801b472f05ff42fa6c84167d25cb206be1fbf4a", size = 22228, upload-time = "2025-11-03T09:25:25.534Z" },
+]
+
+[[package]]
 name = "colorama"
 version = "0.4.6"
 source = { registry = "https://pypi.org/simple" }
@@ -176,6 +185,15 @@ wheels = [
 ]
 
 [[package]]
+name = "graphviz"
+version = "0.21"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f8/b3/3ac91e9be6b761a4b30d66ff165e54439dcd48b83f4e20d644867215f6ca/graphviz-0.21.tar.gz", hash = "sha256:20743e7183be82aaaa8ad6c93f8893c923bd6658a04c32ee115edb3c8a835f78", size = 200434, upload-time = "2025-06-15T09:35:05.824Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/91/4c/e0ce1ef95d4000ebc1c11801f9b944fa5910ecc15b5e351865763d8657f8/graphviz-0.21-py3-none-any.whl", hash = "sha256:54f33de9f4f911d7e84e4191749cac8cc5653f815b06738c54db9a15ab8b1e42", size = 47300, upload-time = "2025-06-15T09:35:04.433Z" },
+]
+
+[[package]]
 name = "idna"
 version = "3.11"
 source = { registry = "https://pypi.org/simple" }
@@ -202,7 +220,7 @@ requires-dist = [
     { name = "kappy" },
     { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "pandas", specifier = ">=3.0.1" },
-    { name = "pykappa", specifier = ">=0.1.8" },
+    { name = "pykappa", editable = "../pykappa" },
     { name = "seaborn", specifier = ">=0.13.2" },
     { name = "tqdm", specifier = ">=4.67.3" },
 ]
@@ -217,6 +235,10 @@ dependencies = [
     { name = "requests" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/76/75/b0f141d0a57d44f330fe855fc466a40116f97b2d884b7a8b28aa71a616b4/kappy-4.1.2.tar.gz", hash = "sha256:dcd4b606acc2dd87d7f57d354e9876112c30e8eb26cd216982d1a626994a7016", size = 21116, upload-time = "2020-09-17T22:25:25.69Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/64/f4/2eef2cfac82c08c9b542ddb3bd76427ef6ad67148f13c0dbaac1d8d20e8b/kappy-4.1.2-py3-none-macosx_11_0_arm64.whl", hash = "sha256:355831fd13b51869261dd5e4f77cc08dbf97ef69444ecc77210b68cdecfb8797", size = 8022944, upload-time = "2026-04-17T02:17:31.301Z" },
+    { url = "https://files.pythonhosted.org/packages/51/6d/0f3451558933828417b808bd8901e856d1d5a5f399ee8a72c7ecd4d32b5b/kappy-4.1.2-py3-none-manylinux2010_x86_64.whl", hash = "sha256:d89df0086a8149eef76421ed18df918177801cb1ced149f92f5ec82d17663985", size = 12283524, upload-time = "2026-04-17T02:46:16.975Z" },
+]
 
 [[package]]
 name = "kiwisolver"
@@ -505,17 +527,31 @@ wheels = [
 
 [[package]]
 name = "pykappa"
-version = "0.1.8"
-source = { registry = "https://pypi.org/simple" }
+version = "0.1.15"
+source = { editable = "../pykappa" }
 dependencies = [
+    { name = "cloudpickle" },
+    { name = "graphviz" },
     { name = "lark" },
     { name = "matplotlib" },
     { name = "pandas" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ea/1a/7a32b6fd3f1221500d402984ef1bc7c51f2ea01eb58ae40d26125876ac32/pykappa-0.1.8.tar.gz", hash = "sha256:fa60509a3b568adac3e7376ce42a3a040dc3730a1421eb9603e86ef64d1a7756", size = 33922, upload-time = "2026-02-18T20:51:15.688Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/fe/76/7ad412e122881bf2d513f54c292ae2b80b710a540f0e48a55b02d9315869/pykappa-0.1.8-py3-none-any.whl", hash = "sha256:2b2a7e909d51ca7fa70d1c031f5e2328d7990ed674e832357f5a33e359ae0610", size = 30359, upload-time = "2026-02-18T20:51:14.552Z" },
+
+[package.metadata]
+requires-dist = [
+    { name = "black", marker = "extra == 'dev'", specifier = "==26.1.0" },
+    { name = "cloudpickle", specifier = ">=3.1.2" },
+    { name = "graphviz", specifier = ">=0.20" },
+    { name = "jupytext", marker = "extra == 'dev'" },
+    { name = "lark", specifier = ">=1.2.2" },
+    { name = "matplotlib", specifier = ">=3.10.3" },
+    { name = "memory-profiler", marker = "extra == 'dev'", specifier = ">=0.61.0" },
+    { name = "mypy", marker = "extra == 'dev'", specifier = ">=1.15.0" },
+    { name = "pandas", specifier = ">=2.0.0" },
+    { name = "py-spy", marker = "extra == 'dev'", specifier = ">=0.4.0" },
+    { name = "pytest", marker = "extra == 'dev'" },
 ]
+provides-extras = ["dev"]
 
 [[package]]
 name = "pyparsing"

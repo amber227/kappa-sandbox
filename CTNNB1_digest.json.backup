@@ -1,0 +1,1507 @@
+{
+  "protein_identifier": {
+    "gene_name": "CTNNB1",
+    "protein_name": "Catenin beta-1",
+    "uniprot_accession": "P35222",
+    "organism": "Homo sapiens",
+    "organism_taxid": 9606
+  },
+  "sequence": {
+    "canonical_length": 781,
+    "canonical_sequence": "MATQADLMELDMAMEPDRKAAVSHWQQQSYLDSGIHSGATTTAPSLSGKGNPEEEDVDTSQVLYEWEQGFSQSFTQEQVADIDGQYAMTRAQRVRAAMFPETLDEGMQIPSTQFDAAHPTNVQRLAEPSQMLKHAVVNLINYQDDAELATRAIPELTKLLNDEDQVVVNKAAVMVHQLSKKEASRHAIMRSPQMVSAIVRTMQNTNDVETARCTAGTLHNLSHHREGLLAIFKSGGIPALVKMLGSPVDSVLFYAITTLHNLLLHQEGAKMAVRLAGGLQKMVALLNKTNVKFLAITTDCLQILAYGNQESKLIILASGGPQALVNIMRTYTYEKLLWTTSRVLKVLSVCSSNKPAIVEAGGMQALGLHLTDPSQRLVQNCLWTLRNLSDAATKQEGMEGLLGTLVQLLGSDDINVVTCAAGILSNLTCNNYKNKMMVCQVGGIEALVRTVLRAGDREDITEPAICALRHLTSRHQEAEMAQNAVRLHYGLPVVVKLLHPPSHWPLIKATVGLIRNLALCPANHAPLREQGAIPRLVQLLVRAHQDTQRRTSMGGTQQQFVEGVRMEEIVEGCTGALHILARDVHNRIVIRGLNTIPLFVQLLYSPIENIQRVAAGVLCELAQDKEAAEAIEAEGATAPLTELLHSRNEGVATYAAAVLFRMSEDKPQDYKKRLSVELTSSLFRTEPMAWNETADLGLDIGAQGEPLGYRQDDPSYRSFHSGGYGQDALGMDPMMEHEMGGHHPGADYPVDGLPDLGHAQDLMDGLPPGDSNQLAWFDTDL",
+    "molecular_weight_da": 85497,
+    "isoforms": [
+      {
+        "isoform_id": "P35222-1",
+        "length": 781,
+        "description": "Canonical isoform",
+        "sequence": "MATQADLMELDMAMEPDRKAAVSHWQQQSYLDSGIHSGATTTAPSLSGKGNPEEEDVDTSQVLYEWEQGFSQSFTQEQVADIDGQYAMTRAQRVRAAMFPETLDEGMQIPSTQFDAAHPTNVQRLAEPSQMLKHAVVNLINYQDDAELATRAIPELTKLLNDEDQVVVNKAAVMVHQLSKKEASRHAIMRSPQMVSAIVRTMQNTNDVETARCTAGTLHNLSHHREGLLAIFKSGGIPALVKMLGSPVDSVLFYAITTLHNLLLHQEGAKMAVRLAGGLQKMVALLNKTNVKFLAITTDCLQILAYGNQESKLIILASGGPQALVNIMRTYTYEKLLWTTSRVLKVLSVCSSNKPAIVEAGGMQALGLHLTDPSQRLVQNCLWTLRNLSDAATKQEGMEGLLGTLVQLLGSDDINVVTCAAGILSNLTCNNYKNKMMVCQVGGIEALVRTVLRAGDREDITEPAICALRHLTSRHQEAEMAQNAVRLHYGLPVVVKLLHPPSHWPLIKATVGLIRNLALCPANHAPLREQGAIPRLVQLLVRAHQDTQRRTSMGGTQQQFVEGVRMEEIVEGCTGALHILARDVHNRIVIRGLNTIPLFVQLLYSPIENIQRVAAGVLCELAQDKEAAEAIEAEGATAPLTELLHSRNEGVATYAAAVLFRMSEDKPQDYKKRLSVELTSSLFRTEPMAWNETADLGLDIGAQGEPLGYRQDDPSYRSFHSGGYGQDALGMDPMMEHEMGGHHPGADYPVDGLPDLGHAQDLMDGLPPGDSNQLAWFDTDL"
+      }
+    ]
+  },
+  "domains_and_motifs": [
+    {
+      "identifier": "N_terminal_regulatory_1_136",
+      "name": "N-terminal regulatory region",
+      "type": "Domain",
+      "locations": [{"start": 1, "end": 136}],
+      "sequence": "MATQADLMELDMAMEPDRKAAVSHWQQQSYLDSGIHSGATTTAPSLSGKGNPEEEDVDTSQVLYEWEQGFSQSFTQEQVADIDGQYAMTRAQRVRAAMFPETLDEGMQIPSTQFDAAHPTNVQRLAEPSQMLKHAVVNLINYQDDAEL",
+      "description": "Contains GSK3B and CK1 phosphorylation sites critical for degradation signaling; subject to ubiquitin-mediated proteolysis",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "P35222",
+          "notes": "Region containing phosphorylation-dependent degradation signals"
+        }
+      ]
+    },
+    {
+      "identifier": "ARM_repeat_domain_133_664",
+      "name": "Armadillo repeat domain",
+      "type": "Domain",
+      "locations": [{"start": 133, "end": 664}],
+      "sequence": "LATRAIPELTKLLNDEDQVVVNKAAVMVHQLSKKEASRHAIMRSPQMVSAIVRTMQNTNDVETARCTAGTLHNLSHHREGLLAIFKSGGIPALVKMLGSPVDSVLFYAITTLHNLLLHQEGAKMAVRLAGGLQKMVALLNKTNVKFLAITTDCLQILAYGNQESKLIILASGGPQALVNIMRTYTYEKLLWTTSRVLKVLSVCSSNKPAIVEAGGMQALGLHLTDPSQRLVQNCLWTLRNLSDAATKQEGMEGLLGTLVQLLGSDDINVVTCAAGILSNLTCNNYKNKMMVCQVGGIEALVRTVLRAGDREDITEPAICALRHLTSRHQEAEMAQNAVRLHYGLPVVVKLLHPPSHWPLIKATVGLIRNLALCPANHAPLREQGAIPRLVQLLVRAHQDTQRRTSMGGTQQQFVEGVRMEEIVEGCTGALHILARDVHNRIVIRGLNTIPLFVQLLYSPIENIQRVAAGVLCELAQDKEAAEAIEAEGATAPLTELLHSRNEGVATYAAAVLFRMSEDKPQDYKKRLSVELTSSLFRTEPMAWNETADLGLDIGAQGEPLGYRQDDPSYRSFH",
+      "description": "Central core containing 12 armadillo repeats forming a superhelix; mediates binding to TCF/LEF, E-cadherin, APC, AXIN, and other partners via positively charged groove",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR000225",
+          "notes": "Armadillo repeat"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF00514",
+          "notes": "Armadillo/beta-catenin-like repeat"
+        },
+        {
+          "database": "PROSITE",
+          "accession": "PS50176",
+          "notes": "Armadillo repeat profile"
+        },
+        {
+          "database": "SMART",
+          "accession": "SM00185",
+          "notes": "Armadillo repeat"
+        }
+      ]
+    },
+    {
+      "identifier": "C_terminal_transactivation_664_781",
+      "name": "C-terminal transactivation domain",
+      "type": "Domain",
+      "locations": [{"start": 664, "end": 781}],
+      "sequence": "SGGYGQDALGMDPMMEHEMGGHHPGADYPVDGLPDLGHAQDLMDGLPPGDSNQLAWFDTDL",
+      "description": "Transcriptional activation domain; mediates recruitment of transcriptional coactivators including CBP/p300, BCL9, and PYGO",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "P35222",
+          "notes": "Region involved in transcriptional activation"
+        }
+      ]
+    },
+    {
+      "identifier": "TCF_LEF_binding_141_664",
+      "name": "TCF/LEF binding site",
+      "type": "Binding_site",
+      "locations": [{"start": 141, "end": 664}],
+      "sequence": "AIPELTKLLNDEDQVVVNKAAVMVHQLSKKEASRHAIMRSPQMVSAIVRTMQNTNDVETARCTAGTLHNLSHHREGLLAIFKSGGIPALVKMLGSPVDSVLFYAITTLHNLLLHQEGAKMAVRLAGGLQKMVALLNKTNVKFLAITTDCLQILAYGNQESKLIILASGGPQALVNIMRTYTYEKLLWTTSRVLKVLSVCSSNKPAIVEAGGMQALGLHLTDPSQRLVQNCLWTLRNLSDAATKQEGMEGLLGTLVQLLGSDDINVVTCAAGILSNLTCNNYKNKMMVCQVGGIEALVRTVLRAGDREDITEPAICALRHLTSRHQEAEMAQNAVRLHYGLPVVVKLLHPPSHWPLIKATVGLIRNLALCPANHAPLREQGAIPRLVQLLVRAHQDTQRRTSMGGTQQQFVEGVRMEEIVEGCTGALHILARDVHNRIVIRGLNTIPLFVQLLYSPIENIQRVAAGVLCELAQDKEAAEAIEAEGATAPLTELLHSRNEGVATYAAAVLFRMSEDKPQDYKKRLSVELTSSLFRTEPMAWNETADLGLDIGAQGEPLGYRQDDPSYRSFH",
+      "description": "Armadillo repeats 5-9 form binding groove for TCF/LEF transcription factors; extended interface spanning ~4800 Å²",
+      "sources": [
+        {
+          "database": "PDB",
+          "accession": "1JDH",
+          "notes": "Crystal structure of beta-catenin/TCF-4 complex"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:12408825",
+          "notes": "Structural characterization of TCF binding"
+        }
+      ]
+    },
+    {
+      "identifier": "E_cadherin_binding_141_664",
+      "name": "E-cadherin binding site",
+      "type": "Binding_site",
+      "locations": [{"start": 141, "end": 664}],
+      "sequence": "AIPELTKLLNDEDQVVVNKAAVMVHQLSKKEASRHAIMRSPQMVSAIVRTMQNTNDVETARCTAGTLHNLSHHREGLLAIFKSGGIPALVKMLGSPVDSVLFYAITTLHNLLLHQEGAKMAVRLAGGLQKMVALLNKTNVKFLAITTDCLQILAYGNQESKLIILASGGPQALVNIMRTYTYEKLLWTTSRVLKVLSVCSSNKPAIVEAGGMQALGLHLTDPSQRLVQNCLWTLRNLSDAATKQEGMEGLLGTLVQLLGSDDINVVTCAAGILSNLTCNNYKNKMMVCQVGGIEALVRTVLRAGDREDITEPAICALRHLTSRHQEAEMAQNAVRLHYGLPVVVKLLHPPSHWPLIKATVGLIRNLALCPANHAPLREQGAIPRLVQLLVRAHQDTQRRTSMGGTQQQFVEGVRMEEIVEGCTGALHILARDVHNRIVIRGLNTIPLFVQLLYSPIENIQRVAAGVLCELAQDKEAAEAIEAEGATAPLTELLHSRNEGVATYAAAVLFRMSEDKPQDYKKRLSVELTSSLFRTEPMAWNETADLGLDIGAQGEPLGYRQDDPSYRSFH",
+      "description": "Binding site for E-cadherin cytoplasmic domain in adherens junctions; same groove as TCF binding (mutually exclusive)",
+      "sources": [
+        {
+          "database": "PDB",
+          "accession": "1I7X",
+          "notes": "Beta-catenin/E-cadherin complex structure"
+        }
+      ]
+    },
+    {
+      "identifier": "APC_binding_141_664",
+      "name": "APC binding site",
+      "type": "Binding_site",
+      "locations": [{"start": 141, "end": 664}],
+      "sequence": "AIPELTKLLNDEDQVVVNKAAVMVHQLSKKEASRHAIMRSPQMVSAIVRTMQNTNDVETARCTAGTLHNLSHHREGLLAIFKSGGIPALVKMLGSPVDSVLFYAITTLHNLLLHQEGAKMAVRLAGGLQKMVALLNKTNVKFLAITTDCLQILAYGNQESKLIILASGGPQALVNIMRTYTYEKLLWTTSRVLKVLSVCSSNKPAIVEAGGMQALGLHLTDPSQRLVQNCLWTLRNLSDAATKQEGMEGLLGTLVQLLGSDDINVVTCAAGILSNLTCNNYKNKMMVCQVGGIEALVRTVLRAGDREDITEPAICALRHLTSRHQEAEMAQNAVRLHYGLPVVVKLLHPPSHWPLIKATVGLIRNLALCPANHAPLREQGAIPRLVQLLVRAHQDTQRRTSMGGTQQQFVEGVRMEEIVEGCTGALHILARDVHNRIVIRGLNTIPLFVQLLYSPIENIQRVAAGVLCELAQDKEAAEAIEAEGATAPLTELLHSRNEGVATYAAAVLFRMSEDKPQDYKKRLSVELTSSLFRTEPMAWNETADLGLDIGAQGEPLGYRQDDPSYRSFH",
+      "description": "Binding site for APC protein in destruction complex; armadillo repeats mediate interaction",
+      "sources": [
+        {
+          "database": "PDB",
+          "accession": "1TH1",
+          "notes": "CTNNB1 in complex with APC"
+        }
+      ]
+    },
+    {
+      "identifier": "ICAT_binding_141_664",
+      "name": "ICAT inhibitor binding site",
+      "type": "Binding_site",
+      "locations": [{"start": 141, "end": 664}],
+      "sequence": "AIPELTKLLNDEDQVVVNKAAVMVHQLSKKEASRHAIMRSPQMVSAIVRTMQNTNDVETARCTAGTLHNLSHHREGLLAIFKSGGIPALVKMLGSPVDSVLFYAITTLHNLLLHQEGAKMAVRLAGGLQKMVALLNKTNVKFLAITTDCLQILAYGNQESKLIILASGGPQALVNIMRTYTYEKLLWTTSRVLKVLSVCSSNKPAIVEAGGMQALGLHLTDPSQRLVQNCLWTLRNLSDAATKQEGMEGLLGTLVQLLGSDDINVVTCAAGILSNLTCNNYKNKMMVCQVGGIEALVRTVLRAGDREDITEPAICALRHLTSRHQEAEMAQNAVRLHYGLPVVVKLLHPPSHWPLIKATVGLIRNLALCPANHAPLREQGAIPRLVQLLVRAHQDTQRRTSMGGTQQQFVEGVRMEEIVEGCTGALHILARDVHNRIVIRGLNTIPLFVQLLYSPIENIQRVAAGVLCELAQDKEAAEAIEAEGATAPLTELLHSRNEGVATYAAAVLFRMSEDKPQDYKKRLSVELTSSLFRTEPMAWNETADLGLDIGAQGEPLGYRQDDPSYRSFH",
+      "description": "ICAT binds armadillo repeats 5-12; N-terminal helical domain binds repeats 11-12, extended C-terminal region binds repeats 5-10; inhibits TCF/LEF binding",
+      "sources": [
+        {
+          "database": "PDB",
+          "accession": "1M1E",
+          "notes": "Beta-catenin armadillo repeat domain bound to ICAT"
+        }
+      ]
+    },
+    {
+      "identifier": "BCL9_binding_20_60",
+      "name": "BCL9 binding site",
+      "type": "Binding_site",
+      "locations": [{"start": 20, "end": 60}],
+      "sequence": "QAAVSHWQQQSYLDSGIHSGATTTAPSLSGKGNPEEEDV",
+      "description": "N-terminal binding site for BCL9/BCL9L HD2 domain; BCL9 acts as adaptor between beta-catenin and Pygopus",
+      "sources": [
+        {
+          "database": "PDB",
+          "accession": "2GL7",
+          "notes": "Crystal structure of beta-catenin/BCL9/Tcf4 complex"
+        }
+      ]
+    },
+    {
+      "identifier": "Phospho_degron_23_45",
+      "name": "Phospho-degron",
+      "type": "Degron",
+      "locations": [{"start": 23, "end": 45}],
+      "sequence": "VSHWQQQSYLDSGIHSGATTTAP",
+      "description": "Sequential phosphorylation by CK1 (S45) then GSK3B (T41, S37, S33) creates phospho-degron recognized by beta-TrCP for ubiquitination",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "P35222",
+          "notes": "Modified residue annotations"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:20181957",
+          "notes": "Phosphorylation-dependent degradation mechanism"
+        }
+      ]
+    },
+    {
+      "identifier": "NLS_ARM_10_12",
+      "name": "Nuclear localization signal",
+      "type": "NLS",
+      "locations": [{"start": 590, "end": 664}],
+      "sequence": "VVVKLLHPPSHWPLIKATVGLIRNLALCPANHAPLREQGAIPRLVQLLVRAHQDTQRRTSMGGTQQQFVEGVRM",
+      "description": "Armadillo repeats 10-12 mediate nuclear import through direct binding to nucleoporins Nup62, Nup153, and RanBP2/Nup358",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "PMID:22110128",
+          "notes": "Specific Arm sequences facilitate nuclear transport"
+        }
+      ]
+    }
+  ],
+  "structure": {
+    "experimental_structures": [
+      {
+        "pdb_id": "1JDH",
+        "method": "X-ray",
+        "resolution_angstrom": 1.9,
+        "chain": "A",
+        "coverage": {"start": 134, "end": 671},
+        "description": "Crystal structure of beta-catenin and hTCF-4",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/1JDH"
+      },
+      {
+        "pdb_id": "2GL7",
+        "method": "X-ray",
+        "resolution_angstrom": 2.6,
+        "chain": "A",
+        "coverage": {"start": 1, "end": 667},
+        "description": "Crystal structure of beta-catenin/BCL9/Tcf4 triple complex",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/2GL7"
+      },
+      {
+        "pdb_id": "3BCT",
+        "method": "X-ray",
+        "resolution_angstrom": 2.1,
+        "chain": "A",
+        "coverage": {"start": 141, "end": 664},
+        "description": "Armadillo repeat region from murine beta-catenin",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/3BCT"
+      },
+      {
+        "pdb_id": "1M1E",
+        "method": "X-ray",
+        "resolution_angstrom": 2.5,
+        "chain": "A",
+        "coverage": {"start": 134, "end": 665},
+        "description": "Beta-catenin armadillo repeat domain bound to ICAT inhibitor",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/1M1E"
+      },
+      {
+        "pdb_id": "1I7X",
+        "method": "X-ray",
+        "resolution_angstrom": 2.5,
+        "chain": "A",
+        "coverage": {"start": 133, "end": 664},
+        "description": "Beta-catenin/E-cadherin complex",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/1I7X"
+      },
+      {
+        "pdb_id": "1G3J",
+        "method": "X-ray",
+        "resolution_angstrom": 2.5,
+        "chain": "A",
+        "coverage": {"start": 134, "end": 665},
+        "description": "Crystal structure of XTCF3-CBD/beta-catenin armadillo repeat complex",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/1G3J"
+      },
+      {
+        "pdb_id": "8Z61",
+        "method": "X-ray",
+        "resolution_angstrom": 2.5,
+        "chain": "A",
+        "coverage": {"start": 1, "end": 781},
+        "description": "Human beta-catenin crystal structure",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/8Z61"
+      },
+      {
+        "pdb_id": "7ZRB",
+        "method": "X-ray",
+        "resolution_angstrom": 2.3,
+        "chain": "A",
+        "coverage": {"start": 134, "end": 665},
+        "description": "Crystal structure of Beta-catenin Armadillo repeats domain in complex with inhibitor RS6452",
+        "ligands": ["RS6452"],
+        "url": "https://www.rcsb.org/structure/7ZRB"
+      }
+    ],
+    "alphafold_prediction": {
+      "available": true,
+      "accession": "AF-P35222-F1",
+      "confidence_summary": "High confidence (pLDDT 81.06) across most of protein; armadillo repeat domain shows very high confidence; N-terminal and C-terminal regions show moderate confidence",
+      "url": "https://alphafold.ebi.ac.uk/entry/P35222"
+    }
+  },
+  "post_translational_modifications": [
+    {
+      "type": "Phosphorylation",
+      "position": 33,
+      "residue": "S",
+      "function": "Degradation signal; phosphorylation by GSK3B after S45 priming; part of beta-TrCP recognition motif",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 37,
+      "residue": "S",
+      "function": "Degradation signal; phosphorylation by GSK3B; part of beta-TrCP recognition motif",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 41,
+      "residue": "T",
+      "function": "Degradation signal; phosphorylation by GSK3B after S45 priming",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 45,
+      "residue": "S",
+      "function": "Priming phosphorylation by CK1; required for subsequent GSK3B phosphorylation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 23,
+      "residue": "S",
+      "function": "GSK3B-dependent phosphorylation; contributes to degradation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 29,
+      "residue": "S",
+      "function": "GSK3B-dependent phosphorylation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 552,
+      "residue": "S",
+      "function": "AMPK-mediated phosphorylation; promotes stabilization",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 675,
+      "residue": "S",
+      "function": "Regulatory phosphorylation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 191,
+      "residue": "S",
+      "function": "CDK5-dependent phosphorylation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 246,
+      "residue": "S",
+      "function": "CDK5-dependent phosphorylation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 64,
+      "residue": "Y",
+      "function": "PTK6-mediated tyrosine phosphorylation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 142,
+      "residue": "Y",
+      "function": "PTK6-mediated tyrosine phosphorylation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 331,
+      "residue": "Y",
+      "function": "Tyrosine phosphorylation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 333,
+      "residue": "Y",
+      "function": "Tyrosine phosphorylation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Ubiquitination",
+      "position": 19,
+      "residue": "K",
+      "function": "Primary site for beta-TrCP-dependent K48-linked ubiquitination leading to degradation; also site for stabilizing K11-linked ubiquitination by Ube2s",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Ubiquitination",
+      "position": 49,
+      "residue": "K",
+      "function": "Secondary ubiquitination site for beta-TrCP-dependent degradation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Acetylation",
+      "position": 49,
+      "residue": "K",
+      "function": "Acetylation by CBP/p300; blocks ubiquitination and stabilizes protein; enhances TCF4 interaction and c-myc gene activation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Acetylation",
+      "position": 19,
+      "residue": "K",
+      "function": "Acetylation by PCAF; blocks ubiquitination and stabilizes protein",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Acetylation",
+      "position": 345,
+      "residue": "K",
+      "function": "Acetylation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Glycosylation",
+      "position": 23,
+      "residue": "S",
+      "function": "O-GlcNAc modification; reduces nuclear localization",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "S-nitrosylation",
+      "position": 619,
+      "residue": "C",
+      "function": "S-nitrosylation in adherens junctions",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Acetylation",
+      "position": 2,
+      "residue": "A",
+      "function": "N-acetylation after initiator methionine removal",
+      "evidence": "Experimental"
+    }
+  ],
+  "function": {
+    "uniprot_function": "Key downstream component of the canonical Wnt signaling pathway. In the absence of Wnt, forms a complex with AXIN1, AXIN2, APC, CSNK1A1 and GSK3B that promotes phosphorylation on N-terminal Ser and Thr residues and ubiquitination of CTNNB1 via BTRC and its subsequent degradation by the proteasome. In the presence of Wnt ligand, CTNNB1 is not ubiquitinated and accumulates in the nucleus, where it acts as a coactivator for transcription factors of the TCF/LEF family, leading to activation of Wnt responsive genes. Involved as well in cell adhesion, as a component of an E-cadherin:catenin adhesion complex. Acts as a negative regulator of centrosome cohesion. Involved in the CDK2/CCND1-mediated phosphorylation of CENPJ.",
+    "catalytic_activity": null,
+    "subcellular_location": [
+      "Cytoplasm",
+      "Nucleus",
+      "Cell membrane",
+      "Adherens junction",
+      "Centrosome"
+    ],
+    "tissue_specificity": "Ubiquitous; expressed in hair follicle cells, colon epithelium, cortical neurons, breast tissue, and most epithelial tissues",
+    "go_annotations": {
+      "molecular_function": [
+        {
+          "go_id": "GO:0005515",
+          "term": "protein binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0003713",
+          "term": "transcription coactivator activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0008013",
+          "term": "beta-catenin binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0019899",
+          "term": "enzyme binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0003700",
+          "term": "DNA-binding transcription factor activity",
+          "evidence_code": "TAS"
+        }
+      ],
+      "biological_process": [
+        {
+          "go_id": "GO:0016055",
+          "term": "Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0007155",
+          "term": "cell adhesion",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0006355",
+          "term": "regulation of transcription, DNA-templated",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0060070",
+          "term": "canonical Wnt signaling pathway",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0045893",
+          "term": "positive regulation of transcription, DNA-templated",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0030154",
+          "term": "cell differentiation",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0048339",
+          "term": "paraxial mesoderm development",
+          "evidence_code": "IDA"
+        }
+      ],
+      "cellular_component": [
+        {
+          "go_id": "GO:0005737",
+          "term": "cytoplasm",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005634",
+          "term": "nucleus",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005886",
+          "term": "plasma membrane",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005913",
+          "term": "adherens junction",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005856",
+          "term": "cytoskeleton",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0005829",
+          "term": "cytosol",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:1990907",
+          "term": "beta-catenin-TCF complex",
+          "evidence_code": "IDA"
+        }
+      ]
+    }
+  },
+  "interactions": [
+    {
+      "partner": {
+        "gene_name": "APC",
+        "protein_name": "Adenomatous polyposis coli protein",
+        "uniprot_accession": "P25054"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "ARM_repeat_domain_133_664",
+            "residues": [],
+            "residue_names": [],
+            "description": "Armadillo repeats mediate APC binding in destruction complex"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "15 aa repeats and 20 aa repeats",
+            "residues": [],
+            "description": "APC repeats bind beta-catenin armadillo domain"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {
+        "kd_m": 5e-7,
+        "kd_range_m": [1e-7, 1e-6],
+        "notes": "Kd reported as 0.1-1 μM depending on measurement method"
+      },
+      "evidence": [
+        {
+          "source": "BioGRID",
+          "experimental_system": "Two-hybrid",
+          "pmid": "9006895",
+          "throughput": "Low",
+          "interaction_id": "477910"
+        },
+        {
+          "source": "IntAct",
+          "detection_method": "Co-immunoprecipitation",
+          "pmid": "multiple",
+          "interaction_accession": "22 entries"
+        },
+        {
+          "source": "PDB",
+          "description": "Crystal structure 1TH1 shows APC-CTNNB1 complex"
+        }
+      ],
+      "functional_effect": "Scaffolding; APC is component of destruction complex that promotes beta-catenin degradation",
+      "pathway_context": "Wnt signaling; destruction complex formation in absence of Wnt"
+    },
+    {
+      "partner": {
+        "gene_name": "AXIN1",
+        "protein_name": "Axin-1",
+        "uniprot_accession": "O15169"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "ARM_repeat_domain_133_664",
+            "residues": [],
+            "residue_names": [],
+            "description": "Armadillo repeats bind to Axin scaffold"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Beta-catenin binding domain",
+            "residues": [],
+            "description": "Axin acts as scaffold bringing GSK3B and beta-catenin into proximity"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "IntAct",
+          "detection_method": "Multiple methods",
+          "pmid": "multiple",
+          "interaction_accession": "44 entries"
+        },
+        {
+          "source": "PDB",
+          "description": "Crystal structure 1QZ7 shows AXIN1-CTNNB1 interaction"
+        },
+        {
+          "source": "Literature",
+          "pmid": "20442075",
+          "description": "Axin scaffold protects GSK3B and promotes beta-catenin phosphorylation"
+        }
+      ],
+      "functional_effect": "Scaffolding; Axin is core scaffold of destruction complex",
+      "pathway_context": "Wnt signaling; Axin levels limit destruction complex activity"
+    },
+    {
+      "partner": {
+        "gene_name": "AXIN2",
+        "protein_name": "Axin-2",
+        "uniprot_accession": "Q9Y2T1"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "ARM_repeat_domain_133_664",
+            "residues": [],
+            "residue_names": [],
+            "description": "Armadillo repeats bind to Axin2"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Beta-catenin binding domain",
+            "residues": [],
+            "description": "Axin2 paralog with similar function to Axin1"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "IntAct",
+          "detection_method": "Multiple methods",
+          "pmid": "multiple"
+        },
+        {
+          "source": "Literature",
+          "description": "AXIN2 is Wnt target gene; feedback regulation"
+        }
+      ],
+      "functional_effect": "Scaffolding; component of destruction complex",
+      "pathway_context": "Wnt signaling; AXIN2 is target gene creating negative feedback"
+    },
+    {
+      "partner": {
+        "gene_name": "GSK3B",
+        "protein_name": "Glycogen synthase kinase-3 beta",
+        "uniprot_accession": "P49841"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Phosphorylation",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "Phospho_degron_23_45",
+            "residues": [23, 29, 33, 37, 41],
+            "residue_names": ["S23", "S29", "S33", "S37", "T41"],
+            "description": "Sequential phosphorylation sites for GSK3B after S45 priming"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Kinase domain",
+            "residues": [],
+            "description": "Active site phosphorylates primed substrates"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "km_m": 2e-6,
+        "kcat_s1": null,
+        "notes": "KM >= 2 μM for pS45-beta-catenin by pS9-GSK3B; ~200-fold decrease in kcat/KM upon Ser9 phosphorylation; Axin scaffold rescues KM but ~10-fold kcat decrease remains"
+      },
+      "evidence": [
+        {
+          "source": "IntAct",
+          "detection_method": "Multiple methods",
+          "pmid": "multiple",
+          "interaction_accession": "20 entries"
+        },
+        {
+          "source": "Literature",
+          "pmid": "31235565",
+          "description": "Detailed kinetic analysis of GSK3B-beta-catenin phosphorylation in presence/absence of Axin"
+        }
+      ],
+      "functional_effect": "Inhibitory; phosphorylation marks beta-catenin for degradation",
+      "pathway_context": "Wnt signaling; GSK3B activity suppressed by Wnt to stabilize beta-catenin"
+    },
+    {
+      "partner": {
+        "gene_name": "CSNK1A1",
+        "protein_name": "Casein kinase I isoform alpha",
+        "uniprot_accession": "P48729"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Phosphorylation",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "Phospho_degron_23_45",
+            "residues": [45],
+            "residue_names": ["S45"],
+            "description": "Priming phosphorylation site for CK1"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Kinase domain",
+            "residues": [],
+            "description": "Phosphorylates S45 to prime for GSK3B"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "17210633",
+          "description": "CK1 phosphorylates S45 which is required for GSK3B phosphorylation"
+        }
+      ],
+      "functional_effect": "Inhibitory; priming phosphorylation enables GSK3B action",
+      "pathway_context": "Wnt signaling; initiates degradation cascade"
+    },
+    {
+      "partner": {
+        "gene_name": "BTRC",
+        "protein_name": "F-box/WD repeat-containing protein 1A (beta-TrCP)",
+        "uniprot_accession": "Q9Y297"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Ubiquitination",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "Phospho_degron_23_45",
+            "residues": [19, 49],
+            "residue_names": ["K19", "K49"],
+            "description": "Phospho-degron recognized by beta-TrCP; ubiquitination at K19 and K49"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "WD40 repeats",
+            "residues": [],
+            "description": "Recognizes doubly phosphorylated S33/S37"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "9736715",
+          "description": "beta-TrCP recognizes phosphorylated beta-catenin for SCF-mediated ubiquitination"
+        },
+        {
+          "source": "Literature",
+          "pmid": "17210633",
+          "description": "K19 is primary ubiquitination site; K49 is secondary"
+        }
+      ],
+      "functional_effect": "Degradation; ubiquitination targets beta-catenin to proteasome",
+      "pathway_context": "Wnt signaling; beta-TrCP is E3 ligase component for beta-catenin degradation"
+    },
+    {
+      "partner": {
+        "gene_name": "CDH1",
+        "protein_name": "Cadherin-1 (E-cadherin)",
+        "uniprot_accession": "P12830"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "E_cadherin_binding_141_664",
+            "residues": [],
+            "residue_names": [],
+            "description": "Armadillo repeats 5-9 form binding groove for E-cadherin cytoplasmic tail"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Cytoplasmic domain",
+            "residues": [],
+            "description": "C-terminal cytoplasmic tail of E-cadherin"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {
+        "kd_m": 3.6e-8,
+        "kd_range_m": [3.6e-8, 5.2e-11],
+        "notes": "Kd varies from 36 nM to 52 pM depending on phosphorylation state and measurement method"
+      },
+      "evidence": [
+        {
+          "source": "IntAct",
+          "detection_method": "Multiple methods",
+          "pmid": "multiple",
+          "interaction_accession": "22 entries"
+        },
+        {
+          "source": "PDB",
+          "description": "Crystal structure 1I7X shows E-cadherin/beta-catenin complex"
+        },
+        {
+          "source": "Literature",
+          "pmid": "18620420",
+          "description": "Thermodynamic characterization shows strong binding"
+        }
+      ],
+      "functional_effect": "Scaffolding; mediates cell-cell adhesion at adherens junctions",
+      "pathway_context": "Cell adhesion; beta-catenin links cadherins to cytoskeleton"
+    },
+    {
+      "partner": {
+        "gene_name": "CTNNA1",
+        "protein_name": "Catenin alpha-1 (alpha-E-catenin)",
+        "uniprot_accession": "P35221"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "ARM_repeat_domain_133_664",
+            "residues": [],
+            "residue_names": [],
+            "description": "Armadillo repeats interact with alpha-catenin"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "N-terminal beta-catenin binding domain",
+            "residues": [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163],
+            "description": "Alpha-catenin residues 48-163 bind beta-catenin"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {
+        "kd_m": 5e-8,
+        "kd_range_m": [3.8e-8, 1e-7],
+        "notes": "Kd reported as 38-100 nM; affinity enhanced 10-fold when cadherin bound to beta-catenin"
+      },
+      "evidence": [
+        {
+          "source": "IntAct",
+          "detection_method": "Multiple methods",
+          "pmid": "multiple",
+          "interaction_accession": "7 entries"
+        },
+        {
+          "source": "Literature",
+          "pmid": "9110993",
+          "description": "Identification of alpha-catenin domain binding beta-catenin"
+        }
+      ],
+      "functional_effect": "Scaffolding; links adherens junctions to actin cytoskeleton",
+      "pathway_context": "Cell adhesion; tripartite complex with E-cadherin and beta-catenin"
+    },
+    {
+      "partner": {
+        "gene_name": "TCF7L2",
+        "protein_name": "Transcription factor 7-like 2 (TCF-4)",
+        "uniprot_accession": "Q9NQB0"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "TCF_LEF_binding_141_664",
+            "residues": [],
+            "residue_names": [],
+            "description": "Armadillo repeats 5-9 form binding groove; extended interface ~4800 Å²"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Beta-catenin binding domain",
+            "residues": [13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+            "description": "Extended region (13-25) and C-terminal helix (40-50) of TCF4"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "IntAct",
+          "detection_method": "Multiple methods",
+          "pmid": "multiple",
+          "interaction_accession": "27 entries"
+        },
+        {
+          "source": "PDB",
+          "description": "Crystal structure 1JDH shows beta-catenin/TCF-4 complex"
+        }
+      ],
+      "functional_effect": "Activating; beta-catenin acts as transcriptional coactivator for TCF7L2",
+      "pathway_context": "Wnt signaling; nuclear complex drives Wnt target gene expression"
+    },
+    {
+      "partner": {
+        "gene_name": "LEF1",
+        "protein_name": "Lymphoid enhancer-binding factor 1",
+        "uniprot_accession": "Q9UJU2"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "TCF_LEF_binding_141_664",
+            "residues": [],
+            "residue_names": [],
+            "description": "Armadillo repeats bind LEF1 similar to TCF binding"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Beta-catenin binding domain",
+            "residues": [],
+            "description": "N-terminal beta-catenin binding domain of LEF1"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "BioGRID",
+          "experimental_system": "Multiple methods",
+          "pmid": "multiple",
+          "interaction_id": "442404"
+        },
+        {
+          "source": "IntAct",
+          "detection_method": "Multiple methods",
+          "pmid": "multiple",
+          "interaction_accession": "10 entries"
+        },
+        {
+          "source": "PDB",
+          "description": "Crystal structure 3OUX shows LEF1-beta-catenin complex"
+        }
+      ],
+      "functional_effect": "Activating; beta-catenin acts as transcriptional coactivator for LEF1",
+      "pathway_context": "Wnt signaling; TCF/LEF family member mediating Wnt target genes"
+    },
+    {
+      "partner": {
+        "gene_name": "TCF7",
+        "protein_name": "Transcription factor 7 (TCF-1)",
+        "uniprot_accession": "P36402"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "TCF_LEF_binding_141_664",
+            "residues": [],
+            "residue_names": [],
+            "description": "Armadillo repeats bind TCF7"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Beta-catenin binding domain",
+            "residues": [],
+            "description": "N-terminal domain of TCF7"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "IntAct",
+          "detection_method": "Multiple methods",
+          "pmid": "multiple"
+        }
+      ],
+      "functional_effect": "Activating; beta-catenin acts as transcriptional coactivator",
+      "pathway_context": "Wnt signaling; TCF/LEF family member"
+    },
+    {
+      "partner": {
+        "gene_name": "TCF7L1",
+        "protein_name": "Transcription factor 7-like 1 (TCF-3)",
+        "uniprot_accession": "Q9HCS4"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "TCF_LEF_binding_141_664",
+            "residues": [],
+            "residue_names": [],
+            "description": "Armadillo repeats bind TCF7L1"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Beta-catenin binding domain",
+            "residues": [],
+            "description": "N-terminal domain of TCF7L1"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "BioGRID",
+          "experimental_system": "Multiple methods",
+          "pmid": "multiple",
+          "interaction_id": "1417129"
+        },
+        {
+          "source": "PDB",
+          "description": "Crystal structure 1G3J shows TCF7L1-beta-catenin complex"
+        }
+      ],
+      "functional_effect": "Activating; converts TCF7L1 from repressor to activator",
+      "pathway_context": "Wnt signaling; TCF/LEF family member"
+    },
+    {
+      "partner": {
+        "gene_name": "BCL9",
+        "protein_name": "B-cell CLL/lymphoma 9 protein",
+        "uniprot_accession": "Q9ULV1"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "BCL9_binding_20_60",
+            "residues": [],
+            "residue_names": [],
+            "description": "N-terminal region binds BCL9 HD2 domain"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "HD2 domain",
+            "residues": [],
+            "description": "HD2 domain of BCL9 binds beta-catenin N-terminus"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "IntAct",
+          "detection_method": "Multiple methods",
+          "pmid": "multiple"
+        },
+        {
+          "source": "PDB",
+          "description": "Crystal structure 2GL7 shows beta-catenin/BCL9/TCF4 complex; 3SL9 shows BCL9-beta-catenin"
+        },
+        {
+          "source": "Literature",
+          "pmid": "34363013",
+          "description": "BCL9 binds beta-catenin and Pygopus; promotes transcriptional activity"
+        }
+      ],
+      "functional_effect": "Activating; BCL9 acts as adaptor recruiting Pygopus to enhance Wnt signaling",
+      "pathway_context": "Wnt signaling; transcriptional coactivator complex"
+    },
+    {
+      "partner": {
+        "gene_name": "CTNNBIP1",
+        "protein_name": "Beta-catenin-interacting protein 1 (ICAT)",
+        "uniprot_accession": "Q9NSA3"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "ICAT_binding_141_664",
+            "residues": [],
+            "residue_names": [],
+            "description": "ICAT binds armadillo repeats 5-12; blocks TCF/LEF binding"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "N-terminal helical domain and C-terminal extended region",
+            "residues": [37, 38, 39, 66, 71, 75, 77],
+            "description": "Helical domain binds repeats 11-12; C-terminal region binds repeats 5-10; key residues E37, E38, E39, D66, F71, E75, E77"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "IntAct",
+          "detection_method": "Multiple methods",
+          "pmid": "multiple",
+          "interaction_accession": "17 entries"
+        },
+        {
+          "source": "PDB",
+          "description": "Crystal structure 1M1E shows beta-catenin/ICAT complex"
+        },
+        {
+          "source": "Literature",
+          "pmid": "12408825",
+          "description": "ICAT inhibits beta-catenin/TCF interaction"
+        }
+      ],
+      "functional_effect": "Inhibitory; ICAT blocks beta-catenin interaction with TCF/LEF",
+      "pathway_context": "Wnt signaling; negative regulator preventing transcriptional activation"
+    },
+    {
+      "partner": {
+        "gene_name": "EP300",
+        "protein_name": "Histone acetyltransferase p300",
+        "uniprot_accession": "Q09472"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Acetylation",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "N_terminal_regulatory_1_136",
+            "residues": [49],
+            "residue_names": ["K49"],
+            "description": "p300 acetylates K49; blocks ubiquitination and enhances TCF4 interaction"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "HAT domain",
+            "residues": [],
+            "description": "Histone acetyltransferase catalytic domain"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "18987336",
+          "description": "p300 acetylates beta-catenin at K49; promotes Wnt signaling"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.95,
+          "evidence_types": ["experimental", "database", "coexpression"]
+        }
+      ],
+      "functional_effect": "Activating; acetylation stabilizes beta-catenin and enhances transcriptional activity",
+      "pathway_context": "Wnt signaling; p300 recruited to Wnt target promoters with beta-catenin"
+    },
+    {
+      "partner": {
+        "gene_name": "CREBBP",
+        "protein_name": "CREB-binding protein (CBP)",
+        "uniprot_accession": "Q92793"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Acetylation",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "N_terminal_regulatory_1_136",
+            "residues": [49],
+            "residue_names": ["K49"],
+            "description": "CBP acetylates K49; enhances c-myc gene activation specifically"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "HAT domain",
+            "residues": [],
+            "description": "Histone acetyltransferase catalytic domain"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "16527815",
+          "description": "CBP acetylates beta-catenin at K49; mutation increases c-myc activation"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.95,
+          "evidence_types": ["experimental", "database", "coexpression"]
+        }
+      ],
+      "functional_effect": "Activating; acetylation affects gene-specific transcriptional activity",
+      "pathway_context": "Wnt signaling; CBP/p300 are key coactivators for Wnt target genes"
+    },
+    {
+      "partner": {
+        "gene_name": "TBL1X",
+        "protein_name": "Transducin beta-like protein 1X",
+        "uniprot_accession": "O60907"
+      },
+      "interaction_type": "Regulatory",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "ARM_repeat_domain_133_664",
+            "residues": [],
+            "residue_names": [],
+            "description": "TBL1 interacts with beta-catenin"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "WD40 repeats",
+            "residues": [],
+            "description": "TBL1 WD40 domain"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "21757351",
+          "description": "SUMOylation of TBL1-TBLR1 releases them from NCoR/SMRT complex; allows beta-catenin binding"
+        }
+      ],
+      "functional_effect": "Activating; TBL1 acts as exchange factor allowing beta-catenin to replace corepressors",
+      "pathway_context": "Wnt signaling; molecular switch from repression to activation"
+    },
+    {
+      "partner": {
+        "gene_name": "TBLR1",
+        "protein_name": "Transducin beta-like protein 1-related protein 1",
+        "uniprot_accession": "Q9BZK7"
+      },
+      "interaction_type": "Regulatory",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "ARM_repeat_domain_133_664",
+            "residues": [],
+            "residue_names": [],
+            "description": "TBLR1 interacts with beta-catenin"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "WD40 repeats",
+            "residues": [],
+            "description": "TBLR1 WD40 domain"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "21757351",
+          "description": "SUMOylation of TBL1-TBLR1 promotes beta-catenin recruitment to Wnt target promoters"
+        }
+      ],
+      "functional_effect": "Activating; TBLR1 acts as exchange factor for corepressor-to-coactivator switch",
+      "pathway_context": "Wnt signaling; transcriptional regulation"
+    }
+  ],
+  "pathways": {
+    "reactome": [
+      {
+        "pathway_id": "R-HSA-195721",
+        "pathway_name": "Signaling by WNT",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-195721"
+      },
+      {
+        "pathway_id": "R-HSA-201681",
+        "pathway_name": "TCF dependent signaling in response to WNT",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-201681"
+      },
+      {
+        "pathway_id": "R-HSA-195253",
+        "pathway_name": "Degradation of beta-catenin by the destruction complex",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-195253"
+      },
+      {
+        "pathway_id": "R-HSA-201722",
+        "pathway_name": "Formation of the beta-catenin:TCF transactivating complex",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-201722"
+      },
+      {
+        "pathway_id": "R-HSA-3769402",
+        "pathway_name": "Deactivation of the beta-catenin transactivating complex",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-3769402"
+      },
+      {
+        "pathway_id": "R-HSA-3858494",
+        "pathway_name": "Beta-catenin independent WNT signaling",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-3858494"
+      },
+      {
+        "pathway_id": "R-HSA-4086398",
+        "pathway_name": "Ca2+ pathway",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-4086398"
+      },
+      {
+        "pathway_id": "R-HSA-201685",
+        "pathway_name": "PCP/CE pathway",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-201685"
+      }
+    ],
+    "kegg": [
+      {
+        "pathway_id": "hsa04310",
+        "pathway_name": "Wnt signaling pathway",
+        "url": "https://www.genome.jp/pathway/hsa04310"
+      },
+      {
+        "pathway_id": "hsa05200",
+        "pathway_name": "Pathways in cancer",
+        "url": "https://www.genome.jp/pathway/hsa05200"
+      }
+    ],
+    "pathway_role_summary": "CTNNB1 is the central effector of canonical Wnt signaling. In the absence of Wnt ligand, it is phosphorylated by GSK3B/CK1 in the destruction complex (with APC and AXIN) and degraded via beta-TrCP-mediated ubiquitination. Upon Wnt stimulation, the destruction complex is inhibited, beta-catenin stabilizes and translocates to the nucleus where it binds TCF/LEF transcription factors and coactivators (BCL9, CBP/p300) to activate Wnt target genes controlling proliferation, differentiation, and stem cell maintenance. CTNNB1 also has a structural role in cell adhesion as part of the cadherin-catenin complex at adherens junctions."
+  },
+  "disease_associations": [
+    {
+      "disease": "Colorectal cancer",
+      "omim_id": "114500",
+      "mutation_type": "Somatic",
+      "description": "Activating mutations (often deletions or point mutations affecting S33, S37, T41, S45) prevent phosphorylation and degradation, leading to constitutive Wnt signaling"
+    },
+    {
+      "disease": "Hepatoblastoma",
+      "omim_id": "114550",
+      "mutation_type": "Somatic",
+      "description": "Mutations in degradation-targeting residues cause aberrant beta-catenin accumulation"
+    },
+    {
+      "disease": "Pilomatrixoma",
+      "omim_id": "132600",
+      "mutation_type": "Somatic",
+      "description": "Benign skin tumors with frequent CTNNB1 mutations"
+    },
+    {
+      "disease": "Medulloblastoma",
+      "omim_id": "155255",
+      "mutation_type": "Somatic",
+      "description": "Subset of medulloblastomas harbor CTNNB1 mutations"
+    },
+    {
+      "disease": "Ovarian cancer (endometrioid)",
+      "omim_id": "167000",
+      "mutation_type": "Somatic",
+      "description": "CTNNB1 mutations found in endometrioid ovarian carcinomas"
+    },
+    {
+      "disease": "Neurodevelopmental disorder with spastic diplegia and visual defects (NEDSDV)",
+      "omim_id": "615075",
+      "mutation_type": "Germline",
+      "description": "De novo mutations cause intellectual disability, developmental delay, and visual defects"
+    },
+    {
+      "disease": "Exudative vitreoretinopathy 7 (EVR7)",
+      "omim_id": "617572",
+      "mutation_type": "Germline",
+      "description": "Pathogenic variants (e.g., C710Y) cause retinal vascular abnormalities"
+    }
+  ],
+  "cross_references": {
+    "ncbi_gene_id": "1499",
+    "ensembl_gene_id": "ENSG00000168036",
+    "refseq_protein": ["NP_001895.1", "NP_001091679.1", "NP_001091680.1", "NP_001317658.1"],
+    "refseq_nucleotide": ["NM_001904.4", "NM_001098209.2", "NM_001098210.2", "NM_001330729.2"],
+    "hgnc_id": "HGNC:2514",
+    "omim_gene": "116806"
+  },
+  "metadata": {
+    "generated_at": "2026-10-13T00:00:00Z",
+    "queried_databases": [
+      "UniProt",
+      "NCBI Gene",
+      "InterPro",
+      "Pfam",
+      "PROSITE",
+      "SMART",
+      "PDB",
+      "AlphaFold",
+      "STRING",
+      "BioGRID",
+      "IntAct",
+      "Reactome",
+      "KEGG",
+      "GO",
+      "OMIM",
+      "Ensembl",
+      "RefSeq",
+      "HGNC"
+    ],
+    "data_quality_notes": "High quality data with extensive experimental validation. Multiple crystal structures available for armadillo domain and various complexes. Kinetic data for GSK3B interaction well-characterized; less quantitative data available for other interactions. No specific Kd values found for beta-TrCP/phospho-beta-catenin interaction despite its importance. Isoform information limited to canonical sequence; alternative splicing not extensively documented in UniProt.",
+    "modeling_relevance_summary": "CTNNB1 is the central node of canonical Wnt signaling, making it critical for pathway modeling. Key for modeling: (1) Sequential phosphorylation by CK1 then GSK3B as priming mechanism, (2) Destruction complex assembly with AXIN as limiting component, (3) Competition between degradation (phosphorylation/ubiquitination) and stabilization (Wnt signaling, acetylation), (4) Nuclear translocation and TCF/LEF binding for transcriptional output, (5) Mutually exclusive binding of adhesion partners (E-cadherin) vs transcriptional partners (TCF/LEF) to same armadillo groove, (6) Multiple positive feedback loops (AXIN2 as Wnt target) and negative regulators (ICAT). Availability of kinetic parameters for GSK3B phosphorylation enables quantitative modeling of destruction complex."
+  }
+}
