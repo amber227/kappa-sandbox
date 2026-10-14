@@ -13,11 +13,9 @@ def unique_agents(mixture):
             unique_agents.append(agent)
 
 def main():
-    # Path to model.ka beside this Python script
     model_path = Path(__file__).with_name("wnt_v8.ka")
 
     print("Model path loaded")
-    # Load the .ka file into a PyKappa System object
     system = System.read_ka(model_path)
 
     # List the agents present in the initial mixture.
@@ -38,19 +36,12 @@ def main():
             seen_agent_strings.add(agent_string)
             unique_agents.append(agent)
 
-    print("\n=== Unique initialized agent types ===")
-    if not unique_agents:
-        print("(none)")
-    else:
-        for index, agent in enumerate(unique_agents, start=1):
-            print(f"{index}: {agent.kappa_str}")
+    for index, agent in enumerate(unique_agents, start=1):
+        print(f"{index}: {agent.kappa_str}")
 
     print("\n=== Rules ===")
-    if not system.rules:
-        print("(no rules)")
-    else:
-        for rule_name, rule in system.rules.items():
-            print(f"{rule_name}: {rule.kappa_str}")
+    for rule_name, rule in system.rules.items():
+        print(f"{rule_name}: {rule.kappa_str}")
 
 
 if __name__ == "__main__":
