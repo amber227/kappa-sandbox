@@ -1,6 +1,40 @@
 ---
 name: protein-info-digest
-description: Use this agent to compile a comprehensive structured digest of protein information from multiple databases, relevant to cell signaling pathway modeling. The agent queries UniProt, NCBI, InterPro, PDB, AlphaFold, STRING, BioGRID, IntAct, Reactome, KEGG, and GO to produce a single JSON file with all available information about a protein of interest. Examples:\n\n<example>\nContext: User is starting to model a new signaling pathway and needs comprehensive information about a key protein.\nuser: "I need a full information digest for human APC protein for my Wnt signaling model."\nassistant: "I'll use the protein-info-digest agent to gather comprehensive information about APC from all major databases."\n<commentary>User needs structured protein information for modeling, so launch the protein-info-digest agent.</commentary>\n</example>\n\n<example>\nContext: User is expanding an existing model and needs to understand a protein's interactions and domains.\nuser: "Get me everything known about EGFR - domains, structures, interactions, pathways."\nassistant: "I'll launch the protein-info-digest agent to compile a complete information digest for EGFR."\n<commentary>User needs comprehensive protein information, perfect use case for protein-info-digest agent.</commentary>\n</example>\n\n<example>\nContext: User mentions a protein in the context of needing detailed information.\nuser: "I'm adding p53 to my apoptosis model but I don't know much about its structure and binding partners."\nassistant: "Let me use the protein-info-digest agent to gather comprehensive information about p53 from multiple databases."\n<commentary>User needs detailed protein information to inform modeling, so proactively launch the protein-info-digest agent.</commentary>\n</example>
+description: Use this agent to compile a comprehensive structured digest of protein information from multiple databases, relevant to cell signaling pathway modeling. The agent queries UniProt, NCBI, InterPro, PDB, AlphaFold, STRING, BioGRID, IntAct, Reactome, KEGG, and GO to produce JSON files with all available information about a protein of interest.
+
+## Workflow for Building Complete Pathway Database
+
+### 1. Initial Digest Generation
+Generate digests for core pathway proteins (manually selected):
+```
+Task(subagent_type="protein-info-digest", ...)
+```
+
+### 2. Identify Missing Proteins
+Run analysis to find proteins referenced in interactions.json but lacking digests:
+```bash
+.venv/bin/python find_missing_digests.py
+```
+This produces `missing_digests.json` with prioritized list.
+
+### 3. Generate Missing Digests
+Review missing proteins and generate digests in batches:
+```bash
+.venv/bin/python generate_missing_digests.py --min-interactions 2
+```
+This outputs Claude Code commands to spawn agents in parallel batches.
+
+### 4. Compile Kappa Model
+After digests are complete, compile to Kappa:
+```bash
+.venv/bin/python compile_kappa.py
+```
+Produces `wnt_compiled.ka` and `wnt_compiled_provenance.json`.
+
+### 5. Iterate
+Repeat steps 2-4 as needed to expand coverage.
+
+## Agent Usage Examples\n\n<example>\nContext: User is starting to model a new signaling pathway and needs comprehensive information about a key protein.\nuser: "I need a full information digest for human APC protein for my Wnt signaling model."\nassistant: "I'll use the protein-info-digest agent to gather comprehensive information about APC from all major databases."\n<commentary>User needs structured protein information for modeling, so launch the protein-info-digest agent.</commentary>\n</example>\n\n<example>\nContext: User is expanding an existing model and needs to understand a protein's interactions and domains.\nuser: "Get me everything known about EGFR - domains, structures, interactions, pathways."\nassistant: "I'll launch the protein-info-digest agent to compile a complete information digest for EGFR."\n<commentary>User needs comprehensive protein information, perfect use case for protein-info-digest agent.</commentary>\n</example>\n\n<example>\nContext: User mentions a protein in the context of needing detailed information.\nuser: "I'm adding p53 to my apoptosis model but I don't know much about its structure and binding partners."\nassistant: "Let me use the protein-info-digest agent to gather comprehensive information about p53 from multiple databases."\n<commentary>User needs detailed protein information to inform modeling, so proactively launch the protein-info-digest agent.</commentary>\n</example>
 model: sonnet
 color: blue
 ---
