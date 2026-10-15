@@ -1,0 +1,1260 @@
+{
+  "protein_identifier": {
+    "gene_name": "BTRC",
+    "protein_name": "F-box/WD repeat-containing protein 1A",
+    "uniprot_accession": "Q9Y297",
+    "organism": "Homo sapiens",
+    "organism_taxid": 9606
+  },
+  "sequence": {
+    "canonical_length": 605,
+    "canonical_sequence": "MDPAEAVLQEKALKFMCSMPRSLWLGCSSLADSMPSLRCLYNPGTGALTAFQNSSEREDCNNGEPPRKIIPEKNSLRQTYNSCARLCLNQETVCLASTAMKTENCVAKTKLANGTSSMIVPKQRKLSASYEKEKELCVKYFEQWSESDQVEFVEHLISQMCHYQHGHINSYLKPMLQRDFITALPARGLDHIAENILSYLDAKSLCAAELVCKEWYRVTSDGMLWKKLIERMVRTDSLWRGLAERRGWGQYLFKNKPPDGNAPPNSFYRALYPKIIQDIETIESNWRCGRHSLQRIHCRSETSKGVYCLQYDDQKIVSGLRDNTIKIWDKNTLECKRILTGHTGSVLCLQYDERVIITGSSDSTVRVWDVNTGEMLNTLIHHCEAVLHLRFNNGMMVTCSKDRSIAVWDMASPTDITLRRVLVGHRAAVNVVDFDDKYIVSASGDRTIKVWNTSTCEFVRTLNGHKRGIACLQYRDRLVVSGSSDNTIRLWDIECGACLRVLEGHEELVRCIRFDNKRIVSGAYDGKIKVWDLVAALDPRAPAGTLCLRTLVEHSGRVFRLQFDEFQIVSSSHDDTILIWDFLNDPAAQAEPPRSPSRTYTYISR",
+    "molecular_weight_da": 68960,
+    "isoforms": [
+      {
+        "isoform_id": "Q9Y297-1",
+        "length": 605,
+        "description": "Canonical isoform (isoform 2), reference sequence NM_003939",
+        "sequence": "MDPAEAVLQEKALKFMCSMPRSLWLGCSSLADSMPSLRCLYNPGTGALTAFQNSSEREDCNNGEPPRKIIPEKNSLRQTYNSCARLCLNQETVCLASTAMKTENCVAKTKLANGTSSMIVPKQRKLSASYEKEKELCVKYFEQWSESDQVEFVEHLISQMCHYQHGHINSYLKPMLQRDFITALPARGLDHIAENILSYLDAKSLCAAELVCKEWYRVTSDGMLWKKLIERMVRTDSLWRGLAERRGWGQYLFKNKPPDGNAPPNSFYRALYPKIIQDIETIESNWRCGRHSLQRIHCRSETSKGVYCLQYDDQKIVSGLRDNTIKIWDKNTLECKRILTGHTGSVLCLQYDERVIITGSSDSTVRVWDVNTGEMLNTLIHHCEAVLHLRFNNGMMVTCSKDRSIAVWDMASPTDITLRRVLVGHRAAVNVVDFDDKYIVSASGDRTIKVWNTSTCEFVRTLNGHKRGIACLQYRDRLVVSGSSDNTIRLWDIECGACLRVLEGHEELVRCIRFDNKRIVSGAYDGKIKVWDLVAALDPRAPAGTLCLRTLVEHSGRVFRLQFDEFQIVSSSHDDTILIWDFLNDPAAQAEPPRSPSRTYTYISR"
+      },
+      {
+        "isoform_id": "Q9Y297-2",
+        "length": 569,
+        "description": "Isoform 1, alternative splicing variant, reference sequence NM_033637",
+        "sequence": "Shorter variant lacking 36 amino acids compared to canonical isoform"
+      }
+    ]
+  },
+  "domains_and_motifs": [
+    {
+      "identifier": "D_domain_138_198",
+      "name": "D domain",
+      "type": "Domain",
+      "locations": [{"start": 138, "end": 198}],
+      "sequence": "EKEKELCVKYFEQWSESDQVEFVEHLISQMCHYQHGHINSYLKPMLQRDFITALPARGLDHIA",
+      "description": "N-terminal D domain mediates homodimerization of beta-TrCP1",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR021977",
+          "notes": "D domain of beta-TrCP"
+        }
+      ]
+    },
+    {
+      "identifier": "F_box_1_75",
+      "name": "F-box domain",
+      "type": "Domain",
+      "locations": [{"start": 1, "end": 75}],
+      "sequence": "MDPAEAVLQEKALKFMCSMPRSLWLGCSSLADSMPSLRCLYNPGTGALTAFQNSSEREDCNNGEPPRKIIPEK",
+      "description": "F-box motif (~40 amino acids) that mediates interaction with SKP1, essential for SCF complex assembly",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR001810",
+          "notes": "F-box domain"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF00646",
+          "notes": "F-box domain"
+        },
+        {
+          "database": "InterPro",
+          "accession": "IPR036047",
+          "notes": "F-box-like domain superfamily"
+        }
+      ]
+    },
+    {
+      "identifier": "WD40_repeat_1",
+      "name": "WD40 repeat 1",
+      "type": "Repeat",
+      "locations": [{"start": 263, "end": 302}],
+      "sequence": "NSFYRALYPKIIQDIETIESNWRCGRHSLQRIHCRSETS",
+      "description": "First WD40 repeat, part of beta-propeller fold that recognizes phosphorylated degron motifs",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR001680",
+          "notes": "WD40 repeat"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF00400",
+          "notes": "WD40 domain"
+        }
+      ]
+    },
+    {
+      "identifier": "WD40_repeat_2",
+      "name": "WD40 repeat 2",
+      "type": "Repeat",
+      "locations": [{"start": 303, "end": 342}],
+      "sequence": "KGVYCLQYDDQKIVSGLRDNTIKIWDKNTLECKRILTGH",
+      "description": "Second WD40 repeat",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR001680",
+          "notes": "WD40 repeat"
+        }
+      ]
+    },
+    {
+      "identifier": "WD40_repeat_3",
+      "name": "WD40 repeat 3",
+      "type": "Repeat",
+      "locations": [{"start": 343, "end": 382}],
+      "sequence": "TGSVLCLQYDERVIITGSSDSTVRVWDVNTGEMLNTLIHH",
+      "description": "Third WD40 repeat",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR001680",
+          "notes": "WD40 repeat"
+        }
+      ]
+    },
+    {
+      "identifier": "WD40_repeat_4",
+      "name": "WD40 repeat 4",
+      "type": "Repeat",
+      "locations": [{"start": 383, "end": 422}],
+      "sequence": "CEAVLHLRFNNGMMVTCSKDRSIAVWDMASPTDITLRRV",
+      "description": "Fourth WD40 repeat",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR001680",
+          "notes": "WD40 repeat"
+        }
+      ]
+    },
+    {
+      "identifier": "WD40_repeat_5",
+      "name": "WD40 repeat 5",
+      "type": "Repeat",
+      "locations": [{"start": 423, "end": 462}],
+      "sequence": "LVGHRAAVNVVDFDDKYIVSASGDRTIKVWNTSTCEFVRT",
+      "description": "Fifth WD40 repeat",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR001680",
+          "notes": "WD40 repeat"
+        }
+      ]
+    },
+    {
+      "identifier": "WD40_repeat_6",
+      "name": "WD40 repeat 6",
+      "type": "Repeat",
+      "locations": [{"start": 463, "end": 502}],
+      "sequence": "LNGHKRGIACLQYRDRLVVSGSSDNTIRLWDIECGACLRV",
+      "description": "Sixth WD40 repeat",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR001680",
+          "notes": "WD40 repeat"
+        }
+      ]
+    },
+    {
+      "identifier": "WD40_repeat_7",
+      "name": "WD40 repeat 7",
+      "type": "Repeat",
+      "locations": [{"start": 503, "end": 542}],
+      "sequence": "LEGHEELVRCIRFDNKRIVSGAYDGKIKVWDLVAALDPR",
+      "description": "Seventh WD40 repeat, completes the beta-propeller fold",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR001680",
+          "notes": "WD40 repeat"
+        }
+      ]
+    },
+    {
+      "identifier": "phosphodegron_binding_site",
+      "name": "Phospho-degron binding site",
+      "type": "Binding_site",
+      "locations": [{"start": 263, "end": 542}],
+      "sequence": "WD40 repeats forming substrate recognition surface",
+      "description": "Composite binding site formed by WD40 repeats that specifically recognizes phosphorylated DpSGXXpS motifs and variants (DDG, EEG, SSG, TSG)",
+      "sources": [
+        {
+          "database": "UniProt",
+          "notes": "Experimentally characterized substrate recognition site"
+        }
+      ]
+    }
+  ],
+  "structure": {
+    "experimental_structures": [
+      {
+        "pdb_id": "6TTU",
+        "method": "Cryo-EM",
+        "resolution_angstrom": 3.7,
+        "chain": "A",
+        "coverage": {"start": 1, "end": 605},
+        "description": "Ubiquitin ligation to substrate by cullin-RING E3 ligase - complete SCF(BTRC) complex with IκBα substrate",
+        "ligands": ["ZN", "NEDD8", "Ubiquitin"],
+        "url": "https://www.rcsb.org/structure/6TTU"
+      },
+      {
+        "pdb_id": "6M91",
+        "method": "X-ray",
+        "resolution_angstrom": 2.4,
+        "chain": "A",
+        "coverage": {"start": 263, "end": 605},
+        "description": "Monophosphorylated pSer33 beta-catenin peptide in complex with beta-TrCP/SKP1 and small molecule NRX-103094",
+        "ligands": ["phosphorylated beta-catenin peptide", "NRX-103094"],
+        "url": "https://www.rcsb.org/structure/6M91"
+      }
+    ],
+    "alphafold_prediction": {
+      "available": true,
+      "accession": "AF-Q9Y297-F1",
+      "confidence_summary": "Average pLDDT 79.83; 61.8% very high confidence, 11.7% high confidence, 6% low confidence, 20.5% very low confidence. Well-structured F-box and WD40 domains, lower confidence in linker regions",
+      "url": "https://alphafold.ebi.ac.uk/entry/Q9Y297"
+    }
+  },
+  "post_translational_modifications": [
+    {
+      "type": "Phosphorylation",
+      "position": 82,
+      "residue": "S",
+      "function": "Regulatory modification",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 127,
+      "residue": "S",
+      "function": "Regulatory modification",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 158,
+      "residue": "S",
+      "function": "Regulatory modification",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 412,
+      "residue": "S",
+      "function": "Regulatory modification",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 555,
+      "residue": "S",
+      "function": "Regulatory modification",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 597,
+      "residue": "S",
+      "function": "Regulatory modification",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 599,
+      "residue": "T",
+      "function": "Regulatory modification",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 600,
+      "residue": "Y",
+      "function": "Regulatory modification",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 601,
+      "residue": "T",
+      "function": "Regulatory modification",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Ubiquitination",
+      "position": 11,
+      "residue": "K",
+      "function": "Potential degradation signal",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Ubiquitination",
+      "position": 14,
+      "residue": "K",
+      "function": "Potential degradation signal",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Ubiquitination",
+      "position": 73,
+      "residue": "K",
+      "function": "Potential degradation signal",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Ubiquitination",
+      "position": 315,
+      "residue": "K",
+      "function": "Potential degradation signal",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Ubiquitination",
+      "position": 326,
+      "residue": "K",
+      "function": "Potential degradation signal",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Ubiquitination",
+      "position": 527,
+      "residue": "K",
+      "function": "Potential degradation signal",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Methylation",
+      "position": 137,
+      "residue": "C",
+      "function": "Unknown",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Methylation",
+      "position": 383,
+      "residue": "C",
+      "function": "Unknown",
+      "evidence": "Experimental"
+    }
+  ],
+  "function": {
+    "uniprot_function": "Substrate recognition component of a SCF (SKP1-CUL1-F-box protein) E3 ubiquitin-protein ligase complex which mediates the ubiquitination and subsequent proteasomal degradation of target proteins. Recognizes and binds to phosphorylated target proteins. SCF(BTRC) mediates the ubiquitination of CTNNB1 and participates in Wnt signaling. SCF(BTRC) mediates the ubiquitination of phosphorylated NFKBIA (IκBα), NFKBIB, NFKBIE, ATF4, CDC25A, FBXO5/EMI1, SNAI1, SMAD3, SMAD4, PER1, PER2, and REST, thereby playing roles in NF-κB signaling, cell cycle regulation, circadian clock, epithelial-mesenchymal transition, and TGF-β signaling.",
+    "catalytic_activity": "Functions as substrate receptor for E3 ubiquitin ligase complex; does not have intrinsic catalytic activity but confers substrate specificity",
+    "subcellular_location": ["Nucleus", "Cytoplasm", "Nucleoplasm", "Plasma membrane", "Cytosol"],
+    "tissue_specificity": "Widely expressed with high levels in brain, heart, and testis. Undetectable in small intestine and thymus. Cell type enrichment in astrocytes, neurons, microglia, and granulosa cells",
+    "go_annotations": {
+      "molecular_function": [
+        {
+          "go_id": "GO:0061630",
+          "term": "ubiquitin protein ligase activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0004842",
+          "term": "ubiquitin-protein transferase activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0019901",
+          "term": "protein kinase binding",
+          "evidence_code": "IPI"
+        }
+      ],
+      "biological_process": [
+        {
+          "go_id": "GO:0016567",
+          "term": "protein ubiquitination",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0006511",
+          "term": "ubiquitin-dependent protein catabolic process",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0038061",
+          "term": "NIK/NF-kappaB signaling",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0016055",
+          "term": "Wnt signaling pathway",
+          "evidence_code": "TAS"
+        }
+      ],
+      "cellular_component": [
+        {
+          "go_id": "GO:0019005",
+          "term": "SCF ubiquitin ligase complex",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005737",
+          "term": "cytoplasm",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005634",
+          "term": "nucleus",
+          "evidence_code": "IDA"
+        }
+      ]
+    }
+  },
+  "interactions": [
+    {
+      "partner": {
+        "gene_name": "SKP1",
+        "protein_name": "S-phase kinase-associated protein 1",
+        "uniprot_accession": "P63208"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "F_box_1_75",
+            "residues": [],
+            "residue_names": [],
+            "description": "F-box domain mediates direct binding to SKP1"
+          }
+        ],
+        "partner_protein": [],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "PDB",
+          "notes": "Crystal structures 6TTU, 6M91 show direct interaction"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.999
+        },
+        {
+          "source": "UniProt",
+          "notes": "Curated interaction, essential for SCF complex assembly"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "Essential component of SCF(BTRC) E3 ubiquitin ligase complex"
+    },
+    {
+      "partner": {
+        "gene_name": "CUL1",
+        "protein_name": "Cullin-1",
+        "uniprot_accession": "Q13616"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "F_box_1_75",
+            "residues": [],
+            "residue_names": [],
+            "description": "F-box domain enables indirect binding to CUL1 via SKP1"
+          }
+        ],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "PDB",
+          "notes": "Structure 6TTU shows complete SCF complex"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.999
+        },
+        {
+          "source": "UniProt",
+          "notes": "Curated interaction, SCF complex component"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "Core scaffold of SCF(BTRC) E3 ubiquitin ligase complex"
+    },
+    {
+      "partner": {
+        "gene_name": "RBX1",
+        "protein_name": "E3 ubiquitin-protein ligase RBX1",
+        "uniprot_accession": "P62877"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "PDB",
+          "notes": "Structure 6TTU shows RBX1 in SCF complex"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.997
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "RING finger protein that recruits E2 ubiquitin-conjugating enzyme to SCF complex"
+    },
+    {
+      "partner": {
+        "gene_name": "CTNNB1",
+        "protein_name": "Beta-catenin",
+        "uniprot_accession": "P35222"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Ubiquitination",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "phosphodegron_binding_site",
+            "residues": [],
+            "residue_names": [],
+            "description": "WD40 repeats recognize phosphorylated DpSGXXpS motif at Ser33/Ser37 of beta-catenin"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Phospho-degron motif",
+            "residues": [33, 37],
+            "description": "DpSGXXpS motif phosphorylated by GSK3B (after CK1 priming at Ser45)"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 9.4e-10,
+        "kd_range_m": [5e-10, 2e-9],
+        "measurement_method": "Fluorescence polarization binding assay",
+        "conditions": "Phosphorylated peptide binding",
+        "notes": "Ki = 0.94 nM for doubly phosphorylated beta-catenin degron peptide; >100 μM for non-phosphorylated peptide"
+      },
+      "evidence": [
+        {
+          "source": "PDB",
+          "notes": "Structure 6M91 shows beta-catenin peptide binding"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.996,
+          "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "source": "Literature",
+          "pmid": "9990852",
+          "description": "SCF(beta-TRCP) associates with phosphorylated beta-catenin and stimulates ubiquitination"
+        },
+        {
+          "source": "Literature",
+          "pmid": "PMC13097077",
+          "description": "Structural studies showing Ki = 0.94 nM binding affinity"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "Central to Wnt signaling regulation; beta-catenin degradation is inhibited when Wnt is active"
+    },
+    {
+      "partner": {
+        "gene_name": "NFKBIA",
+        "protein_name": "NF-kappa-B inhibitor alpha (IκBα)",
+        "uniprot_accession": "P25963"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Ubiquitination",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "phosphodegron_binding_site",
+            "residues": [],
+            "residue_names": [],
+            "description": "WD40 repeats recognize phosphorylated degron motif"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Phospho-degron motif",
+            "residues": [32, 36],
+            "description": "DSGXXpS motif phosphorylated by IKK complex"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 2.626e-8,
+        "measurement_method": "Fluorescence polarization",
+        "conditions": "Phosphorylated peptide binding",
+        "notes": "Ki = 26.26 nM for phosphorylated IκBα degron peptide; requires phosphorylation at both serines"
+      },
+      "evidence": [
+        {
+          "source": "PDB",
+          "notes": "Structure 6TTU shows IκBα as substrate in SCF complex"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.995,
+          "evidence_types": ["experimental", "database"]
+        },
+        {
+          "source": "BioGRID",
+          "experimental_system": "Affinity Capture-Western",
+          "throughput": "Low"
+        },
+        {
+          "source": "Literature",
+          "pmid": "9859996",
+          "description": "Identification of BTRC as IκBα-ubiquitin ligase receptor"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "Critical for NF-κB activation; IκBα degradation releases NF-κB for nuclear translocation"
+    },
+    {
+      "partner": {
+        "gene_name": "CDC25A",
+        "protein_name": "M-phase inducer phosphatase 1",
+        "uniprot_accession": "P30304"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Ubiquitination",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "phosphodegron_binding_site",
+            "residues": [],
+            "residue_names": [],
+            "description": "WD40 repeats recognize DSG motif"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Degron motif",
+            "residues": [76],
+            "description": "DSG motif phosphorylated by CHK1; also contains non-phosphorylated DDG motif"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.987,
+          "evidence_types": ["experimental", "database"]
+        },
+        {
+          "source": "BioGRID",
+          "experimental_system": "Affinity Capture-MS",
+          "throughput": "High"
+        },
+        {
+          "source": "Literature",
+          "pmid": "14681206",
+          "description": "SCFbeta-TRCP links Chk1 signaling to CDC25A degradation"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "Cell cycle checkpoint regulation; CDC25A degradation prevents premature mitotic entry"
+    },
+    {
+      "partner": {
+        "gene_name": "WEE1",
+        "protein_name": "Wee1-like protein kinase",
+        "uniprot_accession": "P30291"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Ubiquitination",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "phosphodegron_binding_site",
+            "residues": [],
+            "residue_names": [],
+            "description": "WD40 repeats recognize phosphorylated degron"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Phospho-degron motif",
+            "residues": [],
+            "description": "Phosphorylated by M-phase kinases (PLK1, CDK1)"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.964
+        },
+        {
+          "source": "Literature",
+          "pmid": "14756569",
+          "description": "M-phase kinases induce phospho-dependent ubiquitination of Wee1 by SCFβ-TrCP"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "Cell cycle regulation; Wee1 degradation promotes mitotic entry"
+    },
+    {
+      "partner": {
+        "gene_name": "FBXO5",
+        "protein_name": "F-box only protein 5 (EMI1)",
+        "uniprot_accession": "Q9UKT4"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Ubiquitination",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "phosphodegron_binding_site",
+            "residues": [],
+            "residue_names": [],
+            "description": "WD40 repeats recognize phosphorylated EMI1"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Phospho-degron motif",
+            "residues": [],
+            "description": "Phosphorylated degron motif"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.981
+        },
+        {
+          "source": "Literature",
+          "pmid": "12791267",
+          "description": "SCF(betaTrCP) mediates prophase destruction of Emi1"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "Cell cycle regulation; EMI1 destruction activates APC/C to allow progression beyond prometaphase"
+    },
+    {
+      "partner": {
+        "gene_name": "SNAI1",
+        "protein_name": "Zinc finger protein SNAI1 (Snail)",
+        "uniprot_accession": "O95863"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Ubiquitination",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "phosphodegron_binding_site",
+            "residues": [],
+            "residue_names": [],
+            "description": "WD40 repeats recognize GSK3B-phosphorylated SNAI1"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Phospho-degron motif",
+            "residues": [],
+            "description": "Phosphorylated by GSK3B"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.972
+        },
+        {
+          "source": "Literature",
+          "pmid": "15448698",
+          "description": "GSK-3beta-mediated phosphorylation controls Snail degradation via beta-TrCP"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "Epithelial-mesenchymal transition regulation; Snail degradation promotes epithelial phenotype"
+    },
+    {
+      "partner": {
+        "gene_name": "PER1",
+        "protein_name": "Period circadian protein homolog 1",
+        "uniprot_accession": "O15534"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Ubiquitination",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "phosphodegron_binding_site",
+            "residues": [],
+            "residue_names": [],
+            "description": "WD40 repeats recognize CK1-phosphorylated PER1"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Phospho-degron motif",
+            "residues": [],
+            "description": "Phosphorylated by casein kinase 1"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.952
+        },
+        {
+          "source": "Literature",
+          "pmid": "15917222",
+          "description": "SCFbeta-TRCP controls clock-dependent transcription via CK1-dependent PER1 degradation"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "Circadian clock regulation; PER1 degradation is essential for circadian oscillations"
+    },
+    {
+      "partner": {
+        "gene_name": "SMAD3",
+        "protein_name": "Mothers against decapentaplegic homolog 3",
+        "uniprot_accession": "P84022"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Ubiquitination",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "phosphodegron_binding_site",
+            "residues": [],
+            "residue_names": [],
+            "description": "WD40 repeats recognize phosphorylated SMAD3"
+          }
+        ],
+        "partner_protein": [],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.941
+        },
+        {
+          "source": "Literature",
+          "pmid": "11359933",
+          "description": "Ligand-dependent degradation of Smad3 by SCF ubiquitin ligase complex"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "TGF-β signaling regulation; SMAD3 degradation terminates TGF-β signaling"
+    },
+    {
+      "partner": {
+        "gene_name": "SMAD4",
+        "protein_name": "Mothers against decapentaplegic homolog 4",
+        "uniprot_accession": "Q13485"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Ubiquitination",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "phosphodegron_binding_site",
+            "residues": [],
+            "residue_names": [],
+            "description": "WD40 repeats recognize phosphorylated SMAD4"
+          }
+        ],
+        "partner_protein": [],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.928
+        },
+        {
+          "source": "Literature",
+          "pmid": "14988407",
+          "description": "Smad4 stability regulated by SCF beta-TrCP1"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "TGF-β signaling regulation"
+    },
+    {
+      "partner": {
+        "gene_name": "ATF4",
+        "protein_name": "Cyclic AMP-dependent transcription factor ATF-4",
+        "uniprot_accession": "P18848"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Ubiquitination",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "phosphodegron_binding_site",
+            "residues": [],
+            "residue_names": [],
+            "description": "WD40 repeats recognize phosphorylated ATF4"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Phospho-degron motif",
+            "residues": [],
+            "description": "Phosphorylation-dependent degron"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 5e-7,
+        "measurement_method": "Binding assay",
+        "notes": "Kd = 500 μM reported for ATF4 peptide binding"
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.961
+        },
+        {
+          "source": "Literature",
+          "pmid": "11238952",
+          "description": "ATF4 degradation via phosphorylation-dependent SCF(betaTrCP) interaction"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "Stress response regulation"
+    },
+    {
+      "partner": {
+        "gene_name": "REST",
+        "protein_name": "RE1-silencing transcription factor",
+        "uniprot_accession": "Q13127"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Ubiquitination",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "phosphodegron_binding_site",
+            "residues": [],
+            "residue_names": [],
+            "description": "WD40 repeats recognize phosphorylated REST"
+          }
+        ],
+        "partner_protein": [],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.893
+        },
+        {
+          "source": "UniProt",
+          "notes": "SCF(BTRC) mediates ubiquitination of REST"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "Neuronal gene expression regulation"
+    },
+    {
+      "partner": {
+        "gene_name": "NFKB1",
+        "protein_name": "Nuclear factor NF-kappa-B p105 subunit",
+        "uniprot_accession": "P19838"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Ubiquitination",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "phosphodegron_binding_site",
+            "residues": [],
+            "residue_names": [],
+            "description": "WD40 repeats recognize phosphorylated p105 C-terminus"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "C-terminal phospho-degron",
+            "residues": [],
+            "description": "C-terminus phosphorylated by IKK"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.978
+        },
+        {
+          "source": "Literature",
+          "pmid": "10835356",
+          "description": "SCF(beta-TrCP) mediates processing of NF-kappaB p105"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "NF-κB activation; p105 processing generates p50 active subunit"
+    },
+    {
+      "partner": {
+        "gene_name": "DLG1",
+        "protein_name": "Disks large homolog 1",
+        "uniprot_accession": "Q12959"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Ubiquitination",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "phosphodegron_binding_site",
+            "residues": [],
+            "residue_names": [],
+            "description": "WD40 repeats recognize phosphorylated DLG1"
+          }
+        ],
+        "partner_protein": [],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.914
+        },
+        {
+          "source": "Literature",
+          "pmid": "12902344",
+          "description": "Phosphorylation-dependent interaction with beta-TrCP regulates DLG1"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "Tumor suppressor regulation"
+    },
+    {
+      "partner": {
+        "gene_name": "FBXW11",
+        "protein_name": "F-box/WD repeat-containing protein 11 (beta-TrCP2)",
+        "uniprot_accession": "Q9UKB1"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "D_domain_138_198",
+            "residues": [],
+            "residue_names": [],
+            "description": "D domain mediates heterodimerization with beta-TrCP2"
+          }
+        ],
+        "partner_protein": [],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.997
+        },
+        {
+          "source": "Literature",
+          "pmid": "10644755",
+          "description": "Homodimerization and heterodimerization of beta-TrCP proteins"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "Beta-TrCP1 and beta-TrCP2 can form homo- or heterodimers with similar substrate specificity"
+    },
+    {
+      "partner": {
+        "gene_name": "APC",
+        "protein_name": "Adenomatous polyposis coli protein",
+        "uniprot_accession": "P25054"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.785,
+          "evidence_types": ["database", "textmining"]
+        }
+      ],
+      "functional_effect": "Regulatory",
+      "pathway_context": "APC is part of beta-catenin destruction complex that phosphorylates beta-catenin for BTRC recognition"
+    },
+    {
+      "partner": {
+        "gene_name": "AXIN1",
+        "protein_name": "Axin-1",
+        "uniprot_accession": "O15169"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.892,
+          "evidence_types": ["database", "textmining", "coexpression"]
+        }
+      ],
+      "functional_effect": "Regulatory",
+      "pathway_context": "AXIN1 scaffold protein in beta-catenin destruction complex"
+    }
+  ],
+  "pathways": {
+    "reactome": [
+      {
+        "pathway_id": "R-HSA-69598",
+        "pathway_name": "Ubiquitin-mediated degradation of phosphorylated Cdc25A",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-69598"
+      },
+      {
+        "pathway_id": "R-HSA-9758274",
+        "pathway_name": "Activated TLR4 signalling",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-9758274"
+      },
+      {
+        "pathway_id": "R-HSA-5603029",
+        "pathway_name": "Activation of NF-kappaB in B cells",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/PathwayBrowser/#/R-HSA-5603029"
+      },
+      {
+        "pathway_id": "R-HSA-983168",
+        "pathway_name": "Antigen processing: Ubiquitination & Proteasome degradation",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/PathwayBrowser/#/R-HSA-983168"
+      },
+      {
+        "pathway_id": "R-HSA-195721",
+        "pathway_name": "Signaling by WNT",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/PathwayBrowser/#/R-HSA-195721"
+      }
+    ],
+    "kegg": [
+      {
+        "pathway_id": "hsa04120",
+        "pathway_name": "Ubiquitin mediated proteolysis",
+        "url": "https://www.genome.jp/entry/hsa04120"
+      },
+      {
+        "pathway_id": "hsa04310",
+        "pathway_name": "Wnt signaling pathway",
+        "url": "https://www.genome.jp/entry/hsa04310"
+      },
+      {
+        "pathway_id": "hsa04064",
+        "pathway_name": "NF-kappa B signaling pathway",
+        "url": "https://www.genome.jp/pathway/hsa04064"
+      }
+    ],
+    "pathway_role_summary": "BTRC is a critical E3 ubiquitin ligase substrate receptor that regulates multiple signaling pathways by targeting phosphorylated proteins for proteasomal degradation. Key roles include: (1) Wnt signaling - degrades phosphorylated beta-catenin to prevent inappropriate pathway activation; (2) NF-κB signaling - degrades IκB inhibitors to allow NF-κB nuclear translocation; (3) Cell cycle - degrades CDC25A, WEE1, EMI1 at checkpoints; (4) Circadian clock - degrades PER proteins for oscillatory rhythms; (5) TGF-β signaling - degrades SMAD proteins; (6) EMT regulation - degrades SNAI1 transcription factor"
+  },
+  "disease_associations": [
+    {
+      "disease": "Colorectal cancer",
+      "omim_id": "114500",
+      "mutation_type": "Somatic",
+      "description": "BTRC upregulation in colorectal tumors with active beta-catenin/Tcf signaling contributes to NF-κB activation and apoptosis suppression"
+    },
+    {
+      "disease": "Various cancers",
+      "omim_id": null,
+      "mutation_type": "Somatic",
+      "description": "Aberrant BTRC expression affects multiple oncogenic and tumor suppressor pathways including beta-catenin, NF-κB, and cell cycle regulators"
+    }
+  ],
+  "cross_references": {
+    "ncbi_gene_id": "8945",
+    "ensembl_gene_id": "ENSG00000166167",
+    "refseq_protein": ["NP_003930.1", "NP_361014.1"],
+    "refseq_nucleotide": ["NM_003939.5", "NM_033637.4", "NM_001256856.2"],
+    "hgnc_id": "HGNC:1144",
+    "omim_gene": "603482"
+  },
+  "metadata": {
+    "generated_at": "2026-10-15T00:00:00Z",
+    "queried_databases": [
+      "UniProt",
+      "NCBI Gene",
+      "InterPro",
+      "Pfam",
+      "PDB",
+      "AlphaFold",
+      "STRING",
+      "BioGRID",
+      "IntAct",
+      "Reactome",
+      "KEGG",
+      "GO",
+      "Human Protein Atlas",
+      "OMIM"
+    ],
+    "data_quality_notes": "High quality data available from multiple sources. Extensive experimental characterization of substrate interactions and binding affinities. Crystal structures available for substrate-bound complexes. Some kinetic parameters (kon/koff) not available for most interactions. Isoform 1 sequence not fully provided but well-characterized as 36 amino acids shorter than canonical isoform 2.",
+    "modeling_relevance_summary": "BTRC is essential for modeling Wnt, NF-κB, cell cycle, and circadian signaling pathways. It acts as a phosphorylation-dependent switch that converts kinase signaling into protein degradation. Critical quantitative parameters available: beta-catenin binding Kd ~1 nM, IκBα binding Kd ~26 nM. Substrate recognition requires prior phosphorylation by pathway-specific kinases (GSK3B, CK1, IKK, CHK1), creating temporal regulatory logic. Homodimerization adds cooperative binding effects. The protein integrates multiple signaling inputs and converts them to ubiquitination outputs, making it a key regulatory node."
+  }
+}

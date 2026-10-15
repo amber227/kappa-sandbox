@@ -1,0 +1,581 @@
+{
+  "existing_count": 9,
+  "existing_proteins": [
+    "APC",
+    "AXIN1",
+    "CTNNB1",
+    "DVL1",
+    "FZD1",
+    "GSK3B",
+    "LRP6",
+    "TCF7L2",
+    "WNT3A"
+  ],
+  "missing_count": 94,
+  "missing_proteins": [
+    {
+      "gene_name": "AXIN2",
+      "protein_name": "Axin-2",
+      "uniprot_accession": "Q9Y2T1",
+      "num_interactions": 4
+    },
+    {
+      "gene_name": "CSNK1A1",
+      "protein_name": "Casein kinase I isoform alpha",
+      "uniprot_accession": "P48729",
+      "num_interactions": 3
+    },
+    {
+      "gene_name": "BTRC",
+      "protein_name": "Beta-transducin repeat-containing protein (beta-TrCP)",
+      "uniprot_accession": "Q9Y297",
+      "num_interactions": 3
+    },
+    {
+      "gene_name": "DVL2",
+      "protein_name": "Segment polarity protein dishevelled homolog DVL-2",
+      "uniprot_accession": "O14641",
+      "num_interactions": 3
+    },
+    {
+      "gene_name": "DVL3",
+      "protein_name": "Segment polarity protein dishevelled homolog DVL-3",
+      "uniprot_accession": "Q92997",
+      "num_interactions": 2
+    },
+    {
+      "gene_name": "BCL9",
+      "protein_name": "B-cell CLL/lymphoma 9 protein",
+      "uniprot_accession": "Q9ULV1",
+      "num_interactions": 2
+    },
+    {
+      "gene_name": "EP300",
+      "protein_name": "Histone acetyltransferase p300",
+      "uniprot_accession": "Q09472",
+      "num_interactions": 2
+    },
+    {
+      "gene_name": "CREBBP",
+      "protein_name": "CREB-binding protein (CBP)",
+      "uniprot_accession": "Q92793",
+      "num_interactions": 2
+    },
+    {
+      "gene_name": "LRP5",
+      "protein_name": "Low-density lipoprotein receptor-related protein 5",
+      "uniprot_accession": "O75197",
+      "num_interactions": 2
+    },
+    {
+      "gene_name": "FZD8",
+      "protein_name": "Frizzled-8",
+      "uniprot_accession": "Q9H461",
+      "num_interactions": 2
+    },
+    {
+      "gene_name": "FZD5",
+      "protein_name": "Frizzled-5",
+      "uniprot_accession": "Q13467",
+      "num_interactions": 2
+    },
+    {
+      "gene_name": "DKK1",
+      "protein_name": "Dickkopf-related protein 1",
+      "uniprot_accession": "O94907",
+      "num_interactions": 2
+    },
+    {
+      "gene_name": "WNT3",
+      "protein_name": "Proto-oncogene Wnt-3",
+      "uniprot_accession": "P56703",
+      "num_interactions": 2
+    },
+    {
+      "gene_name": "HIPK2",
+      "protein_name": "Homeodomain-interacting protein kinase 2",
+      "uniprot_accession": "Q9H2X6",
+      "num_interactions": 2
+    },
+    {
+      "gene_name": "TP53",
+      "protein_name": "Cellular tumor antigen p53",
+      "uniprot_accession": "P04637",
+      "num_interactions": 2
+    },
+    {
+      "gene_name": "ZNRF3",
+      "protein_name": "E3 ubiquitin-protein ligase ZNRF3",
+      "uniprot_accession": "Q9ULT6",
+      "num_interactions": 2
+    },
+    {
+      "gene_name": "RNF43",
+      "protein_name": "E3 ubiquitin-protein ligase RNF43",
+      "uniprot_accession": "Q68DV7",
+      "num_interactions": 2
+    },
+    {
+      "gene_name": "RSPO1",
+      "protein_name": "R-spondin-1",
+      "uniprot_accession": "Q2MKA7",
+      "num_interactions": 2
+    },
+    {
+      "gene_name": "AMER1",
+      "protein_name": "APC membrane recruitment protein 1 (WTX)",
+      "uniprot_accession": "Q5JRA6",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "DLG1",
+      "protein_name": "Discs large homolog 1 (SAP97)",
+      "uniprot_accession": "Q12959",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "ARHGEF4",
+      "protein_name": "Rho guanine nucleotide exchange factor 4 (ASEF)",
+      "uniprot_accession": "Q9NR81",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "KHDRBS1",
+      "protein_name": "KH domain-containing RNA-binding protein SAM68",
+      "uniprot_accession": "Q07666",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "MAPRE1",
+      "protein_name": "Microtubule-associated protein RP/EB family member 1 (EB1)",
+      "uniprot_accession": "Q15691",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "KIF3A",
+      "protein_name": "Kinesin family member 3A",
+      "uniprot_accession": "Q9Y496",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "KIF2A",
+      "protein_name": "Kinesin family member 2A",
+      "uniprot_accession": "O00139",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "FZD7",
+      "protein_name": "Frizzled-7",
+      "uniprot_accession": "O75084",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "CSNK1E",
+      "protein_name": "Casein kinase I isoform epsilon",
+      "uniprot_accession": "P49674",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "KLHL12",
+      "protein_name": "Kelch-like protein 12",
+      "uniprot_accession": "Q53G59",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "CYLD",
+      "protein_name": "Ubiquitin carboxyl-terminal hydrolase CYLD",
+      "uniprot_accession": "Q9NQC7",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "ARRB1",
+      "protein_name": "Beta-arrestin-1",
+      "uniprot_accession": "P49407",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "DAAM1",
+      "protein_name": "Dishevelled-associated activator of morphogenesis 1",
+      "uniprot_accession": "Q9Y4D1",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "VANGL2",
+      "protein_name": "Vang-like protein 2",
+      "uniprot_accession": "Q9ULK5",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "FOXK2",
+      "protein_name": "Forkhead box protein K2",
+      "uniprot_accession": "Q01167",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "PAK1",
+      "protein_name": "Serine/threonine-protein kinase PAK 1",
+      "uniprot_accession": "Q13153",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "MUSK",
+      "protein_name": "Muscle, skeletal receptor tyrosine-protein kinase",
+      "uniprot_accession": "O15146",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "CXXC4",
+      "protein_name": "CXXC-type zinc finger protein 4",
+      "uniprot_accession": "Q9H2H0",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "CLDN5",
+      "protein_name": "Claudin-5",
+      "uniprot_accession": "O00501",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "HECW1",
+      "protein_name": "E3 ubiquitin-protein ligase HECW1",
+      "uniprot_accession": "Q76N89",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "CDH1",
+      "protein_name": "Cadherin-1 (E-cadherin)",
+      "uniprot_accession": "P12830",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "CTNNA1",
+      "protein_name": "Catenin alpha-1 (alpha-E-catenin)",
+      "uniprot_accession": "P35221",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "LEF1",
+      "protein_name": "Lymphoid enhancer-binding factor 1",
+      "uniprot_accession": "Q9UJU2",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "TCF7",
+      "protein_name": "Transcription factor 7 (TCF-1)",
+      "uniprot_accession": "P36402",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "TCF7L1",
+      "protein_name": "Transcription factor 7-like 1 (TCF-3)",
+      "uniprot_accession": "Q9HCS4",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "CTNNBIP1",
+      "protein_name": "Beta-catenin-interacting protein 1 (ICAT)",
+      "uniprot_accession": "Q9NSA3",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "TBL1X",
+      "protein_name": "Transducin beta-like protein 1X",
+      "uniprot_accession": "O60907",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "TBLR1",
+      "protein_name": "Transducin beta-like protein 1-related protein 1",
+      "uniprot_accession": "Q9BZK7",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "FZD3",
+      "protein_name": "Frizzled-3",
+      "uniprot_accession": "Q9NPG1",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "FZD4",
+      "protein_name": "Frizzled-4",
+      "uniprot_accession": "Q9ULV1",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "WLS",
+      "protein_name": "Wntless protein",
+      "uniprot_accession": "Q5T9L3",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "PORCN",
+      "protein_name": "Protein-serine O-palmitoleoyltransferase porcupine",
+      "uniprot_accession": "Q9H237",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "AFM",
+      "protein_name": "Afamin",
+      "uniprot_accession": "P43652",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "NOTUM",
+      "protein_name": "Palmitoleoyl-protein carboxylesterase NOTUM",
+      "uniprot_accession": "Q6P988",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "GPC3",
+      "protein_name": "Glypican-3",
+      "uniprot_accession": "P51654",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "APCDD1",
+      "protein_name": "Protein APCDD1",
+      "uniprot_accession": "Q8J025",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "PKD1",
+      "protein_name": "Polycystin-1",
+      "uniprot_accession": "P98161",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "TNKS",
+      "protein_name": "Tankyrase-1",
+      "uniprot_accession": "O95271",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "TNKS2",
+      "protein_name": "Tankyrase-2",
+      "uniprot_accession": "Q9H2K2",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "PLK1",
+      "protein_name": "Polo-like kinase 1",
+      "uniprot_accession": "P53350",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "RNF146",
+      "protein_name": "E3 ubiquitin-protein ligase RNF146",
+      "uniprot_accession": "Q969M7",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "USP7",
+      "protein_name": "Ubiquitin carboxyl-terminal hydrolase 7",
+      "uniprot_accession": "Q93009",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "SOST",
+      "protein_name": "Sclerostin",
+      "uniprot_accession": "Q9BQB4",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "CAPRIN2",
+      "protein_name": "Caprin-2",
+      "uniprot_accession": "Q6IMN6",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "CDK14",
+      "protein_name": "Cyclin-dependent kinase 14",
+      "uniprot_accession": "O94921",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "CCNY",
+      "protein_name": "Cyclin-Y",
+      "uniprot_accession": "Q8N7R7",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "GRK5",
+      "protein_name": "G protein-coupled receptor kinase 5",
+      "uniprot_accession": "P34947",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "GRK6",
+      "protein_name": "G protein-coupled receptor kinase 6",
+      "uniprot_accession": "P43250",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "RSPO3",
+      "protein_name": "R-spondin-3",
+      "uniprot_accession": "Q9BXY4",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "KREMEN1",
+      "protein_name": "Kringle domain-containing transmembrane protein 1",
+      "uniprot_accession": "Q96MU8",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "MESD",
+      "protein_name": "Mesoderm development candidate 2",
+      "uniprot_accession": "Q14696",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "HSP90B1",
+      "protein_name": "Endoplasmin (GRP94)",
+      "uniprot_accession": "P14625",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "GPR37",
+      "protein_name": "G protein-coupled receptor 37",
+      "uniprot_accession": "O15354",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "AKT1",
+      "protein_name": "RAC-alpha serine/threonine-protein kinase",
+      "uniprot_accession": "P31749",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "MAPT",
+      "protein_name": "Microtubule-associated protein tau",
+      "uniprot_accession": "P10636",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "SNAI1",
+      "protein_name": "Zinc finger protein SNAI1",
+      "uniprot_accession": "O95863",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "BMAL1",
+      "protein_name": "Aryl hydrocarbon receptor nuclear translocator-like protein 1",
+      "uniprot_accession": "O00327",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "GSKIP",
+      "protein_name": "GSK3B-interacting protein",
+      "uniprot_accession": "Q9P0R6",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "RICTOR",
+      "protein_name": "Rapamycin-insensitive companion of mTOR",
+      "uniprot_accession": "Q6R327",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "JUP",
+      "protein_name": "Junction plakoglobin (gamma-catenin)",
+      "uniprot_accession": "P14923",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "TLE1",
+      "protein_name": "Transducin-like enhancer protein 1 (Groucho)",
+      "uniprot_accession": "Q04724",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "TLE2",
+      "protein_name": "Transducin-like enhancer protein 2",
+      "uniprot_accession": "Q04725",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "TLE3",
+      "protein_name": "Transducin-like enhancer protein 3",
+      "uniprot_accession": "Q04726",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "TLE4",
+      "protein_name": "Transducin-like enhancer protein 4",
+      "uniprot_accession": "Q04727",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "CTBP1",
+      "protein_name": "C-terminal-binding protein 1",
+      "uniprot_accession": "Q13363",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "CTBP2",
+      "protein_name": "C-terminal-binding protein 2",
+      "uniprot_accession": "P56545",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "NLK",
+      "protein_name": "Nemo-like kinase",
+      "uniprot_accession": "Q9UBE8",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "SMAD3",
+      "protein_name": "SMAD family member 3",
+      "uniprot_accession": "P84022",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "SMAD4",
+      "protein_name": "SMAD family member 4",
+      "uniprot_accession": "Q13485",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "WNT1",
+      "protein_name": "Wnt family member 1",
+      "uniprot_accession": "P04628",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "WNT2",
+      "protein_name": "Wnt family member 2",
+      "uniprot_accession": "P09544",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "WNT5B",
+      "protein_name": "Wnt family member 5B",
+      "uniprot_accession": "Q9H1J7",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "LGR5",
+      "protein_name": "Leucine rich repeat containing G protein-coupled receptor 5",
+      "uniprot_accession": "O75473",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "GNA11",
+      "protein_name": "G protein subunit alpha 11",
+      "uniprot_accession": "P29992",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "GNAQ",
+      "protein_name": "G protein subunit alpha q",
+      "uniprot_accession": "P50148",
+      "num_interactions": 1
+    },
+    {
+      "gene_name": "RYK",
+      "protein_name": "Receptor like tyrosine kinase",
+      "uniprot_accession": "P34925",
+      "num_interactions": 1
+    }
+  ]
+}

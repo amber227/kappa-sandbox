@@ -1,0 +1,989 @@
+{
+  "protein_identifier": {
+    "gene_name": "CSNK1A1",
+    "protein_name": "Casein kinase I isoform alpha",
+    "uniprot_accession": "P48729",
+    "organism": "Homo sapiens",
+    "organism_taxid": 9606
+  },
+  "sequence": {
+    "canonical_length": 337,
+    "canonical_sequence": "MASSSGSKAEFIVGGKYKLVRKIGSGSFGDIYLAINITNGEEVAVKLESQKARHPQLLYESKLYKILQGGVGIPHIRWYGQEKDYNVLVMDLLGPSLEDLFNFCSRRFTMKTVLMLADQMISRIEYVHTKNFIHRDIKPDNFLMGIGRHCNKLFLIDFGLAKKYRDNRTRQHIPYREDKNLTGTARYASINAHLGIEQSRRDDMESLGYVLMYFNRTSLPWQGLKAATKKQKYEKISEKKMSTPVEVLCKGFPAEFAMYLNYCRGLRFEEAPDYMYLRQLFRILFRTLNHQYDYTFDWTMLKQKAAQQAASSSGQGQQAQTPTGKQTDKTKSNMKGF",
+    "molecular_weight_da": 38915,
+    "isoforms": [
+      {
+        "isoform_id": "P48729-1",
+        "length": 337,
+        "description": "Canonical isoform (CK1 alpha)",
+        "sequence": "MASSSGSKAEFIVGGKYKLVRKIGSGSFGDIYLAINITNGEEVAVKLESQKARHPQLLYESKLYKILQGGVGIPHIRWYGQEKDYNVLVMDLLGPSLEDLFNFCSRRFTMKTVLMLADQMISRIEYVHTKNFIHRDIKPDNFLMGIGRHCNKLFLIDFGLAKKYRDNRTRQHIPYREDKNLTGTARYASINAHLGIEQSRRDDMESLGYVLMYFNRTSLPWQGLKAATKKQKYEKISEKKMSTPVEVLCKGFPAEFAMYLNYCRGLRFEEAPDYMYLRQLFRILFRTLNHQYDYTFDWTMLKQKAAQQAASSSGQGQQAQTPTGKQTDKTKSNMKGF"
+      },
+      {
+        "isoform_id": "CK1_alpha_L",
+        "length": 365,
+        "description": "Long splice variant with 28 amino acid insert in the C-terminal regulatory domain, exhibits different substrate kinetics",
+        "sequence": null
+      },
+      {
+        "isoform_id": "CK1_alpha_S",
+        "length": 349,
+        "description": "Short splice variant with 12 amino acid insert in the C-terminal regulatory domain",
+        "sequence": null
+      }
+    ]
+  },
+  "domains_and_motifs": [
+    {
+      "identifier": "Pkinase_1_17_285",
+      "name": "Protein kinase domain",
+      "type": "Domain",
+      "locations": [{"start": 17, "end": 285}],
+      "sequence": "KIGSGSFGDIYLAINITNGEEVAVKLESQKARHPQLLYESKLYKILQGGVGIPHIRWYGQEKDYNVLVMDLLGPSLEDLFNFCSRRFTMKTVLMLADQMISRIEYVHTKNFIHRDIKPDNFLMGIGRHCNKLFLIDFGLAKKYRDNRTRQHIPYREDKNLTGTARYASINAHLGIEQSRRDDMESLGYVLMYFNRTSLPWQGLKAATKKQKYEKISEKKMSTPVEVLCKGFPAEFAMYLNYCRGLRFEEAPDYMYLRQLFRILFRTLNHQYDYTFDWTMLKQKA",
+      "description": "Conserved serine/threonine protein kinase catalytic domain",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR000719",
+          "e_value": null,
+          "clan": null,
+          "notes": "Protein kinase domain"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF00069",
+          "e_value": null,
+          "clan": null,
+          "notes": "Pkinase"
+        },
+        {
+          "database": "SMART",
+          "accession": "SM00220",
+          "e_value": null,
+          "clan": null,
+          "notes": "S_TKc - Serine/Threonine protein kinases, catalytic domain"
+        },
+        {
+          "database": "PROSITE",
+          "accession": "PS50011",
+          "e_value": null,
+          "clan": null,
+          "notes": "PROTEIN_KINASE_DOM"
+        },
+        {
+          "database": "InterPro",
+          "accession": "IPR050235",
+          "e_value": null,
+          "clan": null,
+          "notes": "CK1_Ser-Thr_kinase-like"
+        }
+      ]
+    },
+    {
+      "identifier": "ATP_binding_46",
+      "name": "ATP binding site",
+      "type": "Binding_site",
+      "locations": [{"start": 46, "end": 46}],
+      "sequence": "K",
+      "description": "Catalytic lysine essential for ATP binding and kinase activity; K46R and K46A mutations abolish kinase activity",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "P48729",
+          "e_value": null,
+          "clan": null,
+          "notes": "ATP binding at position 46"
+        },
+        {
+          "database": "PROSITE",
+          "accession": "PS00107",
+          "e_value": null,
+          "clan": null,
+          "notes": "PROTEIN_KINASE_ATP"
+        }
+      ]
+    },
+    {
+      "identifier": "Active_site_ST_kinase",
+      "name": "Serine/threonine kinase active site",
+      "type": "Site",
+      "locations": [{"start": 158, "end": 170}],
+      "sequence": "HRDIKPDNFLMGI",
+      "description": "Active site signature for serine/threonine protein kinases",
+      "sources": [
+        {
+          "database": "PROSITE",
+          "accession": "PS00108",
+          "e_value": null,
+          "clan": null,
+          "notes": "PROTEIN_KINASE_ST"
+        }
+      ]
+    },
+    {
+      "identifier": "Disordered_309_337",
+      "name": "Disordered region",
+      "type": "Domain",
+      "locations": [{"start": 309, "end": 337}],
+      "sequence": "QQAASSSGQGQQAQTPTGKQTDKTKSNMKGF",
+      "description": "C-terminal regulatory domain with low complexity compositional bias",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "P48729",
+          "e_value": null,
+          "clan": null,
+          "notes": "Disordered and compositionally biased region (309-337); low complexity region (309-325)"
+        }
+      ]
+    }
+  ],
+  "structure": {
+    "experimental_structures": [
+      {
+        "pdb_id": "6GZD",
+        "method": "X-ray",
+        "resolution_angstrom": 2.28,
+        "chain": "A",
+        "coverage": {"start": 1, "end": 297},
+        "description": "Crystal structure of Human CSNK1A1 with inhibitor A86",
+        "ligands": ["LCI (4-[[4-[5-(cyclopropylmethyl)-1-methyl-pyrazol-4-yl]-5-fluoranyl-pyrimidin-2-yl]amino]cyclohexyl]azanium)", "TCE", "PGE", "PEG", "DMS", "EDO"],
+        "url": "https://www.rcsb.org/structure/6GZD"
+      },
+      {
+        "pdb_id": "5FQD",
+        "method": "X-ray",
+        "resolution_angstrom": 2.0,
+        "chain": "A",
+        "coverage": {"start": 1, "end": 297},
+        "description": "Structural basis of Lenalidomide induced CK1alpha degradation by the CRL4CRBN ubiquitin ligase; complex with DDB1-CRBN and lenalidomide",
+        "ligands": ["Lenalidomide"],
+        "url": "https://www.rcsb.org/structure/5FQD"
+      },
+      {
+        "pdb_id": "7WTT",
+        "method": "Cryo-EM",
+        "resolution_angstrom": 3.0,
+        "chain": "A",
+        "coverage": {"start": 1, "end": 297},
+        "description": "Cryo-EM structure of a human pre-40S ribosomal subunit with CK1",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/7WTT"
+      }
+    ],
+    "alphafold_prediction": {
+      "available": true,
+      "accession": "AF-P48729-F1",
+      "confidence_summary": "High confidence expected for kinase domain (17-285), lower confidence for disordered C-terminal region (309-337)",
+      "url": "https://alphafold.ebi.ac.uk/entry/P48729"
+    }
+  },
+  "post_translational_modifications": [
+    {
+      "type": "Phosphorylation",
+      "position": null,
+      "residue": "S/T",
+      "function": "Autophosphorylation at conserved threonine (T220) increases structural plasticity of substrate binding cleft and alters substrate specificity",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": null,
+      "residue": "S/T",
+      "function": "Phosphorylated by MTOR in response to mitogenic stimulation, leading to activation",
+      "evidence": "Experimental"
+    }
+  ],
+  "function": {
+    "uniprot_function": "Casein kinase I isoform alpha is a serine/threonine protein kinase that regulates signal transduction and several core cellular processes. Functions in the Wnt signaling axis as part of the beta-catenin destruction complex. Phosphorylates CTNNB1 at Ser-45, priming it for subsequent sequential phosphorylation by GSK3A/GSK3B at Thr-41, Ser-37, and Ser-33, leading to ubiquitination by BTRC and proteasomal degradation. Also functions in circadian rhythm regulation by phosphorylating PER1 and PER2, stimulating their degradation and modulating circadian period length. Plays roles in p53-MDM2 regulation through phosphorylation cascades, nucleo-cytoplasmic shuttling of transcription factors, DNA repair, and DNA transcription. Substrate specificity: preferentially phosphorylates serine/threonine residues in canonical motif pS/T-X(n=2-4)-pS/T or noncanonical motif pS/T-X-pS/T, indicating preference for primed substrates.",
+    "catalytic_activity": "ATP + [protein]-L-serine = ADP + [protein]-O-phospho-L-serine; ATP + [protein]-L-threonine = ADP + [protein]-O-phospho-L-threonine",
+    "subcellular_location": ["Cytosol", "Nucleus", "Cytoskeleton", "Centrosome", "Nuclear speck", "Kinetochore fibers (during mitosis)"],
+    "tissue_specificity": "Low tissue specificity with broad expression across tissues; cell type enhancement in keratinocytes",
+    "go_annotations": {
+      "molecular_function": [
+        {
+          "go_id": "GO:0004672",
+          "term": "protein kinase activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0004674",
+          "term": "protein serine/threonine kinase activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005524",
+          "term": "ATP binding",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0005515",
+          "term": "protein binding",
+          "evidence_code": "IPI"
+        }
+      ],
+      "biological_process": [
+        {
+          "go_id": "GO:0006468",
+          "term": "protein phosphorylation",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0018105",
+          "term": "peptidyl-serine phosphorylation",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0090090",
+          "term": "negative regulation of canonical Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0043161",
+          "term": "proteasomal ubiquitin-dependent protein catabolic process",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0007165",
+          "term": "signal transduction",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0045732",
+          "term": "positive regulation of protein catabolic process",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0032091",
+          "term": "negative regulation of protein binding",
+          "evidence_code": "IMP"
+        }
+      ],
+      "cellular_component": [
+        {
+          "go_id": "GO:0005737",
+          "term": "cytoplasm",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005634",
+          "term": "nucleus",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005856",
+          "term": "cytoskeleton",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005829",
+          "term": "cytosol",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005813",
+          "term": "centrosome",
+          "evidence_code": "IDA"
+        }
+      ]
+    }
+  },
+  "interactions": [
+    {
+      "partner": {
+        "gene_name": "CTNNB1",
+        "protein_name": "Beta-catenin",
+        "uniprot_accession": "P35222"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Phosphorylation",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "Pkinase_1_17_285",
+            "residues": [],
+            "residue_names": [],
+            "description": "Kinase domain phosphorylates beta-catenin"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Phosphodegron",
+            "residues": [45],
+            "description": "Ser-45 phosphorylation by CK1alpha primes for GSK3 phosphorylation"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": null,
+        "kd_range_m": null,
+        "kon_m1s1": null,
+        "koff_s1": null,
+        "kcat_s1": null,
+        "km_m": 1e-7,
+        "ic50_m": null,
+        "ec50_m": null,
+        "measurement_method": "In vitro kinase assay",
+        "conditions": "Standard kinase assay conditions",
+        "notes": "Km ~100 nM for full-length beta-catenin, several orders of magnitude lower than peptide substrates, indicating high substrate specificity"
+      },
+      "evidence": [
+        {
+          "source": "UniProt",
+          "combined_score": null,
+          "evidence_types": ["experimental"],
+          "url": "https://www.uniprot.org/uniprotkb/P48729/entry"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "textmining"],
+          "url": "https://string-db.org/network/9606.ENSP00000261798"
+        },
+        {
+          "source": "Literature",
+          "pmid": null,
+          "description": "CK1alpha phosphorylates beta-catenin at Ser-45 as part of destruction complex",
+          "notes": "Priming phosphorylation for GSK3beta-dependent phosphorylation cascade"
+        }
+      ],
+      "functional_effect": "Inhibitory",
+      "pathway_context": "Part of beta-catenin destruction complex in canonical Wnt signaling; promotes proteasomal degradation"
+    },
+    {
+      "partner": {
+        "gene_name": "GSK3B",
+        "protein_name": "Glycogen synthase kinase-3 beta",
+        "uniprot_accession": "P49841"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": null,
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "coexpression"],
+          "url": "https://string-db.org/network/9606.ENSP00000261798"
+        },
+        {
+          "source": "BioGRID",
+          "experimental_system": "Co-immunoprecipitation",
+          "pmid": null,
+          "throughput": "Low",
+          "interaction_id": null
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "Both kinases are components of the beta-catenin destruction complex"
+    },
+    {
+      "partner": {
+        "gene_name": "GSK3A",
+        "protein_name": "Glycogen synthase kinase-3 alpha",
+        "uniprot_accession": "P49840"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": null,
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.998,
+          "evidence_types": ["experimental", "database"],
+          "url": "https://string-db.org/network/9606.ENSP00000261798"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "Both kinases are components of the beta-catenin destruction complex"
+    },
+    {
+      "partner": {
+        "gene_name": "APC",
+        "protein_name": "Adenomatous polyposis coli protein",
+        "uniprot_accession": "P25054"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": null,
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "textmining"],
+          "url": "https://string-db.org/network/9606.ENSP00000261798"
+        },
+        {
+          "source": "Literature",
+          "pmid": null,
+          "description": "APC is a scaffold protein in the destruction complex",
+          "notes": "Forms complex with AXIN, CSNK1A1, and GSK3B"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "APC serves as scaffold in beta-catenin destruction complex"
+    },
+    {
+      "partner": {
+        "gene_name": "AXIN1",
+        "protein_name": "Axin-1",
+        "uniprot_accession": "O15169"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": null,
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "textmining"],
+          "url": "https://string-db.org/network/9606.ENSP00000261798"
+        },
+        {
+          "source": "Literature",
+          "pmid": null,
+          "description": "AXIN1 is a scaffold protein that recruits kinases to destruction complex",
+          "notes": "CSNK1A1 binds to AXIN1 in the destruction complex"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "AXIN1 serves as central scaffold in beta-catenin destruction complex"
+    },
+    {
+      "partner": {
+        "gene_name": "AXIN2",
+        "protein_name": "Axin-2",
+        "uniprot_accession": "Q9Y2T1"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": null,
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.997,
+          "evidence_types": ["experimental", "database"],
+          "url": "https://string-db.org/network/9606.ENSP00000261798"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "AXIN2 serves as alternative scaffold in beta-catenin destruction complex"
+    },
+    {
+      "partner": {
+        "gene_name": "BTRC",
+        "protein_name": "F-box/WD repeat-containing protein 1A (beta-TrCP)",
+        "uniprot_accession": "Q9Y297"
+      },
+      "interaction_type": "Regulatory",
+      "mechanism": "Indirect interaction",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": null,
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": null,
+          "description": "CSNK1A1 phosphorylates substrates to create beta-TrCP recognition motifs",
+          "notes": "CK1alpha phosphorylation primes substrates (CTNNB1, CDC25A, DEPTOR) for beta-TrCP-mediated ubiquitination"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "CSNK1A1 phosphorylation creates phosphodegrons recognized by beta-TrCP E3 ubiquitin ligase"
+    },
+    {
+      "partner": {
+        "gene_name": "DVL1",
+        "protein_name": "Dishevelled-1",
+        "uniprot_accession": "O14640"
+      },
+      "interaction_type": "Regulatory",
+      "mechanism": "Indirect interaction",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": null,
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": null,
+          "description": "DVL disrupts destruction complex upon Wnt stimulation",
+          "notes": "DVL associates with AXIN, relieving inhibitory effects of destruction complex containing CSNK1A1"
+        }
+      ],
+      "functional_effect": "Inhibitory",
+      "pathway_context": "Wnt signaling activation; DVL disrupts AXIN-mediated destruction complex assembly"
+    },
+    {
+      "partner": {
+        "gene_name": "PER1",
+        "protein_name": "Period circadian protein homolog 1",
+        "uniprot_accession": "O15534"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Phosphorylation",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "Pkinase_1_17_285",
+            "residues": [],
+            "residue_names": [],
+            "description": "Kinase domain phosphorylates PER1"
+          }
+        ],
+        "partner_protein": [],
+        "site_specific": true
+      },
+      "kinetics": null,
+      "evidence": [
+        {
+          "source": "UniProt",
+          "combined_score": null,
+          "evidence_types": ["experimental"],
+          "url": "https://www.uniprot.org/uniprotkb/P48729/entry"
+        },
+        {
+          "source": "Literature",
+          "pmid": null,
+          "description": "CK1alpha phosphorylates PER1, stimulating its degradation",
+          "notes": "Modulates circadian period length"
+        }
+      ],
+      "functional_effect": "Inhibitory",
+      "pathway_context": "Circadian rhythm regulation; phosphorylation promotes PER degradation"
+    },
+    {
+      "partner": {
+        "gene_name": "PER2",
+        "protein_name": "Period circadian protein homolog 2",
+        "uniprot_accession": "O15055"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Phosphorylation",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "Pkinase_1_17_285",
+            "residues": [],
+            "residue_names": [],
+            "description": "Kinase domain phosphorylates PER2"
+          }
+        ],
+        "partner_protein": [],
+        "site_specific": true
+      },
+      "kinetics": null,
+      "evidence": [
+        {
+          "source": "UniProt",
+          "combined_score": null,
+          "evidence_types": ["experimental"],
+          "url": "https://www.uniprot.org/uniprotkb/P48729/entry"
+        },
+        {
+          "source": "Literature",
+          "pmid": null,
+          "description": "CK1alpha phosphorylates PER2, modulating circadian period",
+          "notes": "Multisite phosphorylation promotes degradation via ubiquitin-proteasome pathway"
+        }
+      ],
+      "functional_effect": "Inhibitory",
+      "pathway_context": "Circadian rhythm regulation; phosphorylation promotes PER degradation and affects PER:CRY complex dynamics"
+    },
+    {
+      "partner": {
+        "gene_name": "TP53",
+        "protein_name": "Tumor protein p53",
+        "uniprot_accession": "P04637"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Phosphorylation",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "Pkinase_1_17_285",
+            "residues": [],
+            "residue_names": [],
+            "description": "Kinase domain involved in p53 phosphorylation cascade"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "N-terminal transactivation domain",
+            "residues": [18],
+            "description": "Thr-18 phosphorylation via casein kinase 1-mediated cascade"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": null,
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": null,
+          "description": "Casein kinase 1-like kinase mediates p53 T18 phosphorylation",
+          "notes": "Damage-mediated phosphorylation cascade; requires prior S15 phosphorylation; reduces MDM2 binding by 19-22 fold"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "p53 stabilization after DNA damage; phosphorylation inhibits MDM2 binding"
+    },
+    {
+      "partner": {
+        "gene_name": "MDM2",
+        "protein_name": "E3 ubiquitin-protein ligase Mdm2",
+        "uniprot_accession": "Q00987"
+      },
+      "interaction_type": "Regulatory",
+      "mechanism": "Phosphorylation",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": null,
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": null,
+          "description": "CK1alpha plays central role in mediating MDM2 control of p53 stability",
+          "notes": "Through MDM2 phosphorylation activity or interaction, may promote MDM2-p53 binding under normal conditions"
+        },
+        {
+          "source": "IntAct",
+          "detection_method": "Experimental",
+          "pmid": null,
+          "interaction_accession": null
+        }
+      ],
+      "functional_effect": "Regulatory",
+      "pathway_context": "p53-MDM2 regulatory axis; modulates p53 stability"
+    },
+    {
+      "partner": {
+        "gene_name": "CRBN",
+        "protein_name": "Protein cereblon",
+        "uniprot_accession": "Q96SW2"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "Pkinase_1_17_285",
+            "residues": [],
+            "residue_names": [],
+            "description": "Beta-hairpin-loop in kinase N-lobe binds to CRBN-lenalidomide complex"
+          }
+        ],
+        "partner_protein": [],
+        "site_specific": true
+      },
+      "kinetics": null,
+      "evidence": [
+        {
+          "source": "PDB",
+          "combined_score": null,
+          "evidence_types": ["X-ray crystallography"],
+          "url": "https://www.rcsb.org/structure/5FQD"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.997,
+          "evidence_types": ["experimental"],
+          "url": "https://string-db.org/network/9606.ENSP00000261798"
+        },
+        {
+          "source": "Literature",
+          "pmid": null,
+          "description": "Lenalidomide induces CSNK1A1 degradation via CRBN",
+          "notes": "CRBN and lenalidomide jointly provide binding interface for CK1alpha; leads to ubiquitination and degradation in del(5q) MDS"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "Lenalidomide-induced protein degradation; therapeutic mechanism in del(5q) MDS"
+    },
+    {
+      "partner": {
+        "gene_name": "AMER1",
+        "protein_name": "APC membrane recruitment protein 1",
+        "uniprot_accession": "Q5JTV8"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": null,
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.995,
+          "evidence_types": ["experimental", "database"],
+          "url": "https://string-db.org/network/9606.ENSP00000261798"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "Regulator of canonical Wnt signaling; interacts with destruction complex"
+    },
+    {
+      "partner": {
+        "gene_name": "LEF1",
+        "protein_name": "Lymphoid enhancer-binding factor 1",
+        "uniprot_accession": "Q9UJU2"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Phosphorylation",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": null,
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": null,
+          "description": "CK1 phosphorylation negatively influences LEF-1/beta-catenin complex formation",
+          "notes": "Disrupts LEF-1/beta-catenin transcription complex"
+        }
+      ],
+      "functional_effect": "Inhibitory",
+      "pathway_context": "Wnt signaling transcriptional regulation; disrupts beta-catenin transcriptional activity"
+    },
+    {
+      "partner": {
+        "gene_name": "CDC25A",
+        "protein_name": "M-phase inducer phosphatase 1",
+        "uniprot_accession": "P30304"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Phosphorylation",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "Pkinase_1_17_285",
+            "residues": [],
+            "residue_names": [],
+            "description": "Kinase domain phosphorylates CDC25A"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Phosphodegron",
+            "residues": [79, 82],
+            "description": "Ser-79 and Ser-82 phosphorylation creates beta-TrCP binding site"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": null,
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": null,
+          "description": "CK1alpha phosphorylates CDC25A at S79 and S82",
+          "notes": "Stimulates beta-TrCP binding for ubiquitin-mediated proteolysis"
+        }
+      ],
+      "functional_effect": "Inhibitory",
+      "pathway_context": "Cell cycle regulation; promotes CDC25A degradation"
+    },
+    {
+      "partner": {
+        "gene_name": "DEPTOR",
+        "protein_name": "DEP domain-containing mTOR-interacting protein",
+        "uniprot_accession": "Q8TB45"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Phosphorylation",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "Pkinase_1_17_285",
+            "residues": [],
+            "residue_names": [],
+            "description": "Kinase domain phosphorylates DEPTOR"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Phosphodegron",
+            "residues": [286, 287, 291],
+            "description": "Ser-286/287/291 phosphorylation after mTOR priming"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": null,
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": null,
+          "description": "CK1alpha phosphorylates DEPTOR at S286/287/291 after priming by mTOR",
+          "notes": "Leads to beta-TrCP-mediated degradation"
+        }
+      ],
+      "functional_effect": "Inhibitory",
+      "pathway_context": "mTOR signaling; promotes degradation of mTOR inhibitor DEPTOR"
+    }
+  ],
+  "pathways": {
+    "reactome": [
+      {
+        "pathway_id": "R-HSA-195253",
+        "pathway_name": "Degradation of beta-catenin by the destruction complex",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-195253"
+      },
+      {
+        "pathway_id": "R-HSA-196299",
+        "pathway_name": "Beta-catenin phosphorylation cascade",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-196299"
+      },
+      {
+        "pathway_id": "R-HSA-4641262",
+        "pathway_name": "Disassembly of the destruction complex and recruitment of AXIN to the membrane",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-4641262"
+      },
+      {
+        "pathway_id": "R-HSA-5339716",
+        "pathway_name": "Signaling by GSK3beta mutants",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-5339716"
+      },
+      {
+        "pathway_id": "R-HSA-5358747",
+        "pathway_name": "CTNNB1 S33 mutants aren't phosphorylated",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-5358747"
+      }
+    ],
+    "kegg": [
+      {
+        "pathway_id": "hsa04710",
+        "pathway_name": "Circadian rhythm",
+        "url": "https://www.genome.jp/entry/pathway+hsa04710"
+      },
+      {
+        "pathway_id": "hsa04310",
+        "pathway_name": "Wnt signaling pathway",
+        "url": "https://www.genome.jp/entry/pathway+hsa04310"
+      }
+    ],
+    "pathway_role_summary": "CSNK1A1 is a critical negative regulator of Wnt/beta-catenin signaling through its role in the beta-catenin destruction complex, where it initiates the phosphorylation cascade leading to beta-catenin degradation. It also regulates circadian rhythm by phosphorylating PER proteins to control their degradation and modulate circadian period length. Additionally involved in p53 regulation, cell cycle control, and mTOR signaling."
+  },
+  "disease_associations": [
+    {
+      "disease": "Myelodysplastic syndrome with del(5q)",
+      "omim_id": null,
+      "mutation_type": "Somatic/Deletion",
+      "description": "CSNK1A1 is located in the common deleted region for del(5q) MDS. Haploinsufficient expression sensitizes cells to lenalidomide therapy, which induces CRBN-mediated degradation of remaining CK1alpha protein."
+    },
+    {
+      "disease": "Alzheimer's disease",
+      "omim_id": null,
+      "mutation_type": "Associated biomarker",
+      "description": "CSNK1A1 serves as a biomarker of Alzheimer's disease"
+    },
+    {
+      "disease": "Inclusion body myositis",
+      "omim_id": null,
+      "mutation_type": "Associated biomarker",
+      "description": "CSNK1A1 serves as a biomarker of inclusion body myositis"
+    },
+    {
+      "disease": "Soft tissue sarcoma",
+      "omim_id": null,
+      "mutation_type": "Somatic mutations",
+      "description": "Pathogenic or disease-associated findings link CSNK1A1 to soft tissue sarcoma"
+    },
+    {
+      "disease": "Ovarian cancer",
+      "omim_id": null,
+      "mutation_type": "Somatic mutations",
+      "description": "Pathogenic or disease-associated findings link CSNK1A1 to ovarian cancer"
+    }
+  ],
+  "cross_references": {
+    "ncbi_gene_id": "1452",
+    "ensembl_gene_id": "ENSG00000113712",
+    "refseq_protein": ["NP_001883.1"],
+    "refseq_nucleotide": ["NM_001892.5"],
+    "hgnc_id": "HGNC:2451",
+    "omim_gene": "600505"
+  },
+  "metadata": {
+    "generated_at": "2026-10-15T00:00:00Z",
+    "queried_databases": [
+      "UniProt",
+      "NCBI Gene",
+      "InterPro",
+      "Pfam",
+      "PROSITE",
+      "SMART",
+      "PDB",
+      "AlphaFold",
+      "STRING",
+      "BioGRID",
+      "IntAct",
+      "Reactome",
+      "KEGG",
+      "GO",
+      "GeneCards",
+      "Human Protein Atlas"
+    ],
+    "data_quality_notes": "High-quality data available for core kinase domain structure and Wnt signaling interactions. Limited quantitative kinetic data available for most protein-protein interactions (only Km ~100 nM for beta-catenin phosphorylation found). Specific residues for autophosphorylation sites and some PTMs not fully mapped. Alternative splice variant sequences incomplete in public databases. Good structural coverage with multiple PDB structures and AlphaFold prediction.",
+    "modeling_relevance_summary": "CSNK1A1 is essential for modeling canonical Wnt signaling as it initiates the beta-catenin phosphorylation cascade in the destruction complex. Its enzymatic activity (Km ~100 nM for beta-catenin) makes it a key control point for beta-catenin stability and downstream transcriptional responses. Also critical for circadian rhythm models involving PER/CRY dynamics. Autophosphorylation-mediated regulation of substrate specificity adds complexity to kinetic modeling."
+  }
+}

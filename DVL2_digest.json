@@ -1,0 +1,1238 @@
+{
+  "protein_identifier": {
+    "gene_name": "DVL2",
+    "protein_name": "Segment polarity protein dishevelled homolog DVL-2",
+    "uniprot_accession": "O14641",
+    "organism": "Homo sapiens",
+    "organism_taxid": 9606
+  },
+  "sequence": {
+    "canonical_length": 736,
+    "canonical_sequence": "MAGSSTGGGGVGETKVIYHLDEEETPYLVKIPVPAERITLGDFKSVLQRPAGAKYFFKSMDQDFGVVKEEISDDNARLPCFNGRVVSWLVSSDNPQPEMAPPVHEPRAELAPPAPPLPPLPPERTSGIGDSRPPSFHPNVSSSHENLEPETETESVVSLRRERPRRRDSSEHGAGGHRTGGPSRLERHLAGYESSSTLMTSELESTSLGDSDEEDTMSRFSSSTEQSSASRLLKRHRRRRKQRPPRLERTSSFSSVTDSTMSLNIITVTLNMEKYNFLGISIVGQSNERGDGGIYIGSIMKGGAVAADGRIEPGDMLLQVNDMNFENMSNDDAVRVLRDIVHKPGPIVLTVAKCWDPSPQAYFTLPRNEPIQPIDPAAWVSHSAALTGTFPAYPGSSSMSTITSGSSLPDGCEGRGLSVHTDMASVTKAMAAPESGLEVRDRMWLKITIPNAFLGSDVVDWLYHHVEGFPERREARKYASGLLKAGLIRHTVNKITFSEQCYYVFGDLSGGCESYLVNLSLNDNDGSSGASDQDTLAPLPGATPWPLLPTFSYQYPAPHPYSPQPPPYHELSSYTYGGGSASSQHSEGSRSSGSTRSDGGAGRTGRPEERAPESKSGSGSESEPSSRGGSLRRGGEASGTSDGGPPPSRGSTGGAPNLRAHPGLHPYGPPPGMALPYNPMMVVMMPPPPPPVPPAVQPPGAPPVRDLGSVPPELTASRQSFHMAMGNPSEFFVDVM",
+    "molecular_weight_da": 78948,
+    "isoforms": []
+  },
+  "domains_and_motifs": [
+    {
+      "identifier": "DIX_11_93",
+      "name": "DIX domain",
+      "type": "Domain",
+      "locations": [{"start": 11, "end": 93}],
+      "sequence": "ETKVIYHLDEEETPYLVKIPVPAERITLGDFKSVLQRPAGAKYFFKSMDQDFGVVKEEISDDNARLPCFNGRVVSWLVSSDNPQPEM",
+      "description": "Dishevelled and Axin domain. Mediates homo- and hetero-oligomerization with other DIX domain-containing proteins (DVL1, DVL3, AXIN1, AXIN2). Critical for both canonical and non-canonical Wnt signaling. Forms dynamic head-to-tail polymers that are important for Wnt signaling transduction.",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR001158",
+          "notes": "DIX domain"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF00778",
+          "notes": "DIX domain"
+        },
+        {
+          "database": "UniProt",
+          "notes": "Domain annotation"
+        }
+      ]
+    },
+    {
+      "identifier": "PDZ_267_339",
+      "name": "PDZ domain",
+      "type": "Domain",
+      "locations": [{"start": 267, "end": 339}],
+      "sequence": "VNMEKYNFLGISIVGQSNERGDGGIYIGSIMKGGAVAADGRIEPGDMLLQVNDMNFENMSNDDAVRVLRDIVHKPGPIV",
+      "description": "PDZ domain (Post synaptic density protein, Drosophila disc large tumor suppressor, and Zonula occludens-1 protein). Mediates binding to Frizzled receptors (FZD) via the KTxxxW motif, WGEF internal peptide motif, and VANGL2 peptides. Critical for canonical Wnt pathway activation and protein-protein interactions.",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR001478",
+          "notes": "PDZ domain"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF00595",
+          "notes": "PDZ domain"
+        },
+        {
+          "database": "UniProt",
+          "notes": "Domain annotation"
+        },
+        {
+          "database": "PDB",
+          "accession": "3CBY",
+          "notes": "Crystal structure of DVL2 PDZ domain in complex with inhibitory peptide, 1.50 Å resolution"
+        },
+        {
+          "database": "PDB",
+          "accession": "8YR7",
+          "notes": "Crystal structure of DVL2 PDZ domain with WGEF peptide motif, 3.0 Å resolution"
+        }
+      ]
+    },
+    {
+      "identifier": "NLS_344_351",
+      "name": "Nuclear localization signal",
+      "type": "NLS",
+      "locations": [{"start": 344, "end": 351}],
+      "sequence": "IIXLTXXX",
+      "description": "Conserved nuclear localization signal (Ile-X-Leu-Thr motif) located after the PDZ domain. Enables DVL2 nuclear translocation for interaction with beta-catenin-TCF transcriptional complexes.",
+      "sources": [
+        {
+          "database": "Literature",
+          "notes": "Conserved NLS motif identified in DVL proteins"
+        }
+      ]
+    },
+    {
+      "identifier": "DEP_433_507",
+      "name": "DEP domain",
+      "type": "Domain",
+      "locations": [{"start": 433, "end": 507}],
+      "sequence": "RDRMWLKITIPNAFLGSDVVDWLYHHVEGFPERREARKYASGLLKAGLIRHTVNKITFSEQCYYVFGDLSGGCESYLVNL",
+      "description": "Dishevelled, Egl-10, and Pleckstrin domain. Required for Wnt-beta-catenin signaling in mammalian cells. Binds phosphatidic acid and mediates membrane localization. Important for both canonical and non-canonical (PCP) Wnt pathways.",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR000591",
+          "notes": "DEP domain"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF00610",
+          "notes": "DEP domain"
+        },
+        {
+          "database": "UniProt",
+          "notes": "Domain annotation"
+        }
+      ]
+    },
+    {
+      "identifier": "PGXPP_degron_555_559",
+      "name": "PGXPP degron motif",
+      "type": "Degron",
+      "locations": [{"start": 555, "end": 559}],
+      "sequence": "PGAPP",
+      "description": "Degron motif (PGAPP in DVL2, variant of PGGPP consensus) that mediates binding to KLHL12 E3 ligase for ubiquitination and degradation. The second glycine is substituted with alanine in DVL2/DVL3 compared to DVL1.",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "PMID:32518250",
+          "notes": "Identification of PGXPP degron motif in dishevelled, Open Biology 2020"
+        },
+        {
+          "database": "ELM",
+          "accession": "DEG_Kelch_KLHL12_1",
+          "notes": "KLHL12 degron motif"
+        }
+      ]
+    },
+    {
+      "identifier": "PY_motif_565_568",
+      "name": "PY motif",
+      "type": "Motif",
+      "locations": [{"start": 565, "end": 568}],
+      "sequence": "PPXY",
+      "description": "Proline-rich PY motif (PPXY) in C-terminus. Mediates binding to WW domain-containing proteins including WWP1 E3 ligase and USP9X deubiquitinase. Critical for regulating DVL2 ubiquitination status.",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "PMID:31345641",
+          "notes": "USP9X deubiquitylates DVL2 to regulate WNT pathway specification"
+        },
+        {
+          "database": "UniProt",
+          "notes": "Motif annotation"
+        }
+      ]
+    },
+    {
+      "identifier": "Proline_rich_C_terminus",
+      "name": "Proline-rich C-terminal region",
+      "type": "Region",
+      "locations": [{"start": 508, "end": 736}],
+      "sequence": "SLNDNDGSSGASDQDTLAPLPGATPWPLLPTFSYQYPAPHPYSPQPPPYHELSSYTYGGGSASSQHSEGSRSSGSTRSDGGAGRTGRPEERAPESKSGSGSESEPSSRGGSLRRGGEASGTSDGGPPPSRGSTGGAPNLRAHPGLHPYGPPPGMALPYNPMMVVMMPPPPPPVPPAVQPPGAPPVRDLGSVPPELTASRQSFHMAMGNPSEFFVDVM",
+      "description": "Intrinsically disordered proline-rich C-terminal region. Contains multiple phosphorylation sites for CK1epsilon, CK2, MARK kinases. Important for protein-protein interactions and regulation of DVL2 activity and localization. Contains PY motif and PGXPP degron.",
+      "sources": [
+        {
+          "database": "UniProt",
+          "notes": "Region annotation"
+        },
+        {
+          "database": "Literature",
+          "notes": "~15% of DVL2 sequence consists of S/T/Y residues that can be phosphorylated"
+        }
+      ]
+    }
+  ],
+  "structure": {
+    "experimental_structures": [
+      {
+        "pdb_id": "6VCC",
+        "method": "Cryo-EM",
+        "resolution_angstrom": 3.6,
+        "chain": "A",
+        "coverage": {"start": 11, "end": 93},
+        "description": "Cryo-EM structure of DVL2 DIX domain filament",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/6VCC"
+      },
+      {
+        "pdb_id": "3CBY",
+        "method": "X-ray",
+        "resolution_angstrom": 1.5,
+        "chain": "A",
+        "coverage": {"start": 267, "end": 339},
+        "description": "DVL2 PDZ domain in complex with N1 inhibitory peptide",
+        "ligands": ["peptide inhibitor"],
+        "url": "https://www.rcsb.org/structure/3CBY"
+      },
+      {
+        "pdb_id": "3CBZ",
+        "method": "X-ray",
+        "resolution_angstrom": 3.0,
+        "chain": "A",
+        "coverage": {"start": 267, "end": 339},
+        "description": "DVL2 PDZ domain in complex with N2 inhibitory peptide",
+        "ligands": ["peptide inhibitor"],
+        "url": "https://www.rcsb.org/structure/3CBZ"
+      },
+      {
+        "pdb_id": "8YR7",
+        "method": "X-ray",
+        "resolution_angstrom": 3.0,
+        "chain": "A",
+        "coverage": {"start": 267, "end": 339},
+        "description": "DVL2 PDZ domain fused with WGEF internal peptide motif (349-GSTFSLWQDIP-359)",
+        "ligands": ["WGEF peptide"],
+        "url": "https://www.rcsb.org/structure/8YR7"
+      },
+      {
+        "pdb_id": "2F0A",
+        "method": "X-ray",
+        "resolution_angstrom": 1.8,
+        "chain": "A",
+        "coverage": {"start": 267, "end": 339},
+        "description": "Crystal structure of monomeric uncomplexed Xenopus dishevelled PDZ domain (homologous to human DVL2)",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/2F0A"
+      }
+    ],
+    "alphafold_prediction": {
+      "available": true,
+      "accession": "AF-O14641-F1",
+      "confidence_summary": "High confidence for DIX, PDZ, and DEP structured domains. Low confidence for intrinsically disordered regions including N-terminus and C-terminal proline-rich region.",
+      "url": "https://alphafold.ebi.ac.uk/entry/O14641"
+    }
+  },
+  "post_translational_modifications": [
+    {
+      "type": "Phosphorylation",
+      "position": 224,
+      "residue": "T",
+      "function": "Activating - CK1epsilon-mediated phosphorylation at Thr224 promotes canonical Wnt signaling",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": null,
+      "residue": "S/T/Y",
+      "function": "Regulatory - Over 50 phosphorylation sites identified across the protein, particularly in central region and C-terminus. Phosphorylation by CK1epsilon, CK2, MARK2, CSNK1D regulates DVL2 activity, localization, and pathway specification",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Ubiquitination",
+      "position": null,
+      "residue": "K",
+      "function": "Degradation - KLHL12-mediated polyubiquitination targets DVL2 for proteasomal degradation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Ubiquitination",
+      "position": null,
+      "residue": "K",
+      "function": "Stabilizing/Regulatory - WWP1-mediated K27-linked ubiquitination stabilizes DVL2 and regulates pathway choice. USP9X deubiquitinase reverses WWP1 ubiquitination",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Acetylation",
+      "position": null,
+      "residue": "K",
+      "function": "Regulatory - Multiple lysine residues show differential acetylation in response to oxygen tension",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Polyglutamylation",
+      "position": null,
+      "residue": "E",
+      "function": "Regulatory - Regulates phase separation and signaling of DVL2",
+      "evidence": "Experimental"
+    }
+  ],
+  "function": {
+    "uniprot_function": "Mediates the Wnt signaling pathway. Participates both in the canonical and non-canonical Wnt signaling pathways by binding to the cytoplasmic C-terminus of frizzled family members (FZD) and transducing the Wnt signal to downstream effectors. Involved in the signal transduction pathways mediated by multiple Wnt genes. Plays a role in the planar cell polarity (PCP) pathway, regulating convergent extension movements and neural tube closure. Functions as a cytoplasmic adaptor protein that promotes beta-catenin stabilization and TCF/LEF-dependent transcriptional activation in canonical Wnt signaling.",
+    "catalytic_activity": "Not applicable - DVL2 is an adaptor/scaffold protein, not an enzyme",
+    "subcellular_location": [
+      "Cytoplasm",
+      "Cytosol",
+      "Nucleus",
+      "Cell membrane (peripheral, cytoplasmic side)",
+      "Cytoplasmic vesicle"
+    ],
+    "tissue_specificity": "Low tissue specificity - broadly expressed across many tissues including brain, heart, lung, kidney, skeletal muscle. Ubiquitous cytoplasmic expression with no strong tissue enrichment.",
+    "go_annotations": {
+      "molecular_function": [
+        {
+          "go_id": "GO:0005515",
+          "term": "protein binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0004871",
+          "term": "signal transducer activity",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0030159",
+          "term": "signaling receptor complex adaptor activity",
+          "evidence_code": "IEA"
+        }
+      ],
+      "biological_process": [
+        {
+          "go_id": "GO:0016055",
+          "term": "Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0060070",
+          "term": "canonical Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0035567",
+          "term": "non-canonical Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0001736",
+          "term": "establishment of planar polarity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0007275",
+          "term": "multicellular organism development",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0001738",
+          "term": "morphogenesis of a polarized epithelium",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0021772",
+          "term": "olfactory bulb development",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0045893",
+          "term": "positive regulation of transcription, DNA-templated",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0048259",
+          "term": "regulation of receptor-mediated endocytosis",
+          "evidence_code": "IDA"
+        }
+      ],
+      "cellular_component": [
+        {
+          "go_id": "GO:0005737",
+          "term": "cytoplasm",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005634",
+          "term": "nucleus",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005886",
+          "term": "plasma membrane",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005829",
+          "term": "cytosol",
+          "evidence_code": "IDA"
+        }
+      ]
+    }
+  },
+  "interactions": [
+    {
+      "partner": {
+        "gene_name": "FZD1-10",
+        "protein_name": "Frizzled receptors (family)",
+        "uniprot_accession": "Various"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "PDZ_267_339",
+            "residues": [],
+            "residue_names": [],
+            "description": "PDZ domain binds to FZD C-terminal KTxxxW motif and ICL3 regions"
+          },
+          {
+            "domain_motif_id": "DEP_433_507",
+            "residues": [],
+            "residue_names": [],
+            "description": "DEP domain also interacts with FZD KTxxxW motif region"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "KTxxxW motif",
+            "residues": [],
+            "description": "Conserved C-terminal motif in Frizzled receptors"
+          },
+          {
+            "domain_motif_name": "ICL3",
+            "residues": [],
+            "description": "Intracellular loop 3"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "Multiple",
+          "description": "PDZ and DEP domains bind FZD through KTxxxW motif and ICL3",
+          "notes": "Upon Wnt activation, phosphorylated DVL2 translocates to plasma membrane via PDZ-FZD interaction"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "DVL2 recruitment to FZD receptors initiates Wnt signaling cascade upon Wnt ligand binding"
+    },
+    {
+      "partner": {
+        "gene_name": "AXIN1",
+        "protein_name": "Axin-1",
+        "uniprot_accession": "O15169"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DIX_11_93",
+            "residues": [],
+            "residue_names": [],
+            "description": "DIX domain mediates head-to-tail polymerization with AXIN1 DIX domain"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "DIX domain (DAX)",
+            "residues": [],
+            "description": "C-terminal DIX/DAX domain of AXIN1"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "notes": "Low-affinity interaction. DVL2 DIX polymerization increases avidity for AXIN1. APC competes with DVL2 for AXIN1 binding; Wnt signaling overcomes this competition."
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.982,
+          "evidence_types": ["experimental", "database", "textmining"],
+          "url": "https://string-db.org/network/9606.ENSP00000005340"
+        },
+        {
+          "source": "Literature",
+          "pmid": "21325634",
+          "description": "Dishevelled interacts with DIX domain polymerization interface of Axin",
+          "notes": "DVL-AXIN interaction disrupts beta-catenin destruction complex"
+        }
+      ],
+      "functional_effect": "Regulatory",
+      "pathway_context": "DVL2-AXIN1 interaction disassembles the beta-catenin destruction complex, enabling canonical Wnt signaling"
+    },
+    {
+      "partner": {
+        "gene_name": "AXIN2",
+        "protein_name": "Axin-2",
+        "uniprot_accession": "Q9Y2T1"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DIX_11_93",
+            "residues": [],
+            "residue_names": [],
+            "description": "DIX domain mediates interaction with AXIN2 DIX domain"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "DIX domain",
+            "residues": [],
+            "description": "DIX domain of AXIN2"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.978,
+          "evidence_types": ["experimental", "database", "textmining"],
+          "url": "https://string-db.org/network/9606.ENSP00000005340"
+        }
+      ],
+      "functional_effect": "Regulatory",
+      "pathway_context": "Similar to AXIN1, DVL2-AXIN2 interaction regulates destruction complex assembly"
+    },
+    {
+      "partner": {
+        "gene_name": "CTNNB1",
+        "protein_name": "Catenin beta-1 (beta-catenin)",
+        "uniprot_accession": "P35222"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DIX_11_93",
+            "residues": [],
+            "residue_names": [],
+            "description": "DIX domain involved in beta-catenin stabilization"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Armadillo repeats",
+            "residues": [],
+            "description": "Central armadillo repeat region"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.998,
+          "evidence_types": ["experimental", "database", "textmining"],
+          "url": "https://string-db.org/network/9606.ENSP00000005340"
+        },
+        {
+          "source": "Literature",
+          "pmid": "18285464",
+          "description": "Nuclear Dvl, c-Jun, beta-catenin, and TCF form a complex leading to stabilization of beta-catenin-TCF interaction",
+          "notes": "DVL2 stabilizes beta-catenin both in cytoplasm (by inhibiting destruction complex) and in nucleus (by stabilizing beta-catenin-TCF complex)"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "DVL2 promotes beta-catenin stabilization and nuclear accumulation for Wnt target gene transcription"
+    },
+    {
+      "partner": {
+        "gene_name": "APC",
+        "protein_name": "Adenomatous polyposis coli protein",
+        "uniprot_accession": "P25054"
+      },
+      "interaction_type": "Regulatory",
+      "mechanism": "Competitive binding via AXIN",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DIX_11_93",
+            "residues": [],
+            "residue_names": [],
+            "description": "DIX domain competes with APC for AXIN binding"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "AXIN binding region",
+            "residues": [],
+            "description": "APC binds AXIN RGS domain"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.993,
+          "evidence_types": ["experimental", "database", "textmining"],
+          "url": "https://string-db.org/network/9606.ENSP00000005340"
+        },
+        {
+          "source": "Literature",
+          "pmid": "21673653",
+          "description": "APC shields Axin from its interaction with Dishevelled",
+          "notes": "DVL2 and APC do not directly interact but compete for AXIN binding. Wnt signaling enables DVL2 to overcome APC competition"
+        }
+      ],
+      "functional_effect": "Inhibitory",
+      "pathway_context": "APC antagonizes DVL2-AXIN interaction to maintain destruction complex integrity in absence of Wnt"
+    },
+    {
+      "partner": {
+        "gene_name": "CSNK1E",
+        "protein_name": "Casein kinase I isoform epsilon",
+        "uniprot_accession": "P49674"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Phosphorylation",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "Proline_rich_C_terminus",
+            "residues": [224],
+            "residue_names": ["T224"],
+            "description": "T224 and multiple other sites in central and C-terminal regions phosphorylated by CK1epsilon"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Kinase domain",
+            "residues": [],
+            "description": "Active site of CK1epsilon"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kcat_s1": null,
+        "km_m": null,
+        "measurement_method": "Enzyme kinetics",
+        "conditions": "In vitro kinase assays",
+        "notes": "kcat/Km for DVL2 is 10-fold higher than for casein, indicating DVL2 is a preferred substrate. Efficiency (kcat/Km) for ATP hydrolysis increases from 1.0 to 7.6 min⁻¹ μM⁻¹ upon DVL2 saturation. Km for ATP decreases as DVL2 concentration increases. DDX3X interaction enhances CK1E affinity for ATP and DVL2 phosphorylation"
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.941,
+          "evidence_types": ["experimental", "database"],
+          "url": "https://string-db.org/network/9606.ENSP00000005340"
+        },
+        {
+          "source": "Literature",
+          "pmid": "32877639",
+          "description": "Novel insights into biochemical mechanism of CK1epsilon and functional interplay with DDX3X",
+          "notes": "CK1epsilon is key kinase for DVL2 phosphorylation; activity modulated by DDX3X"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "CK1epsilon-mediated DVL2 phosphorylation is essential for canonical Wnt signaling activation"
+    },
+    {
+      "partner": {
+        "gene_name": "CSNK2A1",
+        "protein_name": "Casein kinase II subunit alpha",
+        "uniprot_accession": "P68400"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Phosphorylation",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "Proline_rich_C_terminus",
+            "residues": [],
+            "residue_names": [],
+            "description": "Multiple sites matching CK2 consensus [ST]-x(2)-[DE] motif"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Kinase domain",
+            "residues": [],
+            "description": "CK2 alpha catalytic subunit"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "16803897",
+          "description": "CK2 associates with and phosphorylates Dvl-2",
+          "notes": "Wnt3a stimulation of Dvl-2 phosphorylation blocked by CK2 inhibitor DMAT. Endogenous CK2 is positive regulator of Wnt signaling"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "CK2 phosphorylation of DVL2 promotes Wnt signaling and cell proliferation"
+    },
+    {
+      "partner": {
+        "gene_name": "DVL1",
+        "protein_name": "Dishevelled-1",
+        "uniprot_accession": "O14640"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DIX_11_93",
+            "residues": [],
+            "residue_names": [],
+            "description": "DIX domain mediates homo- and hetero-oligomerization with DVL1"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "DIX domain",
+            "residues": [],
+            "description": "DIX domain of DVL1"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.999,
+          "evidence_types": ["experimental", "database", "coexpression"],
+          "url": "https://string-db.org/network/9606.ENSP00000005340"
+        },
+        {
+          "source": "BioGRID",
+          "experimental_system": "Phenotypic Enhancement",
+          "interaction_id": "504991",
+          "throughput": "Low"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "DVL family members form heteromeric complexes that may regulate Wnt pathway output"
+    },
+    {
+      "partner": {
+        "gene_name": "DVL3",
+        "protein_name": "Dishevelled-3",
+        "uniprot_accession": "Q92997"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DIX_11_93",
+            "residues": [],
+            "residue_names": [],
+            "description": "DIX domain mediates homo- and hetero-oligomerization with DVL3"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "DIX domain",
+            "residues": [],
+            "description": "DIX domain of DVL3"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.993,
+          "evidence_types": ["experimental", "database", "coexpression"],
+          "url": "https://string-db.org/network/9606.ENSP00000005340"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "DVL family members form heteromeric complexes that may regulate Wnt pathway output"
+    },
+    {
+      "partner": {
+        "gene_name": "KLHL12",
+        "protein_name": "Kelch-like protein 12",
+        "uniprot_accession": "Q53G59"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Ubiquitination",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "PGXPP_degron_555_559",
+            "residues": [555, 556, 557, 558, 559],
+            "residue_names": ["P555", "G556", "A557", "P558", "P559"],
+            "description": "PGAPP degron motif binds KLHL12 Kelch domain"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Kelch domain",
+            "residues": [],
+            "description": "Six-bladed beta-propeller Kelch domain recognizes PGXPP motif"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "32518250",
+          "description": "Crystal structure of KLHL12 Kelch domain with DVL1 PGXPP peptide at 2.4 Å",
+          "notes": "Mutation or deletion of PGXPP motif reduces binding and ubiquitination, increases DVL stability. Constitutive interaction not requiring cell stimulus"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "KLHL12 is E3 ligase that ubiquitinates DVL2 for proteasomal degradation, negatively regulating Wnt signaling"
+    },
+    {
+      "partner": {
+        "gene_name": "USP9X",
+        "protein_name": "Ubiquitin carboxyl-terminal hydrolase 9X",
+        "uniprot_accession": "Q93008"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Deubiquitination",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "PY_motif_565_568",
+            "residues": [565, 566, 567, 568],
+            "residue_names": ["P565", "P566", "X567", "Y568"],
+            "description": "PY motif binds USP9X WW domains"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "WW domains",
+            "residues": [],
+            "description": "WW domains recognize PY motifs"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "31345641",
+          "description": "USP9X deubiquitylates DVL2 to regulate WNT pathway specification",
+          "notes": "USP9X reverses WWP1 ubiquitination. USP9X-DVL2 can interact directly or via WWP1. USP9X deubiquitination required for canonical Wnt activation; increased DVL2 ubiquitination associated with PCP pathway"
+        },
+        {
+          "source": "Literature",
+          "pmid": "39854474",
+          "description": "PRICKLE3-USP9X interaction-mediated DVL2 deubiquitination promotes NSCLC progression",
+          "notes": "USP9X stabilizes DVL2 by removing ubiquitin"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "USP9X-WWP1 axis regulates ubiquitin rheostat on DVL2 that specifies canonical vs PCP pathway choice"
+    },
+    {
+      "partner": {
+        "gene_name": "WWP1",
+        "protein_name": "NEDD4-like E3 ubiquitin-protein ligase WWP1",
+        "uniprot_accession": "Q9H0M0"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Ubiquitination",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "PY_motif_565_568",
+            "residues": [565, 566, 567, 568],
+            "residue_names": ["P565", "P566", "X567", "Y568"],
+            "description": "PPXY motif binds WWP1 WW domains. Y568F mutation decreases WWP1 binding"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "WW domains",
+            "residues": [],
+            "description": "Four WW domains that recognize PPXY-containing substrates"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "34260244",
+          "description": "WWP1 promotes DVL2 stability via K27-linked ubiquitination",
+          "notes": "K27 polyubiquitination stabilizes DVL2 rather than targeting for degradation. WWP1 knockdown reduces DVL2 protein levels"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "WWP1-mediated K27-ubiquitination stabilizes DVL2 and promotes canonical Wnt signaling"
+    },
+    {
+      "partner": {
+        "gene_name": "WGEF",
+        "protein_name": "Weak-similarity guanine nucleotide exchange factor",
+        "uniprot_accession": "Q9Y4L8"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "PDZ_267_339",
+            "residues": [],
+            "residue_names": [],
+            "description": "PDZ domain binds WGEF internal peptide motif"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Internal PDZ-binding motif (IPM)",
+            "residues": [349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359],
+            "description": "Internal sequence 349-GSTFSLWQDIP-359 binds DVL2 PDZ domain"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "PDB",
+          "description": "Crystal structure of DVL2 PDZ-WGEF peptide complex (8YR7) at 3.0 Å",
+          "notes": "Novel internal PDZ-binding mechanism"
+        },
+        {
+          "source": "Literature",
+          "pmid": "38714795",
+          "description": "Dishevelled2 activates WGEF via PDZ domain interaction",
+          "notes": "DVL2 PDZ binding releases WGEF from autoinhibition. Residues at P2, P0, P-2, P-3 positions of IPM stabilize interaction. Central event in Wnt-PCP pathway"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "DVL2 activates WGEF GEF activity in Wnt-PCP signaling pathway"
+    },
+    {
+      "partner": {
+        "gene_name": "VANGL2",
+        "protein_name": "Vang-like protein 2",
+        "uniprot_accession": "Q9ULK5"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "PDZ_267_339",
+            "residues": [],
+            "residue_names": [],
+            "description": "PDZ domain binds VANGL2 internal peptide (302-311)"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Internal peptide",
+            "residues": [302, 303, 304, 305, 306, 307, 308, 309, 310, 311],
+            "description": "Internal VANGL2 peptide 302-311 binds DVL2 PDZ domain"
+          },
+          {
+            "domain_motif_name": "C-terminal PDZ-binding motif",
+            "residues": [],
+            "description": "C-terminal ETSV motif"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "Crystal structure of DVL2 PDZ-VANGL2 peptide complex at 1.95 Å resolution",
+          "notes": "Structural basis of internal Vangl2 peptide recognition by Dvl2 PDZ domain"
+        },
+        {
+          "source": "Literature",
+          "description": "Dvl family members required for Wnt5a-induced Vangl2 phosphorylation",
+          "notes": "DVL enhances CK1-VANGL2 interaction for phosphorylation. Wnt11 can release Dvl from Vangl2 to transfer to Fz"
+        }
+      ],
+      "functional_effect": "Regulatory",
+      "pathway_context": "DVL2-VANGL2 interaction regulates planar cell polarity signaling"
+    },
+    {
+      "partner": {
+        "gene_name": "MARK2",
+        "protein_name": "Serine/threonine-protein kinase MARK2",
+        "uniprot_accession": "Q7KZI7"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Phosphorylation",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "Proline_rich_C_terminus",
+            "residues": [],
+            "residue_names": [],
+            "description": "Multiple sites in DVL2 phosphorylated by MARK2"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Kinase domain",
+            "residues": [],
+            "description": "MARK2 kinase domain"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "WNT3A induces DVL2 phosphorylation by MARK kinases",
+          "notes": "MARK2 (Par-1b) promotes Dvl membrane localization through phosphorylation. MARK2 acts as positive regulator of Wnt signaling pathway"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "MARK2 phosphorylation regulates DVL2 localization and Wnt pathway activation"
+    },
+    {
+      "partner": {
+        "gene_name": "GSK3B",
+        "protein_name": "Glycogen synthase kinase-3 beta",
+        "uniprot_accession": "P49841"
+      },
+      "interaction_type": "Regulatory",
+      "mechanism": "Scaffolding/Sequestration",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "Proline_rich_C_terminus",
+            "residues": [],
+            "residue_names": [],
+            "description": "DVL2 acts as scaffold to sequester GSK3B"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Kinase domain",
+            "residues": [],
+            "description": "GSK3B kinase domain"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "DVL can sequester GSK-3 to prevent phosphorylation of inappropriate targets",
+          "notes": "DVL inhibits GSK3B actions in destruction complex, allowing beta-catenin stabilization"
+        }
+      ],
+      "functional_effect": "Inhibitory",
+      "pathway_context": "DVL2 sequesters GSK3B to inhibit beta-catenin phosphorylation and degradation in canonical Wnt signaling"
+    },
+    {
+      "partner": {
+        "gene_name": "ARRB2",
+        "protein_name": "Beta-arrestin-2",
+        "uniprot_accession": "P32121"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "Proline_rich_C_terminus",
+            "residues": [],
+            "residue_names": [],
+            "description": "C-terminal region interacts with ARRB2"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Arrestin domain",
+            "residues": [],
+            "description": "Beta-arrestin domains"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.856,
+          "evidence_types": ["experimental", "database"],
+          "url": "https://string-db.org/network/9606.ENSP00000005340"
+        }
+      ],
+      "functional_effect": "Regulatory",
+      "pathway_context": "ARRB2 may modulate DVL2 function in receptor signaling and endocytosis"
+    }
+  ],
+  "pathways": {
+    "reactome": [
+      {
+        "pathway_id": "R-HSA-195721",
+        "pathway_name": "Signaling by Wnt",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-195721"
+      },
+      {
+        "pathway_id": "R-HSA-201681",
+        "pathway_name": "TCF dependent signaling in response to WNT",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-201681"
+      },
+      {
+        "pathway_id": "R-HSA-201688",
+        "pathway_name": "WNT mediated activation of DVL",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-201688"
+      },
+      {
+        "pathway_id": "R-HSA-4641262",
+        "pathway_name": "Disassembly of the destruction complex and recruitment of AXIN to the membrane",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-4641262"
+      },
+      {
+        "pathway_id": "R-HSA-4641258",
+        "pathway_name": "Degradation of DVL",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-4641258"
+      },
+      {
+        "pathway_id": "R-HSA-5368598",
+        "pathway_name": "Negative regulation of TCF-dependent signaling by DVL-interacting proteins",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-5368598"
+      },
+      {
+        "pathway_id": "R-HSA-3858494",
+        "pathway_name": "Beta-catenin independent WNT signaling",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-3858494"
+      },
+      {
+        "pathway_id": "R-HSA-4086400",
+        "pathway_name": "PCP/CE pathway",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-4086400"
+      }
+    ],
+    "kegg": [
+      {
+        "pathway_id": "hsa04310",
+        "pathway_name": "Wnt signaling pathway",
+        "url": "https://www.genome.jp/entry/hsa04310"
+      },
+      {
+        "pathway_id": "hsa04150",
+        "pathway_name": "mTOR signaling pathway",
+        "url": "https://www.genome.jp/entry/hsa04150"
+      },
+      {
+        "pathway_id": "hsa04330",
+        "pathway_name": "Notch signaling pathway",
+        "url": "https://www.genome.jp/entry/hsa04330"
+      },
+      {
+        "pathway_id": "hsa04390",
+        "pathway_name": "Hippo signaling pathway",
+        "url": "https://www.genome.jp/entry/hsa04390"
+      }
+    ],
+    "pathway_role_summary": "DVL2 is a central cytoplasmic adaptor protein in Wnt signaling pathways. Upon Wnt ligand binding to Frizzled receptors, DVL2 is recruited to the membrane, becomes phosphorylated by CK1epsilon/CK2/MARK kinases, and undergoes DIX-dependent polymerization. DVL2 recruits the destruction complex component AXIN to the membrane, leading to disassembly of the complex and beta-catenin stabilization (canonical Wnt). DVL2 also translocates to the nucleus to stabilize beta-catenin-TCF transcriptional complexes. In non-canonical Wnt-PCP signaling, DVL2 activates WGEF and interacts with VANGL2 to regulate planar cell polarity. DVL2 protein levels and pathway specification are regulated by the USP9X-WWP1 ubiquitin rheostat and KLHL12-mediated degradation."
+  },
+  "disease_associations": [
+    {
+      "disease": "Colorectal cancer",
+      "omim_id": null,
+      "mutation_type": "Somatic - primarily overexpression",
+      "description": "DVL2 is overexpressed in colorectal adenomas and carcinomas in parallel with nuclear beta-catenin. Mouse models show DVL2 promotes intestinal length and neoplasia in ApcMin colorectal cancer model. DVL2 facilitates coordination of NF-kB and Wnt signaling to promote colitis-associated colorectal cancer progression. Not frequently mutated but acts as tumor promoter through overexpression."
+    },
+    {
+      "disease": "Gliomas",
+      "omim_id": null,
+      "mutation_type": "Somatic - overexpression",
+      "description": "Dishevelled 2 signaling promotes self-renewal and tumorigenicity in human gliomas through Wnt pathway activation."
+    },
+    {
+      "disease": "Non-small cell lung cancer",
+      "omim_id": null,
+      "mutation_type": "Somatic - overexpression/stabilization",
+      "description": "PRICKLE3-USP9X-mediated DVL2 deubiquitination and stabilization promotes NSCLC progression via canonical Wnt pathway."
+    },
+    {
+      "disease": "Cardiac hypertrophy",
+      "omim_id": null,
+      "mutation_type": "Not applicable",
+      "description": "WWP1-mediated K27-linked ubiquitination of DVL2 regulates cardiac hypertrophy induced by pressure overload."
+    }
+  ],
+  "cross_references": {
+    "ncbi_gene_id": "1856",
+    "ensembl_gene_id": "ENSG00000004975",
+    "refseq_protein": ["NP_004413"],
+    "refseq_nucleotide": ["NM_004422"],
+    "hgnc_id": "HGNC:3086",
+    "omim_gene": "602151"
+  },
+  "metadata": {
+    "generated_at": "2026-10-15T00:00:00Z",
+    "queried_databases": [
+      "UniProt",
+      "NCBI Gene",
+      "InterPro",
+      "Pfam",
+      "PROSITE",
+      "PDB",
+      "AlphaFold",
+      "STRING",
+      "BioGRID",
+      "Reactome",
+      "KEGG",
+      "GO",
+      "GeneCards",
+      "Human Protein Atlas",
+      "COSMIC",
+      "ELM"
+    ],
+    "data_quality_notes": "Comprehensive data available for DVL2. UniProt accession O14641 confirmed. Extensive structural data from PDB (DIX filament, PDZ domain complexes). Over 50 phosphorylation sites identified but specific residue numbers not fully mapped. Kinetic parameters available for CK1epsilon phosphorylation (kcat/Km ratios) but absolute values for individual rate constants not found. Interaction with APC is indirect via competitive AXIN binding. Most interactions have experimental evidence from multiple databases. Disease associations primarily involve overexpression rather than coding mutations. NLS sequence position approximate based on conserved motif description.",
+    "modeling_relevance_summary": "DVL2 is critical hub protein in Wnt signaling network. Key features for modeling: (1) DIX domain-mediated dynamic polymerization with AXIN1/2 creates local concentration effects; (2) Multiple phosphorylation sites regulate activity, localization, and pathway choice (canonical vs PCP); (3) Ubiquitination rheostat (WWP1 vs USP9X vs KLHL12) controls protein stability and pathway specification; (4) PDZ domain mediates multiple specific interactions with different binding modes (C-terminal vs internal peptides); (5) Membrane recruitment via FZD binding is regulated event requiring phosphorylation; (6) Nuclear-cytoplasmic shuttling adds spatial complexity. Available kinetic data for CK1epsilon provides starting point for phosphorylation dynamics modeling. Low-affinity AXIN interaction enhanced by DIX polymerization suggests avidity-based regulation."
+  }
+}
