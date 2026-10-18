@@ -1,7 +1,41 @@
 from pathlib import Path
 from pykappa.system import System
-from pykappa.pattern import Component
+from pykappa.pattern import Component, Agent
 from collections import defaultdict
+from typing import Iterable
+
+class CausalGraph:
+    '''
+    A labelled directed graph representing the potential causal
+    prerequisites of a rule firing, in . 
+
+    An edge from Rule A to Rule B . 
+    '''
+    edges: dict[str, set] # Rule names
+    edge_labels: dict[(str, str), set]
+
+    def __init__(self, system):
+        self.edges = defaultdict(set)
+        self.edge_labels = defaultdict(set)
+
+        for name_a, rule_a in system.rules.items():
+            for name_b, rule_b in system.rules.items():
+                for agent_a in rule_a.left.agents:
+                    if agent_a is None:
+                        continue
+                    if Component([agent_a]).embeddings(rule_b.right):
+                        self.edges[name_a].add(name_b)
+                        self.edge_labels[(name_a, name_b)].add(agent_a)
+
+    def unreachable(self, init: Iterable[Agent]) -> list[str]:
+        '''
+        Returns a list of rule names that can't be reached from the agents in `init`
+        '''
+        # TODO: unreachability analysis
+        pass 
+
+    def causal_tree(self, init: Iterable[Agent], target_rule: str):
+        pass
 
 def unique_agents(mixture):
     unique_agents = []
@@ -13,6 +47,22 @@ def unique_agents(mixture):
         if agent_string not in seen_agent_strings:
             seen_agent_strings.add(agent_string)
             unique_agents.append(agent)
+
+def generate_causal_graph(system):
+    causal_graph = defaultdict(set)
+
+    for name_a, rule_a in system.rules.items():
+        for name_b, rule_b in system.rules.items():
+            for agent_a in rule_a.left.agents:
+                if agent_a is None:
+                    continue
+                if Component([agent_a]).embeddings(rule_b.right):
+                    causal_graph[name_a].add(name_b)
+
+    return causal_graph
+
+def unreachable(init: Iterable[Agent], causal_graph, system):
+    system.unique_agents
 
 def main():
     model_path = Path(__file__).with_name("wnt_v8.ka")
@@ -45,17 +95,10 @@ def main():
     for rule_name, rule in system.rules.items():
         print(f"{rule_name}: {rule.kappa_str}")
 
-    causal_graph = defaultdict(set)
+    causal_graph = CausalGraph(system)
+    init_agents = unique_agents
 
-    for name_a, rule_a in system.rules.items():
-        for name_b, rule_b in system.rules.items():
-            for agent_a in rule_a.left.agents:
-                if agent_a is None:
-                    continue
-                if Component([agent_a]).embeddings(rule_b.right):
-                    causal_graph[name_a].add(name_b)
-
-    print(causal_graph)
-
+    unreachable = causal_graph.unreachable(init_agents)
+    
 if __name__ == "__main__":
     main()
