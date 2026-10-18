@@ -15,6 +15,7 @@ class CausalGraph:
     edge_labels: dict[(str, str), set]
 
     def __init__(self, system):
+        self.system = system
         self.edges = defaultdict(set)
         self.edge_labels = defaultdict(set)
 
@@ -32,7 +33,7 @@ class CausalGraph:
         Returns a list of rule names that can't be reached from the agents in `init`.
 
         A rule is reachable if every agent in its LHS embeds into either an agent in
-        `init`, or the LHS of another reachable rule.
+        `init`, or the RHS of another reachable rule.
         '''
         init_agents = list(init)
         reachable = set()
@@ -45,11 +46,11 @@ class CausalGraph:
                 if rule_name in reachable:
                     continue
 
-                # Collect all agents from LHS of reachable rules and init
+                # Collect all agents from RHS of reachable rules and init
                 available_agents = list(init_agents)
                 for reachable_name in reachable:
                     reachable_rule = self.system.rules[reachable_name]
-                    available_agents.extend(reachable_rule.left.agents)
+                    available_agents.extend(reachable_rule.right.agents)
 
                 # Check if all LHS agents of this rule embed into available_agents
                 all_embed = True
@@ -73,7 +74,9 @@ class CausalGraph:
             if target is None:
                 continue
             # Check if agent embeds into target
-            if Component([agent]).embeddings(Component([target])):
+            # Note: embeddings() returns a generator, must consume it to check if non-empty
+            embeddings_gen = Component([agent]).embeddings(Component([target]))
+            if any(True for _ in embeddings_gen):
                 return True
         return False
 
