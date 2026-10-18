@@ -1,0 +1,956 @@
+{
+  "protein_identifier": {
+    "gene_name": "FZD8",
+    "protein_name": "Frizzled-8",
+    "uniprot_accession": "Q9H461",
+    "organism": "Homo sapiens",
+    "organism_taxid": 9606
+  },
+  "sequence": {
+    "canonical_length": 694,
+    "canonical_sequence": "MEWGYLLEVTSLLAALALLQRSSGAAAASAKELACQEITVPLCKGIGYNYTYMPNQFNHDTQDEAGLEVHQFWPLVEIQCSPDLKFFLCSMYTPICLEDYKKPLPPCRSVCERAKAGCAPLMRQYGFAWPDRMRCDRLPEQGNPDTLCMDYNRTDLTTAAPSPPRRLPPPPPGEQPPSGSHGRPPGARPPHRGGGRGGGGGDAAAPPARGGGGGGKARPPGGGAAPCEPGCQCRAPMVSSVSSERHPLYNRVKTGQIANCALPCHNPFFSQDERAFTVFWIGLWSVLCFVSTFATVSTFLIDMERFKYPERPIIFLSACYLFVSVGYLVRLVAGHEKVACSGGAPGAGGAGGAGGAAAGAGAAGAGAGGPGGRGEYEELGAVEQHVRYETTGPALCTVVFLLVYFFGMASSIWWVILSLTWFLAAGMKWGNEAIAGYSQYFHLAAWLVPSVKSIAVLALSSVDGDPVAGICYVGNQSLDNLRGFVLAPLVIYLFIGTMFLLAGFVSLFRIRSVIKQQDGPTKTHKLEKLMIRLGLFTVLYTVPAAVVVACLFYEQHNRPRWEATHNCPCLRDLQPDQARRPDYAVFMLKYFMCLVVGITSGVWVWSGKTLESWRSLCTRCCWASKGAAVGGGAGATAAGGGGGPGGGGGGGPGGGGGPGGGGGSLYSDVSTGLTWRSGTASSVSYPKQMPLSQV",
+    "molecular_weight_da": 73300,
+    "isoforms": []
+  },
+  "domains_and_motifs": [
+    {
+      "identifier": "signal_peptide_1_27",
+      "name": "Signal peptide",
+      "type": "Signal",
+      "locations": [{"start": 1, "end": 27}],
+      "sequence": "MEWGYLLEVTSLLAALALLQRSSGAAA",
+      "description": "N-terminal signal peptide for ER targeting and protein secretion",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "Q9H461",
+          "notes": "Predicted signal peptide"
+        }
+      ]
+    },
+    {
+      "identifier": "FZD_CRD_31_155",
+      "name": "Frizzled cysteine-rich domain",
+      "type": "Domain",
+      "locations": [{"start": 31, "end": 155}],
+      "sequence": "ASAKELACQEITVPLCKGIGYNYTYMPNQFNHDTQDEAGLEVHQFWPLVEIQCSPDLKFFLCSMYTPICLEDYKKPLPPCRSVCERAKAGCAPLMRQYGFAWPDRMRCDRLPEQGNPDTLCMDYNRTDLTTAAPSPPRRLS",
+      "description": "Extracellular cysteine-rich Wnt-binding domain (CRD) that mediates interaction with Wnt ligands through conserved residues and lipid-binding groove",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR041776",
+          "notes": "Frizzled 8, cysteine-rich domain"
+        },
+        {
+          "database": "InterPro",
+          "accession": "IPR020067",
+          "notes": "Frizzled domain"
+        },
+        {
+          "database": "InterPro",
+          "accession": "IPR036790",
+          "notes": "Frizzled cysteine-rich domain superfamily"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF01534",
+          "notes": "Frizzled family domain"
+        },
+        {
+          "database": "PROSITE",
+          "accession": "PDOC50038",
+          "notes": "Frizzled domain profile"
+        }
+      ]
+    },
+    {
+      "identifier": "palmitate_binding_71_78",
+      "name": "Palmitate-binding groove",
+      "type": "Binding_site",
+      "locations": [{"start": 71, "end": 78}],
+      "sequence": "PLVEIQCS",
+      "description": "Groove in CRD that accommodates palmitoleic acid modification on Wnt proteins, critical for Wnt recognition",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "PDB:4F0A",
+          "notes": "Structural evidence from Wnt8-FZD8 complex"
+        }
+      ]
+    },
+    {
+      "identifier": "wnt_binding_site_1_95_100",
+      "name": "Wnt-binding site 1",
+      "type": "Binding_site",
+      "locations": [{"start": 95, "end": 100}],
+      "sequence": "KKPLPP",
+      "description": "First Wnt-binding region in CRD involved in protein-protein contacts with Wnt ligands",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "Q9H461",
+          "notes": "Functional annotation"
+        }
+      ]
+    },
+    {
+      "identifier": "wnt_binding_site_2_147_152",
+      "name": "Wnt-binding site 2",
+      "type": "Binding_site",
+      "locations": [{"start": 147, "end": 152}],
+      "sequence": "DTLCMD",
+      "description": "Second Wnt-binding region in CRD involved in protein-protein contacts with Wnt ligands",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "Q9H461",
+          "notes": "Functional annotation"
+        }
+      ]
+    },
+    {
+      "identifier": "7TM_268_617",
+      "name": "Seven-transmembrane domain",
+      "type": "Domain",
+      "locations": [{"start": 268, "end": 617}],
+      "sequence": "HPLYNRVKTGQIANCALPCHNPFFSQDERAFTVFWIGLWSVLCFVSTFATVSTFLIDMERFKYPERPIIFLSACYLFVSVGYLVRLVAGHEKVACSGGAPGAGGAGGAGGAAAGAGAAGAGAGGPGGRGEYEELGAVEQHVRYETTGPALCTVVFLLVYFFGMASSIWWVILSLTWFLAAGMKWGNEAIAGYSQYFHLAAWLVPSVKSIAVLALSSVDGDPVAGICYVGNQSLDNLRGFVLAPLVIYLFIGTMFLLAGFVSLFRIRSVIKQQDGPTKTHKLEKLMIRLGLFTVLYTVPAAVVVACLFYEQHNRPRWEATHNCPCLRDLQPDQARRPDYAVFMLKYFMCLVVGITSGVWVWSGKTLESWRSLCTRCCWASKGAAVGGGAGATAAGGGGGPGGGGGGGPGGGGGPGGGGGS",
+      "description": "Seven-span transmembrane helical domain characteristic of Frizzled/Smoothened family GPCRs, mediates signal transduction across plasma membrane",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR000539",
+          "notes": "Frizzled/Smoothened, 7TM"
+        },
+        {
+          "database": "InterPro",
+          "accession": "IPR017981",
+          "notes": "GPCR, family 2-like, 7TM"
+        },
+        {
+          "database": "UniProt",
+          "accession": "Q9H461",
+          "notes": "Transmembrane region annotation"
+        }
+      ]
+    },
+    {
+      "identifier": "DVL_binding_PDZ_692_694",
+      "name": "PDZ-binding motif",
+      "type": "Motif",
+      "locations": [{"start": 692, "end": 694}],
+      "sequence": "SQV",
+      "description": "C-terminal PDZ-binding motif (Ser-X-Val) that mediates interaction with PDZ domain of Dishevelled family proteins",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "Q9H461",
+          "notes": "PDZ-binding domain annotation"
+        },
+        {
+          "database": "Literature",
+          "notes": "C-terminal Ser/Thr-X-Val motif for DVL binding"
+        }
+      ]
+    },
+    {
+      "identifier": "DVL_binding_KTxxxW_608_613",
+      "name": "KTxxxW motif",
+      "type": "Motif",
+      "locations": [{"start": 608, "end": 613}],
+      "sequence": "KTLESW",
+      "description": "Lys-Thr-X-X-X-Trp motif in intracellular C-terminal domain that mediates interaction with DVL PDZ and DEP domains",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "Q9H461",
+          "notes": "Functional motif annotation"
+        },
+        {
+          "database": "Literature",
+          "notes": "Critical for DVL recruitment and signaling"
+        }
+      ]
+    }
+  ],
+  "structure": {
+    "experimental_structures": [
+      {
+        "pdb_id": "4F0A",
+        "method": "X-ray",
+        "resolution_angstrom": 3.25,
+        "chain": "A",
+        "coverage": {"start": 31, "end": 162},
+        "description": "Mouse Fz8 CRD in complex with Xenopus Wnt-8, revealing dual binding mechanism via lipid-mediated and protein contact interfaces",
+        "ligands": ["Palmitoleic acid (PAM)", "Zinc ions (ZN)"],
+        "url": "https://www.rcsb.org/structure/4F0A"
+      },
+      {
+        "pdb_id": "5UN5",
+        "method": "X-ray",
+        "resolution_angstrom": 2.99,
+        "chain": "A,B",
+        "coverage": {"start": 28, "end": 156},
+        "description": "Human FZD8 CRD in complex with designed surrogate Wnt agonist B12, demonstrating heterodimerization mechanism for canonical Wnt signaling activation",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/5UN5"
+      },
+      {
+        "pdb_id": "5UN6",
+        "method": "X-ray",
+        "resolution_angstrom": 3.20,
+        "chain": "A,B",
+        "coverage": {"start": 28, "end": 156},
+        "description": "Human FZD8 CRD in complex with designed surrogate Wnt agonist, alternative dataset",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/5UN6"
+      },
+      {
+        "pdb_id": "8X0T",
+        "method": "X-ray",
+        "resolution_angstrom": 2.50,
+        "chain": "A",
+        "coverage": {"start": 28, "end": 157},
+        "description": "Human FZD8 CRD in complex with pF8_AC3 Fab antibody fragment, for development of FZD8-selective therapeutic antibodies",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/8X0T"
+      },
+      {
+        "pdb_id": "21KR",
+        "method": "Cryo-EM",
+        "resolution_angstrom": null,
+        "chain": "multiple",
+        "coverage": {"start": 28, "end": 156},
+        "description": "Wnt3a/Fzd8-CRD/LRP6-E3E4 complex with FKBP, revealing initiation complex architecture",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/21KR"
+      }
+    ],
+    "alphafold_prediction": {
+      "available": true,
+      "accession": "AF-Q9H461-F1",
+      "confidence_summary": "High confidence expected for CRD and transmembrane helices; low confidence expected for flexible CRD-to-TM linker (residues ~156-267) and C-terminal disordered region",
+      "url": "https://alphafold.ebi.ac.uk/entry/Q9H461"
+    }
+  },
+  "post_translational_modifications": [
+    {
+      "type": "Phosphorylation",
+      "position": 576,
+      "residue": "S",
+      "function": "Regulates FZD trafficking and interaction with DVL in a Dishevelled-dependent manner",
+      "evidence": "Experimental"
+    }
+  ],
+  "function": {
+    "uniprot_function": "Receptor for Wnt proteins. Component of the Wnt-Fzd-LRP5-LRP6 complex that triggers beta-catenin signaling through inducing aggregation of receptor-ligand complexes into ribosome-sized signalosomes. The Wnt/beta-catenin signaling pathway leads to the activation of dishevelled proteins, inhibition of GSK-3 kinase, nuclear accumulation of beta-catenin and activation of Wnt target genes. Member of the frizzled gene family encoding seven-transmembrane domain proteins that are receptors for Wingless type signaling proteins. Most frizzled receptors are coupled to the beta-catenin canonical signaling pathway. FZD8 is optimized for Wnt3a binding and highly efficient at binding Wnt1 and Wnt3a, driving robust canonical Wnt/beta-catenin signaling.",
+    "catalytic_activity": null,
+    "subcellular_location": ["Plasma membrane", "Golgi apparatus", "Membrane"],
+    "tissue_specificity": "Expressed in brain (particularly choroid plexus), kidney, heart, pancreas, and skeletal muscle. Most abundant in fetal kidney, followed by brain and lung. Tissue enhanced in choroid plexus.",
+    "go_annotations": {
+      "molecular_function": [
+        {
+          "go_id": "GO:0004888",
+          "term": "transmembrane signaling receptor activity",
+          "evidence_code": "IBA"
+        },
+        {
+          "go_id": "GO:0017147",
+          "term": "Wnt-protein binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0004930",
+          "term": "G protein-coupled receptor activity",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0042813",
+          "term": "Wnt-activated receptor activity",
+          "evidence_code": "IBA"
+        },
+        {
+          "go_id": "GO:0050839",
+          "term": "cell adhesion molecule binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0005515",
+          "term": "protein binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0031013",
+          "term": "troponin I binding",
+          "evidence_code": "IPI"
+        }
+      ],
+      "biological_process": [
+        {
+          "go_id": "GO:0007186",
+          "term": "G protein-coupled receptor signaling pathway",
+          "evidence_code": "IBA"
+        },
+        {
+          "go_id": "GO:0030182",
+          "term": "neuron differentiation",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0001525",
+          "term": "angiogenesis",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0033077",
+          "term": "T cell differentiation in thymus",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0001934",
+          "term": "positive regulation of protein phosphorylation",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0016055",
+          "term": "Wnt signaling pathway",
+          "evidence_code": "IBA"
+        },
+        {
+          "go_id": "GO:0060070",
+          "term": "canonical Wnt signaling pathway",
+          "evidence_code": "IBA"
+        },
+        {
+          "go_id": "GO:0035567",
+          "term": "non-canonical Wnt signaling pathway",
+          "evidence_code": "IEA"
+        }
+      ],
+      "cellular_component": [
+        {
+          "go_id": "GO:0016020",
+          "term": "membrane",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0005794",
+          "term": "Golgi apparatus",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005886",
+          "term": "plasma membrane",
+          "evidence_code": "IBA"
+        },
+        {
+          "go_id": "GO:0016021",
+          "term": "integral component of membrane",
+          "evidence_code": "IEA"
+        }
+      ]
+    }
+  },
+  "interactions": [
+    {
+      "partner": {
+        "gene_name": "WNT1",
+        "protein_name": "Proto-oncogene Wnt-1",
+        "uniprot_accession": "P04628"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "FZD_CRD_31_155",
+            "residues": [71, 72, 73, 74, 75, 76, 77, 78, 95, 96, 97, 98, 99, 100, 147, 148, 149, 150, 151, 152],
+            "residue_names": ["P71", "L72", "V73", "E74", "I75", "Q76", "C77", "S78", "K95", "K96", "P97", "L98", "P99", "P100", "D147", "T148", "L149", "C150", "M151", "D152"],
+            "description": "CRD binding site including palmitate-binding groove and protein contact sites"
+          }
+        ],
+        "partner_protein": [],
+        "site_specific": true
+      },
+      "kinetics": {
+        "notes": "FZD8 is highly efficient at binding Wnt1 and drives robust canonical Wnt/beta-catenin signaling"
+      },
+      "evidence": [
+        {
+          "source": "BioGRID",
+          "experimental_system": "Affinity Capture-Western",
+          "pmid": "15084359",
+          "throughput": "Low"
+        },
+        {
+          "source": "Literature",
+          "description": "FZD8 binds to and is activated by WNT1",
+          "notes": "Canonical Wnt ligand"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Canonical Wnt/beta-catenin signaling pathway activation"
+    },
+    {
+      "partner": {
+        "gene_name": "WNT3A",
+        "protein_name": "Protein Wnt-3a",
+        "uniprot_accession": "P56704"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "FZD_CRD_31_155",
+            "residues": [71, 72, 73, 74, 75, 76, 77, 78, 95, 96, 97, 98, 99, 100, 147, 148, 149, 150, 151, 152],
+            "residue_names": ["P71", "L72", "V73", "E74", "I75", "Q76", "C77", "S78", "K95", "K96", "P97", "L98", "P99", "P100", "D147", "T148", "L149", "C150", "M151", "D152"],
+            "description": "CRD binding site optimized for Wnt3a binding"
+          }
+        ],
+        "partner_protein": [],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 1.5e-9,
+        "measurement_method": "NanoBiT/BRET",
+        "notes": "Mouse Wnt3a-mouse FZD8 Kd = 1.5 nM (ΔG = -12.03 kcal/mol), one of strongest measured Wnt-FZD interactions. FZD8 binds Wnt3a with 2-3x stronger affinity than LRP6. Receptor expression levels affect measured Kd by ~10-fold."
+      },
+      "evidence": [
+        {
+          "source": "IntAct",
+          "detection_method": "Experimental binding assay",
+          "notes": "Confidence score 0.499"
+        },
+        {
+          "source": "Literature",
+          "pmid": "38613762",
+          "description": "Quantitative Wnt3a binding measurements to multiple Frizzleds",
+          "notes": "FZD8 shows intermediate-to-high affinity for Wnt3a among Frizzled family"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Primary canonical Wnt signaling activator; FZD8 CRD optimized for Wnt3a recognition"
+    },
+    {
+      "partner": {
+        "gene_name": "WNT8A",
+        "protein_name": "Protein Wnt-8a",
+        "uniprot_accession": "Q9H1J5"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "FZD_CRD_31_155",
+            "residues": [71, 72, 73, 74, 75, 76, 77, 78],
+            "residue_names": ["P71", "L72", "V73", "E74", "I75", "Q76", "C77", "S78"],
+            "description": "Palmitate-binding groove and conserved protein contacts"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Palmitoleic acid modification",
+            "description": "Lipid-mediated interaction"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "notes": "Structure reveals dual binding mechanism: lipid-mediated via palmitate groove and protein-protein contacts via conserved residues"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "22751444",
+          "description": "Co-crystal structure 4F0A of XWnt8-mFz8 CRD reveals Wnt 'hand' grasping FZD8 CRD",
+          "notes": "Structural basis of Wnt-FZD interaction"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Canonical Wnt ligand"
+    },
+    {
+      "partner": {
+        "gene_name": "LRP6",
+        "protein_name": "Low-density lipoprotein receptor-related protein 6",
+        "uniprot_accession": "O75581"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Scaffolding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": {
+        "notes": "Forms Wnt-FZD8-LRP6 ternary complex with global stoichiometry of hetero 9-mer. FZD-LRP6 association is independent of LRP6 phosphorylation but allosterically modulated by DVL. FZD8 binds Wnt3a 2-3x stronger than LRP6."
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.998,
+          "evidence_types": ["experimental", "database", "coexpression"]
+        },
+        {
+          "source": "Literature",
+          "pmid": "36543125",
+          "description": "Cryo-EM structure 21KR of Wnt3a/Fzd8-CRD/LRP6-E3E4 complex",
+          "notes": "Reveals architecture of Wnt signaling initiation complex"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "Co-receptor for canonical Wnt signaling; forms signalosome upon Wnt binding"
+    },
+    {
+      "partner": {
+        "gene_name": "LRP5",
+        "protein_name": "Low-density lipoprotein receptor-related protein 5",
+        "uniprot_accession": "O75197"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Scaffolding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": {
+        "notes": "Alternative co-receptor to LRP6; forms Wnt-FZD8-LRP5 ternary complex"
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.995,
+          "evidence_types": ["experimental", "database", "coexpression"]
+        },
+        {
+          "source": "Literature",
+          "description": "Component of Wnt-Fzd-LRP5-LRP6 complex",
+          "notes": "FZD8 interacts with either LRP5 or LRP6 as co-receptor"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "Co-receptor for canonical Wnt signaling"
+    },
+    {
+      "partner": {
+        "gene_name": "DVL1",
+        "protein_name": "Dishevelled-1",
+        "uniprot_accession": "O14640"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DVL_binding_KTxxxW_608_613",
+            "residues": [608, 609, 610, 611, 612, 613],
+            "residue_names": ["K608", "T609", "L610", "E611", "S612", "W613"],
+            "description": "KTxxxW motif for DVL PDZ and DEP domain binding"
+          },
+          {
+            "domain_motif_id": "DVL_binding_PDZ_692_694",
+            "residues": [692, 693, 694],
+            "residue_names": ["S692", "Q693", "V694"],
+            "description": "C-terminal PDZ-binding motif (SQV)"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "PDZ domain",
+            "description": "Binds FZD8 C-terminal SQV motif"
+          },
+          {
+            "domain_motif_name": "DEP domain",
+            "description": "Most important domain for FZD-DVL interaction; binds KTxxxW motif"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "notes": "Upon Wnt stimulation, DVL oligomerizes at membrane, increasing dwell time from <1 sec to several minutes. DVL becomes heavily phosphorylated by CK1ε at >50 sites. FZD clustering initiates DVL recruitment and phosphorylation."
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.943,
+          "evidence_types": ["experimental", "database"]
+        },
+        {
+          "source": "Literature",
+          "description": "FZD ICL3 and C-terminal tail bind DVL carboxy-terminal region, PDZ and DEP domains",
+          "notes": "Wnt-induced conformational changes enhance FZD-DVL interaction"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "DVL recruitment to FZD8 is essential for Wnt signal transduction; DVL phosphorylation state changes upon recruitment"
+    },
+    {
+      "partner": {
+        "gene_name": "DVL2",
+        "protein_name": "Dishevelled-2",
+        "uniprot_accession": "O14641"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DVL_binding_KTxxxW_608_613",
+            "residues": [608, 609, 610, 611, 612, 613],
+            "residue_names": ["K608", "T609", "L610", "E611", "S612", "W613"],
+            "description": "KTxxxW motif for DVL binding"
+          },
+          {
+            "domain_motif_id": "DVL_binding_PDZ_692_694",
+            "residues": [692, 693, 694],
+            "residue_names": ["S692", "Q693", "V694"],
+            "description": "C-terminal PDZ-binding motif"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "PDZ domain",
+            "description": "Binds FZD8 C-terminus"
+          },
+          {
+            "domain_motif_name": "DEP domain",
+            "description": "Primary interaction site with FZD8"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "notes": "DVL2 phosphorylation by PKC recruits β-arrestin 2 for Wnt5a-induced FZD internalization"
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.943,
+          "evidence_types": ["experimental", "database"]
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Mediates both canonical and non-canonical Wnt signaling"
+    },
+    {
+      "partner": {
+        "gene_name": "DVL3",
+        "protein_name": "Dishevelled-3",
+        "uniprot_accession": "Q92997"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "DVL_binding_KTxxxW_608_613",
+            "residues": [608, 609, 610, 611, 612, 613],
+            "residue_names": ["K608", "T609", "L610", "E611", "S612", "W613"],
+            "description": "KTxxxW motif for DVL binding"
+          },
+          {
+            "domain_motif_id": "DVL_binding_PDZ_692_694",
+            "residues": [692, 693, 694],
+            "residue_names": ["S692", "Q693", "V694"],
+            "description": "C-terminal PDZ-binding motif"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "PDZ domain",
+            "description": "Binds FZD8 C-terminus"
+          },
+          {
+            "domain_motif_name": "DEP domain",
+            "description": "Primary interaction site"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "notes": "CK1ε is major kinase for Wnt-induced DVL3 phosphorylation at >50 sites; phosphorylation creates conformational switch controlling FZD binding"
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.943,
+          "evidence_types": ["experimental", "database"]
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Central mediator of Wnt signaling downstream of FZD8"
+    },
+    {
+      "partner": {
+        "gene_name": "ZNRF3",
+        "protein_name": "E3 ubiquitin-protein ligase ZNRF3",
+        "uniprot_accession": "Q9ULT6"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Ubiquitination",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [
+          {
+            "domain_motif_name": "RING E3 ligase domain",
+            "description": "Catalyzes ubiquitination of FZD8"
+          },
+          {
+            "domain_motif_name": "Extracellular PA domain",
+            "description": "Recognizes FZD receptors"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {
+        "notes": "ZNRF3 selectively targets FZD5/8 for ubiquitination and degradation upon Wnt stimulation. Cell-surface biotinylation shows ZNRF3 siRNA strongly increases FZD8 membrane levels."
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.751,
+          "evidence_types": ["experimental", "database"]
+        },
+        {
+          "source": "Literature",
+          "pmid": "39418394",
+          "description": "Wnt induces FZD5/8 endocytosis and degradation via ZNRF3/RNF43",
+          "notes": "ZNRF3/RNF43 may recognize FZD through binding to DVL or via extracellular PA domain"
+        },
+        {
+          "source": "Reactome",
+          "pathway_id": "R-HSA-4641263",
+          "pathway_name": "Regulation of FZD by ubiquitination"
+        }
+      ],
+      "functional_effect": "Inhibitory",
+      "pathway_context": "Negative feedback loop: Wnt signaling induces ZNRF3 expression, which promotes FZD8 degradation to attenuate signaling"
+    },
+    {
+      "partner": {
+        "gene_name": "RNF43",
+        "protein_name": "E3 ubiquitin-protein ligase RNF43",
+        "uniprot_accession": "Q68DV7"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Ubiquitination",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [
+          {
+            "domain_motif_name": "RING E3 ligase domain",
+            "description": "Catalyzes ubiquitination"
+          },
+          {
+            "domain_motif_name": "Extracellular PA domain",
+            "description": "FZD recognition domain"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {
+        "notes": "RNF43 promotes FZD8 endocytosis and degradation, similar to ZNRF3. Auto-ubiquitination and endocytosis of RNF43 when bound to RSPO-LGR complex."
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.768,
+          "evidence_types": ["experimental", "database"]
+        },
+        {
+          "source": "Literature",
+          "description": "RNF43/ZNRF3 are transmembrane E3 ligases induced by Wnt signaling that antagonize pathway by promoting FZD degradation"
+        }
+      ],
+      "functional_effect": "Inhibitory",
+      "pathway_context": "Negative feedback regulation of Wnt signaling"
+    },
+    {
+      "partner": {
+        "gene_name": "RSPO1",
+        "protein_name": "R-spondin-1",
+        "uniprot_accession": "Q2MKA7"
+      },
+      "interaction_type": "Regulatory",
+      "mechanism": "Membrane clearance prevention",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": {
+        "notes": "RSPO1 binds ZNRF3/RNF43 and LGR4/5/6, inducing membrane clearance of ZNRF3/RNF43 (not FZD8). This prevents FZD8 degradation, increasing FZD8 membrane levels and potentiating Wnt signaling."
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "22155782",
+          "description": "RSPO1 increases membrane level of FZD8 and inhibits degradation by inducing ZNRF3 clearance",
+          "notes": "R-spondin potentiates Wnt signaling by clearing negative regulators"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "RSPO proteins potentiate Wnt signaling by preventing FZD8 degradation"
+    },
+    {
+      "partner": {
+        "gene_name": "LGR4",
+        "protein_name": "Leucine-rich repeat-containing G-protein coupled receptor 4",
+        "uniprot_accession": "Q9BXB1"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Scaffolding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": {
+        "notes": "LGR4 forms ternary complex with RSPO and ZNRF3/RNF43 (2:2:2 stoichiometry), inducing membrane clearance of E3 ligases to protect FZD8"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "LGR4-RSPO2-ZNRF3 assemble into 2:2:2 complex that clears ZNRF3 from membrane"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Part of RSPO-LGR system that potentiates Wnt signaling by protecting FZD8 from degradation"
+    }
+  ],
+  "pathways": {
+    "reactome": [
+      {
+        "pathway_id": "R-HSA-195721",
+        "pathway_name": "Signaling by WNT",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-195721"
+      },
+      {
+        "pathway_id": "R-HSA-201681",
+        "pathway_name": "TCF dependent signaling in response to WNT",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-201681"
+      },
+      {
+        "pathway_id": "R-HSA-201708",
+        "pathway_name": "Frizzled receptors bind Wnts",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-201708"
+      },
+      {
+        "pathway_id": "R-HSA-1458875",
+        "pathway_name": "WNT binds to FZD and LRP5/6",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-1458875"
+      },
+      {
+        "pathway_id": "R-HSA-4641183",
+        "pathway_name": "Signalosome formation",
+        "species": "Homo sapiens",
+        "url": "https://www.reactome.org/content/detail/R-HSA-4641183"
+      },
+      {
+        "pathway_id": "R-HSA-4641263",
+        "pathway_name": "Regulation of FZD by ubiquitination",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-4641263"
+      }
+    ],
+    "kegg": [
+      {
+        "pathway_id": "hsa04310",
+        "pathway_name": "Wnt signaling pathway",
+        "url": "https://www.genome.jp/pathway/hsa04310"
+      },
+      {
+        "pathway_id": "hsa04150",
+        "pathway_name": "mTOR signaling pathway",
+        "url": "https://www.genome.jp/pathway/hsa04150"
+      },
+      {
+        "pathway_id": "hsa04916",
+        "pathway_name": "Melanogenesis",
+        "url": "https://www.genome.jp/pathway/hsa04916"
+      }
+    ],
+    "pathway_role_summary": "FZD8 is a primary Wnt receptor for canonical Wnt/beta-catenin signaling. Upon Wnt3a or Wnt1 binding to the extracellular CRD, FZD8 forms a ternary complex with LRP5/6 co-receptors, triggering signalosome formation. This recruits DVL proteins to the intracellular domains, leading to inactivation of the beta-catenin destruction complex, nuclear accumulation of beta-catenin, and TCF/LEF-dependent gene transcription. FZD8 is subject to negative feedback regulation via ZNRF3/RNF43-mediated ubiquitination and degradation, which can be antagonized by RSPO-LGR4/5 complexes. FZD8 shows particularly high affinity for Wnt3a and is critical for neuron differentiation, angiogenesis, and T cell development."
+  },
+  "disease_associations": [
+    {
+      "disease": "Renal cell carcinoma",
+      "omim_id": null,
+      "mutation_type": "Somatic/expression",
+      "description": "FZD8 promotes cell proliferation and metastasis in renal cell carcinoma through Wnt/beta-catenin pathway activation. Differential expression associated with reduced survival."
+    },
+    {
+      "disease": "Gastric adenocarcinoma",
+      "omim_id": null,
+      "mutation_type": "Somatic",
+      "description": "FZD8 mutations identified in gastric cancer patients. Clinical trials target gastric adenocarcinoma with FZD8 alterations."
+    },
+    {
+      "disease": "Acute myeloid leukemia",
+      "omim_id": null,
+      "mutation_type": "Expression",
+      "description": "FZD8 has clinically-relevant associations with AML through aberrant Wnt signaling."
+    },
+    {
+      "disease": "Medulloblastoma",
+      "omim_id": null,
+      "mutation_type": "Expression",
+      "description": "Aberrant Wnt/FZD signaling contributes to medulloblastoma pathogenesis."
+    },
+    {
+      "disease": "Multiple myeloma",
+      "omim_id": null,
+      "mutation_type": "Somatic",
+      "description": "FZD8 mutations identified in multiple myeloma patients."
+    }
+  ],
+  "cross_references": {
+    "ncbi_gene_id": "8325",
+    "ensembl_gene_id": "ENSG00000177283",
+    "refseq_protein": ["NP_114072.1"],
+    "refseq_nucleotide": ["NM_031866.3"],
+    "hgnc_id": "HGNC:4046",
+    "omim_gene": "606146"
+  },
+  "metadata": {
+    "generated_at": "2026-10-18T00:00:00Z",
+    "queried_databases": [
+      "UniProt",
+      "NCBI Gene",
+      "Ensembl",
+      "InterPro",
+      "Pfam",
+      "PROSITE",
+      "PDB",
+      "AlphaFold",
+      "STRING",
+      "BioGRID",
+      "IntAct",
+      "Reactome",
+      "KEGG",
+      "GO",
+      "GeneCards",
+      "Human Protein Atlas"
+    ],
+    "data_quality_notes": "High quality data available. Multiple experimental structures (5 PDB entries) covering CRD domain. Limited PTM data available - only one phosphorylation site experimentally confirmed. No classical GRK/arrestin regulation data found for FZD8 specifically; Frizzled receptors appear to use different desensitization mechanisms than classical GPCRs. Quantitative binding affinity (Kd) available for Wnt3a interaction. AlphaFold structure accessible but specific pLDDT scores not retrieved. Full-length structure not available experimentally - only CRD domain solved. Intronless gene with single canonical isoform.",
+    "modeling_relevance_summary": "FZD8 is critical receptor for canonical Wnt/beta-catenin signaling with high affinity for Wnt3a (Kd ~1.5 nM). Essential for modeling Wnt pathway activation, receptor-mediated signalosome assembly, DVL recruitment and phosphorylation, and negative feedback via ZNRF3/RNF43 ubiquitination. Unique features: optimized for Wnt3a binding among Frizzled family; selective target of ZNRF3/RNF43 degradation machinery; dual binding modes (lipid and protein contacts) with Wnt ligands. Multiple crystal structures provide atomic detail of ligand recognition. Key for modeling receptor clustering, membrane dynamics, and R-spondin potentiation effects."
+  }
+}

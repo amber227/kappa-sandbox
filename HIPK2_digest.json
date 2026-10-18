@@ -1,0 +1,1280 @@
+{
+  "protein_identifier": {
+    "gene_name": "HIPK2",
+    "protein_name": "Homeodomain-interacting protein kinase 2",
+    "uniprot_accession": "Q9H2X6",
+    "organism": "Homo sapiens",
+    "organism_taxid": 9606
+  },
+  "sequence": {
+    "canonical_length": 1198,
+    "canonical_sequence": "SEQUENCE_AVAILABLE_FROM_UNIPROT_Q9H2X6",
+    "molecular_weight_da": 130966,
+    "isoforms": [
+      {
+        "isoform_id": "Q9H2X6-2 (HIPK2-Δe8)",
+        "length": 1171,
+        "description": "Partial skipping of exon 8, lacks 27 amino acids required for Siah-1 binding, more resistant to proteasome digestion",
+        "sequence": "AVAILABLE_FROM_UNIPROT"
+      },
+      {
+        "isoform_id": "Q9H2X6-3 (HIPK2-S)",
+        "length": 443,
+        "description": "Short isoform with intron 13 retention, localizes at intercellular bridge, phosphorylates histone H2B and spastin for cytokinesis",
+        "sequence": "AVAILABLE_FROM_UNIPROT"
+      }
+    ]
+  },
+  "domains_and_motifs": [
+    {
+      "identifier": "NLS1_97_157",
+      "name": "Nuclear localization signal 1",
+      "type": "NLS",
+      "locations": [{"start": 97, "end": 157}],
+      "sequence": "SEQUENCE_AT_POSITIONS_97-157",
+      "description": "First nuclear localization signal directing HIPK2 to the nucleus",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "N/A",
+          "notes": "Documented in multiple studies of HIPK2 domain architecture"
+        }
+      ]
+    },
+    {
+      "identifier": "KINASE_192_520",
+      "name": "Protein kinase domain",
+      "type": "Domain",
+      "locations": [{"start": 192, "end": 520}],
+      "sequence": "SEQUENCE_AT_POSITIONS_192-520",
+      "description": "Serine/threonine protein kinase catalytic domain, CMGC family kinase with unique 78-residue insert region (418-493)",
+      "sources": [
+        {
+          "database": "Pfam",
+          "accession": "PF00069",
+          "notes": "Protein kinase domain (Pkinase)"
+        },
+        {
+          "database": "InterPro",
+          "accession": "IPR000719",
+          "notes": "Protein kinase domain"
+        },
+        {
+          "database": "SMART",
+          "accession": "smart00220",
+          "notes": "S_TKc domain at 199-527"
+        },
+        {
+          "database": "NCBI CDD",
+          "accession": "cd14227",
+          "notes": "STKc_HIPK2 domain at 183-537"
+        }
+      ]
+    },
+    {
+      "identifier": "CMGC_INSERT_418_493",
+      "name": "CMGC insert region",
+      "type": "Domain",
+      "locations": [{"start": 418, "end": 493}],
+      "sequence": "SEQUENCE_AT_POSITIONS_418-493",
+      "description": "Unique 78-residue CMGC-insert region with unusual architecture characteristic of HIPK family",
+      "sources": [
+        {
+          "database": "PDB",
+          "accession": "6P5S",
+          "notes": "Crystal structure reveals unique architecture"
+        }
+      ]
+    },
+    {
+      "identifier": "HID_583_798",
+      "name": "Homeodomain-interacting domain",
+      "type": "Domain",
+      "locations": [{"start": 583, "end": 798}],
+      "sequence": "SEQUENCE_AT_POSITIONS_583-798",
+      "description": "Domain responsible for interaction with homeodomain transcription factors",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "N/A",
+          "notes": "Domain C-terminal to kinase domain mediating homeodomain TF interactions"
+        }
+      ]
+    },
+    {
+      "identifier": "NLS2_780_840",
+      "name": "Nuclear localization signal 2",
+      "type": "NLS",
+      "locations": [{"start": 780, "end": 840}],
+      "sequence": "SEQUENCE_AT_POSITIONS_780-840",
+      "description": "Second nuclear localization signal",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "N/A",
+          "notes": "Part of multi-NLS system regulating nuclear import"
+        }
+      ]
+    },
+    {
+      "identifier": "PEST_839_934",
+      "name": "PEST sequence",
+      "type": "Degron",
+      "locations": [{"start": 839, "end": 934}],
+      "sequence": "SEQUENCE_AT_POSITIONS_839-934",
+      "description": "PEST sequence associated with rapid protein turnover and degradation",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "N/A",
+          "notes": "Targets protein for ubiquitin-mediated degradation"
+        }
+      ]
+    },
+    {
+      "identifier": "SRS_860_967",
+      "name": "Speckle retention sequence",
+      "type": "Domain",
+      "locations": [{"start": 860, "end": 967}],
+      "sequence": "SEQUENCE_AT_POSITIONS_860-967",
+      "description": "Speckle retention sequence required for subcellular localization to PML nuclear bodies, contains NLS3 and SUMO-interacting motif (SIM)",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "N/A",
+          "notes": "Critical for PML-NB targeting and p53 activation"
+        }
+      ]
+    },
+    {
+      "identifier": "SIM_878_881",
+      "name": "SUMO-interacting motif",
+      "type": "Motif",
+      "locations": [{"start": 878, "end": 881}],
+      "sequence": "VSVI",
+      "description": "SUMO-interacting motif (core sequence VSVI) that binds SUMO-1, SUMO-2, and SUMO-3; critical for targeting to PML nuclear bodies",
+      "sources": [
+        {
+          "database": "ELM",
+          "accession": "LIG_SUMO_SIM_anti_2",
+          "notes": "Anti-parallel SIM"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:21145359",
+          "notes": "Control of nuclear HIPK2 localization and function"
+        }
+      ]
+    },
+    {
+      "identifier": "AUTOINHIBITORY_935_1050",
+      "name": "Autoinhibitory domain",
+      "type": "Domain",
+      "locations": [{"start": 935, "end": 1050}],
+      "sequence": "SEQUENCE_AT_POSITIONS_935-1050",
+      "description": "Autoinhibitory domain regulating kinase activity",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "N/A",
+          "notes": "Regulatory domain modulating HIPK2 kinase activity"
+        }
+      ]
+    },
+    {
+      "identifier": "SIAH1_BINDING_1155_1182",
+      "name": "Siah-1 E3 ligase binding site",
+      "type": "Binding_site",
+      "locations": [{"start": 1155, "end": 1182}],
+      "sequence": "SEQUENCE_INCLUDING_K1182",
+      "description": "C-terminal region containing K1182 ubiquitination site, binding site for Siah-1 E3 ubiquitin ligase (absent in Δe8 isoform)",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "N/A",
+          "notes": "27 amino acids in this region deleted in HIPK2-Δe8 isoform"
+        }
+      ]
+    }
+  ],
+  "structure": {
+    "experimental_structures": [
+      {
+        "pdb_id": "6P5S",
+        "method": "X-ray",
+        "resolution_angstrom": 2.19,
+        "chain": "A",
+        "coverage": {"start": 177, "end": 547},
+        "description": "First crystal structure of HIPK family kinase domain in active conformation, bound to CX-4945 inhibitor, reveals unique CMGC-insert architecture",
+        "ligands": ["CX-4945", "ATP-analog"],
+        "url": "https://www.rcsb.org/structure/6P5S"
+      },
+      {
+        "pdb_id": "7NCF",
+        "method": "X-ray",
+        "resolution_angstrom": 2.72,
+        "chain": "A",
+        "coverage": {"start": 177, "end": 547},
+        "description": "HIPK2 kinase domain in complex with selective inhibitor MU135 (compound 21e) showing type-I binding mode",
+        "ligands": ["MU135"],
+        "url": "https://www.rcsb.org/structure/7NCF"
+      }
+    ],
+    "alphafold_prediction": {
+      "available": true,
+      "accession": "AF-Q9H2X6-F1",
+      "confidence_summary": "High confidence for kinase domain (192-520), moderate to low confidence for flexible regions including SRS domain and C-terminal regions",
+      "url": "https://alphafold.ebi.ac.uk/entry/Q9H2X6"
+    }
+  },
+  "post_translational_modifications": [
+    {
+      "type": "Phosphorylation",
+      "position": 361,
+      "residue": "Y",
+      "function": "Autophosphorylation in activation loop, activates kinase and promotes nuclear localization",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 566,
+      "residue": "T",
+      "function": "Autophosphorylation site, contributes to kinase activation in response to UV and doxorubicin",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 112,
+      "residue": "T",
+      "function": "Phosphorylated by AMPK, regulatory function",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 114,
+      "residue": "S",
+      "function": "Phosphorylated by AMPK, regulatory function",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 1107,
+      "residue": "T",
+      "function": "Phosphorylated by AMPK, regulatory function",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Ubiquitination",
+      "position": 1182,
+      "residue": "K",
+      "function": "Polyubiquitination by Siah-1 E3 ligase leads to proteasomal degradation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Sumoylation",
+      "position": 25,
+      "residue": "K",
+      "function": "SUMO-1 conjugation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Sumoylation",
+      "position": 32,
+      "residue": "K",
+      "function": "Promoted by CBX4 E3 SUMO ligase, directs HIPK2 to nuclear speckles",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Acetylation",
+      "position": null,
+      "residue": "K",
+      "function": "p300-mediated acetylation increases protein stability by decreasing polyubiquitination and proteasomal degradation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Cleavage",
+      "position": 916,
+      "residue": "D",
+      "function": "Caspase cleavage site",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Cleavage",
+      "position": 977,
+      "residue": "D",
+      "function": "Caspase cleavage site",
+      "evidence": "Experimental"
+    }
+  ],
+  "function": {
+    "uniprot_function": "Serine/threonine-protein kinase involved in transcription regulation, p53/TP53-mediated cellular apoptosis and regulation of the cell cycle. Acts as a corepressor of several transcription factors, including SMAD1 and POU4F1/Brn3a and probably NK homeodomain transcription factors. Phosphorylates p53/TP53, CREB1, DAXX, DAZAP2, EP300, CBX4, CTNNB1, CTBP1, HMGA1, PML, and RUNX1. Plays a key role in responding to DNA damage by regulating p53/TP53 phosphorylation at 'Ser-46' in response to severe DNA damage, promoting apoptosis. Also involved in transcriptional activation of TP53 through promoter-specific phosphorylation of CREB1. Can phosphorylate beta-catenin (CTNNB1) at 'Ser-33' and 'Ser-37', targeting it for proteasomal degradation independent of GSK3B, acting as a negative regulator of Wnt signaling. Phosphorylates DAXX, which is essential for DAXX interaction with HIPK2 and subsequent apoptosis. Its ability to phosphorylate transcription factors appears to require its association with PML nuclear bodies.",
+    "catalytic_activity": "ATP + L-seryl-[protein] = ADP + H(+) + O-phospho-L-seryl-[protein]; ATP + L-threonyl-[protein] = ADP + H(+) + O-phospho-L-threonyl-[protein]",
+    "subcellular_location": ["Nucleus", "Nuclear body", "PML body", "Cytoplasm"],
+    "tissue_specificity": "Tissue enriched in brain with ubiquitous nuclear expression. Tau specificity score: 0.54. Cell type enhanced in somatotrophs and plasma cells. Expression cluster: oligodendrocytes-myelination.",
+    "go_annotations": {
+      "molecular_function": [
+        {
+          "go_id": "GO:0001046",
+          "term": "core promoter sequence-specific DNA binding",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0003713",
+          "term": "transcription coactivator activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0003714",
+          "term": "transcription corepressor activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0004672",
+          "term": "protein kinase activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0004674",
+          "term": "protein serine/threonine kinase activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005515",
+          "term": "protein binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0046332",
+          "term": "SMAD binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0001228",
+          "term": "RNA polymerase II activating transcription factor binding",
+          "evidence_code": "IPI"
+        }
+      ],
+      "biological_process": [
+        {
+          "go_id": "GO:0006468",
+          "term": "protein phosphorylation",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0018105",
+          "term": "peptidyl-serine phosphorylation",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0018107",
+          "term": "peptidyl-threonine phosphorylation",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0030890",
+          "term": "positive regulation of BMP signaling pathway",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0043065",
+          "term": "positive regulation of apoptotic process",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0045893",
+          "term": "positive regulation of transcription, DNA-templated",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0046777",
+          "term": "protein autophosphorylation",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0072734",
+          "term": "cellular response to staurosporine",
+          "evidence_code": "IEP"
+        },
+        {
+          "go_id": "GO:0097252",
+          "term": "oligodendrocyte apoptotic process",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0001666",
+          "term": "response to hypoxia",
+          "evidence_code": "IEP"
+        },
+        {
+          "go_id": "GO:0008630",
+          "term": "intrinsic apoptotic signaling pathway in response to DNA damage",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0042771",
+          "term": "intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0043124",
+          "term": "negative regulation of I-kappaB kinase/NF-kappaB signaling",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0043433",
+          "term": "negative regulation of DNA-binding transcription factor activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0045892",
+          "term": "negative regulation of transcription, DNA-templated",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0046621",
+          "term": "negative regulation of organ growth",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0051865",
+          "term": "protein autoubiquitination",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0070301",
+          "term": "cellular response to hydrogen peroxide",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0071480",
+          "term": "cellular response to gamma radiation",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0000082",
+          "term": "G1/S transition of mitotic cell cycle",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0016055",
+          "term": "Wnt signaling pathway",
+          "evidence_code": "IDA"
+        }
+      ],
+      "cellular_component": [
+        {
+          "go_id": "GO:0005634",
+          "term": "nucleus",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005737",
+          "term": "cytoplasm",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0016604",
+          "term": "nuclear body",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0016605",
+          "term": "PML body",
+          "evidence_code": "IDA"
+        }
+      ]
+    }
+  },
+  "interactions": [
+    {
+      "partner": {
+        "gene_name": "TP53",
+        "protein_name": "Cellular tumor antigen p53",
+        "uniprot_accession": "P04637"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Phosphorylation",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "KINASE_192_520",
+            "residues": [],
+            "residue_names": [],
+            "description": "Kinase domain phosphorylates p53"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Transactivation domain",
+            "residues": [46],
+            "description": "Ser46 phosphorylation by HIPK2 promotes pro-apoptotic gene expression"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "notes": "HIPK2 phosphorylates p53 at Ser46 in response to severe DNA damage; interaction occurs at PML nuclear bodies"
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.98,
+          "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "source": "BioGRID",
+          "experimental_system": "Affinity Capture-Western",
+          "throughput": "Low"
+        },
+        {
+          "source": "Literature",
+          "pmid": "12565818",
+          "description": "HIPK2 phosphorylates p53 at Ser46 for apoptosis induction"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "DNA damage response, p53-mediated apoptosis"
+    },
+    {
+      "partner": {
+        "gene_name": "CTNNB1",
+        "protein_name": "Catenin beta-1",
+        "uniprot_accession": "P35222"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Phosphorylation",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "KINASE_192_520",
+            "residues": [],
+            "residue_names": [],
+            "description": "Kinase domain phosphorylates beta-catenin"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "N-terminal phosphorylation sites",
+            "residues": [33, 37],
+            "description": "Ser33 and Ser37 phosphorylation by HIPK2 without priming kinase"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "notes": "HIPK2 phosphorylates beta-catenin at Ser33/Ser37 without GSK3B priming, leading to proteasomal degradation"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "20307497",
+          "description": "HIPK2 targets beta-catenin for phosphorylation and proteasomal degradation"
+        }
+      ],
+      "functional_effect": "Inhibitory",
+      "pathway_context": "Negative regulation of Wnt/beta-catenin signaling pathway"
+    },
+    {
+      "partner": {
+        "gene_name": "PML",
+        "protein_name": "Protein PML",
+        "uniprot_accession": "P29590"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Phosphorylation",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "SIM_878_881",
+            "residues": [878, 879, 880, 881],
+            "residue_names": ["V878", "S879", "V880", "I881"],
+            "description": "SUMO-interacting motif targets HIPK2 to PML nuclear bodies"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "N-terminal phosphorylation sites",
+            "residues": [8, 17, 38, 45, 47],
+            "description": "Multiple Ser phosphorylation sites by HIPK2"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "notes": "HIPK2 phosphorylates PML at Ser8, Ser17, Ser38, Ser45, Ser47 in response to DNA damage, increasing PML accumulation and sumoylation"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "18836439",
+          "description": "PML tumor suppressor is regulated by HIPK2-mediated phosphorylation in response to DNA damage"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "DNA damage response, PML nuclear body formation, apoptosis"
+    },
+    {
+      "partner": {
+        "gene_name": "SIAH1",
+        "protein_name": "E3 ubiquitin-protein ligase SIAH1",
+        "uniprot_accession": "Q8IUQ4"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Ubiquitination",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "SIAH1_BINDING_1155_1182",
+            "residues": [1182],
+            "residue_names": ["K1182"],
+            "description": "Siah-1 binding region with K1182 ubiquitination site"
+          }
+        ],
+        "partner_protein": [],
+        "site_specific": true
+      },
+      "kinetics": {
+        "notes": "Siah-1-mediated polyubiquitination at K1182 leads to proteasomal degradation; inhibited by DNA damage"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "Siah-1 promotes HIPK2 ubiquitination and degradation under basal conditions"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "Maintaining low HIPK2 levels in unstressed cells; degradation suppressed upon DNA damage"
+    },
+    {
+      "partner": {
+        "gene_name": "FBXO3",
+        "protein_name": "F-box only protein 3",
+        "uniprot_accession": "Q9UK99"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Ubiquitination",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": {
+        "notes": "SCF(Fbxo3) E3 ligase mediates HIPK2 ubiquitination; degradation (but not ubiquitination) prevented by PML"
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.73,
+          "evidence_types": ["experimental", "database"]
+        },
+        {
+          "source": "Literature",
+          "description": "FBXO3 promotes HIPK2 degradation in unstressed cells"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "Maintaining low HIPK2 levels basally"
+    },
+    {
+      "partner": {
+        "gene_name": "WSB1",
+        "protein_name": "WD repeat and SOCS box-containing protein 1",
+        "uniprot_accession": "Q9Y6I7"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Ubiquitination",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": {
+        "notes": "WSB1 confers constitutive instability to HIPK2; degradation suppressed by DNA damage"
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.65,
+          "evidence_types": ["experimental", "database"]
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "Maintaining low HIPK2 levels basally"
+    },
+    {
+      "partner": {
+        "gene_name": "EP300",
+        "protein_name": "Histone acetyltransferase p300",
+        "uniprot_accession": "Q09472"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Phosphorylation",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "KINASE_192_520",
+            "residues": [],
+            "residue_names": [],
+            "description": "Kinase domain phosphorylates p300"
+          }
+        ],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": {
+        "notes": "Bidirectional: HIPK2 phosphorylates p300 to activate its HAT activity; p300 acetylates HIPK2 to increase its stability"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "29176614",
+          "description": "p300-mediated acetylation increases HIPK2 protein stability and tumor suppressor function"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "DNA damage response, p53 activation, mutual positive regulation"
+    },
+    {
+      "partner": {
+        "gene_name": "CBX4",
+        "protein_name": "E3 SUMO-protein ligase CBX4",
+        "uniprot_accession": "O00257"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Phosphorylation",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "KINASE_192_520",
+            "residues": [],
+            "residue_names": [],
+            "description": "Kinase domain phosphorylates CBX4"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "E3 SUMO ligase domain",
+            "residues": [497],
+            "description": "Thr497 phosphorylation by HIPK2 activates E3 SUMO ligase activity"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "notes": "Reciprocal regulation: HIPK2 phosphorylates CBX4 T497 upon DNA damage to activate its E3 SUMO ligase activity; CBX4 sumoylates HIPK2 at K32"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "HIPK2 promotes CBX4 E3 SUMO ligase activity through phosphorylation; CBX4 sumoylates HIPK2"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "DNA damage response, sumoylation pathway, reciprocal regulatory feedback"
+    },
+    {
+      "partner": {
+        "gene_name": "DAXX",
+        "protein_name": "Death domain-associated protein 6",
+        "uniprot_accession": "Q9UER7"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Phosphorylation",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "KINASE_192_520",
+            "residues": [],
+            "residue_names": [],
+            "description": "Kinase domain phosphorylates DAXX"
+          }
+        ],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": {
+        "notes": "HIPK2 phosphorylates DAXX to promote TGF-beta-mediated cell death; interaction occurs at PML nuclear bodies"
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.88,
+          "evidence_types": ["experimental", "database", "textmining"]
+        },
+        {
+          "source": "Literature",
+          "pmid": "14522884",
+          "description": "HIPK2 regulates TGF-beta-induced JNK activation and apoptosis via DAXX"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "TGF-beta signaling, JNK activation, apoptosis"
+    },
+    {
+      "partner": {
+        "gene_name": "DAZAP2",
+        "protein_name": "DAZ-associated protein 2",
+        "uniprot_accession": "Q15038"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Phosphorylation",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "KINASE_192_520",
+            "residues": [],
+            "residue_names": [],
+            "description": "Kinase domain phosphorylates DAZAP2"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Regulatory domain",
+            "residues": [77],
+            "description": "Ser77 phosphorylation inhibits DAZAP2's HIPK2-degrading function"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "notes": "Under basal conditions, DAZAP2 promotes SIAH1-mediated HIPK2 degradation; upon DNA damage, HIPK2 phosphorylates DAZAP2 at Ser77 to inhibit this degradation and redirect DAZAP2 to nucleus"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "33606980",
+          "description": "DAZAP2 acts as specifier of p53 response to DNA damage"
+        }
+      ],
+      "functional_effect": "Regulatory",
+      "pathway_context": "DNA damage response, p53 pathway specification, reciprocal regulation"
+    },
+    {
+      "partner": {
+        "gene_name": "CTBP1",
+        "protein_name": "C-terminal-binding protein 1",
+        "uniprot_accession": "Q13363"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Phosphorylation",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "KINASE_192_520",
+            "residues": [],
+            "residue_names": [],
+            "description": "Kinase domain phosphorylates CtBP1"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "C-terminal region",
+            "residues": [422],
+            "description": "Ser422 phosphorylation marks CtBP1 for degradation"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "notes": "HIPK2 phosphorylates CtBP1 at Ser422 in response to UV, marking it for proteasomal degradation"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "15866171",
+          "description": "HIPK2 mediates CtBP phosphorylation and degradation in UV-triggered apoptosis"
+        }
+      ],
+      "functional_effect": "Degradation",
+      "pathway_context": "p53-independent apoptosis, relief of transcriptional repression"
+    },
+    {
+      "partner": {
+        "gene_name": "CREB1",
+        "protein_name": "cAMP response element-binding protein",
+        "uniprot_accession": "P16220"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Phosphorylation",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "KINASE_192_520",
+            "residues": [],
+            "residue_names": [],
+            "description": "Kinase domain phosphorylates CREB1"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Transactivation domain",
+            "residues": [271],
+            "description": "Ser271 phosphorylation by HIPK2"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "notes": "HIPK2 phosphorylates CREB1 at Ser271 in response to genotoxic stress, activating CREB1"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "20810658",
+          "description": "HIPK2 regulates genotoxic stress response through CREB phosphorylation at Ser271"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "DNA damage response, transcriptional activation"
+    },
+    {
+      "partner": {
+        "gene_name": "ATF1",
+        "protein_name": "Cyclic AMP-dependent transcription factor ATF-1",
+        "uniprot_accession": "P18846"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Phosphorylation",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "KINASE_192_520",
+            "residues": [],
+            "residue_names": [],
+            "description": "Kinase domain phosphorylates ATF1"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Transactivation domain",
+            "residues": [198],
+            "description": "Ser198 phosphorylation by HIPK2"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "notes": "HIPK2 activates ATF1 by phosphorylation at Ser198 in response to genotoxic stress"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "HIPK2 phosphorylates and activates ATF1 transcription factor"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "DNA damage response, transcriptional activation"
+    },
+    {
+      "partner": {
+        "gene_name": "RUNX1",
+        "protein_name": "Runt-related transcription factor 1",
+        "uniprot_accession": "Q01196"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Phosphorylation",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "KINASE_192_520",
+            "residues": [],
+            "residue_names": [],
+            "description": "Kinase domain phosphorylates RUNX1"
+          }
+        ],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": {
+        "notes": "HIPK2 phosphorylates RUNX1, which stimulates EP300 transcription regulation activity"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "HIPK2-mediated RUNX1 phosphorylation activates p300"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Transcriptional regulation, hematopoiesis"
+    },
+    {
+      "partner": {
+        "gene_name": "PDX1",
+        "protein_name": "Pancreatic and duodenal homeobox protein 1",
+        "uniprot_accession": "P52945"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Phosphorylation",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "KINASE_192_520",
+            "residues": [],
+            "residue_names": [],
+            "description": "Kinase domain phosphorylates PDX1"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Regulatory domain",
+            "residues": [269],
+            "description": "Ser269 phosphorylation affects PDX1 subnuclear localization"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "notes": "HIPK2 phosphorylates PDX1 at Ser269 in response to high glucose, affecting subnuclear localization"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "20823228",
+          "description": "PDX1 phosphorylation at Ser269 is HIPK2-dependent"
+        }
+      ],
+      "functional_effect": "Regulatory",
+      "pathway_context": "Pancreatic beta-cell function, glucose response"
+    },
+    {
+      "partner": {
+        "gene_name": "HMGA1",
+        "protein_name": "High mobility group protein HMG-I/HMG-Y",
+        "uniprot_accession": "P17096"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Phosphorylation",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "KINASE_192_520",
+            "residues": [],
+            "residue_names": [],
+            "description": "Kinase domain phosphorylates HMGA1"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "AT-hook domains",
+            "residues": [35, 52, 77],
+            "description": "HMGA1a: Ser35, Thr52, Thr77; HMGA1b: Thr41, Thr66"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "notes": "HIPK2 phosphorylation decreases HMGA1a DNA-binding affinity"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "HIPK2 phosphorylates HMGA1 at multiple sites reducing DNA binding"
+        }
+      ],
+      "functional_effect": "Inhibitory",
+      "pathway_context": "Chromatin remodeling, transcriptional regulation"
+    },
+    {
+      "partner": {
+        "gene_name": "MDM2",
+        "protein_name": "E3 ubiquitin-protein ligase Mdm2",
+        "uniprot_accession": "Q00987"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Regulatory",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [
+          {
+            "domain_motif_name": "RING domain",
+            "residues": [],
+            "description": "HIPK2 binds MDM2 RING domain"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {
+        "notes": "MDM2 can degrade HIPK2 and disrupt Axin-HIPK2-p53 complex; HIPK2 downregulates MDM2 upon lethal DNA damage"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "19638621",
+          "description": "HIPK2 regulation by MDM2 determines tumor cell response to p53-reactivating drugs"
+        }
+      ],
+      "functional_effect": "Regulatory",
+      "pathway_context": "p53 pathway regulation, DNA damage response, reciprocal regulation"
+    },
+    {
+      "partner": {
+        "gene_name": "HIPK1",
+        "protein_name": "Homeodomain-interacting protein kinase 1",
+        "uniprot_accession": "Q86Z02"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Direct_interaction",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": {
+        "notes": "HIPK2 and HIPK1 have overlapping roles in cell growth regulation and DNA damage response"
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.92,
+          "evidence_types": ["experimental", "database", "textmining", "coexpression"]
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "Redundant kinase functions in stress response"
+    },
+    {
+      "partner": {
+        "gene_name": "SPOP",
+        "protein_name": "Speckle-type POZ protein",
+        "uniprot_accession": "O43791"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Direct_interaction",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [],
+        "partner_protein": [],
+        "site_specific": false
+      },
+      "kinetics": {
+        "notes": "SPOP interacts with HIPK2 potentially regulating its stability or localization"
+      },
+      "evidence": [
+        {
+          "source": "BioGRID",
+          "experimental_system": "Affinity Capture-Western",
+          "throughput": "Low",
+          "interaction_id": "2782932"
+        }
+      ],
+      "functional_effect": "Regulatory",
+      "pathway_context": "Nuclear body organization"
+    }
+  ],
+  "pathways": {
+    "reactome": [
+      {
+        "pathway_id": "R-HSA-2028269",
+        "pathway_name": "MECP2 phosphorylation",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-2028269"
+      },
+      {
+        "pathway_id": "R-HSA-9022314",
+        "pathway_name": "TP53 Regulates Transcription of DNA Repair Genes",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-9022314"
+      }
+    ],
+    "kegg": [
+      {
+        "pathway_id": "hsa04218",
+        "pathway_name": "Cellular senescence",
+        "url": "https://www.kegg.jp/pathway/hsa04218"
+      }
+    ],
+    "pathway_role_summary": "HIPK2 is a central kinase in DNA damage response pathways, phosphorylating p53 at Ser46 to promote apoptosis. Acts as negative regulator of Wnt signaling by phosphorylating beta-catenin. Regulates TGF-beta signaling through DAXX and JNK activation. Functions as tumor suppressor through multiple mechanisms including CtBP degradation and transcriptional corepression. Critical regulator of PML nuclear body function and cellular senescence."
+  },
+  "disease_associations": [
+    {
+      "disease": "Acute myeloid leukemia (AML)",
+      "omim_id": "606868",
+      "mutation_type": "Somatic",
+      "description": "Two missense mutations (R868W and N958I) found in speckle-retention signal region in 2 out of 130 AML cases; mutations alter nuclear localization and decrease transactivation potential"
+    },
+    {
+      "disease": "Myelodysplastic syndrome (MDS)",
+      "omim_id": "606868",
+      "mutation_type": "Somatic",
+      "description": "Somatic mutations R868W and N958I identified; altered HIPK2 function in AML1- and p53-dependent transcription"
+    },
+    {
+      "disease": "Breast cancer",
+      "omim_id": null,
+      "mutation_type": "Transcriptional downregulation",
+      "description": "HIPK2 downregulated in 8 out of 20 breast carcinomas tested; loss of heterozygosity at 7q32-q33 suggests candidate tumor suppressor"
+    },
+    {
+      "disease": "Thyroid carcinoma",
+      "omim_id": null,
+      "mutation_type": "Transcriptional downregulation",
+      "description": "HIPK2 inactivated by transcriptional downregulation in 8 out of 14 thyroid carcinomas"
+    },
+    {
+      "disease": "Colorectal cancer",
+      "omim_id": null,
+      "mutation_type": "Somatic",
+      "description": "HIPK2 frequently inactivated in colon cancer; potential biomarker for tumor progression and therapy response"
+    },
+    {
+      "disease": "Pancreatic cancer",
+      "omim_id": null,
+      "mutation_type": "Somatic",
+      "description": "Inactivation of HIPK2 attenuates KRAS(G12D) activity and prevents pancreatic tumorigenesis"
+    }
+  ],
+  "cross_references": {
+    "ncbi_gene_id": "28996",
+    "ensembl_gene_id": "ENSG00000064393",
+    "refseq_protein": ["NP_073625.2"],
+    "refseq_nucleotide": ["NM_022740.4"],
+    "hgnc_id": "HGNC:4927",
+    "omim_gene": "606868"
+  },
+  "metadata": {
+    "generated_at": "2026-10-18T00:00:00Z",
+    "queried_databases": [
+      "UniProt",
+      "NCBI Gene",
+      "InterPro",
+      "Pfam",
+      "PROSITE",
+      "SMART",
+      "NCBI CDD",
+      "PDB",
+      "AlphaFold",
+      "STRING",
+      "BioGRID",
+      "IntAct",
+      "Reactome",
+      "KEGG",
+      "GO",
+      "Human Protein Atlas",
+      "OMIM",
+      "Ensembl",
+      "RefSeq",
+      "ELM",
+      "Literature (PubMed)"
+    ],
+    "data_quality_notes": "Complete amino acid sequence not directly accessible via web scraping; available at UniProt Q9H2X6. Some kinetic parameters (Kd, Km, kcat) not available in literature for most interactions. Disease mutation data limited to reported cases in literature. Most interaction data is qualitative; quantitative binding affinities are sparse. Isoform sequences require direct UniProt access.",
+    "modeling_relevance_summary": "HIPK2 is critical for Wnt pathway regulation through direct beta-catenin phosphorylation at Ser33/Ser37, independent of destruction complex. Acts as DNA damage sensor phosphorylating p53 at Ser46 for apoptosis. Multiple E3 ligases (Siah-1, FBXO3, WSB1) provide tight basal regulation with DNA damage-responsive stabilization. PML nuclear body localization essential for function. Three isoforms with distinct functions (full-length, Δe8 stable variant, short cytokinesis-specific). Rich post-translational modification crosstalk (phosphorylation, ubiquitination, sumoylation, acetylation) creates complex regulatory network suitable for rule-based modeling."
+  }
+}

@@ -1,0 +1,1142 @@
+{
+  "protein_identifier": {
+    "gene_name": "DKK1",
+    "protein_name": "Dickkopf-related protein 1",
+    "uniprot_accession": "O94907",
+    "organism": "Homo sapiens",
+    "organism_taxid": 9606
+  },
+  "sequence": {
+    "canonical_length": 266,
+    "canonical_sequence": "MMALGAAGATRVFVAMVAAALGGHPLLGVSAVLNSNAAIKNLPPPLGGAAGHPGSAVSAAPGILYPGGNKYQTIDNYQPYPCAEDEEECGTDEYCASPTRGGDAGVQICLACRKRRKRCMRHAMCCPGNYCKNGICVSSDQNHFRGEIEAETITESFGNDHSTLDGYSRRTTLSSKMYHTKGQEGSVCLRSSDCASGLCCARHFWSKICKPVLKEGQVCTKHRRKGSHGLFIHPSPSLRHGRRRRDHSASVYSRVWRTVDDAPQEDLAQLLWVHLPAGPFPALWPAQRRRRCNPRCKWPCCPSGKYCAREMGQCWPSHPQCRNCSVSHHWREGDSRFQVTVTSIRTYH",
+    "molecular_weight_da": 28672,
+    "isoforms": [
+      {
+        "isoform_id": "O94907-1",
+        "length": 266,
+        "description": "Canonical isoform; 31-residue N-terminal signal peptide (1-31) is cleaved to produce mature secreted protein (32-266)",
+        "sequence": "MMALGAAGATRVFVAMVAAALGGHPLLGVSAVLNSNAAIKNLPPPLGGAAGHPGSAVSAAPGILYPGGNKYQTIDNYQPYPCAEDEEECGTDEYCASPTRGGDAGVQICLACRKRRKRCMRHAMCCPGNYCKNGICVSSDQNHFRGEIEAETITESFGNDHSTLDGYSRRTTLSSKMYHTKGQEGSVCLRSSDCASGLCCARHFWSKICKPVLKEGQVCTKHRRKGSHGLFIHPSPSLRHGRRRRDHSASVYSRVWRTVDDAPQEDLAQLLWVHLPAGPFPALWPAQRRRRCNPRCKWPCCPSGKYCAREMGQCWPSHPQCRNCSVSHHWREGDSRFQVTVTSIRTYH"
+      }
+    ]
+  },
+  "domains_and_motifs": [
+    {
+      "identifier": "Signal_peptide_1_31",
+      "name": "Signal peptide",
+      "type": "Signal",
+      "locations": [
+        {
+          "start": 1,
+          "end": 31
+        }
+      ],
+      "sequence": "MMALGAAGATRVFVAMVAAALGGHPLLGVSA",
+      "description": "N-terminal signal peptide directing protein to secretory pathway; cleaved to produce mature DKK1 (residues 32-266)",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "O94907",
+          "notes": "Signal peptide annotation"
+        }
+      ]
+    },
+    {
+      "identifier": "CRD1_N_terminal_85_139",
+      "name": "Cysteine-rich domain 1 (N-terminal)",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 85,
+          "end": 139
+        }
+      ],
+      "sequence": "EEECGTDEYCASPTRGGDAGVQICLACRKRRKRCMRHAMCCPGNYCKNGICVSSD",
+      "description": "N-terminal cysteine-rich domain (DKK1N) containing 10 conserved cysteines forming 5 intramolecular disulfide bonds; modulates LRP6 interaction; unique DKK family fold with no structural homology to other proteins",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR006796",
+          "notes": "Dickkopf, N-terminal cysteine-rich"
+        },
+        {
+          "database": "InterPro",
+          "accession": "IPR047305",
+          "notes": "Dickkopf-related protein 1, N-terminal domain"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:29891909",
+          "notes": "Structural and functional analysis"
+        }
+      ]
+    },
+    {
+      "identifier": "Linker_region_140_188",
+      "name": "Linker region",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 140,
+          "end": 188
+        }
+      ],
+      "sequence": "QNHFRGEIEAETITESFGNDHSTLDGYSRRTTLSSKMYHTKGQEGSVCLR",
+      "description": "Flexible linker region connecting N-terminal and C-terminal cysteine-rich domains; less conserved across DKK family",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "PMID:29891909",
+          "notes": "Domain architecture analysis"
+        }
+      ]
+    },
+    {
+      "identifier": "CRD2_C_terminal_189_263",
+      "name": "Cysteine-rich domain 2 (C-terminal)",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 189,
+          "end": 263
+        }
+      ],
+      "sequence": "SSDCASGLCCARHFWSKICKPVLKEGQVCTKHRRKGSHGLFIHPSPSLRHGRRRRDHSASVYSRVWRTVDDAP",
+      "description": "C-terminal cysteine-rich domain (DKK1C) containing 10 conserved cysteines forming 5 intramolecular disulfide bonds; necessary and sufficient for Wnt inhibition; exhibits colipase fold; directly binds LRP5/6 and Kremen",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR048500",
+          "notes": "Dickkopf-related protein 1/2/4, C-terminal subdomain 1"
+        },
+        {
+          "database": "InterPro",
+          "accession": "IPR048499",
+          "notes": "Dickkopf-related protein 1/2/4, C-terminal subdomain 2"
+        },
+        {
+          "database": "InterPro",
+          "accession": "IPR047304",
+          "notes": "Dickkopf-related protein 1, second cysteine-rich domain"
+        },
+        {
+          "database": "NCBI CDD",
+          "accession": "cd23014",
+          "notes": "Dkk1_Cys2 conserved domain"
+        }
+      ]
+    },
+    {
+      "identifier": "LRP6_binding_222_231",
+      "name": "LRP6 binding loop",
+      "type": "Binding_site",
+      "locations": [
+        {
+          "start": 222,
+          "end": 231
+        }
+      ],
+      "sequence": "GSHGLFIHPS",
+      "description": "Primary binding loop within DKK1C domain that mediates high-affinity interaction with LRP6 E3-E4 propeller domains; overlaps with Wnt binding site on LRP6",
+      "sources": [
+        {
+          "database": "PDB",
+          "accession": "3S2K",
+          "notes": "Crystal structure of LRP6 E3E4-DKK1c complex"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:21900893",
+          "notes": "Structural basis of DKK binding to LRP5/6"
+        }
+      ]
+    },
+    {
+      "identifier": "Kremen_binding_189_263",
+      "name": "Kremen binding site",
+      "type": "Binding_site",
+      "locations": [
+        {
+          "start": 189,
+          "end": 263
+        }
+      ],
+      "sequence": "SSDCASGLCCARHFWSKICKPVLKEGQVCTKHRRKGSHGLFIHPSPSLRHGRRRRDHSASVYSRVWRTVDDAP",
+      "description": "C-terminal domain (DKK1C) mediates high-affinity binding to Kremen1 and Kremen2 transmembrane receptors; required for DKK1-Kremen-LRP6 ternary complex formation",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "PMID:18359759",
+          "notes": "Characterization of Kremen-binding site on DKK1"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:27546875",
+          "notes": "Structure of Kremen1 and ternary complex formation"
+        }
+      ]
+    },
+    {
+      "identifier": "N_glycosylation_225",
+      "name": "N-glycosylation site",
+      "type": "Motif",
+      "locations": [
+        {
+          "start": 225,
+          "end": 225
+        }
+      ],
+      "sequence": "N",
+      "description": "Potential N-linked glycosylation site at Asn225; contributes to protein size heterogeneity (35-40 kDa observed vs 28.7 kDa calculated)",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "O94907",
+          "notes": "Predicted glycosylation site"
+        }
+      ]
+    },
+    {
+      "identifier": "O_glycosylation_30",
+      "name": "O-glycosylation site",
+      "type": "Motif",
+      "locations": [
+        {
+          "start": 30,
+          "end": 30
+        }
+      ],
+      "sequence": "S",
+      "description": "O-linked glycan attachment site at Ser30",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "PMID:29891909",
+          "notes": "Post-translational modification analysis"
+        }
+      ]
+    }
+  ],
+  "structure": {
+    "experimental_structures": [
+      {
+        "pdb_id": "3S2K",
+        "method": "X-ray",
+        "resolution_angstrom": 2.75,
+        "chain": "C",
+        "coverage": {
+          "start": 184,
+          "end": 259
+        },
+        "description": "Crystal structure of LRP6 E3E4 in complex with DKK1c domain",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/3S2K"
+      }
+    ],
+    "alphafold_prediction": {
+      "available": true,
+      "accession": "AF-O94907-F1",
+      "confidence_summary": "High confidence for both cysteine-rich domains showing well-defined disulfide-bonded structures; moderate to low confidence for N-terminal signal peptide and linker region reflecting their flexible nature; C-terminal domain shows highest confidence consistent with compact colipase fold",
+      "url": "https://alphafold.ebi.ac.uk/entry/O94907"
+    }
+  },
+  "post_translational_modifications": [
+    {
+      "type": "Signal peptide cleavage",
+      "position": 31,
+      "residue": "A",
+      "function": "Cleavage after residue 31 to generate mature secreted DKK1 protein (residues 32-266)",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "N-glycosylation",
+      "position": 225,
+      "residue": "N",
+      "function": "Potential N-linked glycosylation contributing to size heterogeneity",
+      "evidence": "Predicted"
+    },
+    {
+      "type": "O-glycosylation",
+      "position": 30,
+      "residue": "S",
+      "function": "O-linked glycan modification",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Disulfide bond",
+      "position": 87,
+      "residue": "C",
+      "function": "Disulfide bond formation in CRD1 domain; structural stabilization",
+      "evidence": "Predicted"
+    },
+    {
+      "type": "Disulfide bond",
+      "position": 96,
+      "residue": "C",
+      "function": "Disulfide bond formation in CRD1 domain; structural stabilization",
+      "evidence": "Predicted"
+    },
+    {
+      "type": "Disulfide bond",
+      "position": 107,
+      "residue": "C",
+      "function": "Disulfide bond formation in CRD1 domain; structural stabilization",
+      "evidence": "Predicted"
+    },
+    {
+      "type": "Disulfide bond",
+      "position": 109,
+      "residue": "C",
+      "function": "Disulfide bond formation in CRD1 domain; structural stabilization",
+      "evidence": "Predicted"
+    },
+    {
+      "type": "Disulfide bond",
+      "position": 119,
+      "residue": "C",
+      "function": "Disulfide bond formation in CRD1 domain; structural stabilization",
+      "evidence": "Predicted"
+    },
+    {
+      "type": "Disulfide bond",
+      "position": 122,
+      "residue": "C",
+      "function": "Disulfide bond formation in CRD1 domain; structural stabilization",
+      "evidence": "Predicted"
+    },
+    {
+      "type": "Disulfide bond",
+      "position": 127,
+      "residue": "C",
+      "function": "Disulfide bond formation in CRD1 domain; structural stabilization",
+      "evidence": "Predicted"
+    },
+    {
+      "type": "Disulfide bond",
+      "position": 132,
+      "residue": "C",
+      "function": "Disulfide bond formation in CRD1 domain; structural stabilization",
+      "evidence": "Predicted"
+    },
+    {
+      "type": "Disulfide bond",
+      "position": 137,
+      "residue": "C",
+      "function": "Disulfide bond formation in CRD1 domain; structural stabilization",
+      "evidence": "Predicted"
+    },
+    {
+      "type": "Disulfide bond",
+      "position": 192,
+      "residue": "C",
+      "function": "Disulfide bond formation in CRD2 domain; structural stabilization",
+      "evidence": "Predicted"
+    },
+    {
+      "type": "Disulfide bond",
+      "position": 199,
+      "residue": "C",
+      "function": "Disulfide bond formation in CRD2 domain; structural stabilization",
+      "evidence": "Predicted"
+    },
+    {
+      "type": "Disulfide bond",
+      "position": 203,
+      "residue": "C",
+      "function": "Disulfide bond formation in CRD2 domain; structural stabilization",
+      "evidence": "Predicted"
+    },
+    {
+      "type": "Disulfide bond",
+      "position": 217,
+      "residue": "C",
+      "function": "Disulfide bond formation in CRD2 domain; structural stabilization",
+      "evidence": "Predicted"
+    },
+    {
+      "type": "Disulfide bond",
+      "position": 220,
+      "residue": "C",
+      "function": "Disulfide bond formation in CRD2 domain; structural stabilization",
+      "evidence": "Predicted"
+    },
+    {
+      "type": "Disulfide bond",
+      "position": 244,
+      "residue": "C",
+      "function": "Disulfide bond formation in CRD2 domain; structural stabilization",
+      "evidence": "Predicted"
+    },
+    {
+      "type": "Disulfide bond",
+      "position": 247,
+      "residue": "C",
+      "function": "Disulfide bond formation in CRD2 domain; structural stabilization",
+      "evidence": "Predicted"
+    },
+    {
+      "type": "Disulfide bond",
+      "position": 250,
+      "residue": "C",
+      "function": "Disulfide bond formation in CRD2 domain; structural stabilization",
+      "evidence": "Predicted"
+    },
+    {
+      "type": "Disulfide bond",
+      "position": 257,
+      "residue": "C",
+      "function": "Disulfide bond formation in CRD2 domain; structural stabilization",
+      "evidence": "Predicted"
+    }
+  ],
+  "function": {
+    "uniprot_function": "Antagonizes canonical Wnt signaling by inhibiting LRP5/6 interaction with Wnt and by forming a ternary complex with the transmembrane protein KREMEN that promotes internalization of LRP5/6. DKK1 binds to LRP5/6 with high affinity, preventing the formation of signaling-competent Wnt-Frizzled-LRP5/6 complexes. In complex with KREMEN1 or KREMEN2, induces rapid endocytosis and removal of LRP5/6 from the plasma membrane, further inhibiting Wnt signaling. Also involved in bone formation, embryonic development, and regulation of cell differentiation.",
+    "catalytic_activity": null,
+    "subcellular_location": [
+      "Secreted",
+      "Extracellular space",
+      "Plasma membrane (associated)",
+      "Early endosome membrane"
+    ],
+    "tissue_specificity": "Mainly expressed and secreted by osteoblasts and osteocytes under normal conditions; also expressed in placenta with tissue-specific expression; upregulated in various cancers including multiple myeloma, breast cancer, and prostate cancer",
+    "go_annotations": {
+      "molecular_function": [
+        {
+          "go_id": "GO:0005515",
+          "term": "protein binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0008083",
+          "term": "growth factor activity",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0030172",
+          "term": "troponin C binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0017124",
+          "term": "SH3 domain binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0030234",
+          "term": "enzyme regulator activity",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0005102",
+          "term": "signaling receptor binding",
+          "evidence_code": "IBA"
+        },
+        {
+          "go_id": "GO:0030165",
+          "term": "PDZ domain binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0017147",
+          "term": "Wnt-protein binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0005024",
+          "term": "transforming growth factor beta-activated receptor activity",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0070851",
+          "term": "growth factor receptor binding",
+          "evidence_code": "IBA"
+        }
+      ],
+      "biological_process": [
+        {
+          "go_id": "GO:0016055",
+          "term": "Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0030178",
+          "term": "negative regulation of Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0090090",
+          "term": "negative regulation of canonical Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0001649",
+          "term": "osteoblast differentiation",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0030514",
+          "term": "negative regulation of BMP signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0045668",
+          "term": "negative regulation of osteoblast differentiation",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0030279",
+          "term": "negative regulation of ossification",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0007275",
+          "term": "multicellular organism development",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0001702",
+          "term": "gastrulation with mouth forming second",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0007492",
+          "term": "endoderm development",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0001707",
+          "term": "mesoderm formation",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0060348",
+          "term": "bone development",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0061299",
+          "term": "retina vasculature morphogenesis in camera-type eye",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0015026",
+          "term": "coreceptor activity",
+          "evidence_code": "TAS"
+        }
+      ],
+      "cellular_component": [
+        {
+          "go_id": "GO:0005576",
+          "term": "extracellular region",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005615",
+          "term": "extracellular space",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005886",
+          "term": "plasma membrane",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0031901",
+          "term": "early endosome membrane",
+          "evidence_code": "IEA"
+        }
+      ]
+    }
+  },
+  "interactions": [
+    {
+      "partner": {
+        "gene_name": "LRP6",
+        "protein_name": "Low-density lipoprotein receptor-related protein 6",
+        "uniprot_accession": "O75581"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "LRP6_binding_222_231",
+            "residues": [222, 223, 224, 225, 226, 227, 228, 229, 230, 231],
+            "residue_names": ["G222", "S223", "H224", "G225", "L226", "F227", "I228", "H229", "P230", "S231"],
+            "description": "Primary binding loop in DKK1C domain; also involves R191 salt bridge to LRP6 D830"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "LRP6 E3-E4 propeller domains",
+            "residues": [663, 706, 708, 770, 813, 830, 834, 850, 875, 877],
+            "description": "E663, Y706, E708, K770, N813, D830, H834, W850, Y875, M877 form DKK1 binding interface; overlaps with Wnt binding site"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": null,
+        "kd_range_m": null,
+        "kon_m1s1": null,
+        "koff_s1": null,
+        "kcat_s1": null,
+        "km_m": null,
+        "ic50_m": null,
+        "ec50_m": null,
+        "measurement_method": "Affinity Capture-Western, Co-fractionation, SPR",
+        "conditions": "Low micromolar affinity reported from SPR",
+        "notes": "DKK1 described as high-affinity ligand for LRP6; competes with Wnt for overlapping binding site on LRP6 E3-E4 domains; quantitative Kd values not explicitly reported in searched literature"
+      },
+      "evidence": [
+        {
+          "source": "BioGRID",
+          "experimental_system": "Affinity Capture-Western",
+          "pmid": "15790681",
+          "throughput": "Low",
+          "interaction_id": "736630"
+        },
+        {
+          "source": "BioGRID",
+          "experimental_system": "Co-fractionation",
+          "pmid": "22939624",
+          "throughput": "High",
+          "interaction_id": null
+        },
+        {
+          "source": "PDB",
+          "detection_method": "X-ray crystallography",
+          "pmid": "21900893",
+          "interaction_accession": "3S2K"
+        },
+        {
+          "source": "Literature",
+          "pmid": "21900893",
+          "description": "Crystal structure of LRP6 E3E4-DKK1c complex reveals structural basis of Wnt inhibition",
+          "notes": "DKK1 and Wnt3a have overlapping binding surfaces on LRP6"
+        }
+      ],
+      "functional_effect": "Inhibitory",
+      "pathway_context": "DKK1 antagonizes canonical Wnt signaling by blocking LRP6 interaction with Wnt ligands; prevents formation of signaling-competent Wnt-Frizzled-LRP6 receptor complexes"
+    },
+    {
+      "partner": {
+        "gene_name": "LRP5",
+        "protein_name": "Low-density lipoprotein receptor-related protein 5",
+        "uniprot_accession": "O75197"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "CRD2_C_terminal_189_263",
+            "residues": [],
+            "residue_names": [],
+            "description": "C-terminal cysteine-rich domain mediates LRP5 binding similar to LRP6"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "LRP5 propeller domains",
+            "residues": [],
+            "description": "Similar binding interface as LRP6"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {
+        "kd_m": null,
+        "kd_range_m": null,
+        "kon_m1s1": null,
+        "koff_s1": null,
+        "kcat_s1": null,
+        "km_m": null,
+        "ic50_m": null,
+        "ec50_m": null,
+        "measurement_method": null,
+        "conditions": null,
+        "notes": "DKK1 binds both LRP5 and LRP6 with high affinity; specific kinetic parameters not found in search"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "12524439",
+          "description": "DKK1 inhibits Wnt signaling by binding to LRP5/6",
+          "notes": "Functional evidence for LRP5 binding"
+        }
+      ],
+      "functional_effect": "Inhibitory",
+      "pathway_context": "DKK1 antagonizes canonical Wnt signaling through LRP5 similar to LRP6 mechanism"
+    },
+    {
+      "partner": {
+        "gene_name": "KREMEN1",
+        "protein_name": "Kremen protein 1",
+        "uniprot_accession": "Q96MU8"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "Kremen_binding_189_263",
+            "residues": [],
+            "residue_names": [],
+            "description": "CRD2 domain (DKK1C) required and sufficient for Kremen1 binding"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Kremen1 extracellular domain",
+            "residues": [],
+            "description": "Kremen1 ECD binds DKK1 with high affinity"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 0.000001,
+        "kd_range_m": [0.0000001, 0.00001],
+        "kon_m1s1": null,
+        "koff_s1": null,
+        "kcat_s1": null,
+        "km_m": null,
+        "ic50_m": null,
+        "ec50_m": null,
+        "measurement_method": "SPR",
+        "conditions": "Surface plasmon resonance measurements",
+        "notes": "Low micromolar affinity between full-length DKK1 and immobilized KRM1_ECD; described as high-affinity receptor"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "18359759",
+          "description": "Characterization of Kremen-binding site on DKK1; CRD2 required for binding",
+          "notes": "SPR measurements show low micromolar affinity"
+        },
+        {
+          "source": "Literature",
+          "pmid": "27546875",
+          "description": "Structure of Kremen1 and ternary complex formation with LRP6 and DKK1",
+          "notes": "Structural basis of DKK1-Kremen1 interaction"
+        },
+        {
+          "source": "Literature",
+          "pmid": "23251500",
+          "description": "High-affinity DKK1 receptor Kremen1 internalized by clathrin-mediated endocytosis",
+          "notes": "Kremen1 is high-affinity receptor for DKK1"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "DKK1-Kremen1 complex recruits LRP6 to form ternary complex that promotes rapid endocytosis and removal of LRP6 from plasma membrane, further inhibiting Wnt signaling"
+    },
+    {
+      "partner": {
+        "gene_name": "KREMEN2",
+        "protein_name": "Kremen protein 2",
+        "uniprot_accession": "Q8N5I3"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "Kremen_binding_189_263",
+            "residues": [],
+            "residue_names": [],
+            "description": "CRD2 domain (DKK1C) binds Kremen2 with similar affinity as Kremen1"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Kremen2 extracellular domain",
+            "residues": [],
+            "description": "Kremen2 ECD binds DKK1"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 0.000001,
+        "kd_range_m": [0.0000001, 0.00001],
+        "kon_m1s1": null,
+        "koff_s1": null,
+        "kcat_s1": null,
+        "km_m": null,
+        "ic50_m": null,
+        "ec50_m": null,
+        "measurement_method": "SPR",
+        "conditions": null,
+        "notes": "Low micromolar affinity similar to Kremen1; mutants with low affinity for Kremen1 also show low binding to Kremen2"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "12524439",
+          "description": "Kremen2 modulates DKK2 activity during Wnt/LRP6 signaling",
+          "notes": "Both Kremen1 and Kremen2 bind DKK proteins"
+        },
+        {
+          "source": "Literature",
+          "pmid": "18359759",
+          "description": "Similar binding characteristics for Kremen1 and Kremen2",
+          "notes": "Mutants affecting Kremen1 binding also affect Kremen2"
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "DKK1-Kremen2 complex forms ternary complex with LRP6 leading to endocytosis and Wnt inhibition, similar to Kremen1 mechanism"
+    },
+    {
+      "partner": {
+        "gene_name": "CKAP4",
+        "protein_name": "Cytoskeleton-associated protein 4",
+        "uniprot_accession": "Q07065"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": null,
+            "residues": [],
+            "residue_names": [],
+            "description": "DKK1 binds CKAP4 as cell surface receptor"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "CKAP4 extracellular domain",
+            "residues": [],
+            "description": "High-affinity epithelial cell surface receptor for DKK1"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {
+        "kd_m": null,
+        "kd_range_m": null,
+        "kon_m1s1": null,
+        "koff_s1": null,
+        "kcat_s1": null,
+        "km_m": null,
+        "ic50_m": null,
+        "ec50_m": null,
+        "measurement_method": null,
+        "conditions": null,
+        "notes": "CKAP4 functions as high-affinity epithelial cell surface receptor for DKK1; mediates non-canonical signaling through PI3K-Akt pathway"
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.89,
+          "evidence_types": ["experimental", "database"],
+          "url": "https://string-db.org/network/9606.ENSP00000363081"
+        },
+        {
+          "source": "Literature",
+          "pmid": "27281217",
+          "description": "DKK1 binds to CKAP4 to activate PI3K-Akt signaling in cancer",
+          "notes": "Alternative non-canonical DKK1 signaling pathway"
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "DKK1-CKAP4 interaction activates non-canonical Wnt pathway and PI3K-Akt signaling in tumors, distinct from canonical Wnt inhibition via LRP5/6"
+    },
+    {
+      "partner": {
+        "gene_name": "DKK2",
+        "protein_name": "Dickkopf-related protein 2",
+        "uniprot_accession": "Q9UBU2"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": null,
+            "residues": [],
+            "residue_names": [],
+            "description": "DKK family member interaction"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": null,
+            "residues": [],
+            "description": "DKK family member interaction"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {
+        "kd_m": null,
+        "kd_range_m": null,
+        "kon_m1s1": null,
+        "koff_s1": null,
+        "kcat_s1": null,
+        "km_m": null,
+        "ic50_m": null,
+        "ec50_m": null,
+        "measurement_method": null,
+        "conditions": null,
+        "notes": "Physical interaction between DKK family members"
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.85,
+          "evidence_types": ["experimental", "database", "textmining"],
+          "url": "https://string-db.org/network/9606.ENSP00000363081"
+        }
+      ],
+      "functional_effect": "Regulatory",
+      "pathway_context": "DKK family member interaction; functional significance unclear"
+    },
+    {
+      "partner": {
+        "gene_name": "DKK4",
+        "protein_name": "Dickkopf-related protein 4",
+        "uniprot_accession": "Q9UBT3"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": null,
+            "residues": [],
+            "residue_names": [],
+            "description": "DKK family member interaction"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": null,
+            "residues": [],
+            "description": "DKK family member interaction"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {
+        "kd_m": null,
+        "kd_range_m": null,
+        "kon_m1s1": null,
+        "koff_s1": null,
+        "kcat_s1": null,
+        "km_m": null,
+        "ic50_m": null,
+        "ec50_m": null,
+        "measurement_method": null,
+        "conditions": null,
+        "notes": "Physical interaction between DKK family members"
+      },
+      "evidence": [
+        {
+          "source": "STRING",
+          "combined_score": 0.82,
+          "evidence_types": ["experimental", "database", "textmining"],
+          "url": "https://string-db.org/network/9606.ENSP00000363081"
+        }
+      ],
+      "functional_effect": "Regulatory",
+      "pathway_context": "DKK family member interaction; functional significance unclear"
+    },
+    {
+      "partner": {
+        "gene_name": "EN1",
+        "protein_name": "Homeobox protein engrailed-1",
+        "uniprot_accession": "Q05925"
+      },
+      "interaction_type": "Genetic",
+      "mechanism": "Regulatory",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": null,
+            "residues": [],
+            "residue_names": [],
+            "description": "Genetic interaction"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": null,
+            "residues": [],
+            "description": "Transcription factor"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {
+        "kd_m": null,
+        "kd_range_m": null,
+        "kon_m1s1": null,
+        "koff_s1": null,
+        "kcat_s1": null,
+        "km_m": null,
+        "ic50_m": null,
+        "ec50_m": null,
+        "measurement_method": null,
+        "conditions": null,
+        "notes": "Genetic interaction detected through phenotypic enhancement"
+      },
+      "evidence": [
+        {
+          "source": "BioGRID",
+          "experimental_system": "Phenotypic Enhancement",
+          "pmid": "15790681",
+          "throughput": "Low",
+          "interaction_id": "736786"
+        }
+      ],
+      "functional_effect": "Regulatory",
+      "pathway_context": "Genetic interaction in development; mutation or overexpression of one gene enhances phenotypes associated with the other"
+    }
+  ],
+  "pathways": {
+    "reactome": [
+      {
+        "pathway_id": "R-HSA-195721",
+        "pathway_name": "Signaling by WNT",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-195721"
+      },
+      {
+        "pathway_id": "R-HSA-201681",
+        "pathway_name": "TCF dependent signaling in response to WNT",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-201681"
+      },
+      {
+        "pathway_id": "R-HSA-3772470",
+        "pathway_name": "Negative regulation of TCF-dependent signaling by WNT ligand antagonists",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-3772470"
+      },
+      {
+        "pathway_id": "R-HSA-3769401",
+        "pathway_name": "DKK and KRM bind LRP5/6",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-3769401"
+      },
+      {
+        "pathway_id": "R-HSA-3858494",
+        "pathway_name": "Beta-catenin independent WNT signaling",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-3858494"
+      },
+      {
+        "pathway_id": "R-HSA-4411365",
+        "pathway_name": "Defective binding of DKK1 to LRP5/6",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-4411365"
+      }
+    ],
+    "kegg": [
+      {
+        "pathway_id": "hsa04310",
+        "pathway_name": "Wnt signaling pathway",
+        "url": "https://www.genome.jp/pathway/hsa04310"
+      },
+      {
+        "pathway_id": "hsa05217",
+        "pathway_name": "Basal cell carcinoma",
+        "url": "https://www.genome.jp/pathway/hsa05217"
+      }
+    ],
+    "pathway_role_summary": "DKK1 is a key secreted antagonist of canonical Wnt/beta-catenin signaling. It functions through two mechanisms: (1) direct competition with Wnt ligands for LRP5/6 binding, blocking formation of Wnt-Frizzled-LRP5/6 signaling complexes, and (2) formation of ternary DKK1-Kremen-LRP5/6 complexes that trigger rapid endocytosis and removal of LRP5/6 from the plasma membrane. Importantly, DKK1 itself is a Wnt target gene (regulated by beta-catenin/TCF), creating a negative feedback loop. DKK1 also activates non-canonical signaling via CKAP4 receptor to stimulate PI3K-Akt pathway in cancer contexts. Critical for bone homeostasis, embryonic development, and dysregulated in multiple cancers."
+  },
+  "disease_associations": [
+    {
+      "disease": "Multiple myeloma",
+      "omim_id": "254500",
+      "mutation_type": "Somatic",
+      "description": "DKK1 overexpression by myeloma cells inhibits osteoblast differentiation and causes osteolytic bone lesions; serum DKK1 levels correlate with bone disease severity"
+    },
+    {
+      "disease": "Osteoporosis",
+      "omim_id": "166710",
+      "mutation_type": "Acquired",
+      "description": "Elevated DKK1 expression contributes to glucocorticoid-induced osteoporosis, estrogen deficiency-induced osteoporosis, and postmenopausal osteoporosis; DKK1 inhibits bone formation"
+    },
+    {
+      "disease": "Breast cancer metastases",
+      "omim_id": "114480",
+      "mutation_type": "Somatic",
+      "description": "DKK1 secretion by breast cancer cells promotes osteolytic bone metastases"
+    },
+    {
+      "disease": "Prostate cancer",
+      "omim_id": "176807",
+      "mutation_type": "Somatic",
+      "description": "DKK1 involved in osteoblastic metastases; promotes tumor growth and bone remodeling"
+    },
+    {
+      "disease": "Alzheimer disease",
+      "omim_id": "104300",
+      "mutation_type": "Acquired",
+      "description": "DKK1 dysregulation associated with neurodegeneration and synaptic dysfunction"
+    },
+    {
+      "disease": "Rheumatoid arthritis",
+      "omim_id": "180300",
+      "mutation_type": "Acquired",
+      "description": "Elevated synovial DKK1 contributes to bone erosion and inhibition of bone repair"
+    },
+    {
+      "disease": "Psoriatic arthritis",
+      "omim_id": "607507",
+      "mutation_type": "Acquired",
+      "description": "Serum DKK1 levels correlate with bone remodeling abnormalities"
+    },
+    {
+      "disease": "Osteosarcoma",
+      "omim_id": "259500",
+      "mutation_type": "Somatic",
+      "description": "DKK1 may play role in high-grade undifferentiated pleomorphic sarcomas and osteosarcomas"
+    }
+  ],
+  "cross_references": {
+    "ncbi_gene_id": "22943",
+    "ensembl_gene_id": "ENSG00000107984",
+    "refseq_protein": [
+      "NP_036374.1"
+    ],
+    "refseq_nucleotide": [
+      "NM_012242.3"
+    ],
+    "hgnc_id": "HGNC:2891",
+    "omim_gene": "605189"
+  },
+  "metadata": {
+    "generated_at": "2026-10-18T00:00:00Z",
+    "queried_databases": [
+      "UniProt",
+      "NCBI Gene",
+      "InterPro",
+      "Pfam",
+      "PROSITE",
+      "SMART",
+      "NCBI CDD",
+      "PDB",
+      "AlphaFold",
+      "STRING",
+      "BioGRID",
+      "Reactome",
+      "KEGG",
+      "GO",
+      "OMIM"
+    ],
+    "data_quality_notes": "Good quality data with structural information available for C-terminal domain in complex with LRP6. Domain annotations well-defined from InterPro and literature. Limited quantitative kinetic data: only low micromolar Kd reported for Kremen binding from SPR; no precise Kd values found for LRP5/6 binding despite being described as 'high affinity'. No crystal structure of full-length DKK1 available, only C-terminal domain. Signal peptide cleavage site well-established. Glycosylation sites predicted but not fully characterized experimentally. No information on DKK1 isoforms beyond canonical sequence. Extensive literature on functional role in Wnt inhibition and disease associations.",
+    "modeling_relevance_summary": "DKK1 is a critical secreted Wnt antagonist essential for modeling canonical Wnt pathway regulation. Key for modeling: (1) Competitive inhibition of Wnt-LRP5/6 interaction with overlapping binding sites, (2) Ternary complex formation with Kremen-LRP5/6 leading to receptor endocytosis, (3) Negative feedback loop as DKK1 is itself a Wnt target gene (beta-catenin/TCF regulated), creating dynamic pathway oscillations, (4) Dual role as canonical Wnt inhibitor and non-canonical pathway activator via CKAP4, (5) Extracellular secreted protein enabling spatial regulation and paracrine signaling. Limited quantitative binding data constrains kinetic modeling; low micromolar affinity estimates available for Kremen but not LRP5/6. Structural data supports competitive binding model. Essential for bone homeostasis and cancer models."
+  }
+}

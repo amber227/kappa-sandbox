@@ -1,0 +1,1463 @@
+{
+  "protein_identifier": {
+    "gene_name": "WNT3",
+    "protein_name": "Proto-oncogene Wnt-3",
+    "uniprot_accession": "P56703",
+    "organism": "Homo sapiens",
+    "organism_taxid": 9606
+  },
+  "sequence": {
+    "canonical_length": 355,
+    "canonical_sequence": "MEPHLLGLLLGLLLGGTRVLAGYPIWWSLALGQQYTSLGSQPLLCGSIPGLVPKQLRFCRNYIEIMPSVAEGVKLGIQECQHQFRGRRWNCTTIDDSLAIFGPVLDKATRESAFVHAIASAGVAFAVTRSCAEGTSTICGCDSHHKGPPGEGWKWGGCSEDADFGVLVSREFADARENRPDARSAMNKHNNEAGRTTILDHMHLKCKCHGLSGSCEVKTCWWAQPDFRAIGDFLKDKYDSASEMVVEKHRESRGWVETLRAKYSLFKPPTERDLVYYENSPNFCEPNPETGSFGTRDRTCNVTSHGIDGCDLLCCGRGHNTRTEKRKEKCHCIFHWCCYVSCQECIRIYDVHTCK",
+    "molecular_weight_da": 39645,
+    "isoforms": []
+  },
+  "domains_and_motifs": [
+    {
+      "identifier": "signal_peptide_1_21",
+      "name": "Signal peptide",
+      "type": "Signal",
+      "locations": [{"start": 1, "end": 21}],
+      "sequence": "MEPHLLGLLLGLLLGGTRVLA",
+      "description": "N-terminal signal peptide for ER targeting, cleaved during processing",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "P56703",
+          "notes": "Signal peptide prediction"
+        }
+      ]
+    },
+    {
+      "identifier": "wnt_domain_22_355",
+      "name": "Wnt domain",
+      "type": "Domain",
+      "locations": [{"start": 22, "end": 355}],
+      "sequence": "GYPIWWSLALGQQYTSLGSQPLLCGSIPGLVPKQLRFCRNYIEIMPSVAEGVKLGIQECQHQFRGRRWNCTTIDDSLAIFGPVLDKATRESAFVHAIASAGVAFAVTRSCAEGTSTICGCDSHHKGPPGEGWKWGGCSEDADFGVLVSREFADARENRPDARSAMNKHNNEAGRTTILDHMHLKCKCHGLSGSCEVKTCWWAQPDFRAIGDFLKDKYDSASEMVVEKHRESRGWVETLRAKYSLFKPPTERDLVYYENSPNFCEPNPETGSFGTRDRTCNVTSHGIDGCDLLCCGRGHNTRTEKRKEKCHCIFHWCCYVSCQECIRIYDVHTCK",
+      "description": "Wnt family signaling domain responsible for receptor binding and pathway activation",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR005817",
+          "notes": "Wnt family"
+        },
+        {
+          "database": "InterPro",
+          "accession": "IPR009141",
+          "notes": "Wnt-3 protein subfamily"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF00110",
+          "notes": "Wnt family domain"
+        }
+      ]
+    },
+    {
+      "identifier": "wnt_c_terminal_domain",
+      "name": "Wnt C-terminal domain",
+      "type": "Domain",
+      "locations": [{"start": 200, "end": 355}],
+      "sequence": "GRTTILDHMHLKCKCHGLSGSCEVKTCWWAQPDFRAIGDFLKDKYDSASEMVVEKHRESRGWVETLRAKYSLFKPPTERDLVYYENSPNFCEPNPETGSFGTRDRTCNVTSHGIDGCDLLCCGRGHNTRTEKRKEKCHCIFHWCCYVSCQECIRIYDVHTCK",
+      "description": "C-terminal portion of Wnt domain containing critical cysteines for structural integrity",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR043158",
+          "notes": "Wnt, C-terminal domain superfamily"
+        }
+      ]
+    },
+    {
+      "identifier": "wnt_conserved_site",
+      "name": "Wnt protein conserved site",
+      "type": "Site",
+      "locations": [{"start": 280, "end": 295}],
+      "sequence": "CNVTSHGIDGCDLLCC",
+      "description": "Conserved sequence motif characteristic of Wnt family proteins",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR018161",
+          "notes": "Wnt protein, conserved site"
+        },
+        {
+          "database": "PROSITE",
+          "accession": "PS00246",
+          "notes": "WNT signature"
+        }
+      ]
+    },
+    {
+      "identifier": "palmitoylation_site_C77",
+      "name": "Palmitoylation site",
+      "type": "Binding_site",
+      "locations": [{"start": 77, "end": 77}],
+      "sequence": "C",
+      "description": "Conserved cysteine residue modified with palmitate, essential for Wnt secretion and FZD receptor binding",
+      "sources": [
+        {
+          "database": "Literature",
+          "notes": "Homologous to C77 in mouse Wnt3a, confirmed by mass spectrometry and mutagenesis studies"
+        }
+      ]
+    },
+    {
+      "identifier": "palmitoleate_site_S209",
+      "name": "Palmitoleate modification site",
+      "type": "Binding_site",
+      "locations": [{"start": 209, "end": 209}],
+      "sequence": "S",
+      "description": "Conserved serine residue modified with palmitoleic acid (monounsaturated fatty acid), prerequisite for cysteine palmitoylation and essential for receptor interaction",
+      "sources": [
+        {
+          "database": "Literature",
+          "notes": "Homologous to S209 in mouse Wnt3a, identified by mass spectrometry; lipidation at this site is indispensable for signaling"
+        }
+      ]
+    }
+  ],
+  "structure": {
+    "experimental_structures": [
+      {
+        "pdb_id": "6AHY",
+        "method": "X-ray",
+        "resolution_angstrom": 2.8,
+        "chain": "A",
+        "coverage": {"start": 22, "end": 340},
+        "description": "Crystal structure of human Wnt3 in complex with mouse Frizzled 8 cysteine-rich domain (CRD), revealing receptor binding mechanism and 2:2 complex formation",
+        "ligands": ["palmitoleate"],
+        "url": "https://www.rcsb.org/structure/6AHY"
+      }
+    ],
+    "alphafold_prediction": {
+      "available": true,
+      "accession": "AF-P56703-F1",
+      "confidence_summary": "High confidence (pLDDT > 90) for structured regions; moderate confidence for some loop regions",
+      "url": "https://alphafold.ebi.ac.uk/entry/P56703"
+    }
+  },
+  "post_translational_modifications": [
+    {
+      "type": "Palmitoylation",
+      "position": 77,
+      "residue": "C",
+      "function": "Required for efficient binding to Frizzled receptors and Wnt secretion",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Palmitoleoylation",
+      "position": 209,
+      "residue": "S",
+      "function": "Prerequisite for C77 palmitoylation; essential for receptor interaction and signaling; depalmitoleoylation inhibits Wnt signaling",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Glycosylation",
+      "position": null,
+      "residue": "N",
+      "function": "N-glycosylation enhances palmitoylation and is necessary for Wnt secretion and activity",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 240,
+      "residue": "S",
+      "function": "Regulatory modification",
+      "evidence": "Predicted"
+    }
+  ],
+  "function": {
+    "uniprot_function": "Ligand for members of the frizzled family of seven transmembrane receptors. Functions in the canonical Wnt signaling pathway that results in activation of transcription factors of the TCF/LEF family. Required for normal gastrulation, formation of the primitive streak, and for the formation of the mesoderm during early embryogenesis. Essential for limb development and axis specification.",
+    "catalytic_activity": null,
+    "subcellular_location": ["Extracellular space", "Extracellular matrix", "Secreted", "Endoplasmic reticulum lumen", "Golgi lumen", "Plasma membrane", "Endocytic vesicle membrane", "Wnt signalosome", "Extracellular exosome"],
+    "tissue_specificity": "Biased expression in skin (RPKM 21.7), testis (RPKM 3.1), and other tissues. Expressed during embryonic development, particularly in the primitive streak and developing limb buds.",
+    "go_annotations": {
+      "molecular_function": [
+        {
+          "go_id": "GO:0005102",
+          "term": "signaling receptor binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0005109",
+          "term": "frizzled binding",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0048018",
+          "term": "receptor ligand activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005515",
+          "term": "protein binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0019904",
+          "term": "protein domain specific binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0048019",
+          "term": "receptor agonist activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005125",
+          "term": "cytokine activity",
+          "evidence_code": "IEA"
+        }
+      ],
+      "biological_process": [
+        {
+          "go_id": "GO:0060070",
+          "term": "canonical Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0016055",
+          "term": "Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0001942",
+          "term": "hair follicle development",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0030177",
+          "term": "positive regulation of Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0007275",
+          "term": "multicellular organism development",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0001701",
+          "term": "in utero embryonic development",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0048589",
+          "term": "developmental growth",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0035115",
+          "term": "embryonic forelimb morphogenesis",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0035116",
+          "term": "embryonic hindlimb morphogenesis",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0060173",
+          "term": "limb development",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0048704",
+          "term": "embryonic skeletal system morphogenesis",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0001707",
+          "term": "mesoderm formation",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0009952",
+          "term": "anterior/posterior pattern specification",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0009950",
+          "term": "dorsal/ventral axis specification",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0007389",
+          "term": "pattern specification process",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0001942",
+          "term": "hair follicle development",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0030182",
+          "term": "neuron differentiation",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0072089",
+          "term": "stem cell proliferation",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0010862",
+          "term": "positive regulation of pathway-restricted SMAD protein phosphorylation",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0010628",
+          "term": "positive regulation of gene expression",
+          "evidence_code": "IDA"
+        }
+      ],
+      "cellular_component": [
+        {
+          "go_id": "GO:0005576",
+          "term": "extracellular region",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0005615",
+          "term": "extracellular space",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0031012",
+          "term": "extracellular matrix",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005788",
+          "term": "endoplasmic reticulum lumen",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005794",
+          "term": "Golgi apparatus",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0043235",
+          "term": "receptor complex",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:1990851",
+          "term": "Wnt signalosome",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005886",
+          "term": "plasma membrane",
+          "evidence_code": "TAS"
+        },
+        {
+          "go_id": "GO:0030659",
+          "term": "cytoplasmic vesicle membrane",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0070062",
+          "term": "extracellular exosome",
+          "evidence_code": "IDA"
+        }
+      ]
+    }
+  },
+  "interactions": [
+    {
+      "partner": {
+        "gene_name": "FZD1",
+        "protein_name": "Frizzled-1",
+        "uniprot_accession": "Q9UP38"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "wnt_domain_22_355",
+            "residues": [77, 209],
+            "residue_names": ["C77", "S209"],
+            "description": "Lipid-modified residues essential for FZD binding"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Cysteine-rich domain (CRD)",
+            "residues": [],
+            "description": "Wnt-binding domain on FZD1"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 2.9e-8,
+        "kd_range_m": [2.3e-8, 4.86e-8],
+        "measurement_method": "NanoBiT/BRET in HEK293A cells",
+        "conditions": "Physiological conditions, live cells",
+        "notes": "Kinetic binding Kd: 29.9 nM; Saturation binding Kd range: 23-48.6 nM for human WNT3A-FZD1"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "34080434",
+          "description": "Quantitative profiling of WNT-3A binding to FZD1",
+          "notes": "NanoBiT/BRET measurements in live cells"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.92,
+          "evidence_types": ["experimental", "database", "textmining"]
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Canonical Wnt/beta-catenin signaling activation"
+    },
+    {
+      "partner": {
+        "gene_name": "FZD2",
+        "protein_name": "Frizzled-2",
+        "uniprot_accession": "Q14332"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "wnt_domain_22_355",
+            "residues": [77, 209],
+            "residue_names": ["C77", "S209"],
+            "description": "Lipid-modified residues essential for FZD binding"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Cysteine-rich domain (CRD)",
+            "residues": [],
+            "description": "Wnt-binding domain on FZD2"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 1.57e-8,
+        "measurement_method": "Cell-based binding assay",
+        "conditions": "In vitro, mouse Wnt3a to mouse Fzd2",
+        "notes": "Kd = 15.7 nM for mouse ortholog"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "Systematic mapping of WNT-FZD protein interactions",
+          "notes": "Demonstrates functional selectivity of WNT-FZD pairs"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.89,
+          "evidence_types": ["experimental", "database"]
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Canonical Wnt signaling"
+    },
+    {
+      "partner": {
+        "gene_name": "FZD4",
+        "protein_name": "Frizzled-4",
+        "uniprot_accession": "Q9ULV1"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "wnt_domain_22_355",
+            "residues": [77, 209],
+            "residue_names": ["C77", "S209"],
+            "description": "Lipid-modified residues essential for FZD binding"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Cysteine-rich domain (CRD)",
+            "residues": [],
+            "description": "Wnt-binding domain on FZD4"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 2.6e-9,
+        "kd_range_m": [1.79e-9, 5.4e-9],
+        "measurement_method": "Binding assay",
+        "conditions": "In vitro measurements",
+        "notes": "Kd values: 3.41 nM and 1.79 nM (different Afamin conditions); 5.4 nM for mouse Wnt3a"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "High-affinity binding to FZD4",
+          "notes": "One of the strongest WNT3-FZD interactions"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.91,
+          "evidence_types": ["experimental", "database"]
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Canonical Wnt signaling"
+    },
+    {
+      "partner": {
+        "gene_name": "FZD5",
+        "protein_name": "Frizzled-5",
+        "uniprot_accession": "Q13467"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "wnt_domain_22_355",
+            "residues": [77, 209],
+            "residue_names": ["C77", "S209"],
+            "description": "Lipid-modified residues essential for FZD binding"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Cysteine-rich domain (CRD)",
+            "residues": [],
+            "description": "Wnt-binding domain on FZD5"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 2.6e-9,
+        "kd_range_m": [2.3e-9, 3.1e-9],
+        "measurement_method": "NanoBiT/BRET and mouse in vitro assay",
+        "conditions": "Live cells and in vitro",
+        "notes": "Kinetic Kd: 2.3 nM (human); 3.1 nM (mouse Wnt3a-Fzd5)"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "34080434",
+          "description": "Highest affinity binding among human FZD paralogues",
+          "notes": "WNT-3A shows strongest binding to FZD5"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.93,
+          "evidence_types": ["experimental", "database"]
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Canonical Wnt signaling, receptor endocytosis upon Wnt binding"
+    },
+    {
+      "partner": {
+        "gene_name": "FZD7",
+        "protein_name": "Frizzled-7",
+        "uniprot_accession": "O75084"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "wnt_domain_22_355",
+            "residues": [77, 209],
+            "residue_names": ["C77", "S209"],
+            "description": "Lipid-modified residues essential for FZD binding"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Cysteine-rich domain (CRD)",
+            "residues": [],
+            "description": "Wnt-binding domain on FZD7"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 5.3e-9,
+        "measurement_method": "In vitro binding assay",
+        "conditions": "Mouse Wnt3a to mouse Fzd7",
+        "notes": "Kd = 5.3 nM"
+      },
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "High-affinity WNT3-FZD7 interaction",
+          "notes": "Receptor levels can modulate apparent binding affinity"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.94,
+          "evidence_types": ["experimental", "database"]
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Canonical Wnt signaling"
+    },
+    {
+      "partner": {
+        "gene_name": "FZD8",
+        "protein_name": "Frizzled-8",
+        "uniprot_accession": "Q9H461"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "wnt_domain_22_355",
+            "residues": [77, 209],
+            "residue_names": ["C77", "S209"],
+            "description": "Lipid-modified residues essential for FZD binding; palmitoleate chain mediates 2:2 complex formation"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Cysteine-rich domain (CRD)",
+            "residues": [],
+            "description": "Wnt-binding domain on FZD8"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {
+        "kd_m": 1.5e-9,
+        "measurement_method": "In vitro binding assay",
+        "conditions": "Mouse Wnt3a to mouse Fzd8",
+        "notes": "Kd = 1.5 nM; strongest measured affinity among FZD receptors"
+      },
+      "evidence": [
+        {
+          "source": "PDB",
+          "description": "Crystal structure 6AHY shows WNT3-FZD8 complex at 2.8 Å resolution",
+          "notes": "Reveals symmetrical dimer formation via palmitoleate chain exchange"
+        },
+        {
+          "source": "Literature",
+          "pmid": "31036960",
+          "description": "Crystal structure of mammalian Wnt-Frizzled complex",
+          "notes": "Nature Structural & Molecular Biology 2019"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.95,
+          "evidence_types": ["experimental", "database"]
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Canonical Wnt signaling; highest affinity FZD receptor"
+    },
+    {
+      "partner": {
+        "gene_name": "LRP5",
+        "protein_name": "Low-density lipoprotein receptor-related protein 5",
+        "uniprot_accession": "O75197"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "wnt_domain_22_355",
+            "residues": [],
+            "description": "Wnt domain mediates LRP5 binding"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Beta-propeller domains",
+            "residues": [],
+            "description": "LRP5 extracellular domain regions E1-E4 provide Wnt binding sites"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "LRP5 acts as coreceptor with Frizzled for canonical Wnt signaling",
+          "notes": "Forms ternary complex with Wnt and FZD; LRP5 and FZD directly interact"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.91,
+          "evidence_types": ["experimental", "database", "textmining"]
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Required for canonical Wnt/beta-catenin pathway; coreceptor function"
+    },
+    {
+      "partner": {
+        "gene_name": "LRP6",
+        "protein_name": "Low-density lipoprotein receptor-related protein 6",
+        "uniprot_accession": "O75581"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "wnt_domain_22_355",
+            "residues": [],
+            "description": "Wnt domain mediates LRP6 binding to specific E-domains"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Beta-propeller domains E1-E2 or E3-E4",
+            "residues": [],
+            "description": "Distinct binding sites on LRP6 for different Wnt isoforms; Wnt3a binds specific E-domain regions"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "LRP6 is primary coreceptor for WNT3/WNT3A canonical signaling",
+          "notes": "Wnt-FZD-LRP6 ternary complex formation initiates destruction complex sequestration"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.94,
+          "evidence_types": ["experimental", "database", "textmining"]
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Essential for canonical Wnt signaling; enables DVL recruitment and GSK3B inhibition"
+    },
+    {
+      "partner": {
+        "gene_name": "DVL1",
+        "protein_name": "Dishevelled-1",
+        "uniprot_accession": "O14640"
+      },
+      "interaction_type": "Regulatory",
+      "mechanism": "Signaling",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "wnt_domain_22_355",
+            "residues": [],
+            "description": "WNT3 binding to FZD/LRP induces DVL recruitment"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "DIX domain",
+            "residues": [],
+            "description": "DVL polymerization domain; interacts with Axin DIX domain"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "22072798",
+          "description": "Wnt3a activation requires DVL for signalosome assembly",
+          "notes": "DVL phosphorylation and assembly of supermolecular complexes"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.88,
+          "evidence_types": ["database", "textmining"]
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "WNT3 signaling through FZD recruits and activates DVL, leading to destruction complex inhibition"
+    },
+    {
+      "partner": {
+        "gene_name": "DVL2",
+        "protein_name": "Dishevelled-2",
+        "uniprot_accession": "O14641"
+      },
+      "interaction_type": "Regulatory",
+      "mechanism": "Signaling",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "wnt_domain_22_355",
+            "residues": [],
+            "description": "WNT3 binding to FZD/LRP induces DVL2 recruitment"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "DIX domain",
+            "residues": [],
+            "description": "DVL2 polymerization domain"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "DVL2 is activated by WNT3 signaling",
+          "notes": "Mediates canonical pathway activation"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.87,
+          "evidence_types": ["database", "textmining"]
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Canonical Wnt pathway transduction"
+    },
+    {
+      "partner": {
+        "gene_name": "DVL3",
+        "protein_name": "Dishevelled-3",
+        "uniprot_accession": "Q92997"
+      },
+      "interaction_type": "Regulatory",
+      "mechanism": "Signaling",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "wnt_domain_22_355",
+            "residues": [],
+            "description": "WNT3 binding to FZD/LRP induces DVL3 recruitment"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "DIX domain",
+            "residues": [],
+            "description": "DVL3 polymerization domain; assembles supermolecular complexes"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "pmid": "22072798",
+          "description": "Wnt3a induces assembly of DVL3-based supermolecular complexes requiring specific phosphorylation and Axin",
+          "notes": "DVL3 phosphorylation is essential for complex assembly and TCF activation"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.89,
+          "evidence_types": ["database", "textmining"]
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Key mediator of canonical Wnt signaling; forms signalosome with Axin"
+    },
+    {
+      "partner": {
+        "gene_name": "CTNNB1",
+        "protein_name": "Catenin beta-1",
+        "uniprot_accession": "P35222"
+      },
+      "interaction_type": "Regulatory",
+      "mechanism": "Signaling",
+      "direction": "this_modifies_partner",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "wnt_domain_22_355",
+            "residues": [],
+            "description": "WNT3 signaling stabilizes beta-catenin by inhibiting destruction complex"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Armadillo repeats",
+            "residues": [],
+            "description": "Central domain mediates TCF/LEF binding and transcriptional activation"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "WNT3 canonical signaling stabilizes beta-catenin for nuclear translocation and TCF/LEF activation",
+          "notes": "Beta-catenin accumulates and translocates to nucleus upon WNT3 stimulation"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.92,
+          "evidence_types": ["database", "textmining", "coexpression"]
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Central effector of canonical Wnt pathway; WNT3 prevents beta-catenin degradation"
+    },
+    {
+      "partner": {
+        "gene_name": "PORCN",
+        "protein_name": "Protein-serine O-palmitoleoyltransferase porcupine",
+        "uniprot_accession": "Q9H237"
+      },
+      "interaction_type": "Enzymatic_reaction",
+      "mechanism": "Palmitoleoylation",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "palmitoleate_site_S209",
+            "residues": [209],
+            "residue_names": ["S209"],
+            "description": "PORCN catalyzes palmitoleate addition to S209"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "O-acyltransferase domain",
+            "residues": [],
+            "description": "Catalytic domain for Wnt lipidation"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "PORCN is essential ER-resident enzyme that palmitoleoylates all Wnt proteins before secretion",
+          "notes": "PORCN inhibition blocks WNT3 secretion; required for WLS binding"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.86,
+          "evidence_types": ["database", "textmining"]
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Essential post-translational modification for WNT3 secretion and activity"
+    },
+    {
+      "partner": {
+        "gene_name": "WLS",
+        "protein_name": "Wntless homolog",
+        "uniprot_accession": "Q5T9L3"
+      },
+      "interaction_type": "Physical_association",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "palmitoleate_site_S209",
+            "residues": [209],
+            "residue_names": ["S209"],
+            "description": "Palmitoleoylation at S209 required for WLS binding"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Transmembrane domains",
+            "residues": [],
+            "description": "7-pass transmembrane Wnt carrier protein"
+          }
+        ],
+        "site_specific": true
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "WLS binds lipidated WNT3 in ER and escorts it through Golgi to plasma membrane",
+          "notes": "WLS-WNT3 complex forms in ER after PORCN-mediated lipidation; essential for secretion"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.89,
+          "evidence_types": ["experimental", "database", "textmining"]
+        }
+      ],
+      "functional_effect": "Scaffolding",
+      "pathway_context": "Essential chaperone for WNT3 trafficking and secretion; recycled by retromer"
+    },
+    {
+      "partner": {
+        "gene_name": "RNF43",
+        "protein_name": "E3 ubiquitin-protein ligase RNF43",
+        "uniprot_accession": "Q68DV7"
+      },
+      "interaction_type": "Regulatory",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "wnt_domain_22_355",
+            "residues": [],
+            "description": "WNT3 binding to FZD promotes FZD-RNF43 interaction"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "RING domain",
+            "residues": [],
+            "description": "E3 ubiquitin ligase domain that ubiquitinates FZD receptors"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "WNT3 induces FZD endocytosis and degradation in RNF43-dependent manner",
+          "notes": "RNF43 provides negative feedback by promoting FZD degradation; induced by Wnt signaling"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.78,
+          "evidence_types": ["database", "textmining"]
+        }
+      ],
+      "functional_effect": "Inhibitory",
+      "pathway_context": "Negative feedback regulation; limits Wnt signaling by degrading receptors"
+    },
+    {
+      "partner": {
+        "gene_name": "ZNRF3",
+        "protein_name": "E3 ubiquitin-protein ligase ZNRF3",
+        "uniprot_accession": "Q9ULT6"
+      },
+      "interaction_type": "Regulatory",
+      "mechanism": "Binding",
+      "direction": "bidirectional",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "wnt_domain_22_355",
+            "residues": [],
+            "description": "WNT3 binding to FZD promotes FZD-ZNRF3 interaction"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "RING domain",
+            "residues": [],
+            "description": "E3 ubiquitin ligase domain that ubiquitinates FZD receptors"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "ZNRF3 targets FZD receptors for lysosomal degradation, providing negative feedback",
+          "notes": "WNT3 signaling induces ZNRF3 expression; R-spondin inhibits ZNRF3 to potentiate Wnt signaling"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.76,
+          "evidence_types": ["database", "textmining"]
+        }
+      ],
+      "functional_effect": "Inhibitory",
+      "pathway_context": "Negative feedback regulation of Wnt signaling"
+    },
+    {
+      "partner": {
+        "gene_name": "RSPO1",
+        "protein_name": "R-spondin-1",
+        "uniprot_accession": "Q2MKA7"
+      },
+      "interaction_type": "Regulatory",
+      "mechanism": "Signaling potentiation",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "wnt_domain_22_355",
+            "residues": [],
+            "description": "RSPO potentiates WNT3 signaling by inhibiting ZNRF3/RNF43"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Furin-like domain",
+            "residues": [],
+            "description": "RSPO domain that binds LGR and ZNRF3/RNF43"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "R-spondin potentiates WNT3 signaling by preventing FZD receptor degradation",
+          "notes": "RSPO binds LGR4/5 and sequesters ZNRF3/RNF43, increasing FZD levels and Wnt sensitivity"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.82,
+          "evidence_types": ["database", "textmining"]
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Potentiates canonical Wnt signaling by increasing receptor availability"
+    },
+    {
+      "partner": {
+        "gene_name": "RSPO2",
+        "protein_name": "R-spondin-2",
+        "uniprot_accession": "Q6UXX9"
+      },
+      "interaction_type": "Regulatory",
+      "mechanism": "Signaling potentiation",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "wnt_domain_22_355",
+            "residues": [],
+            "description": "RSPO2 potentiates WNT3 signaling"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Furin-like domain",
+            "residues": [],
+            "description": "RSPO domain that binds LGR and ZNRF3/RNF43"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "RSPO2 can potentiate Wnt signaling both LGR-dependently and through heparan sulfate proteoglycans",
+          "notes": "Forms 2:2:2 complex with LGR4 and ZNRF3"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.81,
+          "evidence_types": ["database", "textmining"]
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Synergistic potentiation of canonical Wnt signaling"
+    },
+    {
+      "partner": {
+        "gene_name": "RSPO3",
+        "protein_name": "R-spondin-3",
+        "uniprot_accession": "Q9BXY4"
+      },
+      "interaction_type": "Regulatory",
+      "mechanism": "Signaling potentiation",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "wnt_domain_22_355",
+            "residues": [],
+            "description": "RSPO3 potentiates WNT3 signaling"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Furin-like domain",
+            "residues": [],
+            "description": "RSPO domain that binds LGR and ZNRF3/RNF43"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "RSPO3 potentiates Wnt signaling via LGR-dependent and LGR-independent mechanisms",
+          "notes": "Can function through heparan sulfate proteoglycans"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.80,
+          "evidence_types": ["database", "textmining"]
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Synergistic potentiation of canonical Wnt signaling"
+    },
+    {
+      "partner": {
+        "gene_name": "LGR4",
+        "protein_name": "Leucine-rich repeat-containing G-protein coupled receptor 4",
+        "uniprot_accession": "Q9BXB1"
+      },
+      "interaction_type": "Regulatory",
+      "mechanism": "Signaling potentiation",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "wnt_domain_22_355",
+            "residues": [],
+            "description": "LGR4 potentiates WNT3 signaling through RSPO"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Leucine-rich repeats",
+            "residues": [],
+            "description": "LRR domain binds R-spondin"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "LGR4 is R-spondin receptor that potentiates Wnt signaling by sequestering ZNRF3/RNF43",
+          "notes": "Forms ternary complex with RSPO and ZNRF3/RNF43 to enhance Wnt sensitivity"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.77,
+          "evidence_types": ["database", "textmining"]
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Indirect potentiation of WNT3 signaling via RSPO-mediated mechanism"
+    },
+    {
+      "partner": {
+        "gene_name": "LGR5",
+        "protein_name": "Leucine-rich repeat-containing G-protein coupled receptor 5",
+        "uniprot_accession": "O75473"
+      },
+      "interaction_type": "Regulatory",
+      "mechanism": "Signaling potentiation",
+      "direction": "partner_modifies_this",
+      "sites": {
+        "this_protein": [
+          {
+            "domain_motif_id": "wnt_domain_22_355",
+            "residues": [],
+            "description": "LGR5 potentiates WNT3 signaling through RSPO"
+          }
+        ],
+        "partner_protein": [
+          {
+            "domain_motif_name": "Leucine-rich repeats",
+            "residues": [],
+            "description": "LRR domain binds R-spondin"
+          }
+        ],
+        "site_specific": false
+      },
+      "kinetics": {},
+      "evidence": [
+        {
+          "source": "Literature",
+          "description": "LGR5 is R-spondin receptor highly expressed in stem cells; potentiates Wnt signaling",
+          "notes": "Stem cell marker; enhances Wnt responsiveness in intestinal crypts and other stem cell niches"
+        },
+        {
+          "source": "STRING",
+          "combined_score": 0.78,
+          "evidence_types": ["database", "textmining"]
+        }
+      ],
+      "functional_effect": "Activating",
+      "pathway_context": "Stem cell maintenance and Wnt signaling potentiation"
+    }
+  ],
+  "pathways": {
+    "reactome": [
+      {
+        "pathway_id": "R-HSA-162582",
+        "pathway_name": "Signal Transduction",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-162582"
+      },
+      {
+        "pathway_id": "R-HSA-195721",
+        "pathway_name": "Signaling by Wnt",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-195721"
+      },
+      {
+        "pathway_id": "R-HSA-201681",
+        "pathway_name": "TCF dependent signaling in response to WNT",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-201681"
+      },
+      {
+        "pathway_id": "R-HSA-3238698",
+        "pathway_name": "WNT ligand biogenesis and trafficking",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-3238698"
+      },
+      {
+        "pathway_id": "R-HSA-372790",
+        "pathway_name": "Signaling by GPCR",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-372790"
+      },
+      {
+        "pathway_id": "R-HSA-500792",
+        "pathway_name": "GPCR ligand binding",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-500792"
+      }
+    ],
+    "kegg": [
+      {
+        "pathway_id": "hsa04310",
+        "pathway_name": "Wnt signaling pathway",
+        "url": "https://www.genome.jp/pathway/hsa04310"
+      },
+      {
+        "pathway_id": "hsa04150",
+        "pathway_name": "mTOR signaling pathway",
+        "url": "https://www.genome.jp/pathway/hsa04150"
+      },
+      {
+        "pathway_id": "hsa04916",
+        "pathway_name": "Melanogenesis",
+        "url": "https://www.genome.jp/pathway/hsa04916"
+      },
+      {
+        "pathway_id": "hsa05217",
+        "pathway_name": "Basal cell carcinoma",
+        "url": "https://www.genome.jp/pathway/hsa05217"
+      },
+      {
+        "pathway_id": "hsa05200",
+        "pathway_name": "Pathways in cancer",
+        "url": "https://www.genome.jp/pathway/hsa05200"
+      },
+      {
+        "pathway_id": "hsa05166",
+        "pathway_name": "HTLV-I infection",
+        "url": "https://www.genome.jp/pathway/hsa05166"
+      },
+      {
+        "pathway_id": "hsa04390",
+        "pathway_name": "Hippo signaling pathway",
+        "url": "https://www.genome.jp/pathway/hsa04390"
+      },
+      {
+        "pathway_id": "hsa05205",
+        "pathway_name": "Proteoglycans in cancer",
+        "url": "https://www.genome.jp/pathway/hsa05205"
+      },
+      {
+        "pathway_id": "hsa04550",
+        "pathway_name": "Signaling pathways regulating pluripotency of stem cells",
+        "url": "https://www.genome.jp/pathway/hsa04550"
+      },
+      {
+        "pathway_id": "hsa05224",
+        "pathway_name": "Breast cancer",
+        "url": "https://www.genome.jp/pathway/hsa05224"
+      }
+    ],
+    "pathway_role_summary": "WNT3 is a canonical Wnt ligand that initiates the Wnt/beta-catenin signaling pathway essential for embryonic development, axis specification, and stem cell maintenance. Upon secretion, WNT3 binds to Frizzled receptors and LRP5/6 coreceptors, triggering recruitment of Dishevelled, inhibition of the beta-catenin destruction complex, and subsequent beta-catenin nuclear translocation to activate TCF/LEF-dependent transcription. WNT3 signaling is critical for gastrulation, mesoderm formation, limb development, and maintenance of stem cell populations in adult tissues."
+  },
+  "disease_associations": [
+    {
+      "disease": "Tetraamelia syndrome 1 (TETAMS1)",
+      "omim_id": "273395",
+      "mutation_type": "Germline",
+      "description": "Homozygous nonsense mutation WNT3 Q83X causes autosomal recessive tetraamelia syndrome characterized by complete absence of all four limbs and additional anomalies affecting craniofacial structures, urogenital system, heart, and central nervous system"
+    },
+    {
+      "disease": "Breast cancer",
+      "omim_id": null,
+      "mutation_type": "Somatic",
+      "description": "WNT3 expression detected in breast cancer cell lines and tissue; aberrant activation of Wnt/beta-catenin-TCF pathway implicated in oncogenesis"
+    },
+    {
+      "disease": "Rectal cancer",
+      "omim_id": null,
+      "mutation_type": "Somatic",
+      "description": "WNT3-mediated activation of Wnt-beta-catenin-TCF signaling pathway implicated in colorectal carcinogenesis"
+    },
+    {
+      "disease": "Lung cancer",
+      "omim_id": null,
+      "mutation_type": "Somatic",
+      "description": "Aberrant WNT3 signaling through beta-catenin-TCF pathway implicated in lung cancer development"
+    },
+    {
+      "disease": "Gastric cancer",
+      "omim_id": null,
+      "mutation_type": "Somatic",
+      "description": "WNT3 activation of Wnt-beta-catenin-TCF pathway contributes to gastric cancer pathogenesis"
+    },
+    {
+      "disease": "Chronic myelogenous leukemia",
+      "omim_id": null,
+      "mutation_type": "Somatic",
+      "description": "Granulocyte-macrophage progenitors from CML patients display active Wnt signaling; Wnt deregulation may contribute to hematological malignancies"
+    }
+  ],
+  "cross_references": {
+    "ncbi_gene_id": "7473",
+    "ensembl_gene_id": "ENSG00000108379",
+    "refseq_protein": ["NP_110380"],
+    "refseq_nucleotide": ["NM_030753"],
+    "hgnc_id": "HGNC:12782",
+    "omim_gene": "165330"
+  },
+  "metadata": {
+    "generated_at": "2026-10-18T00:00:00Z",
+    "queried_databases": [
+      "UniProt",
+      "NCBI Gene",
+      "InterPro",
+      "Pfam",
+      "PROSITE",
+      "PDB",
+      "AlphaFold",
+      "STRING",
+      "Reactome",
+      "KEGG",
+      "GO",
+      "OMIM",
+      "Ensembl"
+    ],
+    "data_quality_notes": "High-quality structural data available (PDB 6AHY). Extensive quantitative binding affinity data for FZD interactions (Kd values 1.5-30 nM range). Post-translational modification sites (C77, S209) well-characterized experimentally. Limited information on other PTM sites beyond lipidation. No high-throughput protein-protein interaction data from BioGRID/IntAct available, relying primarily on STRING and literature. Isoform information not available in UniProt.",
+    "modeling_relevance_summary": "WNT3 is a prototypical canonical Wnt ligand essential for modeling Wnt/beta-catenin signaling dynamics. Key features for modeling: (1) Quantitative FZD binding affinities enabling parameter estimation for receptor-ligand interactions; (2) Essential lipid modifications (C77, S209) providing regulatory control points; (3) Complex trafficking pathway (PORCN->WLS->secretion) enabling secretion regulation modeling; (4) Negative feedback through RNF43/ZNRF3 and positive potentiation via RSPO/LGR providing regulatory loops; (5) Well-defined downstream signaling through DVL, beta-catenin stabilization, and TCF/LEF transcription. Crystal structure with FZD8 provides molecular-level insights into receptor engagement mechanism."
+  }
+}
