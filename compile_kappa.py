@@ -315,7 +315,7 @@ Return ONLY valid JSON, no additional text.
             "post_translational_modifications": digest.get('post_translational_modifications', [])
         }
 
-    def _call_llm(self, prompt: str, model: str = "openai/gpt-4o-mini") -> str:
+    def _call_llm(self, prompt: str, model: str = "z-ai/glm-5.3") -> str:
         """Call OpenRouter API with the given prompt."""
         headers = {
             "Authorization": f"Bearer {OPENROUTER_API_KEY}",
