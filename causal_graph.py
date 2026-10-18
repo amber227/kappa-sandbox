@@ -29,10 +29,53 @@ class CausalGraph:
 
     def unreachable(self, init: Iterable[Agent]) -> list[str]:
         '''
-        Returns a list of rule names that can't be reached from the agents in `init`
+        Returns a list of rule names that can't be reached from the agents in `init`.
+
+        A rule is reachable if every agent in its LHS embeds into either an agent in
+        `init`, or the LHS of another reachable rule.
         '''
-        # TODO: unreachability analysis
-        pass 
+        init_agents = list(init)
+        reachable = set()
+        all_rule_names = set(self.system.rules.keys())
+
+        changed = True
+        while changed:
+            changed = False
+            for rule_name, rule in self.system.rules.items():
+                if rule_name in reachable:
+                    continue
+
+                # Collect all agents from LHS of reachable rules and init
+                available_agents = list(init_agents)
+                for reachable_name in reachable:
+                    reachable_rule = self.system.rules[reachable_name]
+                    available_agents.extend(reachable_rule.left.agents)
+
+                # Check if all LHS agents of this rule embed into available_agents
+                all_embed = True
+                for lhs_agent in rule.left.agents:
+                    if lhs_agent is None:
+                        continue
+                    if not self._agent_embeds_into_agents(lhs_agent, available_agents):
+                        all_embed = False
+                        break
+
+                if all_embed:
+                    reachable.add(rule_name)
+                    changed = True
+
+        unreachable_rules = list(all_rule_names - reachable)
+        return unreachable_rules 
+
+    def _agent_embeds_into_agents(self, agent: Agent, target_agents: list[Agent]) -> bool:
+        '''Check if an agent embeds into any agent in target_agents.'''
+        for target in target_agents:
+            if target is None:
+                continue
+            # Check if agent embeds into target
+            if Component([agent]).embeddings(Component([target])):
+                return True
+        return False
 
     def causal_tree(self, init: Iterable[Agent], target_rule: str):
         pass
