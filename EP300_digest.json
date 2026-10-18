@@ -1,0 +1,760 @@
+{
+  "protein_identifier": {
+    "gene_name": "EP300",
+    "protein_name": "Histone acetyltransferase p300",
+    "uniprot_accession": "Q09472",
+    "organism": "Homo sapiens",
+    "organism_taxid": 9606
+  },
+  "sequence": {
+    "canonical_length": 2414,
+    "canonical_sequence": "SEQUENCE_NOT_DIRECTLY_ACCESSIBLE",
+    "molecular_weight_da": 264161,
+    "isoforms": [
+      {
+        "isoform_id": "Isoform 1 (canonical)",
+        "length": 2414,
+        "description": "Canonical full-length isoform",
+        "sequence": "SEQUENCE_NOT_DIRECTLY_ACCESSIBLE"
+      }
+    ]
+  },
+  "domains_and_motifs": [
+    {
+      "identifier": "NRID_1_110",
+      "name": "Nuclear receptor interaction domain",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 1,
+          "end": 110
+        }
+      ],
+      "sequence": "NOT_EXTRACTED",
+      "description": "N-terminal nuclear receptor interaction domain that mediates interactions with nuclear hormone receptors",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": null,
+          "e_value": null,
+          "clan": null,
+          "notes": "Approximate location based on domain architecture studies"
+        }
+      ]
+    },
+    {
+      "identifier": "TAZ1_313_433",
+      "name": "TAZ1 domain (CH1)",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 313,
+          "end": 433
+        }
+      ],
+      "sequence": "NOT_EXTRACTED",
+      "description": "Transcriptional adapter zinc-binding domain 1 (also called CH1 - cysteine/histidine-rich region 1); binds HIF1A C-terminal TAD and other transcription factors",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": null,
+          "e_value": null,
+          "clan": null,
+          "notes": "Interacts with HIF1A TAD-C, adenovirus E1A, and other transcriptional regulators"
+        }
+      ]
+    },
+    {
+      "identifier": "KIX_564_658",
+      "name": "KIX domain",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 564,
+          "end": 658
+        }
+      ],
+      "sequence": "NOT_EXTRACTED",
+      "description": "CREB and MYB interaction domain; mediates binding to phosphorylated CREB, MYB, JUN, ATF1, and ATF4",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR003101",
+          "e_value": null,
+          "clan": null,
+          "notes": "Coactivator CBP, KIX domain"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF02172",
+          "e_value": null,
+          "clan": null,
+          "notes": "KIX domain"
+        }
+      ]
+    },
+    {
+      "identifier": "Bromodomain_1051_1158",
+      "name": "Bromodomain",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 1051,
+          "end": 1158
+        }
+      ],
+      "sequence": "NOT_EXTRACTED",
+      "description": "Acetyl-lysine binding domain that recognizes acetylated histones and transcription factors (e.g., acetylated p53, GATA1, MYB); enables p300 recruitment to acetylated chromatin",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR001487",
+          "e_value": null,
+          "clan": null,
+          "notes": "Bromodomain"
+        },
+        {
+          "database": "InterPro",
+          "accession": "IPR018359",
+          "e_value": null,
+          "clan": null,
+          "notes": "Bromodomain, conserved site"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF00439",
+          "e_value": null,
+          "clan": null,
+          "notes": "Bromodomain"
+        }
+      ]
+    },
+    {
+      "identifier": "RING_1172_1227",
+      "name": "RING domain",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 1172,
+          "end": 1227
+        }
+      ],
+      "sequence": "NOT_EXTRACTED",
+      "description": "Atypical RING domain within CH2 region; part of catalytic core positioned over HAT substrate-binding pocket; may have E3 ubiquitin ligase activity",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR038547",
+          "e_value": null,
+          "clan": null,
+          "notes": "CBP/p300, atypical RING domain superfamily"
+        }
+      ]
+    },
+    {
+      "identifier": "PHD_1243_1277",
+      "name": "PHD finger",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 1243,
+          "end": 1277
+        }
+      ],
+      "sequence": "NOT_EXTRACTED",
+      "description": "Plant homeodomain finger; zinc finger domain that may recognize histone modifications; part of catalytic core",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": null,
+          "e_value": null,
+          "clan": null,
+          "notes": "PHD domain within CH2 region, part of assembled catalytic core"
+        }
+      ]
+    },
+    {
+      "identifier": "HAT_1306_1612",
+      "name": "Histone acetyltransferase domain",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 1306,
+          "end": 1612
+        }
+      ],
+      "sequence": "NOT_EXTRACTED",
+      "description": "Catalytic acetyltransferase domain (KAT3B); transfers acetyl groups from acetyl-CoA to lysines on histones H2A, H2B, H3, H4 and non-histone proteins including p53, CTNNB1, HIF1A, E2F1, GATA1, MYB, and others",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR031162",
+          "e_value": null,
+          "clan": null,
+          "notes": "CBP/p300-type histone acetyltransferase domain"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF00569",
+          "e_value": null,
+          "clan": null,
+          "notes": "Zinc finger, ZZ type"
+        }
+      ]
+    },
+    {
+      "identifier": "ZZ_1650_1720",
+      "name": "ZZ-type zinc finger",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 1650,
+          "end": 1720
+        }
+      ],
+      "sequence": "NOT_EXTRACTED",
+      "description": "ZZ-type zinc finger domain that mediates specificity for histone H3; cooperates with bromodomain for selective acetylation; binds histone H3 N-terminal tail",
+      "sources": [
+        {
+          "database": "Pfam",
+          "accession": "PF00569",
+          "e_value": null,
+          "clan": null,
+          "notes": "Zinc finger, ZZ type"
+        },
+        {
+          "database": "Literature",
+          "accession": null,
+          "e_value": null,
+          "clan": null,
+          "notes": "Coordinates 1650-1720 or 1668-1708 depending on boundaries used"
+        }
+      ]
+    },
+    {
+      "identifier": "TAZ2_1717_1815",
+      "name": "TAZ2 domain (CH3)",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 1717,
+          "end": 1815
+        }
+      ],
+      "sequence": "NOT_EXTRACTED",
+      "description": "Transcriptional adapter zinc-binding domain 2 (also called CH3 - cysteine/histidine-rich region 3); directs acetylation towards H3K27; binds p53, E2F1, MYB, and other transcription factors",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": null,
+          "e_value": null,
+          "clan": null,
+          "notes": "Part of catalytic core; involved in chromatin targeting"
+        }
+      ]
+    },
+    {
+      "identifier": "IBiD_2060_2110",
+      "name": "Interferon-binding domain",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 2060,
+          "end": 2110
+        }
+      ],
+      "sequence": "NOT_EXTRACTED",
+      "description": "Interferon regulatory factor binding domain; binds phosphorylated p53 and other transcription factors; C-terminal interaction domain",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": null,
+          "e_value": null,
+          "clan": null,
+          "notes": "Compactly folded ~46 residue domain; binds phosphorylated transcription factors"
+        }
+      ]
+    },
+    {
+      "identifier": "NLS_multisite",
+      "name": "Nuclear localization signals",
+      "type": "Signal",
+      "locations": [
+        {
+          "start": 1,
+          "end": 2414
+        }
+      ],
+      "sequence": "NOT_EXTRACTED",
+      "description": "Nuclear localization is regulated by BAG6; in absence of BAG6, EP300 accumulates in cytoplasm",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": null,
+          "e_value": null,
+          "clan": null,
+          "notes": "Multiple NLS sites likely present; nuclear localization regulated by BAG6"
+        }
+      ]
+    },
+    {
+      "identifier": "Autoacetylation_loop_1520_1580",
+      "name": "Autoacetylation regulatory loop",
+      "type": "Motif",
+      "locations": [
+        {
+          "start": 1520,
+          "end": 1580
+        }
+      ],
+      "sequence": "NOT_EXTRACTED",
+      "description": "Region containing lysines subject to intermolecular autoacetylation (K1499, K1549, K1554, K1560) that regulates p300 activity",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": null,
+          "e_value": null,
+          "clan": null,
+          "notes": "Autoacetylation enhances p300 acetyltransferase activity"
+        }
+      ]
+    }
+  ],
+  "structure": {
+    "experimental_structures": [
+      {
+        "pdb_id": "3BIY",
+        "method": "X-ray",
+        "resolution_angstrom": 1.7,
+        "chain": "A",
+        "coverage": {
+          "start": 1306,
+          "end": 1612
+        },
+        "description": "HAT domain in complex with bisubstrate inhibitor Lys-CoA",
+        "ligands": [
+          "Lys-CoA"
+        ],
+        "url": "https://www.rcsb.org/structure/3BIY"
+      },
+      {
+        "pdb_id": "3I3J",
+        "method": "X-ray",
+        "resolution_angstrom": 2.33,
+        "chain": "A",
+        "coverage": {
+          "start": 1051,
+          "end": 1158
+        },
+        "description": "Bromodomain structure",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/3I3J"
+      },
+      {
+        "pdb_id": "9JEJ",
+        "method": "X-ray",
+        "resolution_angstrom": 2.9,
+        "chain": "A",
+        "coverage": {
+          "start": 564,
+          "end": 658
+        },
+        "description": "KIX domain (L644C mutant)",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/9JEJ"
+      },
+      {
+        "pdb_id": "6V8N",
+        "method": "X-ray",
+        "resolution_angstrom": 2.3,
+        "chain": "A",
+        "coverage": {
+          "start": 1306,
+          "end": 1612
+        },
+        "description": "Acetyltransferase domain with AcCoA competitive inhibitor 17",
+        "ligands": [
+          "AcCoA inhibitor"
+        ],
+        "url": "https://www.ncbi.nlm.nih.gov/Structure/pdb/6V8N"
+      },
+      {
+        "pdb_id": "6V8B",
+        "method": "X-ray",
+        "resolution_angstrom": 3.13,
+        "chain": "A",
+        "coverage": {
+          "start": 1306,
+          "end": 1612
+        },
+        "description": "Acetyltransferase domain with AcCoA competitive inhibitor 1",
+        "ligands": [
+          "AcCoA inhibitor"
+        ],
+        "url": "https://www.ncbi.nlm.nih.gov/Structure/pdb/6V8B"
+      },
+      {
+        "pdb_id": "6K4N",
+        "method": "Cryo-EM",
+        "resolution_angstrom": null,
+        "chain": "A",
+        "coverage": {
+          "start": 1048,
+          "end": 1664
+        },
+        "description": "p300 catalytic core (bromodomain-RING-PHD-HAT-ZZ-TAZ2)",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/6K4N"
+      },
+      {
+        "pdb_id": "8GZC",
+        "method": "X-ray",
+        "resolution_angstrom": null,
+        "chain": "A",
+        "coverage": {
+          "start": 1306,
+          "end": 1612
+        },
+        "description": "HAT domain in complex with compound 10",
+        "ligands": [
+          "compound 10"
+        ],
+        "url": "https://www.rcsb.org/structure/8GZC"
+      },
+      {
+        "pdb_id": "1JJS",
+        "method": "NMR",
+        "resolution_angstrom": null,
+        "chain": "A",
+        "coverage": {
+          "start": 2060,
+          "end": 2110
+        },
+        "description": "IBiD domain structure",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/1JJS"
+      }
+    ],
+    "alphafold_prediction": {
+      "available": true,
+      "accession": "AF-Q09472-F1",
+      "confidence_summary": "EP300/p300 contains long intrinsically disordered regions (IDRs) reflected in variable pLDDT scores. Structured domains (TAZ1, KIX, bromodomain, HAT, ZZ, TAZ2) show high confidence (pLDDT > 80-90), while linker regions and disordered segments show lower confidence (pLDDT < 50-70)",
+      "url": "https://alphafold.ebi.ac.uk/entry/Q09472"
+    }
+  },
+  "post_translational_modifications": [
+    {
+      "type": "Phosphorylation",
+      "position": 89,
+      "residue": "S",
+      "function": "Regulates nucleocytoplasmic shuttling; AMPK-mediated phosphorylation causes nuclear localization and reduced mTORC1 activity; PP2A-mediated dephosphorylation enables CRM1-dependent nuclear export",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 1038,
+      "residue": "S",
+      "function": "Unknown regulatory function",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Acetylation",
+      "position": 1020,
+      "residue": "K",
+      "function": "Auto-acetylation site in CRD1 region; deacetylated by SIRT1 for transcriptional repression",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Acetylation",
+      "position": 1499,
+      "residue": "K",
+      "function": "Auto-acetylation increases EP300 activity",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Acetylation",
+      "position": 1549,
+      "residue": "K",
+      "function": "Auto-acetylation increases EP300 activity",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Acetylation",
+      "position": 1554,
+      "residue": "K",
+      "function": "Auto-acetylation increases EP300 activity",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Acetylation",
+      "position": 1560,
+      "residue": "K",
+      "function": "Auto-acetylation increases EP300 activity",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Acetylation",
+      "position": 1551,
+      "residue": "K",
+      "function": "Auto-acetylation increases EP300 activity",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Ubiquitination",
+      "position": 1637,
+      "residue": "K",
+      "function": "Regulation of protein stability or activity",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Sumoylation",
+      "position": null,
+      "residue": "K",
+      "function": "Regulatory modification; same lysines may be targeted for acetylation or sumoylation",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "O-Glycosylation",
+      "position": null,
+      "residue": null,
+      "function": "18 glycosylation sites with 1 O-linked glycan at 9 sites",
+      "evidence": "Predicted"
+    }
+  ],
+  "function": {
+    "uniprot_function": "Histone acetyltransferase (HAT) that functions as transcriptional coactivator regulating gene expression via chromatin remodeling. Acetylates all four core histones (H2A, H2B, H3, H4) in nucleosomes. Also acetylates non-histone proteins including transcription factors (TP53, E2F1, GATA1, MYB, CTNNB1, HIF1A, NF\u03baB), affecting protein-DNA interactions, protein stability, and transcriptional activity. Mediates cAMP-gene regulation by binding phosphorylated CREB. Recruited to chromatin by transcription factors to activate gene expression. Has intrinsic polyubiquitin ligase activity (E3/E4) for p53 in cytoplasm. Involved in cell proliferation, differentiation, apoptosis, DNA repair, and development. Auto-acetylates to regulate own activity.",
+    "catalytic_activity": "Acetyl-CoA + [histone]-L-lysine = CoA + [histone]-N6-acetyl-L-lysine; transfers acetyl group from acetyl-CoA to epsilon-amino group of lysine residues",
+    "subcellular_location": [
+      "Nucleus",
+      "Cytoplasm"
+    ],
+    "tissue_specificity": "Ubiquitously expressed across human tissues with particularly high levels in bone marrow. Expression varies across tissues and developmental stages.",
+    "go_annotations": {
+      "molecular_function": [
+        {
+          "go_id": "GO:0004402",
+          "term": "histone acetyltransferase activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0003713",
+          "term": "transcription coactivator activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0003682",
+          "term": "chromatin binding",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0061631",
+          "term": "ubiquitin conjugating enzyme activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0042826",
+          "term": "histone deacetylase binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0046872",
+          "term": "metal ion binding",
+          "evidence_code": "IEA"
+        }
+      ],
+      "biological_process": [
+        {
+          "go_id": "GO:0016573",
+          "term": "histone acetylation",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0006357",
+          "term": "regulation of transcription by RNA polymerase II",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0006355",
+          "term": "regulation of DNA-templated transcription",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0006325",
+          "term": "chromatin organization",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0006461",
+          "term": "protein-containing complex assembly",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0006915",
+          "term": "apoptotic process",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0007049",
+          "term": "cell cycle",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0007507",
+          "term": "heart development",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0030324",
+          "term": "lung development",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0051301",
+          "term": "cell division",
+          "evidence_code": "IEA"
+        },
+        {
+          "go_id": "GO:0045893",
+          "term": "positive regulation of DNA-templated transcription",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0007165",
+          "term": "signal transduction",
+          "evidence_code": "IEA"
+        }
+      ],
+      "cellular_component": [
+        {
+          "go_id": "GO:0005634",
+          "term": "nucleus",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005737",
+          "term": "cytoplasm",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005654",
+          "term": "nucleoplasm",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0000785",
+          "term": "chromatin",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0016020",
+          "term": "membrane",
+          "evidence_code": "IEA"
+        }
+      ]
+    }
+  },
+  "pathways": {
+    "reactome": [
+      {
+        "pathway_id": "R-HSA-381325",
+        "pathway_name": "NOTCH1 Intracellular Domain Regulates Transcription",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-381325"
+      },
+      {
+        "pathway_id": "R-HSA-9011981",
+        "pathway_name": "Regulation of Homotypic Cell-Cell Adhesion",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-9011981"
+      },
+      {
+        "pathway_id": "R-HSA-3322427",
+        "pathway_name": "TCF dependent signaling in response to WNT",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-3322427"
+      },
+      {
+        "pathway_id": "R-HSA-5628871",
+        "pathway_name": "TP53 Regulates Transcription of DNA Repair Genes",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-5628871"
+      },
+      {
+        "pathway_id": "R-HSA-6804242",
+        "pathway_name": "Interleukin-17 signaling",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-6804242"
+      }
+    ],
+    "kegg": [
+      {
+        "pathway_id": "hsa05200",
+        "pathway_name": "Pathways in cancer",
+        "url": "https://www.kegg.jp/pathway/hsa05200"
+      },
+      {
+        "pathway_id": "hsa04110",
+        "pathway_name": "Cell cycle",
+        "url": "https://www.kegg.jp/pathway/hsa04110"
+      },
+      {
+        "pathway_id": "hsa04115",
+        "pathway_name": "p53 signaling pathway",
+        "url": "https://www.kegg.jp/pathway/hsa04115"
+      }
+    ],
+    "pathway_role_summary": "EP300 is a central transcriptional coactivator involved in 141+ Reactome pathways. Key roles include: (1) Wnt/beta-catenin signaling as histone acetyltransferase at TCF target genes (differentiation vs CBP for proliferation), (2) p53 pathway as acetylase activating p53 transcriptional function and stability, (3) Hypoxia response via HIF1A acetylation and coactivation, (4) Notch signaling, (5) TGF-beta/SMAD signaling, (6) JAK-STAT signaling, (7) CREB/cAMP signaling, (8) Nuclear receptor signaling (ER\u03b1, PPAR\u03b3), (9) Cell cycle regulation via E2F1/RB1, (10) Development (HOX genes, heart, lung, cartilage). Acts as integrator of multiple signal-dependent transcription events."
+  },
+  "disease_associations": [
+    {
+      "disease": "Rubinstein-Taybi syndrome type 2",
+      "omim_id": "613684",
+      "mutation_type": "Germline",
+      "description": "Autosomal dominant disorder caused by loss-of-function variants in EP300 (8-10% of RSTS cases). Characterized by intellectual disability, distinctive craniofacial features, broad thumbs/halluces, postnatal growth retardation, and joint hyperlaxity. Incidence 1:100,000-1:125,000 live births. Mutations include frameshift, nonsense, splice site, missense, and large deletions. Most are de novo; mosaic mutations described."
+    },
+    {
+      "disease": "Cancer (multiple types)",
+      "omim_id": "602700",
+      "mutation_type": "Somatic",
+      "description": "EP300 mutations found in various cancers including colorectal, gastric, breast, hepatocellular carcinoma, lung adenocarcinoma, and hematological malignancies. Mutations correlate with genome instability, altered DNA damage repair pathways, and poor prognosis. Pathways enriched in EP300-mutated cancers: cytokine-cytokine receptor interaction, cell cycle, p53 signaling, JAK-STAT signaling. EP300 promotes cancer cell proliferation via Hippo-YAP and other oncogenic pathways."
+    }
+  ],
+  "cross_references": {
+    "ncbi_gene_id": "2033",
+    "ensembl_gene_id": "ENSG00000100393",
+    "refseq_protein": [
+      "NP_001420",
+      "NP_001349772"
+    ],
+    "refseq_nucleotide": [
+      "NM_001429",
+      "NM_001362843"
+    ],
+    "hgnc_id": "HGNC:3373",
+    "omim_gene": "602700"
+  },
+  "metadata": {
+    "generated_at": "2026-10-17T00:00:00Z",
+    "queried_databases": [
+      "UniProt",
+      "NCBI Gene",
+      "InterPro",
+      "Pfam",
+      "PROSITE",
+      "SMART",
+      "PDB",
+      "AlphaFold",
+      "STRING",
+      "BioGRID",
+      "IntAct",
+      "Reactome",
+      "KEGG",
+      "GO",
+      "OMIM",
+      "PhosphoSitePlus",
+      "iPTMnet"
+    ],
+    "data_quality_notes": "High-quality data from multiple authoritative sources. Canonical sequence not directly extracted (UniProt web interface requires JavaScript). Domain boundaries vary slightly between sources (\u00b15-20 residues is normal). PTM data comprehensive from PhosphoSitePlus/iPTMnet. Kinetic data limited: only MYB KIX binding (Kd 3.8 \u03bcM) quantified; most other interactions lack kinetic parameters. ~400+ protein interactions reported in literature; top 20 high-confidence partners included here. EP300 contains extensive intrinsically disordered regions between structured domains.",
+    "modeling_relevance_summary": "EP300 is a critical hub protein in cell signaling as a transcriptional coactivator integrating multiple pathways (Wnt, p53, hypoxia, TGF-beta, JAK-STAT, CREB, nuclear receptors). Key modeling considerations: (1) Acetylates both histones and transcription factors, affecting gene expression globally. (2) Nucleocytoplasmic shuttling regulated by AMPK (S89 phosphorylation) controls mTORC1 activity. (3) Auto-acetylation at K1499/K1549/K1554/K1560 positively regulates activity. (4) Competes with HDAC1/2 for chromatin binding; acetylates HDAC1 to inhibit it. (5) Multiple interaction domains (TAZ1, KIX, TAZ2, IBiD, bromodomain) enable combinatorial binding to diverse transcription factors. (6) Differential roles vs paralog CREBBP in Wnt signaling (p300=differentiation, CBP=proliferation). (7) Has E3/E4 ubiquitin ligase activity for cytoplasmic p53. (8) Limited quantitative kinetic data available; most interactions qualitative. Mutations cause Rubinstein-Taybi syndrome and drive multiple cancers."
+  }
+}

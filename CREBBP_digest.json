@@ -1,0 +1,707 @@
+{
+  "protein_identifier": {
+    "gene_name": "CREBBP",
+    "protein_name": "CREB-binding protein",
+    "uniprot_accession": "Q92793",
+    "organism": "Homo sapiens",
+    "organism_taxid": 9606
+  },
+  "sequence": {
+    "canonical_length": 2442,
+    "canonical_sequence": "MAENLLDGPPNPKRAKLSSPGFSANDSTDFGSLFDLENDLPDELIPNGGELGLLNSGNLVPDAASKHKQLSELLRGGSGSSINPGIGNVSASSPVQQGLGGQAQGQPNSANMASLSAMGKSPLSQGDSSAPSLPKQAASTSGPTPAASQALNPQAQKQVGLATSSPATSQTGPGICMNANFNQTHPGLLNSNSGHSLINQASQGQAQVMNGSLGAAGRGRGAGMPYPTPAMQGASSSVLAETLTQVSPQMTGHAGLNTAQAGGMAKMGITGNTSPFGQPFSQAGGQPMGATGVNPQLASKQSMVNSLPTFPTDIKNTSVTNVPNMSQMQTSVGIVPTQAIATGPTADPEKRKLIQQQLVLLLHAHKCQRREQANGEVRACSLPHCRTMKNVLNHMTHCQAGKACQVAHCASSRQIISHWKNCTRHDCPVCLPLKNASDKRNQQTILGSPASGIQNTIGSVGTGQQNATSLSNPNPIDPSSSMQRAYAALGLPYMNQPQTQLQPQVPGQQPAQPQTHQQMRTLNPLGNNPMNIPAGGITTDQQPPNLISESALPTSLGATNPLMNDGSNSGNIGTLSTIPTAAPPSSTGVRKGWHEHVTQDLRSHLVHKLVQAIFPTPDPAALKDRRMENLVAYAKKVEGDMYESANSRDEYYHLLAEKIYKIQKELEEKRRSRLHKQGILGNQPALPAPGAQPPVIPQAQPVRPPNGPLSLPVNRMQVSQGMNSFNPMSLGNVQLPQAPMGPRAASPMNHSVQMNSMGSVPGMAISPSRMPQPPNMMGAHTNNMMAQAPAQSQFLPQNQFPSSSGAMSVGMGQPPAQTGVSQGQVPGAALPNPLNMLGPQASQLPCPPVTQSPLHPTPPPASTAAGMPSLQHTTPPGMTPPQPAAPTQPSTPVSSSGQTPTPTPGSVPSATQTQSTPTVQAAAQAQVTPQPQTPVQPPSVATPQSSQQQPTPVHAQPPGTPLSQAAASIDNRVPTPSSVASAETNSQQPGPDVPVLEMKTETQAEDTEPDPGESKGEPRSEMMEEDLQGASQVKEETDIAEQKSEPMEVDEKKPEVKVEVKEEEESSSNGTASQSTSPSQPRKKIFKPEELRQALMPTLEALYRQDPESLPFRQPVDPQLLGIPDYFDIVKNPMDLSTIKRKLDTGQYQEPWQYVDDVWLMFNNAWLYNRKTSRVYKFCSKLAEVFEQEIDPVMQSLGYCCGRKYEFSPQTLCCYGKQLCTIPRDAAYYSYQNRYHFCEKCFTEIQGENVTLGDDPSQPQTTISKDQFEKKKNDTLDPEPFVDCKECGRKMHQICVLHYDIIWPSGFVCDNCLKKTGRPRKENK FSAKRLQTTRLGNHLEDRVNKFLRRQNHPEAGEVFVRVVASSDKTVEVKPGMKSRFVDSGEMSESFPYRTKALFAFEEIDGVDVCFFGMHVQEYGSDCPPPNTRRVYISYLDSIHFFRPRCLRTAVYHEILIGYLEYVKKLGYVTGHIWACPPSEGDDYIFHCHPPDQKIPKPKRLQEWYKKMLDKAFAERIIHDYKDIFKQATEDRLTSAKELPYFEGDFWPNVLEESIKELEQEEEEERKKEESTAASETTEGSQGDSKNAKKKNNKKTNKNKSSISRANKKKPSMPNVSNDLSQKLYATMEKHKEVFFVIHLHAGPVINTLPPIVDPDPLLSCDLMDGRDAFLTLARDKHWEFSSLLRRSKWSTLCMLVELHTQGQDRFVYTCNECKHHVETRWHCTVCEDYDLCINCYNTKSHAHKMVKWGLGLDDEGSSQGEPQSKSPQESRRLSIQRCIQSLVHACQCRNANCSLPSCQKMKRVVQHTKGCKRKTNGGCPVCKQLIALCCYHAKHCQENKCPVPFCLNIKHKLRQQQIQHRLQQAQVLMRRRMATMNTRNVPQQSLPSPTSAPPGTPTQQPSTPQTPQPPAQPQPSPVSMSPAGFPSVARTQPPTTVSTGKPTSQVPAPPPPAQPPPAAVEAARQIEREAQQQQHLYRVNINNSMP PGRTGMGTPGSQMAPVSLNVPRPNQVSGPVMPSMPPGQWQQAPLPQQQPMPGLPRPVISMQAQAAVAGPRMPSVQPPRSISPSALQDLLRTLKSPSSPQQQQQVLNILKSNPQLMAAFIKIQQRTAKYVANQPGMQPQPGLQSQPGMQPQPGMHQQPSLQNLNAMQAGVPRPGVPPQQQAMGGLNPQGQALNIMNPGHNPNMASMNPQYREMLRRQLLQQQQQQQQQQQQQQQQQQGSAGMAGGMAGHGQFQQPQGPGGYPPAMQQQQRMQQHLPLQGSSMGQMAAQMGQLGQMGQPGLGADSTPNIQQALQQRILQQQQMKQQIGSPGQPNPMSPQQHMLSGQPQASHLPGQQIATSLLSNQVRSPAPVQSPRPQSQPPHSSPSPRIQPQPSPHHVSPQTGSPHPGLAVTMASSIDQGHLGNPEQSAMLPQLNTPSRSALSSELSLVGDTTGDTLEKFVEGL",
+    "molecular_weight_da": 265351,
+    "isoforms": [
+      {
+        "isoform_id": "Q92793-1",
+        "length": 2442,
+        "description": "Canonical isoform",
+        "sequence": "MAENLLDGPPNPKRAKLSSPGFSANDSTDFGSLFDLENDLPDELIPNGGELGLLNSGNLVPDAASKHKQLSELLRGGSGSSINPGIGNVSASSPVQQGLGGQAQGQPNSANMASLSAMGKSPLSQGDSSAPSLPKQAASTSGPTPAASQALNPQAQKQVGLATSSPATSQTGPGICMNANFNQTHPGLLNSNSGHSLINQASQGQAQVMNGSLGAAGRGRGAGMPYPTPAMQGASSSVLAETLTQVSPQMTGHAGLNTAQAGGMAKMGITGNTSPFGQPFSQAGGQPMGATGVNPQLASKQSMVNSLPTFPTDIKNTSVTNVPNMSQMQTSVGIVPTQAIATGPTADPEKRKLIQQQLVLLLHAHKCQRREQANGEVRACSLPHCRTMKNVLNHMTHCQAGKACQVAHCASSRQIISHWKNCTRHDCPVCLPLKNASDKRNQQTILGSPASGIQNTIGSVGTGQQNATSLSNPNPIDPSSSMQRAYAALGLPYMNQPQTQLQPQVPGQQPAQPQTHQQMRTLNPLGNNPMNIPAGGITTDQQPPNLISESALPTSLGATNPLMNDGSNSGNIGTLSTIPTAAPPSSTGVRKGWHEHVTQDLRSHLVHKLVQAIFPTPDPAALKDRRMENLVAYAKKVEGDMYESANSRDEYYHLLAEKIYKIQKELEEKRRSRLHKQGILGNQPALPAPGAQPPVIPQAQPVRPPNGPLSLPVNRMQVSQGMNSFNPMSLGNVQLPQAPMGPRAASPMNHSVQMNSMGSVPGMAISPSRMPQPPNMMGAHTNNMMAQAPAQSQFLPQNQFPSSSGAMSVGMGQPPAQTGVSQGQVPGAALPNPLNMLGPQASQLPCPPVTQSPLHPTPPPASTAAGMPSLQHTTPPGMTPPQPAAPTQPSTPVSSSGQTPTPTPGSVPSATQTQSTPTVQAAAQAQVTPQPQTPVQPPSVATPQSSQQQPTPVHAQPPGTPLSQAAASIDNRVPTPSSVASAETNSQQPGPDVPVLEMKTETQAEDTEPDPGESKGEPRSEMMEEDLQGASQVKEETDIAEQKSEPMEVDEKKPEVKVEVKEEEESSSNGTASQSTSPSQPRKKIFKPEELRQALMPTLEALYRQDPESLPFRQPVDPQLLGIPDYFDIVKNPMDLSTIKRKLDTGQYQEPWQYVDDVWLMFNNAWLYNRKTSRVYKFCSKLAEVFEQEIDPVMQSLGYCCGRKYEFSPQTLCCYGKQLCTIPRDAAYYSYQNRYHFCEKCFTEIQGENVTLGDDPSQPQTTISKDQFEKKKNDTLDPEPFVDCKECGRKMHQICVLHYDIIWPSGFVCDNCLKKTGRPRKENK FSAKRLQTTRLGNHLEDRVNKFLRRQNHPEAGEVFVRVVASSDKTVEVKPGMKSRFVDSGEMSESFPYRTKALFAFEEIDGVDVCFFGMHVQEYGSDCPPPNTRRVYISYLDSIHFFRPRCLRTAVYHEILIGYLEYVKKLGYVTGHIWACPPSEGDDYIFHCHPPDQKIPKPKRLQEWYKKMLDKAFAERIIHDYKDIFKQATEDRLTSAKELPYFEGDFWPNVLEESIKELEQEEEEERKKEESTAASETTEGSQGDSKNAKKKNNKKTNKNKSSISRANKKKPSMPNVSNDLSQKLYATMEKHKEVFFVIHLHAGPVINTLPPIVDPDPLLSCDLMDGRDAFLTLARDKHWEFSSLLRRSKWSTLCMLVELHTQGQDRFVYTCNECKHHVETRWHCTVCEDYDLCINCYNTKSHAHKMVKWGLGLDDEGSSQGEPQSKSPQESRRLSIQRCIQSLVHACQCRNANCSLPSCQKMKRVVQHTKGCKRKTNGGCPVCKQLIALCCYHAKHCQENKCPVPFCLNIKHKLRQQQIQHRLQQAQVLMRRRMATMNTRNVPQQSLPSPTSAPPGTPTQQPSTPQTPQPPAQPQPSPVSMSPAGFPSVARTQPPTTVSTGKPTSQVPAPPPPAQPPPAAVEAARQIEREAQQQQHLYRVNINNSMP PGRTGMGTPGSQMAPVSLNVPRPNQVSGPVMPSMPPGQWQQAPLPQQQPMPGLPRPVISMQAQAAVAGPRMPSVQPPRSISPSALQDLLRTLKSPSSPQQQQQVLNILKSNPQLMAAFIKIQQRTAKYVANQPGMQPQPGLQSQPGMQPQPGMHQQPSLQNLNAMQAGVPRPGVPPQQQAMGGLNPQGQALNIMNPGHNPNMASMNPQYREMLRRQLLQQQQQQQQQQQQQQQQQQGSAGMAGGMAGHGQFQQPQGPGGYPPAMQQQQRMQQHLPLQGSSMGQMAAQMGQLGQMGQPGLGADSTPNIQQALQQRILQQQQMKQQIGSPGQPNPMSPQQHMLSGQPQASHLPGQQIATSLLSNQVRSPAPVQSPRPQSQPPHSSPSPRIQPQPSPHHVSPQTGSPHPGLAVTMASSIDQGHLGNPEQSAMLPQLNTPSRSALSSELSLVGDTTGDTLEKFVEGL"
+      },
+      {
+        "isoform_id": "Q92793-2",
+        "length": 2404,
+        "description": "Isoform 2 lacks amino acids 406-444 (exon 5)",
+        "sequence": null
+      }
+    ]
+  },
+  "domains_and_motifs": [
+    {
+      "identifier": "NLS_11_17",
+      "name": "Nuclear localization signal (N-terminal)",
+      "type": "NLS",
+      "locations": [
+        {
+          "start": 11,
+          "end": 17
+        }
+      ],
+      "sequence": "PKRAKLS",
+      "description": "N-terminal nuclear location signal with conserved pattern (Pro, followed by Lys or Arg in 3 out of 5 residues)",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": null,
+          "notes": "Monopartite NLS in conserved nuclear receptor binding domain"
+        }
+      ]
+    },
+    {
+      "identifier": "TAZ1_CH1_340_439",
+      "name": "TAZ1 domain (CH1)",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 340,
+          "end": 439
+        }
+      ],
+      "sequence": "ALYRQDPESLPFRQPVDPQLLGIPDYFDIVKNPMDLSTIKRKLDTGQYQEPWQYVDDVWLMFNNAWLYNRKTSRVYKFCSKLAEVFEQEIDPVMQSLGYCCGRK",
+      "description": "Transcriptional adapter zinc finger domain 1 (TAZ1), also called CH1. Four-helix bundle zinc finger that binds intrinsically disordered transactivation domains of multiple transcription factors including HIF-1A, CITED2, STAT2, p53, and others. Critical for hypoxia response and transcriptional regulation.",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "Q92793",
+          "notes": "TAZ1/CH1 domain coordinates"
+        },
+        {
+          "database": "Literature",
+          "accession": null,
+          "notes": "Four-helix bundle structure determined by NMR"
+        }
+      ]
+    },
+    {
+      "identifier": "KIX_588_672",
+      "name": "KIX domain",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 588,
+          "end": 672
+        }
+      ],
+      "sequence": "HLEDRVNKFLRRQNHPEAGEVFVRVVASSDKTVEVKPGMKSRFVDSGEMSESFPYRTKALFAFEEIDGVDVCFFGMHVQEYGSDCPPPN",
+      "description": "Kinase-inducible domain interacting (KIX) domain. CREB binding domain that specifically recognizes phosphorylated CREB (pSer133) and other transcription factors including c-Myb. Three-helix bundle with two-helix coiled-coil.",
+      "sources": [
+        {
+          "database": "Pfam",
+          "accession": "PF02172",
+          "notes": "KIX domain"
+        },
+        {
+          "database": "InterPro",
+          "accession": "IPR003101",
+          "notes": "Coactivator CBP, KIX domain"
+        },
+        {
+          "database": "SMART",
+          "accession": null,
+          "notes": "KIX domain annotation"
+        }
+      ]
+    },
+    {
+      "identifier": "Bromodomain_1053_1127",
+      "name": "Bromodomain",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 1053,
+          "end": 1127
+        }
+      ],
+      "sequence": "VFFVIHLHAGPVINTLPPIVDPDPLLSCDLMDGRDAFLTLARDKHWEFSSLLRRSKWSTLCMLVELHTQGQDRFVYTCNECK",
+      "description": "Bromodomain that recognizes and binds acetylated lysine residues on histones (acetyl-lysine reader). Critical for maintaining histone acetyltransferase signaling and chromatin localization. Four-helix bundle structure with acetyl-lysine binding pocket.",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR001487",
+          "notes": "Bromodomain"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF00439",
+          "clan": "CL0034",
+          "notes": "Bromodomain"
+        },
+        {
+          "database": "SMART",
+          "accession": "SM00297",
+          "notes": "Bromo_cbp_like"
+        }
+      ]
+    },
+    {
+      "identifier": "PHD_1140_1200",
+      "name": "PHD finger",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 1140,
+          "end": 1200
+        }
+      ],
+      "sequence": "HHVETRWHCTVCEDYDLCINCYNTKSHAHKMVKWGLGLDDEGSSQGEPQSKSPQESRRLSIQR",
+      "description": "Plant homeodomain (PHD) finger. Cys4-His-Cys3 zinc finger motif forming cross-brace topology with two zinc atoms. May recognize histone methylation marks.",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR001606",
+          "notes": "PHD finger"
+        },
+        {
+          "database": "SMART",
+          "accession": "SM00249",
+          "notes": "PHD finger"
+        }
+      ]
+    },
+    {
+      "identifier": "RING_1168_1240",
+      "name": "RING domain",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 1168,
+          "end": 1240
+        }
+      ],
+      "sequence": "EDYDLCINCYNTKSHAHKMVKWGLGLDDEGSSQGEPQSKSPQESRRLSIQRCIQSLVHACQCRNANCSLPSCQ",
+      "description": "Atypical RING-type zinc finger domain unique to CBP/p300. May be involved in E3 ubiquitin ligase activity in cytoplasmic compartment.",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR038547",
+          "notes": "CBP/p300, atypical RING domain superfamily"
+        },
+        {
+          "database": "Pfam",
+          "accession": null,
+          "notes": "RING_CBP-p300"
+        }
+      ]
+    },
+    {
+      "identifier": "HAT_1342_1649",
+      "name": "Histone acetyltransferase (HAT) domain",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 1342,
+          "end": 1649
+        }
+      ],
+      "sequence": "NKNKSSISRANKKKPSMPNVSNDLSQKLYATMEKHKEVFFVIHLHAGPVINTLPPIVDPDPLLSCDLMDGRDAFLTLARDKHWEFSSLLRRSKWSTLCMLVELHTQGQDRFVYTCNECKHHVETRWHCTVCEDYDLCINCYNTKSHAHKMVKWGLGLDDEGSSQGEPQSKSPQESRRLSIQRCIQSLVHACQCRNANCSLPSCQKMKRVVQHTKGCKRKTNGGCPVCKQLIALCCYHAKHCQENKCPVPFCLNIKHKLRQQQIQHRLQQAQVLMRRRMATMNTRNVPQQSLPSPTSAPPGTPTQQPSTPQTPQPPAQPQPSPVSMSPAGFP",
+      "description": "Catalytic histone acetyltransferase domain (KAT3A activity). Transfers acetyl groups from acetyl-CoA to lysine residues on histones H2B (K13), H3 (K15, K18, K27) and H4 (K9). Also acetylates non-histone proteins. Can also use other acyl-CoA substrates for propionylation and lactylation.",
+      "sources": [
+        {
+          "database": "Pfam",
+          "accession": "PF08214",
+          "notes": "HAT_KAT11"
+        },
+        {
+          "database": "InterPro",
+          "accession": "IPR031162",
+          "notes": "CBP/p300-type histone acetyltransferase domain"
+        },
+        {
+          "database": "Reactome",
+          "accession": "R-HSA-3697008",
+          "notes": "Acetylation of histones by CREBBP"
+        }
+      ]
+    },
+    {
+      "identifier": "NLS_bipartite_1591",
+      "name": "Nuclear localization signal (bipartite)",
+      "type": "NLS",
+      "locations": [
+        {
+          "start": 1591,
+          "end": 1607
+        }
+      ],
+      "sequence": "KKTNKNKSSISRANKK",
+      "description": "Central bipartite nuclear localization signal, highly conserved in mouse CREBBP and in p300",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": null,
+          "notes": "Bipartite NLS at position 1591"
+        }
+      ]
+    },
+    {
+      "identifier": "ZZ_1701_1752",
+      "name": "ZZ-type zinc finger",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 1701,
+          "end": 1752
+        }
+      ],
+      "sequence": "PPGTPTQQPSTPQTPQPPAQPQPSPVSMSPAGFPSVARTQPPTTVSTGKPTSQ",
+      "description": "ZZ-type zinc finger domain. Contains two twisted antiparallel beta-sheets and short alpha-helix. Binds two zinc ions via CXXC and HXH motifs. Cross-brace zinc finger fold related to PHD and RING domains.",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR000433",
+          "notes": "ZZ-type zinc finger"
+        },
+        {
+          "database": "SMART",
+          "accession": "SM00291",
+          "notes": "ZZ domain"
+        },
+        {
+          "database": "Literature",
+          "accession": null,
+          "notes": "Unusual zinc coordination with CXXC and HXH motifs"
+        }
+      ]
+    },
+    {
+      "identifier": "TAZ2_CH3_1764_1850",
+      "name": "TAZ2 domain (CH3)",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 1764,
+          "end": 1850
+        }
+      ],
+      "sequence": "VPPQQQAMGGLNPQGQALNIMNPGHNPNMASMNPQYREMLRRQLLQQQQQQQQQQQQQQQQQQGSAGMAGGMAGHGQFQQPQGPGGYPPAMQ",
+      "description": "Transcriptional adapter zinc finger domain 2 (TAZ2), also called CH3. Four-helix bundle that binds transactivation domains of STAT1, p53, and other transcription factors. Contains both ZZ and TAZ2 zinc-binding motifs. Preferentially binds smaller TADs restricted to single contiguous binding surface.",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "Q92793",
+          "notes": "TAZ2/CH3 domain"
+        },
+        {
+          "database": "Literature",
+          "accession": null,
+          "notes": "Solution structure determined; residues Pro1727-Gln1747 (alpha1), Pro1756-Lys1769 (alpha2), Pro1780-His1795 (alpha3), Pro1804-Lys1810 (alpha4)"
+        }
+      ]
+    },
+    {
+      "identifier": "CREB_binding_2034_2111",
+      "name": "CREB binding domain",
+      "type": "Binding_site",
+      "locations": [
+        {
+          "start": 2034,
+          "end": 2111
+        }
+      ],
+      "sequence": "QQIATSLLSNQVRSPAPVQSPRPQSQPPHSSPSPRIQPQPSPHHVSPQTGSPHPGLAVTMASSIDQGHLGNPEQSAMLPQLNT",
+      "description": "Additional CREB interaction region distinct from KIX domain",
+      "sources": [
+        {
+          "database": "Pfam",
+          "accession": "PF09030",
+          "notes": "Creb_binding domain"
+        }
+      ]
+    }
+  ],
+  "structure": {
+    "experimental_structures": [
+      {
+        "pdb_id": "3DWY",
+        "method": "X-ray",
+        "resolution_angstrom": 1.8,
+        "chain": "A",
+        "coverage": {
+          "start": 1053,
+          "end": 1127
+        },
+        "description": "Crystal structure of the bromodomain of human CREBBP",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/3DWY"
+      },
+      {
+        "pdb_id": "3P1F",
+        "method": "X-ray",
+        "resolution_angstrom": 1.63,
+        "chain": "A",
+        "coverage": {
+          "start": 1053,
+          "end": 1127
+        },
+        "description": "Crystal structure of the bromodomain of human CREBBP in complex with a hydroquinazolin ligand",
+        "ligands": [
+          "hydroquinazolin"
+        ],
+        "url": "https://www.rcsb.org/structure/3P1F"
+      },
+      {
+        "pdb_id": "5I83",
+        "method": "X-ray",
+        "resolution_angstrom": 1.35,
+        "chain": "A",
+        "coverage": {
+          "start": 1053,
+          "end": 1127
+        },
+        "description": "Crystal structure of the bromodomain of human CREBBP bound to benzodiazepinone G02773986",
+        "ligands": [
+          "benzodiazepinone"
+        ],
+        "url": "https://www.rcsb.org/structure/5I83"
+      },
+      {
+        "pdb_id": "5MPZ",
+        "method": "X-ray",
+        "resolution_angstrom": 1.4,
+        "chain": "A",
+        "coverage": {
+          "start": 1053,
+          "end": 1127
+        },
+        "description": "Crystal structure of CREBBP bromodomain complexed with CBP007",
+        "ligands": [
+          "CBP007"
+        ],
+        "url": "https://www.rcsb.org/structure/5MPZ"
+      },
+      {
+        "pdb_id": "6SQE",
+        "method": "X-ray",
+        "resolution_angstrom": 1.506,
+        "chain": "A",
+        "coverage": {
+          "start": 1053,
+          "end": 1127
+        },
+        "description": "Crystal structure of CREBBP bromodomain complexed with KD341",
+        "ligands": [
+          "KD341"
+        ],
+        "url": "https://www.rcsb.org/structure/6SQE"
+      },
+      {
+        "pdb_id": "6SXX",
+        "method": "X-ray",
+        "resolution_angstrom": 2.01,
+        "chain": "A",
+        "coverage": {
+          "start": 1053,
+          "end": 1127
+        },
+        "description": "Crystal structure of the bromodomain of human CREBBP in complex with ACA007",
+        "ligands": [
+          "ACA007"
+        ],
+        "url": "https://www.rcsb.org/structure/6SXX"
+      },
+      {
+        "pdb_id": "2KA4",
+        "method": "NMR",
+        "resolution_angstrom": null,
+        "chain": "A",
+        "coverage": {
+          "start": 340,
+          "end": 439
+        },
+        "description": "NMR structure of the CBP-TAZ1/STAT2-TAD complex",
+        "ligands": [
+          "STAT2 peptide"
+        ],
+        "url": "https://www.rcsb.org/structure/2KA4"
+      }
+    ],
+    "alphafold_prediction": {
+      "available": true,
+      "accession": "AF-Q92793-F1",
+      "confidence_summary": "Global pLDDT score 52.52 indicates moderate overall confidence. Structured domains (TAZ1, KIX, bromodomain, HAT) show high confidence (pLDDT >70). Low confidence regions (pLDDT <50) likely correspond to intrinsically disordered linkers and glutamine-rich regions, which are expected to be unstructured in isolation.",
+      "url": "https://alphafold.ebi.ac.uk/entry/Q92793"
+    }
+  },
+  "post_translational_modifications": [
+    {
+      "type": "Phosphorylation",
+      "position": 89,
+      "residue": "S",
+      "function": "Regulates p300/CREBBP nucleocytoplasmic shuttling in response to amino acid/glucose depletion. AMP-activated protein kinase-dependent phosphorylation causes cytoplasm-to-nucleus relocalization.",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Acetylation",
+      "position": null,
+      "residue": "K",
+      "function": "CREBBP can autoacetylate; acetylation may regulate HAT activity and protein-protein interactions",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Ubiquitination",
+      "position": null,
+      "residue": "K",
+      "function": "Subject to ubiquitin-mediated regulation; CBP/p300 also possess E4 ubiquitin ligase activity in cytoplasm",
+      "evidence": "Experimental"
+    }
+  ],
+  "function": {
+    "uniprot_function": "Acetylates histones, giving a specific tag for transcriptional activation. Acts as a scaffold to stabilize additional protein interactions with the transcription complex. Mediates cAMP-gene regulation by binding specifically to phosphorylated CREB protein. Functions as a transcriptional coactivator for numerous transcription factors including AP-1, MyoD, MEF-2, nuclear receptors, CREB, HIF-1alpha, p53, STAT proteins, beta-catenin, and many others. Has intrinsic histone acetyltransferase activity; acetylates both histone and non-histone proteins. Acetylates histone H3 at 'Lys-18' (H3K18ac) and 'Lys-27' (H3K27ac), as well as histone H2B at 'Lys-13', H3 at 'Lys-15', and H4 at 'Lys-9'. Also acetylates non-histone proteins including DDX21, FBL, IRF2, MAFG, NCOA3, POLR1E/PAF53, FOXO1, and p53. Plays essential role in embryonic development, cell growth, transformation, and regulation of circadian rhythm.",
+    "catalytic_activity": "Acetyl-CoA + [histone]-L-lysine = CoA + [histone]-N6-acetyl-L-lysine. Can also use propionyl-CoA and lactoyl-CoA as substrates for histone propionylation and lactylation, respectively.",
+    "subcellular_location": [
+      "Nucleus",
+      "Nucleoplasm",
+      "Nuclear body",
+      "Chromatin",
+      "Cytoplasm"
+    ],
+    "tissue_specificity": "Ubiquitously expressed with low tissue specificity (Tau score 0.27). Expressed in all examined tissues as a fundamental transcriptional coactivator.",
+    "go_annotations": {
+      "molecular_function": [
+        {
+          "go_id": "GO:0004402",
+          "term": "histone acetyltransferase activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0061733",
+          "term": "peptide-lysine-N-acetyltransferase activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0003713",
+          "term": "transcription coactivator activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0000981",
+          "term": "DNA-binding transcription factor activity, RNA polymerase II-specific",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0008134",
+          "term": "transcription factor binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0042826",
+          "term": "histone deacetylase binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0061630",
+          "term": "ubiquitin protein ligase activity",
+          "evidence_code": "IDA"
+        }
+      ],
+      "biological_process": [
+        {
+          "go_id": "GO:0016573",
+          "term": "histone acetylation",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0006355",
+          "term": "regulation of transcription, DNA-templated",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0045893",
+          "term": "positive regulation of transcription, DNA-templated",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0006338",
+          "term": "chromatin remodeling",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0071456",
+          "term": "cellular response to hypoxia",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0007275",
+          "term": "multicellular organism development",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0007219",
+          "term": "Notch signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0043065",
+          "term": "positive regulation of apoptotic process",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0032922",
+          "term": "circadian regulation of gene expression",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0016579",
+          "term": "protein deubiquitination",
+          "evidence_code": "IDA"
+        }
+      ],
+      "cellular_component": [
+        {
+          "go_id": "GO:0005634",
+          "term": "nucleus",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005654",
+          "term": "nucleoplasm",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0000785",
+          "term": "chromatin",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005737",
+          "term": "cytoplasm",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0000123",
+          "term": "histone acetyltransferase complex",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005667",
+          "term": "transcription factor complex",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0000176",
+          "term": "nuclear exosome (RNase complex)",
+          "evidence_code": "IDA"
+        }
+      ]
+    }
+  },
+  "pathways": {
+    "reactome": [
+      {
+        "pathway_id": "R-HSA-3697008",
+        "pathway_name": "CREBBP acetylates histones",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-3697008"
+      },
+      {
+        "pathway_id": "R-HSA-9756494",
+        "pathway_name": "Chromatin modifying enzymes",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-9756494"
+      },
+      {
+        "pathway_id": "R-HSA-193545",
+        "pathway_name": "CREB phosphorylation through the activation of CaMKII",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-193545"
+      },
+      {
+        "pathway_id": "R-HSA-199920",
+        "pathway_name": "CREB phosphorylation",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-199920"
+      },
+      {
+        "pathway_id": "R-HSA-111931",
+        "pathway_name": "PKA-mediated phosphorylation of CREB",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-111931"
+      }
+    ],
+    "kegg": [
+      {
+        "pathway_id": "hsa04330",
+        "pathway_name": "Notch signaling pathway",
+        "url": "https://www.genome.jp/pathway/hsa04330"
+      },
+      {
+        "pathway_id": "hsa04310",
+        "pathway_name": "Wnt signaling pathway",
+        "url": "https://www.genome.jp/pathway/hsa04310"
+      },
+      {
+        "pathway_id": "hsa04115",
+        "pathway_name": "p53 signaling pathway",
+        "url": "https://www.genome.jp/pathway/hsa04115"
+      },
+      {
+        "pathway_id": "hsa05202",
+        "pathway_name": "Transcriptional misregulation in cancer",
+        "url": "https://www.genome.jp/pathway/hsa05202"
+      }
+    ],
+    "pathway_role_summary": "CREBBP functions as a master transcriptional coactivator integrating signals from multiple pathways including cAMP/PKA (CREB), hypoxia (HIF-1A), Wnt (beta-catenin), p53 stress response, interferon signaling (STATs), and Notch. Acts as a molecular scaffold and chromatin modifier, using its HAT activity to acetylate histones and non-histone proteins, thereby regulating gene expression in development, metabolism, circadian rhythm, and stress responses."
+  },
+  "disease_associations": [
+    {
+      "disease": "Rubinstein-Taybi syndrome 1 (RSTS1)",
+      "omim_id": "180849",
+      "mutation_type": "Germline",
+      "description": "Autosomal dominant developmental disorder characterized by intellectual disability, broad thumbs and halluces, short stature, and facial dysmorphisms. Caused by CREBBP haploinsufficiency due to mutations, deletions, or chromosomal rearrangements. About 60% of RSTS cases are due to CREBBP mutations (vs 8% from EP300). Over 246 disease-causing mutations reported including point mutations, small indels, translocations, inversions, and large deletions."
+    },
+    {
+      "disease": "Cancer predisposition in RSTS",
+      "omim_id": "180849",
+      "mutation_type": "Germline",
+      "description": "Patients with RSTS have increased risk of tumors including meningioma, pilomatrixoma, rhabdomyosarcoma, pheochromocytoma, neuroblastoma, ganglioneuroblastoma, and leukemia. CREBBP acts as tumor suppressor; germline loss-of-function increases cancer susceptibility."
+    },
+    {
+      "disease": "Hematologic malignancies",
+      "omim_id": null,
+      "mutation_type": "Somatic",
+      "description": "Somatic CREBBP mutations are frequent in diffuse large B-cell lymphoma (DLBCL), follicular lymphoma, and other B-cell malignancies. Mutations often affect HAT domain, creating 'zombie enzymes' with altered chromatin loading that prevent EP300 compensation. CREBBP and EP300 show synthetic lethality in DLBCL."
+    },
+    {
+      "disease": "Solid tumors",
+      "omim_id": null,
+      "mutation_type": "Somatic",
+      "description": "CREBBP alterations including chromosomal translocations and somatic mutations occur in multiple solid tumors including melanomas, gastric, colorectal, and squamous cell carcinomas. Both loss-of-function (tumor suppressor) and overexpression (oncogenic) contexts observed."
+    }
+  ],
+  "cross_references": {
+    "ncbi_gene_id": "1387",
+    "ensembl_gene_id": "ENSG00000005339",
+    "refseq_protein": [
+      "NP_001073315",
+      "NP_004371"
+    ],
+    "refseq_nucleotide": [
+      "NM_001079846",
+      "NM_004380"
+    ],
+    "hgnc_id": "HGNC:2348",
+    "omim_gene": "600140"
+  },
+  "metadata": {
+    "generated_at": "2026-10-17T00:00:00Z",
+    "queried_databases": [
+      "UniProt",
+      "NCBI Gene",
+      "InterPro",
+      "Pfam",
+      "PROSITE",
+      "SMART",
+      "PDB",
+      "AlphaFold",
+      "STRING",
+      "BioGRID",
+      "IntAct",
+      "Reactome",
+      "KEGG",
+      "GO",
+      "OMIM",
+      "Human Protein Atlas"
+    ],
+    "data_quality_notes": "High-quality data available for structured domains (TAZ1, TAZ2, KIX, bromodomain, HAT) with multiple crystal structures and NMR structures. Many quantitative binding affinities available for key transcription factor interactions (p53, HIF-1A, CITED2, STATs, CREB). AlphaFold prediction shows moderate confidence (pLDDT 52.52) due to extensive intrinsically disordered regions and low-complexity glutamine-rich sequences, which are expected. Some interaction partners lack quantitative kinetic data (CTNNB1, KMT2A, CDKN1A). PTM sites from PhosphoSitePlus not fully enumerated; focused on functionally characterized modifications.",
+    "modeling_relevance_summary": "CREBBP is a master transcriptional coactivator and chromatin modifier critical for integrating multiple signaling pathways. Key for modeling: (1) Multi-domain scaffold protein with well-characterized binding affinities for numerous transcription factors, enabling quantitative modeling of competitive binding; (2) HAT enzymatic activity with measured kinetic parameters for histone acetylation; (3) Nucleocytoplasmic shuttling regulated by nutrient/energy status provides spatial regulation; (4) Dual function as nuclear transcriptional activator (acetylation) and cytoplasmic E4 ubiquitin ligase (degradation) enables context-dependent regulation; (5) Central node in Wnt, p53, hypoxia, cAMP, and interferon signaling pathways. High-quality structural and kinetic data make CREBBP suitable for mechanistic rule-based modeling of signal integration and transcriptional regulation."
+  }
+}

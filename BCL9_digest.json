@@ -1,0 +1,527 @@
+{
+  "protein_identifier": {
+    "gene_name": "BCL9",
+    "protein_name": "B-cell CLL/lymphoma 9 protein",
+    "uniprot_accession": "O00512",
+    "organism": "Homo sapiens",
+    "organism_taxid": 9606
+  },
+  "sequence": {
+    "canonical_length": 1426,
+    "canonical_sequence": "MHSSNPKVRSSPSGNTQSSPKSKQEVMVRPPTVMSPSGNPQLDSKFSNQGKQGGSASQSQPSPCDSKSGGHTPKALPGPGGSMGLKNGAGNGAKGKGKRERSISADSFDQRDPGTPNDDSDIKECNSADHIKSQDSQHTPHSMTPSNATAPRSSTPSHGQTTATEPTPAQKTPAKVVYVFSTEMANKAAEAVLKGQVETIVSFHIQNISNNKTERSTAPLNTQISALRNDPKPLPQQPPPAPANQDQNSSQNTRLQPTPPIPAPAPKPAAPPRPLDRESPGVENKLIPSVGSPASSTPLPPDGTGPNSTPNNRAVTPVSQGSNSSSADPKAPPPPPVSSGEPPTLGENPDGLSQEQLEHRERSLQTLRDIQRMLFPDEKEFTGAQSGGPQQNPGVLDGPQKKPEGPIQAMMAQSQSLGKGPGPRTDVGAPFGPQGHRDVPFSPDEMVPPSMNSQSGTIGPDHLDHMTPEQIAWLKLQQEFYEEKRRKQEQVVVQQCSLQDMMVHQHGPRGVVRGPPPPYQMTPSEGWAPGGTEPFSDGINMPHSLPPRGMAPHPNMPGSQMRLPGFAGMINSEMEGPNVPNPASRPGLSGVSWPDDVPKIPDGRNFPPGQGIFSGPGRGERFPNPQGLSEEMFQQQLAEKQLGLPPGMAMEGIRPSMEMNRMIPGSQRHMEPGNNPIFPRIPVEGPLSPSRGDFPKGIPPQMGPGRELEFGMVPSGMKGDVNLNVNMGSNSQMIPQKMREAGAGPEEMLKLRPGGSDMLPAQQKMVPLPFGEHPQQEYGMGPRPFLPMSQGPGSNSGLRNLREPIGPDQRTNSRLSHMPPLPLNPSSNPTSLNTAPPVQRGLGRKPLDISVAGSQVHSPGINPLKSPTMHQVQSPMLGSPSGNLKSPQTPSQLAGMLAGPAAAASIKSPPVLGSAAASPVHLKSPSLPAPSPGWTSSPKPPLQSPGIPPNHKAPLTMASPAAMLGNVESGGPPPPTASQPASVNIPGSLPSSTPYTMPPEPTLSQNPLSIMMSRMSKFAMPSSTPLYHDAIKTVASSDDDSPPARSPNLPSMNNMPGMGINTQNPRISGPNPVVPMPTLSPMGMTQPLSHSNQMPSPNAVGPNIPPHGVPMGPGLMSHNPIMGHGSQEPPMVPQGRMGFPQGFPPVQSPPQQVPFPHNGPSGGQGSFPGGMGFPGEGPLGRPSNLPQSSADAALCKPGGPGGPDSFTVLGNSMPSVFTDPDLQEVIRPGATGIPEFDLSRIIPSEKPSQTLQYFPRGEVPGRKQPQGPGPGFSHMQGMMGEQAPRMGLALPGMGGPGPVGTPDIPLGTAPSMPGHNPMRPPAAFLQQGMMGPHHRMMSPAQSTMPGQPTLMSNPAAAVGMIPGKDRGPAGLYTHPGPVGSPGMMMSMQGMMGPQQNIMIPPQMRPRGMAADVGMGGFSQGPGNPGNMMF",
+    "molecular_weight_da": 149290,
+    "isoforms": [
+      {
+        "isoform_id": "O00512-1",
+        "length": 1426,
+        "description": "Canonical isoform (ENSP00000234739.3, NP_004317.2). Designated as MANE Select transcript variant.",
+        "sequence": "MHSSNPKVRSSPSGNTQSSPKSKQEVMVRPPTVMSPSGNPQLDSKFSNQGKQGGSASQSQPSPCDSKSGGHTPKALPGPGGSMGLKNGAGNGAKGKGKRERSISADSFDQRDPGTPNDDSDIKECNSADHIKSQDSQHTPHSMTPSNATAPRSSTPSHGQTTATEPTPAQKTPAKVVYVFSTEMANKAAEAVLKGQVETIVSFHIQNISNNKTERSTAPLNTQISALRNDPKPLPQQPPPAPANQDQNSSQNTRLQPTPPIPAPAPKPAAPPRPLDRESPGVENKLIPSVGSPASSTPLPPDGTGPNSTPNNRAVTPVSQGSNSSSADPKAPPPPPVSSGEPPTLGENPDGLSQEQLEHRERSLQTLRDIQRMLFPDEKEFTGAQSGGPQQNPGVLDGPQKKPEGPIQAMMAQSQSLGKGPGPRTDVGAPFGPQGHRDVPFSPDEMVPPSMNSQSGTIGPDHLDHMTPEQIAWLKLQQEFYEEKRRKQEQVVVQQCSLQDMMVHQHGPRGVVRGPPPPYQMTPSEGWAPGGTEPFSDGINMPHSLPPRGMAPHPNMPGSQMRLPGFAGMINSEMEGPNVPNPASRPGLSGVSWPDDVPKIPDGRNFPPGQGIFSGPGRGERFPNPQGLSEEMFQQQLAEKQLGLPPGMAMEGIRPSMEMNRMIPGSQRHMEPGNNPIFPRIPVEGPLSPSRGDFPKGIPPQMGPGRELEFGMVPSGMKGDVNLNVNMGSNSQMIPQKMREAGAGPEEMLKLRPGGSDMLPAQQKMVPLPFGEHPQQEYGMGPRPFLPMSQGPGSNSGLRNLREPIGPDQRTNSRLSHMPPLPLNPSSNPTSLNTAPPVQRGLGRKPLDISVAGSQVHSPGINPLKSPTMHQVQSPMLGSPSGNLKSPQTPSQLAGMLAGPAAAASIKSPPVLGSAAASPVHLKSPSLPAPSPGWTSSPKPPLQSPGIPPNHKAPLTMASPAAMLGNVESGGPPPPTASQPASVNIPGSLPSSTPYTMPPEPTLSQNPLSIMMSRMSKFAMPSSTPLYHDAIKTVASSDDDSPPARSPNLPSMNNMPGMGINTQNPRISGPNPVVPMPTLSPMGMTQPLSHSNQMPSPNAVGPNIPPHGVPMGPGLMSHNPIMGHGSQEPPMVPQGRMGFPQGFPPVQSPPQQVPFPHNGPSGGQGSFPGGMGFPGEGPLGRPSNLPQSSADAALCKPGGPGGPDSFTVLGNSMPSVFTDPDLQEVIRPGATGIPEFDLSRIIPSEKPSQTLQYFPRGEVPGRKQPQGPGPGFSHMQGMMGEQAPRMGLALPGMGGPGPVGTPDIPLGTAPSMPGHNPMRPPAAFLQQGMMGPHHRMMSPAQSTMPGQPTLMSNPAAAVGMIPGKDRGPAGLYTHPGPVGSPGMMMSMQGMMGPQQNIMIPPQMRPRGMAADVGMGGFSQGPGNPGNMMF"
+      }
+    ]
+  },
+  "domains_and_motifs": [
+    {
+      "identifier": "HD1_177_204",
+      "name": "Homology domain 1 (HD1)",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 177,
+          "end": 204
+        }
+      ],
+      "sequence": "EAVLKGQVETIVSFHIQNISNNKTERST",
+      "description": "Binds to Pygopus (PYGO1/PYGO2) via their C-terminal PHD finger domain. Critical for recruitment of Pygopus to the Wnt enhanceosome.",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": null,
+          "e_value": null,
+          "clan": null,
+          "notes": "Essential role of BCL9-2 in the switch between \u03b2-catenin's adhesive and transcriptional functions (Genes Dev. 2004)"
+        }
+      ]
+    },
+    {
+      "identifier": "HD2_349_377",
+      "name": "Homology domain 2 (HD2)",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 349,
+          "end": 377
+        }
+      ],
+      "sequence": "EQIAWLKLQQEFYEEKRRKQEQVVVQQCS",
+      "description": "Beta-catenin binding domain. Forms an alpha helix that binds to the first armadillo repeat of beta-catenin. Critical for recruitment of beta-catenin to the Wnt enhanceosome. Kd ~0.5 \u03bcM.",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR024670",
+          "e_value": null,
+          "clan": null,
+          "notes": "B-cell lymphoma 9, beta-catenin binding domain"
+        },
+        {
+          "database": "PDB",
+          "accession": "2GL7",
+          "e_value": null,
+          "clan": null,
+          "notes": "Crystal structure of beta-catenin/BCL9(347-392)/Tcf4 complex at 2.6 \u00c5 resolution"
+        },
+        {
+          "database": "Literature",
+          "accession": "PMID:17052462",
+          "e_value": null,
+          "clan": null,
+          "notes": "Sampietro et al., Mol Cell 2006. Beta-catenin binding site of BCL9 is distinct from most other beta-catenin partners."
+        }
+      ]
+    },
+    {
+      "identifier": "RING_Zn_153_205",
+      "name": "Zinc finger, RING/FYVE/PHD-type domain",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 153,
+          "end": 205
+        }
+      ],
+      "sequence": "PAQKTPAKVVYVFSTEMANKAAEAVLKGQVETIVSFHIQNISNNKTERSTAP",
+      "description": "Potential zinc-binding domain. Functional role not fully characterized.",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR013083",
+          "e_value": null,
+          "clan": null,
+          "notes": "Zinc finger, RING/FYVE/PHD-type"
+        }
+      ]
+    },
+    {
+      "identifier": "Poly_Pro_514_517",
+      "name": "Poly-proline region 1",
+      "type": "Motif",
+      "locations": [
+        {
+          "start": 514,
+          "end": 517
+        }
+      ],
+      "sequence": "PPPP",
+      "description": "Proline-rich region potentially involved in protein-protein interactions.",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "O00512",
+          "e_value": null,
+          "clan": null,
+          "notes": "Compositional bias annotation"
+        }
+      ]
+    },
+    {
+      "identifier": "Poly_Pro_970_973",
+      "name": "Poly-proline region 2",
+      "type": "Motif",
+      "locations": [
+        {
+          "start": 970,
+          "end": 973
+        }
+      ],
+      "sequence": "PPPP",
+      "description": "Proline-rich region potentially involved in protein-protein interactions.",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "O00512",
+          "e_value": null,
+          "clan": null,
+          "notes": "Compositional bias annotation"
+        }
+      ]
+    },
+    {
+      "identifier": "Poly_Ala_900_903",
+      "name": "Poly-alanine region",
+      "type": "Motif",
+      "locations": [
+        {
+          "start": 900,
+          "end": 903
+        }
+      ],
+      "sequence": "AAAA",
+      "description": "Alanine-rich region.",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "O00512",
+          "e_value": null,
+          "clan": null,
+          "notes": "Compositional bias annotation"
+        }
+      ]
+    },
+    {
+      "identifier": "C_terminal_activation_domain",
+      "name": "C-terminal transcriptional activation domain",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 1200,
+          "end": 1426
+        }
+      ],
+      "sequence": "Approximate region in C-terminus",
+      "description": "Contains a transcriptional activation domain that functionally synergizes with the C-terminal transactivation domain of beta-catenin in lymphoid cells.",
+      "sources": [
+        {
+          "database": "Literature",
+          "accession": "PMID:18467661",
+          "e_value": null,
+          "clan": null,
+          "notes": "Cell-Type-Specific Function of BCL9 Involves a Transcriptional Activation Domain That Synergizes with \u03b2-Catenin (Mol Cell Biol. 2008)"
+        }
+      ]
+    }
+  ],
+  "structure": {
+    "experimental_structures": [
+      {
+        "pdb_id": "2GL7",
+        "method": "X-ray",
+        "resolution_angstrom": 2.6,
+        "chain": "B",
+        "coverage": {
+          "start": 347,
+          "end": 392
+        },
+        "description": "Crystal structure of beta-catenin/BCL9/Tcf4 complex. BCL9 fragment contains the HD2 domain (residues 349-377) bound to beta-catenin armadillo repeat 1.",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/2GL7"
+      }
+    ],
+    "alphafold_prediction": {
+      "available": true,
+      "accession": "AF-O00512-F1",
+      "confidence_summary": "BCL9 is a large intrinsically disordered protein with high confidence predictions for the HD1 and HD2 domains. Low confidence for most other regions due to intrinsic disorder.",
+      "url": "https://alphafold.ebi.ac.uk/entry/O00512"
+    }
+  },
+  "post_translational_modifications": [
+    {
+      "type": "Phosphorylation",
+      "position": 104,
+      "residue": "S",
+      "function": "Unknown",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 157,
+      "residue": "S",
+      "function": "Unknown",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 172,
+      "residue": "T",
+      "function": "Unknown",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 315,
+      "residue": "T",
+      "function": "Unknown",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 318,
+      "residue": "S",
+      "function": "Unknown",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 352,
+      "residue": "S",
+      "function": "Potential regulation of beta-catenin binding (within HD2 domain)",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 687,
+      "residue": "S",
+      "function": "Unknown",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 689,
+      "residue": "S",
+      "function": "Unknown",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 907,
+      "residue": "S",
+      "function": "Unknown",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 917,
+      "residue": "S",
+      "function": "Unknown",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Acetylation",
+      "position": 844,
+      "residue": "K",
+      "function": "Unknown",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Methylation",
+      "position": 801,
+      "residue": "R",
+      "function": "Asymmetric dimethylation. Unknown function.",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "O-GlcNAcylation",
+      "position": 315,
+      "residue": "T",
+      "function": "O-linked glycosylation. Unknown function.",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "O-GlcNAcylation",
+      "position": 318,
+      "residue": "S",
+      "function": "O-linked glycosylation. Unknown function.",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "O-GlcNAcylation",
+      "position": 337,
+      "residue": "Unknown",
+      "function": "O-linked glycosylation site reported in region.",
+      "evidence": "Experimental"
+    }
+  ],
+  "function": {
+    "uniprot_function": "Transcriptional coactivator that promotes Wnt/beta-catenin signaling. Acts as an adapter protein that simultaneously interacts with beta-catenin/CTNNB1 via its HD2 domain and with PYGO1/PYGO2 via its HD1 domain, thereby recruiting Pygopus proteins to the nuclear beta-catenin-TCF complex to activate Wnt target gene transcription. Forms part of the Wnt enhanceosome, a multiprotein complex that includes beta-catenin, TCF/LEF transcription factors, BCL9/BCL9L, PYGO1/PYGO2, LDB1, and SSBP proteins. Also has Wnt-independent functions, including regulation of paraspeckle formation and multi-cellular communication in cancer cells.",
+    "catalytic_activity": null,
+    "subcellular_location": [
+      "Nucleus",
+      "Nucleoplasm",
+      "Nuclear bodies",
+      "Cytoplasm",
+      "Cytosol"
+    ],
+    "tissue_specificity": "Expressed broadly across tissues with low tissue specificity at RNA level. Protein enriched in pancreas. Cell type enhancement in Fallopian tube cells and oocytes. Transcripts expressed in all tissues, with a third transcript expressed only in thymus, spleen, and small intestine.",
+    "go_annotations": {
+      "molecular_function": [
+        {
+          "go_id": "GO:0003713",
+          "term": "transcription coactivator activity",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005515",
+          "term": "protein binding",
+          "evidence_code": "IPI"
+        },
+        {
+          "go_id": "GO:0008013",
+          "term": "beta-catenin binding",
+          "evidence_code": "IPI"
+        }
+      ],
+      "biological_process": [
+        {
+          "go_id": "GO:0006357",
+          "term": "regulation of transcription by RNA polymerase II",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0045893",
+          "term": "positive regulation of transcription, DNA-templated",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0016055",
+          "term": "Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0060070",
+          "term": "canonical Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0014842",
+          "term": "skeletal muscle cell differentiation",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0014728",
+          "term": "myoblast differentiation",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0098508",
+          "term": "somatic stem cell population maintenance",
+          "evidence_code": "IDA"
+        }
+      ],
+      "cellular_component": [
+        {
+          "go_id": "GO:0005634",
+          "term": "nucleus",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005654",
+          "term": "nucleoplasm",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005737",
+          "term": "cytoplasm",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005829",
+          "term": "cytosol",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:1990907",
+          "term": "beta-catenin-TCF complex",
+          "evidence_code": "IDA"
+        }
+      ]
+    }
+  },
+  "pathways": {
+    "reactome": [
+      {
+        "pathway_id": "R-HSA-195721",
+        "pathway_name": "Signaling by WNT",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-195721"
+      },
+      {
+        "pathway_id": "R-HSA-201681",
+        "pathway_name": "TCF dependent signaling in response to WNT",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-201681"
+      },
+      {
+        "pathway_id": "R-HSA-201722",
+        "pathway_name": "Formation of the beta-catenin:TCF transactivating complex",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-201722"
+      },
+      {
+        "pathway_id": "R-HSA-3769402",
+        "pathway_name": "Deactivation of the beta-catenin transactivating complex",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-3769402"
+      },
+      {
+        "pathway_id": "R-HSA-162582",
+        "pathway_name": "Signal Transduction",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-162582"
+      }
+    ],
+    "kegg": [],
+    "pathway_role_summary": "BCL9 is a core component of the Wnt enhanceosome that bridges beta-catenin to Pygopus proteins and recruits chromatin remodeling complexes. It is essential for efficient TCF/LEF-dependent transcription of Wnt target genes. BCL9 acts as a scaffold protein linking beta-catenin, Pygopus, LDB1-SSBP, and TLE/Groucho in a multiprotein complex at Wnt-responsive enhancers. BCL9 and its paralog BCL9L are themselves Wnt-inducible, creating a positive feedback loop. Loss of BCL9/BCL9L suppresses Wnt-driven tumorigenesis in colorectal cancer and other malignancies."
+  },
+  "disease_associations": [
+    {
+      "disease": "B-cell acute lymphoblastic leukemia (B-ALL)",
+      "omim_id": null,
+      "mutation_type": "Somatic",
+      "description": "BCL9 gene was first identified in a t(1;14)(q21;q32) translocation from a patient with precursor B-cell acute lymphoblastic leukemia. BCL9 may be a target of translocation in B-cell malignancies with abnormalities of 1q21. Overexpression may be pathogenic in B-ALL."
+    },
+    {
+      "disease": "Colorectal cancer (CRC)",
+      "omim_id": null,
+      "mutation_type": "Somatic",
+      "description": "BCL9 functions as a transcriptional co-activator of the Wnt/beta-catenin pathway which plays critical roles in CRC pathogenesis. BCL9 and BCL9L are hyperexpressed in colorectal cancer cell lines. Gene expression changes promoted by BCL9 are associated with poor outcome in CRC. Amplifications of 1q21 locus (BCL9 location) are associated with tumor progression and poor clinical outcome. Suppression of BCL9 inhibits tumor growth in mouse CRC models."
+    },
+    {
+      "disease": "Breast cancer",
+      "omim_id": null,
+      "mutation_type": "Somatic",
+      "description": "BCL9/BCL9L interactions with beta-catenin and Pygopus promote breast cancer growth, invasion, and metastasis. Disruption of BCL9/BCL9L-beta-catenin interaction diminishes tumor cell proliferation, invasion, and lung metastasis."
+    },
+    {
+      "disease": "Prostate cancer",
+      "omim_id": null,
+      "mutation_type": "Somatic",
+      "description": "BCL9 is a coactivator for Wnt/beta-catenin transcription and is targeted by miR-30c. Associated with prostate cancer progression."
+    },
+    {
+      "disease": "Congenital heart defects",
+      "omim_id": null,
+      "mutation_type": "Germline",
+      "description": "Mutations in BCL9 and Pygo genes cause congenital heart defects by tissue-specific perturbation of Wnt/beta-catenin signaling."
+    },
+    {
+      "disease": "Hepatocellular carcinoma",
+      "omim_id": null,
+      "mutation_type": "Somatic",
+      "description": "BCL9 expression patterns have been characterized in juvenile development of hepatocellular carcinoma."
+    }
+  ],
+  "cross_references": {
+    "ncbi_gene_id": "607",
+    "ensembl_gene_id": "ENSG00000116128",
+    "refseq_protein": [
+      "NP_004317.2"
+    ],
+    "refseq_nucleotide": [
+      "NM_004326.4"
+    ],
+    "hgnc_id": "HGNC:1008",
+    "omim_gene": "602597"
+  },
+  "metadata": {
+    "generated_at": "2026-10-17T00:00:00Z",
+    "queried_databases": [
+      "UniProt",
+      "NCBI Gene",
+      "RefSeq",
+      "InterPro",
+      "Pfam",
+      "PROSITE",
+      "PDB",
+      "AlphaFold",
+      "STRING",
+      "BioGRID",
+      "IntAct",
+      "Reactome",
+      "GO",
+      "GeneCards",
+      "Human Protein Atlas",
+      "Pharos",
+      "OMIM"
+    ],
+    "data_quality_notes": "Comprehensive data available for BCL9. HD1 and HD2 domain coordinates well-characterized. Crystal structure available for HD2-beta-catenin interaction (PDB: 2GL7). Multiple high-confidence protein interactions documented in STRING and BioGRID. Kinetic data available for beta-catenin binding (Kd ~0.5 \u03bcM) and BCL9-Pygo2-LDB1-SSBP2 complex (Kd 32 nM). PTM sites experimentally validated. No specific information found on BCL9 protein half-life, degradation machinery, or E3 ligases. BCL9 is a large intrinsically disordered protein with structured HD1 and HD2 domains. Limited information on alternative isoforms (primarily canonical 1426 aa form). KEGG pathway data not found but Reactome coverage is extensive.",
+    "modeling_relevance_summary": "BCL9 is a critical scaffolding protein in canonical Wnt signaling, essential for assembling the multiprotein Wnt enhanceosome that activates target gene transcription. It simultaneously binds beta-catenin (via HD2) and Pygopus (via HD1), creating a bridge to chromatin regulators (LDB1-SSBP). BCL9 is a key therapeutic target in Wnt-driven cancers. The Kd of 0.5 \u03bcM for beta-catenin binding and 32 nM for the BCL9-Pygo2-LDB1-SSBP2 complex provide quantitative parameters for modeling. BCL9 is subject to positive feedback regulation (Wnt-inducible) and has both Wnt-dependent and Wnt-independent functions. The protein is intrinsically disordered outside of HD1/HD2 domains, which may affect its modeling representation. Lacks kinase or enzymatic activity but serves as a key regulatory node through scaffolding multiple signaling components."
+  }
+}

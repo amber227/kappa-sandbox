@@ -1,0 +1,738 @@
+{
+  "protein_identifier": {
+    "gene_name": "LRP5",
+    "protein_name": "Low-density lipoprotein receptor-related protein 5",
+    "uniprot_accession": "O75197",
+    "organism": "Homo sapiens",
+    "organism_taxid": 9606
+  },
+  "sequence": {
+    "canonical_length": 1615,
+    "canonical_sequence": "MGALLRSLLGCSFCVLLRAAPLLLYANRRDLRLVDATDGKENATIVVGGLEDAAAVDFLFRHGLIYWSDTSEEAIKRSEFEKTESVQNVVVSGLLSPDGLACDWLGEKLYWTDNETDQIEVSNLNGSLRKVLFWQELDQPRAIALDPSSGFMYWTDWGEVPKIERAGMDGSSRFIIIHSEIIYWPNGLTLDYEEQKVYWADAKLNYIHKSNLDGTNRQAVVKGSLPHPFALTLFEDILYWTDWSTHSILACNKYTGEGLREIHSDIFSPMDIHAFSQQRQPNAINQCGIDNGGCSHLCLMSPVKPFYQCACPTGVKLLENGKTCKDGATELLLLARRTDLRRISLDTPDFTDIVLQLEDIRHAIAIDYDPVEGYIYWTDDEVRAIRRSFIDGSGSQFVVTAQIAHPDGIAVDWVARNLYWTDTGTDRIEVTRLNGTMRKILISEDLEEPRAIVLDPMVGYMYWTDWGEIPKIERAALDGSDRVVLVNTSLGWPNGLALDYDEGKIYWGDAKTDKIEVMNTDGTGRRVLVEDKIPHIFGFTLLGDYVYWTDWQRRSIERVHKRSAEREVIIDQLPDLMGLKATNVHRVIGSNPCAEENGGCSHLCLYRPQGLRCACPIGFELISDMKTCIVPEAFLLFSRRADIRRISLETNNNNVAIPLTGVKEASALDFDVTDNRIYWTDISLKTISRAFMNGSALEHVVEFGLDYPEGMAVDWLGKNLYWTDTGTNRIEVSKLDGQHRQVLVWKDLDSPRALALDPAEGFMYWTEWGGKPKIDRAAMDGSERTTLVPNVGRANGLTIDYAKRRLYWTDLDTNLIESSNMLGLNREVIADDLPHPFGLTQYQDYIYWTDWSRRSIERANKTSGQNRTIIQGHLDYVMDILVFHSSRQSGWNECASSNGHCSHLCLAVPVGGFVCGCPAHYSLNADNRTCSAPTTFLLFSQKSAINRMVIDEQQSPDIILPIHSLRNVRAIDYDPLDKQLYWIDSRQNMIRKAQEDGSQGFTVVVSSVPSQNLEIQPYDLSIDIYSRYIYWTCEATNVINVTRLDGRSVGVVLKGEQDRPRAVVVNPEKGYMYFTNLQERSPKIERAALDGTEREVLFFSGLSKPIALALDSRLGKLFWADSDLRRIESSDLSGANRIVLEDSNILQPVGLTVFENWLYWIDKQQQMIEKIDMTGREGRTKVQARIAQLSDIHAVKELNLQEYRQHPCAQDNGGCSHICLVKGDGTTRCSCPMHLVLLQDELSCGEPPTCSPQQFTCFTGEIDCIPVAWRCDGFTECEDHSDELNCPVCSESQFQCASGQCIDGALRCNGDANCQDKSDEKNCEVLCLIDQFRCANGQCIGKHKKCDHNVDCSDKSDELDCYPTEEPAPQATNTVGSVIGIIVTIFVSGTVYFICQRMLCPRMKGDGETMTNDYVVHGPASVPLGYVPHPSSLSGSLPGMSRGKSMISSLSIMAGSSGLPYDRAHVTGASSSSSSSTKGTYFPAILNPPPSPATERSHYTMEFGYSSNSPSTHRSYSYRPYSYRHFAPPTTPCSTDVCDSDYAPSRRMTSVATAKGYTSDLNYDSEPVPPPPTPRSQYLSAEENYESCPPSPYTERSYSHHLYPPPPSPCTDSS",
+    "molecular_weight_da": 180500,
+    "isoforms": [
+      {
+        "isoform_id": "NP_002326.2",
+        "length": 1615,
+        "description": "Canonical isoform 1",
+        "sequence": "MGALLRSLLGCSFCVLLRAAPLLLYANRRDLRLVDATDGKENATIVVGGLEDAAAVDFLFRHGLIYWSDTSEEAIKRSEFEKTESVQNVVVSGLLSPDGLACDWLGEKLYWTDNETDQIEVSNLNGSLRKVLFWQELDQPRAIALDPSSGFMYWTDWGEVPKIERAGMDGSSRFIIIHSEIIYWPNGLTLDYEEQKVYWADAKLNYIHKSNLDGTNRQAVVKGSLPHPFALTLFEDILYWTDWSTHSILACNKYTGEGLREIHSDIFSPMDIHAFSQQRQPNAINQCGIDNGGCSHLCLMSPVKPFYQCACPTGVKLLENGKTCKDGATELLLLARRTDLRRISLDTPDFTDIVLQLEDIRHAIAIDYDPVEGYIYWTDDEVRAIRRSFIDGSGSQFVVTAQIAHPDGIAVDWVARNLYWTDTGTDRIEVTRLNGTMRKILISEDLEEPRAIVLDPMVGYMYWTDWGEIPKIERAALDGSDRVVLVNTSLGWPNGLALDYDEGKIYWGDAKTDKIEVMNTDGTGRRVLVEDKIPHIFGFTLLGDYVYWTDWQRRSIERVHKRSAEREVIIDQLPDLMGLKATNVHRVIGSNPCAEENGGCSHLCLYRPQGLRCACPIGFELISDMKTCIVPEAFLLFSRRADIRRISLETNNNNVAIPLTGVKEASALDFDVTDNRIYWTDISLKTISRAFMNGSALEHVVEFGLDYPEGMAVDWLGKNLYWTDTGTNRIEVSKLDGQHRQVLVWKDLDSPRALALDPAEGFMYWTEWGGKPMYWTEWGGKPKIDRAAMDGSERTTLVPNVGRANGLTIDYAKRRLYWTDLDTNLIESSNMLGLNREVIADDLPHPFGLTQYQDYIYWTDWSRRSIERANKTSGQNRTIIQGHLDYVMDILVFHSSRQSGWNECASSNGHCSHLCLAVPVGGFVCGCPAHYSLNADNRTCSAPTTFLLFSQKSAINRMVIDEQQSPDIILPIHSLRNVRAIDYDPLDKQLYWIDSRQNMIRKAQEDGSQGFTVVVSSVPSQNLEIQPYDLSIDIYSRYIYWTCEATNVINVTRLDGRSVGVVLKGEQDRPRAVVVNPEKGYMYFTNLQERSPKIERAALDGTEREVLFFSGLSKPIALALDSRLGKLFWADSDLRRIESSDLSGANRIVLEDSNILQPVGLTVFENWLYWIDKQQQMIEKIDMTGREGRTKVQARIAQLSDIHAVKELNLQEYRQHPCAQDNGGCSHICLVKGDGTTRCSCPMHLVLLQDELSCGEPPTCSPQQFTCFTGEIDCIPVAWRCDGFTECEDHSDELNCPVCSESQFQCASGQCIDGALRCNGDANCQDKSDEKNCEVLCLIDQFRCANGQCIGKHKKCDHNVDCSDKSDELDCYPTEEPAPQATNTVGSVIGIIVTIFVSGTVYFICQRMLCPRMKGDGETMTNDYVVHGPASVPLGYVPHPSSLSGSLPGMSRGKSMISSLSIMAGSSGLPYDRAHVTGASSSSSSSTKGTYFPAILNPPPSPATERSHYTMEFGYSSNSPSTHRSYSYRPYSYRHFAPPTTPCSTDVCDSDYAPSRRMTSVATAKGYTSDLNYDSEPVPPPPTPRSQYLSAEENYESCPPSPYTERSYSHHLYPPPPSPCTDSS"
+      },
+      {
+        "isoform_id": "NP_001278831.1",
+        "length": 1614,
+        "description": "Isoform 2, lacks one amino acid compared to canonical isoform",
+        "sequence": null
+      }
+    ]
+  },
+  "domains_and_motifs": [
+    {
+      "identifier": "signal_peptide_1_24",
+      "name": "Signal peptide",
+      "type": "Signal",
+      "locations": [
+        {
+          "start": 1,
+          "end": 24
+        }
+      ],
+      "sequence": "MGALLRSLLGCSFCVLLRAAPLLL",
+      "description": "Signal sequence for ER targeting and protein export across plasma membrane, cleaved post-translationally",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "O75197",
+          "notes": "Predicted signal peptide"
+        }
+      ]
+    },
+    {
+      "identifier": "LDLR_B_repeat_1",
+      "name": "LDLR class B repeat 1",
+      "type": "Repeat",
+      "locations": [
+        {
+          "start": 32,
+          "end": 75
+        }
+      ],
+      "sequence": null,
+      "description": "Low-density lipoprotein receptor class B repeat, part of YWTD beta-propeller domain 1",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR000033",
+          "notes": "LDLR class B repeat"
+        },
+        {
+          "database": "Pfam",
+          "accession": "PF00058",
+          "notes": "LDLR class B repeat"
+        }
+      ]
+    },
+    {
+      "identifier": "beta_propeller_1_25_297",
+      "name": "YWTD beta-propeller 1",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 25,
+          "end": 297
+        }
+      ],
+      "sequence": null,
+      "description": "First YWTD-type beta-propeller domain containing 6 YWTD repeats that form a six-bladed beta-propeller structure; required for Wnt ligand and antagonist (DKK1/Sclerostin) binding",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR011042",
+          "notes": "Six-bladed beta-propeller, TolB-like"
+        },
+        {
+          "database": "UniProt",
+          "accession": "O75197",
+          "notes": "Beta-propeller region 1"
+        }
+      ]
+    },
+    {
+      "identifier": "EGF_like_1_297_338",
+      "name": "EGF-like domain 1",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 297,
+          "end": 338
+        }
+      ],
+      "sequence": null,
+      "description": "First epidermal growth factor-like domain; follows beta-propeller 1, part of Wnt-Frizzled interaction module",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR000742",
+          "notes": "EGF-like domain"
+        },
+        {
+          "database": "SMART",
+          "accession": "SM00181",
+          "notes": "EGF domain"
+        },
+        {
+          "database": "UniProt",
+          "accession": "O75197",
+          "notes": "EGF-like 1"
+        }
+      ]
+    },
+    {
+      "identifier": "beta_propeller_2_339_603",
+      "name": "YWTD beta-propeller 2",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 339,
+          "end": 603
+        }
+      ],
+      "sequence": null,
+      "description": "Second YWTD-type beta-propeller domain containing 6 YWTD repeats; involved in ligand binding and signaling regulation",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR011042",
+          "notes": "Six-bladed beta-propeller"
+        },
+        {
+          "database": "UniProt",
+          "accession": "O75197",
+          "notes": "Beta-propeller region 2"
+        }
+      ]
+    },
+    {
+      "identifier": "EGF_like_2_603_642",
+      "name": "EGF-like domain 2",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 603,
+          "end": 642
+        }
+      ],
+      "sequence": null,
+      "description": "Second epidermal growth factor-like domain; follows beta-propeller 2",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR000742"
+        },
+        {
+          "database": "SMART",
+          "accession": "SM00181"
+        },
+        {
+          "database": "UniProt",
+          "accession": "O75197",
+          "notes": "EGF-like 2"
+        }
+      ]
+    },
+    {
+      "identifier": "beta_propeller_3_643_904",
+      "name": "YWTD beta-propeller 3",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 643,
+          "end": 904
+        }
+      ],
+      "sequence": null,
+      "description": "Third YWTD-type beta-propeller domain; part of the extended ligand binding interface",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR011042"
+        },
+        {
+          "database": "UniProt",
+          "accession": "O75197",
+          "notes": "Beta-propeller region 3"
+        }
+      ]
+    },
+    {
+      "identifier": "EGF_like_3_904_943",
+      "name": "EGF-like domain 3",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 904,
+          "end": 943
+        }
+      ],
+      "sequence": null,
+      "description": "Third epidermal growth factor-like domain; follows beta-propeller 3",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR000742"
+        },
+        {
+          "database": "SMART",
+          "accession": "SM00181"
+        },
+        {
+          "database": "UniProt",
+          "accession": "O75197",
+          "notes": "EGF-like 3"
+        }
+      ]
+    },
+    {
+      "identifier": "beta_propeller_4_944_1215",
+      "name": "YWTD beta-propeller 4",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 944,
+          "end": 1215
+        }
+      ],
+      "sequence": null,
+      "description": "Fourth YWTD-type beta-propeller domain; most C-terminal beta-propeller in the extracellular domain",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR011042"
+        },
+        {
+          "database": "UniProt",
+          "accession": "O75197",
+          "notes": "Beta-propeller region 4"
+        }
+      ]
+    },
+    {
+      "identifier": "EGF_like_4_1215_1255",
+      "name": "EGF-like domain 4",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 1215,
+          "end": 1255
+        }
+      ],
+      "sequence": null,
+      "description": "Fourth epidermal growth factor-like domain; follows beta-propeller 4",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR000742"
+        },
+        {
+          "database": "SMART",
+          "accession": "SM00181"
+        },
+        {
+          "database": "UniProt",
+          "accession": "O75197",
+          "notes": "EGF-like 4"
+        }
+      ]
+    },
+    {
+      "identifier": "LDLR_A_1_1257_1295",
+      "name": "LDLR class A repeat 1",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 1257,
+          "end": 1295
+        }
+      ],
+      "sequence": null,
+      "description": "First low-density lipoprotein receptor class A domain; involved in ligand binding and internalization",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR002172",
+          "notes": "Low-density lipoprotein receptor class A repeat"
+        },
+        {
+          "database": "InterPro",
+          "accession": "IPR023415",
+          "notes": "LDLR class A, conserved site"
+        },
+        {
+          "database": "UniProt",
+          "accession": "O75197",
+          "notes": "LDLR-A 1"
+        }
+      ]
+    },
+    {
+      "identifier": "LDLR_A_2_1296_1333",
+      "name": "LDLR class A repeat 2",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 1296,
+          "end": 1333
+        }
+      ],
+      "sequence": null,
+      "description": "Second low-density lipoprotein receptor class A domain",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR002172"
+        },
+        {
+          "database": "InterPro",
+          "accession": "IPR023415"
+        },
+        {
+          "database": "UniProt",
+          "accession": "O75197",
+          "notes": "LDLR-A 2"
+        }
+      ]
+    },
+    {
+      "identifier": "LDLR_A_3_1334_1372",
+      "name": "LDLR class A repeat 3",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 1334,
+          "end": 1372
+        }
+      ],
+      "sequence": null,
+      "description": "Third low-density lipoprotein receptor class A domain; most C-terminal LDLR-A domain",
+      "sources": [
+        {
+          "database": "InterPro",
+          "accession": "IPR002172"
+        },
+        {
+          "database": "InterPro",
+          "accession": "IPR023415"
+        },
+        {
+          "database": "UniProt",
+          "accession": "O75197",
+          "notes": "LDLR-A 3"
+        }
+      ]
+    },
+    {
+      "identifier": "transmembrane_1386_1408",
+      "name": "Transmembrane domain",
+      "type": "Domain",
+      "locations": [
+        {
+          "start": 1386,
+          "end": 1408
+        }
+      ],
+      "sequence": "GSVIGIIVTIFVSGTVYFICQRM",
+      "description": "Single-pass type I transmembrane domain; anchors protein to plasma membrane",
+      "sources": [
+        {
+          "database": "UniProt",
+          "accession": "O75197",
+          "notes": "Helical transmembrane region"
+        }
+      ]
+    },
+    {
+      "identifier": "PPPSP_motif_1_1418_1422",
+      "name": "PPPSP motif 1",
+      "type": "Motif",
+      "locations": [
+        {
+          "start": 1418,
+          "end": 1422
+        }
+      ],
+      "sequence": "PPPSP",
+      "description": "First PPPSP motif in intracellular domain; phosphorylated by GSK3 and serves as Axin docking site upon Wnt stimulation",
+      "sources": [
+        {
+          "database": "Literature",
+          "notes": "Critical for Wnt signaling activation"
+        }
+      ]
+    },
+    {
+      "identifier": "PPPSP_motif_2",
+      "name": "PPPSP motif 2",
+      "type": "Motif",
+      "locations": [
+        {
+          "start": 1461,
+          "end": 1465
+        }
+      ],
+      "sequence": "PPPSP",
+      "description": "Second PPPSP motif; phosphorylated to create additional Axin binding site",
+      "sources": [
+        {
+          "database": "Literature",
+          "notes": "Part of phosphorylation-dependent signaling platform"
+        }
+      ]
+    },
+    {
+      "identifier": "PPPSP_motif_3",
+      "name": "PPPSP motif 3",
+      "type": "Motif",
+      "locations": [
+        {
+          "start": 1513,
+          "end": 1517
+        }
+      ],
+      "sequence": "PPPSP",
+      "description": "Third PPPSP motif; serves as phosphorylation-dependent Axin docking site",
+      "sources": [
+        {
+          "database": "Literature",
+          "notes": "GSK3 and CK1 phosphorylation target"
+        }
+      ]
+    },
+    {
+      "identifier": "PPPSP_motif_4",
+      "name": "PPPSP motif 4",
+      "type": "Motif",
+      "locations": [
+        {
+          "start": 1580,
+          "end": 1584
+        }
+      ],
+      "sequence": "PPPSP",
+      "description": "Fourth PPPSP motif; phosphorylated to recruit Axin and inhibit beta-catenin degradation",
+      "sources": [
+        {
+          "database": "Literature",
+          "notes": "Critical signaling motif"
+        }
+      ]
+    },
+    {
+      "identifier": "PPPSP_motif_5",
+      "name": "PPPSP motif 5",
+      "type": "Motif",
+      "locations": [
+        {
+          "start": 1606,
+          "end": 1610
+        }
+      ],
+      "sequence": "PPPSP",
+      "description": "Fifth PPPSP motif near C-terminus; contributes to multiple Axin binding sites",
+      "sources": [
+        {
+          "database": "Literature",
+          "notes": "Part of redundant signaling platform"
+        }
+      ]
+    }
+  ],
+  "structure": {
+    "experimental_structures": [
+      {
+        "pdb_id": "3S2K",
+        "method": "X-ray",
+        "resolution_angstrom": 2.8,
+        "chain": null,
+        "coverage": {
+          "start": null,
+          "end": null
+        },
+        "description": "Structural basis of Wnt signaling inhibition by Dickkopf binding to LRP5/6; shows DKK1 binding to LRP5/6 beta-propeller domains",
+        "ligands": [],
+        "url": "https://www.rcsb.org/structure/3S2K"
+      }
+    ],
+    "alphafold_prediction": {
+      "available": true,
+      "accession": "AF-O75197-F1",
+      "confidence_summary": "Variable confidence; high confidence for structured extracellular domains (beta-propellers, EGF, LDLR-A domains), low confidence for flexible intracellular domain which is intrinsically disordered",
+      "url": "https://alphafold.ebi.ac.uk/entry/O75197"
+    }
+  },
+  "post_translational_modifications": [
+    {
+      "type": "Phosphorylation",
+      "position": 1420,
+      "residue": "S",
+      "function": "Activating - creates Axin docking site",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 1463,
+      "residue": "S",
+      "function": "Activating - creates Axin docking site",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 1515,
+      "residue": "S",
+      "function": "Activating - creates Axin docking site",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 1582,
+      "residue": "S",
+      "function": "Activating - creates Axin docking site",
+      "evidence": "Experimental"
+    },
+    {
+      "type": "Phosphorylation",
+      "position": 1608,
+      "residue": "S",
+      "function": "Activating - creates Axin docking site",
+      "evidence": "Experimental"
+    }
+  ],
+  "function": {
+    "uniprot_function": "Acts as a coreceptor with members of the frizzled family of seven-transmembrane spanning receptors to transduce signal by Wnt proteins. Upon Wnt binding, LRP5 is phosphorylated at conserved PPPSP motifs by GSK3 and CK1, creating docking sites for Axin. This sequesters Axin away from the beta-catenin destruction complex, leading to beta-catenin stabilization and activation of TCF/LEF-dependent transcription. Critical regulator of bone mass through control of osteoblast proliferation and differentiation.",
+    "catalytic_activity": null,
+    "subcellular_location": [
+      "Plasma membrane",
+      "Endoplasmic reticulum",
+      "Cytoplasm"
+    ],
+    "tissue_specificity": "Widely expressed with highest levels in liver and aorta. Expressed in osteoblasts lining endosteal and trabecular bone surfaces. Also detected in bile duct epithelium and various other tissues.",
+    "go_annotations": {
+      "molecular_function": [
+        {
+          "go_id": "GO:0017147",
+          "term": "Wnt-protein binding",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0004888",
+          "term": "transmembrane signaling receptor activity",
+          "evidence_code": "IBA"
+        },
+        {
+          "go_id": "GO:0015026",
+          "term": "coreceptor activity",
+          "evidence_code": "IMP"
+        }
+      ],
+      "biological_process": [
+        {
+          "go_id": "GO:0016055",
+          "term": "Wnt signaling pathway",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0001649",
+          "term": "osteoblast differentiation",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0001938",
+          "term": "positive regulation of endothelial cell proliferation",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0045778",
+          "term": "positive regulation of ossification",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0060346",
+          "term": "bone trabecula formation",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0001501",
+          "term": "skeletal system development",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0048015",
+          "term": "phosphatidylinositol-mediated signaling",
+          "evidence_code": "IBA"
+        },
+        {
+          "go_id": "GO:0006897",
+          "term": "endocytosis",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0001654",
+          "term": "eye development",
+          "evidence_code": "IMP"
+        },
+        {
+          "go_id": "GO:0042981",
+          "term": "regulation of apoptotic process",
+          "evidence_code": "IMP"
+        }
+      ],
+      "cellular_component": [
+        {
+          "go_id": "GO:0005886",
+          "term": "plasma membrane",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0043235",
+          "term": "receptor complex",
+          "evidence_code": "IDA"
+        },
+        {
+          "go_id": "GO:0005783",
+          "term": "endoplasmic reticulum",
+          "evidence_code": "IDA"
+        }
+      ]
+    }
+  },
+  "pathways": {
+    "reactome": [
+      {
+        "pathway_id": "R-HSA-201681",
+        "pathway_name": "TCF dependent signaling in response to WNT",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-201681"
+      },
+      {
+        "pathway_id": "R-HSA-1458875",
+        "pathway_name": "WNT binds to FZD and LRP5/6",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-1458875"
+      },
+      {
+        "pathway_id": "R-HSA-4641262",
+        "pathway_name": "Disassembly of the destruction complex and recruitment of AXIN to the membrane",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-4641262"
+      },
+      {
+        "pathway_id": "R-HSA-3772470",
+        "pathway_name": "Negative regulation of TCF-dependent signaling by WNT ligand antagonists",
+        "species": "Homo sapiens",
+        "url": "https://reactome.org/content/detail/R-HSA-3772470"
+      }
+    ],
+    "kegg": [
+      {
+        "pathway_id": "hsa04310",
+        "pathway_name": "Wnt signaling pathway",
+        "url": "https://www.genome.jp/entry/hsa04310"
+      }
+    ],
+    "pathway_role_summary": "LRP5 is a critical coreceptor in canonical Wnt signaling. Upon Wnt binding, LRP5 associates with Frizzled receptors and becomes phosphorylated at PPPSP motifs, creating docking sites for Axin. This sequesters the destruction complex components from beta-catenin, leading to beta-catenin stabilization and nuclear translocation. LRP5 is particularly important in bone development and homeostasis, where it regulates osteoblast proliferation and differentiation."
+  },
+  "disease_associations": [
+    {
+      "disease": "Osteoporosis-pseudoglioma syndrome (OPPG)",
+      "omim_id": "259770",
+      "mutation_type": "Germline",
+      "description": "Autosomal recessive disorder caused by loss-of-function mutations in LRP5, characterized by severe early-onset osteoporosis and congenital or juvenile-onset blindness due to vitreoretinal degeneration"
+    },
+    {
+      "disease": "High bone mass phenotype",
+      "omim_id": "603506",
+      "mutation_type": "Germline",
+      "description": "Autosomal dominant condition caused by gain-of-function mutations in LRP5 (e.g., G171V), leading to increased bone density, resistance to fractures, and altered DKK1/sclerostin binding"
+    },
+    {
+      "disease": "Familial exudative vitreoretinopathy",
+      "omim_id": "603506",
+      "mutation_type": "Germline",
+      "description": "LRP5 mutations can cause abnormal retinal vascular development leading to vitreoretinopathy"
+    }
+  ],
+  "cross_references": {
+    "ncbi_gene_id": "4041",
+    "ensembl_gene_id": "ENSG00000162337",
+    "refseq_protein": [
+      "NP_002326.2",
+      "NP_001278831.1"
+    ],
+    "refseq_nucleotide": [
+      "NM_002335.4",
+      "NM_001291902.2"
+    ],
+    "hgnc_id": "HGNC:6697",
+    "omim_gene": "603506"
+  },
+  "metadata": {
+    "generated_at": "2026-10-17T00:00:00Z",
+    "queried_databases": [
+      "UniProt",
+      "NCBI Gene",
+      "InterPro",
+      "Pfam",
+      "PROSITE",
+      "SMART",
+      "PDB",
+      "AlphaFold",
+      "STRING",
+      "BioGRID",
+      "Reactome",
+      "KEGG",
+      "GO",
+      "OMIM",
+      "Human Protein Atlas"
+    ],
+    "data_quality_notes": "Comprehensive data available. LRP5 is closely related to LRP6 (73% sequence identity), and many studies characterize both receptors together. Some structural and kinetic data are from LRP6 studies but apply to LRP5. Exact amino acid sequence may vary slightly between databases. PPPSP motif positions are approximate and require experimental validation. No high-resolution experimental structure available specifically for LRP5; crystal structures primarily from LRP6 or LRP5/6 chimeras. Kinetic parameters for GSK3-mediated phosphorylation are derived from studies on the Axin-GSK3-beta-catenin system.",
+    "modeling_relevance_summary": "LRP5 is essential for canonical Wnt pathway modeling as the primary coreceptor that determines pathway activation state. Five PPPSP phosphorylation sites create redundant Axin binding sites with cooperative effects. Antagonist binding (DKK1, Sclerostin) provides regulatory control points. LRP5-specific mutations cause dramatic bone phenotypes, highlighting importance in tissue-specific signaling. Key for modeling: (1) ternary complex formation with Wnt and Frizzled, (2) sequential phosphorylation creating graded Axin recruitment, (3) competition between activators (Wnt) and antagonists (DKK1/SOST), (4) receptor endocytosis via Kremen-DKK complex."
+  }
+}
