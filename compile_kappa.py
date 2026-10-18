@@ -241,28 +241,10 @@ class KappaCompiler:
         gene_a = interaction['protein_a']['gene_name']
         gene_b = interaction['protein_b']['gene_name']
 
-        # Compressed Kappa context
-        kappa_context = """
-# Kappa Rule Syntax (Compressed Reference)
-
-## Basic Syntax
-- Agent: `A(site1, site2{state})`
-- Binding: `A(x[1]), B(y[1])` (bound) or `A(x[.])` (free)
-- States: `A(x{u})` (unmodified) or `A(x{p})` (modified)
-- Rules: `'name' LHS -> RHS @ rate` or `LHS <-> RHS @ k_on, k_off`
-
-## Rate Constants
-- Unimolecular: ~0.1 to 10 s^-1 (conformational changes, dissociation)
-- Bimolecular: ~10^-6 to 10^-3 (in stochastic units, depends on system volume)
-- If Kd available: k_off/k_on = Kd
-
-## Key Principles
-1. Only specify what changes (don't overspecify)
-2. Free binding sites: [.]
-3. Bound (unspecified partner): [_]
-4. Reversible binding: <-> with k_on, k_off
-5. Enzymatic modification: Enzyme binds, modifies, releases
-"""
+        # Load full Kappa context from SKILL.md
+        skill_path = Path(".claude/skills/modeler/SKILL.md")
+        with open(skill_path, 'r') as f:
+            kappa_context = f.read()
 
         # Extract relevant digest information
         gene_a_info = self._extract_digest_summary(gene_a_digest, gene_a)
@@ -333,7 +315,7 @@ Return ONLY valid JSON, no additional text.
             "post_translational_modifications": digest.get('post_translational_modifications', [])
         }
 
-    def _call_llm(self, prompt: str, model: str = "openai/gpt-3.5-turbo") -> str:
+    def _call_llm(self, prompt: str, model: str = "openai/gpt-4o-mini") -> str:
         """Call OpenRouter API with the given prompt."""
         headers = {
             "Authorization": f"Bearer {OPENROUTER_API_KEY}",
@@ -353,6 +335,12 @@ Return ONLY valid JSON, no additional text.
         }
 
         response = requests.post(OPENROUTER_API_URL, headers=headers, json=payload)
+
+        # Debug: print response details on error
+        if response.status_code != 200:
+            print(f"API Error: Status {response.status_code}")
+            print(f"Response: {response.text}")
+
         response.raise_for_status()
 
         result = response.json()
