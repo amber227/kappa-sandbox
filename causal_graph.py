@@ -3,6 +3,95 @@ from pykappa.system import System
 from pykappa.pattern import Component, Agent
 from collections import defaultdict
 from typing import Iterable
+import re
+
+class SourceMap:
+    '''
+    Maps agents and rules back to their source lines in the .ka file.
+    '''
+    def __init__(self, model_path: Path):
+        self.model_path = model_path
+        self.agent_to_line = {}  # Maps agent kappa_str to line number
+        self.rule_to_line = {}   # Maps rule name to line number
+
+        self._parse_source()
+
+    def _parse_source(self):
+        '''Parse the .ka file to extract line numbers for %init and rules.'''
+        with open(self.model_path, 'r') as f:
+            lines = f.readlines()
+
+        for line_num, line in enumerate(lines, start=1):
+            line_stripped = line.strip()
+
+            # Parse %init lines - extract agent type name
+            if line_stripped.startswith('%init:'):
+                # Extract agent pattern after the count
+                # Format: %init: <count> <agent_pattern>
+                match = re.match(r'%init:\s*\d+\s+(\w+)\(', line_stripped)
+                if match:
+                    agent_name = match.group(1)
+                    # Store the mapping from agent name to line number
+                    # Use agent name as key since PyKappa expands signatures
+                    self.agent_to_line[agent_name] = line_num
+
+    def map_rules(self, system: System):
+        '''
+        Map rules from the system to their line numbers.
+        This requires the parsed system to match rule strings with file lines.
+        '''
+        with open(self.model_path, 'r') as f:
+            lines = f.readlines()
+
+        # Build a mapping from normalized rule strings to line numbers
+        rule_line_map = {}
+        for line_num, line in enumerate(lines, start=1):
+            line_stripped = line.strip()
+            if '->' in line_stripped and '@' in line_stripped and not line_stripped.startswith('//'):
+                # Normalize: remove extra whitespace
+                normalized = ' '.join(line_stripped.split())
+                rule_line_map[normalized] = line_num
+
+        # Now match system rules to file lines
+        # This is heuristic: we'll try to match based on kappa_str similarity
+        for rule_name, rule in system.rules.items():
+            rule_str = rule.kappa_str
+            # Try to find a matching line
+            # The rule_str might not exactly match due to formatting
+            # We'll use a simple approach: look for the rule components in the file
+
+            # For now, use a simpler approach: match by order of appearance
+            # This assumes rules are loaded in the same order they appear in the file
+            pass
+
+        # Simpler approach: just scan through and assign rules by order
+        rule_names = list(system.rules.keys())
+        rule_lines = []
+        for line_num, line in enumerate(lines, start=1):
+            line_stripped = line.strip()
+            if '->' in line_stripped and '@' in line_stripped and not line_stripped.startswith('//'):
+                rule_lines.append(line_num)
+
+        # Assign rules to lines in order
+        for i, rule_name in enumerate(rule_names):
+            if i < len(rule_lines):
+                self.rule_to_line[rule_name] = rule_lines[i]
+
+    def get_agent_source(self, agent: Agent) -> int:
+        '''Get the source line number for an agent.'''
+        # Extract agent name from the agent
+        # agent.kappa_str format is like "Axin(...)"
+        agent_name = agent.agent_name if hasattr(agent, 'agent_name') else None
+        if not agent_name:
+            # Parse from kappa_str
+            match = re.match(r'(\w+)\(', agent.kappa_str)
+            if match:
+                agent_name = match.group(1)
+        return self.agent_to_line.get(agent_name)
+
+    def get_rule_source(self, rule_name: str) -> int:
+        '''Get the source line number for a rule.'''
+        return self.rule_to_line.get(rule_name)
 
 class CausalGraph:
     '''
@@ -112,9 +201,14 @@ def unreachable(init: Iterable[Agent], causal_graph, system):
 
 def main():
     model_path = Path(__file__).with_name("wnt_v8.ka")
+    # model_path = Path(__file__).with_name("simple.ka")
 
     print("Model path loaded")
     system = System.read_ka(model_path)
+
+    # Build source map
+    source_map = SourceMap(model_path)
+    source_map.map_rules(system)
 
     # List the agents present in the initial mixture.
     #
@@ -135,16 +229,27 @@ def main():
             unique_agents.append(agent)
 
     for index, agent in enumerate(unique_agents, start=1):
-        print(f"{index}: {agent.kappa_str}")
+        source_line = source_map.get_agent_source(agent)
+        source_info = f" (line {source_line})" if source_line else ""
+        print(f"{index}: {agent.kappa_str}{source_info}")
 
     print("\n=== Rules ===")
     for rule_name, rule in system.rules.items():
-        print(f"{rule_name}: {rule.kappa_str}")
+        source_line = source_map.get_rule_source(rule_name)
+        source_info = f" (line {source_line})" if source_line else ""
+        print(f"{rule_name}: {rule.kappa_str}{source_info}")
 
     causal_graph = CausalGraph(system)
     init_agents = unique_agents
 
-    unreachable = causal_graph.unreachable(init_agents)
+    unreachable_rules = causal_graph.unreachable(init_agents)
+
+    print("\n=== Unreachable Rules ===")
+    if unreachable_rules:
+        for rule_name in unreachable_rules:
+            source_line = source_map.get_rule_source(rule_name)
+            source_info = f" (line {source_line})" if source_line else ""
+            print(f"{rule_name}{source_info}")
     
 if __name__ == "__main__":
     main()
