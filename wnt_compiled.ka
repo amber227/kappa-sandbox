@@ -1,61 +1,89 @@
 # Kappa model compiled from protein database
-# Generated: 2026-10-15T10:07:44.038551
-# Agents: 13, Rules: 40
+# Generated: 2026-10-18T16:22:23.561552
+# Agents: 23, Rules: 58
 
 # Agent Signatures
+%agent: WNT3(wnt_domain_22_355[_], wnt_c_terminal_domain[_], palmitoylation_site_C77[_], palmitoleate_site_S209[_], palm_C77{u p}, mod_S209{u p}, glyc_NNone{u p}, phos_S240{u p})
+%agent: LRP5(beta_propeller_1_25_297[_], EGF_like_1_297_338[_], beta_propeller_2_339_603[_], EGF_like_2_603_642[_], beta_propeller_3_643_904[_], EGF_like_3_904_943[_], beta_propeller_4_944_1215[_], EGF_like_4_1215_1255[_], LDLR_A_1_1257_1295[_], LDLR_A_2_1296_1333[_], LDLR_A_3_1334_1372[_], transmembrane_1386_1408[_], phos_S1420{u p}, phos_S1463{u p}, phos_S1515{u p}, phos_S1582{u p}, phos_S1608{u p})
 %agent: APC(oligomerization_domain_1_55[_], ARM_domain_453_767[_], 15aa_repeats_1020_1169[_], 20aa_repeat_1_1265_1284[_], 20aa_repeat_2_1378_1397[_], 20aa_repeat_3_1494_1513[_], 20aa_repeat_4_1646_1664[_], 20aa_repeat_5_1850_1869[_], 20aa_repeat_6_1957_1976[_], 20aa_repeat_7_2015_2034[_], basic_domain_MT_binding[_], EB1_binding_domain[_], phos_S1505{u p}, phos_S/TNone{u p}, ub_KNone{u p})
 %agent: DVL1(DIX_1_85[_], DVL_specific_90_247[_], PDZ_251_339[_], DEP_425_499[_], DVL_C_terminal_503_685[_], FZD_binding_PDZ[_], phos_S194{u p}, phos_S/TNone{u p}, ub_KNone{u p}, glyc_NoneNone{u p})
+%agent: BCL9(HD1_177_204[_], HD2_349_377[_], RING_Zn_153_205[_], C_terminal_activation_domain[_], phos_S104{u p}, phos_S157{u p}, phos_T172{u p}, phos_T315{u p}, phos_S318{u p}, phos_S352{u p}, phos_S687{u p}, phos_S689{u p}, phos_S907{u p}, phos_S917{u p}, ac_K844{u p}, me_R801{u p}, mod_T315{u p}, mod_S318{u p}, mod_Unknown337{u p})
 %agent: CTNNB1(N_terminal_regulatory_1_136[_], ARM_repeat_domain_133_664[_], C_terminal_transactivation_664_781[_], TCF_LEF_binding_141_664[_], E_cadherin_binding_141_664[_], APC_binding_141_664[_], ICAT_binding_141_664[_], BCL9_binding_20_60[_], phos_S33{u p}, phos_S37{u p}, phos_T41{u p}, phos_S45{u p}, phos_S23{u p}, phos_S29{u p}, phos_S552{u p}, phos_S675{u p}, phos_S191{u p}, phos_S246{u p}, phos_Y64{u p}, phos_Y142{u p}, phos_Y331{u p}, phos_Y333{u p}, ub_K19{u p}, ub_K49{u p}, ac_K49{u p}, ac_K19{u p}, ac_K345{u p}, glyc_S23{u p}, mod_C619{u p}, ac_A2{u p})
 %agent: WNT3A(WNT_domain_39_352[_], WNT_C_terminal_292_352[_], mod_S209{u p}, mod_N87{u p}, mod_N298{u p}, mod_C77{u p}, mod_C88{u p}, mod_C128{u p}, mod_C136{u p}, mod_C138{u p}, mod_C155{u p}, mod_C203{u p}, mod_C205{u p}, mod_C212{u p}, mod_C217{u p}, mod_C281{u p}, mod_C297{u p}, mod_C307{u p}, mod_C311{u p}, mod_C312{u p}, mod_C327{u p}, mod_C329{u p}, mod_C334{u p}, mod_C335{u p}, mod_C339{u p}, mod_C342{u p}, mod_C351{u p})
 %agent: AXIN1(TNKS_BD_11_80[_], RGS_88_210[_], GSK3B_binding_central[_], Beta_catenin_binding[_], Protein_interaction_730_765[_], DIX_780_862[_], phos_S51{u p}, phos_S54{u p}, phos_T56{u p}, phos_S57{u p}, phos_T58{u p}, phos_T60{u p}, phos_S157{u p}, phos_S/TNone{u p}, ub_KNone{u p}, mod_MultipleNone{u p}, mod_KNone{u p}, ac_KNone{u p})
+%agent: HIPK2(KINASE_192_520[_], CMGC_INSERT_418_493[_], HID_583_798[_], SRS_860_967[_], AUTOINHIBITORY_935_1050[_], SIAH1_BINDING_1155_1182[_], phos_Y361{u p}, phos_T566{u p}, phos_T112{u p}, phos_S114{u p}, phos_T1107{u p}, ub_K1182{u p}, sumo_K25{u p}, sumo_K32{u p}, ac_KNone{u p}, mod_D916{u p}, mod_D977{u p})
 %agent: BTRC(D_domain_138_198[_], F_box_1_75[_], phosphodegron_binding_site[_], phos_S82{u p}, phos_S127{u p}, phos_S158{u p}, phos_S412{u p}, phos_S555{u p}, phos_S597{u p}, phos_T599{u p}, phos_Y600{u p}, phos_T601{u p}, ub_K11{u p}, ub_K14{u p}, ub_K73{u p}, ub_K315{u p}, ub_K326{u p}, ub_K527{u p}, me_C137{u p}, me_C383{u p})
 %agent: LRP6(beta_propeller_1_20_275[_], EGF_like_1_286_297[_], beta_propeller_2_328_589[_], EGF_like_2_592_627[_], beta_propeller_3_631_890[_], EGF_like_3_893_929[_], beta_propeller_4_933_1202[_], EGF_like_4_1207_1243[_], LDLR_class_A_1_1248_1285[_], LDLR_class_A_2_1288_1322[_], LDLR_class_A_3_1326_1361[_], transmembrane_1371_1393[_], disordered_region_1556_1613[_], phos_S1420{u p}, phos_S1430{u p}, phos_T1479{u p}, phos_S1490{u p}, phos_T1493{u p}, mod_C1394{u p}, mod_C1399{u p}, ub_K1403{u p}, mod_N42{u p}, mod_N81{u p}, mod_N281{u p}, mod_N433{u p}, mod_N486{u p}, mod_N692{u p}, mod_N859{u p}, mod_N865{u p}, mod_N926{u p}, mod_N1039{u p})
+%agent: FZD8(FZD_CRD_31_155[_], palmitate_binding_71_78[_], wnt_binding_site_1_95_100[_], wnt_binding_site_2_147_152[_], 7TM_268_617[_], phos_S576{u p})
 %agent: CSNK1A1(Pkinase_1_17_285[_], ATP_binding_46[_], Disordered_309_337[_], phos_S/TNone{u p}, phos_S/TNone{u p})
+%agent: EP300(NRID_1_110[_], TAZ1_313_433[_], KIX_564_658[_], Bromodomain_1051_1158[_], RING_1172_1227[_], PHD_1243_1277[_], HAT_1306_1612[_], ZZ_1650_1720[_], TAZ2_1717_1815[_], IBiD_2060_2110[_], phos_S89{u p}, phos_S1038{u p}, ac_K1020{u p}, ac_K1499{u p}, ac_K1549{u p}, ac_K1554{u p}, ac_K1560{u p}, ac_K1551{u p}, ub_K1637{u p}, sumo_KNone{u p}, mod_NoneNone{u p})
 %agent: GSK3B(Pkinase_56_340[_], ATP_binding_62_70[_], ATP_binding_85[_], p53_binding_78_92[_], phos_S9{u p}, phos_Y216{u p}, phos_S389{u p}, phos_T390{u p}, phos_T402{u p}, palm_C14{u p}, ub_K197{u p}, mod_UnknownNone{u p})
+%agent: FZD5(CRD_28_150[_], 7TM_domain[_], PDZ_binding_583_585[_], mod_N47{u p}, mod_N151{u p}, palm_CNone{u p}, ub_KNone{u p}, phos_S7{u p}, phos_S11{u p}, phos_T440{u p}, phos_Y556{u p}, phos_T575{u p}, phos_Y576{u p}, phos_S581{u p})
+%agent: DVL3(DIX_1_82[_], DVL_specific_85_245[_], PDZ_243_338[_], DEP_402_495[_], DVL_C_terminal_500_706[_], FZD_binding_PDZ[_], CK1_binding_regions[_], phos_S263{u p}, phos_S268{u p}, phos_S280{u p}, phos_S311{u p}, phos_S350{u p}, phos_S394{u p}, phos_S445{u p}, phos_T459{u p}, phos_S469{u p}, phos_T485{u p}, phos_S/TNone{u p}, ub_KNone{u p})
 %agent: TCF7L2(CTNNB1_binding_1_259[_], HMG_box_349_433[_], C_clamp[_], phos_S58{u p}, phos_S60{u p}, phos_S82{u p}, phos_S120{u p}, phos_S122{u p}, phos_S154{u p}, phos_S177{u p}, phos_S179{u p}, phos_T201{u p}, phos_T212{u p}, phos_S246{u p}, ac_K150{u p}, mod_NoneNone{u p}, ub_NoneNone{u p})
+%agent: DKK1(CRD1_N_terminal_85_139[_], Linker_region_140_188[_], CRD2_C_terminal_189_263[_], LRP6_binding_222_231[_], Kremen_binding_189_263[_], mod_A31{u p}, mod_N225{u p}, mod_S30{u p}, mod_C87{u p}, mod_C96{u p}, mod_C107{u p}, mod_C109{u p}, mod_C119{u p}, mod_C122{u p}, mod_C127{u p}, mod_C132{u p}, mod_C137{u p}, mod_C192{u p}, mod_C199{u p}, mod_C203{u p}, mod_C217{u p}, mod_C220{u p}, mod_C244{u p}, mod_C247{u p}, mod_C250{u p}, mod_C257{u p})
+%agent: CREBBP(TAZ1_CH1_340_439[_], KIX_588_672[_], Bromodomain_1053_1127[_], PHD_1140_1200[_], RING_1168_1240[_], HAT_1342_1649[_], ZZ_1701_1752[_], TAZ2_CH3_1764_1850[_], CREB_binding_2034_2111[_], phos_S89{u p}, ac_KNone{u p}, ub_KNone{u p})
 %agent: FZD1(FZ_CRD_112_238[_], FZ_domain_116_220[_], hinge_domain_275_312[_], TM1_323_343[_], TM2_355_375[_], TM3_403_423[_], TM4_446_466[_], TM5_490_510[_], TM6_537_557[_], TM7_602_622[_], helix8_amphipathic[_], intrinsically_disordered_1_115[_], intrinsically_disordered_230_275[_], phos_Multiple sitesNone{u p}, ub_K (multiple lysine residues in cytoplasmic loops)None{u p}, mod_Between signal peptide and mature protein40{u p})
 %agent: DVL2(DIX_11_93[_], PDZ_267_339[_], DEP_433_507[_], phos_T224{u p}, phos_S/T/YNone{u p}, ub_KNone{u p}, ub_KNone{u p}, ac_KNone{u p}, mod_ENone{u p})
 %agent: AXIN2(RGS_domain_81_200[_], GSK3B_binding_327_413[_], CTNNB1_binding_396_465[_], PP2A_binding_632_843[_], DIX_domain_761_843[_], SIAH1_binding_GBD[_], phos_S/TNone{u p}, mod_NoneNone{u p}, ub_KNone{u p})
 
 # Rules
-APC(SAMP_repeat_1[.]), AXIN1(RGS_domain[.]) <-> APC(SAMP_repeat_1[1]), AXIN1(RGS_domain[1]) @ k_on, k_off
-'binding' APC(SAMP_repeat_[1-3]), AXIN2(RGS_domain[.]) <-> APC(SAMP_repeat_[1-3], AXIN2(RGS_domain[1]) @ kon, koff
-CSNK1A1(b[.]) + APC(a[.], x{u}) -> CSNK1A1(b[.]) + APC(a[1], x{p}) @ k_cat
-APC(x[.]), CTNNB1(y[.]) <-> APC(x[1]), CTNNB1(y[1]) @ k_on, k_off
-APC(x[1505_S]{u}), GSK3B(y[.]) -> APC(x[1505_S]{p}), GSK3B(y[.]) @ k_cat
-APC(ARM[.]) <-> TCF7L2(HMG_box[.]) @ null, null
-AXIN1(DIX_780_862[x[.]]), AXIN2(DIX_domain[y[.]]) <-> AXIN1(DIX_780_862[x[1]]), AXIN2(DIX_domain[y[1]]) @ k_on, k_off
-CSNK1A1(ATP[.]) + AXIN1(CK1_site_51{u}) -> CSNK1A1(ATP[.]) + AXIN1(CK1_site_51{p}) @ k_cat
-Axin-1(x[.]) <-> Catenin_beta-1(y[.]) @ k_on, k_off
-A(dix_axin[.]) + D(dix_dvl[.]) <-> A(dix_axin[1]) + D(dix_dvl[1]) @ k_on, k_off
-Axin1(DIX_780_862[.]) <-> DVL2(DIX_11_93[.] @ k_on, k_off
-Axin1(gsk3b_binding_central[.]) <-> GSK3B(kinase_domain[.] ) @ 1.33e-07, 1.0
-Axin1(GBD[.]) + LRP6(PPPSP_motif_A[1490{p}], PPPSP_motif_B[.]) <-> Axin1(GBD[1]), LRP6(PPPSP_motif_A[1490{p}], PPPSP_motif_B[1]) @ 0.001, 0.1
-CSNK1A1(ATP[.]), AXIN2(Tankyrase_binding_19_30{x{u}}) -> AXIN2(Tankyrase_binding_19_30{x{p}}), CSNK1A1(ATP[.]) @ k_cat
-AXIN2(x[.]), CTNNB1(y[.]) <-> AXIN2(x[1]), CTNNB1(y[1]) @ k_on, k_off
-AXIN2(DIX[.]) <-> DVL1(DIX[.]) @ k_on, k_off
-Axin2(DIX_domain[.]<->DVL2(DIX_11_93[.]) @ k_on, k_off
-AXIN2(bind_site[.]), GSK3B(kinase_domain[.]) <-> AXIN2(bind_site[1]), GSK3B(kinase_domain[1]) @ 0.0003125, 0.0003125
-CSNK1A1(x[.], y{u}) -> CSNK1A1(x[.]), CTNNB1(y{p}) @ k_cat
-'binding' CTNNB1(x[.]), DVL1(y[.]) <-> CTNNB1(x[1]), DVL1(y[1]) @ k_on, k_off
-GSK3B(x[.]) + CTNNB1(y[.], x{u}) -> GSK3B(x[.]) + CTNNB1(y[1], x{p}) @ k_cat
-CTNNB1(x[.], y{u}) <-> TCF7L2(e[.], x[1]) @ k_on, k_off
-WNT3A(x[.]) + CTNNB1(y[.]) -> WNT3A(x[1]) + CTNNB1(y[1]) @ k_on, k_off
-DVL1(x[.]), DVL2(y[.]) <-> DVL1(x[1]), DVL2(y[1]) @ k_on, k_off
-DVL1(PDZ[.]), FZD1(PDZ_binding_motif_625_630[.]) <-> DVL1(PDZ[1]), FZD1(PDZ_binding_motif_625_630[1]) @ k_on, k_off
-DVL1(DIX_1_85[.]) + GSK3B(Pkinase_56_340[.]) <-> DVL1(DIX_1_85[1]) + GSK3B(Pkinase_56_340[1]) @ k_on, k_off
-DVL1(DIX_1_85[.]), LRP6(CK1_site_S1490[.]) <-> DVL1(DIX_1_85[1]), LRP6(CK1_site_S1490[1]) @ k_on, k_off
-WNT3A() + DVL1() -> WNT3A(DVL1[.]) @ k_on
-DVL2(PDZ[.]), FZD1(PDZ_binding_motif_625_630[.]) <-> DVL2(PDZ[1]), FZD1(PDZ_binding_motif_625_630[1]) @ 0.000143
-FZD1(x[.]), LRP6(y[.]) <-> FZD1(x[1]), LRP6(y[1]) @ k_on, k_off
-FZD1(s[.]) + WNT3A(x[.]) <-> FZD1(s[1]), WNT3A(x[1]) @ k_on, k_off
-GSK3B(Kinase_domain) + LRP6(PPPSP_motif_A_1490) -> GSK3B(Kinase_domain) + LRP6(PPPSP_motif_A(S1490{p})) @ kcat
-LRP6(E3_E4) <-> WNT3A(Wnt_domain) @ k_on, k_off
-CSNK1A1(s[.]) + GSK3B(x[.]) <-> CSNK1A1(s[1]) + GSK3B(x[1]) @ k_on, k_off
-CSNK1A1() <-> APC() @ k_on, k_off
-CSNK1A1(x[.]), AXIN1(y[.]) <-> CSNK1A1(x[1]), AXIN1(y[1]) @ k_on, k_off
-CSNK1A1(x[.]) <-> AXIN2(y[.]) @ k_on, k_off
-CSNK1A1() + DVL1() -> CSNK1A1(p) + DVL1() @ k_on
-'ubiquitination' BTRC(phosphodegron_binding_site[.]), CTNNB1(x{p}) -> BTRC(phosphodegron_binding_site[.]), CTNNB1(x[.]) @ 9.4e-10
-BTRC(x[.]) <-> AXIN1(y[.]) @ k_on, k_off
+APC(x[.]) <-> CSNK1A1(y[.]) @ k_on, k_off
+APC(x[.]), DVL3(y[.]) <-> APC(x[1]), DVL3(y[1]) @ k_on, k_off
+APC() <-> BTRC() @ 0.001, 0.1
+APC(axin[.]) <-> DVL2(dix[.]) @ 0.001, 0.1
+AXIN1(x[.]) <-> BTRC(y[.]) @ k_on, k_off
+APC(SAMP_repeat_3) + AXIN2(RGS_domain) <-> APC(SAMP_repeat_3[AXIN2]), AXIN2(RGS_domain[APC]) @ 0.001, 0.1
+AXIN1(DIX[.]|DIX[1]) <-> DVL2(DIX[.]|DIX[1]) @ k_on, k_off
+AXIN1(x[.]) , CSNK1A1(y[.]) <-> AXIN1(x[1]) , CSNK1A1(y[1]) @ k_on, k_off
+'binding' AXIN1(DIX[.]), AXIN2(DIX[.]) <-> AXIN1(DIX[1]), AXIN2(DIX[1]) @ 0.001, 0.1
+Axin2() <-> CK1alpha() @ k_on, k_off
+AXIN1() <-> LRP5(PPPSP_motif_1(S1420)[p]) @ k_on, k_off
+Axin2(x[.]), CTNNB1(y[.]) <-> Axin2(x[1]), CTNNB1(y[1]) @ k_on, k_off
+A(x[.], d[.]) <-> A(x[1], d[1]) @ 0.001, 0.1
+'binding' AXIN2(GSK3B_binding_327_413[.]), GSK3B(ATP_binding_62_70[.]) <-> AXIN2(GSK3B_binding_327_413[1]), GSK3B(ATP_binding_62_70[1]) @ 0.0003125, 0.001
+BCL9(x[.], K844{u}) + CREBBP(y[.]) -> BCL9(x[1], K844{p}) + CREBBP(y[1]) @ k_cat
+'binding' Axin2(DIX_domain[.]) <-> DVL1(DIX_1_85[.] ) @ 0.001, 0.1
+AXIN2(DIX_domain[.]) <-> DVL2(DIX_11_93[.]) @ 0.001, 0.1
+EP300(_) + BCL9(K844{u}) -> EP300(_) + BCL9(K844{p}) @ k_cat
+BCL9(HD2_349_377[x{u}]), CTNNB1(ARM_repeat_domain[y{u}]) <-> BCL9(HD2_349_377[x{1}]), CTNNB1(ARM_repeat_domain[y{1}]) @ 0.002, 0.0001
+BCL9(x[.]), TCF7L2(y[.]) <-> BCL9(x[1]), TCF7L2(y[1]) @ k_on, k_off
+Axin2(DIX_domain[.]) <-> DVL3(DIX_1_82[.] @ 0.001, 0.1)
+'acetylation' CREBBP(x[.], HAT_1342_1649), CTNNB1(y[.], C_terminal_transactivation_664_781) -> CREBBP(x[1], HAT_1342_1649), CTNNB1(y[1], C_terminal_transactivation_664_781) @ k_cat
+BTRC(.[phosphodegron]), CTNNB1(x{u}) -> BTRC(.[u]), CTNNB1(x{p}) @ k_cat
+CSNK1A1(s[.]) + CTNNB1(e[.], x{u}) -> CSNK1A1(s[.] ) + CTNNB1(e[.], x{p}) @ k_cat
+CREBBP(s[.]), EP300(e[.]) <-> CREBBP(s[1]), EP300(e[1]) @ k_on, k_off
+CSNK1A1(x[.]) , DVL1(y[.]) <-> CSNK1A1(x[1]) , DVL1(y[1]) @ k_on, k_off
+CSNK1A1(x[.]) -> BTRC(x{p}) @ 0.001
+CSNK1A1(x[.]), GSK3B(y[.]) <-> CSNK1A1(x[1]), GSK3B(y[1]) @ 0.001, 0.1
+DKK1(crd2[.]) , LRP5(beta_propeller_1[.]) <-> DKK1(crd2[1]), LRP5(beta_propeller_1[1]) @ k_on, k_off
+'acetylate' CTNNB1(c-terminal_transactivation_domain[.]) + EP300(TAZ1_313_433[.]) -> CTNNB1(c-terminal_transactivation_domain[p]) + EP300(TAZ1_313_433[.]) @ k_cat
+CTNNB1(x[.]), DVL2(y[.]) <-> CTNNB1(x[1]), DVL2(y[1]) @ 0.001, 0.1
+DVL1(DIX)[.] + DVL2(DIX)[.] <-> DVL1(DIX)[1] + DVL2(DIX)[1] @ k_on, k_off
+Catenin_beta-1(s[.]) <-> Segment_polarity_protein_dishevelled_homolog_DVL-3(a[.]) @ 0.001, 0.1
+DKK1(LRP6_binding_222_231[.]) , LRP6(E3-E4_propeller_domains[.]) <-> DKK1(LRP6_binding_222_231[1]), LRP6(E3-E4_propeller_domains[1]) @ k_on, k_off
+'binding' DVL1(DIX[.]), LRP5() <-> DVL1(DIX[1]), LRP5() @ k_on, k_off
+DVL3(x[.]) + GSK3B(y[.]) <-> DVL3(x[1]) + GSK3B(y[1]) @ k_on, k_off
+DVL3(x[.]), LRP6(y[.]) <-> DVL3(x[1]), LRP6(y[1]) @ k_on, k_off
+DVL2(.) + GSK3B(.) <-> DVL2(1) + GSK3B(1) @ 0.001, 0.1
+FZD1(x[.]), LRP5(y[.]) <-> FZD1(x[1]), LRP5(y[1]) @ 0.001, 0.1
+GSK3B(kinase_domain[.]) + LRP5(PPPSP_motif_1{u}) -> GSK3B(kinase_domain[.]) + LRP5(PPPSP_motif_1{p}) @ 0.001, 0.1
+DVL2(DIX_11_93) <-> DVL3(DIX_1_82) @ 0.001, 0.1
+WNT3(wnt_domain_22_355[.]) <-> CTNNB1(ARM_repeat_domain_133_664[.]) @ 0.001, 0.1
+WNT3(x[.]) + DVL1(y[.]) <-> WNT3(x[1]) + DVL1(y[1]) @ 0.001, 0.1
+WNT3(x{u}), FZD1(y[.]) <-> WNT3(x[1]), FZD1(y[1]) @ k_on, k_off
+WNT3(wnt_domain_22_355[.]) + DVL3(DIX_1_82[.]):DVL3 -> WNT3(wnt_domain_22_355[1]) + DVL3(DIX_1_82[1]):DVL3 @ 0.001, 0.1
+WNT3(wnt_domain_22_355{C77 S209}[.]), FZD8(CRD[.]) <-> WNT3(wnt_domain_22_355{C77 S209}[1]), FZD8(CRD[1]) @ 1.0e-09, 1.0
+WNT3(wnt_domain_22_355.C77, wnt_domain_22_355.S209) <-> FZD5(CRD_28_150) @ 0.001, 0.1
+WNT3(wnt_domain_22_355[.]) + DVL2(DIX_11_93[.]) <-> WNT3(wnt_domain_22_355[1]) + DVL2(DIX_11_93[1]) @ 0.001, 0.1
+WNT3(wnt_domain_22_355[.]) <-> LRP5(beta_propeller_1_25_297[.]) @ k_on, k_off
+WNT3(wnt_domain_22_355[.]) <-> LRP6(beta_propeller_1[.]) @ k_on, k_off
+EP300(x[.]) + HIPK2(y[.]) <-> EP300(x[1]), HIPK2(y[1]) @ k_on, k_off
+HIPK2(x[.]) + CTNNB1(y[x{u}]) -> HIPK2(x[.]) + CTNNB1(y[x{p}]) @ k_cat
+FZD8(s[.]), WNT3A(x[.]) <-> FZD8(s[1]), WNT3A(x[1]) @ k_on, k_off
+FZD8(x[.]), LRP6(y[.]) <-> FZD8(x[1]), LRP6(y[1]) @ k_on, k_off
+FZD8(x[.]), LRP5(y[.]) <-> FZD8(x[1]), LRP5(y[1]) @ k_on, k_off
+FZD8(d[.]_S), DVL1(k[.]) <-> FZD8(d[1]_S), DVL1(k[1]) @ k_on, k_off
+FZD8(x[.]), DVL3(y[.]) <-> FZD8(x[1]), DVL3(y[1]) @ k_on, k_off
+FZD8(x[.]), DVL2(y[.]) <-> FZD8(x[1]), DVL2(y[1]) @ 0.001, 0.1
 

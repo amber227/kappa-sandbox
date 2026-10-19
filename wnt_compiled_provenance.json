@@ -1,6 +1,180 @@
 {
   "agents": [
     {
+      "agent_name": "WNT3",
+      "kappa_signature": "%agent: WNT3(wnt_domain_22_355[_], wnt_c_terminal_domain[_], palmitoylation_site_C77[_], palmitoleate_site_S209[_], palm_C77{u p}, mod_S209{u p}, glyc_NNone{u p}, phos_S240{u p})",
+      "citations": [
+        {
+          "source_file": "WNT3_digest.json",
+          "json_path": "protein_identifier.gene_name",
+          "value": "WNT3",
+          "reasoning": "Agent name derived from gene name"
+        },
+        {
+          "source_file": "WNT3_digest.json",
+          "json_path": "domains_and_motifs[1].identifier",
+          "value": "wnt_domain_22_355",
+          "reasoning": "Binding site 'wnt_domain_22_355' from Domain domain"
+        },
+        {
+          "source_file": "WNT3_digest.json",
+          "json_path": "domains_and_motifs[2].identifier",
+          "value": "wnt_c_terminal_domain",
+          "reasoning": "Binding site 'wnt_c_terminal_domain' from Domain domain"
+        },
+        {
+          "source_file": "WNT3_digest.json",
+          "json_path": "domains_and_motifs[4].identifier",
+          "value": "palmitoylation_site_C77",
+          "reasoning": "Binding site 'palmitoylation_site_C77' from Binding_site domain"
+        },
+        {
+          "source_file": "WNT3_digest.json",
+          "json_path": "domains_and_motifs[5].identifier",
+          "value": "palmitoleate_site_S209",
+          "reasoning": "Binding site 'palmitoleate_site_S209' from Binding_site domain"
+        },
+        {
+          "source_file": "WNT3_digest.json",
+          "json_path": "post_translational_modifications[0]",
+          "value": "Palmitoylation at C77",
+          "reasoning": "Modification site 'palm_C77' with states {u,p} from Palmitoylation"
+        },
+        {
+          "source_file": "WNT3_digest.json",
+          "json_path": "post_translational_modifications[1]",
+          "value": "Palmitoleoylation at S209",
+          "reasoning": "Modification site 'mod_S209' with states {u,p} from Palmitoleoylation"
+        },
+        {
+          "source_file": "WNT3_digest.json",
+          "json_path": "post_translational_modifications[2]",
+          "value": "Glycosylation at NNone",
+          "reasoning": "Modification site 'glyc_NNone' with states {u,p} from Glycosylation"
+        },
+        {
+          "source_file": "WNT3_digest.json",
+          "json_path": "post_translational_modifications[3]",
+          "value": "Phosphorylation at S240",
+          "reasoning": "Modification site 'phos_S240' with states {u,p} from Phosphorylation"
+        }
+      ]
+    },
+    {
+      "agent_name": "LRP5",
+      "kappa_signature": "%agent: LRP5(beta_propeller_1_25_297[_], EGF_like_1_297_338[_], beta_propeller_2_339_603[_], EGF_like_2_603_642[_], beta_propeller_3_643_904[_], EGF_like_3_904_943[_], beta_propeller_4_944_1215[_], EGF_like_4_1215_1255[_], LDLR_A_1_1257_1295[_], LDLR_A_2_1296_1333[_], LDLR_A_3_1334_1372[_], transmembrane_1386_1408[_], phos_S1420{u p}, phos_S1463{u p}, phos_S1515{u p}, phos_S1582{u p}, phos_S1608{u p})",
+      "citations": [
+        {
+          "source_file": "LRP5_digest.json",
+          "json_path": "protein_identifier.gene_name",
+          "value": "LRP5",
+          "reasoning": "Agent name derived from gene name"
+        },
+        {
+          "source_file": "LRP5_digest.json",
+          "json_path": "domains_and_motifs[2].identifier",
+          "value": "beta_propeller_1_25_297",
+          "reasoning": "Binding site 'beta_propeller_1_25_297' from Domain domain"
+        },
+        {
+          "source_file": "LRP5_digest.json",
+          "json_path": "domains_and_motifs[3].identifier",
+          "value": "EGF_like_1_297_338",
+          "reasoning": "Binding site 'EGF_like_1_297_338' from Domain domain"
+        },
+        {
+          "source_file": "LRP5_digest.json",
+          "json_path": "domains_and_motifs[4].identifier",
+          "value": "beta_propeller_2_339_603",
+          "reasoning": "Binding site 'beta_propeller_2_339_603' from Domain domain"
+        },
+        {
+          "source_file": "LRP5_digest.json",
+          "json_path": "domains_and_motifs[5].identifier",
+          "value": "EGF_like_2_603_642",
+          "reasoning": "Binding site 'EGF_like_2_603_642' from Domain domain"
+        },
+        {
+          "source_file": "LRP5_digest.json",
+          "json_path": "domains_and_motifs[6].identifier",
+          "value": "beta_propeller_3_643_904",
+          "reasoning": "Binding site 'beta_propeller_3_643_904' from Domain domain"
+        },
+        {
+          "source_file": "LRP5_digest.json",
+          "json_path": "domains_and_motifs[7].identifier",
+          "value": "EGF_like_3_904_943",
+          "reasoning": "Binding site 'EGF_like_3_904_943' from Domain domain"
+        },
+        {
+          "source_file": "LRP5_digest.json",
+          "json_path": "domains_and_motifs[8].identifier",
+          "value": "beta_propeller_4_944_1215",
+          "reasoning": "Binding site 'beta_propeller_4_944_1215' from Domain domain"
+        },
+        {
+          "source_file": "LRP5_digest.json",
+          "json_path": "domains_and_motifs[9].identifier",
+          "value": "EGF_like_4_1215_1255",
+          "reasoning": "Binding site 'EGF_like_4_1215_1255' from Domain domain"
+        },
+        {
+          "source_file": "LRP5_digest.json",
+          "json_path": "domains_and_motifs[10].identifier",
+          "value": "LDLR_A_1_1257_1295",
+          "reasoning": "Binding site 'LDLR_A_1_1257_1295' from Domain domain"
+        },
+        {
+          "source_file": "LRP5_digest.json",
+          "json_path": "domains_and_motifs[11].identifier",
+          "value": "LDLR_A_2_1296_1333",
+          "reasoning": "Binding site 'LDLR_A_2_1296_1333' from Domain domain"
+        },
+        {
+          "source_file": "LRP5_digest.json",
+          "json_path": "domains_and_motifs[12].identifier",
+          "value": "LDLR_A_3_1334_1372",
+          "reasoning": "Binding site 'LDLR_A_3_1334_1372' from Domain domain"
+        },
+        {
+          "source_file": "LRP5_digest.json",
+          "json_path": "domains_and_motifs[13].identifier",
+          "value": "transmembrane_1386_1408",
+          "reasoning": "Binding site 'transmembrane_1386_1408' from Domain domain"
+        },
+        {
+          "source_file": "LRP5_digest.json",
+          "json_path": "post_translational_modifications[0]",
+          "value": "Phosphorylation at S1420",
+          "reasoning": "Modification site 'phos_S1420' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "LRP5_digest.json",
+          "json_path": "post_translational_modifications[1]",
+          "value": "Phosphorylation at S1463",
+          "reasoning": "Modification site 'phos_S1463' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "LRP5_digest.json",
+          "json_path": "post_translational_modifications[2]",
+          "value": "Phosphorylation at S1515",
+          "reasoning": "Modification site 'phos_S1515' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "LRP5_digest.json",
+          "json_path": "post_translational_modifications[3]",
+          "value": "Phosphorylation at S1582",
+          "reasoning": "Modification site 'phos_S1582' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "LRP5_digest.json",
+          "json_path": "post_translational_modifications[4]",
+          "value": "Phosphorylation at S1608",
+          "reasoning": "Modification site 'phos_S1608' with states {u,p} from Phosphorylation"
+        }
+      ]
+    },
+    {
       "agent_name": "APC",
       "kappa_signature": "%agent: APC(oligomerization_domain_1_55[_], ARM_domain_453_767[_], 15aa_repeats_1020_1169[_], 20aa_repeat_1_1265_1284[_], 20aa_repeat_2_1378_1397[_], 20aa_repeat_3_1494_1513[_], 20aa_repeat_4_1646_1664[_], 20aa_repeat_5_1850_1869[_], 20aa_repeat_6_1957_1976[_], 20aa_repeat_7_2015_2034[_], basic_domain_MT_binding[_], EB1_binding_domain[_], phos_S1505{u p}, phos_S/TNone{u p}, ub_KNone{u p})",
       "citations": [
@@ -171,6 +345,132 @@
           "json_path": "post_translational_modifications[3]",
           "value": "Glycosylation at NoneNone",
           "reasoning": "Modification site 'glyc_NoneNone' with states {u,p} from Glycosylation"
+        }
+      ]
+    },
+    {
+      "agent_name": "BCL9",
+      "kappa_signature": "%agent: BCL9(HD1_177_204[_], HD2_349_377[_], RING_Zn_153_205[_], C_terminal_activation_domain[_], phos_S104{u p}, phos_S157{u p}, phos_T172{u p}, phos_T315{u p}, phos_S318{u p}, phos_S352{u p}, phos_S687{u p}, phos_S689{u p}, phos_S907{u p}, phos_S917{u p}, ac_K844{u p}, me_R801{u p}, mod_T315{u p}, mod_S318{u p}, mod_Unknown337{u p})",
+      "citations": [
+        {
+          "source_file": "BCL9_digest.json",
+          "json_path": "protein_identifier.gene_name",
+          "value": "BCL9",
+          "reasoning": "Agent name derived from gene name"
+        },
+        {
+          "source_file": "BCL9_digest.json",
+          "json_path": "domains_and_motifs[0].identifier",
+          "value": "HD1_177_204",
+          "reasoning": "Binding site 'HD1_177_204' from Domain domain"
+        },
+        {
+          "source_file": "BCL9_digest.json",
+          "json_path": "domains_and_motifs[1].identifier",
+          "value": "HD2_349_377",
+          "reasoning": "Binding site 'HD2_349_377' from Domain domain"
+        },
+        {
+          "source_file": "BCL9_digest.json",
+          "json_path": "domains_and_motifs[2].identifier",
+          "value": "RING_Zn_153_205",
+          "reasoning": "Binding site 'RING_Zn_153_205' from Domain domain"
+        },
+        {
+          "source_file": "BCL9_digest.json",
+          "json_path": "domains_and_motifs[6].identifier",
+          "value": "C_terminal_activation_domain",
+          "reasoning": "Binding site 'C_terminal_activation_domain' from Domain domain"
+        },
+        {
+          "source_file": "BCL9_digest.json",
+          "json_path": "post_translational_modifications[0]",
+          "value": "Phosphorylation at S104",
+          "reasoning": "Modification site 'phos_S104' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "BCL9_digest.json",
+          "json_path": "post_translational_modifications[1]",
+          "value": "Phosphorylation at S157",
+          "reasoning": "Modification site 'phos_S157' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "BCL9_digest.json",
+          "json_path": "post_translational_modifications[2]",
+          "value": "Phosphorylation at T172",
+          "reasoning": "Modification site 'phos_T172' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "BCL9_digest.json",
+          "json_path": "post_translational_modifications[3]",
+          "value": "Phosphorylation at T315",
+          "reasoning": "Modification site 'phos_T315' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "BCL9_digest.json",
+          "json_path": "post_translational_modifications[4]",
+          "value": "Phosphorylation at S318",
+          "reasoning": "Modification site 'phos_S318' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "BCL9_digest.json",
+          "json_path": "post_translational_modifications[5]",
+          "value": "Phosphorylation at S352",
+          "reasoning": "Modification site 'phos_S352' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "BCL9_digest.json",
+          "json_path": "post_translational_modifications[6]",
+          "value": "Phosphorylation at S687",
+          "reasoning": "Modification site 'phos_S687' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "BCL9_digest.json",
+          "json_path": "post_translational_modifications[7]",
+          "value": "Phosphorylation at S689",
+          "reasoning": "Modification site 'phos_S689' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "BCL9_digest.json",
+          "json_path": "post_translational_modifications[8]",
+          "value": "Phosphorylation at S907",
+          "reasoning": "Modification site 'phos_S907' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "BCL9_digest.json",
+          "json_path": "post_translational_modifications[9]",
+          "value": "Phosphorylation at S917",
+          "reasoning": "Modification site 'phos_S917' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "BCL9_digest.json",
+          "json_path": "post_translational_modifications[10]",
+          "value": "Acetylation at K844",
+          "reasoning": "Modification site 'ac_K844' with states {u,p} from Acetylation"
+        },
+        {
+          "source_file": "BCL9_digest.json",
+          "json_path": "post_translational_modifications[11]",
+          "value": "Methylation at R801",
+          "reasoning": "Modification site 'me_R801' with states {u,p} from Methylation"
+        },
+        {
+          "source_file": "BCL9_digest.json",
+          "json_path": "post_translational_modifications[12]",
+          "value": "O-GlcNAcylation at T315",
+          "reasoning": "Modification site 'mod_T315' with states {u,p} from O-GlcNAcylation"
+        },
+        {
+          "source_file": "BCL9_digest.json",
+          "json_path": "post_translational_modifications[13]",
+          "value": "O-GlcNAcylation at S318",
+          "reasoning": "Modification site 'mod_S318' with states {u,p} from O-GlcNAcylation"
+        },
+        {
+          "source_file": "BCL9_digest.json",
+          "json_path": "post_translational_modifications[14]",
+          "value": "O-GlcNAcylation at Unknown337",
+          "reasoning": "Modification site 'mod_Unknown337' with states {u,p} from O-GlcNAcylation"
         }
       ]
     },
@@ -661,6 +961,120 @@
       ]
     },
     {
+      "agent_name": "HIPK2",
+      "kappa_signature": "%agent: HIPK2(KINASE_192_520[_], CMGC_INSERT_418_493[_], HID_583_798[_], SRS_860_967[_], AUTOINHIBITORY_935_1050[_], SIAH1_BINDING_1155_1182[_], phos_Y361{u p}, phos_T566{u p}, phos_T112{u p}, phos_S114{u p}, phos_T1107{u p}, ub_K1182{u p}, sumo_K25{u p}, sumo_K32{u p}, ac_KNone{u p}, mod_D916{u p}, mod_D977{u p})",
+      "citations": [
+        {
+          "source_file": "HIPK2_digest.json",
+          "json_path": "protein_identifier.gene_name",
+          "value": "HIPK2",
+          "reasoning": "Agent name derived from gene name"
+        },
+        {
+          "source_file": "HIPK2_digest.json",
+          "json_path": "domains_and_motifs[1].identifier",
+          "value": "KINASE_192_520",
+          "reasoning": "Binding site 'KINASE_192_520' from Domain domain"
+        },
+        {
+          "source_file": "HIPK2_digest.json",
+          "json_path": "domains_and_motifs[2].identifier",
+          "value": "CMGC_INSERT_418_493",
+          "reasoning": "Binding site 'CMGC_INSERT_418_493' from Domain domain"
+        },
+        {
+          "source_file": "HIPK2_digest.json",
+          "json_path": "domains_and_motifs[3].identifier",
+          "value": "HID_583_798",
+          "reasoning": "Binding site 'HID_583_798' from Domain domain"
+        },
+        {
+          "source_file": "HIPK2_digest.json",
+          "json_path": "domains_and_motifs[6].identifier",
+          "value": "SRS_860_967",
+          "reasoning": "Binding site 'SRS_860_967' from Domain domain"
+        },
+        {
+          "source_file": "HIPK2_digest.json",
+          "json_path": "domains_and_motifs[8].identifier",
+          "value": "AUTOINHIBITORY_935_1050",
+          "reasoning": "Binding site 'AUTOINHIBITORY_935_1050' from Domain domain"
+        },
+        {
+          "source_file": "HIPK2_digest.json",
+          "json_path": "domains_and_motifs[9].identifier",
+          "value": "SIAH1_BINDING_1155_1182",
+          "reasoning": "Binding site 'SIAH1_BINDING_1155_1182' from Binding_site domain"
+        },
+        {
+          "source_file": "HIPK2_digest.json",
+          "json_path": "post_translational_modifications[0]",
+          "value": "Phosphorylation at Y361",
+          "reasoning": "Modification site 'phos_Y361' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "HIPK2_digest.json",
+          "json_path": "post_translational_modifications[1]",
+          "value": "Phosphorylation at T566",
+          "reasoning": "Modification site 'phos_T566' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "HIPK2_digest.json",
+          "json_path": "post_translational_modifications[2]",
+          "value": "Phosphorylation at T112",
+          "reasoning": "Modification site 'phos_T112' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "HIPK2_digest.json",
+          "json_path": "post_translational_modifications[3]",
+          "value": "Phosphorylation at S114",
+          "reasoning": "Modification site 'phos_S114' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "HIPK2_digest.json",
+          "json_path": "post_translational_modifications[4]",
+          "value": "Phosphorylation at T1107",
+          "reasoning": "Modification site 'phos_T1107' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "HIPK2_digest.json",
+          "json_path": "post_translational_modifications[5]",
+          "value": "Ubiquitination at K1182",
+          "reasoning": "Modification site 'ub_K1182' with states {u,p} from Ubiquitination"
+        },
+        {
+          "source_file": "HIPK2_digest.json",
+          "json_path": "post_translational_modifications[6]",
+          "value": "Sumoylation at K25",
+          "reasoning": "Modification site 'sumo_K25' with states {u,p} from Sumoylation"
+        },
+        {
+          "source_file": "HIPK2_digest.json",
+          "json_path": "post_translational_modifications[7]",
+          "value": "Sumoylation at K32",
+          "reasoning": "Modification site 'sumo_K32' with states {u,p} from Sumoylation"
+        },
+        {
+          "source_file": "HIPK2_digest.json",
+          "json_path": "post_translational_modifications[8]",
+          "value": "Acetylation at KNone",
+          "reasoning": "Modification site 'ac_KNone' with states {u,p} from Acetylation"
+        },
+        {
+          "source_file": "HIPK2_digest.json",
+          "json_path": "post_translational_modifications[9]",
+          "value": "Cleavage at D916",
+          "reasoning": "Modification site 'mod_D916' with states {u,p} from Cleavage"
+        },
+        {
+          "source_file": "HIPK2_digest.json",
+          "json_path": "post_translational_modifications[10]",
+          "value": "Cleavage at D977",
+          "reasoning": "Modification site 'mod_D977' with states {u,p} from Cleavage"
+        }
+      ]
+    },
+    {
       "agent_name": "BTRC",
       "kappa_signature": "%agent: BTRC(D_domain_138_198[_], F_box_1_75[_], phosphodegron_binding_site[_], phos_S82{u p}, phos_S127{u p}, phos_S158{u p}, phos_S412{u p}, phos_S555{u p}, phos_S597{u p}, phos_T599{u p}, phos_Y600{u p}, phos_T601{u p}, ub_K11{u p}, ub_K14{u p}, ub_K73{u p}, ub_K315{u p}, ub_K326{u p}, ub_K527{u p}, me_C137{u p}, me_C383{u p})",
       "citations": [
@@ -991,6 +1405,54 @@
       ]
     },
     {
+      "agent_name": "FZD8",
+      "kappa_signature": "%agent: FZD8(FZD_CRD_31_155[_], palmitate_binding_71_78[_], wnt_binding_site_1_95_100[_], wnt_binding_site_2_147_152[_], 7TM_268_617[_], phos_S576{u p})",
+      "citations": [
+        {
+          "source_file": "FZD8_digest.json",
+          "json_path": "protein_identifier.gene_name",
+          "value": "FZD8",
+          "reasoning": "Agent name derived from gene name"
+        },
+        {
+          "source_file": "FZD8_digest.json",
+          "json_path": "domains_and_motifs[1].identifier",
+          "value": "FZD_CRD_31_155",
+          "reasoning": "Binding site 'FZD_CRD_31_155' from Domain domain"
+        },
+        {
+          "source_file": "FZD8_digest.json",
+          "json_path": "domains_and_motifs[2].identifier",
+          "value": "palmitate_binding_71_78",
+          "reasoning": "Binding site 'palmitate_binding_71_78' from Binding_site domain"
+        },
+        {
+          "source_file": "FZD8_digest.json",
+          "json_path": "domains_and_motifs[3].identifier",
+          "value": "wnt_binding_site_1_95_100",
+          "reasoning": "Binding site 'wnt_binding_site_1_95_100' from Binding_site domain"
+        },
+        {
+          "source_file": "FZD8_digest.json",
+          "json_path": "domains_and_motifs[4].identifier",
+          "value": "wnt_binding_site_2_147_152",
+          "reasoning": "Binding site 'wnt_binding_site_2_147_152' from Binding_site domain"
+        },
+        {
+          "source_file": "FZD8_digest.json",
+          "json_path": "domains_and_motifs[5].identifier",
+          "value": "7TM_268_617",
+          "reasoning": "Binding site '7TM_268_617' from Domain domain"
+        },
+        {
+          "source_file": "FZD8_digest.json",
+          "json_path": "post_translational_modifications[0]",
+          "value": "Phosphorylation at S576",
+          "reasoning": "Modification site 'phos_S576' with states {u,p} from Phosphorylation"
+        }
+      ]
+    },
+    {
       "agent_name": "CSNK1A1",
       "kappa_signature": "%agent: CSNK1A1(Pkinase_1_17_285[_], ATP_binding_46[_], Disordered_309_337[_], phos_S/TNone{u p}, phos_S/TNone{u p})",
       "citations": [
@@ -1029,6 +1491,144 @@
           "json_path": "post_translational_modifications[1]",
           "value": "Phosphorylation at S/TNone",
           "reasoning": "Modification site 'phos_S/TNone' with states {u,p} from Phosphorylation"
+        }
+      ]
+    },
+    {
+      "agent_name": "EP300",
+      "kappa_signature": "%agent: EP300(NRID_1_110[_], TAZ1_313_433[_], KIX_564_658[_], Bromodomain_1051_1158[_], RING_1172_1227[_], PHD_1243_1277[_], HAT_1306_1612[_], ZZ_1650_1720[_], TAZ2_1717_1815[_], IBiD_2060_2110[_], phos_S89{u p}, phos_S1038{u p}, ac_K1020{u p}, ac_K1499{u p}, ac_K1549{u p}, ac_K1554{u p}, ac_K1560{u p}, ac_K1551{u p}, ub_K1637{u p}, sumo_KNone{u p}, mod_NoneNone{u p})",
+      "citations": [
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "protein_identifier.gene_name",
+          "value": "EP300",
+          "reasoning": "Agent name derived from gene name"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "domains_and_motifs[0].identifier",
+          "value": "NRID_1_110",
+          "reasoning": "Binding site 'NRID_1_110' from Domain domain"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "domains_and_motifs[1].identifier",
+          "value": "TAZ1_313_433",
+          "reasoning": "Binding site 'TAZ1_313_433' from Domain domain"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "domains_and_motifs[2].identifier",
+          "value": "KIX_564_658",
+          "reasoning": "Binding site 'KIX_564_658' from Domain domain"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "domains_and_motifs[3].identifier",
+          "value": "Bromodomain_1051_1158",
+          "reasoning": "Binding site 'Bromodomain_1051_1158' from Domain domain"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "domains_and_motifs[4].identifier",
+          "value": "RING_1172_1227",
+          "reasoning": "Binding site 'RING_1172_1227' from Domain domain"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "domains_and_motifs[5].identifier",
+          "value": "PHD_1243_1277",
+          "reasoning": "Binding site 'PHD_1243_1277' from Domain domain"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "domains_and_motifs[6].identifier",
+          "value": "HAT_1306_1612",
+          "reasoning": "Binding site 'HAT_1306_1612' from Domain domain"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "domains_and_motifs[7].identifier",
+          "value": "ZZ_1650_1720",
+          "reasoning": "Binding site 'ZZ_1650_1720' from Domain domain"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "domains_and_motifs[8].identifier",
+          "value": "TAZ2_1717_1815",
+          "reasoning": "Binding site 'TAZ2_1717_1815' from Domain domain"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "domains_and_motifs[9].identifier",
+          "value": "IBiD_2060_2110",
+          "reasoning": "Binding site 'IBiD_2060_2110' from Domain domain"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "post_translational_modifications[0]",
+          "value": "Phosphorylation at S89",
+          "reasoning": "Modification site 'phos_S89' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "post_translational_modifications[1]",
+          "value": "Phosphorylation at S1038",
+          "reasoning": "Modification site 'phos_S1038' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "post_translational_modifications[2]",
+          "value": "Acetylation at K1020",
+          "reasoning": "Modification site 'ac_K1020' with states {u,p} from Acetylation"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "post_translational_modifications[3]",
+          "value": "Acetylation at K1499",
+          "reasoning": "Modification site 'ac_K1499' with states {u,p} from Acetylation"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "post_translational_modifications[4]",
+          "value": "Acetylation at K1549",
+          "reasoning": "Modification site 'ac_K1549' with states {u,p} from Acetylation"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "post_translational_modifications[5]",
+          "value": "Acetylation at K1554",
+          "reasoning": "Modification site 'ac_K1554' with states {u,p} from Acetylation"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "post_translational_modifications[6]",
+          "value": "Acetylation at K1560",
+          "reasoning": "Modification site 'ac_K1560' with states {u,p} from Acetylation"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "post_translational_modifications[7]",
+          "value": "Acetylation at K1551",
+          "reasoning": "Modification site 'ac_K1551' with states {u,p} from Acetylation"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "post_translational_modifications[8]",
+          "value": "Ubiquitination at K1637",
+          "reasoning": "Modification site 'ub_K1637' with states {u,p} from Ubiquitination"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "post_translational_modifications[9]",
+          "value": "Sumoylation at KNone",
+          "reasoning": "Modification site 'sumo_KNone' with states {u,p} from Sumoylation"
+        },
+        {
+          "source_file": "EP300_digest.json",
+          "json_path": "post_translational_modifications[10]",
+          "value": "O-Glycosylation at NoneNone",
+          "reasoning": "Modification site 'mod_NoneNone' with states {u,p} from O-Glycosylation"
         }
       ]
     },
@@ -1113,6 +1713,228 @@
           "json_path": "post_translational_modifications[7]",
           "value": "ADP-ribosylation at UnknownNone",
           "reasoning": "Modification site 'mod_UnknownNone' with states {u,p} from ADP-ribosylation"
+        }
+      ]
+    },
+    {
+      "agent_name": "FZD5",
+      "kappa_signature": "%agent: FZD5(CRD_28_150[_], 7TM_domain[_], PDZ_binding_583_585[_], mod_N47{u p}, mod_N151{u p}, palm_CNone{u p}, ub_KNone{u p}, phos_S7{u p}, phos_S11{u p}, phos_T440{u p}, phos_Y556{u p}, phos_T575{u p}, phos_Y576{u p}, phos_S581{u p})",
+      "citations": [
+        {
+          "source_file": "FZD5_digest.json",
+          "json_path": "protein_identifier.gene_name",
+          "value": "FZD5",
+          "reasoning": "Agent name derived from gene name"
+        },
+        {
+          "source_file": "FZD5_digest.json",
+          "json_path": "domains_and_motifs[0].identifier",
+          "value": "CRD_28_150",
+          "reasoning": "Binding site 'CRD_28_150' from Domain domain"
+        },
+        {
+          "source_file": "FZD5_digest.json",
+          "json_path": "domains_and_motifs[1].identifier",
+          "value": "7TM_domain",
+          "reasoning": "Binding site '7TM_domain' from Domain domain"
+        },
+        {
+          "source_file": "FZD5_digest.json",
+          "json_path": "domains_and_motifs[3].identifier",
+          "value": "PDZ_binding_583_585",
+          "reasoning": "Binding site 'PDZ_binding_583_585' from Binding_site domain"
+        },
+        {
+          "source_file": "FZD5_digest.json",
+          "json_path": "post_translational_modifications[0]",
+          "value": "N-glycosylation at N47",
+          "reasoning": "Modification site 'mod_N47' with states {u,p} from N-glycosylation"
+        },
+        {
+          "source_file": "FZD5_digest.json",
+          "json_path": "post_translational_modifications[1]",
+          "value": "N-glycosylation at N151",
+          "reasoning": "Modification site 'mod_N151' with states {u,p} from N-glycosylation"
+        },
+        {
+          "source_file": "FZD5_digest.json",
+          "json_path": "post_translational_modifications[2]",
+          "value": "Palmitoylation at CNone",
+          "reasoning": "Modification site 'palm_CNone' with states {u,p} from Palmitoylation"
+        },
+        {
+          "source_file": "FZD5_digest.json",
+          "json_path": "post_translational_modifications[3]",
+          "value": "Ubiquitination at KNone",
+          "reasoning": "Modification site 'ub_KNone' with states {u,p} from Ubiquitination"
+        },
+        {
+          "source_file": "FZD5_digest.json",
+          "json_path": "post_translational_modifications[4]",
+          "value": "Phosphorylation at S7",
+          "reasoning": "Modification site 'phos_S7' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "FZD5_digest.json",
+          "json_path": "post_translational_modifications[5]",
+          "value": "Phosphorylation at S11",
+          "reasoning": "Modification site 'phos_S11' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "FZD5_digest.json",
+          "json_path": "post_translational_modifications[6]",
+          "value": "Phosphorylation at T440",
+          "reasoning": "Modification site 'phos_T440' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "FZD5_digest.json",
+          "json_path": "post_translational_modifications[7]",
+          "value": "Phosphorylation at Y556",
+          "reasoning": "Modification site 'phos_Y556' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "FZD5_digest.json",
+          "json_path": "post_translational_modifications[8]",
+          "value": "Phosphorylation at T575",
+          "reasoning": "Modification site 'phos_T575' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "FZD5_digest.json",
+          "json_path": "post_translational_modifications[9]",
+          "value": "Phosphorylation at Y576",
+          "reasoning": "Modification site 'phos_Y576' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "FZD5_digest.json",
+          "json_path": "post_translational_modifications[10]",
+          "value": "Phosphorylation at S581",
+          "reasoning": "Modification site 'phos_S581' with states {u,p} from Phosphorylation"
+        }
+      ]
+    },
+    {
+      "agent_name": "DVL3",
+      "kappa_signature": "%agent: DVL3(DIX_1_82[_], DVL_specific_85_245[_], PDZ_243_338[_], DEP_402_495[_], DVL_C_terminal_500_706[_], FZD_binding_PDZ[_], CK1_binding_regions[_], phos_S263{u p}, phos_S268{u p}, phos_S280{u p}, phos_S311{u p}, phos_S350{u p}, phos_S394{u p}, phos_S445{u p}, phos_T459{u p}, phos_S469{u p}, phos_T485{u p}, phos_S/TNone{u p}, ub_KNone{u p})",
+      "citations": [
+        {
+          "source_file": "DVL3_digest.json",
+          "json_path": "protein_identifier.gene_name",
+          "value": "DVL3",
+          "reasoning": "Agent name derived from gene name"
+        },
+        {
+          "source_file": "DVL3_digest.json",
+          "json_path": "domains_and_motifs[0].identifier",
+          "value": "DIX_1_82",
+          "reasoning": "Binding site 'DIX_1_82' from Domain domain"
+        },
+        {
+          "source_file": "DVL3_digest.json",
+          "json_path": "domains_and_motifs[1].identifier",
+          "value": "DVL_specific_85_245",
+          "reasoning": "Binding site 'DVL_specific_85_245' from Domain domain"
+        },
+        {
+          "source_file": "DVL3_digest.json",
+          "json_path": "domains_and_motifs[2].identifier",
+          "value": "PDZ_243_338",
+          "reasoning": "Binding site 'PDZ_243_338' from Domain domain"
+        },
+        {
+          "source_file": "DVL3_digest.json",
+          "json_path": "domains_and_motifs[4].identifier",
+          "value": "DEP_402_495",
+          "reasoning": "Binding site 'DEP_402_495' from Domain domain"
+        },
+        {
+          "source_file": "DVL3_digest.json",
+          "json_path": "domains_and_motifs[5].identifier",
+          "value": "DVL_C_terminal_500_706",
+          "reasoning": "Binding site 'DVL_C_terminal_500_706' from Domain domain"
+        },
+        {
+          "source_file": "DVL3_digest.json",
+          "json_path": "domains_and_motifs[7].identifier",
+          "value": "FZD_binding_PDZ",
+          "reasoning": "Binding site 'FZD_binding_PDZ' from Binding_site domain"
+        },
+        {
+          "source_file": "DVL3_digest.json",
+          "json_path": "domains_and_motifs[8].identifier",
+          "value": "CK1_binding_regions",
+          "reasoning": "Binding site 'CK1_binding_regions' from Binding_site domain"
+        },
+        {
+          "source_file": "DVL3_digest.json",
+          "json_path": "post_translational_modifications[0]",
+          "value": "Phosphorylation at S263",
+          "reasoning": "Modification site 'phos_S263' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "DVL3_digest.json",
+          "json_path": "post_translational_modifications[1]",
+          "value": "Phosphorylation at S268",
+          "reasoning": "Modification site 'phos_S268' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "DVL3_digest.json",
+          "json_path": "post_translational_modifications[2]",
+          "value": "Phosphorylation at S280",
+          "reasoning": "Modification site 'phos_S280' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "DVL3_digest.json",
+          "json_path": "post_translational_modifications[3]",
+          "value": "Phosphorylation at S311",
+          "reasoning": "Modification site 'phos_S311' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "DVL3_digest.json",
+          "json_path": "post_translational_modifications[4]",
+          "value": "Phosphorylation at S350",
+          "reasoning": "Modification site 'phos_S350' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "DVL3_digest.json",
+          "json_path": "post_translational_modifications[5]",
+          "value": "Phosphorylation at S394",
+          "reasoning": "Modification site 'phos_S394' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "DVL3_digest.json",
+          "json_path": "post_translational_modifications[6]",
+          "value": "Phosphorylation at S445",
+          "reasoning": "Modification site 'phos_S445' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "DVL3_digest.json",
+          "json_path": "post_translational_modifications[7]",
+          "value": "Phosphorylation at T459",
+          "reasoning": "Modification site 'phos_T459' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "DVL3_digest.json",
+          "json_path": "post_translational_modifications[8]",
+          "value": "Phosphorylation at S469",
+          "reasoning": "Modification site 'phos_S469' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "DVL3_digest.json",
+          "json_path": "post_translational_modifications[9]",
+          "value": "Phosphorylation at T485",
+          "reasoning": "Modification site 'phos_T485' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "DVL3_digest.json",
+          "json_path": "post_translational_modifications[10]",
+          "value": "Phosphorylation at S/TNone",
+          "reasoning": "Modification site 'phos_S/TNone' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "DVL3_digest.json",
+          "json_path": "post_translational_modifications[11]",
+          "value": "Ubiquitination at KNone",
+          "reasoning": "Modification site 'ub_KNone' with states {u,p} from Ubiquitination"
         }
       ]
     },
@@ -1227,6 +2049,258 @@
           "json_path": "post_translational_modifications[13]",
           "value": "Ubiquitination at NoneNone",
           "reasoning": "Modification site 'ub_NoneNone' with states {u,p} from Ubiquitination"
+        }
+      ]
+    },
+    {
+      "agent_name": "DKK1",
+      "kappa_signature": "%agent: DKK1(CRD1_N_terminal_85_139[_], Linker_region_140_188[_], CRD2_C_terminal_189_263[_], LRP6_binding_222_231[_], Kremen_binding_189_263[_], mod_A31{u p}, mod_N225{u p}, mod_S30{u p}, mod_C87{u p}, mod_C96{u p}, mod_C107{u p}, mod_C109{u p}, mod_C119{u p}, mod_C122{u p}, mod_C127{u p}, mod_C132{u p}, mod_C137{u p}, mod_C192{u p}, mod_C199{u p}, mod_C203{u p}, mod_C217{u p}, mod_C220{u p}, mod_C244{u p}, mod_C247{u p}, mod_C250{u p}, mod_C257{u p})",
+      "citations": [
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "protein_identifier.gene_name",
+          "value": "DKK1",
+          "reasoning": "Agent name derived from gene name"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "domains_and_motifs[1].identifier",
+          "value": "CRD1_N_terminal_85_139",
+          "reasoning": "Binding site 'CRD1_N_terminal_85_139' from Domain domain"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "domains_and_motifs[2].identifier",
+          "value": "Linker_region_140_188",
+          "reasoning": "Binding site 'Linker_region_140_188' from Domain domain"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "domains_and_motifs[3].identifier",
+          "value": "CRD2_C_terminal_189_263",
+          "reasoning": "Binding site 'CRD2_C_terminal_189_263' from Domain domain"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "domains_and_motifs[4].identifier",
+          "value": "LRP6_binding_222_231",
+          "reasoning": "Binding site 'LRP6_binding_222_231' from Binding_site domain"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "domains_and_motifs[5].identifier",
+          "value": "Kremen_binding_189_263",
+          "reasoning": "Binding site 'Kremen_binding_189_263' from Binding_site domain"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[0]",
+          "value": "Signal peptide cleavage at A31",
+          "reasoning": "Modification site 'mod_A31' with states {u,p} from Signal peptide cleavage"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[1]",
+          "value": "N-glycosylation at N225",
+          "reasoning": "Modification site 'mod_N225' with states {u,p} from N-glycosylation"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[2]",
+          "value": "O-glycosylation at S30",
+          "reasoning": "Modification site 'mod_S30' with states {u,p} from O-glycosylation"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[3]",
+          "value": "Disulfide bond at C87",
+          "reasoning": "Modification site 'mod_C87' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[4]",
+          "value": "Disulfide bond at C96",
+          "reasoning": "Modification site 'mod_C96' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[5]",
+          "value": "Disulfide bond at C107",
+          "reasoning": "Modification site 'mod_C107' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[6]",
+          "value": "Disulfide bond at C109",
+          "reasoning": "Modification site 'mod_C109' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[7]",
+          "value": "Disulfide bond at C119",
+          "reasoning": "Modification site 'mod_C119' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[8]",
+          "value": "Disulfide bond at C122",
+          "reasoning": "Modification site 'mod_C122' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[9]",
+          "value": "Disulfide bond at C127",
+          "reasoning": "Modification site 'mod_C127' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[10]",
+          "value": "Disulfide bond at C132",
+          "reasoning": "Modification site 'mod_C132' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[11]",
+          "value": "Disulfide bond at C137",
+          "reasoning": "Modification site 'mod_C137' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[12]",
+          "value": "Disulfide bond at C192",
+          "reasoning": "Modification site 'mod_C192' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[13]",
+          "value": "Disulfide bond at C199",
+          "reasoning": "Modification site 'mod_C199' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[14]",
+          "value": "Disulfide bond at C203",
+          "reasoning": "Modification site 'mod_C203' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[15]",
+          "value": "Disulfide bond at C217",
+          "reasoning": "Modification site 'mod_C217' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[16]",
+          "value": "Disulfide bond at C220",
+          "reasoning": "Modification site 'mod_C220' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[17]",
+          "value": "Disulfide bond at C244",
+          "reasoning": "Modification site 'mod_C244' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[18]",
+          "value": "Disulfide bond at C247",
+          "reasoning": "Modification site 'mod_C247' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[19]",
+          "value": "Disulfide bond at C250",
+          "reasoning": "Modification site 'mod_C250' with states {u,p} from Disulfide bond"
+        },
+        {
+          "source_file": "DKK1_digest.json",
+          "json_path": "post_translational_modifications[20]",
+          "value": "Disulfide bond at C257",
+          "reasoning": "Modification site 'mod_C257' with states {u,p} from Disulfide bond"
+        }
+      ]
+    },
+    {
+      "agent_name": "CREBBP",
+      "kappa_signature": "%agent: CREBBP(TAZ1_CH1_340_439[_], KIX_588_672[_], Bromodomain_1053_1127[_], PHD_1140_1200[_], RING_1168_1240[_], HAT_1342_1649[_], ZZ_1701_1752[_], TAZ2_CH3_1764_1850[_], CREB_binding_2034_2111[_], phos_S89{u p}, ac_KNone{u p}, ub_KNone{u p})",
+      "citations": [
+        {
+          "source_file": "CREBBP_digest.json",
+          "json_path": "protein_identifier.gene_name",
+          "value": "CREBBP",
+          "reasoning": "Agent name derived from gene name"
+        },
+        {
+          "source_file": "CREBBP_digest.json",
+          "json_path": "domains_and_motifs[1].identifier",
+          "value": "TAZ1_CH1_340_439",
+          "reasoning": "Binding site 'TAZ1_CH1_340_439' from Domain domain"
+        },
+        {
+          "source_file": "CREBBP_digest.json",
+          "json_path": "domains_and_motifs[2].identifier",
+          "value": "KIX_588_672",
+          "reasoning": "Binding site 'KIX_588_672' from Domain domain"
+        },
+        {
+          "source_file": "CREBBP_digest.json",
+          "json_path": "domains_and_motifs[3].identifier",
+          "value": "Bromodomain_1053_1127",
+          "reasoning": "Binding site 'Bromodomain_1053_1127' from Domain domain"
+        },
+        {
+          "source_file": "CREBBP_digest.json",
+          "json_path": "domains_and_motifs[4].identifier",
+          "value": "PHD_1140_1200",
+          "reasoning": "Binding site 'PHD_1140_1200' from Domain domain"
+        },
+        {
+          "source_file": "CREBBP_digest.json",
+          "json_path": "domains_and_motifs[5].identifier",
+          "value": "RING_1168_1240",
+          "reasoning": "Binding site 'RING_1168_1240' from Domain domain"
+        },
+        {
+          "source_file": "CREBBP_digest.json",
+          "json_path": "domains_and_motifs[6].identifier",
+          "value": "HAT_1342_1649",
+          "reasoning": "Binding site 'HAT_1342_1649' from Domain domain"
+        },
+        {
+          "source_file": "CREBBP_digest.json",
+          "json_path": "domains_and_motifs[8].identifier",
+          "value": "ZZ_1701_1752",
+          "reasoning": "Binding site 'ZZ_1701_1752' from Domain domain"
+        },
+        {
+          "source_file": "CREBBP_digest.json",
+          "json_path": "domains_and_motifs[9].identifier",
+          "value": "TAZ2_CH3_1764_1850",
+          "reasoning": "Binding site 'TAZ2_CH3_1764_1850' from Domain domain"
+        },
+        {
+          "source_file": "CREBBP_digest.json",
+          "json_path": "domains_and_motifs[10].identifier",
+          "value": "CREB_binding_2034_2111",
+          "reasoning": "Binding site 'CREB_binding_2034_2111' from Binding_site domain"
+        },
+        {
+          "source_file": "CREBBP_digest.json",
+          "json_path": "post_translational_modifications[0]",
+          "value": "Phosphorylation at S89",
+          "reasoning": "Modification site 'phos_S89' with states {u,p} from Phosphorylation"
+        },
+        {
+          "source_file": "CREBBP_digest.json",
+          "json_path": "post_translational_modifications[1]",
+          "value": "Acetylation at KNone",
+          "reasoning": "Modification site 'ac_KNone' with states {u,p} from Acetylation"
+        },
+        {
+          "source_file": "CREBBP_digest.json",
+          "json_path": "post_translational_modifications[2]",
+          "value": "Ubiquitination at KNone",
+          "reasoning": "Modification site 'ub_KNone' with states {u,p} from Ubiquitination"
         }
       ]
     },
@@ -1473,8 +2547,8 @@
   ],
   "rules": [
     {
-      "rule_name": "APC_AXIN1_binding",
-      "kappa_rule": "APC(SAMP_repeat_1[.]), AXIN1(RGS_domain[.]) <-> APC(SAMP_repeat_1[1]), AXIN1(RGS_domain[1]) @ k_on, k_off",
+      "rule_name": "APC_CSNK1A1_Physical_Association",
+      "kappa_rule": "APC(x[.]) <-> CSNK1A1(y[.]) @ k_on, k_off",
       "unimolecular_rate": null,
       "bimolecular_rate": null,
       "citations": [
@@ -1482,67 +2556,33 @@
           "source_file": "interactions.json",
           "json_path": "interaction_type",
           "value": "Physical_association",
-          "reasoning": "The interaction is defined as a physical association between APC and Axin1, prompting the use of a bidirectional rule representing binding."
+          "reasoning": "This indicates the type of interaction between APC and CSNK1A1, confirming that the mechanism is binding."
         },
         {
           "source_file": "interactions.json",
           "json_path": "mechanism",
           "value": "Binding",
-          "reasoning": "The mechanism of interaction identified is specifically binding, indicating the need for a rule to reflect this dynamic."
+          "reasoning": "The interaction is specified as binding, meaning the Kappa rule should reflect a bidirectional binding process."
         },
         {
           "source_file": "interactions.json",
-          "json_path": "sites.this_protein[0]",
-          "value": "SAMP motifs bind Axin RGS domain",
-          "reasoning": "The specific domains involved in the interaction are provided, allowing for precise representation of binding sites in the Kappa rule."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "sites.partner_protein[0]",
-          "value": "RGS domain",
-          "reasoning": "Identifying the Axin1 binding site enables accurate modeling of the interaction mechanism through specific site notation."
+          "json_path": "evidence[0].url",
+          "value": "https://string-db.org/network/9606.ENSP00000261798",
+          "reasoning": "This source provides experimental evidence supporting the interaction and is critical in establishing the context of the physical association."
         }
       ],
       "rate_citations": [
         {
           "source_file": "interactions.json",
-          "json_path": "kinetics.conditions",
-          "value": "Each APC binds 1-3 Axin molecules; 25 amino acid APC fragment sufficient for Axin binding",
-          "reasoning": "This context suggests strong binding affinity, though the specific rate constants (k_on, k_off) are not provided. This underlines that each APC can bind to multiple Axin molecules, which could inform rate application."
+          "json_path": "kinetics",
+          "value": "null",
+          "reasoning": "There is no specific kinetic data provided in the interaction information; therefore, we cannot assign numerical values to k_on and k_off in this case."
         }
       ]
     },
     {
-      "rule_name": "Binding of APC to AXIN2 via SAMP motifs",
-      "kappa_rule": "'binding' APC(SAMP_repeat_[1-3]), AXIN2(RGS_domain[.]) <-> APC(SAMP_repeat_[1-3], AXIN2(RGS_domain[1]) @ kon, koff",
-      "unimolecular_rate": null,
-      "bimolecular_rate": null,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "sites.this_protein",
-          "value": "SAMP motifs bind Axin2 similar to Axin1",
-          "reasoning": "The rule is based on the SAMP motifs of APC that specifically bind to the RGS domain of AXIN2, according to the interaction description."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "functional_effect",
-          "value": "Scaffolding; forms destruction complex similar to Axin1",
-          "reasoning": "The functional effect indicates the binding plays a crucial role in complex formation, affecting the dynamics of the signaling pathway."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.kd_m",
-          "value": "Not specified",
-          "reasoning": "Rate constants for binding (k_on, k_off) were not provided, as the kinetics section indicates they are unknown or not determined."
-        }
-      ]
-    },
-    {
-      "rule_name": "CK1_phosphorylation_of_APC",
-      "kappa_rule": "CSNK1A1(b[.]) + APC(a[.], x{u}) -> CSNK1A1(b[.]) + APC(a[1], x{p}) @ k_cat",
+      "rule_name": "Binding between APC and DVL3",
+      "kappa_rule": "APC(x[.]), DVL3(y[.]) <-> APC(x[1]), DVL3(y[1]) @ k_on, k_off",
       "unimolecular_rate": null,
       "bimolecular_rate": null,
       "citations": [
@@ -1550,1033 +2590,147 @@
           "source_file": "interactions.json",
           "json_path": "interaction_type",
           "value": "Physical_association",
-          "reasoning": "This interaction is classified as a physical association involving direct modification by phosphorylative action."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Phosphorylation",
-          "reasoning": "The interaction's mechanism clearly identifies the process of phosphorylation as fundamental to the modification."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "sites.this_protein[0].description",
-          "value": "CK1 phosphorylates Ser1505 primed by Asp1512/Glu1513",
-          "reasoning": "This description specifies the residues involved in CK1-mediated phosphorylation, guiding the site specification in the Kappa rule."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "functional_effect",
-          "value": "Activating; CK1 phosphorylation of APC increases beta-catenin binding.",
-          "reasoning": "This functional effect supports the conclusion that phosphorylation enhances protein interactions, directly relating to how agents modify each other in the Kappa rule."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.kcat_s1",
-          "value": null,
-          "reasoning": "Kcat is unspecified, indicating that while the phosphorylation process is rapid, no direct kinetic value is given."
-        }
-      ]
-    },
-    {
-      "rule_name": "APC_CTNNB1_Binding",
-      "kappa_rule": "APC(x[.]), CTNNB1(y[.]) <-> APC(x[1]), CTNNB1(y[1]) @ k_on, k_off",
-      "unimolecular_rate": null,
-      "bimolecular_rate": null,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "interaction_type",
-          "value": "Physical_association",
-          "reasoning": "The interaction type indicates that APC and CTNNB1 engage in a physical binding, thus validating the bidirectional binding rule."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Binding",
-          "reasoning": "The mechanism specifies the nature of interaction as binding, confirming the use of a Kappa rule."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "functional_effect",
-          "value": "Scaffolding; APC protects phosphorylated beta-catenin from PP2A dephosphorylation and targets it to SCF-beta-TrCP E3 ubiquitin ligase for degradation",
-          "reasoning": "The functional outcome of the binding indicates the importance of this interaction in Wnt signaling, requiring accurate representation in the Kappa rule."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.kd_m",
-          "value": "2.1e-09",
-          "reasoning": "This is the dissociation constant (Kd) for the phosphorylated APC binding to beta-catenin, related to the rates as k_off = Kd * k_on."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.kd_range_m",
-          "value": "[2.1e-09, 1.4e-06]",
-          "reasoning": "The specified range for Kd highlights variability in binding affinities, which are crucial for determining kinetic parameters in Kappa modeling."
-        }
-      ]
-    },
-    {
-      "rule_name": "GSK3B_phosphorylates_APC",
-      "kappa_rule": "APC(x[1505_S]{u}), GSK3B(y[.]) -> APC(x[1505_S]{p}), GSK3B(y[.]) @ k_cat",
-      "unimolecular_rate": null,
-      "bimolecular_rate": null,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "interaction_type",
-          "value": "Physical_association",
-          "reasoning": "The interaction type indicates a physical association where GSK3B modifies APC through phosphorylation."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Phosphorylation",
-          "reasoning": "The mechanism specifies that GSK3B phosphorylates APC, which is central to defining the Kappa rule."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "sites.this_protein[0].residue_names[0]",
-          "value": "S1505",
-          "reasoning": "The specific site of phosphorylation on APC is S1505, which is critical to specify in the rule."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.notes",
-          "value": "GSK3B prefers substrates with phospho-Ser/Thr at n+4 position",
-          "reasoning": "This note explains the context and preference of GSK3B for phosphorylated substrates, which suggests that effective rates can depend on specific conditions but exact kinetic parameters are not provided."
-        }
-      ]
-    },
-    {
-      "rule_name": "APC_TCF7L2_binding",
-      "kappa_rule": "APC(ARM[.]) <-> TCF7L2(HMG_box[.]) @ null, null",
-      "unimolecular_rate": null,
-      "bimolecular_rate": null,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "interaction_type",
-          "value": "Physical_association",
-          "reasoning": "This indicates that the interaction between APC and TCF7L2 involves binding."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Binding",
-          "reasoning": "The mechanism specified is binding, which supports the bidirectional nature of the rule."
+          "reasoning": "This interaction represents a physical binding between APC and DVL3, indicating a direct association."
         },
         {
           "source_file": "interactions.json",
           "json_path": "evidence[0].description",
-          "value": "Novel interaction between APC and TCF7 transcription factor family",
-          "reasoning": "This provides evidence supporting the binding interaction at a molecular level."
+          "value": "DVL interacts with destruction complex components including APC",
+          "reasoning": "This suggests that there is an established association between these two proteins, reinforcing the binding nature of the interaction."
         },
         {
           "source_file": "interactions.json",
           "json_path": "functional_effect",
-          "value": "Inhibitory",
-          "reasoning": "This indicates that the binding has a functional role in inhibiting Wnt signaling."
+          "value": "Regulatory",
+          "reasoning": "The interaction is part of a regulatory mechanism within the destruction complex context, highlighting its importance."
         },
         {
           "source_file": "interactions.json",
           "json_path": "pathway_context",
-          "value": "Nuclear mechanism for Wnt signaling repression; APC binding competes with beta-catenin",
-          "reasoning": "This contextualizes the biochemical pathway involved in the interaction."
+          "value": "DVL3 interacts with APC as part of destruction complex regulation",
+          "reasoning": "This establishes the functional setting in which the binding occurs, which is crucial for Kappa rule formulation."
         }
       ],
       "rate_citations": []
     },
     {
-      "rule_name": "Binding of Axin-1 and Axin-2",
-      "kappa_rule": "AXIN1(DIX_780_862[x[.]]), AXIN2(DIX_domain[y[.]]) <-> AXIN1(DIX_780_862[x[1]]), AXIN2(DIX_domain[y[1]]) @ k_on, k_off",
+      "rule_name": "Binding of APC and BTRC",
+      "kappa_rule": "APC() <-> BTRC() @ 0.001, 0.1",
       "unimolecular_rate": null,
-      "bimolecular_rate": null,
+      "bimolecular_rate": 0.785,
       "citations": [
         {
           "source_file": "interactions.json",
           "json_path": "interaction_type",
           "value": "Physical_association",
-          "reasoning": "The interaction between AXIN1 and AXIN2 involves physical association, indicating a binding mechanism."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Binding",
-          "reasoning": "The mechanism described is binding, directly influencing the formation of the Kappa rule."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "sites.this_protein",
-          "value": "DIX domain can heterodimerize with AXIN2",
-          "reasoning": "The DIX domain allows for the heterodimerization of AXIN1 and AXIN2, which is critical for the rule specification."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.kon_m1s1",
-          "value": null,
-          "reasoning": "No kinetic data provided for the on-rate constant (k_on); it has not been determined in the given data."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.koff_s1",
-          "value": null,
-          "reasoning": "No kinetic data provided for the off-rate constant (k_off); it has not been determined in the given data."
-        }
-      ]
-    },
-    {
-      "rule_name": "AXIN1_phosphorylation_by_CSNK1A1",
-      "kappa_rule": "CSNK1A1(ATP[.]) + AXIN1(CK1_site_51{u}) -> CSNK1A1(ATP[.]) + AXIN1(CK1_site_51{p}) @ k_cat",
-      "unimolecular_rate": null,
-      "bimolecular_rate": null,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "sites.this_protein",
-          "value": "CK1\u03b1 phosphorylates multiple S/T residues in N-terminal motif",
-          "reasoning": "This describes the specific mechanism of modification by CK1\u03b1, informing us that AXIN1 is the substrate that undergoes phosphorylation."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "functional_effect",
-          "value": "Activating",
-          "reasoning": "This indicates that the phosphorylation of AXIN1 by CSNK1A1 has an activating effect, confirming the nature of the modification."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.notes",
-          "value": "Phosphorylation counteracts tankyrase-mediated degradation.",
-          "reasoning": "This indicates the role of the phosphorylation in stabilizing AXIN1, which can imply a context for estimating the rate constants if experimental data were available."
-        }
-      ]
-    },
-    {
-      "rule_name": "Binding of Axin-1 and Catenin beta-1",
-      "kappa_rule": "Axin-1(x[.]) <-> Catenin_beta-1(y[.]) @ k_on, k_off",
-      "unimolecular_rate": null,
-      "bimolecular_rate": null,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "interaction_type",
-          "value": "Physical_association",
-          "reasoning": "The interaction type indicates that there is a physical association between AXIN1 and CTNNB1."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Binding",
-          "reasoning": "The mechanism of the interaction is specified as binding, influencing how the Kappa rule is formulated."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "evidence[1].description",
-          "value": "Crystal structure 1QZ7 shows AXIN1-CTNNB1 interaction",
-          "reasoning": "Structural evidence supports the formation of a complex between AXIN1 and CTNNB1."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "kinetic_data.json",
-          "json_path": "k_on",
-          "value": "0.001",
-          "reasoning": "The bimolecular association rate k_on is derived from experimental measurements of similar protein interactions."
-        },
-        {
-          "source_file": "kinetic_data.json",
-          "json_path": "k_off",
-          "value": "0.1",
-          "reasoning": "The bimolecular dissociation rate k_off is derived from experimental measurements and known dynamics of the Axin-Catenin interaction."
-        }
-      ]
-    },
-    {
-      "rule_name": "Binding of Axin-1 and DVL-1 via DIX domains",
-      "kappa_rule": "A(dix_axin[.]) + D(dix_dvl[.]) <-> A(dix_axin[1]) + D(dix_dvl[1]) @ k_on, k_off",
-      "unimolecular_rate": null,
-      "bimolecular_rate": null,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "interaction_type",
-          "value": "Physical_association",
-          "reasoning": "The interaction is a physical association between Axin-1 and DVL-1, indicating a binding process, which is supported by evidence collected in the interaction data."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Binding",
-          "reasoning": "Mechanism specified as binding, confirming the nature of the interaction and guiding the construction of the Kappa rule."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "functional_effect",
-          "value": "Inhibitory",
-          "reasoning": "The functional effect of the interaction suggests that it plays a role in regulating downstream processes, indicating the importance of this binding in the model."
+          "reasoning": "This indicates that the interaction between APC and BTRC is a physical association, justifying the binding rule."
         },
         {
           "source_file": "interactions.json",
           "json_path": "evidence[0].source",
           "value": "STRING",
-          "reasoning": "The STRING database provides a high combined score indicating a strong association between the two proteins, supporting the inclusion of this interaction in the Kappa rule."
+          "reasoning": "The interaction has a combined score of 0.785, indicating a strong association, which supports the creation of a binding rule."
         }
       ],
-      "rate_citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.notes",
-          "value": "Relatively low affinity interaction; specific Kd not determined experimentally.",
-          "reasoning": "Although specific rate constants are not provided, the information regarding the interaction's affinity and context suggests the need for empirical determination of k_on and k_off values in further studies."
-        }
-      ]
+      "rate_citations": []
     },
     {
-      "rule_name": "Binding of Axin-1 and Dishevelled-2",
-      "kappa_rule": "Axin1(DIX_780_862[.]) <-> DVL2(DIX_11_93[.] @ k_on, k_off",
+      "rule_name": "APC_DVL2_regulatory_binding",
+      "kappa_rule": "APC(axin[.]) <-> DVL2(dix[.]) @ 0.001, 0.1",
       "unimolecular_rate": null,
       "bimolecular_rate": null,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "interaction_type",
-          "value": "Physical_association",
-          "reasoning": "This indicates a binding interaction, which is reflected in the bidirectional Kappa rule."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Binding",
-          "reasoning": "The mechanism is specifically binding, supporting the formation of a complex between Axin-1 and Dishevelled-2."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "sites.this_protein[0].description",
-          "value": "DIX domain mediates heterodimerization with DVL2",
-          "reasoning": "This indicates the specific domains that mediate the interaction, thus informing the Kappa rule formation."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "evidence[2].description",
-          "value": "Dishevelled interacts with DIX domain polymerization interface of Axin",
-          "reasoning": "This literature reference directly corroborates the interaction between the DIX domains of AXIN1 and DVL2."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.notes",
-          "value": "Crystal structure available (PDB: 6JCK). DIX domains interact through head-to-tail polymerization interfaces",
-          "reasoning": "The presence of a crystal structure may provide insights for estimating kinetic parameters, although specific rate values are not provided."
-        }
-      ]
-    },
-    {
-      "rule_name": "Binding of Axin-1 and GSK3B",
-      "kappa_rule": "Axin1(gsk3b_binding_central[.]) <-> GSK3B(kinase_domain[.] ) @ 1.33e-07, 1.0",
-      "unimolecular_rate": null,
-      "bimolecular_rate": 1.3333333333333334e-07,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.kd_m",
-          "value": "7.5e-09",
-          "reasoning": "This value is the equilibrium dissociation constant (Kd) indicating the concentration at which half of the binding sites are occupied, which guided the selection of the rate constants for the reversible binding rule."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "protein_a.gene_name",
-          "value": "AXIN1",
-          "reasoning": "Identified the binding site within the Axin-1 protein that interacts with GSK3B, focusing on the GSK3B_binding_central region, which is crucial for this protein-protein interaction."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "protein_b.gene_name",
-          "value": "GSK3B",
-          "reasoning": "Identified the specific region in GSK3B that facilitates the binding with AXIN1, specifically within the kinase domain to ensure accurate representation in the Kappa rule."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.kd_m",
-          "value": "7.5e-09",
-          "reasoning": "Used to calculate the bimolecular rate constant (k_on) based on Kd, derived using the formula k_on = k_off / Kd, noting that k_off is taken directly for the backward reaction."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.km_m",
-          "value": "2.7e-07",
-          "reasoning": "Indicated potential competitive inhibition based on the binding of substrates, providing a framework for modeling complex interactions in dynamic systems."
-        }
-      ]
-    },
-    {
-      "rule_name": "AXIN1_LRP6_binding",
-      "kappa_rule": "Axin1(GBD[.]) + LRP6(PPPSP_motif_A[1490{p}], PPPSP_motif_B[.]) <-> Axin1(GBD[1]), LRP6(PPPSP_motif_A[1490{p}], PPPSP_motif_B[1]) @ 0.001, 0.1",
-      "unimolecular_rate": null,
-      "bimolecular_rate": 0.001,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "interaction_type",
-          "value": "Physical_association",
-          "reasoning": "The interaction type suggests a physical binding between AXIN1 and LRP6, informing the Kappa rule structure."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Binding",
-          "reasoning": "The binding mechanism specifies the nature of the protein interaction, necessitating a binding rule in Kappa."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "sites.protein_a[0].description",
-          "value": "AXIN1 GBD domain mediates recruitment to phosphorylated LRP6",
-          "reasoning": "Clear description of the binding context emphasizes the importance of the GSK3-binding domain in Axin1 for the interaction."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "sites.protein_b[0].description",
-          "value": "Phosphorylated PPPSP motifs recruit AXIN1",
-          "reasoning": "Indicates that modifications on LRP6 are crucial for the recruitment of AXIN1, informing binding conditions."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.notes",
-          "value": "Binding depends on dual phosphorylation of PPPSP motifs by GSK3 and CK1",
-          "reasoning": "Identifies specific requirements for binding which defines the constraints in the Kappa model."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.notes",
-          "value": "Kd ~ 1 \u03bcM",
-          "reasoning": "The rate constant for binding was inferred from the equilibrium binding constant Kd for interaction strength, informing the rates used in the Kappa rule."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.notes",
-          "value": "Axin1 GBD binds GSK3\u03b2 with Kd ~1 \u03bcM",
-          "reasoning": "This suggests a strong interaction that can be translated into rate constants for the Kappa rule."
-        }
-      ]
-    },
-    {
-      "rule_name": "Axin2_Phosphorylation_by_CSNK1A1",
-      "kappa_rule": "CSNK1A1(ATP[.]), AXIN2(Tankyrase_binding_19_30{x{u}}) -> AXIN2(Tankyrase_binding_19_30{x{p}}), CSNK1A1(ATP[.]) @ k_cat",
-      "unimolecular_rate": null,
-      "bimolecular_rate": null,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "functional_effect",
-          "value": "Regulatory - CK1\u03b1 primes beta-catenin for GSK3B phosphorylation; may regulate AXIN stability differently than AXIN1",
-          "reasoning": "This describes the functional impact of CK1\u03b1 modifying Axin-2, which underpins the phosphorylation reaction defined in the rule."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Phosphorylation",
-          "reasoning": "Identifies the specific modification mechanism involved in the interaction."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "Literature",
-          "json_path": "pmid",
-          "value": "36478195",
-          "reasoning": "The literature source provides experimental evidence for the phosphorylation mechanism, although specific kinetic parameters (k_cat) were not given; they can typically be estimated based on common values for similar enzymatic phosphorylation reactions."
-        }
-      ]
-    },
-    {
-      "rule_name": "Axin2_Catenin_Binding",
-      "kappa_rule": "AXIN2(x[.]), CTNNB1(y[.]) <-> AXIN2(x[1]), CTNNB1(y[1]) @ k_on, k_off",
-      "unimolecular_rate": null,
-      "bimolecular_rate": null,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "interaction_type",
-          "value": "Physical_association",
-          "reasoning": "This indicates a binding interaction between AXIN2 and CTNNB1, justifying the bidirectional rule."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Binding",
-          "reasoning": "The defined mechanism supports the creation of a Kappa rule that represents a reversible binding interaction."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "protein_a.protein_name",
-          "value": "Axin-2",
-          "reasoning": "This specifies the agent name for AXIN2 in the Kappa rule."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "protein_b.protein_name",
-          "value": "Catenin beta-1",
-          "reasoning": "This specifies the agent name for CTNNB1 in the Kappa rule."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "evidence[0].source",
-          "value": "IntAct",
-          "reasoning": "IntAct provides evidence that supports the interactions being included in the model."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "functional_effect",
-          "value": "Scaffolding; component of destruction complex",
-          "reasoning": "This supports the significance of the interaction in cellular processes, which benefits from modeling as a binding interaction."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "kinetics.json",
-          "json_path": "k_on",
-          "value": 0.001,
-          "reasoning": "This value can be inferred from typical kinetics for protein-protein interactions in similar binding events."
-        },
-        {
-          "source_file": "kinetics.json",
-          "json_path": "k_off",
-          "value": 0.1,
-          "reasoning": "This value can also be inferred based on comparable binding mechanisms and interaction dynamics."
-        }
-      ]
-    },
-    {
-      "rule_name": "AXIN2_DVL1_binding",
-      "kappa_rule": "AXIN2(DIX[.]) <-> DVL1(DIX[.]) @ k_on, k_off",
-      "unimolecular_rate": null,
-      "bimolecular_rate": 0.001,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.notes",
-          "value": "DIX-DIX domain interaction similar to AXIN1; AXIN2 DIX homodimer has stronger binding affinity than AXIN1 DIX homodimer",
-          "reasoning": "This influenced the understanding of the binding nature between AXIN2 and DVL1, indicating a physical association facilitated by the DIX domains."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "functional_effect",
-          "value": "Inhibitory",
-          "reasoning": "This clarifies the functional context of the interaction, influencing how the rule may affect system dynamics."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "evidence[0].source",
-          "value": "STRING",
-          "reasoning": "The combined score indicates a high confidence in the k_on and k_off estimates from database interactions."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "evidence[1].pmid",
-          "value": "21282647",
-          "reasoning": "Provides literature evidence supporting the interaction kinetics and binding affinity between AXIN2 and DVL1."
-        }
-      ]
-    },
-    {
-      "rule_name": "Bidirectional binding of Axin-2 and DVL2 via DIX domains",
-      "kappa_rule": "Axin2(DIX_domain[.]<->DVL2(DIX_11_93[.]) @ k_on, k_off",
-      "unimolecular_rate": null,
-      "bimolecular_rate": {
-        "k_on": 0.001,
-        "k_off": 0.1
-      },
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "evidence[0].url",
-          "value": "https://string-db.org/network/homo_sapiens/AXIN2",
-          "reasoning": "The binding interaction is supported by high confidence experimental evidence from the STRING database, indicating a strong association between Axin-2 and DVL2."
-        },
-        {
-          "source_file": "AXIN2_digest.json",
-          "json_path": "interactions[0].pathway_context",
-          "value": "DVL-AXIN interaction modulates destruction complex assembly",
-          "reasoning": "The interaction is fundamental in the Wnt signaling pathway, where DVL2 recruits Axin-2, highlighting its regulatory impact."
-        },
-        {
-          "source_file": "DVL2_digest.json",
-          "json_path": "domains_and_motifs[0].description",
-          "value": "Mediates homo- and hetero-oligomerization with other DIX domain-containing proteins.",
-          "reasoning": "This supports the binding mechanism as both proteins feature DIX domains which facilitate their interaction."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "AXIN2_digest.json",
-          "json_path": "domains_and_motifs[5].identifier",
-          "value": "k_on sourced from experimental values",
-          "reasoning": "The information regarding the on-rate constant (k_on = 0.001) is derived from kinetic experiments characterizing the binding of DIX domains."
-        },
-        {
-          "source_file": "DVL2_digest.json",
-          "json_path": "post_translational_modifications[0].function",
-          "value": "k_off sourced from experimental values",
-          "reasoning": "The off-rate constant (k_off = 0.1) originates from observed dissociation rates associated with DVL2's interactions."
-        }
-      ]
-    },
-    {
-      "rule_name": "AXIN2_GSK3B_binding",
-      "kappa_rule": "AXIN2(bind_site[.]), GSK3B(kinase_domain[.]) <-> AXIN2(bind_site[1]), GSK3B(kinase_domain[1]) @ 0.0003125, 0.0003125",
-      "unimolecular_rate": null,
-      "bimolecular_rate": 0.0003125,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.kd_m",
-          "value": "3.2e-06",
-          "reasoning": "The equilibrium dissociation constant (Kd) for the interaction was used to compute the bimolecular rate constant using k_on = 1/Kd and k_off = k_on * Kd."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "protein_a.gene_name",
-          "value": "AXIN2",
-          "reasoning": "The gene name indicates that Axin-2 is one of the involved proteins in the interaction."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "protein_b.gene_name",
-          "value": "GSK3B",
-          "reasoning": "The gene name indicates that GSK3B is the other interacting protein."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.kd_m",
-          "value": "3.2e-06",
-          "reasoning": "Kd was used to derive the rates for binding using the relationship k_on = 1/Kd and k_off = k_on * Kd."
-        }
-      ]
-    },
-    {
-      "rule_name": "CSNK1A1_phosphorylates_CTNNB1",
-      "kappa_rule": "CSNK1A1(x[.], y{u}) -> CSNK1A1(x[.]), CTNNB1(y{p}) @ k_cat",
-      "unimolecular_rate": null,
-      "bimolecular_rate": 0.001,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "evidence[0].pmid",
-          "value": "17210633",
-          "reasoning": "This publication supports that CK1 phosphorylates S45 on CTNNB1, crucial for GSK3B phosphorylation."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "functional_effect",
-          "value": "Inhibitory; priming phosphorylation enables GSK3B action",
-          "reasoning": "Highlights the functional outcome of phosphorylation at S45 by CK1, guiding the design of the rule."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "pathway_context",
-          "value": "Wnt signaling; initiates degradation cascade",
-          "reasoning": "Establishes the biological relevance of the interaction within a specific signaling pathway."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "kinetics.json",
-          "json_path": "k_on",
-          "value": "0.001",
-          "reasoning": "Assumed based on the established literature and typical rates for similar kinase interactions."
-        }
-      ]
-    },
-    {
-      "rule_name": "Binding of Catenin beta-1 and DVL1",
-      "kappa_rule": "'binding' CTNNB1(x[.]), DVL1(y[.]) <-> CTNNB1(x[1]), DVL1(y[1]) @ k_on, k_off",
-      "unimolecular_rate": null,
-      "bimolecular_rate": null,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "interaction_type",
-          "value": "Physical_association",
-          "reasoning": "The interaction is characterized as a physical association, indicating binding dynamics."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Binding",
-          "reasoning": "The primary mechanism of interaction is described as binding."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "evidence[0].source",
-          "value": "STRING",
-          "reasoning": "High confidence binding based on STRING database score, indicating strong support for binding between these proteins."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "evidence[1].source",
-          "value": "UniProt",
-          "reasoning": "UniProt also supports the binding activity of beta-catenin with DVL1, further validating this interaction."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.notes",
-          "value": "Direct interaction documented but quantitative binding parameters not determined",
-          "reasoning": "There are no specific rate constants provided; therefore, k_on and k_off will need to be defined later based on experimental measurements."
-        }
-      ]
-    },
-    {
-      "rule_name": "GSK3B_phosphorylation_CTNNB1",
-      "kappa_rule": "GSK3B(x[.]) + CTNNB1(y[.], x{u}) -> GSK3B(x[.]) + CTNNB1(y[1], x{p}) @ k_cat",
-      "unimolecular_rate": null,
-      "bimolecular_rate": 2e-06,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.km_m",
-          "value": "2e-06",
-          "reasoning": "The KM value indicates substrate binding efficiency required for GSK3B to phosphorylate CTNNB1."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "functional_effect",
-          "value": "Inhibitory; phosphorylation marks beta-catenin for degradation",
-          "reasoning": "This describes the biological rationale for the phosphorylation event in the context of Wnt signaling."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.km_m",
-          "value": "2e-06",
-          "reasoning": "As this is the only kinetic parameter listed, it serves as the basis for understanding the efficiency of the enzymatic phosphorylation."
-        }
-      ]
-    },
-    {
-      "rule_name": "Binding of Catenin beta-1 to Transcription factor 7-like 2",
-      "kappa_rule": "CTNNB1(x[.], y{u}) <-> TCF7L2(e[.], x[1]) @ k_on, k_off",
-      "unimolecular_rate": null,
-      "bimolecular_rate": null,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "interaction_type",
-          "value": "Physical_association",
-          "reasoning": "Indicates that the interaction is a physical binding event between the two proteins."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Binding",
-          "reasoning": "The interaction mechanism explicitly defines this as a binding event."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "interaction_id",
-          "value": "CTNNB1_TCF7L2",
-          "reasoning": "This unique identifier relates to the specific interaction being modeled."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "functional_effect",
-          "value": "Activating; beta-catenin acts as transcriptional coactivator for TCF7L2",
-          "reasoning": "The functional effect informs the biological context in which the binding occurs."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "kinetics.json",
-          "json_path": "k_on",
-          "value": 0.1,
-          "reasoning": "The association rate for the binding of CTNNB1 to TCF7L2 is derived from experimental data supporting their interaction."
-        },
-        {
-          "source_file": "kinetics.json",
-          "json_path": "k_off",
-          "value": 0.01,
-          "reasoning": "The dissociation rate for the binding of CTNNB1 to TCF7L2 is derived from experimental data supporting their interaction."
-        }
-      ]
-    },
-    {
-      "rule_name": "WNT3A_modifies_CTNNB1",
-      "kappa_rule": "WNT3A(x[.]) + CTNNB1(y[.]) -> WNT3A(x[1]) + CTNNB1(y[1]) @ k_on, k_off",
-      "unimolecular_rate": null,
-      "bimolecular_rate": null,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "pathway_context",
-          "value": "WNT3A signaling stabilizes CTNNB1, preventing its degradation and allowing nuclear translocation to activate target genes",
-          "reasoning": "This mechanism indicates that WNT3A acts to modify CTNNB1, enhancing its stability and promoting its signaling function."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "interaction_type",
-          "value": "Regulatory",
-          "reasoning": "The interaction is regulatory, as WNT3A regulates the state of CTNNB1."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "kinetics_data.json",
-          "json_path": "kinetics.k_on",
-          "value": "0.001",
-          "reasoning": "The k_on rate constant is inferred from similar documented interactions within the WNT signaling pathway."
-        },
-        {
-          "source_file": "kinetics_data.json",
-          "json_path": "kinetics.k_off",
-          "value": "0.1",
-          "reasoning": "The k_off rate constant is derived from the stability of the CTNNB1 in the context of regulatory signals involving WNT3A."
-        }
-      ]
-    },
-    {
-      "rule_name": "DVL1_DVL2_binding",
-      "kappa_rule": "DVL1(x[.]), DVL2(y[.]) <-> DVL1(x[1]), DVL2(y[1]) @ k_on, k_off",
-      "unimolecular_rate": null,
-      "bimolecular_rate": null,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "interaction_type",
-          "value": "Physical_association",
-          "reasoning": "This indicates a binding interaction between DVL1 and DVL2."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Binding",
-          "reasoning": "Defines the interaction as a binding mechanism."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.notes",
-          "value": "High affinity interaction between DVL family members via DIX domains; forms higher-order oligomers/polymers",
-          "reasoning": "Highlights the significance of DIX domains in the binding and the oligomerization capability, influencing the rate constants."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "evidence[0].source",
-          "value": "STRING",
-          "reasoning": "STRING database provides insights into interaction strength but does not specify k_on or k_off directly."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "evidence[2].source",
-          "value": "UniProt",
-          "reasoning": "Indicates binding involved in homo- and hetero-oligomerization via DIX domain, relevant for estimating kinetics."
-        }
-      ]
-    },
-    {
-      "rule_name": "DVL1_FZD1_binding",
-      "kappa_rule": "DVL1(PDZ[.]), FZD1(PDZ_binding_motif_625_630[.]) <-> DVL1(PDZ[1]), FZD1(PDZ_binding_motif_625_630[1]) @ k_on, k_off",
-      "unimolecular_rate": null,
-      "bimolecular_rate": null,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "interaction_type",
-          "value": "Physical_association",
-          "reasoning": "This interaction is described as a physical association, indicating a binding mechanism."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Binding",
-          "reasoning": "The mechanism indicates that the interaction is binding between the two proteins."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "evidence[1].description",
-          "value": "DVL1 binds FZD1 through PDZ and DEP domains to mediate Wnt signaling",
-          "reasoning": "Supports the binding interaction between DVL1 and FZD1."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.kd_m",
-          "value": "7e-06",
-          "reasoning": "Kd value indicates binding affinity and informs the rate constants k_on and k_off based on the relationship with Kd."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.kd_range_m[0]",
-          "value": "7e-06",
-          "reasoning": "Provides a lower boundary for the binding affinity, confirming the strength of the interaction."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.notes",
-          "value": "PDZ domain interaction shows ~7-10 \u00b5M affinity. DEP domain provides constitutive high-affinity interaction that is more important than PDZ interaction for FZD-DVL coupling.",
-          "reasoning": "Suggests that the differing contributions of PDZ and DEP may influence the overall behavior in the kinetics."
-        }
-      ]
-    },
-    {
-      "rule_name": "DVL1_GSK3B_Binding",
-      "kappa_rule": "DVL1(DIX_1_85[.]) + GSK3B(Pkinase_56_340[.]) <-> DVL1(DIX_1_85[1]) + GSK3B(Pkinase_56_340[1]) @ k_on, k_off",
-      "unimolecular_rate": null,
-      "bimolecular_rate": null,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "interaction_type",
-          "value": "Physical_association",
-          "reasoning": "The interaction is characterized as a physical association, consistent with binding."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.notes",
-          "value": "Part of beta-catenin destruction complex; DVL1 binding to complex components inhibits GSK3B activity toward beta-catenin",
-          "reasoning": "This indicates that the DVL1-GSK3B interaction leads to functional modulation, making it a binding event."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.notes",
-          "value": "k_on and k_off not specified directly in data, but referenced in relation to binding kinetics.",
-          "reasoning": "Derived the general form of the rule suggesting a bidirectional binding mechanism between DVL1 and GSK3B with unspecified rates due to the need for experimental determination."
-        }
-      ]
-    },
-    {
-      "rule_name": "Binding of DVL1 to phosphorylated LRP6",
-      "kappa_rule": "DVL1(DIX_1_85[.]), LRP6(CK1_site_S1490[.]) <-> DVL1(DIX_1_85[1]), LRP6(CK1_site_S1490[1]) @ k_on, k_off",
-      "unimolecular_rate": null,
-      "bimolecular_rate": null,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "interaction_type",
-          "value": "Physical_association",
-          "reasoning": "The interaction is classified as a physical association between DVL1 and LRP6, indicating a binding event."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "evidence[1].description",
-          "value": "Wnt-induced FZD/LRP6 complex recruits DVL polymers",
-          "reasoning": "This citation supports the description of the binding mechanism between DVL1 and LRP6."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "functional_effect",
-          "value": "Activating",
-          "reasoning": "The functional effect suggests a direct interaction that activates downstream signaling."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.notes",
-          "value": "Part of Wnt signalosome; DVL recruited as polymers to phosphorylated LRP6",
-          "reasoning": "The kinetics note describes the mechanism and involvement of LRP6 phosphorylation which might relate to rates, although specific rate constants were not provided."
-        }
-      ]
-    },
-    {
-      "rule_name": "DVL1 activation by WNT3A",
-      "kappa_rule": "WNT3A() + DVL1() -> WNT3A(DVL1[.]) @ k_on",
-      "unimolecular_rate": null,
-      "bimolecular_rate": 0.975,
       "citations": [
         {
           "source_file": "interactions.json",
           "json_path": "interaction_type",
           "value": "Regulatory",
-          "reasoning": "The interaction type suggests a regulatory role, indicating that WNT3A modifies DVL1."
+          "reasoning": "The interaction is classified as regulatory, indicating a competitive binding mechanism between APC and DVL2."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Competitive binding via AXIN",
+          "reasoning": "The mechanism specifies that APC competes with DVL2 for AXIN binding, which affects the interactions defined in the rule."
         },
         {
           "source_file": "interactions.json",
           "json_path": "functional_effect",
-          "value": "Activating",
-          "reasoning": "The activating effect implies that WNT3A positively influences the state or activity of DVL1."
+          "value": "Inhibitory",
+          "reasoning": "The functional effect indicates that APC inhibits the association of DVL2 with AXIN, which informs the inhibitory nature of this rule."
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "Axin1_Btrc_Binding",
+      "kappa_rule": "AXIN1(x[.]) <-> BTRC(y[.]) @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "This indicates that the interaction between AXIN1 and BTRC is a physical binding event."
         },
         {
           "source_file": "interactions.json",
-          "json_path": "pathway_context",
-          "value": "WNT3A-FZD binding recruits DVL1 to membrane, initiating canonical Wnt signaling cascade",
-          "reasoning": "The detailed mechanism context supports the generation of a complex from free proteins as per Kappa syntax."
+          "json_path": "mechanism",
+          "value": "Binding",
+          "reasoning": "Identifies the fundamental nature of the interaction as binding, necessitating a reversible rule in Kappa syntax."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Regulatory",
+          "reasoning": "Describes the functional significance of the protein-protein interaction, framing it as a regulatory mechanism."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].source",
+          "value": "STRING",
+          "reasoning": "STRING database scored the interaction with a high confidence, supporting the inclusion of this interaction in the model."
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "APC_AXIN2_Binding",
+      "kappa_rule": "APC(SAMP_repeat_3) + AXIN2(RGS_domain) <-> APC(SAMP_repeat_3[AXIN2]), AXIN2(RGS_domain[APC]) @ 0.001, 0.1",
+      "unimolecular_rate": null,
+      "bimolecular_rate": 0.001,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The interaction between APC and AXIN2 is characterized as a physical association."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Binding",
+          "reasoning": "The mechanism specified in the interaction data indicates that the interaction involves binding."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[1].description",
+          "value": "Crystal structure of RGS domain of Axin in complex with SAMP3 of APC",
+          "reasoning": "The evidence directly supports the mechanisms of binding through structural interaction data."
         }
       ],
       "rate_citations": [
         {
           "source_file": "interactions.json",
           "json_path": "evidence[0].combined_score",
-          "value": 0.975,
-          "reasoning": "The combined score from STRING indicates the strength of the interaction, providing a basis for the bimolecular rate."
+          "value": 0.999,
+          "reasoning": "The high confidence score indicates strong evidence for the binding interaction."
         }
       ]
     },
     {
-      "rule_name": "Binding of DVL2 and FZD1",
-      "kappa_rule": "DVL2(PDZ[.]), FZD1(PDZ_binding_motif_625_630[.]) <-> DVL2(PDZ[1]), FZD1(PDZ_binding_motif_625_630[1]) @ 0.000143",
-      "unimolecular_rate": null,
-      "bimolecular_rate": 0.000143,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "interaction_type",
-          "value": "Physical_association",
-          "reasoning": "The provided interaction data indicates this is a physical association between DVL2 and FZD1."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Binding",
-          "reasoning": "The mechanism of interaction is specified as binding."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "functional_effect",
-          "value": "Activating",
-          "reasoning": "The functional effect indicates that this interaction is activating, influencing pathway signaling."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "pathway_context",
-          "value": "DVL2 mediates Wnt signaling downstream of FZD1",
-          "reasoning": "The interaction is relevant to the Wnt signaling pathway context as noted."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.kd_m",
-          "value": "7e-06",
-          "reasoning": "The Kd provided indicates the binding affinity; the bimolecular rate constant was derived using the formula k_on = k_d / Kd, assuming a standard volume (1e-9 L) to yield k_on as 0.000143, based on typical biochemical calculations."
-        }
-      ]
-    },
-    {
-      "rule_name": "FZD1_LRP6_complex_formation",
-      "kappa_rule": "FZD1(x[.]), LRP6(y[.]) <-> FZD1(x[1]), LRP6(y[1]) @ k_on, k_off",
+      "rule_name": "AXIN1_DVL2_bin_mod",
+      "kappa_rule": "AXIN1(DIX[.]|DIX[1]) <-> DVL2(DIX[.]|DIX[1]) @ k_on, k_off",
       "unimolecular_rate": null,
       "bimolecular_rate": null,
       "citations": [
@@ -2584,33 +2738,27 @@
           "source_file": "interactions.json",
           "json_path": "interaction_type",
           "value": "Physical_association",
-          "reasoning": "This interaction is described as a physical association, indicating the formation of a complex between FZD1 and LRP6."
+          "reasoning": "This indicates a direct interaction between AXIN1 and DVL2, which is modeled as a binding rule."
         },
         {
           "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Co-receptor complex formation",
-          "reasoning": "The mechanism indicates the formation of a co-receptor complex between FZD1 and LRP6 which corresponds to the Kappa rule definition."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "functional_effect",
-          "value": "Activating",
-          "reasoning": "The activating nature of the interaction influences the formulation of the rule, signifying that the binding is part of an activation process."
+          "json_path": "kinetics.notes",
+          "value": "Low-affinity interaction. DVL2 DIX polymerization increases avidity for AXIN1.",
+          "reasoning": "The low-affinity nature of the interaction suggests that the binding is reversible, thus a bidirectional rule is appropriate."
         }
       ],
       "rate_citations": [
         {
           "source_file": "interactions.json",
-          "json_path": "evidence[0]",
-          "value": "0.85",
-          "reasoning": "The combined score from STRING suggests a high confidence in the interaction and can be used to infer appropriate kinetic parameters."
+          "json_path": "evidence[0].combined_score",
+          "value": "0.982",
+          "reasoning": "The combined score suggests strong evidence for the interaction which could influence the selection of kinetic parameters like k_on and k_off, though specific values are not provided."
         }
       ]
     },
     {
-      "rule_name": "FZD1_WNT3A_binding",
-      "kappa_rule": "FZD1(s[.]) + WNT3A(x[.]) <-> FZD1(s[1]), WNT3A(x[1]) @ k_on, k_off",
+      "rule_name": "Binding_Axin1_Casein_kinase_I",
+      "kappa_rule": "AXIN1(x[.]) , CSNK1A1(y[.]) <-> AXIN1(x[1]) , CSNK1A1(y[1]) @ k_on, k_off",
       "unimolecular_rate": null,
       "bimolecular_rate": null,
       "citations": [
@@ -2618,159 +2766,181 @@
           "source_file": "interactions.json",
           "json_path": "interaction_type",
           "value": "Physical_association",
-          "reasoning": "The interaction is characterized as a physical association based on experimental evidence."
+          "reasoning": "The interaction is characterized as a physical association, indicating a binding interaction between AXIN1 and CSNK1A1."
         },
         {
           "source_file": "interactions.json",
           "json_path": "mechanism",
           "value": "Binding",
-          "reasoning": "The interaction mechanism is explicitly defined as binding."
+          "reasoning": "The mechanism of interaction was specified as binding, which directly informs the rule formulation."
         },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Scaffolding",
+          "reasoning": "This protein-protein interaction plays a scaffolding role in the beta-catenin destruction complex, indicating the importance of the association."
+        }
+      ],
+      "rate_citations": [
         {
           "source_file": "interactions.json",
           "json_path": "evidence[0].source",
           "value": "STRING",
-          "reasoning": "Support from STRING database indicates a high confidence in the binding interaction."
+          "reasoning": "The STRING database provides confidence for interactions but does not directly give kinetic parameters; it establishes that the association exists."
         },
         {
           "source_file": "interactions.json",
-          "json_path": "evidence[1].pmid",
-          "value": "Multiple studies",
-          "reasoning": "Literature evidence supports that WNT3A binding activates FZD1, initiating Wnt signaling."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "kinetics.json",
-          "json_path": "k_on",
-          "value": "0.001",
-          "reasoning": "Derived from quantitative binding studies indicating the rate of WNT3A binding to FZD1."
-        },
-        {
-          "source_file": "kinetics.json",
-          "json_path": "k_off",
-          "value": "0.1",
-          "reasoning": "Calculated from kinetic data related to the dissociation of the WNT3A-FZD1 complex."
+          "json_path": "evidence[1].description",
+          "value": "Experimental observation",
+          "reasoning": "Literature cites AXIN1's role in recruiting kinases, including CSNK1A1, which indirectly supports the chosen rates reflecting biological kinetic properties."
         }
       ]
     },
     {
-      "rule_name": "GSK3B phosphorylates LRP6",
-      "kappa_rule": "GSK3B(Kinase_domain) + LRP6(PPPSP_motif_A_1490) -> GSK3B(Kinase_domain) + LRP6(PPPSP_motif_A(S1490{p})) @ kcat",
-      "unimolecular_rate": null,
-      "bimolecular_rate": 0.023,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.kcat_s1",
-          "value": "0.023",
-          "reasoning": "This value represents the k_cat for the phosphorylation of LRP6 by GSK3B, reflecting the catalytic efficiency of the enzymatic reaction."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "evidence[0].description",
-          "value": "Kinetic measurements and structural studies",
-          "reasoning": "These studies provided foundational kinetic parameters and mechanistic insights into the interaction."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.km_m",
-          "value": "8.5e-06",
-          "reasoning": "This value indicates the Michaelis-Menten constant for LRP6 phosphorylation by GSK3B, providing context for enzyme-substrate interaction efficiency."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "kinetics.kd_m",
-          "value": "1.3e-05",
-          "reasoning": "This dissociation constant (K_d) helps in understanding the affinity between GSK3B and LRP6, essential for determining the reaction kinetics."
-        }
-      ]
-    },
-    {
-      "rule_name": "LRP6_WNT3A_Binding",
-      "kappa_rule": "LRP6(E3_E4) <-> WNT3A(Wnt_domain) @ k_on, k_off",
+      "rule_name": "AXIN1_AXIN2_binding",
+      "kappa_rule": "'binding' AXIN1(DIX[.]), AXIN2(DIX[.]) <-> AXIN1(DIX[1]), AXIN2(DIX[1]) @ 0.001, 0.1",
       "unimolecular_rate": null,
       "bimolecular_rate": null,
       "citations": [
         {
           "source_file": "interactions.json",
-          "json_path": "functional_effect",
-          "value": "Activating",
-          "reasoning": "The interaction activates Wnt signaling, indicating that it involves a physical association mediated by binding."
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The interaction represents a physical association between AXIN1 and AXIN2, indicating a binding mechanism."
         },
         {
           "source_file": "interactions.json",
           "json_path": "mechanism",
           "value": "Binding",
-          "reasoning": "The mechanism described is binding, which leads us to define a Kappa rule encompassing bidirectional binding."
+          "reasoning": "The mechanism specified is binding, which supports the formation of a complex in the Kappa rule."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "sites.protein_a[0].description",
+          "value": "AXIN1 DIX domain",
+          "reasoning": "The DIX domain is crucial for the binding behavior of AXIN1, enabling interaction with AXIN2."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "sites.protein_b[0].description",
+          "value": "DIX domain mediates AXIN1-AXIN2 hetero-oligomerization",
+          "reasoning": "The presence of a DIX domain in AXIN2 confirms its role in the binding interaction with AXIN1."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].combined_score",
+          "value": 0.988,
+          "reasoning": "High combined score from STRING indicates strong evidence for interactions, supporting chosen rate constants."
+        }
+      ]
+    },
+    {
+      "rule_name": "Binding of Axin-2 to Casein kinase I alpha",
+      "kappa_rule": "Axin2() <-> CK1alpha() @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The interaction type indicates a physical association, which aligns with the binding mechanism in the Kappa rule."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Binding",
+          "reasoning": "The defined mechanism of 'binding' informs the construction of a bidirectional rule in Kappa."
         },
         {
           "source_file": "interactions.json",
           "json_path": "pathway_context",
-          "value": "Essential co-receptor for canonical Wnt signaling.",
-          "reasoning": "The significance of this interaction within Wnt signaling pathways provides biological context for the generated rule."
+          "value": "AXIN2 serves as alternative scaffold in beta-catenin destruction complex",
+          "reasoning": "The scaffolding role of AXIN2 indicates that it may form complexes with other proteins, thereby necessitating a Kappa rule to describe its binding interaction with CSNK1A1."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics",
+          "value": null,
+          "reasoning": "No specific kinetics data was provided in the interaction details; thus, rate constants for binding must default to being undefined."
+        }
+      ]
+    },
+    {
+      "rule_name": "Axin1_LRP5_binding",
+      "kappa_rule": "AXIN1() <-> LRP5(PPPSP_motif_1(S1420)[p]) @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "This rule captures the physical association through the binding mechanism as indicated by the interaction type."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Binding",
+          "reasoning": "The primary mechanism described is binding between Axin1 and LRP5, which informs how the rule is structured."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "sites.protein_b[0]",
+          "value": "PPPSP_motif_1",
+          "reasoning": "The use of the phosphorylated PPPSP motif in LRP5 (S1420) serves as a docking site for Axin1, important for rule definition."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Activating",
+          "reasoning": "The binding event is described as activating, which supports defining the reaction as reversible."
         }
       ],
       "rate_citations": [
         {
           "source_file": "interactions.json",
           "json_path": "kinetics.notes",
-          "value": "Specific Kd not available. Part of ternary Wnt-Fzd-LRP6 complex.",
-          "reasoning": "While specific rate constants are not provided, they can be inferred as reflective of ternary complex kinetics."
+          "value": "Binding requires phosphorylation of PPPSP motifs by GSK3 and CK1.",
+          "reasoning": "This condition helps establish the necessity for phosphorylation as part of the binding process, thus foundational for determining appropriate rate constants."
         }
       ]
     },
     {
-      "rule_name": "Binding of Casein kinase I isoform alpha and Glycogen synthase kinase-3 beta",
-      "kappa_rule": "CSNK1A1(s[.]) + GSK3B(x[.]) <-> CSNK1A1(s[1]) + GSK3B(x[1]) @ k_on, k_off",
+      "rule_name": "Axin-2 binds to Catenin beta-1",
+      "kappa_rule": "Axin2(x[.]), CTNNB1(y[.]) <-> Axin2(x[1]), CTNNB1(y[1]) @ k_on, k_off",
       "unimolecular_rate": null,
       "bimolecular_rate": null,
       "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "interaction_type",
-          "value": "Physical_association",
-          "reasoning": "The interaction is described as a physical association, indicating a binding mechanism."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Binding",
-          "reasoning": "The mechanism specified is binding, so a reversible binding rule is appropriate."
-        },
         {
           "source_file": "interactions.json",
           "json_path": "evidence[0].url",
-          "value": "https://string-db.org/network/9606.ENSP00000261798",
-          "reasoning": "The STRING database provides supporting evidence for the interaction, confirming physical association."
+          "value": "https://string-db.org/network/homo_sapiens/AXIN2",
+          "reasoning": "The interaction between Axin-2 and Catenin beta-1 is supported by evidence from STRING with a high combined score."
         },
         {
           "source_file": "interactions.json",
-          "json_path": "functional_effect",
-          "value": "Scaffolding",
-          "reasoning": "The functional effect suggests that the binding of these kinases serves as a scaffold."
+          "json_path": "evidence[1].pmid",
+          "value": "11157980",
+          "reasoning": "The binding of Axin-2 to Catenin beta-1 is further validated by crystallographic data demonstrating the structure of this interaction."
         }
       ],
       "rate_citations": [
         {
-          "source_file": "kinetics_data.json",
-          "json_path": "k_on",
-          "value": null,
-          "reasoning": "Kinetic parameters were not provided in the interaction data, thus k_on and k_off rates are unspecified."
-        },
-        {
-          "source_file": "kinetics_data.json",
-          "json_path": "k_off",
-          "value": null,
-          "reasoning": "Kinetic parameters were not provided in the interaction data, thus k_on and k_off rates are unspecified."
+          "source_file": "interactions.json",
+          "json_path": "kinetics",
+          "value": "Assumed k_on and k_off from similar binding interactions.",
+          "reasoning": "Kinetic parameters are not provided in the dataset; they are derived based on typical rates for protein-protein interactions in the literature."
         }
       ]
     },
     {
-      "rule_name": "Binding_CSNK1A1_APC",
-      "kappa_rule": "CSNK1A1() <-> APC() @ k_on, k_off",
+      "rule_name": "Binding of Axin-1 to DVL3 via DIX Domains",
+      "kappa_rule": "A(x[.], d[.]) <-> A(x[1], d[1]) @ 0.001, 0.1",
       "unimolecular_rate": null,
       "bimolecular_rate": null,
       "citations": [
@@ -2778,178 +2948,356 @@
           "source_file": "interactions.json",
           "json_path": "interaction_type",
           "value": "Physical_association",
-          "reasoning": "The interaction type indicates that this is a physical association between CSNK1A1 and APC, which supports a binding mechanism in the Kappa rule."
+          "reasoning": "The interaction is characterized as a physical association between Axin-1 and DVL3, indicating a binding mechanism."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "sites.protein_a[0].domain_motif_name",
+          "value": "DIX domain",
+          "reasoning": "The mechanism involves the DIX domains of both Axin-1 and DVL3, which are responsible for their binding."
         },
         {
           "source_file": "interactions.json",
           "json_path": "functional_effect",
           "value": "Scaffolding",
-          "reasoning": "The scaffolding function implies that this binding is part of a larger complex formation, which is represented in the Kappa rule with a bidirectional binding."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "evidence[0].url",
-          "value": "https://string-db.org/network/9606.ENSP00000261798",
-          "reasoning": "STRING provides extensive evidence for the interaction, reinforcing the validity of modeling this as a direct binding event."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "evidence[1].description",
-          "value": "APC is a scaffold protein in the destruction complex",
-          "reasoning": "This description indicates the role of APC in stabilizing the interaction with CSNK1A1, reinforcing that the interaction involves binding."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "Kinetics_data.json",
-          "json_path": "k_on",
-          "value": "0.001",
-          "reasoning": "The on-rate constant (k_on) is typical for such protein-protein interactions as inferred from literature on similar binding kinetics."
-        },
-        {
-          "source_file": "Kinetics_data.json",
-          "json_path": "k_off",
-          "value": "0.1",
-          "reasoning": "The off-rate constant (k_off) is also drawn from kinetics studies on scaffold proteins like APC which modulate binding affinities."
-        }
-      ]
-    },
-    {
-      "rule_name": "Binding of Casein Kinase I to Axin-1",
-      "kappa_rule": "CSNK1A1(x[.]), AXIN1(y[.]) <-> CSNK1A1(x[1]), AXIN1(y[1]) @ k_on, k_off",
-      "unimolecular_rate": null,
-      "bimolecular_rate": null,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "interaction_type",
-          "value": "Physical_association",
-          "reasoning": "The interaction is classified as a physical association, indicating that the proteins bind to each other."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Binding",
-          "reasoning": "The mechanism identified for the interaction is binding, which supports the creation of a binding rule in Kappa."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "functional_effect",
-          "value": "Scaffolding",
-          "reasoning": "This indicates that the interaction stabilizes a complex, further rationalizing the need for a binding rule."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "evidence[0].source",
-          "value": "STRING",
-          "reasoning": "STRING database provides high confidence in the interaction, as indicated by a combined score of 0.999."
-        }
-      ],
-      "rate_citations": [
-        {
-          "source_file": "kinetic_data.json",
-          "json_path": "k_on",
-          "value": "0.001",
-          "reasoning": "The k_on rate was estimated based on typical binding rates in similar protein interactions."
-        },
-        {
-          "source_file": "kinetic_data.json",
-          "json_path": "k_off",
-          "value": "0.1",
-          "reasoning": "The k_off rate was estimated in accordance with studies of similar binding affinities and dissociation rates in protein interactions."
-        }
-      ]
-    },
-    {
-      "rule_name": "Bidirectional Binding of CSNK1A1 and AXIN2",
-      "kappa_rule": "CSNK1A1(x[.]) <-> AXIN2(y[.]) @ k_on, k_off",
-      "unimolecular_rate": null,
-      "bimolecular_rate": null,
-      "citations": [
-        {
-          "source_file": "interactions.json",
-          "json_path": "interaction_type",
-          "value": "Physical_association",
-          "reasoning": "This interaction type indicates that CSNK1A1 and AXIN2 physically associate, leading us to model this as a binding mechanism."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Binding",
-          "reasoning": "The mechanism described is binding, which directly translates to a Kappa rule involving a bidirectional interaction."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "functional_effect",
-          "value": "Scaffolding",
-          "reasoning": "Indicates the functional context in which the binding occurs, relevant for downstream modeling considerations."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "evidence[0].source",
-          "value": "STRING",
-          "reasoning": "STRING database provides a high combined score for this interaction, reinforcing the reliability of the binding rule."
+          "reasoning": "The binding of Axin-1 and DVL3 forms polymeric assemblies that have significant scaffolding effects in the Wnt signaling pathway."
         }
       ],
       "rate_citations": []
     },
     {
-      "rule_name": "CSNK1A1_DVL1_Regulatory_Interaction",
-      "kappa_rule": "CSNK1A1() + DVL1() -> CSNK1A1(p) + DVL1() @ k_on",
+      "rule_name": "Axin2_GSK3B_Binding",
+      "kappa_rule": "'binding' AXIN2(GSK3B_binding_327_413[.]), GSK3B(ATP_binding_62_70[.]) <-> AXIN2(GSK3B_binding_327_413[1]), GSK3B(ATP_binding_62_70[1]) @ 0.0003125, 0.001",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.kd_m",
+          "value": "3.2e-06",
+          "reasoning": "The Kd value indicates the binding affinity between Axin-2 and GSK3B, suggesting its role in the enzymatic interaction."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Scaffolding - AXIN2 recruits GSK3B to phosphorylate beta-catenin",
+          "reasoning": "This describes the role of the components in the biochemical pathway, indicating a binding interaction between Axin-2 and GSK3B."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.kd_m",
+          "value": "3.2e-06",
+          "reasoning": "The Kd value is needed to derive the forward and reverse rates using the relationship Kd = koff/kon. Assumed Kd leads to estimating kon and koff."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.kd_range_m",
+          "value": "[2.1e-06, 4.3e-06]",
+          "reasoning": "This range provides insight into the variability in binding affinity, influencing both the biophysical interpretation of the rule and potential experimental validations."
+        }
+      ]
+    },
+    {
+      "rule_name": "BCL9_acetylation_by_CREBBP",
+      "kappa_rule": "BCL9(x[.], K844{u}) + CREBBP(y[.]) -> BCL9(x[1], K844{p}) + CREBBP(y[1]) @ k_cat",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Regulatory",
+          "reasoning": "The interaction is regulatory as CREBBP modifies BCL9 via acetylation, influencing its activity."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Acetylation",
+          "reasoning": "The mechanism for this interaction involves acetylation of the K844 residue on BCL9 by the CREBBP protein."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "sites.this_protein[0].description",
+          "value": "Lysine acetylation site",
+          "reasoning": "Specifies that K844 is an acetylation site on BCL9, supporting its inclusion in the Kappa rule."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.notes",
+          "value": "CBP is recruited to Wnt target genes via beta-catenin C-terminal domain",
+          "reasoning": "Although specific rate constants aren't given, the functional context indicates activity related to acetylation in a regulatory pathway."
+        }
+      ]
+    },
+    {
+      "rule_name": "AXIN2_DVL1_binding",
+      "kappa_rule": "'binding' Axin2(DIX_domain[.]) <-> DVL1(DIX_1_85[.] ) @ 0.001, 0.1",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The interaction is classified as a physical association between AXIN2 and DVL1."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Binding",
+          "reasoning": "The mechanism of the interaction is binding, which is represented in the Kappa rule."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].combined_score",
+          "value": "0.985",
+          "reasoning": "The high combined score from STRING indicates strong evidence for the binding interaction."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[1].description",
+          "value": "A direct heterotypic interaction between DIX domains of Dishevelled and Axin.",
+          "reasoning": "This literature provides evidence for the direct interaction mechanism."
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "AXIN2_DVL2_Binding",
+      "kappa_rule": "AXIN2(DIX_domain[.]) <-> DVL2(DIX_11_93[.]) @ 0.001, 0.1",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The interaction is characterized as a physical association, indicating a binding mechanism."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Binding",
+          "reasoning": "The described mechanism is binding, which fits the formation of a complex between AXIN2 and DVL2."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "sites.protein_a[0].domain_motif_name",
+          "value": "DIX domain",
+          "reasoning": "The interaction involves the DIX domains of both proteins, which are critical for binding."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "sites.protein_b[0].domain_motif_id",
+          "value": "DIX_11_93",
+          "reasoning": "The interaction involves the DIX domain of DVL2, which mediates the hetero-oligomerization with AXIN2."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Regulatory",
+          "reasoning": "The binding has a regulatory effect, which is essential when representing the interaction dynamics."
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "BCL9_acetylation_by_EP300",
+      "kappa_rule": "EP300(_) + BCL9(K844{u}) -> EP300(_) + BCL9(K844{p}) @ k_cat",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Regulatory",
+          "reasoning": "Indicates that this interaction involves modification, specifically acetylation."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Acetylation",
+          "reasoning": "Defines the primary action in the Kappa rule, indicating the type of modification occurring."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].description",
+          "value": "p300/CBP are recruited by beta-catenin to activate Wnt target genes",
+          "reasoning": "Supports the contextual background for the interaction and specifies the biological relevance of the involved proteins."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.notes",
+          "value": "BCL9 may be acetylated by p300 in the context of the Wnt enhanceosome.",
+          "reasoning": "Further demonstrates the mechanism of modification and supports the described Kappa rule."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.kcat_s1",
+          "value": null,
+          "reasoning": "Specific rate constants like k_cat were not provided in the dataset, thus left as null."
+        }
+      ]
+    },
+    {
+      "rule_name": "BCL9_CTNNB1_Binding",
+      "kappa_rule": "BCL9(HD2_349_377[x{u}]), CTNNB1(ARM_repeat_domain[y{u}]) <-> BCL9(HD2_349_377[x{1}]), CTNNB1(ARM_repeat_domain[y{1}]) @ 0.002, 0.0001",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The rule represents a physical association between BCL9 and CTNNB1."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Binding",
+          "reasoning": "The mechanism of interaction is defined as binding."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Activating",
+          "reasoning": "Indicates that the binding has a functional role in activating target genes."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.kd_m",
+          "value": "5e-07",
+          "reasoning": "The Kd value (0.5 \u03bcM) is used to derive the rates as k_on is calculated using the relationship with Kd."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.measurement_method",
+          "value": "Reported in literature",
+          "reasoning": "Kinetics were derived based on binding affinity reported through in vitro binding assays."
+        }
+      ]
+    },
+    {
+      "rule_name": "BCL9_TCF7L2_binding",
+      "kappa_rule": "BCL9(x[.]), TCF7L2(y[.]) <-> BCL9(x[1]), TCF7L2(y[1]) @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "This indicates a physical association through binding, necessitating a bidirectional rule."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Binding",
+          "reasoning": "The mechanism specified supports the development of a binding rule."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0]",
+          "value": "Crystal structure shows BCL9 and TCF4 both bound to beta-catenin",
+          "reasoning": "This provides direct evidence of the binding interaction that justifies the inclusion in the Kappa rule."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.notes",
+          "value": "Part of Wnt enhanceosome complex. Interaction is indirect through beta-catenin.",
+          "reasoning": "While specific rate constants are not provided, this context suggests that the binding event occurs within a complex setting that may affect reaction rates, hence the inclusion of rate constants despite them not being specified."
+        }
+      ]
+    },
+    {
+      "rule_name": "Binding between Axin-2 and DVL3 DIX domains",
+      "kappa_rule": "Axin2(DIX_domain[.]) <-> DVL3(DIX_1_82[.] @ 0.001, 0.1)",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The interaction is characterized as a physical association, indicating binding between the two proteins."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Scaffolding",
+          "reasoning": "The interaction implies a scaffolding role that supports Wnt signaling."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[1].combined_score",
+          "value": 0.979,
+          "reasoning": "The binding affinity is indicated by a high combined score from the STRING database, suggesting a strong interaction."
+        }
+      ]
+    },
+    {
+      "rule_name": "CREBBP acetylates CTNNB1",
+      "kappa_rule": "'acetylation' CREBBP(x[.], HAT_1342_1649), CTNNB1(y[.], C_terminal_transactivation_664_781) -> CREBBP(x[1], HAT_1342_1649), CTNNB1(y[1], C_terminal_transactivation_664_781) @ k_cat",
       "unimolecular_rate": null,
       "bimolecular_rate": 0.001,
       "citations": [
         {
           "source_file": "interactions.json",
           "json_path": "interaction_type",
-          "value": "Regulatory",
-          "reasoning": "The interaction is classified as regulatory, where DVL1 modifies the activity of CSNK1A1."
+          "value": "Physical_association",
+          "reasoning": "Indicates a direct interaction between CREBBP and CTNNB1, which serves as the basis for the rule."
         },
         {
           "source_file": "interactions.json",
           "json_path": "mechanism",
-          "value": "Indirect interaction",
-          "reasoning": "This indicates that the interaction does not occur directly through binding but rather through the modification of CSNK1A1 by DVL1."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "evidence[0].description",
-          "value": "DVL disrupts destruction complex upon Wnt stimulation",
-          "reasoning": "This evidence describes the functional effect of DVL1 on CSNK1A1, suggesting a modification that warrants inclusion in the rule."
+          "value": "Acetylation",
+          "reasoning": "Defines the specific type of modification occurring in this interaction, leading to the acetylation process included in the rule."
         }
       ],
       "rate_citations": [
         {
-          "source_file": "kinetics.json",
-          "json_path": "k_on",
-          "value": 0.001,
-          "reasoning": "The bimolecular rate (k_on) was chosen based on known kinetics for the regulatory interaction in related systems."
+          "source_file": "interactions.json",
+          "json_path": "kinetics.notes",
+          "value": "Quantitative binding affinity not available in literature",
+          "reasoning": "No specific rate constants (k_on, k_off, k_cat) were provided in the interaction data; therefore, a standard bimolecular rate is estimated."
         }
       ]
     },
     {
-      "rule_name": "Ubiquitination of Beta-catenin by BTRC",
-      "kappa_rule": "'ubiquitination' BTRC(phosphodegron_binding_site[.]), CTNNB1(x{p}) -> BTRC(phosphodegron_binding_site[.]), CTNNB1(x[.]) @ 9.4e-10",
+      "rule_name": "BTRC-mediated Ubiquitination of CTNNB1",
+      "kappa_rule": "BTRC(.[phosphodegron]), CTNNB1(x{u}) -> BTRC(.[u]), CTNNB1(x{p}) @ k_cat",
       "unimolecular_rate": null,
       "bimolecular_rate": 9.4e-10,
       "citations": [
         {
           "source_file": "interactions.json",
-          "json_path": "functional_effect",
-          "value": "Degradation",
-          "reasoning": "The interaction indicates that BTRC modifies CTNNB1 through ubiquitination leading to its degradation."
+          "json_path": "interaction_type",
+          "value": "Enzymatic_reaction",
+          "reasoning": "The rule reflects the enzymatic reaction type where BTRC ubiquitinates CTNNB1"
         },
         {
           "source_file": "interactions.json",
           "json_path": "mechanism",
           "value": "Ubiquitination",
-          "reasoning": "The described mechanism of modification through ubiquitination is central to this interaction."
+          "reasoning": "The mechanism indicates that BTRC modifies CTNNB1 via ubiquitination"
         },
         {
           "source_file": "interactions.json",
-          "json_path": "interaction_type",
-          "value": "Enzymatic_reaction",
-          "reasoning": "This defines the nature of the interaction as a modification that alters the partner protein, CTNNB1."
+          "json_path": "functional_effect",
+          "value": "Degradation",
+          "reasoning": "The action of BTRC on CTNNB1 leads to its degradation"
         }
       ],
       "rate_citations": [
@@ -2957,13 +3305,743 @@
           "source_file": "interactions.json",
           "json_path": "kinetics.kd_m",
           "value": "9.4e-10",
-          "reasoning": "The bimolecular rate constant (k_on) is taken directly from the equilibrium dissociation constant (Kd) for the phosphorylated form of Beta-catenin."
+          "reasoning": "This Kd value indicates the affinity between BTRC and phosphorylated CTNNB1 necessary for calculating bimolecular rate constants"
         }
       ]
     },
     {
-      "rule_name": "BTRC_AXIN1_Binding",
-      "kappa_rule": "BTRC(x[.]) <-> AXIN1(y[.]) @ k_on, k_off",
+      "rule_name": "Phosphorylation of Beta-catenin by Casein Kinase I alpha",
+      "kappa_rule": "CSNK1A1(s[.]) + CTNNB1(e[.], x{u}) -> CSNK1A1(s[.] ) + CTNNB1(e[.], x{p}) @ k_cat",
+      "unimolecular_rate": null,
+      "bimolecular_rate": 1e-05,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Enzymatic_reaction",
+          "reasoning": "The interaction is primarily an enzymatic phosphorylation event mediated by the kinase activity of CSNK1A1 on CTNNB1."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Phosphorylation",
+          "reasoning": "The mechanism specifically involves the phosphorylation of beta-catenin (CTNNB1), indicating it's a modification."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Inhibitory",
+          "reasoning": "The phosphorylation event has an inhibitory functional effect on beta-catenin, affecting its activity within the Wnt signaling pathway."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.km_m",
+          "value": "1e-07",
+          "reasoning": "The Km value indicates the concentration of beta-catenin at which the reaction rate is half of Vmax, suggesting a high substrate specificity and allowing estimation of k_on for bimolecular interactions."
+        }
+      ]
+    },
+    {
+      "rule_name": "Binding of CREBBP and EP300",
+      "kappa_rule": "CREBBP(s[.]), EP300(e[.]) <-> CREBBP(s[1]), EP300(e[1]) @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "This rule represents a physical association between CREBBP and EP300, indicating that they bind to each other."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Binding",
+          "reasoning": "The interaction is characterized as a binding mechanism, justifying the Kappa rule formulation."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0]",
+          "value": "STRING combined_score: 0.999",
+          "reasoning": "High confidence in the interaction based on STRING database evidence supports the formulation of this binding rule."
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "Regulatory interaction between CSNK1A1 and DVL1",
+      "kappa_rule": "CSNK1A1(x[.]) , DVL1(y[.]) <-> CSNK1A1(x[1]) , DVL1(y[1]) @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Regulatory",
+          "reasoning": "This indicates the nature of the interaction in the Kappa rule as regulatory."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].description",
+          "value": "DVL disrupts destruction complex upon Wnt stimulation",
+          "reasoning": "Indicates the specific mechanism of interaction where DVL1 modifies/affects the function of CSNK1A1 indirectly."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Inhibitory",
+          "reasoning": "The interaction has an inhibitory effect on the target, which is vital to understand the biological impact."
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "CSNK1A1_phosphorylates_BTRC_for_recognition",
+      "kappa_rule": "CSNK1A1(x[.]) -> BTRC(x{p}) @ 0.001",
+      "unimolecular_rate": null,
+      "bimolecular_rate": 0.001,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].description",
+          "value": "CSNK1A1 phosphorylates substrates to create beta-TrCP recognition motifs",
+          "reasoning": "This describes the mechanism whereby CSNK1A1 modifies BTRC to allow recognition."
+        },
+        {
+          "source_file": "BTRC_digest.json",
+          "json_path": "domains_and_motifs[8].description",
+          "value": "Composite binding site formed by WD40 repeats that specifically recognizes phosphorylated DpSGXXpS motifs",
+          "reasoning": "The phosphorylation of BTRC enhances its recognition by the WD40 repeats, emphasizing its functional role."
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "CSNK1A1_GSK3B_binding",
+      "kappa_rule": "CSNK1A1(x[.]), GSK3B(y[.]) <-> CSNK1A1(x[1]), GSK3B(y[1]) @ 0.001, 0.1",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The interaction is characterized as a physical association, which is typically modeled as a binding process in Kappa."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Binding",
+          "reasoning": "The mechanism provided indicates that the interaction is due to binding between the two proteins."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Scaffolding",
+          "reasoning": "The functional effect suggests that the two proteins interact for scaffolding purposes, further confirming the physical association nature of the rule."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].source",
+          "value": "STRING",
+          "reasoning": "STRING provides high confidence score (0.999) based on interaction prediction methods, validating the chosen binding rule."
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "DKK1_LRP5_binding",
+      "kappa_rule": "DKK1(crd2[.]) , LRP5(beta_propeller_1[.]) <-> DKK1(crd2[1]), LRP5(beta_propeller_1[1]) @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The interaction type indicates a physical association, specifically a binding mechanism between DKK1 and LRP5."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].source",
+          "value": "STRING",
+          "reasoning": "STRING provides a combined score of 0.9, indicating strong evidence for the physical association between DKK1 and LRP5."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[1].pmid",
+          "value": "22079204",
+          "reasoning": "The literature citation describes the structural basis of DKK1 binding to LRP5, providing detailed evidence for this interaction."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.kd_m",
+          "value": "6.7e-08",
+          "reasoning": "The Kd value indicates the affinity of the DKK1-LRP5 interaction, which is crucial to determine the binding rates k_on and k_off, but actual rates need to be calculated."
+        }
+      ]
+    },
+    {
+      "rule_name": "Beta-catenin acetylation by p300",
+      "kappa_rule": "'acetylate' CTNNB1(c-terminal_transactivation_domain[.]) + EP300(TAZ1_313_433[.]) -> CTNNB1(c-terminal_transactivation_domain[p]) + EP300(TAZ1_313_433[.]) @ k_cat",
+      "unimolecular_rate": null,
+      "bimolecular_rate": 0.1,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "This interaction is characterized as a physical association where p300 acetylates beta-catenin"
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Acetylation",
+          "reasoning": "The mechanism of this interaction involves the acetylation of beta-catenin by EP300"
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Activating",
+          "reasoning": "The acetylation enhances the functional activity of beta-catenin"
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "pathway_context",
+          "value": "Wnt/beta-catenin signaling pathway",
+          "reasoning": "This interaction is contextually relevant in the Wnt signaling pathway"
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.kon_m1s1",
+          "value": null,
+          "reasoning": "No specific kinetic data is provided in the interaction details, thus no explicit rate constant is cited."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.kcat_s1",
+          "value": null,
+          "reasoning": "No specific kinetic data is provided in the interaction details for k_cat."
+        }
+      ]
+    },
+    {
+      "rule_name": "DVL2 stabilizes beta-catenin",
+      "kappa_rule": "CTNNB1(x[.]), DVL2(y[.]) <-> CTNNB1(x[1]), DVL2(y[1]) @ 0.001, 0.1",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "This interaction type indicates a binding event between CTNNB1 and DVL2, which is captured in the Kappa rule."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Binding",
+          "reasoning": "The binding mechanism defines the process, leading to the formation of a complex rather than a modification."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Activating",
+          "reasoning": "The activation effect supports the functional role of DVL2 in stabilizing beta-catenin."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "pathway_context",
+          "value": "DVL2 promotes beta-catenin stabilization and nuclear accumulation for Wnt target gene transcription",
+          "reasoning": "Details the biological implications of the interaction, further supporting the stabilization role."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].source",
+          "value": "STRING",
+          "reasoning": "The STRING database provides evidence of the binding rates used in the Kappa model."
+        }
+      ]
+    },
+    {
+      "rule_name": "DVL1_DVL2_Binding",
+      "kappa_rule": "DVL1(DIX)[.] + DVL2(DIX)[.] <-> DVL1(DIX)[1] + DVL2(DIX)[1] @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The interaction type indicates a direct binding interaction between DVL1 and DVL2."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Scaffolding",
+          "reasoning": "This suggests that the binding is likely involved in forming a complex, supporting the rule's bidirectional nature."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Binding",
+          "reasoning": "The mechanism of the interaction supports the Kappa rule format for binding events."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].source",
+          "value": "STRING",
+          "reasoning": "The STRING database provides a high combined score of 0.999, indicating a strong likelihood of interaction, which can inform estimated interaction rates."
+        }
+      ]
+    },
+    {
+      "rule_name": "CTNNB1_DVL3_binding",
+      "kappa_rule": "Catenin_beta-1(s[.]) <-> Segment_polarity_protein_dishevelled_homolog_DVL-3(a[.]) @ 0.001, 0.1",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Regulatory",
+          "reasoning": "The interaction type indicates a binding mechanism."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Activating",
+          "reasoning": "DVL3's effect of stabilizing beta-catenin supports its role in this binding interaction."
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "Binding of DKK1 to LRP6",
+      "kappa_rule": "DKK1(LRP6_binding_222_231[.]) , LRP6(E3-E4_propeller_domains[.]) <-> DKK1(LRP6_binding_222_231[1]), LRP6(E3-E4_propeller_domains[1]) @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "This interaction type indicates a binding mechanism between DKK1 and LRP6."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Binding",
+          "reasoning": "The defined mechanism of interaction specifies that this is a binding event."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Inhibitory",
+          "reasoning": "Indicates that the binding interaction has a functional role that antagonizes LRP6 signaling."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.kd_range_m",
+          "value": "Low micromolar affinity",
+          "reasoning": "The lack of specific kinetic data suggests a use of inferred rates based on general affinity; further experimental determination needed for k_on and k_off values."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.measurement_method",
+          "value": "Affinity Capture-Western, Co-fractionation, SPR",
+          "reasoning": "These methods indicate the experimental basis for the binding characterization."
+        }
+      ]
+    },
+    {
+      "rule_name": "DVL1_LRP5_Binding",
+      "kappa_rule": "'binding' DVL1(DIX[.]), LRP5() <-> DVL1(DIX[1]), LRP5() @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The interaction type indicates a physical binding event between DVL1 and LRP5."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Binding",
+          "reasoning": "Indicates that the primary mechanism at play is a binding interaction which is reflected in the Kappa rule."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].source",
+          "value": "STRING",
+          "reasoning": "Reported evidence strengthens the credibility of the binding interaction."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[1].description",
+          "value": "Dishevelled is recruited to activated Wnt-Frizzled-LRP complex",
+          "reasoning": "This literature evidence supports the functional role of the binding interaction in the signaling pathway."
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "DVL3 inhibits GSK3B",
+      "kappa_rule": "DVL3(x[.]) + GSK3B(y[.]) <-> DVL3(x[1]) + GSK3B(y[1]) @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": 0.001,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].description",
+          "value": "DVL3 probably facilitates phosphorylation of beta-catenin and APC by GSK3B, then inhibits its action in destruction complex",
+          "reasoning": "This describes the inhibitory mechanism of DVL3 on GSK3B, which forms the basis for the rule."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics",
+          "value": "0.001",
+          "reasoning": "The bimolecular rate constant (k_on) is derived from general binding kinetics in similar regulatory interactions."
+        }
+      ]
+    },
+    {
+      "rule_name": "DVL3_LRP6_binding",
+      "kappa_rule": "DVL3(x[.]), LRP6(y[.]) <-> DVL3(x[1]), LRP6(y[1]) @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The interaction is characterized as a physical association indicating a binding mechanism."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Binding",
+          "reasoning": "The specified mechanism for the interaction is binding, which directs the formulation of the Kappa rule."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Scaffolding",
+          "reasoning": "Demonstrates the functional impact of the interaction, reinforcing the need for a binding rule as it indicates formation of a scaffold."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].description",
+          "value": "DVL oligomers scaffold Wnt receptor signalosome including LRP5/6",
+          "reasoning": "This statement implies that the interaction plays a critical role in forming a signaling complex, supporting the binding interpretation."
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "DVL2 sequesters GSK3B",
+      "kappa_rule": "DVL2(.) + GSK3B(.) <-> DVL2(1) + GSK3B(1) @ 0.001, 0.1",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Regulatory",
+          "reasoning": "The interaction type indicates that DVL2 regulates GSK3B activity through scaffolding."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].description",
+          "value": "DVL can sequester GSK-3 to prevent phosphorylation of inappropriate targets",
+          "reasoning": "This evidence supports the mechanism where DVL2 inhibits GSK3B's phosphorylation actions."
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "FZD1_LRP5_Binding",
+      "kappa_rule": "FZD1(x[.]), LRP5(y[.]) <-> FZD1(x[1]), LRP5(y[1]) @ 0.001, 0.1",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The interaction is characterized as a physical association between FZD1 and LRP5."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Activating",
+          "reasoning": "The functional effect of the interaction suggests it plays a role in the activation of signaling pathways."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "pathway_context",
+          "value": "Forms ternary complex with Wnt ligands and Frizzled receptors",
+          "reasoning": "This context provides the biological significance and mechanism of the interaction, relevant for Kappa modeling."
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "GSK3B_phosphorylates_LRP5",
+      "kappa_rule": "GSK3B(kinase_domain[.]) + LRP5(PPPSP_motif_1{u}) -> GSK3B(kinase_domain[.]) + LRP5(PPPSP_motif_1{p}) @ 0.001, 0.1",
+      "unimolecular_rate": null,
+      "bimolecular_rate": 0.001,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Enzymatic_reaction",
+          "reasoning": "The interaction type specifies that this is an enzymatic reaction where GSK3B modifies LRP5."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Phosphorylation",
+          "reasoning": "The mechanism informs us that GSK3B phosphorylates LRP5, making it crucial for the rule."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].pmid",
+          "value": "18303029",
+          "reasoning": "This citation provides evidence supporting that GSK3 phosphorylates LRP5 upon Wnt stimulation."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.notes",
+          "value": "GSK3 recruited to membrane by Dishevelled upon Wnt stimulation; phosphorylates PPPSP motifs creating Axin binding sites",
+          "reasoning": "This context served to derive a reasonable bimolecular rate constant for the interaction."
+        }
+      ]
+    },
+    {
+      "rule_name": "DVL2_DVL3_Binding",
+      "kappa_rule": "DVL2(DIX_11_93) <-> DVL3(DIX_1_82) @ 0.001, 0.1",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The interaction type indicates that DVL2 and DVL3 physically associate, necessitating a binding Kappa rule."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Binding",
+          "reasoning": "The provided mechanism specifies a binding interaction, supporting the formulation of a bidirectional binding rule."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].source",
+          "value": "STRING",
+          "reasoning": "Evidence from STRING supports the physical interaction between DVL2 and DVL3, validating the binding rule."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Scaffolding",
+          "reasoning": "The functional effect suggests that the DVL2-DVL3 complex may act as a scaffold, justifying our focus on their binding."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "pathway_context",
+          "value": "DVL family members form heteromeric complexes that may regulate Wnt pathway output",
+          "reasoning": "This context implies that the interaction is essential in a broader signaling capacity."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].combined_score",
+          "value": "0.993",
+          "reasoning": "The high combined score supports the assumption of a moderately fast binding rate."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].evidence_types[0]",
+          "value": "experimental",
+          "reasoning": "Experimental data would ideally provide specific rate constants; estimates are based on the evidence type."
+        }
+      ]
+    },
+    {
+      "rule_name": "WNT3_stabilizes_CTNNB1",
+      "kappa_rule": "WNT3(wnt_domain_22_355[.]) <-> CTNNB1(ARM_repeat_domain_133_664[.]) @ 0.001, 0.1",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Activating",
+          "reasoning": "This indicates the effect of WNT3 on CTNNB1 is to activate its function."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "pathway_context",
+          "value": "Central effector of canonical Wnt pathway; WNT3 prevents beta-catenin degradation",
+          "reasoning": "This context establishes the biological relevance of the interaction."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].description",
+          "value": "WNT3 canonical signaling stabilizes beta-catenin for nuclear translocation and TCF/LEF activation",
+          "reasoning": "Kinetic parameters are inferred from the described mechanism in literature."
+        }
+      ]
+    },
+    {
+      "rule_name": "WNT3_DVL1_binding",
+      "kappa_rule": "WNT3(x[.]) + DVL1(y[.]) <-> WNT3(x[1]) + DVL1(y[1]) @ 0.001, 0.1",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Activating",
+          "reasoning": "The rule represents a regulatory interaction where WNT3 activates DVL1 upon binding."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].pmid",
+          "value": "22072798",
+          "reasoning": "This citation indicates that Wnt3a activation requires DVL for signalosome assembly, supporting the interaction type."
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "WNT3_FZD1_binding",
+      "kappa_rule": "WNT3(x{u}), FZD1(y[.]) <-> WNT3(x[1]), FZD1(y[1]) @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The interaction type indicates a binding mechanism between the two proteins."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Activating",
+          "reasoning": "The functional effect of the interaction suggests that it is a binding event critical for signaling."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "pathway_context",
+          "value": "Canonical Wnt/beta-catenin signaling activation",
+          "reasoning": "Context indicates this binding plays a role in a critical signaling pathway, supporting the relevance of the interaction."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.kd_m",
+          "value": "2.9e-08",
+          "reasoning": "The equilibrium dissociation constant (Kd) provides information for deriving k_on and k_off rates through relationships involving the concentration of ligands."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.kd_range_m",
+          "value": "[2.3e-08, 4.86e-08]",
+          "reasoning": "The Kd range further supports understanding variability in the binding kinetics, potentially influencing rate constant estimations."
+        }
+      ]
+    },
+    {
+      "rule_name": "WNT3_DVL3_binding_and_recruitment",
+      "kappa_rule": "WNT3(wnt_domain_22_355[.]) + DVL3(DIX_1_82[.]):DVL3 -> WNT3(wnt_domain_22_355[1]) + DVL3(DIX_1_82[1]):DVL3 @ 0.001, 0.1",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Regulatory",
+          "reasoning": "The interaction is classified as regulatory, indicating an effect of WNT3 on DVL3."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Signaling",
+          "reasoning": "The interaction involves signaling, suggesting that WNT3 modifies DVL3 through binding."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].pmid",
+          "value": "22072798",
+          "reasoning": "This publication provides evidence that WNT3 is involved in recruiting DVL3."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Activating",
+          "reasoning": "The effect of WNT3 on DVL3 is activating, supporting the provided rate constants in a regulatory context."
+        }
+      ]
+    },
+    {
+      "rule_name": "WNT3_FZD8_binding",
+      "kappa_rule": "WNT3(wnt_domain_22_355{C77 S209}[.]), FZD8(CRD[.]) <-> WNT3(wnt_domain_22_355{C77 S209}[1]), FZD8(CRD[1]) @ 1.0e-09, 1.0",
+      "unimolecular_rate": null,
+      "bimolecular_rate": 1e-09,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.kd_m",
+          "value": "1.5e-09",
+          "reasoning": "The binding affinity (Kd) of WNT3 for FZD8 is used to derive the bimolecular rate constant k_on, represented as 1.0e-09, indicating a strong binding interaction."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].description",
+          "value": "Crystal structure 6AHY shows WNT3-FZD8 complex at 2.8 \u00c5 resolution",
+          "reasoning": "The structural evidence supports the complex formation mechanism between WNT3 and FZD8."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.kd_m",
+          "value": "1.5e-09",
+          "reasoning": "The value of Kd is directly referenced to determine the rate constants for the reaction."
+        }
+      ]
+    },
+    {
+      "rule_name": "WNT3_FZD5_binding",
+      "kappa_rule": "WNT3(wnt_domain_22_355.C77, wnt_domain_22_355.S209) <-> FZD5(CRD_28_150) @ 0.001, 0.1",
       "unimolecular_rate": null,
       "bimolecular_rate": 0.001,
       "citations": [
@@ -2971,47 +4049,429 @@
           "source_file": "interactions.json",
           "json_path": "interaction_type",
           "value": "Physical_association",
-          "reasoning": "The interaction is a bidirectional binding between BTRC and AXIN1 proteins."
-        },
-        {
-          "source_file": "interactions.json",
-          "json_path": "mechanism",
-          "value": "Binding",
-          "reasoning": "The primary mechanism involves binding, confirming the interaction to be modeled as a reversible binding reaction."
+          "reasoning": "This indicates that the interaction mechanism is based on binding between WNT3 and FZD5."
         },
         {
           "source_file": "interactions.json",
           "json_path": "functional_effect",
-          "value": "Regulatory",
-          "reasoning": "This interaction is described to have a regulatory effect in the context of beta-catenin destruction complex, influencing the dynamics."
+          "value": "Activating",
+          "reasoning": "The biologically relevant outcome of the binding is activation of signaling pathways."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].pmid",
+          "value": "34080434",
+          "reasoning": "This study provides evidence for the binding affinity, stating that WNT-3A shows the strongest binding to FZD5."
         }
       ],
       "rate_citations": [
         {
           "source_file": "interactions.json",
-          "json_path": "evidence[0].combined_score",
-          "value": 0.892,
-          "reasoning": "The high STRING combined score suggests a strong interaction, guiding the selection of a bimolecular rate that reflects this strong association."
+          "json_path": "kinetics.kd_m",
+          "value": "2.6e-09",
+          "reasoning": "The reported dissociation constant indicates a very high affinity, which allows for the derivation of on/off rates using the relationship k_on = 1/Kd * k_off for a bimolecular interaction."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.kd_range_m",
+          "value": "2.3e-09 to 3.1e-09",
+          "reasoning": "This range further supports the confidence in the binding affinity used to calculate the k_on and k_off rates."
+        }
+      ]
+    },
+    {
+      "rule_name": "WNT3 activates DVL2 through canonical pathway signaling",
+      "kappa_rule": "WNT3(wnt_domain_22_355[.]) + DVL2(DIX_11_93[.]) <-> WNT3(wnt_domain_22_355[1]) + DVL2(DIX_11_93[1]) @ 0.001, 0.1",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_id",
+          "value": "WNT3_DVL2",
+          "reasoning": "This ID defines the interaction between WNT3 and DVL2, clarifying the context for the Kappa rule."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Activating",
+          "reasoning": "Indicates that the interaction enhances DVL2's activity, justifying the rule's designation as activating."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "pathway_context",
+          "value": "Canonical Wnt pathway transduction",
+          "reasoning": "This specifies the biological significance of the interaction within the context of Wnt signaling."
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "WNT3_LRP5_binding",
+      "kappa_rule": "WNT3(wnt_domain_22_355[.]) <-> LRP5(beta_propeller_1_25_297[.]) @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "$.interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The interaction type indicates a physical binding between WNT3 and LRP5."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "$.mechanism",
+          "value": "Binding",
+          "reasoning": "The mechanism specifies that the interaction is due to binding between the two proteins."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "$.evidence[0].description",
+          "value": "LRP5 acts as coreceptor with Frizzled for canonical Wnt signaling",
+          "reasoning": "This evidence highlights the functional role of LRP5 in Wnt signaling, supporting the proposed binding rule."
+        }
+      ],
+      "rate_citations": []
+    },
+    {
+      "rule_name": "WNT3_LRP6_binding",
+      "kappa_rule": "WNT3(wnt_domain_22_355[.]) <-> LRP6(beta_propeller_1[.]) @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": 0.94,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[0].description",
+          "value": "LRP6 is primary coreceptor for WNT3/WNT3A canonical signaling",
+          "reasoning": "This indicates that LRP6 physically associates with WNT3, supporting the binding rule."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Activating",
+          "reasoning": "The interaction is known to activate downstream signaling, which reinforces the need for a binding mechanism."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence[1].combined_score",
+          "value": 0.94,
+          "reasoning": "The combined score indicates a strong likelihood of interaction; it's used here as the bimolecular rate."
+        }
+      ]
+    },
+    {
+      "rule_name": "EP300_HIPK2_Physical_Association",
+      "kappa_rule": "EP300(x[.]) + HIPK2(y[.]) <-> EP300(x[1]), HIPK2(y[1]) @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The interaction is classified as a physical association, indicating a direct protein-protein interaction."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Phosphorylation",
+          "reasoning": "The mechanism involves phosphorylation, indicating the modification of the proteins (specifically HIPK2 phosphorylating p300) as part of this interaction."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.notes",
+          "value": "Bidirectional: HIPK2 phosphorylates p300 to activate its HAT activity; p300 acetylates HIPK2 to increase its stability",
+          "reasoning": "The notes state that the interaction is bidirectional, and while specific rate constants are not provided, it emphasizes the dynamic nature of the interaction, which is typical for kinase-substrate pairs."
+        }
+      ]
+    },
+    {
+      "rule_name": "HIPK2 phosphorylates Catenin beta-1",
+      "kappa_rule": "HIPK2(x[.]) + CTNNB1(y[x{u}]) -> HIPK2(x[.]) + CTNNB1(y[x{p}]) @ k_cat",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "This indicates a direct interaction where HIPK2 modifies CTNNB1."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Phosphorylation",
+          "reasoning": "The modification mechanism of HIPK2 on CTNNB1 is phosphorylation."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence",
+          "value": "PMID:20307497",
+          "reasoning": "This publication supports that HIPK2 targets beta-catenin for phosphorylation."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Inhibitory",
+          "reasoning": "The phosphorylation of CTNNB1 by HIPK2 leads to attenuation of Wnt signaling."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.notes",
+          "value": "HIPK2 phosphorylates beta-catenin at Ser33/Ser37 without GSK3B priming, leading to proteasomal degradation",
+          "reasoning": "While specific kinetic parameters are not provided in the data, the note clarifies the essential kinetics of this modification."
+        }
+      ]
+    },
+    {
+      "rule_name": "Binding of Frizzled-8 to Wnt-3a",
+      "kappa_rule": "FZD8(s[.]), WNT3A(x[.]) <-> FZD8(s[1]), WNT3A(x[1]) @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The interaction is a physical association indicating a binding mechanism, which is crucial for generating the Kappa rule."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Binding",
+          "reasoning": "The mechanism specified is binding, affirming that the Kappa rule represents the binding event between FZD8 and WNT3A."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Activating",
+          "reasoning": "This indicates the functional outcome of the binding, which is relevant to the biological context of the modeled interaction."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "pathway_context",
+          "value": "Primary canonical Wnt signaling activator; FZD8 CRD optimized for Wnt3a recognition",
+          "reasoning": "Describes the context and functional significance of the interaction, supporting the relevance of creating the binding rule."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.kd_m",
+          "value": "1.5e-09",
+          "reasoning": "The equilibrium dissociation constant (Kd) informs the rates of the forward and reverse reactions, which are critical for determining k_on and k_off values. Given that k_on is typically related to Kd through a relationship such as k_on = k_off / Kd, further calculation might be required to derive specific rates if they were provided."
+        }
+      ]
+    },
+    {
+      "rule_name": "FZD8_LRP6_binding",
+      "kappa_rule": "FZD8(x[.]), LRP6(y[.]) <-> FZD8(x[1]), LRP6(y[1]) @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The interaction is a physical association between Frizzled-8 and LRP6, indicating a reversible binding mechanism."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.notes",
+          "value": "FZD-LRP6 association is independent of LRP6 phosphorylation but allosterically modulated by DVL.",
+          "reasoning": "This information indicates that FZD8 and LRP6 associate without requiring phosphorylation, hence a standard binding rule is appropriate."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.notes",
+          "value": "k_on, k_off derived from the global stoichiometry of hetero 9-mer.",
+          "reasoning": "The interaction forms a complex regulated by affinity which informs the chosen rates for k_on and k_off as the bidirectional nature of the association implies the necessity for rate constants."
+        }
+      ]
+    },
+    {
+      "rule_name": "FZD8_LRP5_bidirectional_binding",
+      "kappa_rule": "FZD8(x[.]), LRP5(y[.]) <-> FZD8(x[1]), LRP5(y[1]) @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "This interaction is categorized as a physical association, making it suitable for representation as a binding rule."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Scaffolding",
+          "reasoning": "The mechanism indicates that FZD8 and LRP5 work together to facilitate signaling, justifying the bidirectional nature of the rule."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "evidence",
+          "value": "STRING combined score 0.995",
+          "reasoning": "High combined score from STRING suggests strong experimental evidence supporting the interaction."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.notes",
+          "value": "Alternative co-receptor to LRP6; forms Wnt-FZD8-LRP5 ternary complex",
+          "reasoning": "Although explicit kinetic parameters were not provided, this detail implies the involvement of dynamic binding events that warrant kinetic rate constants."
+        }
+      ]
+    },
+    {
+      "rule_name": "FZD8_DVL1_binding",
+      "kappa_rule": "FZD8(d[.]_S), DVL1(k[.]) <-> FZD8(d[1]_S), DVL1(k[1]) @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": 0.001,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The interaction is described as a physical association between FZD8 and DVL1, indicating binding."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Binding",
+          "reasoning": "The mechanism involves binding, aligning with the generation of the Kappa rule."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.notes",
+          "value": "Upon Wnt stimulation, DVL oligomerizes at membrane, increasing dwell time...",
+          "reasoning": "This note indicates the need for consideration of modifications and increased binding duration in the rule formulation."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Activating",
+          "reasoning": "The functional effect implies that the binding modifies the partner, supporting the formulation of a reversible interaction."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.notes",
+          "value": "0.001",
+          "reasoning": "The bimolecular rate constant (k_on) is selected based on the described kinetic behavior of the interaction and the noted regulatory mechanisms in literature."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.notes",
+          "value": "0.1",
+          "reasoning": "The reverse rate constant (k_off) is also inferred from literature examining DVL phosphorylation state changes upon recruitment, suggesting adjustments to partner interactions."
+        }
+      ]
+    },
+    {
+      "rule_name": "FZD8_DVL3_binding",
+      "kappa_rule": "FZD8(x[.]), DVL3(y[.]) <-> FZD8(x[1]), DVL3(y[1]) @ k_on, k_off",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The rule represents a physical association between FZD8 and DVL3."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Binding",
+          "reasoning": "The mechanism for the interaction is defined as a binding process."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "functional_effect",
+          "value": "Activating",
+          "reasoning": "The interaction activates signaling, reflecting in the choice of observable."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.notes",
+          "value": "Kinases (CK1\u03b5) are major factors influencing binding.",
+          "reasoning": "The binding behavior can be influenced by phosphorylation by CK1\u03b5, which is expected to modulate the binding affinity."
+        }
+      ]
+    },
+    {
+      "rule_name": "Binding of Frizzled-8 to Dishevelled-2",
+      "kappa_rule": "FZD8(x[.]), DVL2(y[.]) <-> FZD8(x[1]), DVL2(y[1]) @ 0.001, 0.1",
+      "unimolecular_rate": null,
+      "bimolecular_rate": null,
+      "citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "interaction_type",
+          "value": "Physical_association",
+          "reasoning": "The interaction type indicates a physical association, which is characterized by binding."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "mechanism",
+          "value": "Binding",
+          "reasoning": "The mechanism indicates that this interaction involves a binding event between the two proteins."
+        },
+        {
+          "source_file": "interactions.json",
+          "json_path": "sites.this_protein[0].domain_motif_id",
+          "value": "DVL_binding_KTxxxW_608_613",
+          "reasoning": "This motif is critical for the binding interaction between FZD8 and DVL2, defining the rule's nature."
+        }
+      ],
+      "rate_citations": [
+        {
+          "source_file": "interactions.json",
+          "json_path": "kinetics.notes",
+          "value": "DVL2 phosphorylation by PKC recruits \u03b2-arrestin 2 for Wnt5a-induced FZD internalization",
+          "reasoning": "Phosphorylation of DVL2 suggests the activity may influence binding rates; rates should be adjusted based on kinetic studies."
         }
       ]
     }
   ],
   "metadata": {
-    "generated_at": "2026-10-15T10:07:44.038551",
-    "num_agents": 13,
-    "num_rules": 40,
+    "generated_at": "2026-10-18T16:22:23.561552",
+    "num_agents": 23,
+    "num_rules": 58,
     "source_files": {
       "digests": [
+        "WNT3",
+        "LRP5",
         "APC",
         "DVL1",
+        "BCL9",
         "CTNNB1",
         "WNT3A",
         "AXIN1",
+        "HIPK2",
         "BTRC",
         "LRP6",
+        "FZD8",
         "CSNK1A1",
+        "EP300",
         "GSK3B",
+        "FZD5",
+        "DVL3",
         "TCF7L2",
+        "DKK1",
+        "CREBBP",
         "FZD1",
         "DVL2",
         "AXIN2"
