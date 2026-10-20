@@ -113,7 +113,15 @@ class CausalGraph:
                 for agent_a in rule_a.left.agents:
                     if agent_a is None:
                         continue
-                    if Component([agent_a]).embeddings(rule_b.right):
+                    # Check if agent_a embeds into any agent in rule_b's RHS
+                    embeds = False
+                    for agent_b in rule_b.right.agents:
+                        if agent_b is None:
+                            continue
+                        if any(True for _ in Component([agent_a]).embeddings(Component([agent_b]))):
+                            embeds = True
+                            break
+                    if embeds:
                         self.edges[name_a].add(name_b)
                         self.edge_labels[(name_a, name_b)].add(agent_a)
 
@@ -155,7 +163,45 @@ class CausalGraph:
                     changed = True
 
         unreachable_rules = list(all_rule_names - reachable)
-        return unreachable_rules 
+        return unreachable_rules
+
+    def reachable(self, init: Iterable[Agent]) -> list[str]:
+        '''
+        Returns a list of rule names that can be reached from the agents in `init`.
+
+        A rule is reachable if every agent in its LHS embeds into either an agent in
+        `init`, or the RHS of another reachable rule.
+        '''
+        init_agents = list(init)
+        reachable = set()
+
+        changed = True
+        while changed:
+            changed = False
+            for rule_name, rule in self.system.rules.items():
+                if rule_name in reachable:
+                    continue
+
+                # Collect all agents from RHS of reachable rules and init
+                available_agents = list(init_agents)
+                for reachable_name in reachable:
+                    reachable_rule = self.system.rules[reachable_name]
+                    available_agents.extend(reachable_rule.right.agents)
+
+                # Check if all LHS agents of this rule embed into available_agents
+                all_embed = True
+                for lhs_agent in rule.left.agents:
+                    if lhs_agent is None:
+                        continue
+                    if not self._agent_embeds_into_agents(lhs_agent, available_agents):
+                        all_embed = False
+                        break
+
+                if all_embed:
+                    reachable.add(rule_name)
+                    changed = True
+
+        return list(reachable)
 
     def _agent_embeds_into_agents(self, agent: Agent, target_agents: list[Agent]) -> bool:
         '''Check if an agent embeds into any agent in target_agents.'''
@@ -168,6 +214,83 @@ class CausalGraph:
             if any(True for _ in embeddings_gen):
                 return True
         return False
+
+    def find_paths(self, init: Iterable[Agent], target: list[str]) -> 'CausalGraph':
+        '''
+        Returns a CausalGraph containing all paths from anything in init to any rule in target.
+
+        A path is any sequence of directed edges in the causal graph. This uses pure graph
+        traversal (not simulation-based reachability), meaning a rule is "connected" to init
+        if at least one of its LHS agents embeds into an init agent.
+
+        Args:
+            init: Iterable of Agent objects representing initial agents
+            target: List of rule name strings to find paths to
+
+        Returns:
+            A new CausalGraph containing only the rules and edges on paths from init to target
+        '''
+        init_agents = list(init)
+
+        # Step 1: Find starting rules - rules that have at least one LHS agent
+        # that embeds into any init agent
+        starting_rules = set()
+        for rule_name, rule in self.system.rules.items():
+            for lhs_agent in rule.left.agents:
+                if lhs_agent is None:
+                    continue
+                # Check if this LHS agent embeds into any init agent
+                if self._agent_embeds_into_agents(lhs_agent, init_agents):
+                    starting_rules.add(rule_name)
+                    break
+
+        # Step 2: Forward reachable - graph traversal from starting rules
+        # Edge A -> B means A depends on B, so in execution order B enables A
+        # Therefore, to go forward in execution, we follow edges backward in the graph
+        forward_reachable = set(starting_rules)
+        changed = True
+        while changed:
+            changed = False
+            for rule_a, successors in self.edges.items():
+                # If any of rule_a's dependencies are forward-reachable,
+                # then rule_a is forward-reachable (we can execute dependencies first)
+                for rule_b in successors:
+                    if rule_b in forward_reachable and rule_a not in forward_reachable:
+                        forward_reachable.add(rule_a)
+                        changed = True
+                        break
+
+        # Step 3: Backward reachable - graph traversal from target rules
+        # Follow edges forward (in dependency direction)
+        backward_reachable = set(target)
+        changed = True
+        while changed:
+            changed = False
+            for rule_name in list(backward_reachable):
+                # If rule_name is backward-reachable, all its dependencies are too
+                for dependency in self.edges.get(rule_name, []):
+                    if dependency not in backward_reachable:
+                        backward_reachable.add(dependency)
+                        changed = True
+
+        # Step 4: Intersection - rules on paths from init to targets
+        path_rules = forward_reachable & backward_reachable
+
+        # Step 5: Create a new CausalGraph with only these rules
+        new_graph = CausalGraph.__new__(CausalGraph)
+        new_graph.system = self.system
+        new_graph.edges = defaultdict(set)
+        new_graph.edge_labels = defaultdict(set)
+
+        # Copy only edges where both endpoints are in path_rules
+        for source in path_rules:
+            for dest in self.edges[source]:
+                if dest in path_rules:
+                    new_graph.edges[source].add(dest)
+                    if (source, dest) in self.edge_labels:
+                        new_graph.edge_labels[(source, dest)] = self.edge_labels[(source, dest)]
+
+        return new_graph
 
     def causal_tree(self, init: Iterable[Agent], target_rule: str):
         pass
