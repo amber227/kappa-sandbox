@@ -1,0 +1,137 @@
+// KaiABC Circadian Oscillator Model
+// Based on van Zon et al. (2007)
+
+// === PARAMETERS ===
+%var: 'k0_flip' 0.5
+%var: 'c_param' 1.8
+%var: 'k_Af' 5.0
+%var: 'k_Ab_base' 1.0
+%var: 'alpha' 1.5
+%var: 'k_pf' 2.0
+%var: 'k_ps_a' 0.05
+%var: 'k_dps_a' 0.2
+%var: 'k_ps_i' 0.02
+%var: 'k_dps_i' 0.2
+%var: 'k_Bf' 5.0
+%var: 'k_Bb' 0.5
+%var: 'k_Aseq_f' 10.0
+%var: 'k_Aseq_b' 0.01
+
+// === INITIAL CONDITIONS ===
+%init: 100 C(state{active}, phos{p0}, kaiA[.], kaiB1[.], kaiB2[.])
+%init: 300 A(x[.])
+%init: 100 B(c[.], a[.])
+
+// === RULES ===
+
+// 1. Conformational transitions (phosphorylation-dependent)
+C(state{active}, phos{p0}, kaiA[.]) -> C(state{inactive}, phos{p0}, kaiA[.]) @ 'k0_flip' * ('c_param' ^ 0)
+C(state{inactive}, phos{p0}, kaiB1[.], kaiB2[.]) -> C(state{active}, phos{p0}, kaiB1[.], kaiB2[.]) @ 'k0_flip'
+C(state{active}, phos{p1}, kaiA[.]) -> C(state{inactive}, phos{p1}, kaiA[.]) @ 'k0_flip' * ('c_param' ^ 1)
+C(state{inactive}, phos{p1}, kaiB1[.], kaiB2[.]) -> C(state{active}, phos{p1}, kaiB1[.], kaiB2[.]) @ 'k0_flip' / ('c_param' ^ 1)
+C(state{active}, phos{p2}, kaiA[.]) -> C(state{inactive}, phos{p2}, kaiA[.]) @ 'k0_flip' * ('c_param' ^ 2)
+C(state{inactive}, phos{p2}, kaiB1[.], kaiB2[.]) -> C(state{active}, phos{p2}, kaiB1[.], kaiB2[.]) @ 'k0_flip' / ('c_param' ^ 2)
+C(state{active}, phos{p3}, kaiA[.]) -> C(state{inactive}, phos{p3}, kaiA[.]) @ 'k0_flip' * ('c_param' ^ 3)
+C(state{inactive}, phos{p3}, kaiB1[.], kaiB2[.]) -> C(state{active}, phos{p3}, kaiB1[.], kaiB2[.]) @ 'k0_flip' / ('c_param' ^ 3)
+C(state{active}, phos{p4}, kaiA[.]) -> C(state{inactive}, phos{p4}, kaiA[.]) @ 'k0_flip' * ('c_param' ^ 4)
+C(state{inactive}, phos{p4}, kaiB1[.], kaiB2[.]) -> C(state{active}, phos{p4}, kaiB1[.], kaiB2[.]) @ 'k0_flip' / ('c_param' ^ 4)
+C(state{active}, phos{p5}, kaiA[.]) -> C(state{inactive}, phos{p5}, kaiA[.]) @ 'k0_flip' * ('c_param' ^ 5)
+C(state{inactive}, phos{p5}, kaiB1[.], kaiB2[.]) -> C(state{active}, phos{p5}, kaiB1[.], kaiB2[.]) @ 'k0_flip' / ('c_param' ^ 5)
+C(state{active}, phos{p6}, kaiA[.]) -> C(state{inactive}, phos{p6}, kaiA[.]) @ 'k0_flip' * ('c_param' ^ 6)
+C(state{inactive}, phos{p6}, kaiB1[.], kaiB2[.]) -> C(state{active}, phos{p6}, kaiB1[.], kaiB2[.]) @ 'k0_flip' / ('c_param' ^ 6)
+
+// 2. KaiA binding to active KaiC (differential affinity)
+C(state{active}, phos{p0}, kaiA[.]), A(x[.]) <-> C(state{active}, phos{p0}, kaiA[1]), A(x[1]) @ 'k_Af', 'k_Ab_base'
+C(state{active}, phos{p1}, kaiA[.]), A(x[.]) <-> C(state{active}, phos{p1}, kaiA[1]), A(x[1]) @ 'k_Af', 'k_Ab_base' * ('alpha' ^ 1)
+C(state{active}, phos{p2}, kaiA[.]), A(x[.]) <-> C(state{active}, phos{p2}, kaiA[1]), A(x[1]) @ 'k_Af', 'k_Ab_base' * ('alpha' ^ 2)
+C(state{active}, phos{p3}, kaiA[.]), A(x[.]) <-> C(state{active}, phos{p3}, kaiA[1]), A(x[1]) @ 'k_Af', 'k_Ab_base' * ('alpha' ^ 3)
+C(state{active}, phos{p4}, kaiA[.]), A(x[.]) <-> C(state{active}, phos{p4}, kaiA[1]), A(x[1]) @ 'k_Af', 'k_Ab_base' * ('alpha' ^ 4)
+C(state{active}, phos{p5}, kaiA[.]), A(x[.]) <-> C(state{active}, phos{p5}, kaiA[1]), A(x[1]) @ 'k_Af', 'k_Ab_base' * ('alpha' ^ 5)
+C(state{active}, phos{p6}, kaiA[.]), A(x[.]) <-> C(state{active}, phos{p6}, kaiA[1]), A(x[1]) @ 'k_Af', 'k_Ab_base' * ('alpha' ^ 6)
+
+// 3. KaiA-stimulated phosphorylation
+C(state{active}, phos{p0}, kaiA[1]), A(x[1]) -> C(state{active}, phos{p1}, kaiA[.]), A(x[.]) @ 'k_pf'
+C(state{active}, phos{p1}, kaiA[1]), A(x[1]) -> C(state{active}, phos{p2}, kaiA[.]), A(x[.]) @ 'k_pf'
+C(state{active}, phos{p2}, kaiA[1]), A(x[1]) -> C(state{active}, phos{p3}, kaiA[.]), A(x[.]) @ 'k_pf'
+C(state{active}, phos{p3}, kaiA[1]), A(x[1]) -> C(state{active}, phos{p4}, kaiA[.]), A(x[.]) @ 'k_pf'
+C(state{active}, phos{p4}, kaiA[1]), A(x[1]) -> C(state{active}, phos{p5}, kaiA[.]), A(x[.]) @ 'k_pf'
+C(state{active}, phos{p5}, kaiA[1]), A(x[1]) -> C(state{active}, phos{p6}, kaiA[.]), A(x[.]) @ 'k_pf'
+
+// 4. Spontaneous phosphorylation (active, slow)
+C(state{active}, phos{p0}) -> C(state{active}, phos{p1}) @ 'k_ps_a'
+C(state{active}, phos{p1}) -> C(state{active}, phos{p2}) @ 'k_ps_a'
+C(state{active}, phos{p2}) -> C(state{active}, phos{p3}) @ 'k_ps_a'
+C(state{active}, phos{p3}) -> C(state{active}, phos{p4}) @ 'k_ps_a'
+C(state{active}, phos{p4}) -> C(state{active}, phos{p5}) @ 'k_ps_a'
+C(state{active}, phos{p5}) -> C(state{active}, phos{p6}) @ 'k_ps_a'
+
+// 5. Spontaneous dephosphorylation (active)
+C(state{active}, phos{p1}) -> C(state{active}, phos{p0}) @ 'k_dps_a'
+C(state{active}, phos{p2}) -> C(state{active}, phos{p1}) @ 'k_dps_a'
+C(state{active}, phos{p3}) -> C(state{active}, phos{p2}) @ 'k_dps_a'
+C(state{active}, phos{p4}) -> C(state{active}, phos{p3}) @ 'k_dps_a'
+C(state{active}, phos{p5}) -> C(state{active}, phos{p4}) @ 'k_dps_a'
+C(state{active}, phos{p6}) -> C(state{active}, phos{p5}) @ 'k_dps_a'
+
+// 6. KaiB binding to inactive KaiC (2 sites)
+C(state{inactive}, phos{p0}, kaiB1[.]), B(c[.]) <-> C(state{inactive}, phos{p0}, kaiB1[1]), B(c[1], a[.]) @ 'k_Bf', 'k_Bb'
+C(state{inactive}, phos{p1}, kaiB1[.]), B(c[.]) <-> C(state{inactive}, phos{p1}, kaiB1[1]), B(c[1], a[.]) @ 'k_Bf', 'k_Bb'
+C(state{inactive}, phos{p2}, kaiB1[.]), B(c[.]) <-> C(state{inactive}, phos{p2}, kaiB1[1]), B(c[1], a[.]) @ 'k_Bf', 'k_Bb'
+C(state{inactive}, phos{p3}, kaiB1[.]), B(c[.]) <-> C(state{inactive}, phos{p3}, kaiB1[1]), B(c[1], a[.]) @ 'k_Bf', 'k_Bb'
+C(state{inactive}, phos{p4}, kaiB1[.]), B(c[.]) <-> C(state{inactive}, phos{p4}, kaiB1[1]), B(c[1], a[.]) @ 'k_Bf', 'k_Bb'
+C(state{inactive}, phos{p5}, kaiB1[.]), B(c[.]) <-> C(state{inactive}, phos{p5}, kaiB1[1]), B(c[1], a[.]) @ 'k_Bf', 'k_Bb'
+C(state{inactive}, phos{p6}, kaiB1[.]), B(c[.]) <-> C(state{inactive}, phos{p6}, kaiB1[1]), B(c[1], a[.]) @ 'k_Bf', 'k_Bb'
+C(state{inactive}, phos{p0}, kaiB1[_], kaiB2[.]), B(c[.]) <-> C(state{inactive}, phos{p0}, kaiB1[_], kaiB2[2]), B(c[2], a[.]) @ 'k_Bf', 'k_Bb'
+C(state{inactive}, phos{p1}, kaiB1[_], kaiB2[.]), B(c[.]) <-> C(state{inactive}, phos{p1}, kaiB1[_], kaiB2[2]), B(c[2], a[.]) @ 'k_Bf', 'k_Bb'
+C(state{inactive}, phos{p2}, kaiB1[_], kaiB2[.]), B(c[.]) <-> C(state{inactive}, phos{p2}, kaiB1[_], kaiB2[2]), B(c[2], a[.]) @ 'k_Bf', 'k_Bb'
+C(state{inactive}, phos{p3}, kaiB1[_], kaiB2[.]), B(c[.]) <-> C(state{inactive}, phos{p3}, kaiB1[_], kaiB2[2]), B(c[2], a[.]) @ 'k_Bf', 'k_Bb'
+C(state{inactive}, phos{p4}, kaiB1[_], kaiB2[.]), B(c[.]) <-> C(state{inactive}, phos{p4}, kaiB1[_], kaiB2[2]), B(c[2], a[.]) @ 'k_Bf', 'k_Bb'
+C(state{inactive}, phos{p5}, kaiB1[_], kaiB2[.]), B(c[.]) <-> C(state{inactive}, phos{p5}, kaiB1[_], kaiB2[2]), B(c[2], a[.]) @ 'k_Bf', 'k_Bb'
+C(state{inactive}, phos{p6}, kaiB1[_], kaiB2[.]), B(c[.]) <-> C(state{inactive}, phos{p6}, kaiB1[_], kaiB2[2]), B(c[2], a[.]) @ 'k_Bf', 'k_Bb'
+
+// 7. Spontaneous dephosphorylation (inactive)
+C(state{inactive}, phos{p1}) -> C(state{inactive}, phos{p0}) @ 'k_dps_i'
+C(state{inactive}, phos{p2}) -> C(state{inactive}, phos{p1}) @ 'k_dps_i'
+C(state{inactive}, phos{p3}) -> C(state{inactive}, phos{p2}) @ 'k_dps_i'
+C(state{inactive}, phos{p4}) -> C(state{inactive}, phos{p3}) @ 'k_dps_i'
+C(state{inactive}, phos{p5}) -> C(state{inactive}, phos{p4}) @ 'k_dps_i'
+C(state{inactive}, phos{p6}) -> C(state{inactive}, phos{p5}) @ 'k_dps_i'
+
+// 8. Spontaneous phosphorylation (inactive, very slow)
+C(state{inactive}, phos{p0}) -> C(state{inactive}, phos{p1}) @ 'k_ps_i'
+C(state{inactive}, phos{p1}) -> C(state{inactive}, phos{p2}) @ 'k_ps_i'
+C(state{inactive}, phos{p2}) -> C(state{inactive}, phos{p3}) @ 'k_ps_i'
+C(state{inactive}, phos{p3}) -> C(state{inactive}, phos{p4}) @ 'k_ps_i'
+C(state{inactive}, phos{p4}) -> C(state{inactive}, phos{p5}) @ 'k_ps_i'
+C(state{inactive}, phos{p5}) -> C(state{inactive}, phos{p6}) @ 'k_ps_i'
+
+// 9. KaiA sequestration by KaiB-KaiC complexes (p1-p4 only)
+B(c[1], a[.]), C(state{inactive}, phos{p1}, kaiB1[1]), A(x[.]) <-> B(c[1], a[2]), C(state{inactive}, phos{p1}, kaiB1[1]), A(x[2]) @ 'k_Aseq_f', 'k_Aseq_b'
+B(c[1], a[.]), C(state{inactive}, phos{p1}, kaiB2[1]), A(x[.]) <-> B(c[1], a[2]), C(state{inactive}, phos{p1}, kaiB2[1]), A(x[2]) @ 'k_Aseq_f', 'k_Aseq_b'
+B(c[1], a[.]), C(state{inactive}, phos{p2}, kaiB1[1]), A(x[.]) <-> B(c[1], a[2]), C(state{inactive}, phos{p2}, kaiB1[1]), A(x[2]) @ 'k_Aseq_f', 'k_Aseq_b'
+B(c[1], a[.]), C(state{inactive}, phos{p2}, kaiB2[1]), A(x[.]) <-> B(c[1], a[2]), C(state{inactive}, phos{p2}, kaiB2[1]), A(x[2]) @ 'k_Aseq_f', 'k_Aseq_b'
+B(c[1], a[.]), C(state{inactive}, phos{p3}, kaiB1[1]), A(x[.]) <-> B(c[1], a[2]), C(state{inactive}, phos{p3}, kaiB1[1]), A(x[2]) @ 'k_Aseq_f', 'k_Aseq_b'
+B(c[1], a[.]), C(state{inactive}, phos{p3}, kaiB2[1]), A(x[.]) <-> B(c[1], a[2]), C(state{inactive}, phos{p3}, kaiB2[1]), A(x[2]) @ 'k_Aseq_f', 'k_Aseq_b'
+B(c[1], a[.]), C(state{inactive}, phos{p4}, kaiB1[1]), A(x[.]) <-> B(c[1], a[2]), C(state{inactive}, phos{p4}, kaiB1[1]), A(x[2]) @ 'k_Aseq_f', 'k_Aseq_b'
+B(c[1], a[.]), C(state{inactive}, phos{p4}, kaiB2[1]), A(x[.]) <-> B(c[1], a[2]), C(state{inactive}, phos{p4}, kaiB2[1]), A(x[2]) @ 'k_Aseq_f', 'k_Aseq_b'
+
+// === OBSERVABLES ===
+
+%obs: 'C_p0' |C(phos{p0})|
+%obs: 'C_p1' |C(phos{p1})|
+%obs: 'C_p2' |C(phos{p2})|
+%obs: 'C_p3' |C(phos{p3})|
+%obs: 'C_p4' |C(phos{p4})|
+%obs: 'C_p5' |C(phos{p5})|
+%obs: 'C_p6' |C(phos{p6})|
+
+%obs: 'C_active' |C(state{active})|
+%obs: 'C_inactive' |C(state{inactive})|
+
+%obs: 'AC_complex' |C(kaiA[1]), A(x[1])|
+%obs: 'BC_complex' |C(kaiB1[_])|
+%obs: 'B2C_complex' |C(kaiB1[_], kaiB2[_])|
+%obs: 'A_sequestered' |B(c[_], a[1]), A(x[1])|
+
+%obs: 'A_free' |A(x[.])|
+%obs: 'B_free' |B(c[.], a[.])|
